@@ -20,7 +20,7 @@ const Contact = () => {
     e.preventDefault();
     toast({
       title: "Success!",
-      description: "Thank you for contacting us!",
+      description: "Thank you for reaching out to us. Your response has been recorded, our team shall get back to you shortly.",
     });
     setFormData({ firstName: '', email: '', message: '' });
   };
@@ -29,7 +29,7 @@ const Contact = () => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleWhatsAppClick = () => window.open('https://wa.me/919876543210', '_blank');
+  const handleWhatsAppClick = () => window.open('https://wa.me/919650020485', '_blank');
   const handleMapClick = () => {
     const address = encodeURIComponent("Block A, Sector 43, Noida, Uttar Pradesh 201303");
     window.open(`https://www.google.com/maps?q=${address}`, '_blank');
