@@ -4,7 +4,7 @@ const Footer = () => {
   const socialLinks = [
     {
       icon: FaWhatsapp,
-      href: "https://wa.me/+91 9650020485",
+      href: "https://wa.me/919650020485",
       label: "WhatsApp",
     },
     {
