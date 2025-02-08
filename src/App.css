@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Century+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+/* Global styles */
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  color: rgb(0, 0, 0);
+  background-color: rgba(255, 255, 255, 0);
+  line-height: 1.8em; /* Line height for readability */
+  text-size-adjust: 100%;
+  text-transform: none;
+  unicode-bidi: isolate;
+}
+#Root-padding{
+padding:7%;
+}
+
+#root {
+  max-width: 1200px; /* Set max width */
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Logo styles */
+.logo {
+  height: 8em; /* Logo size */
+  padding: 2em; /* Padding around the logo */
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+/* Card styles */
+.card {
+  padding: 2rem; /* Padding inside cards */
+  border: 2px solid rgba(0, 0, 0, 0.1); /* Border with slight transparency */
+  border-radius: 0.5rem; /* Border radius for smooth corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05); /* Shadow for depth */
+}
+
+/* Header styles */
+h1 {
+  font-family: 'Poppins', 'Montserrat'; /* Proxima Nova font */
+  font-size: 2.5rem; 
+  font-weight: 400; /* Normal weight */
+  line-height: 1.8em; /* Line height for spacing */
+  color: rgb(34, 34, 34); /* Dark color for h1 */
+  margin: 20px 0; /* Top and bottom margin */
+  padding: 20px; /* Padding around the heading */
+  border-radius: 0.5rem; /* Border radius */
+}
+
+/* Paragraph styles */
+p {
+  font-family: 'Montserrat', sans-serif; /* Applied Proxima Nova font */
+  font-size: 1rem; /* Standard font size */
+  line-height: 1.8em; /* Line height for spacing */
+  color: rgb(87, 87, 87); /* Text color for paragraph */
+  margin-bottom: 1.5rem; /* Margin at the bottom */
+  padding: 15px; /* Padding around paragraph */
+  border-radius: 0.5rem; /* Consistent border radius */
+}
+
+/* Adjustments for specific elements */
+.read-the-docs {
+  color: #888; /* Lighter color for the text */
+  font-family: 'Montserrat', sans-serif; /* Ensure Proxima Nova font */
+  font-size: 1rem;
+  padding: 10px;
+  border-radius: 0.5rem; /* Consistent border radius */
+}
+
+.studio-pic{        
+  display: block;
+    object-fit: cover;
+    width: 50%;
+    height: 100%;
+    object-position: 50% 50%;
+}
+
+/* Container for header */
+.header-container {
+  display: flex;
+  margin-bottom: 6px;
+  justify-content: space-between; /* Spread items horizontally */
+  align-items: flex-start; /* Prevent vertical centering */
+  padding: 0 5rem; /* Default padding for small devices */
+  color: rgba(0, 0, 0, 0.655); /* Light black font color */
+}
+
+/* Header items */
+.header-item {
+  font-size: 0.8rem;
+  font-weight: 100; /* Thin font */
+  transition: color 0.3s ease; /* Smooth color transition */
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Hover effect for header items */
+.header-item:hover {
+  color: rgb(0, 0, 0); /* Light gray on hover */
+  text-decoration: underline;
+}
+.underline {
+  text-decoration: underline;
+}
+
+/* Tablet devices (768px and above) */
+@media (min-width: 768px) {
+  .header-container {
+    padding: 0 2rem; /* Increase horizontal padding */
+  }
+}
+
+/* Large devices (1024px and above) */
+@media (min-width: 1024px) {
+  .header-container {
+    padding: 0 20rem; /* Increase padding for larger screens */
+  }
+}
