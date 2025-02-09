@@ -66,8 +66,8 @@ p {
   font-size: 1rem; /* Standard font size */
   line-height: 1.8em; /* Line height for spacing */
   color: rgb(87, 87, 87); /* Text color for paragraph */
-  margin-bottom: 1.5rem; /* Margin at the bottom */
-  padding: 15px; /* Padding around paragraph */
+  
+  padding: 5px; /* Padding around paragraph */
   border-radius: 0.5rem; /* Consistent border radius */
 }
 
