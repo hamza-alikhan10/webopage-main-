@@ -15,49 +15,59 @@ interface BiographyProps {
 
 const Biography: React.FC<BiographyProps> = ({ sections }) => {
   return (
-    <div className="max-w-[90%] mx-auto sm:px-6 lg:px-8 py-12">
-      <Navbar />
-      {sections.map((section, index) => {
-        const imageFloatClass =
-          section.position === "left"
-            ? "float-left sm:mr-4 md:mr-5 mr-3"
-            : "float-right sm:ml-4 md:ml-5 ml-2";
+    <div className="origin-top">
+      <div className="max-w-[90%] mx-auto sm:px-6 lg:px-8 py-12">
+        <Navbar />
+        <div className="responsive-zoom sm:-m-0 -mt-9">
+          {sections.map((section, index) => {
+            const imageFloatClass =
+              section.position === "left"
+                ? "float-left sm:mr-4 md:mr-5 mr-3"
+                : "float-right sm:ml-4 md:ml-5 ml-2";
 
-        return (
-          <div
-            key={index}
-            className="sm:mb-4 md:mb-6 after:clear-both after:block after:content-['']"
-          >
-            <img
-              src={section.image}
-              alt={section.heading}
-              className={`${imageFloatClass} w-[45%] rounded-xl mt-5 max-h-96 min-h-60 mb-1`}
-            />
-            <h1
-              className="text-left -ml-2 md:text-4xl sm:text-2xl text-xl"
-              style={{
-                fontFamily: "Montserrat",
-                letterSpacing: ".06em",
-              }}
-            >
-              {section.heading}
-            </h1>
-            <div
-              className="text-left text-xs sm:text-sm md:text-base"
-              style={{
-                fontFamily: "Montserrat, Poppins, sans-serif",
-                lineHeight: "1.6em",
-                color: "rgb(87, 87, 87)",
-              }}
-            >
-              {section.information.split('\n\n').map((paragraph, idx) => (
-                <p key={idx} >{paragraph.trim()}</p>
-              ))}
-            </div>
-          </div>
-        );
-      })}
-      <Footer />
+            return (
+              <div
+                key={index}
+                className="sm:mb-4 md:mb-6 after:clear-both after:block after:content-['']"
+              >
+                <img
+                  src={section.image}
+                  alt={section.heading}
+                  className={`${imageFloatClass} block ${
+                    section.position === "left" ? "w-[50%]" : "w-[40%]"
+                  } h-auto rounded-xl mr-2 mt-5 mb-1`}
+                />
+                <h1
+                  className={`text-left ${
+                    section.position === "left" ? "text-right" : "text-left"
+                  } -ml-4 md:text-4xl sm:text-2xl text-xl`}
+                  style={{
+                    fontFamily: "Montserrat",
+                    letterSpacing: ".06em",
+                  }}
+                >
+                  {section.heading}
+                </h1>
+                {/* Ensure line breaks are respected */}
+                {section.information.split('\n').map((line, i) => (
+                  <p
+                    key={i}
+                    className="text-left sm: text-xs sm:text-sm md:text-base"
+                    style={{
+                      fontFamily: "Montserrat, Poppins, sans-serif",
+                      lineHeight: "1.6em",
+                      color: "rgb(87, 87, 87)",
+                    }}
+                  >
+                    {line.trim()}
+                  </p>
+                ))}
+              </div>
+            );
+          })}
+          <Footer />
+        </div>
+      </div>
     </div>
   );
 };

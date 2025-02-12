@@ -94,7 +94,7 @@ const Contact = () => {
                 onClick={handleWhatsAppClick}
                 className="flex space-x-2 bg-gray-100 items-center hover:text-gray-600"
               >
-                <MessageCircle className="w-6 h-6 text-green-600" />
+                <MessageCircle className="w-6 h-6 " />
                 <span className="sm:text-lg text-base">+91 965 002 0485</span>
               </button>
               <button

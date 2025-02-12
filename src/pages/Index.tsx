@@ -3,18 +3,20 @@ import { FaWhatsapp, FaInstagram, FaFacebook, FaLinkedin } from "react-icons/fa"
 
 const images = [
   "/H-L-1.jpg",
-  "/H-L-2.jpg",
-  "/H-L-3.jpg",
-  "/H-L-4.jpg",
+  "/H-L-2.webp",
+  "/H-L-3.png",
+  "/H-L-4.png",
   "/H-L-5.jpg",
   "/H-L-6.jpg",
+ 
+  "/H-L-8.png"
 ];
 
 const socialLinks = [
-  { href: "https://whatsapp.com", icon: <FaWhatsapp /> },
-  { href: "https://instagram.com", icon: <FaInstagram /> },
-  { href: "https://facebook.com", icon: <FaFacebook /> },
-  { href: "https://linkedin.com", icon: <FaLinkedin /> },
+  { href: "https://wa.me/919650020485", icon: <FaWhatsapp /> },
+  { href: "https://www.instagram.com/formforge/", icon: <FaInstagram /> },
+  { href: "https://www.facebook.com/Formforge", icon: <FaFacebook /> },
+  { href: "https://www.linkedin.com/company/formforge/", icon: <FaLinkedin /> },
 ];
 
 const Index = () => {

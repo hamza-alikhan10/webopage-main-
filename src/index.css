@@ -65,3 +65,24 @@
   }
 }
 
+.responsive-zoom {
+  zoom: 1;
+}
+
+@media (max-width: 1024px) {
+  .responsive-zoom {
+    zoom: 0.9;
+  }
+}
+
+@media (max-width: 768px) {
+  .responsive-zoom {
+    zoom: 0.8;
+  }
+}
+
+@media (max-width: 480px) {
+  .responsive-zoom {
+    zoom: 0.7;
+  }
+}
