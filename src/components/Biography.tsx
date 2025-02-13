@@ -16,7 +16,7 @@ interface BiographyProps {
 const Biography: React.FC<BiographyProps> = ({ sections }) => {
   return (
     <div className="origin-top">
-      <div className="max-w-[90%] mx-auto sm:px-6 lg:px-8 py-12">
+      <div className="max-w-[95%] mx-auto sm:px-6 lg:px-8 py-12">
         <Navbar />
         <div className="responsive-zoom sm:-m-0 -mt-9">
           {sections.map((section, index) => {
