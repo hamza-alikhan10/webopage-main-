@@ -99,14 +99,12 @@ const Contact = () => {
           <h3 className="sm:text-xl sm:font-semibold text-lg mb-10 text-center">Luxury is just a phone call away!</h3>
           <div className="grid gap-8 md:grid-cols-2">
             <div className="space-y-6">
-              <div className="flex space-x-2 items-center hover:text-gray-600">
-                <Phone className="w-6 h-6" />
-                <span className="sm:text-lg text-base">+91 965 000 6385</span>
+              <div className="flex space-x-2 items-center ">
+                
+                <Phone className="w-6 h-6" />  <MessageCircle className="w-6 h-6 " />
+                <span className="sm:text-lg text-base">+91 965 002 0485 <br /> +91 965 000 6385 </span>
               </div>
-              <button onClick={handleWhatsAppClick} className="flex space-x-2 bg-gray-100 items-center hover:text-gray-600">
-                <MessageCircle className="w-6 h-6 " />
-                <span className="sm:text-lg text-base">+91 965 002 0485</span>
-              </button>
+             
               <button onClick={handleMapClick} className="flex space-x-2 items-center bg-gray-100 hover:text-gray-600 text-left">
                 <MapPin className="w-6 h-6" />
                 <span className="sm:text-lg text-base">Block A, Sector 43,<br />Noida, Uttar Pradesh 201303</span>
