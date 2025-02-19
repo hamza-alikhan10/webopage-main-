@@ -29,7 +29,7 @@ const Index = () => {
   
     const timer = setInterval(() => {
       setCurrentImage((prev) => (prev + 1) % images.length);
-    }, 6000);
+    }, 5000);
   
     return () => {
       // Cleanup styles

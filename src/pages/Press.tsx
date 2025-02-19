@@ -26,7 +26,7 @@ import {
     {
       name: "Shalini Passi",
       logo: "/passi.png",
-      link: "https://www.architecturaldigest.in/content/visual-arts-architect-art-installations/",
+      link: "https://www.hindustantimes.com/htcity/htcity-showstoppers/shalini-passi-says-she-loves-drama-in-fashion-everyones-playing-it-so-safe-that-its-almost-boring-101737026695269.html",
     },
     {
       name: "Architectural Digest",
