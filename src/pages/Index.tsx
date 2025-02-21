@@ -8,7 +8,6 @@ const images = [
   "/H-L-4.png",
   "/H-L-5.jpg",
   "/H-L-6.jpg",
- 
   "/H-L-8.png"
 ];
 
@@ -21,48 +20,34 @@ const socialLinks = [
 
 const Index = () => {
   const [currentImage, setCurrentImage] = useState(0);
-  useEffect(() => {
-    document.body.style.margin = "0";
-    document.body.style.fontFamily = '"Montserrat","Poppins", sans-serif';
-    document.body.style.backgroundColor = "#000";
-    document.body.style.overflow = "hidden";
-  
-    const timer = setInterval(() => {
-      setCurrentImage((prev) => (prev + 1) % images.length);
-    }, 5000);
-  
-    return () => {
-      // Cleanup styles
-      document.body.style.margin = "";
-      document.body.style.fontFamily = "";
-      document.body.style.backgroundColor = "";
-      document.body.style.overflow = "";
-  
-      // Clear the interval properly
-      clearInterval(timer);
-    };
-  }, []);
-  
 
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImage((prev) => (prev + 1) % images.length);
+    }, 4000); // Change image every 4 seconds
+
+    return () => clearInterval(interval);
+  }, []);
 
   return (
-    <div  className="w-full h-svh overflow-hidden flex item-centers justify-center relative bg-black">
-      {/* Fullscreen Image Carousel */}
-      {images.map((src, index) => (
-        <div
-          key={index}
-          className={`
-            absolute inset-0 bg-cover bg-center transition-opacity duration-1000 ease-in-out
-            ${currentImage === index ? "opacity-100 animate-fadeIn" : "opacity-0 animate-fadeOut"}
-          `}
-          style={{ backgroundImage: `url(${src})` }}
-        />
-      ))}
+    <div className="w-full h-svh overflow-hidden flex item-centers justify-center relative bg-black">
+      
+      {/* Custom Slideshow */}
+      <div className="absolute inset-0 w-full h-full">
+        {images.map((src, index) => (
+          <div
+            key={index}
+            className={`absolute inset-0 w-full h-full bg-cover bg-center transition-opacity duration-3000 ease-in-out ${
+              currentImage === index ? "opacity-100 animate-fadeZoom" : "opacity-0"
+            }`}
+            style={{ backgroundImage: `url(${src})` }}
+          />
+        ))}
+      </div>
 
       {/* Centered Content */}
       <div className="flex flex-col items-center justify-center h-auto w-auto relative z-10">
-      <div className="">
-        <h1 className="font-bold text-white  md:text-7xl text-4xl">
+        <h1 className="font-bold text-white md:text-7xl text-4xl">
           F O R M F O R G E
         </h1>
         <button
@@ -71,17 +56,17 @@ const Index = () => {
         >
           ENTER
         </button>
-      </div>
-              {/* Social Media Icons */}
-              <div className="mt-[8vh] flex justify-center absolute bottom-5 space-x-5 md:space-x-4">
-        {socialLinks.map((link, index) => (
-        <a key={index} href={link.href} target="_blank" rel="noopener noreferrer">
-          <span className="text-[4vw] md:text-2xl text-white transition-transform duration-300 ease-in-out hover:scale-125 hover:text-[#4b4948]">
-            {link.icon}
-          </span>
-        </a>
-        ))}
-      </div>
+
+        {/* Social Media Icons */}
+        <div className="mt-[8vh] flex justify-center absolute bottom-5 space-x-5 md:space-x-4">
+          {socialLinks.map((link, index) => (
+            <a key={index} href={link.href} target="_blank" rel="noopener noreferrer">
+              <span className="text-[4vw] md:text-2xl text-white transition-transform duration-300 ease-in-out hover:scale-125 hover:text-[#4b4948]">
+                {link.icon}
+              </span>
+            </a>
+          ))}
+        </div>
       </div>
     </div>
   );

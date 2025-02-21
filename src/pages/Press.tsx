@@ -20,59 +20,54 @@ import {
   const publications: Publication[] = [
     {
       name: "GoodHomes",
-      logo: "/Good_Homes.png",
+      logo: "/goodhomes-magazine.webp",
       link: "https://www.goodhomes.co.in/design-and-style/style-makers/in-conversation-with-artist-abhinav-goyal-6038.html",
     },
     {
       name: "Shalini Passi",
-      logo: "/passi.png",
+      logo: "/shalini-passi-fashion.webp",
       link: "https://www.hindustantimes.com/htcity/htcity-showstoppers/shalini-passi-says-she-loves-drama-in-fashion-everyones-playing-it-so-safe-that-its-almost-boring-101737026695269.html",
     },
     {
       name: "Architectural Digest",
-      logo: "/Architectural_Digest.png",
+      logo: "/architectural-digest-magazine.webp",
       link: "https://www.architecturaldigest.in/content/visual-arts-architect-art-installations/",
     },
     {
       name: "CEO Insights",
-      logo: "/CEO_Insights.png",
+      logo: "/ceo-insights-art-abhinav-goyal.webp",
       link: "https://www.ceoinsightsindia.com/vendor/-abhinav-goyal-creating-disruptive-art-forms-based-on-the-principles-of-contemporary-asymmetric-design-philosophies--cid-6407.html",
     },
     {
-      name: "lovethatdesign",
-      logo: "/lovethatdesign.png",
-      link: "https://www.artforum.com/article", 
+      name: "Love That Design",
+      logo: "/love-that-design-magazine.webp",
+      link: "https://www.artforum.com/article",
     },
     {
       name: "Surfaces Reporter",
-      logo: "/Surfaces_Reporter.png",
-      link: "https://surfacesreporter.com/articles/102561/Brizo%20-%20Delta%20Faucet", 
+      logo: "/surfaces-reporter-magazine.webp",
+      link: "https://surfacesreporter.com/articles/102561/Brizo%20-%20Delta%20Faucet",
     },
     {
-      name: "the design collective",
-      logo: "/TDC.png",
+      name: "The Design Collective",
+      logo: "/the-design-collective-magazine.webp",
       link: "https://www.thedesigncollective.co.in/post/formforge-pavilion",
     },
     {
-      name: "ID india design",
-      logo: "/ID.png",
-      link: "https://indiadesignid.com/id-exhibit/formforge/",  
+      name: "India Design ID",
+      logo: "/india-design-id-magazine.webp",
+      link: "https://indiadesignid.com/id-exhibit/formforge/",
     },
     {
-      name: "Rethinking The Fture",
-      logo: "/Rethinking_future.png",
+      name: "Rethinking The Future",
+      logo: "/rethinking-the-future-magazine.webp",
       link: "https://www.dezeen.com/article",
     },
     {
       name: "Novatr",
-      logo: "/novatr.png",
+      logo: "/novatr-parametric-design.webp",
       link: "https://www.novatr.com/blog/10-respected-parametric-design-firms-in-india-to-look-out-for#7",
     },
-    // {
-    //   name: "The Design Journal",
-    //   logo: "/placeholder.svg",
-    //   link: "https://www.thedesignjournal.com/article",
-    // },
   ];
   
   const Press = () => {
