@@ -31,12 +31,13 @@ const Biography: React.FC<BiographyProps> = ({ sections }) => {
                 className="sm:mb-4 md:mb-6 after:clear-both after:block after:content-['']"
               >
                 <img
-                  src={section.image}
-                  alt={section.heading}
-                  className={`${imageFloatClass} block ${
-                    section.position === "left" ? "w-[50%]" : "w-[40%]"
-                  } h-auto rounded-xl mr-2 mt-5 mb-1`}
-                />
+  src={section.image}
+  alt={section.heading}
+  className={`${imageFloatClass} block ${
+    section.position === "left" ? "w-[50%] sm:h-[310px] md:h-[280px] lg:h-[280px]" : "w-[33%] sm:h-[200px] md:h-[250px] lg:h-[380px]"
+  } h-auto rounded-xl mr-2 mt-5 mb-1`}
+/>
+
                 <h1
                   className={`text-left ${
                     section.position === "left" ? "text-right" : "text-left"
