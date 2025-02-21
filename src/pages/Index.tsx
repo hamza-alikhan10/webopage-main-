@@ -2,13 +2,13 @@ import { useState, useEffect } from "react";
 import { FaWhatsapp, FaInstagram, FaFacebook, FaLinkedin } from "react-icons/fa";
 
 const images = [
-  "/H-L-1.jpg",
+  "/H-L-1.webp",
   "/H-L-2.webp",
-  "/H-L-3.png",
-  "/H-L-4.png",
-  "/H-L-5.jpg",
-  "/H-L-6.jpg",
-  "/H-L-8.png"
+  "/H-L-3.webp",
+  "/H-L-4.webp",
+  "/H-L-5.webp",
+  "/H-L-6.webp",
+  "/H-L-8.webp"
 ];
 
 const socialLinks = [
@@ -32,13 +32,13 @@ const Index = () => {
   return (
     <div className="w-full h-svh overflow-hidden flex item-centers justify-center relative bg-black">
       
-      {/* Custom Slideshow */}
-      <div className="absolute inset-0 w-full h-full">
+       {/* Custom Slideshow */}
+       <div className="absolute inset-0 w-full h-full">
         {images.map((src, index) => (
           <div
             key={index}
             className={`absolute inset-0 w-full h-full bg-cover bg-center transition-opacity duration-3000 ease-in-out ${
-              currentImage === index ? "opacity-100 animate-fadeZoom" : "opacity-0"
+              currentImage === index ? "opacity-100" : "opacity-0"
             }`}
             style={{ backgroundImage: `url(${src})` }}
           />
