@@ -9,7 +9,7 @@ const biographyData: BiographySection[] = [
 Over time, the journey has been about problem-solving, refining digital fabrication techniques, and constantly challenging conventional approaches to design. 
 
 Every piece is an exploration of structure, balance, and expression, where technology isn’t just a tool but an enabler of creativity. The process is always evolving, driven by curiosity and the desire to create work that feels both timeless and forward-thinking.`,
-    image: "/sir.png",
+    image: "/sir.webp",
     position: "right",
   },
   {

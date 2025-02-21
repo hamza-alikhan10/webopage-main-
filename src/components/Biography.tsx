@@ -30,13 +30,16 @@ const Biography: React.FC<BiographyProps> = ({ sections }) => {
                 key={index}
                 className="sm:mb-4 md:mb-6 after:clear-both after:block after:content-['']"
               >
-                <img
+               <img
   src={section.image}
   alt={section.heading}
   className={`${imageFloatClass} block ${
-    section.position === "left" ? "w-[50%] sm:h-[310px] md:h-[280px] lg:h-[280px]" : "w-[33%] sm:h-[200px] md:h-[250px] lg:h-[380px]"
-  } h-auto rounded-xl mr-2 mt-5 mb-1`}
+    section.position === "left" 
+      ? "w-[55%] h-[170px] sm:w-[50%] sm:h-[250px] md:h-[300px] lg:h-[300px]" 
+      : "w-[47%] h-[310px] sm:w-[40%] sm:h-[220px] md:h-[250px] lg:h-[490px]"
+  } rounded-xl mr-2 mt-5 mb-1`}
 />
+
 
                 <h1
                   className={`text-left ${
