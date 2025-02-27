@@ -168,3 +168,19 @@ p {
 .animate-fadeZoom {
   animation: fadeZoom 6s ease-in forwards;
 }
+.blog-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.blog-content p {
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.8;
+  color: #4a4a4a;
+}
+
+.blog-content h1, .blog-content h2, .blog-content h3 {
+  font-family: "Montserrat", sans-serif;
+  color: #2d2d2d;
+}
