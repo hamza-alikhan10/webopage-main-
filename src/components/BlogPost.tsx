@@ -63,7 +63,7 @@ const BlogPost: React.FC = () => {
           <article className="max-w-4xl mx-auto">
             {/* Render the title, date, and read time ONLY ONCE */}
             <h1
-              className="text-4xl md:text-5xl font-bold mb-6 text-center"
+              className="text-4xl md:text-5xl font-bold mb-5 text-center"
               style={{ fontFamily: "Montserrat" }}
             >
               {post.title}
@@ -79,7 +79,7 @@ const BlogPost: React.FC = () => {
             <img
               src={post.image}
               alt={post.title}
-              className="w-full h-[400px] object-cover rounded-xl mb-8"
+              className="w-full h-[400px] object-cover rounded-xl "
               loading="lazy"
             />
 
@@ -95,16 +95,16 @@ const BlogPost: React.FC = () => {
           </article>
 
           {/* Related Articles Section */}
-          <section className="max-w-4xl mx-auto mt-12">
+          <section className="max-w-4xl mx-auto mt-10">
             <h2
               className="text-3xl font-semibold mb-8"
               style={{ fontFamily: "Montserrat" }}
             >
               Related Articles
             </h2>
-            <div className="grid gap-8 grid-cols-1 sm:grid-cols-2">
+            <div className="grid gap-6 grid-cols-2 sm:grid-cols-2">
               {relatedPosts.map((relatedPost) => (
-                <article key={relatedPost.id} className="bg-white rounded-xl shadow-lg overflow-hidden">
+                <article key={relatedPost.id} className="bg-white rounded-lg shadow-lg overflow-hidden">
                   <img
                     src={relatedPost.image}
                     alt={relatedPost.title}
@@ -118,7 +118,7 @@ const BlogPost: React.FC = () => {
                     >
                       <Link
                         to={`/blog/${relatedPost.id}`}
-                        className="text-blue-600 hover:text-blue-800"
+                        className="text-black-600 hover:text-blue-800"
                       >
                         {relatedPost.title}
                       </Link>
