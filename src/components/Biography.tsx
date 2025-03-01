@@ -18,6 +18,7 @@ const Biography: React.FC<BiographyProps> = ({ sections }) => {
     <div className="origin-top">
       <div className="max-w-[90%] mx-auto sm:px-6 lg:px-8 py-12">
         <Navbar />
+        
         <div className="responsive-zoom sm:-m-0">
           {sections.map((section, index) => {
             const imageFloatClass =

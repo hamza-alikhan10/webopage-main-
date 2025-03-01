@@ -25,6 +25,14 @@ const BlogPost: React.FC = () => {
     .filter(p => p.id !== post.id)
     .slice(0, 2);
 
+  // Author data (move this to blogData.ts if dynamic per post)
+  const author = {
+    name: "Abhinav Goyal",
+    bio: "Art enthusiast and expert in luxury metal sculptures.",
+    profileLink: "/about",
+    profileImage:"/screen2.png", // Replace with actual image URL
+  };
+
   return (
     <div className="origin-top">
       <Helmet>
@@ -43,7 +51,12 @@ const BlogPost: React.FC = () => {
             "description": post.metaDescription,
             "datePublished": post.date,
             "image": post.image,
-            "author": { "@type": "Organization", "name": "YourWebsiteName" },
+            "author": { 
+              "@type": "Person", 
+              "name": author.name,
+              "url": `https://yourwebsite.com${author.profileLink}`,
+              "image": author.profileImage
+            },
             "publisher": { "@type": "Organization", "name": "YourWebsiteName" }
           })}
         </script>
@@ -61,7 +74,6 @@ const BlogPost: React.FC = () => {
           </button>
 
           <article className="max-w-4xl mx-auto">
-            {/* Render the title, date, and read time ONLY ONCE */}
             <h1
               className="text-4xl md:text-5xl font-bold mb-5 text-center"
               style={{ fontFamily: "Montserrat" }}
@@ -69,7 +81,25 @@ const BlogPost: React.FC = () => {
               {post.title}
             </h1>
 
-            <div className="flex items-center justify-center text-gray-500 text-sm mb-8">
+            {/* Author, Date, and Read Time Section with Profile Pic */}
+            <div className="flex items-center justify-center text-gray-500 text-sm mb-8 flex-wrap gap-2">
+              <div className="flex items-center">
+                <img
+                  src={author.profileImage}
+                  alt={`${author.name} profile`}
+                  className="w-8 h-8 rounded-full mr-2 object-cover"
+                  loading="lazy"
+                />
+                <span>By </span>
+                <Link 
+                  to={author.profileLink} 
+                  className="text-gray-700 hover:text-blue-600 mx-1 font-medium"
+                  style={{ fontFamily: "Montserrat" }}
+                >
+                  {author.name}
+                </Link>
+              </div>
+              <span className="mx-2">•</span>
               <span>{post.date}</span>
               <span className="mx-2">•</span>
               <span>{post.readTime}</span>
@@ -79,17 +109,17 @@ const BlogPost: React.FC = () => {
             <img
               src={post.image}
               alt={post.title}
-              className="w-full h-[400px] object-cover rounded-xl "
+              className="w-full h-[400px] object-cover rounded-xl"
               loading="lazy"
             />
 
-            {/* Render the blog content WITHOUT the duplicate title, date, and read time */}
+            {/* Blog Content */}
             <div
               className="prose prose-lg max-w-none text-left"
               style={{ fontFamily: "Montserrat" }}
               dangerouslySetInnerHTML={{
                 __html: post.content
-                  .replace(/<header[\s\S]*?<\/header>/, '') // Remove the <header> section
+                  .replace(/<header[\s\S]*?<\/header>/, '')
               }}
             />
           </article>
