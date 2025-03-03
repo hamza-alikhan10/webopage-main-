@@ -11,123 +11,6 @@ export interface BlogPost {
   
   export const blogPosts: BlogPost[] = [
     {
-      id: "corten-steel-maintenance",
-      title: "How to Maintain Corten Steel Sculptures: Expert Guide to Protection and Longevity",
-      metaDescription: "Discover the best techniques for maintaining Corten steel sculptures. Learn about rust prevention, cleaning, sealing, and expert preservation tips.",
-      content: `
-        <article class="blog-content max-w-4xl mx-auto">
-          <header class="mb-12">
-            <h1 class="text-4xl md:text-5xl font-bold text-center mb-6" style="font-family: Montserrat">
-              How to Maintain Corten Steel Sculptures: Expert Guide to Protection and Longevity
-            </h1>
-            <div class="flex justify-center items-center text-gray-500 text-sm">
-              <span>February 25, 2024</span>
-              <span class="mx-2">•</span>
-              <span>10 min read</span>
-            </div>
-          </header>
-  
-          <section class="mb-16">
-            <h2 class="text-3xl font-semibold mb-8" style="font-family: Montserrat">What is Corten Steel & Why Does It Rust?</h2>
-            <p class="text-gray-600 mb-6" style="font-family: Montserrat; line-height: 1.8">
-              Corten steel, also known as weathering steel, is an alloy designed to form a stable rust-like appearance after exposure to the elements. Unlike standard steel, which deteriorates over time, Corten steel develops a protective outer layer that prevents further corrosion. This makes it a popular choice for sculptures, architecture, and outdoor installations.
-            </p>
-            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c" alt="Corten steel rust patina" class="w-full h-[300px] object-cover rounded-xl mb-6" />
-            <p class="text-gray-600 mb-6">The natural oxidation process can take months or years depending on environmental conditions. While it requires minimal upkeep, certain factors such as pollution, salt exposure, and high humidity can accelerate wear.</p>
-          </section>
-  
-          <section class="mb-16">
-            <h2 class="text-3xl font-semibold mb-8">Preventing Damage – How to Protect Corten Steel Sculptures?</h2>
-            <h3 class="text-2xl font-semibold mb-6">Environmental Factors That Affect Corten Steel</h3>
-            <p class="text-gray-600 mb-6">Rain, humidity, air pollution, and saltwater can impact the weathering process of Corten steel. If placed in areas with high moisture levels or near coastal regions, the rust layer may not stabilize properly, leading to excessive degradation. Proper placement and routine maintenance can mitigate these issues.</p>
-            <h3 class="text-2xl font-semibold mb-6">Should You Seal Corten Steel? (Pros & Cons)</h3>
-            <p class="text-gray-600 mb-6">Applying a sealant to Corten steel is a debated topic. While sealing can slow down the oxidation process and prevent rust stains on nearby surfaces, it can also trap moisture underneath, leading to inconsistent patina development. In dry climates, leaving the steel untreated may be the best option, but in humid or coastal environments, a breathable sealant may provide protection.</p>
-            <img src="https://images.unsplash.com/photo-1593642634367-d91a5a4f8e42" alt="Sealed Corten steel sculpture" class="w-full h-[300px] object-cover rounded-xl mb-6" />
-            <h3 class="text-2xl font-semibold mb-6">Routine Inspection Checklist for Longevity</h3>
-            <p class="text-gray-600 mb-6">Regular inspections help identify potential problem areas early. Look for signs of excessive rust build-up, structural weaknesses, or moisture accumulation. A bi-annual checkup can ensure the sculpture remains in optimal condition.</p>
-          </section>
-  
-          <section class="mb-16">
-            <h2 class="text-3xl font-semibold mb-8">Step-by-Step Guide: Cleaning & Maintaining Corten Steel Sculptures</h2>
-            <h3 class="text-2xl font-semibold mb-6">General Cleaning Guidelines</h3>
-            <p class="text-gray-600 mb-6">To clean Corten steel, use mild detergents and a soft brush. Avoid high-pressure washing or harsh chemicals that can strip away the protective layer. Dust and debris can be removed using a dry cloth, while mild soapy water can be used for tougher stains.</p>
-            <h3 class="text-2xl font-semibold mb-6">How to Repair Scratches & Restore Rust Finish</h3>
-            <p class="text-gray-600 mb-6">Minor scratches or discoloration can be remedied by lightly sanding the affected area and allowing it to re-oxidize naturally. In cases where deep scratches expose fresh steel, misting the surface with a saltwater solution can help accelerate the patina formation process.</p>
-            <img src="https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0" alt="Cleaning Corten steel" class="w-full h-[300px] object-cover rounded-xl mb-6" />
-          </section>
-  
-          <section class="mb-16">
-            <h2 class="text-3xl font-semibold mb-8">Common Mistakes to Avoid in Corten Steel Maintenance</h2>
-            <h3 class="text-2xl font-semibold mb-6">Using the Wrong Cleaning Chemicals</h3>
-            <p class="text-gray-600 mb-6">Avoid acidic cleaners or abrasive pads, as they can damage the surface and disrupt the protective layer. Opt for pH-neutral soaps and soft cloths for safe cleaning.</p>
-            <h3 class="text-2xl font-semibold mb-6">Over-Sealing (Why Less is More with Corten Steel)</h3>
-            <p class="text-gray-600 mb-6">Excessive sealing can lead to uneven oxidation patterns and may cause long-term durability issues. If sealing is necessary, use a breathable product designed for weathering steel.</p>
-          </section>
-  
-          <section class="mb-16">
-            <h2 class="text-3xl font-semibold mb-8">Economic Aspects of Corten Steel</h2>
-            <p class="text-gray-600 mb-6">While Corten steel has a higher initial cost compared to standard steel, its long-term durability and minimal maintenance make it a cost-effective investment. Architects and sculptors prefer it due to its aesthetic appeal and resistance to degradation.</p>
-            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c" alt="Corten steel economic benefits" class="w-full h-[300px] object-cover rounded-xl mb-6" />
-            <p class="text-gray-600 mb-6">The economic benefits extend to public installations, where Corten steel reduces repainting and maintenance expenses. Additionally, its longevity ensures that sculptures and structures remain visually striking for decades.</p>
-          </section>
-  
-          <section class="mb-16">
-            <h2 class="text-3xl font-semibold mb-8">Conclusion & Call-to-Action</h2>
-            <p class="text-gray-600 mb-6">Corten steel sculptures offer remarkable longevity and a distinctive look, but proper care ensures their beauty lasts. By following the right cleaning, maintenance, and protection steps, you can preserve your artwork for years to come.</p>
-            <p class="text-gray-600 mb-6">Looking for a custom Corten steel sculpture? Browse our portfolio or contact us today to create a unique, enduring masterpiece.</p>
-          </section>
-        </article>
-      `,
-      image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c",
-      date: "2024-02-25",
-      readTime: "10 min read"
-    },
-    {
-      id: "metal-sculpture-design",
-      title: "The Art of Metal Sculpture Design: From Concept to Creation",
-      metaDescription: "Explore the creative process behind designing and creating stunning metal sculptures, blending craftsmanship with modern innovation.",
-      content: `
-        <article class="blog-content max-w-4xl mx-auto">
-          <header class="mb-12">
-            <h1 class="text-4xl md:text-5xl font-bold text-center mb-6" style="font-family: Montserrat">
-              The Art of Metal Sculpture Design: From Concept to Creation
-            </h1>
-            <div class="flex justify-center items-center text-gray-500 text-sm">
-              <span>February 20, 2024</span>
-              <span class="mx-2">•</span>
-              <span>6 min read</span>
-            </div>
-          </header>
-  
-          <section class="mb-16">
-            <h2 class="text-3xl font-semibold mb-8" style="font-family: Montserrat">The Design Process</h2>
-            <p class="text-gray-600 mb-6" style="font-family: Montserrat; line-height: 1.8">
-              Creating a metal sculpture begins with inspiration and careful planning. Each piece requires a thorough understanding of materials, space, and artistic vision to bring concepts to life.
-            </p>
-            <img src="https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0" alt="Metal sculpture sketching" class="w-full h-[300px] object-cover rounded-xl mb-6" />
-            <p class="text-gray-600 mb-6">Artists start with sketches or digital models, refining their ideas through multiple iterations. Material selection—whether steel, bronze, or aluminum—plays a crucial role in determining the final form.</p>
-          </section>
-  
-          <section class="mb-16">
-            <h2 class="text-3xl font-semibold mb-8">From Sketch to Reality</h2>
-            <h3 class="text-2xl font-semibold mb-6">Prototyping and Fabrication</h3>
-            <p class="text-gray-600 mb-6">Once the design is finalized, sculptors create prototypes using techniques like welding, forging, or casting. Precision engineering ensures structural integrity, especially for large-scale works.</p>
-            <img src="https://images.unsplash.com/photo-1593642634367-d91a5a4f8e42" alt="Metal sculpture fabrication" class="w-full h-[300px] object-cover rounded-xl mb-6" />
-            <h3 class="text-2xl font-semibold mb-6">Finishing Touches</h3>
-            <p class="text-gray-600 mb-6">Polishing, patination, or painting adds character to the sculpture. These final steps enhance durability and aesthetic appeal, making each piece unique.</p>
-          </section>
-  
-          <section class="mb-16">
-            <h2 class="text-3xl font-semibold mb-8">Conclusion</h2>
-            <p class="text-gray-600 mb-6">The journey from concept to creation in metal sculpture design is a blend of art and science. It requires creativity, technical skill, and patience to produce lasting works of art.</p>
-          </section>
-        </article>
-      `,
-      image: "https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0",
-      date: "2024-02-20",
-      readTime: "6 min read"
-    },
-    {
         "id": "cleaning-corten-steel",
         "title": "How to Clean Corten Steel: Tips & Techniques",
         "metaDescription": "Learn how to clean Corten steel effectively with expert tips and techniques. Maintain its unique patina and durability with our comprehensive guide.",
@@ -379,7 +262,7 @@ export interface BlogPost {
                 </section>
             </article>
         `,
-        "image": "/public/images/blog/1-3.jpg",
+        "image": "/public/images/blog/Corten_Steel_Raging_Bull.jpg",
         "date": "2025-02-26",
         "readTime": "10 min read"
     },

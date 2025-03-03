@@ -30,7 +30,7 @@ const BlogPost: React.FC = () => {
     name: "Abhinav Goyal",
     bio: "Art enthusiast and expert in luxury metal sculptures.",
     profileLink: "/about",
-    profileImage:"/screen2.png", // Replace with actual image URL
+    profileImage: "/screen2.png", // Replace with actual image URL
   };
 
   return (
@@ -73,7 +73,7 @@ const BlogPost: React.FC = () => {
             ← Back to Blog
           </button>
 
-          <article className="max-w-4xl mx-auto">
+          <article>
             <h1
               className="text-4xl md:text-5xl font-bold mb-5 text-center"
               style={{ fontFamily: "Montserrat" }}
@@ -125,7 +125,7 @@ const BlogPost: React.FC = () => {
           </article>
 
           {/* Related Articles Section */}
-          <section className="max-w-4xl mx-auto mt-10">
+          {/* <section className="mt-10">
             <h2
               className="text-3xl font-semibold mb-8"
               style={{ fontFamily: "Montserrat" }}
@@ -162,7 +162,7 @@ const BlogPost: React.FC = () => {
                 </article>
               ))}
             </div>
-          </section>
+          </section> */}
 
           <Footer />
         </div>
