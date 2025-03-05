@@ -34,7 +34,7 @@ const Contact = () => {
       if (response.ok) {
         toast({
           title: "Success!",
-          description: "Thank you for reaching out to us. Your response has been recorded, our team shall get back to you shortly.",
+          description: "Thank you for reaching out to us. Your response has been recorded, Our team shall get back to you shortly.",
         });
         setFormData({ firstName: "", email: "", message: "" });
       } else {

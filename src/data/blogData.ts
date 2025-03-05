@@ -13,7 +13,7 @@ export interface BlogPost {
     {
         "id": "cleaning-corten-steel",
         "title": "How to Clean Corten Steel: Tips & Techniques",
-        "metaDescription": "Learn how to clean Corten steel effectively with expert tips and techniques. Maintain its unique patina and durability with our comprehensive guide.",
+        "metaDescription": "Discover stunning Corten Steel sculptures for your space in India. We explore pricing, design options, and advantages of weathering steel art that adds rustic charm to any setting.",
         "content": `
             <article class="blog-content max-w-4xl mx-auto">
                 <header class="mb-10">
@@ -268,13 +268,13 @@ export interface BlogPost {
     },
     {
         "id": "corten-steel-india",
-        "title": "Corten Steel Sculptures in India: Prices, Stunning Designs, and Benefits",
+        "title": "Corten Steel Sculptures in India:         Prices, Stunning Designs, and Benefits",
         "metaDescription": "Explore the beauty of Corten Steel sculptures in India. Learn about prices, design options, and the unique advantages of weathering steel art.",
         "content": `
               <article class="blog-content max-w-4xl mx-auto">
       <header class="mb-10">
-        <h1 class="text-4xl md:text-5xl font-bold text-center mb-6" style="font-family: Montserrat">
-          <b>Corten Steel</b> Sculptures in India: Prices, Stunning Designs, and Benefits
+        <h1 class="text-4xl md:text-xl font-bold text-center mb-6" style="font-family: Montserrat">
+          Sculptures>Corten Steel Sculptures in India: Prices, Stunning Designs, and Benefits
         </h1>
         <div class="flex justify-center items-center text-gray-500 text-sm">
           <span>February 26, 2025</span>
@@ -284,21 +284,25 @@ export interface BlogPost {
       </header>
     
      <section class="mb-10">
-        <p class="text-gray-600">Did you know a single weathering steel sculpture can last up to 100 years? In India's lively art scene, <b>corten steel</b> is changing the game for sculptures. It turns <b>rusted metal</b> into stunning art that grabs both cultural and architectural attention. <b>Corten Steel</b> Sculptures in India: Prices, Stunning Designs, and Benefits.</p>
-        <p class="text-gray-600"><b>Corten steel</b>, also known as weathering steel, is revolutionizing India’s art scene with its durability and rustic charm. This steel alloy develops a unique patina over time, making it ideal for sculptural <b>steel sculpture</b> masterpieces that blend artistry with longevity. From <b>public art installations</b> to corten landscaping, this industrial material is transforming outdoor spaces, gardens, and urban areas with its striking, weathered appearance.</p>
-        <p class="text-gray-600">Artists and designers are leveraging corten architecture to create intricate, story-driven sculptures that resonate with India’s cultural heritage while embracing modern aesthetics. As the demand for these durable, weather-resistant sculptures grows, <b>corten steel</b> is becoming a favorite medium for crafting timeless pieces that captivate art enthusiasts. Explore the world of <b>corten steel</b> sculptures in India, where industrial materials meet creativity, offering stunning designs, competitive pricing, and endless possibilities for outdoor spaces.</p>
-      </section>
+  <p class="text-gray-600">Did you know a single <b>weathering steel</b> sculpture can endure for a century, evolving with time? In India’s dynamic art scene, <b>corten steel</b> is redefining creativity, turning <b>rusted metal</b> into mesmerizing, enduring sculptures that merge cultural depth with architectural innovation.</p>
+  
+  <p class="text-gray-600"><b>Corten steel</b>, a remarkable <b>steel alloy</b>, naturally develops a stunning patina, making it a sought-after medium for visionary <b>steel sculpture</b>. Its self-sustaining oxidation process enhances durability, making it ideal for everything from avant-garde <b>public art installations</b> to immersive <b>corten landscaping</b> projects. Whether set against lush gardens or modern cityscapes, its weathered aesthetic harmonizes effortlessly with its surroundings.</p>
+  
+  <p class="text-gray-600">Architects and sculptors are embracing <b>corten architecture</b> to craft thought-provoking designs that bridge India's artistic heritage with contemporary sensibilities. As appreciation for industrial materials in art continues to grow, <b>corten steel</b> stands at the forefront offering unparalleled resilience, striking beauty, and limitless potential for artistic expression in outdoor spaces.</p>
+</section>
+
     
       <section class="mb-10">
-        <h2 class="text-3xl font-semibold mb-5">Key Takeaways</h2>
-        <ul class="list-disc pl-6 text-gray-600 mb-4">
-          <li class="mb-1"><b>Corten Steel</b> sculptures offer exceptional durability.</li>
-          <li class="mb-1">Unique oxidized appearance creates stunning visual impact.</li>
-          <li class="mb-1">Sustainable art medium with minimal maintenance requirements.</li>
-          <li class="mb-1">Versatile design potential across different artistic styles.</li>
-          <li class="mb-1">Growing trend in contemporary Indian art and <b>landscape architecture</b>.</li>
-        </ul>
-      </section>
+  <h2 class="text-3xl font-semibold mb-5">Key Takeaways</h2>
+  <ul class="list-disc pl-6 text-gray-600 mb-4">
+    <li class="mb-2"><b>Corten Steel</b> sculptures are built to withstand time, evolving with a natural patina.</li>
+    <li class="mb-2">Its distinctive oxidized surface enhances artistic expression and structural longevity.</li>
+    <li class="mb-2">A sustainable choice, requiring little upkeep while complementing natural surroundings.</li>
+    <li class="mb-2">Unmatched versatility, making it ideal for bold, modern, and abstract designs.</li>
+    <li class="mb-2">Rapidly gaining prominence in contemporary Indian art and <b>landscape architecture</b>.</li>
+  </ul>
+</section>
+
     
       <section class="mb-10">
         <h2 class="text-3xl font-semibold mb-5">Understanding <b>Corten Steel</b>: Composition and Characteristics</h2>

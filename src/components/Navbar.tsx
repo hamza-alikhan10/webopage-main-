@@ -22,7 +22,7 @@ const Navbar = () => {
         {/* Logo */}
         <a
           href="/"
-          className="text-center font-ligt text-4xl sm:text-4xl md:text-4xl lg:text-7xl"
+          className="text-center font-normal text-4xl sm:text-4xl md:text-4xl lg:text-7xl"
           style={{
             fontFamily: '"Poppins", "Montserrat"',
             textDecorationLine: "none",

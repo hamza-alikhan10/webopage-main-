@@ -54,7 +54,7 @@ const BlogPost: React.FC = () => {
             "author": { 
               "@type": "Person", 
               "name": author.name,
-              "url": `https://yourwebsite.com${author.profileLink}`,
+              "url": "https://formforge.com/about",
               "image": author.profileImage
             },
             "publisher": { "@type": "Organization", "name": "YourWebsiteName" }
@@ -75,7 +75,7 @@ const BlogPost: React.FC = () => {
 
           <article>
             <h1
-              className="text-4xl md:text-5xl font-bold mb-5 text-center"
+              className="text-3xl md:text-4xl font-bold mb-5 text-center"
               style={{ fontFamily: "Montserrat" }}
             >
               {post.title}
