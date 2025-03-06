@@ -4,6 +4,7 @@ import Navbar from "./Navbar";
 import Footer from './ui/Footer';
 import { Helmet } from "react-helmet";
 import { blogPosts, type BlogPost } from '../data/blogData';
+import { Instagram, Linkedin, Globe, Album, ArrowRight, MessageSquare, Camera, Landmark } from "lucide-react";
 
 const BlogPost: React.FC = () => {
   const { id } = useParams<{ id: string }>();
@@ -57,12 +58,12 @@ const BlogPost: React.FC = () => {
               "url": "https://formforge.com/about",
               "image": author.profileImage
             },
-            "publisher": { "@type": "Organization", "name": "YourWebsiteName" }
+            "publisher": { "@type": "Organization", "name": "formforge" }
           })}
         </script>
       </Helmet>
 
-      <div className="max-w-[90%] mx-auto sm:px-6 lg:px-8 py-12">
+      <div className="max-w-full mx-auto px-0 sm:px-6 lg:px-8 py-12 overflow-hidden">
         <Navbar />
         <div className="responsive-zoom sm:-m-0">
           <button
@@ -101,17 +102,18 @@ const BlogPost: React.FC = () => {
               </div>
               <span className="mx-2">•</span>
               <span>{post.date}</span>
-              <span className="mx-2">•</span>
-              <span>{post.readTime}</span>
+           
             </div>
 
             {/* Blog Post Image */}
-            <img
-              src={post.image}
-              alt={post.title}
-              className="w-full h-[400px] object-cover rounded-xl"
-              loading="lazy"
-            />
+            <div className="flex justify-center px-4 sm:px-6 lg:px-8">
+  <img
+    src={post.image}
+    alt={post.title}
+    className="w-full max-w-[820px] h-auto object-cover rounded-lg shadow-lg"
+    loading="lazy"
+  />
+</div>
 
             {/* Blog Content */}
             <div
@@ -123,6 +125,52 @@ const BlogPost: React.FC = () => {
               }}
             />
           </article>
+
+           {/* Enhanced Internal Links Section */}
+           <div className="my-5 p-8 bg-gradient-to-br from-slate-50 to-gray-100 rounded-xl border border-gray-200 shadow-sm">
+              <h3 className="text-xl font-semibold mb-6 flex items-center gap-2" style={{ fontFamily: "Montserrat" }}>
+                <Landmark className="h-5 w-5 text-gray-500" /> 
+                Explore More From FormForge
+              </h3>
+              <div className="flex flex-col sm:flex-row gap-6">
+                <Link
+                  to="/gallery"
+                  className="flex-1 group"
+                >
+                  <div className="bg-white p-6 rounded-lg border border-gray-200 h-full transition-all duration-300 hover:border-blue-300 hover:shadow-md hover:translate-y-[-4px]">
+                    <div className="flex items-center mb-4">
+                      <div className="bg-blue-100 p-3 rounded-full mr-4">
+                        <Album className="h-6 w-6 text-gray-500" />
+                      </div>
+                      <h4 className="font-semibold text-lg" style={{ fontFamily: "Montserrat" }}>View Our Portfolio</h4>
+                    </div>
+                    <p className="text-gray-600 mb-4">Explore our collection of custom metal sculptures and installations created for clients worldwide.</p>
+                    <div className="flex items-center text-blue-600 font-medium group-hover:text-blue-800">
+                      Discover Our Work <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                    </div>
+                  </div>
+                </Link>
+
+                <Link
+                  to="/contact"
+                  className="flex-1 group"
+                >
+                  <div className="bg-white p-6 rounded-lg border border-gray-200 h-full transition-all duration-300 hover:border-blue-300 hover:shadow-md hover:translate-y-[-4px]">
+                    <div className="flex items-center mb-4">
+                      <div className="bg-blue-100 p-3 rounded-full mr-4">
+                        <MessageSquare className="h-6 w-6 text-gray-500" />
+                      </div>
+                      <h4 className="font-semibold text-lg" style={{ fontFamily: "Montserrat" }}>Contact Us</h4>
+                    </div>
+                    <p className="text-gray-600 mb-4">Interested in a custom piece? Get in touch with our team to discuss your vision and requirements.</p>
+                    <div className="flex items-center text-blue-600 font-medium group-hover:text-blue-800">
+                      Start a Conversation <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                    </div>
+                  </div>
+                </Link>
+              </div>
+            </div>
+
 
           {/* Related Articles Section */}
           {/* <section className="mt-10">
