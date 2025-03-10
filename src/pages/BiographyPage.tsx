@@ -4,7 +4,7 @@ import Biography, { BiographySection } from "@/components/Biography";
 const biographyData: BiographySection[] = [
   {
     heading: "OUR STORY",
-    information: `FormForge is about exploring how design, technology, and craftsmanship come together in unexpected ways. It started as a pursuit of pushing material boundaries—experimenting with metal, understanding its possibilities, and finding innovative ways to shape it into functional and artistic forms.
+    information: `FormForge is about exploring how design, technology, and craftsmanship come together in unexpected ways. It started as a pursuit of pushing material boundaries. Experimenting with metal, understanding its possibilities, and finding innovative ways to shape it into functional and artistic forms.
 
 Over time, the journey has been about problem-solving, refining digital fabrication techniques, and constantly challenging conventional approaches to design. 
 
