@@ -60,7 +60,7 @@ export interface BlogPost {
           </section>
     
           <section class="mb-10">
-            <h2 class="text-3xl font-semibold mb-5">Living With Corten: Practical Tips</h2>
+            <h2 class="text-3xl font-semibold mb-5">Living With Corten</h2>
             <p class="text-gray-600 mb-10">Corten’s self-healing nature makes it low-maintenance, but its initial oxide runoff requires care. We incorporate drainage solutions and recommend placing pieces against planting beds, not light paving, to honor its natural process.</p>
             <h3 class="text-2xl font-semibold mb-5">Key Considerations:</h3>
             <ul class="list-disc pl-6 text-gray-600 mb-3">
@@ -82,7 +82,7 @@ export interface BlogPost {
           </section>
         </article>
       `,
-      "image": "/images/blog/1-22.png",
+      "image": "/images/blog/1-5.jpeg",
       "date": "2025-03-07"
     },
     {
@@ -172,7 +172,7 @@ export interface BlogPost {
     </section>
 </article>
       `,
-      "image": "/images/blog/tortemss.png",
+      "image": "/images/blog/1-22.png",
       "date": "2025-02-26",
   },
     {
@@ -499,7 +499,7 @@ export interface BlogPost {
     
       <section class="mb-10">
         <h2 class="text-3xl font-semibold mb-5">Cost Analysis: <b>Corten Steel</b> Sculpture Pricing in India</h2>
-        <img class="mb-5" src="/images/blog/1-8.jpg" alt="Corten Steel Sculpture Pricing">
+        <img class="mb-5" src="/images/blog/1-9.jpeg" alt="Corten Steel Sculpture Pricing">
         <p class="text-gray-600">Looking into the cost of <b>patina steel</b> sculptures in India shows a complex market. These <b>corrosion-resistant steel</b> artworks are getting more popular. Prices change a lot because of different factors.</p>
         <p class="text-gray-600">The price of <b>industrial steel</b> <b>metal sculptures</b> depends on a few important things:</p>
         <ul class="list-disc pl-6 text-gray-600 mb-4">
@@ -671,7 +671,7 @@ export interface BlogPost {
 </section>
     </article>
             `,
-        "image": "/images/blog/1-7.jpg",
+        "image": "/images/blog/1-6.jpeg",
         "date": "2025-02-26",
     }
       
