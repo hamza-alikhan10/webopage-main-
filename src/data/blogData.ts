@@ -82,7 +82,7 @@ export interface BlogPost {
           </section>
         </article>
       `,
-      "image": "/images/blog/1-5.jpeg",
+      "image": "/images/blog/1-61.png",
       "date": "2025-03-07"
     },
     {
