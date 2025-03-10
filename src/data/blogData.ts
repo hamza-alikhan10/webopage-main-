@@ -425,7 +425,7 @@ export interface BlogPost {
                 </section>
             </article>
         `,
-        "image": "/public/images/blog/Corten_Steel_Raging_Bull.jpg",
+        "image": "/images/blog/Corten_Steel_Raging_Bull.jpg",
         "date": "2025-02-26",
     },
     {
