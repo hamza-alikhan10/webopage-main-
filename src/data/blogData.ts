@@ -183,12 +183,10 @@ export interface BlogPost {
             <article class="blog-content max-w-4xl mx-auto">
                 <header class="mb-10">
                     <h1 class="text-4xl md:text-5xl font-bold text-center " style="font-family: Montserrat">
-                        How to Clean : Tips & Techniques
+                        How to Clean Corten Steel : Tips & Techniques
                     </h1>
                     <div class="flex justify-center items-center text-gray-500 text-sm">
-                        <span>February 26, 2025</span>
-                        <span class="mx-2">•</span>
-                        <span>10 min read</span>
+                       
                     </div>
                 </header>
     
@@ -438,12 +436,11 @@ export interface BlogPost {
               <article class="blog-content max-w-4xl mx-auto">
       <header class="mb-10">
         <h1 class="text-4xl md:text-xl font-bold text-center mb-6" style="font-family: Montserrat">
-          Sculptures>Corten Steel Sculptures in India: Prices, Stunning Designs, and Benefits
+          Corten Steel Sculptures in India: Prices, Stunning Designs, and Benefits
         </h1>
         <div class="flex justify-center items-center text-gray-500 text-sm">
-          <span>February 26, 2025</span>
-          <span class="mx-2">•</span>
-          <span>10 min read</span>
+          
+     
         </div>
       </header>
     

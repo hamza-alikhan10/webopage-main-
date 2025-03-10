@@ -106,14 +106,14 @@ const BlogPost: React.FC = () => {
             </div>
 
             {/* Blog Post Image */}
-            <div className="flex justify-center px-4 sm:px-6 lg:px-8">
-  <img
-    src={post.image}
-    alt={post.title}
-    className="w-full max-w-[900px] h-[510px] sm: w-full max-w-[800px] h-[390px] lg: w- object-cover rounded-lg shadow-lg"
-    loading="lazy"
-  />
-</div>
+            <div className="flex justify-center mb-8">
+              <img
+                src={post.image}
+                alt={post.title}
+                className="w-full h-auto max-h-[600px] object-cover rounded-lg shadow-lg px-4 sm:px-0"
+                loading="lazy"
+              />
+            </div>
 
             {/* Blog Content */}
             <div
