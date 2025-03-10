@@ -11,6 +11,81 @@ export interface BlogPost {
   
   export const blogPosts: BlogPost[] = [
     {
+      "id": "corten-steel-sculptures-time",
+      "title": "Corten Steel Sculptures: The Material That Sculpts Time Itself",
+      "metaDescription": "Discover the timeless beauty of Corten steel sculptures. Explore how this weathering steel collaborates with nature, its durability, artistic applications, and why it’s a sustainable choice for modern art and architecture.",
+      "content": `
+        <article class="blog-content max-w-4xl mx-auto">
+          <header class="mb-10">
+            <h1 class="text-4xl md:text-5xl font-bold text-center" style="font-family: Montserrat">
+              Corten Steel Sculptures: The Material That Sculpts Time Itself
+            </h1>
+          </header>
+    
+          <section class="mb-10">
+            <h2 class="text-3xl font-semibold mb-5">The Poetry of Impermanence in Permanence</h2>
+            <p class="text-gray-600">Time is the ultimate sculptor—eroding mountains, carving valleys, and shaping the world with patient persistence. At FormForge, we’ve found a perfect partner in <b>Corten steel</b>, a material that doesn’t resist time but embraces it, allowing nature to complete what the artist begins.</p>
+            <p class="text-gray-600">What draws you to a sculpture? Is it the form alone, or the dialogue between material and environment? <b>Corten steel</b>—with its rich, amber-hued patina—offers a paradox: it degrades while protecting itself, creating beauty through a controlled surrender to natural forces.</p>
+            <p class="text-gray-600">"Think of Corten not as a material, but as a collaboration between artist, element, and time," says one of our master sculptors. "The steel I shape today will look entirely different a year from now—richer, more nuanced, with depth that can’t be manufactured."</p>
+          </section>
+    
+          <section class="mb-10">
+            <h2 class="text-3xl font-semibold mb-5">The Science Behind Corten: Beyond Aesthetics</h2>
+            <p class="text-gray-600 mb-10">Unlike conventional metals that fight oxidation, Corten steel develops a self-protective layer—a living skin that evolves with the seasons. This isn’t mere rust; it’s time’s fingerprint, a chronicle of weather unique to each location.</p>
+            <h3 class="text-2xl font-semibold mb-5">Key Properties of Corten Steel:</h3>
+            <ul class="list-disc pl-6 text-gray-600 mb-3">
+              <li class="mb-3"><b>Corrosion Resistance ("Cor"):</b> A precise blend of chromium, nickel, copper, and phosphorous forms a protective patina that halts deeper corrosion.</li>
+              <li class="mb-3"><b>Tensile Strength ("Ten"):</b> Born in the 1930s for industrial use, this alloy offers exceptional durability for sculptural works.</li>
+              <li class="mb-3"><b>Longevity:</b> The oxidized layer prevents moisture and oxygen from penetrating, ensuring pieces endure decades with minimal upkeep.</li>
+            </ul>
+            <p class="text-gray-600">For collectors and commissioners, this means a Corten sculpture isn’t just art—it’s a legacy that deepens in character over time.</p>
+          </section>
+    
+          <section class="mb-10">
+            <h2 class="text-3xl font-semibold mb-5">The FormForge Approach: Material as Narrative</h2>
+            <p class="text-gray-600">At FormForge, we see Corten steel as more than a medium—it’s part of the sculptural story. Its transformation mirrors the evolution of the spaces and communities around it—changing yet constant, adapting yet enduring.</p>
+            <p class="text-gray-600 mb-10">From monumental public installations to intimate garden pieces, our <a href="https://formforge.com/gallery" class="text-blue-600 hover:underline">gallery</a> showcases Corten’s versatility. Coastal works, where salt air accelerates patination, contrast with desert sculptures, where the process slows, each telling a unique environmental tale.</p>
+            <h3 class="text-2xl font-semibold mb-5">Applications of Corten Steel:</h3>
+            <ul class="list-disc pl-6 text-gray-600 mb-3">
+              <li class="mb-3"><b>Public Art:</b> Bold installations that anchor urban landscapes.</li>
+              <li class="mb-3"><b>Garden Sculptures:</b> Pieces that dialogue with surrounding flora.</li>
+              <li class="mb-3"><b>Architectural Features:</b> Cladding and accents that enhance modern designs.</li>
+            </ul>
+          </section>
+    
+          <section class="mb-10">
+            <h2 class="text-3xl font-semibold mb-5">Sustainability: The Environmental Edge</h2>
+            <p class="text-gray-600">In an age of sustainability, Corten steel shines. Its durability reduces replacements, and its natural patina eliminates the need for chemical coatings or paints—unlike resource-heavy alternatives.</p>
+            <p class="text-gray-600">For the discerning collector, Corten offers luxury through integrity—material, conceptual, and environmental—aligning with modern values of authentic expression.</p>
+          </section>
+    
+          <section class="mb-10">
+            <h2 class="text-3xl font-semibold mb-5">Living With Corten: Practical Tips</h2>
+            <p class="text-gray-600 mb-10">Corten’s self-healing nature makes it low-maintenance, but its initial oxide runoff requires care. We incorporate drainage solutions and recommend placing pieces against planting beds, not light paving, to honor its natural process.</p>
+            <h3 class="text-2xl font-semibold mb-5">Key Considerations:</h3>
+            <ul class="list-disc pl-6 text-gray-600 mb-3">
+              <li class="mb-3"><b>Runoff Management:</b> Stabilizes within 1-2 years, depending on climate.</li>
+              <li class="mb-3"><b>Maintenance:</b> Occasional gentle cleaning preserves its character.</li>
+              <li class="mb-3"><b>Placement:</b> Strategic siting enhances its evolution without staining surroundings.</li>
+            </ul>
+          </section>
+    
+          <section class="mb-10">
+            <h2 class="text-3xl font-semibold mb-5">Commission Your Corten Vision</h2>
+            <p class="text-gray-600">What will your space say? A Corten sculpture doesn’t just occupy—it transforms, deepening the emotional experience of those who encounter it.</p>
+            <p class="text-gray-600">FormForge’s artisans craft each piece as a unique narrative, blending site specifics, architectural context, and your vision. Explore our <a href="https://formforge.com/gallery" class="text-blue-600 hover:underline">portfolio</a> and let’s create a presence that grows more profound with every season.</p>
+          </section>
+    
+          <section>
+            <h2 class="text-3xl font-semibold mb-5">Experience the Art of Timeless Steel</h2>
+            <p class="text-gray-600">At FormForge, we sculpt Corten steel into expressions of art and endurance. Contact our atelier to bring your vision to life with a material that embraces time itself.</p>
+          </section>
+        </article>
+      `,
+      "image": "/public/images/blog/1-22.png",
+      "date": "2025-03-07"
+    },
+    {
         "id": "corten-steel-sculptures-india",
         "title": "Corten Steel Sculptures in India: The Fusion of Art, Architecture & Industrial Aesthetics",
         "metaDescription": "Explore the timeless appeal of Corten steel sculptures in India. Learn about the science behind weathering steel, its applications in public spaces, pricing, and why it’s a favorite for landscape architecture and industrial design.",

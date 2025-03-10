@@ -110,7 +110,7 @@ const BlogPost: React.FC = () => {
   <img
     src={post.image}
     alt={post.title}
-    className="w-full max-w-[820px] h-auto object-cover rounded-lg shadow-lg"
+    className="w-full max-w-[900px] h-[510px] sm: w-full max-w-[800px] h-[390px] lg: w- object-cover rounded-lg shadow-lg"
     loading="lazy"
   />
 </div>

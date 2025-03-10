@@ -50,8 +50,7 @@ const Blog: React.FC = () => {
                 <div className="p-6">
                   <div className="flex items-center text-gray-500 text-sm mb-4">
                     <span>{post.date}</span>
-                    <span className="mx-2">•</span>
-                    <span>{post.readTime}</span>
+                 
                   </div>
                   <h2 className="text-xl font-semibold mb-4" style={{ fontFamily: "Montserrat" }}>
                     {post.title}
