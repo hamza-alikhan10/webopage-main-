@@ -82,7 +82,7 @@ export interface BlogPost {
           </section>
         </article>
       `,
-      "image": "/public/images/blog/1-22.png",
+      "image": "/images/blog/1-22.png",
       "date": "2025-03-07"
     },
     {
@@ -172,7 +172,7 @@ export interface BlogPost {
     </section>
 </article>
       `,
-      "image": "/public/images/blog/tortemss.png",
+      "image": "/images/blog/tortemss.png",
       "date": "2025-02-26",
   },
     {
@@ -499,7 +499,7 @@ export interface BlogPost {
     
       <section class="mb-10">
         <h2 class="text-3xl font-semibold mb-5">Cost Analysis: <b>Corten Steel</b> Sculpture Pricing in India</h2>
-        <img class="mb-5" src="/public/images/blog/1-8.jpg" alt="Corten Steel Sculpture Pricing">
+        <img class="mb-5" src="/images/blog/1-8.jpg" alt="Corten Steel Sculpture Pricing">
         <p class="text-gray-600">Looking into the cost of <b>patina steel</b> sculptures in India shows a complex market. These <b>corrosion-resistant steel</b> artworks are getting more popular. Prices change a lot because of different factors.</p>
         <p class="text-gray-600">The price of <b>industrial steel</b> <b>metal sculptures</b> depends on a few important things:</p>
         <ul class="list-disc pl-6 text-gray-600 mb-4">
@@ -526,7 +526,7 @@ export interface BlogPost {
       <section class="mb-10">
         <h2 class="text-3xl font-semibold mb-5">Stunning Design Possibilities with <b>Weathering Steel Art</b></h2>
         <p class="text-gray-600"><b>Corten Steel</b> is amazing for <b>outdoor sculptures</b> and building parts in India. It changes spaces with its unique rust-colored look.</p>
-        <img class="mb-5" src="/public/images/blog/1-9.jpg" alt="Corten Steel Sculpture Pricing">
+        <img class="mb-5" src="/images/blog/1-9.jpg" alt="Corten Steel Sculpture Pricing">
         <p class="text-gray-600 mb-10"><b>Weathering steel art</b> lets artists and designers get creative. It ages naturally, making beautiful textures that show India's art.</p>
         <h3 class="text-2xl font-semibold mb-5">Contemporary Garden Installations</h3>
         <p class="text-gray-600">Modern gardens use <b>rust-resistant steel</b> <b>garden sculptures</b>. They fit well with nature. You can find many designs:</p>
@@ -671,7 +671,7 @@ export interface BlogPost {
 </section>
     </article>
             `,
-        "image": "/public/images/blog/1-7.jpg",
+        "image": "/images/blog/1-7.jpg",
         "date": "2025-02-26",
     }
       
