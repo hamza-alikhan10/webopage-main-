@@ -82,7 +82,7 @@ export interface BlogPost {
           </section>
         </article>
       `,
-      "image": "/images/blog/1-61.png",
+      "image": "/images/blog/Corten_Steel_Elephants.webp",
       "date": "2025-03-07"
     },
     {
@@ -172,7 +172,7 @@ export interface BlogPost {
     </section>
 </article>
       `,
-      "image": "/images/blog/1-3.jpeg",
+      "image": "/images/blog/Corten_Steel_flower.webp",
       "date": "2025-02-26",
   },
     {
@@ -209,7 +209,7 @@ export interface BlogPost {
                 <section class="mb-10">
                     <h2 class="text-3xl font-semibold mb-5">Understanding Corten Steel and Its Properties</h2>
                     <p class="text-gray-600"><b>Corten steel</b> is a new material in building and design. It gets a rust-like look that protects it. This <b>metal tech</b> turns regular steel into something strong and beautiful.</p>
-                    <img class="mb-5" src="/images/blog/1-2.jpg" alt="Corten Steel Overview">
+                    <img class="mb-5" src="/images/blog/1-2.webp" alt="Corten Steel Overview">
                     <p class="text-gray-600 mb-10"><b>Weathering steel</b> is different from regular steel. It has copper, chromium, and nickel. These add to its <b>special care</b> needs.</p>
                     <h3 class="text-2xl font-semibold mb-5">What Makes Corten Steel Unique</h3>
                     <p class="text-gray-600"><b>Corten steel</b>, also known as weathering steel, is valued for its durability and rust-like patina, which protects against corrosion. This makes it ideal for outdoor uses like sculptures and <b>architecture</b>, blending seamlessly with natural surroundings.</p>
@@ -425,7 +425,7 @@ export interface BlogPost {
                 </section>
             </article>
         `,
-        "image": "/images/blog/Corten_Steel_Raging_Bull.jpg",
+        "image": "/images/blog/Corten_Steel_Raging_Bull.webp",
         "date": "2025-02-26",
     },
     {
@@ -526,7 +526,7 @@ export interface BlogPost {
       <section class="mb-10">
         <h2 class="text-3xl font-semibold mb-5">Stunning Design Possibilities with <b>Weathering Steel Art</b></h2>
         <p class="text-gray-600"><b>Corten Steel</b> is amazing for <b>outdoor sculptures</b> and building parts in India. It changes spaces with its unique rust-colored look.</p>
-        <img class="mb-5" src="/images/blog/1-9.jpg" alt="Corten Steel Sculpture Pricing">
+        <img class="mb-5" src="/images/blog/Corten_Steel_wall.webp" alt="Corten Steel Sculpture Pricing">
         <p class="text-gray-600 mb-10"><b>Weathering steel art</b> lets artists and designers get creative. It ages naturally, making beautiful textures that show India's art.</p>
         <h3 class="text-2xl font-semibold mb-5">Contemporary Garden Installations</h3>
         <p class="text-gray-600">Modern gardens use <b>rust-resistant steel</b> <b>garden sculptures</b>. They fit well with nature. You can find many designs:</p>
@@ -671,7 +671,7 @@ export interface BlogPost {
 </section>
     </article>
             `,
-        "image": "/images/blog/1-6.jpeg",
+        "image": "/images/blog/Corten_Steel_Outdoor.webp",
         "date": "2025-02-26",
     }
       

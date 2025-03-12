@@ -31,9 +31,22 @@ const Index = () => {
     return () => clearInterval(interval);
   }, [images.length]);
   
+  // Add this effect to prevent scrolling on the body
+  useEffect(() => {
+    // Save original styles
+    const originalStyle = window.getComputedStyle(document.body).overflow;
+    
+    // Prevent scrolling on mount
+    document.body.style.overflow = 'hidden';
+    
+    // Restore original style on unmount
+    return () => {
+      document.body.style.overflow = originalStyle;
+    };
+  }, []);
 
   return (
-    <div className="w-full h-svh overflow-hidden flex item-centers justify-center relative bg-black">
+      <div className="fixed inset-0 w-full h-full flex items-centers justify-center bg-black">
       {/* SEO Metadata with react-helmet */}
       <Helmet>
         <title>FormForge | Luxury Corten Steel Sculptures & Metal Art</title>
@@ -89,19 +102,19 @@ const Index = () => {
 
       {/* Centered Content */}
       <div className="flex flex-col items-center justify-center h-auto w-auto relative z-10">
-      <h1 className="font-normal text-white md:text-7xl text-4xl font-[Poppins]">
-  F O R M F O R G E
-</h1>
+        <h1 className="font-normal text-white md:text-7xl text-4xl font-[Poppins]">
+          F O R M F O R G E
+        </h1>
 
         <button
           onClick={() => (window.location.href = "/gallery")}
-          className="mt-[5vh] font-light border border-white text-white tracking-[5px] px-[30px] py-[10px] transition-all duration-300 ease-in-out rounded-full hover:bg-white hover:text-black hover:scale-105 hover:shadow-[0px_4px_15px_rgba(255,255,255,0.3)]"
+          className="mt-[8vh] font-light border border-white text-white tracking-[5px] px-[30px] py-[10px] transition-all duration-300 ease-in-out rounded-full hover:bg-white hover:text-black hover:scale-105 hover:shadow-[0px_4px_15px_rgba(255,255,255,0.3)]"
         >
           ENTER
         </button>
 
         {/* Social Media Icons */}
-        <div className="mt-[8vh] flex justify-center absolute bottom-5 space-x-5 md:space-x-4">
+        <div className="mt-[8vh] flex justify-center absolute bottom-9 space-x-5 md:space-x-4">
           {socialLinks.map((link, index) => (
             <a key={index} href={link.href} target="_blank" rel="noopener noreferrer">
               <span className="text-[4vw] md:text-2xl text-white transition-transform duration-300 ease-in-out hover:scale-125 hover:text-[#4b4948]">

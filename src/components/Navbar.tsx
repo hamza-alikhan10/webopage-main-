@@ -57,7 +57,7 @@ const Navbar = () => {
 
         @media (max-width: 640px) {
           .text-4xl {
-            font-size: 2rem; /* Smaller logo for mobile */
+            font-size: 2.4rem; /* Smaller logo for mobile */
           }
           .nav-link {
             font-size: 0.875rem; /* Smaller text for mobile */
