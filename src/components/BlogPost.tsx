@@ -76,7 +76,7 @@ const BlogPost: React.FC = () => {
 
           <article>
             <h1
-              className="text-3xl md:text-4xl font-bold mb-5 text-center"
+              className="text-xl sm:text-3xl md:text-4xl font-extrabold mb-5 text-center"
               style={{ fontFamily: "Montserrat" }}
             >
               {post.title}

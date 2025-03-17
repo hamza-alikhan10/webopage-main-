@@ -98,16 +98,16 @@ export interface BlogPost {
     </header>
 
     <section class="mb-10">
-        <h2 class="text-3xl  font-semibold mb-5">Weathering Steel:  Timeless Elegance in Indian Design</h2>
+        <h2 class="text-xl sm:text-2xl md:text-3xl  font-bold md:font-semibold mb-5">Weathering Steel:  Timeless Elegance in Indian Design</h2>
        <p class="text-gray-600">In the evolving landscape of industrial design, few materials command as much attention as <b>Corten steel</b> a material that is as much about artistry as it is about resilience. Also known as weathering steel, this corrosion-resistant steel is redefining contemporary metal sculptures, bridging the gap between modern architecture and the organic beauty of time-worn materials.</p>
 <p class="text-gray-600">For designers, sculptors, and architects, <b>Corten steel sculptures</b> represent more than just rusted metal they symbolize transformation, a living canvas that shifts with the seasons, responding to nature with an evolving <b>rust patina</b>.</p>
 <p class="text-gray-600">From public art installations in bustling Indian metropolises to serene outdoor sculptures nestled within lush gardens, <b>Corten architecture</b> has become a statement of permanence and fluidity. Its appeal lies not just in aesthetics but in its remarkable durability allowing these rust-resistant steel structures to stand unyielding against time while telling a visual story of oxidation and renewal.</p>
     </section>
 
     <section class="mb-10">
-        <h2 class="text-3xl font-semibold mb-5">The Science Behind Corten: What Makes It So Unique?</h2>
+        <h2 class="text-xl sm:text-2xl md:text-3xl  font-bold md:font-semibold mb-5">The Science Behind Corten: What Makes It So Unique?</h2>
         <p class="text-gray-600 mb-10">Unlike conventional architectural steel, Corten (cor-ten) steel undergoes a controlled oxidation process, developing a steel patina that acts as a natural protective barrier. This distinct patinated steel finish eliminates the need for paints, coatings, or constant maintenance, making it an ideal choice for outdoor steel sculptures, landscape architecture, and industrial materials used in contemporary design.</p>
-        <h3 class="text-2xl font-semibold mb-5">Key Material Properties of Corten Steel:</h3>
+        <h3 class="sm:text-2xl text-xl font-semibold mb-5">Key Material Properties of Corten Steel:</h3>
         <ul class="list-disc pl-6 text-gray-600 mb-3">
             <li class="mb-3"><b>Corrosion-Resistant Alloy:</b> The blend of low-alloy steel, including copper, chromium, and nickel, creates a self-healing rust patina that prevents deeper corrosion.</li>
             <li class="mb-3"><b>Sustainability & Longevity:</b> Unlike traditional rusted steel, which deteriorates, Corten steel thrives in harsh environments, aging gracefully over decades.</li>
@@ -117,10 +117,10 @@ export interface BlogPost {
     </section>
 
     <section class="mb-10">
-        <h2 class="text-3xl font-semibold mb-5">Corten Steel Sculptures: Shaping Indian Public Spaces</h2>
+        <h2 class="text-xl sm:text-2xl md:text-3xl  font-bold md:font-semibold mb-5">Corten Steel Sculptures: Shaping Indian Public Spaces</h2>
         <p class="text-gray-600">From avant-garde installations in Mumbai’s cultural districts to intricate steel sculptures adorning modern architectural landscapes in Delhi and Bangalore, Corten steel is emerging as a favored medium for both contemporary artists and urban planners.</p>
         <p class="text-gray-600 mb-10">Corten landscaping is particularly popular in Indian cities, where the juxtaposition of rust-colored steel against lush greenery and concrete facades creates a striking visual contrast. Whether used in metal facades, structural steel installations, or intricate sculptural steel pieces, the material integrates seamlessly with its surroundings, celebrating both nature and industrial craftsmanship.</p>
-        <h3 class="text-2xl font-semibold mb-5">Notable Design Applications in India:</h3>
+        <h3 class="text-xl sm:text-2xl font-semibold mb-5">Notable Design Applications in India:</h3>
         <ul class="list-disc pl-6 text-gray-600 mb-3">
             <li class="mb-3"><b>Public Art Installations:</b> Large-scale industrial steel sculptures that redefine urban spaces with bold geometric forms.</li>
             <li class="mb-3"><b>Landscaping Steel Features:</b> Patina steel pathways, benches, and garden screens that embrace the beauty of oxidized steel.</li>
@@ -131,9 +131,9 @@ export interface BlogPost {
     </section>
 
     <section class="mb-10">
-        <h2 class="text-3xl font-semibold mb-5">Corten Steel Sculpture Prices: What to Expect</h2>
+        <h2 class="text-xl sm:text-2xl md:text-3xl  font-bold md:font-semibold mb-5">Corten Steel Sculpture Prices: What to Expect</h2>
         <p class="text-gray-600 mb-10">When investing in Corten steel sculptures, the cost varies based on size, complexity, and craftsmanship. The raw corrosion-resistant steel itself is relatively affordable, with patina steel sheets ranging from ₹80-100 per kilogram. However, custom metal sculptures require expert fabrication, intricate detailing, and thoughtful placement elements that define their ultimate value.</p>
-        <h3 class="text-2xl font-semibold mb-5">Estimated Pricing in India:</h3>
+        <h3 class="sm:text-2xl text-xl font-semibold mb-5">Estimated Pricing in India:</h3>
         <ul class="list-disc pl-6 text-gray-600 mb-4">
             <li class="mb-2"><b>Small Sculptures (2-4 ft):</b> ₹15,000 – ₹1,50,000</li>
             <li class="mb-2"><b>Medium Installations (5-9 ft):</b> ₹2,00,000 – ₹5,00,000</li>
@@ -143,29 +143,29 @@ export interface BlogPost {
     </section>
 
     <section class="mb-10">
-        <h2 class="text-3xl font-semibold mb-5">The Future of Corten Steel in Indian Design</h2>
+        <h2 class="text-xl sm:text-2xl md:text-3xl  font-bold md:font-semibold mb-5">The Future of Corten Steel in Indian Design</h2>
         <p class="text-gray-600">As India's design industry embraces industrial patina, the fusion of Corten steel with modern architecture is creating a new dialogue between permanence and decay. The demand for rust-patina aesthetics continues to grow, with sculptural steel and weathering steel sculpture installations redefining urban landscapes.</p>
         <p class="text-gray-600">At FormForge, we are dedicated to crafting Corten steel sculptures that not only celebrate corrosion-resistant steel but also push the boundaries of art, architecture, and material innovation. Each creation is designed to evolve, breathing life into spaces through a blend of rusty metal, industrial materials, and landscape architecture.</p>
     </section>
 
     <section class="mb-10">
-        <h2 class="text-3xl font-semibold mb-10">FAQ: Everything You Need to Know About Corten Steel</h2>
-        <h3 class="text-2xl font-semibold mb-2">What makes Corten steel different from regular steel?</h3>
+        <h2 class="text-xl sm:text-2xl md:text-3xl  font-bold md:font-semibold mb-10">FAQ: Everything You Need to Know About Corten Steel</h2>
+        <h3 class="sm:text-2xl text-xl font-semibold mb-2">What makes Corten steel different from regular steel?</h3>
         <p class="text-gray-600 mb-5">Unlike standard industrial steel, Corten steel forms a rust-patina that protects against further corrosion, making it ideal for outdoor steel sculptures and steel cladding.</p>
-        <h3 class="text-2xl font-semibold mb-2">Does Corten steel require maintenance?</h3>
+        <h3 class="sm:text-2xl text-xl font-semibold mb-2">Does Corten steel require maintenance?</h3>
         <p class="text-gray-600 mb-5">Minimal maintenance is needed. The patinated steel surface naturally regenerates, preventing excessive rusting.</p>
-        <h3 class="text-2xl font-semibold mb-2">How long does Corten steel last?</h3>
+        <h3 class="sm:text-2xl text-xl font-semibold mb-2">How long does Corten steel last?</h3>
         <p class="text-gray-600 mb-5">With proper placement, Corten steel structures can last 40-50 years or more, thanks to their oxidation-resistant alloy properties.</p>
-        <h3 class="text-2xl font-semibold mb-2">Can Corten steel be used in humid climates?</h3>
+        <h3 class="sm:text-2xl text-xl font-semibold mb-2">Can Corten steel be used in humid climates?</h3>
         <p class="text-gray-600 mb-5">Yes, but in extreme humidity or coastal areas, additional rust-resistant steel treatments may be applied to slow oxidation.</p>
-        <h3 class="text-2xl font-semibold mb-2">Where can I source Corten steel in India?</h3>
+        <h3 class="sm:text-2xl text-xl font-semibold mb-2">Where can I source Corten steel in India?</h3>
         <p class="text-gray-600 mb-5">Top suppliers are located in Delhi, Mumbai, and Bangalore, with architectural steel and sculptural steel specialists offering custom fabrication services.</p>
-        <h3 class="text-2xl font-semibold mb-2">Why is Corten steel popular in landscape architecture?</h3>
+        <h3 class="sm:text-2xl text-xl font-semibold mb-2">Why is Corten steel popular in landscape architecture?</h3>
         <p class="text-gray-600 mb-5">Its natural rustic aesthetic, durability, and ability to complement organic elements make it a preferred material for landscaping steel applications.</p>
     </section>
 
     <section >
-        <h2 class="text-3xl font-semibold mb-5">Experience the Art of Timeless Steel</h2>
+        <h2 class="text-xl sm:text-2xl md:text-3xl  font-bold md:font-semibold mb-5">Experience the Art of Timeless Steel</h2>
         <p class="text-gray-600">At FormForge, we sculpt Corten steel into bold expressions of form and function. Whether for public art installations, architectural steel facades, or outdoor steel sculptures, our work is a testament to the enduring beauty of rust-colored steel.</p>
        <p className="text-gray-600">
 </p>
@@ -196,7 +196,7 @@ export interface BlogPost {
                 </section>
     
                 <section class="mb-5">
-                    <h2 class="text-3xl font-semibold mb-5">Key Takeaways</h2>
+                    <h2 class="text-xl sm:text-2xl md:text-3xl  font-bold md:font-semibold  mb-5">Key Takeaways</h2>
                     <ul class="list-disc pl-6 text-gray-600">
                         <li class="mb-2">Understand the unique properties of Corten steel before cleaning</li>
                         <li class="mb-2">Use gentle cleaning methods to preserve the natural patina</li>
@@ -207,7 +207,7 @@ export interface BlogPost {
                 </section>
     
                 <section class="mb-10">
-                    <h2 class="text-3xl font-semibold mb-5">Understanding Corten Steel and Its Properties</h2>
+                    <h2 class="text-2xl md:text-3xl  font-bold md:font-semibold  mb-5">Understanding Corten Steel and Its Properties</h2>
                     <p class="text-gray-600"><b>Corten steel</b> is a new material in building and design. It gets a rust-like look that protects it. This <b>metal tech</b> turns regular steel into something strong and beautiful.</p>
                     <img class="mb-5" src="/images/blog/1-2.webp" alt="Corten Steel Overview">
                     <p class="text-gray-600 mb-10"><b>Weathering steel</b> is different from regular steel. It has copper, chromium, and nickel. These add to its <b>special care</b> needs.</p>
@@ -236,7 +236,7 @@ export interface BlogPost {
                 </section>
     
                 <section class="mb-5">
-                    <h2 class="text-3xl font-semibold mb-5">Essential Tools and Materials for Corten Steel Maintenance</h2>
+                    <h2 class="text-2xl md:text-3xl  font-bold md:font-semibold mb-5">Essential Tools and Materials for Corten Steel Maintenance</h2>
                     <p class="text-gray-600">Maintaining <b>corten steel</b> needs special tools and materials. This keeps its unique look and <b>protective patina</b>. Our guide will show you the best equipment for outdoor care and treatment.</p>
                     <p class="text-gray-600">Before you start <b>cleaning corten</b> steel, get these tools:</p>
                     <ul class="list-disc pl-6 text-gray-600 mb-4">
@@ -280,27 +280,33 @@ export interface BlogPost {
                     </ul>
                     <p class="text-gray-600">This approach ensures effective <b>rusted steel</b> maintenance, oxidized metal cleaning, and patina removal methods while preserving durability and <b>appearance</b>. For stubborn stains, use targeted treatments like specialized rust removers or gentle abrasives.</p>
                     <p class="text-gray-600">For tough stains, try these <b>special methods:</b>:</p>
-                    <div class="p-6 rounded-lg border border-gray-300">
-                        <div class="grid grid-cols-3 divide-x divide-gray-300">
-                            <div>
-                                <div class="p-2 font-bold border-b border-gray-300">Stain Type</div>
-                                <div class="p-2 border-b border-gray-300">Mineral Deposits</div>
-                                <div class="p-2 border-b border-gray-300">Organic Stains</div>
-                                <div class="p-2">Heavy Rust</div>
-                            </div>
-                            <div>
-                                <div class="p-2 font-bold border-b border-gray-300">Recommended Solution</div>
-                                <div class="p-2 border-b border-gray-300">Vinegar Solution</div>
-                                <div class="p-2 border-b border-gray-300">Mild Detergent</div>
-                                <div class="p-2">Specialized Rust Remover</div>
-                            </div>
-                            <div>
-                                <div class="p-2 font-bold border-b border-gray-300">Application Method</div>
-                                <div class="p-2 border-b border-gray-300">Gentle Scrubbing</div>
-                                <div class="p-2 border-b border-gray-300">Soft Cloth Cleaning</div>
-                                <div class="p-2">Professional Application</div>
-                            </div>
-                        </div>
+                    <div class="rounded-lg border border-gray-300 mt-5 sm:p-6 ">
+                      <table class="w-full table-auto">
+                        <thead>
+                          <tr class="divide-x divide-gray-300">
+                            <th class="p-2 sm:p-3 font-bold border-b border-gray-300 align-top">Stain Type</th>
+                            <th class="p-2 sm:p-3 font-bold border-b border-gray-300 align-top">Recommended Solution</th>
+                            <th class="p-2 sm:p-3 font-bold border-b border-gray-300 align-top">Application Method</th>
+                          </tr>
+                        </thead>
+                        <tbody class="divide-y divide-gray-300">
+                          <tr class="divide-x divide-gray-300">
+                            <td class="p-2 sm:p-3 border-b border-gray-300 align-top">Mineral Deposits</td>
+                            <td class="p-2 sm:p-3 border-b border-gray-300 align-top">Vinegar Solution</td>
+                            <td class="p-2 sm:p-3 border-b border-gray-300 align-top">Gentle Scrubbing</td>
+                          </tr>
+                          <tr class="divide-x divide-gray-300">
+                            <td class="p-2 sm:p-3 border-b border-gray-300 align-top">Organic Stains</td>
+                            <td class="p-2 sm:p-3 border-b border-gray-300 align-top">Mild Detergent</td>
+                            <td class="p-2 sm:p-3 border-b border-gray-300 align-top">Soft Cloth Cleaning</td>
+                          </tr>
+                          <tr class="divide-x divide-gray-300">
+                            <td class="p-2 sm:p-3 align-top">Heavy Rust</td>
+                            <td class="p-2 sm:p-3 align-top">Specialized Rust Remover</td>
+                            <td class="p-2 sm:p-3 align-top">Professional Application</td>
+                          </tr>
+                        </tbody>
+                      </table>
                     </div>
                     <h3 class="text-2xl font-semibold mt-10 mb-5">Post-Cleaning Care</h3>
                     <p class="text-gray-600"><b>Post-cleaning</b> care is vital for corten patina care and protecting corten surfaces. After cleaning, apply a sealant to lock in the patina and prevent <b>moisture-induced</b> oxidation, especially in humid or water-prone areas. For rust removal corten steel, use gentle methods like soft brushes and mild detergents to avoid damaging the patina. Always let surfaces dry fully before sealing.</p>
@@ -550,53 +556,68 @@ export interface BlogPost {
         <h3 class="text-2xl font-semibold mb-5">Popular Indian Motifs and Patterns</h3>
         <p class="text-gray-600 mb-5">Indian artists use <b>weathering steel art</b> in new ways. They draw from old designs, making:</p>
         <div class="p-6 rounded-lg border border-gray-300 md:col-span-3">
-          <div class="grid grid-cols-2 divide-x divide-gray-300">
-            <!-- Cultural Inspiration Column -->
-            <div>
-              <div class="p-2 font-bold border-b border-gray-300">Cultural Inspiration</div>
-              <div class="p-2 border-b border-gray-300">Mughal Architectural Patterns</div>
-              <div class="p-2 border-b border-gray-300">Traditional Textile Designs</div>
-              <div class="p-2">Religious Symbolism</div>
-            </div>
-            <!-- Design Approach Column -->
-            <div>
-              <div class="p-2 font-bold border-b border-gray-300">Design Approach</div>
-              <div class="p-2 border-b border-gray-300">Delicate geometric cutouts</div>
-              <div class="p-2 border-b border-gray-300">Layered perforated sculptures</div>
-              <div class="p-2">Spiritual metaphorical forms</div>
-            </div>
-          </div>
+          <table class="w-full table-auto">
+            <thead>
+              <tr class="divide-x divide-gray-300">
+                <th class="p-2 font-bold border-b border-gray-300 align-top">Cultural Inspiration</th>
+                <th class="p-2 font-bold border-b border-gray-300 align-top">Design Approach</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-300">
+              <tr class="divide-x divide-gray-300">
+                <td class="p-2 border-b border-gray-300 align-top">Mughal Architectural Patterns</td>
+                <td class="p-2 border-b border-gray-300 align-top">Delicate geometric cutouts</td>
+              </tr>
+              <tr class="divide-x divide-gray-300">
+                <td class="p-2 border-b border-gray-300 align-top">Traditional Textile Designs</td>
+                <td class="p-2 border-b border-gray-300 align-top">Layered perforated sculptures</td>
+              </tr>
+              <tr class="divide-x divide-gray-300">
+                <td class="p-2 align-top">Religious Symbolism</td>
+                <td class="p-2 align-top">Spiritual metaphorical forms</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
+
         <p class="text-gray-600 mt-5 mb-10">Designers make living artworks with <b>Corten Steel</b>. These pieces change as they interact with the environment.</p>
     
         <h3 class="text-2xl font-semibold mb-5">Sourcing and Installation Guide for <b>Steel Art</b></h3>
         <p class="text-gray-600">Creating stunning <b>metal sculptures</b> needs careful planning and expert knowledge. We'll show you the key steps for finding and installing <b>oxidation-resistant alloys</b> for your projects.</p>
         <p class="text-gray-600 mb-5">Finding the right suppliers is key for top-notch industrial patina artwork. Look for the best manufacturers in major Indian cities:</p>
-        <div class="p-6 rounded-lg border border-gray-300">
-          <div class="grid grid-cols-3 divide-x divide-gray-300">
-            <!-- City Column -->
-            <div>
-              <div class="p-2 font-bold border-b border-gray-300">City</div>
-              <div class="p-2 border-b border-gray-300">Delhi</div>
-              <div class="p-2 border-b border-gray-300">Mumbai</div>
-              <div class="p-2">Bangalore</div>
-            </div>
-            <!-- Top Suppliers Column -->
-            <div>
-              <div class="p-2 font-bold border-b border-gray-300">Top Suppliers</div>
-              <div class="p-2 border-b border-gray-300">Metal Craft Industries</div>
-              <div class="p-2 border-b border-gray-300">Steel Art Solutions</div>
-              <div class="p-2">Innovative Metal Works</div>
-            </div>
-            <!-- Specialty Column -->
-            <div>
-              <div class="p-2 font-bold border-b border-gray-300">Specialty</div>
-              <div class="p-2 border-b border-gray-300">Architectural <b>metal sculptures</b></div>
-              <div class="p-2 border-b border-gray-300">Custom <b>landscaping materials</b></div>
-              <div class="p-2">Contemporary rust patina designs</div>
-            </div>
-          </div>
+        <div class="rounded-lg border border-gray-300 mt-5 sm:p-6">
+          <table class="w-full table-auto">
+            <thead>
+              <tr class="divide-x divide-gray-300">
+                <th class="p-2 sm:p-3 font-bold border-b border-gray-300 align-top">City</th>
+                <th class="p-2 sm:p-3 font-bold border-b border-gray-300 align-top">Top Suppliers</th>
+                <th class="p-2 sm:p-3 font-bold border-b border-gray-300 align-top">Specialty</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-300">
+              <tr class="divide-x divide-gray-300">
+                <td class="p-2 sm:p-3 border-b border-gray-300 align-top">Delhi</td>
+                <td class="p-2 sm:p-3 border-b border-gray-300 align-top">Metal Craft Industries</td>
+                <td class="p-2 sm:p-3 border-b border-gray-300 align-top">
+                  Architectural <b>metal sculptures</b>
+                </td>
+              </tr>
+              <tr class="divide-x divide-gray-300">
+                <td class="p-2 sm:p-3 border-b border-gray-300 align-top">Mumbai</td>
+                <td class="p-2 sm:p-3 border-b border-gray-300 align-top">Steel Art Solutions</td>
+                <td class="p-2 sm:p-3 border-b border-gray-300 align-top">
+                  Custom <b>landscaping materials</b>
+                </td>
+              </tr>
+              <tr class="divide-x divide-gray-300">
+                <td class="p-2 sm:p-3 align-top">Bangalore</td>
+                <td class="p-2 sm:p-3 align-top">Innovative Metal Works</td>
+                <td class="p-2 sm:p-3 align-top">Contemporary rust patina designs</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
+
         <p class="text-gray-600 mt-5 mb-3">Before installing your <b>metal sculptures</b>, you'll need certain tools and techniques:</p>
         <ul class="list-disc pl-6 text-gray-600 mb-4">
           <li class="mb-2">High-quality welding equipment</li>

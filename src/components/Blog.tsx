@@ -31,7 +31,7 @@ const Blog: React.FC = () => {
         </script>
       </Helmet>
 
-      <div className="max-w-[90%] mx-auto sm:px-6 lg:px-8 py-12">
+      <div className="max-w-[90%] mx-auto sm:px-6 lg:px-8 pt-[48px] pb-12 sm:pt-16">
         <Navbar />
         <div className="responsive-zoom sm:-m-0">
          
