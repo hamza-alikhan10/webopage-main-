@@ -64,7 +64,7 @@ const Portfolio = () => {
   const closeModal = () => setSelectedIndex(null);
 
   return (
-    <div className="min-h-screen bg-white" id="Root-padding">
+    <div className="min-h-screen bg-white pt-[48px] sm:pt-16 pb-12 " >
       {/* SEO Metadata with react-helmet */}
       <Helmet>
         <title>FormForge | Gallery of Luxury Sculptures</title>
@@ -114,11 +114,11 @@ const Portfolio = () => {
         </script>
       </Helmet>
 
-      <div className="max-w-10xl flex flex-col items-center justify-center mx-auto">
+      <div className="max-w-10xl flex flex-col items-center  justify-center mx-auto">
         <Navbar />
 
         {/* Grid for images */}
-        <div className="grid grid-cols-3 gap-1 w-[100%]">
+        <div className="grid grid-cols-3 gap-1 px-[7%] w-[100%]">
           {IMAGES.map((image, index) => (
             <div
               key={index}
@@ -128,6 +128,7 @@ const Portfolio = () => {
               <div className="overflow-hidden shadow-lg relative">
                 <img
                   src={image.src}
+                  loading="lazy"
                   alt={`Portfolio Image ${index + 1}`}
                   className="w-full object-cover transition-transform duration-300 group-hover:scale-110"
                 />

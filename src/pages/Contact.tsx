@@ -56,10 +56,10 @@ const Contact = () => {
   };
 
   return (
-    <div className="w-full min-h-screen bg-beige" id="Root-padding">
+    <div className="w-full min-h-screen bg-beige pt-[48px] pb-12 sm:pt-16" >
       <Navbar />
       
-      <div className="container mx-auto">
+      <div className=" mx-auto px-[7%]" >
         <div className="bg-[#F5F5F5] border border-[#FDE1D3] md:p-16 sm:p-10 py-8 px-5">
           <h3 className="sm:text-xl sm:font-semibold text-lg mb-10 text-center">Connect with us to get started!</h3>
           <form onSubmit={handleSubmit} className="flex flex-col space-y-2 md:space-y-6 max-w-3xl mx-auto">
@@ -119,8 +119,10 @@ const Contact = () => {
         </div>
       </div>
 
-      <div className="container mt-5 ">
+      <div className="w-full px-[7%]">
+      <div className="mt-5 ">
         <img src="./DON5.jpg" alt="Studio" className="w-full object-cover rounded-lg" />
+      </div>
       </div>
       <Footer />
     </div>

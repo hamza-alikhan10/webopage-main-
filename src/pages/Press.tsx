@@ -73,7 +73,7 @@ const publications: Publication[] = [
 
 const Press = () => {
     return (
-        <section className="py-16 px-4 md:px-8" id="Root-padding">
+        <section className="pt-[48px] pb-12 sm:pt-16 px-4 md:px-8" >
             {/* SEO Metadata with react-helmet */}
             <Helmet>
                 <title>FormForge | Press </title>
@@ -124,7 +124,7 @@ const Press = () => {
             </Helmet>
 
             <Navbar />
-            <div className="max-w-7xl mx-auto">
+            <div className="max-w-7xl px-[7%] mx-auto">
                 <div className="grid grid-cols-3 md:grid-cols-3 lg:grid-cols-3 gap-5">
                     {publications.slice(0, 10).map((pub, index) => (
                         <a
@@ -137,6 +137,7 @@ const Press = () => {
                             <Card className="aspect-square flex items-center justify-center p-0 m-0 border-none">
                                 <img
                                     src={pub.logo}
+                                    loading="lazy"
                                     alt={`${pub.name} logo`}
                                     className="w-full h-full object-contain"
                                 />

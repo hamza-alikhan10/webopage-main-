@@ -23,7 +23,7 @@ const Biography: React.FC<BiographyProps> = ({ sections }) => {
           {sections.map((section, index) => {
             const imageFloatClass =
               section.position === "left"
-                ? "float-left sm:mr-4 md:mr-5 mr-3"
+                ? "float-left sm:mr-4 md:mr-5 mt-[15%] sm:mt-[9%] mr-3"
                 : "float-right sm:ml-4 md:ml-5 ml-2";
 
             return (
@@ -34,11 +34,11 @@ const Biography: React.FC<BiographyProps> = ({ sections }) => {
                <img
   src={section.image}
   alt={section.heading}
-  className={`${imageFloatClass} block ${
+  className={`${imageFloatClass} block object-fill ${
     section.position === "left" 
       ? "w-[55%] h-[170px] sm:w-[50%] sm:h-[250px] md:h-[300px] lg:h-[260px]" 
       : "w-[47%] h-[310px] sm:w-[40%] sm:h-[220px] md:h-[250px] lg:h-[500px]"
-  } rounded-xl mr-2 mt-5 mb-1`}
+  }  mr-2 mt-5 mb-1`}
 />
 
 
