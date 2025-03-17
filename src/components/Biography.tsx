@@ -42,17 +42,18 @@ const Biography: React.FC<BiographyProps> = ({ sections }) => {
 />
 
 
-                <h1
-                  className={`text-left ${
-                    section.position === "left" ? "text-right" : "text-left"
-                  } -ml-4 md:text-4xl sm:text-2xl text-xl`}
-                  style={{
-                    fontFamily: "Montserrat",
-                    letterSpacing: ".06em",
-                  }}
-                >
-                  {section.heading}
-                </h1>
+<h1
+  className={`text-left ${
+    section.position === "left" ? "text-right" : "text-left"
+  } -ml-4 md:text-4xl sm:text-xl text-lg whitespace-nowrap`}
+  style={{
+    fontFamily: "Montserrat",
+    letterSpacing: ".06em",
+  }}
+>
+  {section.heading}
+</h1>
+
                 {/* Ensure line breaks are respected */}
                 {section.information.split('\n').map((line, i) => (
                   <p
