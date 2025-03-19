@@ -86,7 +86,7 @@ export interface BlogPost {
       "date": "2025-03-07"
     },
     {
-        "id": "corten-steel-sculptures-india",
+        "id": "about-corten-steel-sculptures",
         "title": "Corten Steel Sculptures in India: The Fusion of Art, Architecture & Industrial Aesthetics",
         "metaDescription": "Explore the timeless appeal of Corten steel sculptures in India. Learn about the science behind weathering steel, its applications in public spaces, pricing, and why it’s a favorite for landscape architecture and industrial design.",
       "content": `
@@ -176,7 +176,7 @@ export interface BlogPost {
       "date": "2025-02-26",
   },
     {
-        "id": "cleaning-corten-steel",
+        "id": "how-to-clean-corten-steel",
         "title": "How to Clean Corten Steel: Tips & Techniques",
         "metaDescription": "Discover stunning Corten Steel sculptures for your space in India. We explore pricing, design options, and advantages of weathering steel art that adds rustic charm to any setting.",
         "content": `
@@ -435,7 +435,7 @@ export interface BlogPost {
         "date": "2025-02-26",
     },
     {
-        "id": "corten-steel-india",
+        "id": "Corten-steel-Prices",
         "title": "Corten Steel Sculptures in India:         Prices, Stunning Designs, and Benefits",
         "metaDescription": "Explore the beauty of Corten Steel sculptures in India. Learn about prices, design options, and the unique advantages of weathering steel art.",
         "content": `
@@ -505,7 +505,6 @@ export interface BlogPost {
     
       <section class="mb-10">
         <h2 class="text-3xl font-semibold mb-5">Cost Analysis: <b>Corten Steel</b> Sculpture Pricing in India</h2>
-        <img class="mb-5" src="/images/blog/1-9.jpeg" alt="Corten Steel Sculpture Pricing">
         <p class="text-gray-600">Looking into the cost of <b>patina steel</b> sculptures in India shows a complex market. These <b>corrosion-resistant steel</b> artworks are getting more popular. Prices change a lot because of different factors.</p>
         <p class="text-gray-600">The price of <b>industrial steel</b> <b>metal sculptures</b> depends on a few important things:</p>
         <ul class="list-disc pl-6 text-gray-600 mb-4">

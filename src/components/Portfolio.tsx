@@ -23,11 +23,11 @@ const IMAGES = [
     alt: "Twin Spirits Sculpture in Chennai, India, 2023", 
     caption: <>Twin Spirits </>,
     details: {
-      heading: "Twin Spirits",
-      location: "(Chennai) IND, 2023",
+      heading: "T W I N Spirits",
+      location: "",
       description: "Twin Spirits explores the duality of human existence through contrasting yet complementary forms. The sculpture represents the harmony between opposing forces in nature and within ourselves.",
-      details: "Material: Corten steel, stainless steel accents, weather-resistant finish\nHeight: 12 ft, Width: 8 ft, Depth: 5 ft",
-      credits: <>Artist: Abhinav Goyal <br /> Commissioned for: Private Residence, Hyderabad <br /> Photography: Kiasma Studio</>
+      details: "dont knw",
+      credits: <>dnt knw</>
     }
   },
   { 
@@ -36,7 +36,7 @@ const IMAGES = [
     caption: <>The Metamorphosis Muse</>,
     details: {
       heading: "The Metamorphosis Muse",
-      location: "Hyderabad, India, 2025",
+      location: "",
       description: <>A divine embodiment of transformation, radiates grace and power, adorned with golden butterflies that symbolize rebirth and evolution. Capturing the essence of a goddess, the sculpture stands as a tribute to beauty, strength, and the ever-unfolding journey of change. Seen here with the stunning <b><u><a href="https://www.mashindia.com/" target="_blank" style={{ textDecoration: "underline", fontWeight: "bold" }}>Shalini Passi</a></u></b>, it exudes an ethereal presence, where art and divinity intertwine in a timeless celebration of allure.</>,
       details: <>Stainless steel with a satin brass finish.<br />Height: 1800mm | Width: 690mm</>,
       credits: <>Artist: Abhinav Goyal <br /> Commissioned for: Hyderabad Design District <br /> Photography: HT City</>
@@ -47,10 +47,10 @@ const IMAGES = [
     alt: "Vighnaharta Sculpture in Mumbai, India, 2022", 
     caption: <>Vighnaharta</>,
     details: {
-      heading: "Vighnaharta",
-      location: "Mumbai, India, 2022",
-      description: "Inspired by Lord Ganesha, the remover of obstacles, this sculpture blends traditional symbolism with contemporary design, symbolizing prosperity and wisdom.",
-      details: "Material: Bronze, stone base\nHeight: 10 ft, Width: 6 ft, Depth: 4 ft",
+      heading: "V I G H N A H A R T A",
+      location: "",
+      description: <>Inspired by <b>Lord Ganesha</b>, the remover of obstacles. <br />  Merging traditional symbolism with contemporary design, it embodies prosperity, wisdom, and strength. <br /> While its refined metallic sheen enhances depth and elegance. <br /> Designed to be a striking focal point, it seamlessly integrates spiritual essence with modern artistry.</>,
+      details: <>Material: Bronze, stone base <br /> Height: 10 ft | Width: 6 ft | Depth: 4 ft</>,
       credits: <>Artist: Abhinav Goyal <br /> Commissioned for: Hyderabad Design District <br /> Photography: HT City</>
     }
   },
@@ -59,11 +59,12 @@ const IMAGES = [
     alt: "David Sculpture at Casamia, UAE, 2021", 
     caption: <>David</>,
     details: {
-      heading: "David",
-      location: " UAE, 2021",
-      description: <>FORMFORGE's abstract reinterpretation of Michelangelo's David redefines classical artistry with a bold, modern twist. Sculpted in stainless steel with an astonishing antique brass finish, its asymmetrical metal plates create a striking interplay of light and form. The sculpture has been installed in Dubai, at <b>Palm Jumeirah</b>. This backlit masterpiece, ideal for both indoor and outdoor settings, embodies strength, defiance, and timeless elegance.</>,
-      details: "Material: Stainless Steel 316\nFinish: Brushed antique brass\nSize: 1800mm x 720mm x 475mm",
-      credits:  <>FormForge Studios Commissioned by: <b><u><a href="https://casamiaindia.in/" target="_blank" style={{ textDecoration: "underline", fontWeight: "bold" }}>  Casamia Estates</a></u></b></>
+      heading: "D A V I D",
+      location: " ",
+      description: <>An abstract reinterpretation of Michelangelo's David redefines classical artistry with a bold, modern twist, merging timeless form with contemporary expression.  <br />    Sculpted in stainless steel with an astonishing antique brass finish, its asymmetrical metal plates create a striking interplay of light and form. The sculpture has been installed in Dubai, at <b>Palm Jumeirah</b>. <br /> This backlit masterpiece, ideal for both indoor and outdoor settings, embodies strength, defiance, and timeless elegance.</>,
+      details: <>Stainless Steel 316 with a brushed antique brass finish. <br /> Size: 1800mm x 720mm x 475mm</>,
+      credits:  <>Artist: Abhinav Goyal <br /> Commissioned for: 
+      <b><u><a href="https://casamiaindia.in/" target="_blank" style={{ textDecoration: "underline", fontWeight: "bold" }}>  Casamia Estates</a></u></b></>
     }
   },
   { 
@@ -71,11 +72,11 @@ const IMAGES = [
     alt: "The Lotus Nouvel Sculpture in Pune, India, 2020", 
     caption: <>The Lotus Nouvel</>,
     details: {
-      heading: "The Lotus Nouvel",
-      location: "Pune, India, 2020",
-      description: "Inspired by the blooming lotus, this sculpture symbolizes purity and renewal, with delicate petals rising from a sturdy base.",
-      details: "Material: Aluminum, powder-coated finish\nHeight: 8 ft, Width: 10 ft, Depth: 10 ft",
-      credits: <>Artist: Abhinav Goyal <br /> Commissioned for: Private Residence, Hyderabad <br /> Photography: Kiasma Studio</>
+      heading: "L O T U S Nouvel",
+      location: "",
+      description: <>Where Nature’s rhythm takes form. Forged in Corten Steel, material that evolves with time, just as nature does. Its weathered rust finish, sealed with imported PU, enhances its raw, organic allure. Inspired by the seamless processes of replication and locomotion, this sculpture blurs the boundaries between reality and fantasy. <br />Elements drawn from diverse plant forms merge into a hybrid design, reflecting the ingenuity of the natural world. <br /> Resting in serene spaces, The Lotus Nouvel stands as a tribute to nature’s endless cycles of growth and transformation. <br /> An artistic embodiment of strength, elegance, and timeless beauty.</>,
+      details: <>3mm Corten steel with a weathered rust finish sealed <br />  Height: 7ft</>,
+      credits: <>Artist: Abhinav Goyal <br /> Commissioned for: Private Residence, Hyderabad <br /> Photography: <b><u><a href="https://casamiaindia.in/" target="_blank" style={{ textDecoration: "underline", fontWeight: "bold" }}>  Casamia India</a></u></b></>
     }
   },
   { 
@@ -83,8 +84,8 @@ const IMAGES = [
     alt: "Mermaid | Oh'll'nam Sculpture in Vadodara, India, 2022", 
     caption: <>Mermaid | Oh'll'nam</>,
     details: {
-      heading: "Mermaid | Oh'll'nam",
-      location: "Vadodara, India, 2022",
+      heading: "M E R M A I D",
+      location: "",
       description: "A whimsical portrayal of a mermaid emerging from water, blending myth with modern artistry to evoke mystery and grace.",
       details: "Material: Fiberglass, resin, metallic paint\nHeight: 7 ft, Width: 5 ft, Depth: 4 ft",
       credits: <>Artist: Abhinav Goyal <br /> Commissioned for: Private Residence, Hyderabad <br /> Photography: Kiasma Studio</>
@@ -93,12 +94,12 @@ const IMAGES = [
   { 
     src: "/levitating-whale-kpmg-gurugram-2022.webp", 
     alt: "Levitating Whale Sculpture at KPMG, Gurugram, India, 2022", 
-    caption: <>Levitating Whale, KPMG</>,
+    caption: <>Levitating Whale </>,
     details: {
-      heading: "Levitating Whale",
-      location: "Gurugram, India, 2022",
-      description: "This sculpture captures the majesty of a whale appearing to float mid-air, symbolizing freedom and innovation in a corporate environment.",
-      details: "Material: Stainless steel, acrylic suspension\nHeight: 6 ft, Width: 12 ft, Depth: 4 ft",
+      heading: "Levitating W H A L E",
+      location: "",
+      description: <>Suspended in mid-air, Dive is a surreal and whimsical masterpiece, blurring the line between reality and imagination. <br /> It hovers in the vestibule—the heart of this workplace,commanding attention with its raw, weathered beauty. <br /> <i>A chime that takes your breath away!</i></>,
+      details: <>Material: Corten Steel <br /> Dimensions: 15 ft (L) x 5 ft 5 in (Dia.)</>,
       credits: <>Artist: Abhinav Goyal <br /> Commissioned for: Private Residence, Hyderabad <br /> Photography: Kiasma Studio</>
     }
   },
@@ -107,8 +108,8 @@ const IMAGES = [
     alt: "The Tree of Life Sculpture in Delhi, India, 2025", 
     caption: <>The Tree of Life</>,
     details: {
-      heading: "The Tree of Life",
-      location: "Delhi, India, 2025",
+      heading: "Tree of Life",
+      location: "",
       description: "A towering representation of interconnectedness and growth, with intricate branches reaching skyward to symbolize vitality and resilience.",
       details: "Material: Corten steel, LED accents\nHeight: 18 ft, Width: 10 ft, Depth: 10 ft",
       credits:<>Artist: Abhinav Goyal <br /> Commissioned for: Private Residence, Hyderabad <br /> Photography: Kiasma Studio</>
@@ -119,8 +120,8 @@ const IMAGES = [
     alt: "Inverted Cactus Sculpture in Hyderabad, India, 2023", 
     caption: <>Inverted Cactus </>,
     details: {
-      heading: "Inverted Cactus",
-      location: "India, 2023",
+      heading: "Inverted C A C T U S",
+      location: "",
       description: "A mesmerizing fusion of nature and design, Inverted Cactus reimagines the iconic desert form as a suspended, illuminated sculpture. Crafted in corten steel with a rusted PU finish, its warm, earthy tones complement lush greenery, while its integrated lighting casts a soft, ambient glow. Hanging gracefully from the ceiling, it transforms the space into an enchanting oasis, both a statement piece and a seamless extension of the landscape.",
       details: <>Crafted from Corten Steel with a rust finish sealed with Imported PU,<br/> Dimension: 1500mm x 765mm x 200mm."</>,
       credits: <>Artist: Abhinav Goyal <br /> Commissioned for: Private Residence, Hyderabad <br /> Photography: Kiasma Studio</>
@@ -132,7 +133,7 @@ const IMAGES = [
     caption: <>Sculptural Totems</>,
     details: {
       heading: "Sculptural Totems",
-      location: "Hyderabad, India, 2025",
+      location: "",
       description: "A series of vertical forms inspired by ancient totems, these sculptures blend cultural heritage with modern abstraction.",
       details: "Material: Wood, steel, stone\nHeight: 14 ft, Width: 3 ft, Depth: 3 ft (each)",
       credits: "Artist: FormForge Studios, Commissioned by Hyderabad Arts Council"
@@ -143,11 +144,17 @@ const IMAGES = [
     alt: "The Raging Stallions Sculpture in Chennai, India, 2021", 
     caption: <>The Raging Stallions</>,
     details: {
-      heading: "The Raging Stallions",
-      location: "Chennai, India, 2021",
-      description: "Dynamic and powerful, this sculpture captures the wild energy of stallions in motion, symbolizing strength and freedom.",
-      details: "Material: Bronze, steel base\nHeight: 10 ft, Width: 14 ft, Depth: 6 ft",
-      credits: "Artist: FormForge Studios, Commissioned by Chennai Sculpture Park"
+      heading: "S T A L L I O N S",
+      location: "",
+      description: <>Curves hold an untamed power—fluid yet fierce, commanding yet free. To capture their essence is no easy feat.
+      <br /> It demands more than form; it requires motion, rhythm, and soul.
+      These raging stallions dance with light and weather, <br />their presence shifting with every passing moment. 
+      They pull you beyond the ordinary, igniting something primal, something wild. To witness them is to ride upon the wind, 
+      <br />to dance upon the brink like a flame— <i>Unbridled, Fearless, and Untamed.</i></>,
+     
+     details: <>Material: Lightweight, Resilient Aluminum. <br /> Dimensions: dnt knw</>,
+
+      credits: <>Artist: Abhinav Goyal <br /> Commissioned for: dnt knw <br /> Photography: dnt knw</>
     }
   },
   { 
@@ -155,8 +162,8 @@ const IMAGES = [
     alt: "The Wing Man Sculpture in Dubai, UAE, 2024", 
     caption: <>The Wing Man</>,
     details: {
-      heading: "The Wing Man",
-      location: "Dubai, UAE, 2024",
+      heading: "W I N G   M A N",
+      location: "",
       description: "A futuristic figure with outstretched wings, representing ambition and the pursuit of limitless possibilities.",
       details: "Material: Polished aluminum, LED lighting\nHeight: 12 ft, Width: 8 ft, Depth: 4 ft",
       credits: "Artist: FormForge Studios, Commissioned by Dubai Art Expo"
@@ -168,7 +175,7 @@ const IMAGES = [
     caption: <>The Sole Gaze</>,
     details: {
       heading: "The Sole Gaze",
-      location: "Bangalore, India, 2023",
+      location: "",
       description: "An introspective figure gazing upward, symbolizing contemplation and the search for meaning in a fast-paced world.",
       details: "Material: Stainless steel, stone pedestal\nHeight: 8 ft, Width: 3 ft, Depth: 3 ft",
       credits: <>Artist: Abhinav Goyal <br /> Commissioned for: Hyderabad Design District <br /> Photography: HT City</>
@@ -180,7 +187,7 @@ const IMAGES = [
     caption: <>The Leaning Man</>,
     details: {
       heading: "The Leaning Man",
-      location: "Hyderabad, India, 2023",
+      location: "",
       description: "A figure leaning forward as if defying gravity, representing resilience and the human spirit's ability to push boundaries.",
       details: "Material: Corten steel, concrete base\nHeight: 9 ft, Width: 5 ft, Depth: 4 ft",
       credits: "Artist: FormForge Studios, Commissioned by Hyderabad Urban Arts"
@@ -192,7 +199,7 @@ const IMAGES = [
     caption: <>The Meditating Lady</>,
     details: {
       heading: "The Meditating Lady",
-      location: "Goa, India, 2018",
+      location: "",
       description: "A serene female figure in meditation, embodying peace and inner strength amidst a tranquil coastal setting.",
       details: "Material: Bronze, weathered patina\nHeight: 6 ft, Width: 4 ft, Depth: 4 ft",
       credits: "Artist: FormForge Studios, Commissioned by Goa Serenity Project"
@@ -203,11 +210,15 @@ const IMAGES = [
     alt: "Etherea Sculpture in Chennai, India, 2019", 
     caption: <>Etherea</>,
     details: {
-      heading: "Etherea",
-      location: "Chennai, India, 2019",
-      description: "A delicate, cloud-like form that appears to float, symbolizing the ephemeral nature of existence and dreams.",
-      details: "Material: Aluminum mesh, LED lighting\nHeight: 10 ft, Width: 12 ft, Depth: 12 ft",
-      credits: "Artist: FormForge Studios, Commissioned by Chennai Dreamscapes"
+      heading: "E T H E R E A",
+      location: "",
+      description: <>A delicate balance of light, air, and spirit, Etherea stands in quiet stillness, 
+      yet never truly still. Her glow lures nature into a silent dance, evoking an unspoken dialogue between form and perception. 
+      More than a fleeting vision,
+      <br /> she resists a mere passing glance—demanding pause, thought, and introspection.</>,
+      details: "dont knw",
+      credits: <>Artist: Abhinav Goyal <br /> Commissioned for: Private Residence, Uttandi, Chennai 
+      <br /> Landscape Design: Kiasma Studio<br />Photography: Ricken Desai</>
     }
   },
   { 
@@ -227,11 +238,15 @@ const IMAGES = [
     alt: "Nandi Sculpture in Pune, India, 2020", 
     caption: <>Nandi</>,
     details: {
-      heading: "Nandi",
-      location: "Pune, India, 2020",
-      description: "A contemporary take on the sacred bull Nandi, symbolizing devotion and strength in Hindu tradition.",
-      details: "Material: Bronze, stone base\nHeight: 7 ft, Width: 5 ft, Depth: 3 ft",
-      credits: "Artist: FormForge Studios, Commissioned by Pune Heritage Society"
+      heading: "N A N D I",
+      location: "",
+      description: <>A symbol of devotion, patience, and strength, stands poised in bustling Pune residence, 
+      embodying the essence of waiting, welcome, and acceptance virtues deeply rooted in Indian tradition. <br />
+      Crafted for Shivtirtha House, Pune. This sculpture is more than art, it's an invocation.
+      <br /> A silent guardian, a sage of divine wisdom, ushering in an aura of growth, 
+      harmony, and timeless presence.</>,
+      details: "dont know",
+      credits:  <>Artist: Abhinav Goyal <br /> Commissioned for: Shivtirtha House, Pune <br /> Photography: FormForge</>
     }
   },
   { 
@@ -246,16 +261,21 @@ const IMAGES = [
       credits: "Artist: FormForge Studios, Commissioned by Hyderabad Public Spaces"
     }
   },
-  { 
+  {
     src: "/bloom-delhi-2021.webp", 
     alt: "Bloom Sculpture in Delhi, India, 2021", 
     caption: <>Bloom</>,
     details: {
-      heading: "Bloom",
-      location: "Delhi, India, 2021",
-      description: "An abstract floral form in mid-bloom, symbolizing growth, beauty, and the cycle of life.",
-      details: "Material: Stainless steel, painted finish\nHeight: 9 ft, Width: 6 ft, Depth: 6 ft",
-      credits: "Artist: FormForge Studios, Commissioned by Delhi Bloom Festival"
+      heading: "B L O O M",
+      location: "",
+      description: <>A poetic tribute to nature, Bloom unfolds with resilience and grace, embodying elegance in its purest form.
+       <br /> Rooted in serenity, this sculptural masterpiece flourishes in its refreshing surroundings.
+       <br /> Inspired by our national flower, Bloom was born from a vision sparked at the India Design ID Fair 2020, 
+       <br />where the client was instantly drawn to our work. Designed to seamlessly merge with its space,
+       <br /> it stands as an organic extension of nature. <br /> <i>An emblem of renewal, harmony, and timeless beauty.</i></>,
+      details: <>Material: Corten Steel & Brass   <br />
+      Dimensions: 5ft | 7ft is it correct?</>,
+      credits:  <>Artist: Abhinav Goyal <br /> Commissioned for: Shivtirtha House, Pune <br /> Photography: FormForge</>
     }
   },
   { 
@@ -309,13 +329,18 @@ const IMAGES = [
   { 
     src: "/raging-bull-goa-2024.webp", 
     alt: "Raging Bull Sculpture in Goa, India, 2024", 
-    caption: <>Raging Bull</>,
+    caption: <>Raging B U L L</>,
     details: {
       heading: "Raging Bull",
       location: "Goa, India, 2024",
-      description: "A powerful bull in mid-charge, embodying raw energy and untamed spirit against a coastal backdrop.",
-      details: "Material: Bronze, steel reinforcement\nHeight: 8 ft, Width: 12 ft, Depth: 5 ft",
-      credits: "Artist: FormForge Studios, Commissioned by Goa Art Collective"
+      description: <> A force of unbridled power and raw intensity, Raging Bull captures the creature’s wrath <br /> through a striking
+       abstraction in Corten steel. Weathered to perfection, its dynamic form <br /> commands attention at the main entrance plaza
+        of a private villa in Goa.<br />A bold expression of strength and dominance, it stands as a testament to resilience and untamed energy.</>,
+      details: <>2mm Corten steel with a Weathered Finish. <br /> Dimensions: 12ft x 5ft
+       <br /> Location: Goa  <br />
+      Landscape Curation: Kiasma Studio <br />
+      Project Designer: Ameet Mirpuri</>,
+      credits:  <>Artist: Abhinav Goyal <br /> Commissioned for: Private villa in Goa <br /> Photography: Kiasma Studio</>
     }
   },
   { 
@@ -323,11 +348,17 @@ const IMAGES = [
     alt: "The Raging Stallions Sculpture in Chennai, India, 2021", 
     caption: <>The Raging Stallions</>,
     details: {
-      heading: "The Raging Stallions",
-      location: "Chennai, India, 2021",
-      description: "Dynamic and powerful, this sculpture captures the wild energy of stallions in motion, symbolizing strength and freedom.",
-      details: "Material: Bronze, steel base\nHeight: 10 ft, Width: 14 ft, Depth: 6 ft",
-      credits: "Artist: FormForge Studios, Commissioned by Chennai Sculpture Park"
+      heading: "S T A L L I O N S",
+      location: "",
+      description: <>Curves hold an untamed power—fluid yet fierce, commanding yet free. To capture their essence is no easy feat.
+      <br /> It demands more than form; it requires motion, rhythm, and soul.
+      These raging stallions dance with light and weather, <br />their presence shifting with every passing moment. 
+      They pull you beyond the ordinary, igniting something primal, something wild. To witness them is to ride upon the wind, 
+      <br />to dance upon the brink like a flame— <i>Unbridled, Fearless, and Untamed.</i></>,
+     
+     details: <>Material: Lightweight, Resilient Aluminum. <br /> Dimensions: dnt knw</>,
+
+      credits: <>Artist: Abhinav Goyal <br /> Commissioned for: dnt knw <br /> Photography: dnt knw</>
     }
   },
   { 
@@ -335,11 +366,15 @@ const IMAGES = [
     alt: "Panthera Sculpture in Dubai, UAE, 2020", 
     caption: <>Panthera</>,
     details: {
-      heading: "Panthera",
-      location: "Dubai, UAE, 2020",
-      description: "A sleek panther poised for action, representing agility, power, and grace in a modern urban context.",
-      details: "Material: Blackened steel, polished finish\nHeight: 5 ft, Width: 10 ft, Depth: 3 ft",
-      credits: "Artist: FormForge Studios, Commissioned by Dubai Wildlife Fund"
+      heading: "P A N T H E R A",
+      location: "",
+      description: <>A shadow in motion, a whisper in the dark. It stands as the spirit of the night, a traveler between realms. <br />
+      There is an enchantment in its soft, deliberate pounce, a quiet dignity in solitude. <br />
+      Hollow yet alive, its sculpted form breathes with an ethereal presence. The faceted stainless steel surface,<br />like watered silk,
+       shimmers with an otherworldly glow, shifting with light and movement. <br />
+      A creature of instinct and elegance, it exists between reality and myth.</>,
+      details:<>Material: 3mm Stainless Steel <br /> Dimensions: 7ft | 3ft | 1.8ft</>,
+      credits: <>Artist: Abhinav Goyal <br /> Commissioned for: dnt knw <br /> Photography: dnt knw</>
     }
   },
   { 
@@ -381,7 +416,7 @@ const IMAGES = [
   { 
     src: "/sole-gaze-bangalore_2023.webp", 
     alt: "The Sole Gaze Sculpture in Bangalore, India, 2023", 
-    caption: <>The Sole Gaze (Bangalore) IND, 2023</>,
+    caption: <>The Sole Gaze</>,
     details: {
       heading: "The Sole Gaze",
       location: "Bangalore(IND), 2023",
@@ -405,7 +440,7 @@ const IMAGES = [
   { 
     src: "/a-quiet-gaze-oman-2024.webp", 
     alt: "A Quiet Gaze abstract sculpture in Oman, UAE, 2024", 
-    caption: <>A Quiet Gaze<br />(Oman) UAE, 2024</>,
+    caption: <>A Quiet Gaze</>,
     details: {
       heading: "A Quiet Gaze",
       location: "Oman, UAE, 2024",
@@ -417,7 +452,7 @@ const IMAGES = [
   { 
     src: "/wing-sculpture-gurugram-2022.webp", 
     alt: "The Wing Sculpture modern metal installation in Gurugram, India, 2022", 
-    caption: <>The Wing Sculpture<br />(Gurugram) IND, 2022</>,
+    caption: <>The Wing Sculpture</>,
     details: {
       heading: "The Wing Sculpture",
       location: "Gurugram, India, 2022",
@@ -429,7 +464,7 @@ const IMAGES = [
   { 
     src: "/dreaming-of-dharma-noida-2024.webp", 
     alt: "Dreaming Of Dharma spiritual sculpture in Noida, India, 2024", 
-    caption: <>Dreaming Of Dharma<br />(Noida) IND, 2024</>,
+    caption: <>Dreaming Of Dharma</>,
     details: {
       heading: "Dreaming Of Dharma",
       location: "Noida, India, 2024",
@@ -441,7 +476,7 @@ const IMAGES = [
   { 
     src: "/skyward-bound-delhi-2024.webp", 
     alt: "Skyward Bound dynamic steel sculpture in Delhi, India, 2024", 
-    caption: <>Skyward Bound<br />(Delhi) IND, 2024</>,
+    caption: <>Skyward Bound</>,
     details: {
       heading: "Skyward Bound",
       location: "Delhi, India, 2024",
@@ -453,7 +488,7 @@ const IMAGES = [
   { 
     src: "/seed-mumbai-2024.webp", 
     alt: "Seed nature-inspired art sculpture in Mumbai, India, 2024", 
-    caption: <>Seed<br />(Mumbai) IND, 2024</>,
+    caption: <>Seed</>,
     details: {
       heading: "Seed",
       location: "Mumbai, India, 2024",
@@ -465,7 +500,7 @@ const IMAGES = [
   { 
     src: "/raging-bull-goa_2024.webp", 
     alt: "Raging Bull powerful metal sculpture in Goa, India, 2024", 
-    caption: <>Raging Bull<br />(Goa) IND, 2024</>,
+    caption: <>Raging Bull</>,
     details: {
       heading: "Raging Bull",
       location: "Goa, India, 2024",
@@ -477,7 +512,7 @@ const IMAGES = [
   { 
     src: "/ganapati-dxb-uae-2024.webp", 
     alt: "Ganapati Hindu deity sculpture in DXB, UAE, 2024", 
-    caption: <>Ganapati<br />DXB UAE, 2024</>,
+    caption: <>Ganapati</>,
     details: {
       heading: "Ganapati",
       location: "Dubai, UAE, 2024",
@@ -669,8 +704,9 @@ const Portfolio = () => {
                     Description
                   </h3>
                   <div 
-                    className="prose max-w-none"
+                    className="prose max-w-none "
                     style={{
+                    
                       fontFamily: "Montserrat, Poppins, sans-serif",
                       lineHeight: "1.6em",
                       color: "rgb(87, 87, 87)",
