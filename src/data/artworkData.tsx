@@ -95,7 +95,9 @@ export interface ArtworkDetails {
     },
     { 
       images: [
-        { src: "/mermaid-ohl-nam-vadodara-2022.webp", alt: "Mermaid | Oh'll'nam Sculpture in Vadodara, India, 2022" }
+        { src: "/mermaid-ohl-nam-vadodara-2022.webp", alt: "Mermaid | Oh'll'nam Sculpture in Vadodara, India, 2022" },
+        { src: "/gallery/m01.png", alt: "The Meditating Lady Sculpture in Goa, India, 2018" },
+        { src: "/gallery/m00.png", alt: "The Meditating Lady Sculpture in Goa, India, 2018" }
       ],
       caption: <>Mermaid | Oh'll'nam</>,
       details: {
