@@ -54,6 +54,7 @@ const Contact = () => {
     const address = encodeURIComponent("Block A, Sector 43, Noida, Uttar Pradesh 201303");
     window.open(`https://www.google.com/maps?q=${address}`, '_blank');
   };
+ 
 
   return (
     <div className="w-full min-h-screen bg-beige pt-[48px] pb-12 sm:pt-16" >
@@ -96,7 +97,7 @@ const Contact = () => {
         </div>
         
         <div className="bg-[#F5F5F5] border border-[#FDE1D3] px-[9%] py-[9%] mt-5">
-          <h3 className="sm:text-xl sm:font-semibold text-lg mb-10 text-center">Luxury is just a phone call away!</h3>
+          <h3 className="sm:text-xl sm:font-semibold text-lg mb-10 text-center">Luxury is just a call away!</h3>
           <div className="grid gap-8 md:grid-cols-2">
             <div className="space-y-6">
               <div className="flex space-x-2 items-center ">

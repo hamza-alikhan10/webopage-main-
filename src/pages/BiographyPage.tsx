@@ -12,7 +12,7 @@ Every piece is an exploration of structure, balance, and expression, where techn
 
 We operate at the intersection of art, architecture, and engineering, where sculptural intent meets digital precision. Rooted in material truth, our work moves fluidly across disciplines. Whether for interiors or public spaces, every piece becomes a dialogue between surface and void, weight and lightness, control and chance.
 
-Using tools that range from CNC routers to sketchbooks, and materials that span corten steel, stainless, and wood, our practice merges old-world craft with algorithmic thinking. What emerges are works that are not just seen, but felt—where form invites interaction, and design becomes experience.
+Using tools that range from CNC routers to sketchbooks, and materials that span corten steel, stainless, and wood, our practice merges old-world craft with algorithmic thinking. What emerges are works that are not just seen, but felt, where form invites interaction, and design becomes experience.
 
 Inspired by nature, architecture, and the urban condition, FormForge aims to shape environments, not just objects. We’re not bound by categories. We’re driven by the potential of the unexpected.
 `,

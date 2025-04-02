@@ -185,3 +185,60 @@ p {
   color: #2d2d2d;
 }
 .seo-hidden { display: none; }
+
+/* Floating animation for buttons */
+.float {
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* Image zoom effect for slideshow */
+.bg-zoom {
+  animation: zoom-bg 20s ease infinite alternate;
+  background-size: 110% 110%;
+}
+
+@keyframes zoom-bg {
+  from {
+    background-size: 100% 100%;
+    background-position: center;
+  }
+  to {
+    background-size: 110% 110%;
+    background-position: center;
+  }
+}
+
+/* Letter reveal animation */
+.letter {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: letter-appear 0.5s forwards;
+}
+
+@keyframes letter-appear {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Text shimmer effect (though not used in this specific homepage) */
+.text-shimmer {
+  background: linear-gradient(to right, #f5f5f5 0%, #f0f0f0 25%, #f5f5f5 50%, #f0f0f0 75%, #f5f5f5 100%);
+  background-size: 200% auto;
+  background-clip: text;
+  animation: shimmer 2s linear infinite;
+}

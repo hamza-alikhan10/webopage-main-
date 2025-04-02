@@ -25,59 +25,74 @@ export interface ArtworkDetails {
     { 
       images: [
         { src: "/twin-spirits-chennai-2023.webp", alt: "Twin Spirits Sculpture in Chennai, India, 2023" },
-        { src: "/gallery/401.png", alt: "The Meditating Lady Sculpture in Goa, India, 2018" }
+        { src: "/gallery/401.webp", alt: "The Meditating Lady Sculpture in Goa, India, 2018" }
       ],
       caption: <>Twin Spirits</>,
       details: {
-        heading: "T W I N Spirits",
+        heading: "Twin Spirits",
         location: "",
-        description: "Twin Spirits explores the duality of human existence through contrasting yet complementary forms. The sculpture represents the harmony between opposing forces in nature and within ourselves.",
-        details: "dont knw",
-        credits: <>dnt knw</>
+        description: <>Twin Spirits explores the duality of human existence through contrasting yet complementary forms. <br/> The sculpture represents the harmony between opposing forces in nature and within ourselves.</>,
+        details:<>Type: Outdoor Sculpture <br />
+        Material: Stainless Steel <br />
+        Finish: Ultramarine PU <br />
+        Dimensions: 10ft. Height </>,
+        credits: <>Artist: Abhinav Goyal <br /> Commissioned for: Private Residence <br /> Photography: HT City</>
       }
     },
     { 
       images: [
         { src: "/metamorphosis-muse-hyderabad-2025.webp", alt: "The Metamorphosis Muse Sculpture in Hyderabad, India, 2025" },
-        { src: "/gallery/v10.png", alt: "The Meditating Lady Sculpture in Goa, India, 2018" }
+        { src: "/gallery/v10.webp", alt: "The Meditating Lady Sculpture in Goa, India, 2018" }
       ],
       caption: <>The Metamorphosis Muse</>,
       details: {
         heading: "The Metamorphosis Muse",
         location: "",
-        description: <>A divine embodiment of transformation, radiates grace and power, adorned with golden butterflies that symbolize rebirth and evolution. Capturing the essence of a goddess, the sculpture stands as a tribute to beauty, strength, and the ever-unfolding journey of change. Seen here with the stunning <b><u><a href="https://www.mashindia.com/" target="_blank" style={{ textDecoration: "underline", fontWeight: "bold" }}>Shalini Passi</a></u></b>, it exudes an ethereal presence, where art and divinity intertwine in a timeless celebration of allure.</>,
-        details: <>Stainless steel with a satin brass finish.<br />Height: 1800mm | Width: 690mm</>,
-        credits: <>Artist: Abhinav Goyal <br /> Commissioned for: Hyderabad Design District <br /> Photography: HT City</>
+        description: <>A divine embodiment of transformation, radiates grace and power, adorned with golden butterflies that symbolize rebirth and evolution. Capturing the essence of a goddess, the sculpture stands as a tribute to beauty, strength, and the ever-unfolding journey of change. Seen here with the stunning
+         <a href="https://www.mashindia.com/" target="_blank" style={{ marginRight: "6px", marginLeft: "6px", fontWeight: "bold" }}>Shalini Passi,</a> it exudes an ethereal presence, where art and divinity intertwine in a timeless celebration of allure.</>,
+        details: <>Type: Indoor Sculpture <br />
+        Material: Stainless Steel <br />
+        Finish: Satin Brass <br />
+        Dimensions: H-1800mm | W-690mm</>,
+        credits: <>Artist: Abhinav Goyal <br /> Commissioned for: Private Residence, Hyderabad <br /> Photography: HT City</>
       }
     },
     { 
       images: [
         { src: "/vighnaharta-mumbai-2022.webp", alt: "Vighnaharta Sculpture in Mumbai, India, 2022" },
-        { src: "/0-1.jpg", alt: "Vighnaharta Sculpture in Mumbai, India, 2022" } ,
-       { src: "/0-2.jpg", alt: "Vighnaharta Sculpture in Mumbai, India, 2022" }
+        { src: "/0-1.webp", alt: "Vighnaharta Sculpture in Mumbai, India, 2022" } ,
+       { src: "/0-2.webp", alt: "Vighnaharta Sculpture in Mumbai, India, 2022" }
       ],
       caption: <>Vighnaharta</>,
       details: {
         heading: "V I G H N A H A R T A",
         location: "",
-        description: <>Inspired by <b>Lord Ganesha</b>, the remover of obstacles. <br />  Merging traditional symbolism with contemporary design, it embodies prosperity, wisdom, and strength. <br /> While its refined metallic sheen enhances depth and elegance. <br /> Designed to be a striking focal point, it seamlessly integrates spiritual essence with modern artistry.</>,
-        details: <>Material: Bronze, stone base <br /> Height: 10 ft | Width: 6 ft | Depth: 4 ft</>,
-        credits: <>Artist: Abhinav Goyal <br /> Commissioned for: Hyderabad Design District <br /> Photography: HT City</>
+        description: <>Inspired by <b>Lord Ganesha</b>, the remover of obstacles. <br />  Merging traditional symbolism with contemporary design, the sculpture embodies prosperity, wisdom, and strength. <br /> While its refined metallic sheen enhances depth and elegance. <br /> Designed to be a striking focal point, the sculpture seamlessly integrates spiritual essence with modern artistry.</>,
+        details: <>Type:  Outdoor/Indoor Sculpture <br />
+        Material: Stainless Steel <br />
+        Finish: Antique coating PU(Weatherproof) <br />
+        Dimensions: L- 1545 mm | W- 985 mm | H- 1800 mm</>,
+        credits: <>Artist: Abhinav Goyal <br /> Commissioned for: Anantam Residence, Mumbai <br /> Photography: Formforge</>
       }
     },
     { 
       images: [
         { src: "/david-casamia-uae-2021.webp", alt: "David Sculpture at Casamia, UAE, 2021" },
-        { src: "/gallery/501.png", alt: "The Meditating Lady Sculpture in Goa, India, 2018" }
+        { src: "/gallery/501.webp", alt: "The Meditating Lady Sculpture in Goa, India, 2018" }   
       ],
       caption: <>David</>,
       details: {
         heading: "D A V I D",
         location: " ",
-        description: <>An abstract reinterpretation of Michelangelo's David redefines classical artistry with a bold, modern twist, merging timeless form with contemporary expression.  <br />    Sculpted in stainless steel with an astonishing antique brass finish, its asymmetrical metal plates create a striking interplay of light and form. The sculpture has been installed in Dubai, at <b>Palm Jumeirah</b>. <br /> This backlit masterpiece, ideal for both indoor and outdoor settings, embodies strength, defiance, and timeless elegance.</>,
-        details: <>Stainless Steel 316 with a brushed antique brass finish. <br /> Size: 1800mm x 720mm x 475mm</>,
-        credits:  <>Artist: Abhinav Goyal <br /> Commissioned for: 
-        <b><u><a href="https://casamiaindia.in/" target="_blank" style={{ textDecoration: "underline", fontWeight: "bold" }}>  Casamia Estates</a></u></b></>
+        description: <>An abstract reinterpretation of  <a href="https://en.wikipedia.org/wiki/David_%28Michelangelo%29" target="_blank" style={{ fontWeight: "bold", marginRight: "6px", marginLeft: "6px" }}>Michelangelo's David</a>
+        redefines classical artistry with a bold, modern twist, merging timeless form with contemporary expression.  <br />    Sculpted in stainless steel with an astonishing antique brass finish, its asymmetrical metal plates create a striking interplay of light and form. The sculpture has been installed in Dubai, at <b>Palm Jumeirah</b>. <br /> This backlit masterpiece, ideal for both indoor and outdoor settings, embodies strength, defiance, and timeless elegance.</>,
+        details: <>Type:  Indoor Sculpture <br />
+        Material: Stainless Steel <br />
+        Finish: Antique coating PU (Weatherproof) <br />
+        Dimensions: D: 475 mm |
+W: 720 mm |
+H: 1800 mm</>,
+        credits:  <>Artist: Abhinav Goyal <br /> Commissioned for:  <a href=" https://www.youtube.com/watch?v=kdZYhfHYHtY&t=195s" target="_blank" style={{  fontWeight: "bold", marginLeft: "3px"  }}>Dubai Mega Mansion</a> </> 
       }
     },
     { 
@@ -86,32 +101,50 @@ export interface ArtworkDetails {
       ],
       caption: <>The Lotus Nouvel</>,
       details: {
-        heading: "L O T U S Nouvel",
+        heading: "Lotus Nouvel",
         location: "",
         description: <>Where Nature's rhythm takes form. Forged in Corten Steel, material that evolves with time, just as nature does. Its weathered rust finish, sealed with imported PU, enhances its raw, organic allure. Inspired by the seamless processes of replication and locomotion, this sculpture blurs the boundaries between reality and fantasy. <br />Elements drawn from diverse plant forms merge into a hybrid design, reflecting the ingenuity of the natural world. <br /> Resting in serene spaces, The Lotus Nouvel stands as a tribute to nature's endless cycles of growth and transformation. <br /> An artistic embodiment of strength, elegance, and timeless beauty.</>,
-        details: <>3mm Corten steel with a weathered rust finish sealed <br />  Height: 7ft</>,
-        credits: <>Artist: Abhinav Goyal <br /> Commissioned for: Private Residence, Hyderabad <br /> Photography: <b><u><a href="https://casamiaindia.in/" target="_blank" style={{ textDecoration: "underline", fontWeight: "bold" }}>  Casamia India</a></u></b></>
+        details:<>Type: Indoor/Outdoor Sculpture<br />
+        Material: Corten Steel <br />
+        Finish:  Rust with imported PU <br />
+        Dimensions: L: 1850 mm |
+H: 1635 mm |
+W:1180mm</>,
+        credits: <>Artist: Abhinav Goyal <br /> Commissioned for: Shivtirtha House, Pune <br />
+         Architects: ConCepts Architectural Studio, Kolhapur<br /> 
+         </>
       }
     },
     { 
       images: [
         { src: "/mermaid-ohl-nam-vadodara-2022.webp", alt: "Mermaid | Oh'll'nam Sculpture in Vadodara, India, 2022" },
-        { src: "/gallery/m01.png", alt: "The Meditating Lady Sculpture in Goa, India, 2018" },
-        { src: "/gallery/m00.png", alt: "The Meditating Lady Sculpture in Goa, India, 2018" }
+        { src: "/gallery/131.webp", alt: "The Meditating Lady Sculpture in Goa, India, 2018" },
+        { src: "/gallery/m01.webp", alt: "The Meditating Lady Sculpture in Goa, India, 2018" },
+        { src: "/gallery/m00.webp", alt: "The Meditating Lady Sculpture in Goa, India, 2018" },
+        { src: "/gallery/o'll.webp", alt: "The Meditating Lady Sculpture in Goa, India, 2018" },
+        { src: "/gallery/11.webp", alt: "The Meditating Lady Sculpture in Goa, India, 2018" },
+        { src: "/gallery/13.webp", alt: "The Meditating Lady Sculpture in Goa, India, 2018" },
+       
       ],
       caption: <>Mermaid | Oh'll'nam</>,
       details: {
-        heading: "M E R M A I D",
+        heading: "Mermaid | Oh'll'nam",
         location: "",
-        description: "A whimsical portrayal of a mermaid emerging from water, blending myth with modern artistry to evoke mystery and grace.",
-        details: "Material: Fiberglass, resin, metallic paint\nHeight: 7 ft, Width: 5 ft, Depth: 4 ft",
-        credits: <>Artist: Abhinav Goyal <br /> Commissioned for: Private Residence, Hyderabad <br /> Photography: Kiasma Studio</>
+        description: <><b>Dia Mirza </b> effortlessly radiates grace and elegance against the backdrop of our sculptures <br /> at <b>Center of Arts & Design, Parul University, Vadodara.</b> <br />
+       A whimsical mermaid blends myth with modern artistry, evoking mystery and fluidity, <br /> while Oh'll'Nam sits as a symbol of silence and peace.  <br />
+       Together, these sculptures create a harmonious dialogue of serenity and expression, <br /> enriching the institutional space with depth and artistic storytelling. <br />
+        </>,
+        details: <>Type: Outdoor Sculpture<br />
+        Material: Corten Steel <br />
+        Finish:  Rust with imported PU <br />
+        Dimensions: H- 1200mm Each</>,
+        credits: <>Artist: Abhinav Goyal <br /> Commissioned for:  Architect Nitin Bharadwaj <br /> Photography: Parul University</>
       }
     },
     { 
       images: [
         { src: "/levitating-whale-kpmg-gurugram-2022.webp", alt: "Levitating Whale Sculpture at KPMG, Gurugram, India, 2022" },
-        { src: "/gallery/201.png", alt: "The Meditating Lady Sculpture in Goa, India, 2018" },
+        { src: "/gallery/201.webp", alt: "The Meditating Lady Sculpture in Goa, India, 2018" },
       ],
       caption: <>Levitating Whale </>,
       details: {
@@ -138,7 +171,7 @@ export interface ArtworkDetails {
     { 
       images: [
         { src: "/inverted-cactus-hyderabad-2023.webp", alt: "Inverted Cactus Sculpture in Hyderabad, India, 2023" },
-        { src: "/gallery/012.jpg", alt: "Inverted Cactus Sculpture in Hyderabad, India, 2023" }
+        { src: "/gallery/012.webp", alt: "Inverted Cactus Sculpture in Hyderabad, India, 2023" }
       ],
       caption: <>Inverted Cactus </>,
       details: {
@@ -152,7 +185,7 @@ export interface ArtworkDetails {
     { 
       images: [
         { src: "/sculptural-totems-hyderabad-2025.webp", alt: "Sculptural Totems in Hyderabad, India, 2025" },
-        { src: "/gallery/t10.png", alt: "The Meditating Lady Sculpture in Goa, India, 2018" }
+        { src: "/gallery/t10.webp", alt: "The Meditating Lady Sculpture in Goa, India, 2018" }
       ],
       caption: <>Sculptural Totems</>,
       details: {
@@ -166,8 +199,8 @@ export interface ArtworkDetails {
     { 
       images: [
         { src: "/raging-stallions-chennai-2021.webp", alt: "The Raging Stallions Sculpture in Chennai, India, 2021" },
-        { src:"/gallery/71.jpg", alt: "The Raging Stallions Sculpture in Chennai, India, 2021" },
-        { src: "/gallery/72.jpg", alt: "The Raging Stallions Sculpture in Chennai, India, 2021" }
+        { src:"/gallery/71.webp", alt: "The Raging Stallions Sculpture in Chennai, India, 2021" },
+        { src: "/gallery/72.webp", alt: "The Raging Stallions Sculpture in Chennai, India, 2021" }
       ],
       caption: <>The Raging Stallions</>,
       details: {
@@ -179,15 +212,15 @@ export interface ArtworkDetails {
         They pull you beyond the ordinary, igniting something primal, something wild. To witness them is to ride upon the wind, 
         <br />to dance upon the brink like a flame— <i>Unbridled, Fearless, and Untamed.</i></>,
        
-       details: <>Material: Lightweight, Resilient Aluminum. <br /> Dimensions: dnt knw</>,
+       details: <>Material: Lightweight, Resilient Aluminum. <br /> Dimensions: -</>,
   
-        credits: <>Artist: Abhinav Goyal <br /> Commissioned for: dnt knw <br /> Photography: dnt knw</>
+        credits: <>Artist: Abhinav Goyal <br /> Commissioned for: - <br /> Photography: -</>
       }
     },
     { 
       images: [
         { src: "/wing-man-dubai-2024.webp", alt: "The Wing Man Sculpture in Dubai, UAE, 2024" },
-        { src:"/gallery/1098.png", alt: "The Raging Stallions Sculpture in Chennai, India, 2021" }
+        { src:"/gallery/1098.webp", alt: "The Raging Stallions Sculpture in Chennai, India, 2021" }
       ],
       caption: <>The Wing Man</>,
       details: {
@@ -214,7 +247,7 @@ export interface ArtworkDetails {
     { 
       images: [
         { src: "/leaning-man-hyderabad-2023.webp", alt: "The Leaning Man Sculpture in Hyderabad, India, 2023" },
-        { src: "/gallery/41.jpg", alt: "The Meditating Lady Sculpture in Goa, India, 2018" }
+        { src: "/gallery/41.webp", alt: "The Meditating Lady Sculpture in Goa, India, 2018" }
       ],
       caption: <>The Leaning Man</>,
       details: {
@@ -228,8 +261,8 @@ export interface ArtworkDetails {
     { 
       images: [
         { src: "/meditating-lady-goa-2018.webp", alt: "The Meditating Lady Sculpture in Goa, India, 2018" },
-        { src: "/gallery/b-2.jpg", alt: "The Meditating Lady Sculpture in Goa, India, 2018" },
-        { src: "/gallery/b-1.jpg", alt: "The Meditating Lady Sculpture in Goa, India, 2018" }
+        { src: "/gallery/b-2.webp", alt: "The Meditating Lady Sculpture in Goa, India, 2018" },
+        { src: "/gallery/b-1.webp", alt: "The Meditating Lady Sculpture in Goa, India, 2018" }
       ],
       caption: <>The Meditating Lady</>,
       details: {
@@ -243,7 +276,7 @@ export interface ArtworkDetails {
     { 
       images: [
         { src: "/etherea-chennai-2019.webp", alt: "Etherea Sculpture in Chennai, India, 2019" },
-        { src: "/gallery/e10.png", alt: "The Meditating Lady Sculpture in Goa, India, 2018" },
+        { src: "/gallery/e10.webp", alt: "The Meditating Lady Sculpture in Goa, India, 2018" },
       ],
       caption: <>Etherea</>,
       details: {
@@ -261,7 +294,7 @@ export interface ArtworkDetails {
     { 
       images: [
         { src: "/bonsai-delhi-2024.webp", alt: "Bonsai Sculpture in Delhi, India, 2024" },
-        { src: "/gallery/A7.jpg", alt: "Bonsai Sculpture in Delhi, India, 2024" }
+        { src: "/gallery/A7.webp", alt: "Bonsai Sculpture in Delhi, India, 2024" }
       ],
       caption: <>Bonsai</>,
       details: {
@@ -275,8 +308,8 @@ export interface ArtworkDetails {
     { 
       images: [
         { src: "/nandi-pune-2020.webp", alt: "Nandi Sculpture in Pune, India, 2020" },
-        { src: "/gallery/252.jpg", alt: "The Meditating Lady Sculpture in Goa, India, 2018" },
-        { src: "/gallery/163.jpg", alt: "The Meditating Lady Sculpture in Goa, India, 2018" }
+        { src: "/gallery/252.webp", alt: "The Meditating Lady Sculpture in Goa, India, 2018" },
+        { src: "/gallery/163.webp", alt: "The Meditating Lady Sculpture in Goa, India, 2018" }
       ],
       caption: <>Nandi</>,
       details: {
@@ -309,7 +342,7 @@ export interface ArtworkDetails {
     {
       images: [
         { src: "/bloom-delhi-2021.webp", alt: "Bloom Sculpture in Delhi, India, 2021" },
-        { src:"/gallery/1_1.jpg", alt: "Carefree seat corten steel" }
+        { src:"/gallery/1_1.webp", alt: "Carefree seat corten steel" }
       ],
       caption: <>Bloom</>,
       details: {
@@ -341,7 +374,7 @@ export interface ArtworkDetails {
     { 
       images: [
         { src: "/abstracta-delhi-2021.webp", alt: "Abstracta Sculpture in Delhi, India, 2021" },
-        { src: "/gallery/091.jpg", alt: "Inverted Cactus Sculpture in Hyderabad, India, 2023" }
+        { src: "/gallery/091.webp", alt: "Inverted Cactus Sculpture in Hyderabad, India, 2023" }
       ],
       caption: <>Abstracta</>,
       details: {
@@ -355,7 +388,7 @@ export interface ArtworkDetails {
     { 
       images: [
         { src: "/buddha-bangalore-2023.webp", alt: "Buddha Sculpture in Bangalore, India, 2023" },
-        { src: "/gallery/b30.png", alt: "The Meditating Lady Sculpture in Goa, India, 2018" }
+        { src: "/gallery/b30.webp", alt: "The Meditating Lady Sculpture in Goa, India, 2018" }
       ],
       caption: <>Buddha</>,
       details: {
@@ -369,8 +402,8 @@ export interface ArtworkDetails {
     { 
       images: [
         { src: "/sleeping-lotus-delhi-2021.webp", alt: "The Sleeping Lotus Sculpture in Delhi, India, 2021" },
-        { src:  "/gallery/009.png", alt: "The Sleeping Lotus Sculpture in Delhi, India, 2021" },
-        { src:  "/gallery/091.png", alt: "The Sleeping Lotus Sculpture in Delhi, India, 2021" }
+        { src:  "/gallery/009.webp", alt: "The Sleeping Lotus Sculpture in Delhi, India, 2021" },
+        { src:  "/gallery/091.webp", alt: "The Sleeping Lotus Sculpture in Delhi, India, 2021" }
       ],
       caption: <>The Sleeping Lotus</>,
       details: {
@@ -384,7 +417,7 @@ export interface ArtworkDetails {
     { 
       images: [
         { src: "/raging-bull-goa-2024.webp", alt: "Raging Bull Sculpture in Goa, India, 2024" },
-        { src:  "/gallery/x1.jpeg", alt: "The Sleeping Lotus Sculpture in Delhi, India, 2021" }
+        { src:  "/gallery/x1.webp", alt: "The Sleeping Lotus Sculpture in Delhi, India, 2021" }
       ],
       caption: <>Raging B U L L</>,
       details: {
@@ -403,8 +436,8 @@ export interface ArtworkDetails {
     { 
       images: [
         { src: "/raging-stallions-chennai_2021.webp", alt: "The Raging Stallions Sculpture in Chennai, India, 2021" },
-        { src:"/gallery/71.jpg", alt: "The Raging Stallions Sculpture in Chennai, India, 2021" },
-        { src: "/gallery/72.jpg", alt: "The Raging Stallions Sculpture in Chennai, India, 2021" }
+        { src:"/gallery/71.webp", alt: "The Raging Stallions Sculpture in Chennai, India, 2021" },
+        { src: "/gallery/72.webp", alt: "The Raging Stallions Sculpture in Chennai, India, 2021" }
 
          
       ],
@@ -418,15 +451,15 @@ export interface ArtworkDetails {
         They pull you beyond the ordinary, igniting something primal, something wild. To witness them is to ride upon the wind, 
         <br />to dance upon the brink like a flame— <i>Unbridled, Fearless, and Untamed.</i></>,
        
-       details: <>Material: Lightweight, Resilient Aluminum. <br /> Dimensions: dnt knw</>,
+       details: <>Material: Lightweight, Resilient Aluminum. <br /> Dimensions: -</>,
   
-        credits: <>Artist: Abhinav Goyal <br /> Commissioned for: dnt knw <br /> Photography: dnt knw</>
+        credits: <>Artist: Abhinav Goyal <br /> Commissioned for: - <br /> Photography: -</>
       }
     },
     { 
       images: [
         { src: "/panthera-dubai-2020.webp", alt: "Panthera Sculpture in Dubai, UAE, 2020" },
-        { src: "/gallery/00-1.jpeg", alt: "Panthera Sculpture in Dubai, UAE, 2020" }
+        { src: "/gallery/00-1.webp", alt: "Panthera Sculpture in Dubai, UAE, 2020" }
       ],
       caption: <>Panthera</>,
       details: {
@@ -438,7 +471,7 @@ export interface ArtworkDetails {
          shimmers with an otherworldly glow, shifting with light and movement. <br />
         A creature of instinct and elegance, it exists between reality and myth.</>,
         details:<>Material: 3mm Stainless Steel <br /> Dimensions: 7ft | 3ft | 1.8ft</>,
-        credits: <>Artist: Abhinav Goyal <br /> Commissioned for: dnt knw <br /> Photography: dnt knw</>
+        credits: <>Artist: Abhinav Goyal <br /> Commissioned for: - <br /> Photography: -</>
       }
     },
     { 
@@ -470,8 +503,8 @@ export interface ArtworkDetails {
     { 
       images: [
         { src: "/ballerina-gurugram-2023.webp", alt: "Ballerina Sculpture in Gurugram, India, 2023" },
-        { src: "/gallery/061.png", alt: "Ballerina Sculpture in Gurugram, India, 2023" },
-        { src:  "/gallery/062.jpg", alt: "Ballerina Sculpture in Gurugram, India, 2023" }
+        { src: "/gallery/061.webp", alt: "Ballerina Sculpture in Gurugram, India, 2023" },
+        { src:  "/gallery/062.webp", alt: "Ballerina Sculpture in Gurugram, India, 2023" }
       ],
       caption: <>Ballerina</>,
       details: {
@@ -498,8 +531,8 @@ export interface ArtworkDetails {
     { 
       images: [
         { src: "/solemn-mumbai-2021.webp", alt: "Solemn contemporary sculpture in Mumbai, India, 2021" },
-        { src: "/gallery/c1.JPG", alt: "The Meditating Lady Sculpture in Goa, India, 2018" },
-        { src: "/gallery/c2.JPG", alt: "The Meditating Lady Sculpture in Goa, India, 2018" }
+        { src: "/gallery/c1.webp", alt: "The Meditating Lady Sculpture in Goa, India, 2018" },
+        { src: "/gallery/c2.webp", alt: "The Meditating Lady Sculpture in Goa, India, 2018" }
       ],
       caption: <>Solemn</>,
       details: {
@@ -526,7 +559,7 @@ export interface ArtworkDetails {
     { 
       images: [
         { src: "/wing-sculpture-gurugram-2022.webp", alt: "The Wing Sculpture modern metal installation in Gurugram, India, 2022" },
-        { src: "/gallery/301.png", alt: "The Meditating Lady Sculpture in Goa, India, 2018" }
+        { src: "/gallery/301.webp", alt: "The Meditating Lady Sculpture in Goa, India, 2018" }
       ],
       caption: <>The Wing Sculpture</>,
       details: {
@@ -540,8 +573,8 @@ export interface ArtworkDetails {
     { 
       images: [
         { src: "/dreaming-of-dharma-noida-2024.webp", alt: "Dreaming Of Dharma spiritual sculpture in Noida, India, 2024" },
-        { src: "/gallery/b20.png", alt: "The Meditating Lady Sculpture in Goa, India, 2018" },
-        { src: "/gallery/b08.png", alt: "The Meditating Lady Sculpture in Goa, India, 2018" }
+        { src: "/gallery/b20.webp", alt: "The Meditating Lady Sculpture in Goa, India, 2018" },
+        { src: "/gallery/b08.webp", alt: "The Meditating Lady Sculpture in Goa, India, 2018" }
       ],
       caption: <>Dreaming Of Dharma</>,
       details: {
@@ -594,28 +627,13 @@ export interface ArtworkDetails {
     { 
       images: [
         { src: "/ganapati-dxb-uae-2024.webp", alt: "Ganapati Hindu deity sculpture in DXB, UAE, 2024" },
-        { src: "/gallery/3012.png", alt: "The Meditating Lady Sculpture in Goa, India, 2018" }
+        { src: "/gallery/3012.webp", alt: "The Meditating Lady Sculpture in Goa, India, 2018" }
       ],
       caption: <>Ganapati</>,
       details: {
         heading: "Ganapati",
         location: "Dubai, UAE, 2024",
         description: "A modern rendition of Lord Ganesha, blending tradition with innovation to honor wisdom and success.",
-        details: "Material: Bronze, gold plating\nHeight: 10 ft, Width: 6 ft, Depth: 5 ft",
-        credits: "Artist: FormForge Studios, Commissioned by Dubai Cultural Forum"
-      }
-    },
-    { 
-      images: [
-        { src: "/40.webp", alt: "Ganapati Hindu deity sculpture in DXB, UAE, 2024" },
-        { src: "/gallery/616.jpg", alt: "The Meditating Lady Sculpture in Goa, India, 2018" }
-
-      ],
-      caption: <>Raging Bull</>,
-      details: {
-        heading: "Raging Bull",
-        location: "Dubai, UAE, 2024",
-        description: "Raging Bull and success.",
         details: "Material: Bronze, gold plating\nHeight: 10 ft, Width: 6 ft, Depth: 5 ft",
         credits: "Artist: FormForge Studios, Commissioned by Dubai Cultural Forum"
       }
@@ -633,6 +651,22 @@ export interface ArtworkDetails {
         credits: "Artist: FormForge Studios, Commissioned by Mumbai Art Gallery"
       }
     },
+    { 
+      images: [
+        { src: "/40.webp", alt: "Ganapati Hindu deity sculpture in DXB, UAE, 2024" },
+        { src: "/gallery/616.webp", alt: "The Meditating Lady Sculpture in Goa, India, 2018" }
+
+      ],
+      caption: <>Raging Bull</>,
+      details: {
+        heading: "Raging Bull",
+        location: "Dubai, UAE, 2024",
+        description: "Raging Bull and success.",
+        details: "Material: Bronze, gold plating\nHeight: 10 ft, Width: 6 ft, Depth: 5 ft",
+        credits: "Artist: FormForge Studios, Commissioned by Dubai Cultural Forum"
+      }
+    },
+   
     { 
         images: [
           { src: "/42.webp", alt: "Abstract sculpture in modern art style" }

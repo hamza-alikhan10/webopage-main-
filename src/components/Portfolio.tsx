@@ -145,7 +145,7 @@ const Portfolio = () => {
               Back to Gallery
             </Button>
             
-            <Card className="bg-white rounded-lg overflow-hidden shadow-lg">
+           
               <div className="landscape-view p-4 md:p-8 bg-gray-50 relative">
                 <img
                   src={ARTWORK_IMAGES[selectedArtwork].images[selectedImageIndex].src}
@@ -285,7 +285,7 @@ const Portfolio = () => {
                   </div>
                 )}
               </CardContent>
-            </Card>
+            
           </div>
         ) : (
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-1 w-full">
