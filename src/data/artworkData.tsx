@@ -163,9 +163,9 @@ W:1180mm</>,
       details: {
         heading: "Tree of Life",
         location: "",
-        description: "A towering representation of interconnectedness and growth, with intricate branches reaching skyward to symbolize vitality and resilience.",
-        details: "Material: Corten steel, LED accents\nHeight: 18 ft, Width: 10 ft, Depth: 10 ft",
-        credits:<>Artist: Abhinav Goyal <br /> Commissioned for: Private Residence, Hyderabad <br /> Photography: Kiasma Studio</>
+        description: <>A bold symbol of interconnectedness and growth, this geometric tree sculpture features a faceted trunk  <br /> that twists upward, splitting into intricate, angular branches. Crafted in warm, rust-hued metal, <br />it embodies strength, resilience, and transformation. Rooted yet reaching skyward, it reflects the enduring <br /> vitality of nature and the web of connections that shape our lives.</>,
+        details: "Material: Corten steel",
+        credits:<>Artist: Abhinav Goyal <br /> Commissioned for: Private Residence,New Delhi </>
       }
     },
     { 
@@ -177,9 +177,9 @@ W:1180mm</>,
       details: {
         heading: "Inverted C A C T U S",
         location: "",
-        description: "A mesmerizing fusion of nature and design, Inverted Cactus reimagines the iconic desert form as a suspended, illuminated sculpture. Crafted in corten steel with a rusted PU finish, its warm, earthy tones complement lush greenery, while its integrated lighting casts a soft, ambient glow. Hanging gracefully from the ceiling, it transforms the space into an enchanting oasis, both a statement piece and a seamless extension of the landscape.",
+        description: <>A mesmerizing fusion of nature and design, Inverted Cactus reimagines the iconic desert form <br />as a suspended, illuminated sculpture. Crafted in corten steel with a rusted PU finish, its warm <br /> earthy tones complement lush greenery, while its integrated lighting casts a soft, ambient glow. <br /> Hanging gracefully from the ceiling, it transforms the space into an enchanting oasis, both a statement piece <br /> and a seamless extension of the landscape.</>,
         details: <>Crafted from Corten Steel with a rust finish sealed with Imported PU,<br/> Dimension: 1500mm x 765mm x 200mm."</>,
-        credits: <>Artist: Abhinav Goyal <br /> Commissioned for: Private Residence, Hyderabad <br /> Photography: Kiasma Studio</>
+        credits: <>Artist: Abhinav Goyal <br /> Commissioned for: Private Residence, Mumbai <br /> Photography: Kiasma Studio</>
       }
     },
     { 
@@ -191,9 +191,9 @@ W:1180mm</>,
       details: {
         heading: "Sculptural Totems",
         location: "",
-        description: "A series of vertical forms inspired by ancient totems, these sculptures blend cultural heritage with modern abstraction.",
-        details: "Material: Wood, steel, stone\nHeight: 14 ft, Width: 3 ft, Depth: 3 ft (each)",
-        credits: "Artist: FormForge Studios, Commissioned by Hyderabad Arts Council"
+        description: <>A series of vertical forms inspired by ancient totems, these sculptures merge cultural heritage <br /> with modern abstraction. Their faceted silhouettes and perforated patterns glow from within <br /> symbolizing inner light and shared human presence. Standing together they evoke unity <br /> ,quiet strength, and timeless storytelling through form and illumination.</>,
+        details: "Material: Corten Steel ",
+        credits:<>Artist: Abhinav Goyal <br /> Commissioned for: Hyderabad Arts Council </>
       }
     },
     { 
@@ -204,7 +204,7 @@ W:1180mm</>,
       ],
       caption: <>The Raging Stallions</>,
       details: {
-        heading: "S T A L L I O N S",
+        heading: "Stallions",
         location: "",
         description: <>Curves hold an untamed power—fluid yet fierce, commanding yet free. To capture their essence is no easy feat.
         <br /> It demands more than form; it requires motion, rhythm, and soul.
@@ -212,9 +212,9 @@ W:1180mm</>,
         They pull you beyond the ordinary, igniting something primal, something wild. To witness them is to ride upon the wind, 
         <br />to dance upon the brink like a flame— <i>Unbridled, Fearless, and Untamed.</i></>,
        
-       details: <>Material: Lightweight, Resilient Aluminum. <br /> Dimensions: -</>,
+       details: <>Material: Lightweight, Resilient Aluminum. <br /></>,
   
-        credits: <>Artist: Abhinav Goyal <br /> Commissioned for: - <br /> Photography: -</>
+        credits: <>Artist: Abhinav Goyal  <br /> </>
       }
     },
     { 
@@ -224,11 +224,11 @@ W:1180mm</>,
       ],
       caption: <>The Wing Man</>,
       details: {
-        heading: "W I N G   M A N",
+        heading: "Wing  Man",
         location: "",
-        description: "A futuristic figure with outstretched wings, representing ambition and the pursuit of limitless possibilities.",
-        details: "Material: Polished aluminum, LED lighting\nHeight: 12 ft, Width: 8 ft, Depth: 4 ft",
-        credits: "Artist: FormForge Studios, Commissioned by Dubai Art Expo"
+        description: <>A futuristic figure with outstretched wings, this sculpture represents ambition <br /> and the pursuit of limitless possibilities. Composed of angular, faceted planes in stainless steel <br /> it stands boldly in water—its reflective surfaces catching light like a beacon of progress. <br />The wing-like form suggests transcendence, freedom, and the relentless drive <br />to rise beyond boundaries. A symbol of visionary spirit and human evolution.</>,
+        details: <>Material: Polished aluminum, LED lighting <br /> Height: 6 ft | Width: 2ft | Depth: 1.5 ft</>,
+        credits: <>Artist: Abhinav Goyal </>
       }
     },
     { 
@@ -239,9 +239,9 @@ W:1180mm</>,
       details: {
         heading: "The Sole Gaze",
         location: "",
-        description: "An introspective figure gazing upward, symbolizing contemplation and the search for meaning in a fast-paced world.",
-        details: "Material: Stainless steel, stone pedestal\nHeight: 8 ft, Width: 3 ft, Depth: 3 ft",
-        credits: <>Artist: Abhinav Goyal <br /> Commissioned for: Hyderabad Design District <br /> Photography: HT City</>
+        description: <>An introspective figure gazing upward, this bold, abstract face captures a moment of quiet reflection. <br /> Crafted from corten steel, its simplified geometry and monolithic presence evoke timelessness and depth. <br /> The upward gaze symbolizes contemplation, hope, and the enduring human quest <br /> for meaning amidst the chaos of a fast-paced world.</>,
+        details: "Material: Corten Steel",
+        credits: <>Artist: Abhinav Goyal <br /> Commissioned for: Hyderabad Design District </>
       }
     },
     { 
@@ -253,9 +253,9 @@ W:1180mm</>,
       details: {
         heading: "The Leaning Man",
         location: "",
-        description: "A figure leaning forward as if defying gravity, representing resilience and the human spirit's ability to push boundaries.",
-        details: "Material: Corten steel, concrete base\nHeight: 9 ft, Width: 5 ft, Depth: 4 ft",
-        credits: "Artist: FormForge Studios, Commissioned by Hyderabad Urban Arts"
+        description:  <>Set within a serene courtyard, this corten steel sculpture of a leaning figure gently emerges from the wall <br /> embodying curiosity and quiet observation. The adjacent waterbody and lush green backdrop <br /> enhance the meditative ambiance, while the folded, faceted form echoes the art of origami. <br />Together, the sculpture and its surroundings invite a moment of pause <br /> A space to Reflect, Reconnect, and Simply be. </>,
+        details: "Material: Corten steel",
+        credits: <>Artist: Abhinav Goyal <br /> Commissioned for: Private Residence, Hyderabad  </>
       }
     },
     { 
@@ -268,9 +268,9 @@ W:1180mm</>,
       details: {
         heading: "The Meditating Lady",
         location: "",
-        description: "A serene female figure in meditation, embodying peace and inner strength amidst a tranquil coastal setting.",
-        details: "Material: Bronze, weathered patina\nHeight: 6 ft, Width: 4 ft, Depth: 4 ft",
-        credits: "Artist: FormForge Studios, Commissioned by Goa Serenity Project"
+        description: <>A serene female figure in meditation, this layered steel sculpture embodies peace, balance, and inner strength.  <br />Set against a lush, coastal backdrop, the form captures stillness in motion  <br />each contour gently flowing into the next. Beside her stands Olympic champion PV Sindhu  <br /> adding a powerful layer of grace and strength to this moment of quiet reflection in nature. </>,
+        details: <>Material: Bronze, weathered patina <br />Height: 6 ft, Width: 2.7 ft, Depth: 2 ft </>,
+        credits: <>Artist: Abhinav Goyal <br />Commissioned for: Goa Serenity Project</>
       }
     },
     { 
@@ -285,8 +285,8 @@ W:1180mm</>,
         description: <>A delicate balance of light, air, and spirit, Etherea stands in quiet stillness, 
         yet never truly still. Her glow lures nature into a silent dance, evoking an unspoken dialogue between form and perception. 
         More than a fleeting vision,
-        <br /> she resists a mere passing glance—demanding pause, thought, and introspection.</>,
-        details: "dont knw",
+        <br /> she resists a mere passing glance <i>Demanding pause, Thought, and Introspection.</i></>,
+        details: "Material: Bronze, weathered patina",
         credits: <>Artist: Abhinav Goyal <br /> Commissioned for: Private Residence, Uttandi, Chennai 
         <br /> Landscape Design: Kiasma Studio<br />Photography: Ricken Desai</>
       }
@@ -300,9 +300,9 @@ W:1180mm</>,
       details: {
         heading: "Bonsai",
         location: "Delhi, India, 2024",
-        description: "A minimalist representation of a bonsai tree, celebrating patience, growth, and the beauty of small-scale perfection.",
-        details: "Material: Steel, copper accents\nHeight: 5 ft, Width: 4 ft, Depth: 4 ft",
-        credits: "Artist: FormForge Studios, Commissioned by Delhi Zen Gardens"
+        description:<>A minimalist interpretation of a bonsai tree, this sculptural form blends geometric precision with organic grace. <br />The faceted base, resembling a seed pod or vessel, anchors the upward-reaching black branches <br /> crafted from modular steel elements. Celebrating patience, growth, and the art of deliberate cultivation, <br />the piece invites contemplation of nature’s quiet resilience and the elegance of small-scale mastery.</> ,
+        details: <>Material: Stainless steel (branches) and coated mild steel (base), finished in Matte black and Metallic Gold <br />Height: 7.5 ft, Width: 3.5 ft, Depth: 3 ft </>, 
+        credits:  <>Artist: Abhinav Goyal <br />Commissioned for: Delhi Zen Gardens</> 
       }
     },
     { 
@@ -315,12 +315,8 @@ W:1180mm</>,
       details: {
         heading: "N A N D I",
         location: "",
-        description: <>A symbol of devotion, patience, and strength, stands poised in bustling Pune residence, 
-        embodying the essence of waiting, welcome, and acceptance virtues deeply rooted in Indian tradition. <br />
-        Crafted for Shivtirtha House, Pune. This sculpture is more than art, it's an invocation.\
-        <br /> A silent guardian, a sage of divine wisdom, ushering in an aura of growth, 
-        harmony, and timeless presence.</>,
-        details: "dont know",
+        description: <>A symbol of devotion, patience, and strength, this angular Nandi sculpture stands poised in a bustling Pune residence <br /> embodying virtues of welcome and silent resilience deeply rooted in Indian tradition. <br /> It transcends ornamentation, serving as a spiritual anchor and timeless guardian, <br />radiating harmony and sacred presence.</>,
+        details: <>Material: Mild steel with Matte black finish and Brass<br />Height: 4.5 ft, Width: 5.5 ft, Depth: 2.5 ft </>,
         credits:  <>Artist: Abhinav Goyal <br /> Commissioned for: Shivtirtha House, Pune <br /> Photography: FormForge</>
       }
     },
@@ -334,9 +330,9 @@ W:1180mm</>,
       details: {
         heading: "The Carefree Seat",
         location: "Hyderabad, India, 2022",
-        description: "A functional sculpture of a relaxed figure on a bench, inviting viewers to pause and embrace leisure.",
-        details: "Material: Fiberglass, steel frame\nHeight: 6 ft, Width: 8 ft, Depth: 4 ft",
-        credits: "Artist: FormForge Studios, Commissioned by Hyderabad Public Spaces"
+        description: <>A functional sculpture of a relaxed figure seamlessly perched on a bench, this piece invites viewers <br />to pause, reflect, and embrace leisure. Its faceted, geometric form adds a modern sensibility <br /> to the serene garden setting, blurring the line between utility and art. A Quiet Companion to moments of rest.</> ,
+        details: <>Material: Mild steel with outdoor-grade PU coating in Corten finish <br />Height: 5 ft, Width: 2 ft, Depth: 2.5 ft </>,
+        credits: <>Artist: Abhinav Goyal <br />Commissioned for: Public Space, Hyderabad</> 
       }
     },
     {
@@ -353,9 +349,8 @@ W:1180mm</>,
          <br /> Inspired by our national flower, Bloom was born from a vision sparked at the India Design ID Fair 2020, 
          <br />where the client was instantly drawn to our work. Designed to seamlessly merge with its space,
          <br /> it stands as an organic extension of nature. <br /> <i>An emblem of renewal, harmony, and timeless beauty.</i></>,
-        details: <>Material: Corten Steel & Brass   <br />
-        Dimensions: 5ft | 7ft is it correct?</>,
-        credits:  <>Artist: Abhinav Goyal <br /> Commissioned for: Shivtirtha House, Pune <br /> Photography: FormForge</>
+        details: <>Material: Corten Steel & Brass  </>,
+        credits:  <>Artist: Abhinav Goyal <br /> Commissioned for: Private Residence, Pune  </>
       }
     },
     { 
@@ -366,9 +361,9 @@ W:1180mm</>,
       details: {
         heading: "Reflective Pause",
         location: "Bangalore, India, 2025",
-        description: "A contemplative figure in repose, encouraging moments of stillness and reflection in an urban setting.",
-        details: "Material: Polished bronze, granite base\nHeight: 7 ft, Width: 4 ft, Depth: 4 ft",
-        credits: "Artist: FormForge Studios, Commissioned by Bangalore Urban Retreat"
+        description: <>A sculptural bench wrapped around a tree, Reflective Pause invites stillness and connection <br />  with nature in the heart of the city. Crafted from mirror-polished stainless steel, its organic, fluid form <br /> captures surrounding reflections, creating a calming oasis for urban dwellers to Sit, breathe, and Reflect. </>,
+        details:<>Material: Mirror-polished Stainless Steel <br />Height: 1.5 ft, Width: 6 ft, Depth: 5 ft </>,
+        credits:  <>Artist: Abhinav Goyal <br /> Commissioned for:Bangalore Urban Retreat  </>
       }
     },
     { 
@@ -379,10 +374,10 @@ W:1180mm</>,
       caption: <>Abstracta</>,
       details: {
         heading: "Abstracta",
-        location: "Delhi, India, 2021",
-        description: "A purely abstract form inviting multiple interpretations, celebrating the freedom of artistic expression.",
-        details: "Material: Steel, acrylic panels\nHeight: 11 ft, Width: 5 ft, Depth: 5 ft",
-        credits: "Artist: FormForge Studios, Commissioned by Delhi Modern Art Gallery"
+        location: "",
+        description: <>A bold, geometric sculpture, Abstracta invites open interpretation through its layered intersecting <br /> frames and dynamic angles. Set against a polished stone backdrop, its golden finish catches the light<br /> amplifying its presence as a celebration of Pure form, Freedom, and Artistic expression.  </>,
+        details: <>Material: Stainless steel with brushed Gold PVD Coating <br />Height: 4 ft, Width: 5 ft, Depth: 2.5 ft </>,
+        credits: <>Artist: Abhinav Goyal <br /> Commissioned for: Delhi Modern Art Gallery  </> 
       }
     },
     { 
@@ -393,10 +388,10 @@ W:1180mm</>,
       caption: <>Buddha</>,
       details: {
         heading: "Buddha",
-        location: "Bangalore, India, 2023",
-        description: "A serene Buddha in meditation, radiating calm and enlightenment in a bustling cityscape.",
-        details: "Material: Bronze, stone pedestal\nHeight: 8 ft, Width: 5 ft, Depth: 5 ft",
-        credits: "Artist: FormForge Studios, Commissioned by Bangalore Peace Foundation"
+        location: "",
+        description:  <>A serene Buddha in meditation, this faceted sculpture offers a moment of stillness amidst the urban rush.<br />  It glows gently from within, symbolizing inner peace, balance, and spiritual awakening. <br /> Set within a moon gate frame, it becomes a portal to tranquility in the heart of the city.  </> ,
+        details: <>Material: Corten steel with internal lighting <br />Height: 5.5 ft, Width: 4 ft, Depth: 2.5 ft </>,
+        credits: <>Artist: Abhinav Goyal <br /> Commissioned for: Bangalore Peace Foundation  </> 
       }
     },
     { 
@@ -409,9 +404,9 @@ W:1180mm</>,
       details: {
         heading: "The Sleeping Lotus",
         location: "Delhi, India, 2021",
-        description: "A closed lotus bud at rest, symbolizing potential and the beauty of quiet moments before blooming.",
-        details: "Material: Aluminum, matte finish\nHeight: 6 ft, Width: 7 ft, Depth: 7 ft",
-        credits: "Artist: FormForge Studios, Commissioned by Delhi Nature Society"
+        description: <>A sculptural interpretation of a closed lotus bud, Sleeping Lotus captures the stillness <br />and quiet strength of nature before awakening. Its organic curves and rhythmic layers <br />suggest latent energy and unfolding potential<br /> <i>A Celebration of Pause, Introspection, and the promise of Bloom.</i>   </> ,
+        details: <>Material: Corten steel with natural patina <br />Height: 3.5 ft, Width: 3 ft, Length: 8 ft </>,
+        credits:  <>Artist: Abhinav Goyal <br /> Commissioned for: Delhi Nature Society  </>  
       }
     },
     { 
@@ -422,7 +417,7 @@ W:1180mm</>,
       caption: <>Raging B U L L</>,
       details: {
         heading: "Raging Bull",
-        location: "Goa, India, 2024",
+        location: "",
         description: <> A force of unbridled power and raw intensity, Raging Bull captures the creature's wrath <br /> through a striking
          abstraction in Corten steel. Weathered to perfection, its dynamic form <br /> commands attention at the main entrance plaza
           of a private villa in Goa.<br />A bold expression of strength and dominance, it stands as a testament to resilience and untamed energy.</>,
@@ -443,7 +438,7 @@ W:1180mm</>,
       ],
       caption: <>The Raging Stallions</>,
       details: {
-        heading: "S T A L L I O N S",
+        heading: "Stallions",
         location: "",
         description: <>Curves hold an untamed power—fluid yet fierce, commanding yet free. To capture their essence is no easy feat.
         <br /> It demands more than form; it requires motion, rhythm, and soul.
@@ -451,9 +446,9 @@ W:1180mm</>,
         They pull you beyond the ordinary, igniting something primal, something wild. To witness them is to ride upon the wind, 
         <br />to dance upon the brink like a flame— <i>Unbridled, Fearless, and Untamed.</i></>,
        
-       details: <>Material: Lightweight, Resilient Aluminum. <br /> Dimensions: -</>,
+       details: <>Material: Lightweight, Resilient Aluminum. <br /></>,
   
-        credits: <>Artist: Abhinav Goyal <br /> Commissioned for: - <br /> Photography: -</>
+        credits: <>Artist: Abhinav Goyal </>
       }
     },
     { 
@@ -463,7 +458,7 @@ W:1180mm</>,
       ],
       caption: <>Panthera</>,
       details: {
-        heading: "P A N T H E R A",
+        heading: "Panthera ",
         location: "",
         description: <>A shadow in motion, a whisper in the dark. It stands as the spirit of the night, a traveler between realms. <br />
         There is an enchantment in its soft, deliberate pounce, a quiet dignity in solitude. <br />
@@ -471,20 +466,22 @@ W:1180mm</>,
          shimmers with an otherworldly glow, shifting with light and movement. <br />
         A creature of instinct and elegance, it exists between reality and myth.</>,
         details:<>Material: 3mm Stainless Steel <br /> Dimensions: 7ft | 3ft | 1.8ft</>,
-        credits: <>Artist: Abhinav Goyal <br /> Commissioned for: - <br /> Photography: -</>
+        credits: <>Artist: Abhinav Goyal <br /></>
       }
     },
     { 
       images: [
         { src: "/aphrodia-goa-2018.webp", alt: "Aphrodia Sculpture in Goa, India, 2018" }
       ],
-      caption: <>Aphrodia</>,
+      caption: <>The Meditating Lady</>,
       details: {
-        heading: "Aphrodia",
-        location: "Goa, India, 2018",
-        description: "Inspired by Aphrodite, this sculpture celebrates beauty and love with flowing, sensual forms.",
-        details: "Material: Marble, bronze accents\nHeight: 7 ft, Width: 4 ft, Depth: 4 ft",
-        credits: "Artist: FormForge Studios, Commissioned by Goa Coastal Arts"
+        heading: "The Meditating Lady",
+        location: "",
+        description: <>A serene female figure in meditation, this layered steel sculpture embodies peace, balance, and inner strength.
+        <br />Set against a lush, coastal backdrop, the form captures stillness in motion,
+        <br />each contour gently flowing into the next. Inviting calm, Presence, and Introspection. </>,
+        details: <>Material: Bronze, weathered patina <br />Height: 6 ft, Width: 2.7 ft, Depth: 2 ft </>,
+        credits: <>Artist: Abhinav Goyal <br />Commissioned for: Goa Serenity Project</>
       }
     },
     { 
@@ -494,10 +491,11 @@ W:1180mm</>,
       caption: <>Geomorph</>,
       details: {
         heading: "Geomorph",
-        location: "Hyderabad, India, 2023",
-        description: "An abstract representation of geological forms, exploring the interplay between nature and time.",
-        details: "Material: Steel, stone elements\nHeight: 10 ft, Width: 6 ft, Depth: 6 ft",
-        credits: "Artist: FormForge Studios, Commissioned by Hyderabad Earth Project"
+        location: "",
+        description: <>An abstract representation of geological forms, this sculpture explores the interplay between nature and time. <br />Its sharp, faceted surfaces evoke the raw energy of tectonic shifts and erosion,<br /> frozen mid-transformation. Both monolithic and dynamic, it stands as a powerful reminder <br />of the Earth’s ever-evolving landscapes.</>,
+        details: <>Material: Corten steel with weathered patina
+<br />Height: 7 ft | Width: 6 ft | Depth: 6 ft </>,
+        credits:  <>Artist: Abhinav Goyal <br />Commissioned for: Hyderabad Earth Project</> 
       }
     },
     { 
@@ -509,10 +507,15 @@ W:1180mm</>,
       caption: <>Ballerina</>,
       details: {
         heading: "Ballerina",
-        location: "Gurugram, India, 2023",
-        description: "A graceful ballerina in mid-pose, capturing the elegance and discipline of dance in a modern setting.",
-        details: "Material: Bronze, stainless steel base\nHeight: 8 ft, Width: 4 ft, Depth: 4 ft",
-        credits: "Artist: FormForge Studios, Commissioned by Gurugram Arts Society"
+        location: "",
+        description: <>
+        A graceful ballerina in mid-pose, this layered stainless steel sculpture captures the fluidity,<br /> discipline, and elegance of dance.
+        Its rhythmic form and outstretched arms evoke movement <br />frozen in time, bringing life and energy to the modern interior it inhabits.
+        <br />A celebration of poise, expression, and the art of stillness in motion.</>,
+        details: <>Material: Stainless steel with brushed finish
+        <br />Height: 8 ft, Width: 6 ft, Depth: 3 ft
+        </>,
+        credits:  <>Artist: Abhinav Goyal <br />Commissioned for: T.M.U University, Moradabad</>  
       }
     },
     { 
@@ -522,10 +525,10 @@ W:1180mm</>,
       caption: <>The Sole Gaze</>,
       details: {
         heading: "The Sole Gaze",
-        location: "Bangalore(IND), 2023",
-        description: "An introspective figure gazing upward, symbolizing contemplation and the search for meaning in a fast-paced world.",
-        details: "Material: Stainless steel, stone pedestal\nHeight: 8 ft, Width: 3 ft, Depth: 3 ft",
-        credits: "Artist: FormForge Studios, Commissioned by Bangalore Art Initiative"
+        location: "",
+        description: <>An introspective figure gazing upward, this bold, abstract face captures a moment of quiet reflection. <br /> Crafted from corten steel, its simplified geometry and monolithic presence evoke timelessness and depth. <br /> The upward gaze symbolizes contemplation, hope, and the enduring human quest <br /> for meaning amidst the chaos of a fast-paced world.</>,
+        details: "Material: Corten Steel",
+        credits: <>Artist: Abhinav Goyal <br /> Commissioned for: Hyderabad Design District </>
       }
     },
     { 
@@ -537,8 +540,11 @@ W:1180mm</>,
       caption: <>Solemn</>,
       details: {
         heading: "Solemn",
-        location: "Mumbai, India, 2021",
-        description: <>Where the unseen wields artistry. Solemn commands attention in the expansive <b> KPMG foyer, Mumbai.</b> An open, dynamic space that invites movement and interaction. As visitors walk around this striking piece, its form shifts, bold and defined from one angle, dissolving into thin air from another. Carefully layered to play with depth, light, and illusion, it embodies both strength and mystery. In this grand setting, "SOLEMN" is not just a sculpture; it is an experience, one that transforms with every step, revealing the magic of invisibility in full glory.</>,
+        location: "",
+        description: <>
+        Where the unseen becomes art.
+        In the expansive <b>KPMG foyer, Mumbai</b>, <b>Solemn</b> commands attention <br/>bold from one angle, vanishing from another. Layered to play with light and illusion, it’s not just a sculpture,  <br /> but an ever-shifting experience of strength and mystery.
+        </>,
         details: <>Vanishing sculpture crafted from Stainless steel with a matte black finish. <br /> Dimensions: 1800mm x 1500mm x 675mm </>,
         credits: <>Artist: Abhinav Goyal <br /> Commissioned for: KPMG, Mumbai <br /> Photography: KPMG</>
       }
@@ -550,10 +556,15 @@ W:1180mm</>,
       caption: <>A Quiet Gaze</>,
       details: {
         heading: "A Quiet Gaze",
-        location: "Oman, UAE, 2024",
-        description: "An abstract form with a gentle upward tilt, evoking serenity and introspection in a desert landscape.",
-        details: "Material: Polished aluminum, sandstone base\nHeight: 7 ft, Width: 5 ft, Depth: 5 ft",
-        credits: "Artist: FormForge Studios, Commissioned by Oman Art Collective"
+        location: "",
+        description: <>
+        An abstract head form with a gentle upward tilt, this mirror-polished sculpture evokes serenity,<br /> introspection, and quiet strength.
+        Set within a tranquil water feature, its faceted surface <br />reflects the surrounding desert light—blurring the boundaries between sculpture, sky, and soul.
+        <br />A contemplative gaze that invites viewers to pause and look within.</>,
+        details: <>Material: Mirror-polished stainless steel
+        <br />Height: 5 ft, Width: 6 ft, Depth: 5 ft
+        </>,
+        credits: <>Artist: Abhinav Goyal <br /> Commissioned for: Oman Art Collective </>
       }
     },
     { 
@@ -564,10 +575,15 @@ W:1180mm</>,
       caption: <>The Wing Sculpture</>,
       details: {
         heading: "The Wing Sculpture",
-        location: "Gurugram, India, 2022",
-        description: "A sleek, wing-like form soaring upward, symbolizing ambition and the freedom of flight.",
-        details: "Material: Stainless steel, mirrored finish\nHeight: 12 ft, Width: 8 ft, Depth: 4 ft",
-        credits: "Artist: FormForge Studios, Commissioned by Gurugram Skyline Project"
+        location: "",
+        description: <>
+        A sleek, wing-like form soaring upward, this dynamic sculpture symbolizes ambition,  <br /> elevation, and the freedom of flight.
+        Its fluid curves reflect light and movement,  <br />creating a sense of lift and momentum within the space.
+        <br />An ode to Progress, Aspiration, and Limitless Potential.</>,
+        details: <>Material: Mirror-polished stainless steel
+        <br />Height: 8 ft, Width: 6 ft, Depth: 3.5 ft
+        </>,
+        credits: <>Artist: Abhinav Goyal <br /> Commissioned for: Gurugram Skyline Project </> 
       }
     },
     { 
@@ -579,10 +595,15 @@ W:1180mm</>,
       caption: <>Dreaming Of Dharma</>,
       details: {
         heading: "Dreaming Of Dharma",
-        location: "Noida, India, 2024",
-        description: "A meditative form inspired by Buddhist principles, symbolizing harmony and spiritual awakening.",
-        details: "Material: Bronze, gold leaf accents\nHeight: 8 ft, Width: 5 ft, Depth: 5 ft",
-        credits: "Artist: FormForge Studios, Commissioned by Noida Spiritual Trust"
+        location: "",
+        description: <>
+        A meditative form inspired by Buddhist principles, this layered sculpture evokes a state of inner calm <br /> and spiritual awakening.
+       Its gentle posture and fluid contours invite viewers to reflect on harmony,<br /> mindfulness, and the quiet power of stillness.
+        <br />A sculptural embodiment of Dharma in the midst of modern life.</>,
+        details: <>Material: Stainless steel with satin finish 
+        <br />Height: 6.5 ft | Width: 4 ft | Depth: 5 ft
+        </>,
+        credits: <>Artist: Abhinav Goyal <br /> Commissioned for: Noida Spiritual Trust </> 
       }
     },
     { 
@@ -592,10 +613,15 @@ W:1180mm</>,
       caption: <>Skyward Bound</>,
       details: {
         heading: "Skyward Bound",
-        location: "Delhi, India, 2024",
-        description: "A dynamic upward spiral, representing aspiration and the relentless pursuit of progress.",
-        details: "Material: Steel, painted finish\nHeight: 15 ft, Width: 6 ft, Depth: 6 ft",
-        credits: "Artist: FormForge Studios, Commissioned by Delhi Development Authority"
+        location: "",
+        description: <>
+        A dynamic upward spiral embodied in the form of a poised bird, Skyward Bound represents aspiration, clarity <br />   and the relentless pursuit of progress.
+       Its origami-inspired geometry captures elegance in motion. <br />Standing tall as a symbol of resilience and focused determination.
+          A powerful metaphor for rising above.</>,
+        details: <>Material: Corten steel with weathered finish
+        <br />Height: 7 ft | Width: 3 ft | Depth: 2.5 ft
+        </>,
+        credits:<>Artist: Abhinav Goyal <br /> Commissioned for:  Delhi Development Authority </>
       }
     },
     { 
@@ -605,10 +631,15 @@ W:1180mm</>,
       caption: <>Seed</>,
       details: {
         heading: "Seed",
-        location: "Mumbai, India, 2024",
-        description: "A simple yet profound seed form, symbolizing potential, growth, and the origins of life.",
-        details: "Material: Bronze, stone base\nHeight: 6 ft, Width: 4 ft, Depth: 4 ft",
-        credits: "Artist: FormForge Studios, Commissioned by Mumbai Green Initiative"
+        location: "",
+        description: <>
+        A simple yet profound seed form, this sculpture captures the essence of potential, growth <br /> and the origins of life.
+        Its fluid, organic curves rise gently upward, echoing nature’s quiet strength <br />and the journey from stillness to bloom.
+        <br />A timeless symbol of new beginnings and rooted resilience.</>,
+        details: <>Material: Corten steel with polygonal surface treatment
+        <br />Height: 7.5 ft | Width: 3.5 ft | Depth: 3 ft
+        </>,
+        credits: <>Artist: Abhinav Goyal </>
       }
     },
     { 
@@ -618,10 +649,15 @@ W:1180mm</>,
       caption: <>Raging Bull</>,
       details: {
         heading: "Raging Bull",
-        location: "Goa, India, 2024",
-        description: "A powerful bull in mid-charge, embodying raw energy and untamed spirit against a coastal backdrop.",
-        details: "Material: Bronze, steel reinforcement\nHeight: 8 ft, Width: 12 ft, Depth: 5 ft",
-        credits: "Artist: FormForge Studios, Commissioned by Goa Art Collective"
+        location: "",
+        description: <>
+        A powerful bull in mid-charge, this faceted sculpture captures raw energy, determination, and untamed spirit.
+        <br />Set against a lush coastal backdrop, its angular form amplifies strength and momentum, <br /> An emblem of resilience and forward drive.
+        Standing proudly beside it is Olympic champion PV Sindhu,<br /> embodying the same fierce grace and unstoppable force.</>,
+        details: <>Material: Mild steel with weathered patina finish
+        <br />Height: 5 ft, Width: 7 ft, Depth: 3 ft
+        </>,
+        credits: <>Artist: Abhinav Goyal </>
       }
     },
     { 
@@ -632,52 +668,56 @@ W:1180mm</>,
       caption: <>Ganapati</>,
       details: {
         heading: "Ganapati",
-        location: "Dubai, UAE, 2024",
-        description: "A modern rendition of Lord Ganesha, blending tradition with innovation to honor wisdom and success.",
-        details: "Material: Bronze, gold plating\nHeight: 10 ft, Width: 6 ft, Depth: 5 ft",
-        credits: "Artist: FormForge Studios, Commissioned by Dubai Cultural Forum"
+        location: "",
+        description: <>
+        A modern rendition of Lord Ganesha, this faceted sculpture reimagines the divine form <br /> with clean geometry and minimalist expression.
+        Blending tradition with innovation,<br /> it honors wisdom, prosperity, and the spirit of new beginnings, <br />making it a powerful presence in any contemporary setting.</>,
+        details: <>Material: Corten Steel
+        <br />Height: 4.5 ft, Width: 3 ft, Depth: 2.5 ft
+        </>,
+        credits: <>Artist: Abhinav Goyal </>
       }
     },
-    { 
-      images: [
-        { src: "/41.webp", alt: "Abstract sculpture in modern art style" }
-      ],
-      caption: <>Abstract Form</>,
-      details: {
-        heading: "Abstract Form",
-        location: "Mumbai, India, 2023",
-        description: "A contemporary abstract sculpture exploring themes of space and form.",
-        details: "Material: Mixed media\nHeight: 8 ft, Width: 5 ft, Depth: 4 ft",
-        credits: "Artist: FormForge Studios, Commissioned by Mumbai Art Gallery"
-      }
-    },
-    { 
-      images: [
-        { src: "/40.webp", alt: "Ganapati Hindu deity sculpture in DXB, UAE, 2024" },
-        { src: "/gallery/616.webp", alt: "The Meditating Lady Sculpture in Goa, India, 2018" }
+    // { 
+    //   images: [
+    //     { src: "/41.webp", alt: "Abstract sculpture in modern art style" }
+    //   ],
+    //   caption: <>Abstract Form</>,
+    //   details: {
+    //     heading: "Abstract Form",
+    //     location: "Mumbai, India, 2023",
+    //     description: "A contemporary abstract sculpture exploring themes of space and form.",
+    //     details: "Material: Mixed media\nHeight: 8 ft, Width: 5 ft, Depth: 4 ft",
+    //     credits: "Artist: FormForge Studios, Commissioned by Mumbai Art Gallery"
+    //   }
+    // },
+    // { 
+    //   images: [
+    //     { src: "/40.webp", alt: "Ganapati Hindu deity sculpture in DXB, UAE, 2024" },
+    //     { src: "/gallery/616.webp", alt: "The Meditating Lady Sculpture in Goa, India, 2018" }
 
-      ],
-      caption: <>Raging Bull</>,
-      details: {
-        heading: "Raging Bull",
-        location: "Dubai, UAE, 2024",
-        description: "Raging Bull and success.",
-        details: "Material: Bronze, gold plating\nHeight: 10 ft, Width: 6 ft, Depth: 5 ft",
-        credits: "Artist: FormForge Studios, Commissioned by Dubai Cultural Forum"
-      }
-    },
+    //   ],
+    //   caption: <>Raging Bull</>,
+    //   details: {
+    //     heading: "Raging Bull",
+    //     location: "Dubai, UAE, 2024",
+    //     description: "Raging Bull and success.",
+    //     details: "Material: Bronze, gold plating\nHeight: 10 ft, Width: 6 ft, Depth: 5 ft",
+    //     credits: "Artist: FormForge Studios, Commissioned by Dubai Cultural Forum"
+    //   }
+    // },
    
-    { 
-        images: [
-          { src: "/42.webp", alt: "Abstract sculpture in modern art style" }
-        ],
-        caption: <>Abstract Form</>,
-        details: {
-          heading: "Abstract Form",
-          location: "Mumbai, India, 2023",
-          description: "A contemporary abstract sculpture exploring themes of space and form.",
-          details: "Material: Mixed media\nHeight: 8 ft, Width: 5 ft, Depth: 4 ft",
-          credits: "Artist: FormForge Studios, Commissioned by Mumbai Art Gallery"
-        }
-      }
+    // { 
+    //     images: [
+    //       { src: "/42.webp", alt: "Abstract sculpture in modern art style" }
+    //     ],
+    //     caption: <>Abstract Form</>,
+    //     details: {
+    //       heading: "Abstract Form",
+    //       location: "Mumbai, India, 2023",
+    //       description: "A contemporary abstract sculpture exploring themes of space and form.",
+    //       details: "Material: Mixed media\nHeight: 8 ft, Width: 5 ft, Depth: 4 ft",
+    //       credits: "Artist: FormForge Studios, Commissioned by Mumbai Art Gallery"
+    //     }
+    //   }
   ];
