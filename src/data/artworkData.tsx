@@ -25,7 +25,7 @@ export interface ArtworkDetails {
     { 
       images: [
         { src: "/twin-spirits-chennai-2023.webp", alt: "Twin Spirits Sculpture in Chennai, India, 2023" },
-        { src: "/gallery/401.webp", alt: "The Meditating Lady Sculpture in Goa, India, 2018" }
+        { src: "Arts/401.webp", alt: "The Meditating Lady Sculpture in Goa, India, 2018" }
       ],
       caption: <>Twin Spirits</>,
       details: {
@@ -42,7 +42,7 @@ export interface ArtworkDetails {
     { 
       images: [
         { src: "/metamorphosis-muse-hyderabad-2025.webp", alt: "The Metamorphosis Muse Sculpture in Hyderabad, India, 2025" },
-        { src: "/gallery/v10.webp", alt: "The Meditating Lady Sculpture in Goa, India, 2018" }
+        { src: "Arts/v10.webp", alt: "The Meditating Lady Sculpture in Goa, India, 2018" }
       ],
       caption: <>The Metamorphosis Muse</>,
       details: {
@@ -60,8 +60,8 @@ export interface ArtworkDetails {
     { 
       images: [
         { src: "/vighnaharta-mumbai-2022.webp", alt: "Vighnaharta Sculpture in Mumbai, India, 2022" },
-        { src: "/0-1.webp", alt: "Vighnaharta Sculpture in Mumbai, India, 2022" } ,
-       { src: "/0-2.webp", alt: "Vighnaharta Sculpture in Mumbai, India, 2022" }
+        { src: "/Ganesha.webp", alt: "Vighnaharta Sculpture in Mumbai, India, 2022" } ,
+       { src: "/Ganeshji.webp", alt: "Vighnaharta Sculpture in Mumbai, India, 2022" }
       ],
       caption: <>Vighnaharta</>,
       details: {
@@ -78,7 +78,7 @@ export interface ArtworkDetails {
     { 
       images: [
         { src: "/david-casamia-uae-2021.webp", alt: "David Sculpture at Casamia, UAE, 2021" },
-        { src: "/gallery/501.webp", alt: "The Meditating Lady Sculpture in Goa, India, 2018" }   
+        { src: "Arts/501.webp", alt: "The Meditating Lady Sculpture in Goa, India, 2018" }   
       ],
       caption: <>David</>,
       details: {
@@ -118,12 +118,11 @@ W:1180mm</>,
     { 
       images: [
         { src: "/mermaid-ohl-nam-vadodara-2022.webp", alt: "Mermaid | Oh'll'nam Sculpture in Vadodara, India, 2022" },
-        { src: "/gallery/131.webp", alt: "The Meditating Lady Sculpture in Goa, India, 2018" },
-        { src: "/gallery/m01.webp", alt: "The Meditating Lady Sculpture in Goa, India, 2018" },
-        { src: "/gallery/m00.webp", alt: "The Meditating Lady Sculpture in Goa, India, 2018" },
-        { src: "/gallery/o'll.webp", alt: "The Meditating Lady Sculpture in Goa, India, 2018" },
-        { src: "/gallery/11.webp", alt: "The Meditating Lady Sculpture in Goa, India, 2018" },
-        { src: "/gallery/13.webp", alt: "The Meditating Lady Sculpture in Goa, India, 2018" },
+        { src: "Arts/131.webp", alt: "The Meditating Lady Sculpture in Goa, India, 2018" },
+        { src: "Arts/m01.webp", alt: "The Meditating Lady Sculpture in Goa, India, 2018" },
+        { src: "Arts/m00.webp", alt: "The Meditating Lady Sculpture in Goa, India, 2018" },
+        { src: "Arts/o'll.webp", alt: "The Meditating Lady Sculpture in Goa, India, 2018" },
+        { src: "Arts/11.webp", alt: "The Meditating Lady Sculpture in Goa, India, 2018" },
        
       ],
       caption: <>Mermaid | Oh'll'nam</>,
@@ -144,7 +143,7 @@ W:1180mm</>,
     { 
       images: [
         { src: "/levitating-whale-kpmg-gurugram-2022.webp", alt: "Levitating Whale Sculpture at KPMG, Gurugram, India, 2022" },
-        { src: "/gallery/201.webp", alt: "The Meditating Lady Sculpture in Goa, India, 2018" },
+        { src: "Arts/201.webp", alt: "The Meditating Lady Sculpture in Goa, India, 2018" },
       ],
       caption: <>Levitating Whale </>,
       details: {
@@ -171,7 +170,7 @@ W:1180mm</>,
     { 
       images: [
         { src: "/inverted-cactus-hyderabad-2023.webp", alt: "Inverted Cactus Sculpture in Hyderabad, India, 2023" },
-        { src: "/gallery/012.webp", alt: "Inverted Cactus Sculpture in Hyderabad, India, 2023" }
+        { src: "Arts/012.webp", alt: "Inverted Cactus Sculpture in Hyderabad, India, 2023" }
       ],
       caption: <>Inverted Cactus </>,
       details: {
@@ -185,7 +184,7 @@ W:1180mm</>,
     { 
       images: [
         { src: "/sculptural-totems-hyderabad-2025.webp", alt: "Sculptural Totems in Hyderabad, India, 2025" },
-        { src: "/gallery/t10.webp", alt: "The Meditating Lady Sculpture in Goa, India, 2018" }
+        { src: "Arts/t10.webp", alt: "The Meditating Lady Sculpture in Goa, India, 2018" }
       ],
       caption: <>Sculptural Totems</>,
       details: {
@@ -199,8 +198,8 @@ W:1180mm</>,
     { 
       images: [
         { src: "/raging-stallions-chennai-2021.webp", alt: "The Raging Stallions Sculpture in Chennai, India, 2021" },
-        { src:"/gallery/71.webp", alt: "The Raging Stallions Sculpture in Chennai, India, 2021" },
-        { src: "/gallery/72.webp", alt: "The Raging Stallions Sculpture in Chennai, India, 2021" }
+        { src:"Arts/71.webp", alt: "The Raging Stallions Sculpture in Chennai, India, 2021" },
+        { src: "Arts/72.webp", alt: "The Raging Stallions Sculpture in Chennai, India, 2021" }
       ],
       caption: <>The Raging Stallions</>,
       details: {
@@ -220,7 +219,7 @@ W:1180mm</>,
     { 
       images: [
         { src: "/wing-man-dubai-2024.webp", alt: "The Wing Man Sculpture in Dubai, UAE, 2024" },
-        { src:"/gallery/1098.webp", alt: "The Raging Stallions Sculpture in Chennai, India, 2021" }
+        { src:"Arts/1098.webp", alt: "The Raging Stallions Sculpture in Chennai, India, 2021" }
       ],
       caption: <>The Wing Man</>,
       details: {
@@ -247,7 +246,7 @@ W:1180mm</>,
     { 
       images: [
         { src: "/leaning-man-hyderabad-2023.webp", alt: "The Leaning Man Sculpture in Hyderabad, India, 2023" },
-        { src: "/gallery/41.webp", alt: "The Meditating Lady Sculpture in Goa, India, 2018" }
+        { src: "Arts/41.webp", alt: "The Meditating Lady Sculpture in Goa, India, 2018" }
       ],
       caption: <>The Leaning Man</>,
       details: {
@@ -261,8 +260,8 @@ W:1180mm</>,
     { 
       images: [
         { src: "/meditating-lady-goa-2018.webp", alt: "The Meditating Lady Sculpture in Goa, India, 2018" },
-        { src: "/gallery/b-2.webp", alt: "The Meditating Lady Sculpture in Goa, India, 2018" },
-        { src: "/gallery/b-1.webp", alt: "The Meditating Lady Sculpture in Goa, India, 2018" }
+        { src: "Arts/b-2.webp", alt: "The Meditating Lady Sculpture in Goa, India, 2018" },
+        { src: "Arts/b-1.webp", alt: "The Meditating Lady Sculpture in Goa, India, 2018" }
       ],
       caption: <>The Meditating Lady</>,
       details: {
@@ -276,7 +275,7 @@ W:1180mm</>,
     { 
       images: [
         { src: "/etherea-chennai-2019.webp", alt: "Etherea Sculpture in Chennai, India, 2019" },
-        { src: "/gallery/e10.webp", alt: "The Meditating Lady Sculpture in Goa, India, 2018" },
+        { src: "Arts/e10.webp", alt: "The Meditating Lady Sculpture in Goa, India, 2018" },
       ],
       caption: <>Etherea</>,
       details: {
@@ -294,7 +293,7 @@ W:1180mm</>,
     { 
       images: [
         { src: "/bonsai-delhi-2024.webp", alt: "Bonsai Sculpture in Delhi, India, 2024" },
-        { src: "/gallery/A7.webp", alt: "Bonsai Sculpture in Delhi, India, 2024" }
+        { src: "Arts/A7.webp", alt: "Bonsai Sculpture in Delhi, India, 2024" }
       ],
       caption: <>Bonsai</>,
       details: {
@@ -308,8 +307,8 @@ W:1180mm</>,
     { 
       images: [
         { src: "/nandi-pune-2020.webp", alt: "Nandi Sculpture in Pune, India, 2020" },
-        { src: "/gallery/252.webp", alt: "The Meditating Lady Sculpture in Goa, India, 2018" },
-        { src: "/gallery/163.webp", alt: "The Meditating Lady Sculpture in Goa, India, 2018" }
+        { src: "Arts/252.webp", alt: "The Meditating Lady Sculpture in Goa, India, 2018" },
+        { src: "Arts/163.webp", alt: "The Meditating Lady Sculpture in Goa, India, 2018" }
       ],
       caption: <>Nandi</>,
       details: {
@@ -323,8 +322,8 @@ W:1180mm</>,
     { 
       images: [
         { src: "/carefree-seat-hyderabad-2022.webp", alt: "The Carefree Seat Sculpture in Hyderabad, India, 2022" },
-        { src:"/gallery/ carefree-seat.webp", alt: "Carefree seat corten steel" },
-        { src:  "/gallery/carefree-seat-hyderabad.webp", alt: "carefree seat corten steel sculpture " }  
+        { src:"Arts/ carefree-seat.webp", alt: "Carefree seat corten steel" },
+        { src:  "Arts/carefree-seat-hyderabad.webp", alt: "carefree seat corten steel sculpture " }  
       ],
       caption: <>The Carefree Seat</>,
       details: {
@@ -338,7 +337,7 @@ W:1180mm</>,
     {
       images: [
         { src: "/bloom-delhi-2021.webp", alt: "Bloom Sculpture in Delhi, India, 2021" },
-        { src:"/gallery/1_1.webp", alt: "Carefree seat corten steel" }
+        { src:"Arts/1_1.webp", alt: "Carefree seat corten steel" }
       ],
       caption: <>Bloom</>,
       details: {
@@ -369,7 +368,7 @@ W:1180mm</>,
     { 
       images: [
         { src: "/abstracta-delhi-2021.webp", alt: "Abstracta Sculpture in Delhi, India, 2021" },
-        { src: "/gallery/091.webp", alt: "Inverted Cactus Sculpture in Hyderabad, India, 2023" }
+        
       ],
       caption: <>Abstracta</>,
       details: {
@@ -383,7 +382,7 @@ W:1180mm</>,
     { 
       images: [
         { src: "/buddha-bangalore-2023.webp", alt: "Buddha Sculpture in Bangalore, India, 2023" },
-        { src: "/gallery/b30.webp", alt: "The Meditating Lady Sculpture in Goa, India, 2018" }
+        { src: "Arts/b30.webp", alt: "The Meditating Lady Sculpture in Goa, India, 2018" }
       ],
       caption: <>Buddha</>,
       details: {
@@ -397,8 +396,8 @@ W:1180mm</>,
     { 
       images: [
         { src: "/sleeping-lotus-delhi-2021.webp", alt: "The Sleeping Lotus Sculpture in Delhi, India, 2021" },
-        { src:  "/gallery/009.webp", alt: "The Sleeping Lotus Sculpture in Delhi, India, 2021" },
-        { src:  "/gallery/091.webp", alt: "The Sleeping Lotus Sculpture in Delhi, India, 2021" }
+        { src:  "Arts/009.webp", alt: "The Sleeping Lotus Sculpture in Delhi, India, 2021" },
+        { src:  "Arts/091.webp", alt: "The Sleeping Lotus Sculpture in Delhi, India, 2021" }
       ],
       caption: <>The Sleeping Lotus</>,
       details: {
@@ -412,7 +411,7 @@ W:1180mm</>,
     { 
       images: [
         { src: "/raging-bull-goa-2024.webp", alt: "Raging Bull Sculpture in Goa, India, 2024" },
-        { src:  "/gallery/x1.webp", alt: "The Sleeping Lotus Sculpture in Delhi, India, 2021" }
+        { src:  "Arts/x1.webp", alt: "The Sleeping Lotus Sculpture in Delhi, India, 2021" }
       ],
       caption: <>Raging B U L L</>,
       details: {
@@ -431,8 +430,8 @@ W:1180mm</>,
     { 
       images: [
         { src: "/raging-stallions-chennai_2021.webp", alt: "The Raging Stallions Sculpture in Chennai, India, 2021" },
-        { src:"/gallery/71.webp", alt: "The Raging Stallions Sculpture in Chennai, India, 2021" },
-        { src: "/gallery/72.webp", alt: "The Raging Stallions Sculpture in Chennai, India, 2021" }
+        { src:"Arts/71.webp", alt: "The Raging Stallions Sculpture in Chennai, India, 2021" },
+        { src: "Arts/72.webp", alt: "The Raging Stallions Sculpture in Chennai, India, 2021" }
 
          
       ],
@@ -454,7 +453,7 @@ W:1180mm</>,
     { 
       images: [
         { src: "/panthera-dubai-2020.webp", alt: "Panthera Sculpture in Dubai, UAE, 2020" },
-        { src: "/gallery/00-1.webp", alt: "Panthera Sculpture in Dubai, UAE, 2020" }
+        { src: "Arts/00-1.webp", alt: "Panthera Sculpture in Dubai, UAE, 2020" }
       ],
       caption: <>Panthera</>,
       details: {
@@ -501,8 +500,8 @@ W:1180mm</>,
     { 
       images: [
         { src: "/ballerina-gurugram-2023.webp", alt: "Ballerina Sculpture in Gurugram, India, 2023" },
-        { src: "/gallery/061.webp", alt: "Ballerina Sculpture in Gurugram, India, 2023" },
-        { src:  "/gallery/062.webp", alt: "Ballerina Sculpture in Gurugram, India, 2023" }
+        { src: "Arts/061.webp", alt: "Ballerina Sculpture in Gurugram, India, 2023" },
+        { src:  "Arts/062.webp", alt: "Ballerina Sculpture in Gurugram, India, 2023" }
       ],
       caption: <>Ballerina</>,
       details: {
@@ -534,8 +533,8 @@ W:1180mm</>,
     { 
       images: [
         { src: "/solemn-mumbai-2021.webp", alt: "Solemn contemporary sculpture in Mumbai, India, 2021" },
-        { src: "/gallery/c1.webp", alt: "The Meditating Lady Sculpture in Goa, India, 2018" },
-        { src: "/gallery/c2.webp", alt: "The Meditating Lady Sculpture in Goa, India, 2018" }
+        { src: "Arts/c1.webp", alt: "The Meditating Lady Sculpture in Goa, India, 2018" },
+        { src: "Arts/c2.webp", alt: "The Meditating Lady Sculpture in Goa, India, 2018" }
       ],
       caption: <>Solemn</>,
       details: {
@@ -570,7 +569,7 @@ W:1180mm</>,
     { 
       images: [
         { src: "/wing-sculpture-gurugram-2022.webp", alt: "The Wing Sculpture modern metal installation in Gurugram, India, 2022" },
-        { src: "/gallery/301.webp", alt: "The Meditating Lady Sculpture in Goa, India, 2018" }
+        { src: "Arts/301.webp", alt: "The Meditating Lady Sculpture in Goa, India, 2018" }
       ],
       caption: <>The Wing Sculpture</>,
       details: {
@@ -589,8 +588,8 @@ W:1180mm</>,
     { 
       images: [
         { src: "/dreaming-of-dharma-noida-2024.webp", alt: "Dreaming Of Dharma spiritual sculpture in Noida, India, 2024" },
-        { src: "/gallery/b20.webp", alt: "The Meditating Lady Sculpture in Goa, India, 2018" },
-        { src: "/gallery/b08.webp", alt: "The Meditating Lady Sculpture in Goa, India, 2018" }
+        { src: "Arts/b20.webp", alt: "The Meditating Lady Sculpture in Goa, India, 2018" },
+        { src: "Arts/b08.webp", alt: "The Meditating Lady Sculpture in Goa, India, 2018" }
       ],
       caption: <>Dreaming Of Dharma</>,
       details: {
@@ -663,7 +662,7 @@ W:1180mm</>,
     { 
       images: [
         { src: "/ganapati-dxb-uae-2024.webp", alt: "Ganapati Hindu deity sculpture in DXB, UAE, 2024" },
-        { src: "/gallery/3012.webp", alt: "The Meditating Lady Sculpture in Goa, India, 2018" }
+        { src: "Arts/3012.webp", alt: "The Meditating Lady Sculpture in Goa, India, 2018" }
       ],
       caption: <>Ganapati</>,
       details: {
@@ -694,7 +693,7 @@ W:1180mm</>,
     // { 
     //   images: [
     //     { src: "/40.webp", alt: "Ganapati Hindu deity sculpture in DXB, UAE, 2024" },
-    //     { src: "/gallery/616.webp", alt: "The Meditating Lady Sculpture in Goa, India, 2018" }
+    //     { src: "Arts/616.webp", alt: "The Meditating Lady Sculpture in Goa, India, 2018" }
 
     //   ],
     //   caption: <>Raging Bull</>,
