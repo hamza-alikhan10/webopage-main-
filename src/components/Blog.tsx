@@ -38,7 +38,7 @@ const Blog: React.FC = () => {
 
           <div className="grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
             {blogPosts.map((post) => (
-              <article key={post.id} className="bg-white rounded-xl shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105">
+              <article key={post.id} className="bg-white rounded-xl shadow-lg overflow-hidden transition-transform duration-300 ">
                 <img
                   src={post.image}
                   alt={post.title}

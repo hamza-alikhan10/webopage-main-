@@ -25,7 +25,7 @@ export interface ArtworkDetails {
     { 
       images: [
         { src: "/twin-spirits-chennai-2023.webp", alt: "Twin Spirits Sculpture in Chennai, India, 2023" },
-        { src: "Arts/401.webp", alt: "The Meditating Lady Sculpture in Goa, India, 2018" }
+        { src: "Arts/401.webp", alt: "Twin Spirits" }
       ],
       caption: <>Twin Spirits</>,
       details: {
