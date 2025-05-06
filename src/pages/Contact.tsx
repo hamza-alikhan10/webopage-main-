@@ -103,7 +103,7 @@ const Contact = () => {
               <div className="flex space-x-2 items-center ">
                 
                 <Phone className="w-6 h-6" />  <MessageCircle className="w-6 h-6 " />
-                <span className="sm:text-lg text-base">+91 965 002 0485 <br /> +91 965 000 6385 </span>
+                <span className="sm:text-lg text-base"> +91 965 000 6385  <br /> +91 965 002 0485 </span>
               </div>
              
               <button onClick={handleMapClick} className="flex space-x-2 items-center bg-gray-100 hover:text-gray-600 text-left">

@@ -20,6 +20,11 @@ interface Publication {
 
 const publications: Publication[] = [
     {
+        name: "architectandinteriorsindia",
+        logo: "/architect_shalini.webp",
+        link: "https://www.architectandinteriorsindia.com/products/curate-your-modern-moment-with-this-opulent-sculptural-art-collection",
+    },
+    {
         name: "GoodHomes",
         logo: "/goodhomes-magazine.webp",
         link: "https://www.goodhomes.co.in/design-and-style/style-makers/in-conversation-with-artist-abhinav-goyal-6038.html",
