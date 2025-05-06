@@ -8,8 +8,9 @@ import Contact from "./pages/Contact";
 import Press from "./pages/Press";
 import About from "./pages/BiographyPage";
 import Gallery from "./pages/PortfolioPage";
-import Blog from './components/Blog';
-import BlogPost from './components/BlogPost';
+import Blog from "./components/Blog";
+import BlogPost from "./components/BlogPost";
+import ArtworkDetail from "./ArtworkDetail";
 
 const queryClient = new QueryClient();
 
@@ -24,6 +25,7 @@ const App = () => {
             <Route path="/" element={<Gallery />} />
             <Route path="/about" element={<About />} />
             <Route path="/gallery" element={<Gallery />} />
+            <Route path="/gallery/:slug" element={<ArtworkDetail />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/press" element={<Press />} />
             <Route path="/blog" element={<Blog />} />

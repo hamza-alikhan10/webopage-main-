@@ -26,7 +26,7 @@ export interface BlogPost {
     
           <section class="mb-10">
            
-            <p class="text-gray-600"><b>Michelangelo Buonarroti</b>, a famous artist from Italy, created the <b> sculpture of David.</b></p>
+            <p class="text-gray-600"><b> <a href="https://en.wikipedia.org/wiki/David_%28Michelangelo%29" class=" hover:underline">Michelangelo Buonarroti</a></b>, a famous artist from Italy, created the <b> sculpture of David.</b></p>
              <p class="text-gray-600">This amazing work of Renaissance art was made between 1501 and 1504. It shows David right before he faces the giant Goliath.</p>
                <p class="text-gray-600">The sculpture is known for its perfect shape, lively pose, and detailed work. It shows <b>Michelangelo's</b> incredible talent.</p>
              <p class="text-gray-600">The sculpture of David is a big influence on artists and art fans all over the world.</p>
@@ -58,7 +58,7 @@ export interface BlogPost {
            <p class="text-gray-600">Using traditional Renaissance sculpting tools like chisels, hammers, drills, and rasps. Michelangelo gradually revealed the figure within the stone. Documentary evidence from the period indicates Michelangelo regularly provided progress reports to guild overseers, who were increasingly impressed by the emerging masterpiece. </p>
              </section>
     
-          <section class="mb-10">
+          <section class="mb-5">
             <h2 class="text-3xl font-semibold mb-5">Artistic and Technical Innovations</h2>
             <p class="text-gray-600">What distinguishes Michelangelo's David from previous depictions of the biblical hero is his interpretation of the narrative moment. Rather than portraying David after his victory over Goliath (as was traditional), Michelangelo captured him in the tense moment before battle.</p>
              <p class="text-gray-600">Several artistic innovations make this sculpture revolutionary:</p>
@@ -86,7 +86,7 @@ export interface BlogPost {
     
           <section class="mb-10">
             <h3 class="text-3xl font-semibold mb-2">David as Political Statement</h3>
-            <p class="text-gray-600">The sculpture was installed outside the Palazzo Vecchio in the Piazza della Signoria—the heart of Florentine government rather than on the cathedral as originally planned. In this location, David became a symbol of the Republic of Florence's determination to remain independent against more powerful neighboring states.
+            <p class="text-gray-600">The sculpture was installed outside the Palazzo Vecchio in the Piazza della Signoria—The heart of Florentine government rather than on the cathedral as originally planned. In this location, David became a symbol of the Republic of Florence's determination to remain independent against more powerful neighboring states.
 Just as the biblical David defeated the giant Goliath against overwhelming odds, Florence saw itself as a small republic standing against powerful threats, particularly from Rome and Milan.</p>
           </section>
 
@@ -101,201 +101,79 @@ Just as the biblical David defeated the giant Goliath against overwhelming odds,
                         <li class="mb-3">Rational thought combined with spiritual meaning</li>
                          <li >The individual's capacity to overcome challenges</li>
                     </ul>
-                    <p class="text-gray-600"> The sculpture represents the Renaissance belief in humanity's potential for greatness both physically and intellectually.</p>
+                    <p class="text-gray-600 mb-10"> The sculpture represents the Renaissance belief in humanity's potential for greatness both physically and intellectually.</p>
+                     <img class="mb-5" src="/images/blog/David-.png" alt="Corten Steel Overview">
           </section>
 
+         <section class="mb-10">
+    <h2 class="text-3xl font-semibold mb-5">Our Artistic Vision: Reimagining David for the Modern Era</h2>
+    <p class="text-gray-600">Our contemporary David sculpture, crafted for <a href="https://www.youtube.com/watch?v=kdZYhfHYHtY&t=195s" class="text-blue-600 hover:underline">Dubai Mega Mansion</a>, reflects a bold fusion of Renaissance heritage and modern innovation. Tasked with creating a signature piece for this iconic location, our team set out to pay homage to Michelangelo’s timeless masterpiece while reinterpreting it through a 21st-century lens.</p>
+    <p class="text-gray-600">Sculptor Abhinav Goyal, renowned for his ability to blend classical forms with cutting-edge techniques, drew inspiration from the original David’s graceful proportions and dynamic contrapposto stance. However, Goyal’s vision diverged by deconstructing the figure into a series of asymmetrical steel plates. This fragmented yet harmonious design captures the essence of Michelangelo’s work while embracing a modern aesthetic that resonates with today’s art collectors and design enthusiasts.</p>
+    <p class="text-gray-600">The sculpture’s construction process mirrors the philosophical underpinnings of our approach: honoring tradition while pushing boundaries. Each steel plate was meticulously shaped and layered to evoke the human form, creating a dialogue between the solid permanence of Michelangelo’s marble and the fluid, reflective quality of contemporary materials. The result is a piece that feels both familiar and strikingly new, inviting viewers to reconsider David’s enduring relevance.</p>
+    <p class="text-gray-600">Designed to withstand Dubai’s harsh climate, the sculpture features a weatherproof finish that ensures its longevity in both indoor and outdoor settings. A custom backlighting system further elevates the piece, casting dramatic shadows and highlighting its three-dimensionality after sunset. This interplay of light and form transforms the sculpture into a dynamic experience, shifting in character as day turns to night.</p>
+    <p class="text-gray-600">Installed at a luxurious Palm Jumeirah mansion, this reimagined David serves as a testament to the motif’s adaptability and universal appeal. It bridges the gap between Renaissance Florence and modern Dubai, proving that great art can transcend time and place to inspire new generations.</p>
+  </section>
 
+  <section class="mb-10">
+    <h2 class="text-3xl font-semibold mb-5">Conclusion: The Enduring Legacy of Michelangelo’s David</h2>
+    <p class="text-gray-600">Michelangelo’s David, carved over 500 years ago, remains a pinnacle of human creativity, blending technical precision, emotional intensity, and profound symbolism. Its ability to captivate audiences at Florence’s Galleria dell’Accademia is matched only by its influence on artists worldwide, including our own reinterpretation for Palm Jumeirah.</p>
+    <p class="text-gray-600">The question “Who made the sculpture of David?” may be answered simply "Michelangelo Buonarroti" but the masterpiece’s significance runs far deeper. It embodies the Renaissance spirit of human potential, a vision that continues to resonate in our modern creation. From the chisel marks of 16th-century Florence to the sleek steel of 21st-century Dubai, David stands as a powerful reminder of art’s ability to transform raw materials into enduring symbols of excellence.</p>
+    <p class="text-gray-600">Our contemporary <a href="https://formforge.com/gallery/david" class="text-blue-600 hover:underline">David</a> is more than a tribute; it’s a conversation across centuries, a celebration of how artistic genius can evolve while remaining rooted in the universal truths of beauty, resilience, and creativity. As Michelangelo once saw an angel in a block of marble, we see in David a spark of inspiration that continues to shape the future of art.</p>
+  </section>
 
+        <section class="mb-10">
+  <h2 class="text-3xl font-semibold mb-8">Exploring Michelangelo’s David: Your Questions Answered</h2>
+  
+  <div class="mb-6">
+    <h3 class="text-2xl font-semibold mb-3">Who sculpted the iconic David statue?</h3>
+    <p class="text-gray-600">Michelangelo Buonarroti, a master of the Italian Renaissance, crafted the sculpture of David between 1501 and 1504, showcasing his unparalleled skill in marble carving.</p>
+  </div>
 
+  <div class="mb-6">
+    <h3 class="text-2xl font-semibold mb-3">Why is Michelangelo’s David considered significant?</h3>
+    <p class="text-gray-600">David stands as a testament to artistic excellence, with its lifelike anatomy, emotional intensity, and embodiment of Florence’s republican ideals. It remains a cornerstone of Renaissance art.</p>
+  </div>
 
+  <div class="mb-6">
+    <h3 class="text-2xl font-semibold mb-3">What material was used for the David sculpture?</h3>
+    <p class="text-gray-600">The statue was carved from a single block of premium Carrara marble, prized for its fine texture and durability.</p>
+  </div>
 
+  <div class="mb-6">
+    <h3 class="text-2xl font-semibold mb-3">How tall is Michelangelo’s David?</h3>
+    <p class="text-gray-600">The sculpture towers at approximately 17 feet, making it an imposing yet harmonious figure designed to inspire awe.</p>
+  </div>
 
+  <div class="mb-6">
+    <h3 class="text-2xl font-semibold mb-3">Where can I see the original David sculpture?</h3>
+    <p class="text-gray-600">The original masterpiece resides in the Galleria dell’Accademia in Florence, Italy, where it draws countless visitors each year.</p>
+  </div>
 
+  <div class="mb-6">
+    <h3 class="text-2xl font-semibold mb-3">How was David received when first unveiled?</h3>
+    <p class="text-gray-600">In 1504, the sculpture was hailed as a triumph, celebrated for its technical brilliance and as a powerful symbol of Florentine pride.</p>
+  </div>
 
+  <div class="mb-6">
+    <h3 class="text-2xl font-semibold mb-3">Did Michelangelo’s David inspire Indian sculptors?</h3>
+    <p class="text-gray-600">Yes, artists like Ramkinkar Baij were influenced by David’s classical proportions, blending Renaissance techniques with Indian artistic traditions to create innovative modern sculptures.</p>
+  </div>
 
+  <div class="mb-6">
+    <h3 class="text-2xl font-semibold mb-3">What obstacles did Michelangelo overcome while sculpting David?</h3>
+    <p class="text-gray-600">Michelangelo tackled a flawed marble block, previously abandoned by other sculptors, using his expertise to transform its imperfections into a flawless work of art.</p>
+  </div>
 
+  <div class="mb-6">
+    <h3 class="text-2xl font-semibold mb-3">How has the David sculpture been preserved?</h3>
+    <p class="text-gray-600">Careful conservation efforts, including indoor relocation, gentle cleaning, and environmental controls, have protected David’s marble surface and structural integrity for centuries.</p>
+  </div>
 
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            <section class="mb-10">
-            <h2 class="text-3xl font-semibold mb-5">Renaissance Florence: The Birthplace of David</h2>
-            <h3 class="text-2xl font-semibold mb-5">Political Climate of 15th-Century Florence</h3>
-            <p class="text-gray-600">Florence was a republic governed by the Signoria and influenced by powerful families like the Medici. Civic art projects underscored communal identity and political ideals.</p>
-            <h3 class="text-2xl font-semibold mb-5">The Medici Influence on the Arts</h3>
-            <p class="text-gray-600">The Medici family’s patronage of artists and scholars—most notably under Lorenzo the Magnificent—fostered an environment where Renaissance art could flourish.</p>
-            <h3 class="text-2xl font-semibold mb-5">Public Art as a Political Statement</h3>
-            <p class="text-gray-600">Public sculptures like David served as declarations of civic virtue and independence, reinforcing Florence’s self-image against external and internal threats.</p>
-          </section>
-    
-          <section class="mb-10">
-            <h2 class="text-3xl font-semibold mb-10">Who Made the Sculpture of David? The Complete Story</h2>
-            <h3 class="text-2xl font-semibold mb-2">The Selection Process for the Artist</h3>
-            <p class="text-gray-600">When unveiled in 1504, David created an immediate sensation. A committee including Leonardo da Vinci and Sandro Botticelli advised on its placement, ultimately selecting the Piazza della Signoria where it remained for over 350 years.</p>
-             <p class="text-gray-600 mb-5"> Contemporary accounts describe public awe at the statue's perfection. Giorgio Vasari, the great Renaissance biographer, wrote that David eclipsed all other statues,<b> Ancient or modern, Greek or Roman.</b></p>
-            <h3 class="text-2xl font-semibold mb-3">Preservation Challenges</h3>
-          <p class="text-gray-600 mb-1"> Over centuries, David faced numerous preservation challenges:</p>
-           <ul class="list-disc pl-6 text-gray-600 mb-10">
-                        <li class="mb-3">In 1512, lightning struck nearby, damaging the statue's base</li>
-                        <li class="mb-3">In 1527, during political unrest, the left arm was broken and had to be repaired</li>
-                        <li class="mb-3">Centuries of exposure to elements caused gradual deterioration</li>
-                        <li class="mb-3">In 1873, concerns about weather damage led to its relocation indoors</li>
-                    </ul>
-
-            <h3 class="text-2xl font-semibold mb-2">Modern Conservation</h3>
-            <p class="text-gray-600">David now resides in the Galleria dell'Accademia in Florence in a specially designed tribune. Modern conservation efforts include:</p>
-          <ul class="list-disc pl-6 text-gray-600 mb-10">
-                        <li class="mb-3">Controlled environmental conditions</li>
-                        <li class="mb-3">Non-invasive cleaning techniques</li>
-                        <li class="mb-3">Regular condition monitoring</li>
-                        <li class="mb-3">Structural reinforcement against seismic activity</li>
-                    </ul>
-            </section>
-    
-          <section class="mb-10">
-            <h2 class="text-3xl font-semibold mb-5">Renaissance Florence: The Birthplace of David</h2>
-            <h3 class="text-2xl font-semibold mb-5">Political Climate of 15th-Century Florence</h3>
-            <p class="text-gray-600">Florence was a republic governed by the Signoria and influenced by powerful families like the Medici. Civic art projects underscored communal identity and political ideals.</p>
-            <h3 class="text-2xl font-semibold mb-5">The Medici Influence on the Arts</h3>
-            <p class="text-gray-600">The Medici family’s patronage of artists and scholars—most notably under Lorenzo the Magnificent—fostered an environment where Renaissance art could flourish.</p>
-            <h3 class="text-2xl font-semibold mb-5">Public Art as a Political Statement</h3>
-            <p class="text-gray-600">Public sculptures like David served as declarations of civic virtue and independence, reinforcing Florence’s self-image against external and internal threats.</p>
-          </section>
-    
-          <section class="mb-10">
-            <h2 class="text-3xl font-semibold mb-5">Michelangelo Buonarroti: Life of a Genius</h2>
-            <h3 class="text-2xl font-semibold mb-5">Early Life and Artistic Training</h3>
-            <p class="text-gray-600">Born in 1475, Michelangelo apprenticed under Domenico Ghirlandaio before studying classical sculpture under Bertoldo di Giovanni in the Medici gardens, absorbing antiquity’s lessons.</p>
-            <h3 class="text-2xl font-semibold mb-5">Major Works Beyond David</h3>
-            <ul class="list-disc pl-6 text-gray-600 mb-3">
-              <li class="mb-3"><b>Pietà (1498–1500):</b> Marble sculpture capturing profound emotion.</li>
-              <li class="mb-3"><b>Sistine Chapel Ceiling (1508–1512):</b> Fresco cycle featuring over 300 figures.</li>
-            </ul>
-            <h3 class="text-2xl font-semibold mb-5">Artistic Philosophy and Techniques</h3>
-            <p class="text-gray-600 italic">"Every block of stone has a statue inside it, and it is the task of the sculptor to discover it." – Michelangelo</p>
-            <p class="text-gray-600">Michelangelo believed in freeing the form within the marble, using tools like the gradina for precision and his unmatched grasp of anatomy to breathe life into stone.</p>
-          </section>
-    
-          <section class="mb-10">
-            <h2 class="text-3xl font-semibold mb-5">The Marble Marvel: Examining David’s Physical Attributes</h2>
-            <h3 class="text-2xl font-semibold mb-5">Dimensions and Scale</h3>
-            <p class="text-gray-600">At 17 feet tall, David broke new ground in monumental sculpture, creating an immediate visual impact in any setting.</p>
-            <h3 class="text-2xl font-semibold mb-5">The Carrara Marble Selection</h3>
-            <p class="text-gray-600">Michelangelo chose fine-grained Carrara marble for its purity and workability, allowing for unparalleled detail and subtle textures.</p>
-            <h3 class="text-2xl font-semibold mb-5">Anatomical Details and Proportions</h3>
-            <p class="text-gray-600">Precision in musculature and form reflects Michelangelo’s study of human anatomy, with particular emphasis on tension in the hands and gaze.</p>
-            <h3 class="text-2xl font-semibold mb-5">Hands and Facial Expression Significance</h3>
-            <p class="text-gray-600">David’s oversized hands and intense expression capture the psychological moment before conflict, adding emotional depth to the composition.</p>
-          </section>
-    
-          <section class="mb-10">
-            <h2 class="text-3xl font-semibold mb-5">Symbolism and Meaning: What David Represented</h2>
-            <h3 class="text-2xl font-semibold mb-5">Biblical Narrative vs. Renaissance Interpretation</h3>
-            <p class="text-gray-600">While rooted in the David and Goliath story of faith and courage, Michelangelo’s rendition emphasizes humanist ideals of personal strength and moral virtue.</p>
-            <h3 class="text-2xl font-semibold mb-5">David as a Symbol of the Florentine Republic</h3>
-            <p class="text-gray-600">Positioned in the Piazza della Signoria, David stood as a civic emblem of Florence’s resistance to tyranny and its republican values.</p>
-            <h3 class="text-2xl font-semibold mb-5">Artistic Innovation in Depicting the Hero</h3>
-            <p class="text-gray-600">By portraying David before battle, Michelangelo introduced psychological tension and introspection, revolutionizing heroic representation.</p>
-          </section>
-    
-          <section class="mb-10">
-            <h2 class="text-3xl font-semibold mb-5">The Creation Process: Michelangelo’s Challenges</h2>
-            <h3 class="text-2xl font-semibold mb-5">Working with a Rejected Marble Block</h3>
-            <p class="text-gray-600">The block assigned to Michelangelo had been discarded by other sculptors for its imperfections. Yet he saw potential and overcame its flaws through expert carving.</p>
-            <h3 class="text-2xl font-semibold mb-5">Tools and Techniques of Renaissance Sculpting</h3>
-            <p class="text-gray-600">Using iron and steel chisels, drills, and rasps, Michelangelo employed gradual removal techniques to refine the figure, combining roughing out with delicate finishing.</p>
-            <h3 class="text-2xl font-semibold mb-5">Documentation and Historical Accounts</h3>
-            <p class="text-gray-600">Contemporary records highlight Michelangelo’s meticulous planning, provision of progress reports, and his engagement with guild overseers throughout the project.</p>
-            <h3 class="text-2xl font-semibold mb-5">Comparison with Modern Sculpting Methods</h3>
-            <ul class="list-disc pl-6 text-gray-600 mb-3">
-              <li class="mb-3"><b>Renaissance:</b> Manual carving, chiseling, and polishing.</li>
-              <li class="mb-3"><b>Modern:</b> 3D modeling, CNC machining, laser cutting for precision.</li>
-            </ul>
-          </section>
-    
-          <section class="mb-10">
-            <h2 class="text-3xl font-semibold mb-5">David’s Journey Through Centuries</h2>
-            <h3 class="text-2xl font-semibold mb-5">Original Placement in Piazza della Signoria</h3>
-            <p class="text-gray-600">Installed in 1504, David faced the Palazzo Vecchio as a bold statement of republican freedom and artistic pride.</p>
-            <h3 class="text-2xl font-semibold mb-5">Relocation to the Accademia Gallery</h3>
-            <p class="text-gray-600">Moved indoors in 1873 to protect it from the elements, David now resides in Florence’s Galleria dell’Accademia under controlled conditions.</p>
-            <h3 class="text-2xl font-semibold mb-5">Replicas Around the World</h3>
-            <p class="text-gray-600">Numerous exact and interpretive replicas stand in global museums and public spaces, allowing wider audiences to experience its power.</p>
-            <h3 class="text-2xl font-semibold mb-5">Conservation Challenges and Solutions</h3>
-            <p class="text-gray-600">Conservationists use non-invasive cleaning, environmental controls, and regular condition monitoring to preserve David for future generations.</p>
-          </section>
-    
-          <section class="mb-10">
-            <h2 class="text-3xl font-semibold mb-5">Indian Connections: David’s Cross-Cultural Influence</h2>
-            <h3 class="text-2xl font-semibold mb-5">Western Classical Influence on Indian Sculptors</h3>
-            <p class="text-gray-600">Exposure to European masters through exhibitions and study programs inspired Indian artists to integrate realism and anatomy into their work.</p>
-            <h3 class="text-2xl font-semibold mb-5">Ramkinkar Baij and Modernist Interpretations</h3>
-            <p class="text-gray-600">Pioneering Indian sculptor Ramkinkar Baij blended classical form with indigenous themes, demonstrating cultural synthesis in modern sculpture.</p>
-            <h3 class="text-2xl font-semibold mb-5">The Salar Jung Museum’s Global Art Collection</h3>
-            <p class="text-gray-600">Hyderabad’s Salar Jung Museum houses European sculptures alongside Indian works, showcasing the global dialogue of art traditions.</p>
-            <h3 class="text-2xl font-semibold mb-5">Cultural Exchange in Sculptural Traditions</h3>
-            <p class="text-gray-600">Cross-pollination of techniques and ideas has enriched both Western and Indian sculptural practices, forging new creative directions.</p>
-          </section>
-    
-          <section class="mb-10">
-            <h2 class="text-3xl font-semibold mb-5">Our Dubai David: Recreating a Masterpiece for Modern Luxury</h2>
-            <h3 class="text-2xl font-semibold mb-5">The Dubai Mansion Commission</h3>
-            <p class="text-gray-600">A private collector in Dubai commissioned a full-scale David to serve as a grand focal point for their luxury mansion.</p>
-            <h3 class="text-2xl font-semibold mb-5">Materials and Design Innovations</h3>
-            <p class="text-gray-600">Using statuario marble and advanced scanning technology, the team blended traditional carving with digital precision to honor the original while ensuring structural integrity.</p>
-            <h3 class="text-2xl font-semibold mb-5">Technical Challenges and Solutions</h3>
-            <p class="text-gray-600">Reproducing Michelangelo’s exact proportions required high-resolution 3D scans and custom tooling to faithfully capture every nuance.</p>
-          </section>
-    
-          <section class="mb-10">
-            <h2 class="text-3xl font-semibold mb-5">Conclusion: The Timeless Legacy of Michelangelo’s David</h2>
-            <p class="text-gray-600">Michelangelo’s David transcends time as a crowning achievement of Renaissance art. Its perfect balance of form, emotion, and symbolism cements Michelangelo Buonarroti’s legacy as one of history’s greatest sculptors. From Florence’s piazzas to global museums and private collections, David continues to inspire awe, embodying the enduring power of human creativity.</p>
-          </section>
-    
-          <section>
-            <h2 class="text-3xl font-semibold mb-5">Frequently Asked Questions About David</h2>
-            <h3 class="text-2xl font-semibold mb-2">Who created the sculpture of David?</h3>
-            <p class="text-gray-600  mb-5">Michelangelo Buonarroti, the renowned Italian Renaissance artist, created the sculpture of David between 1501 and 1504.</p>
-            <h3 class="text-2xl font-semibold mb-2">What is the significance of Michelangelo’s David?</h3>
-            <p class="text-gray-600 mb-5">David is celebrated for its anatomical perfection, emotional depth, and its role as a symbol of Florentine republican values and artistic innovation.</p>
-            <h3 class="text-2xl font-semibold mb-2">What material was used to create the sculpture of David?</h3>
-            <p class="text-gray-600 mb-5">The sculpture was carved from a single block of fine-grained Carrara marble.</p>
-            <h3 class="text-2xl font-semibold mb-2">How tall is the sculpture of David?</h3>
-            <p class="text-gray-600 mb-5">Michelangelo’s David stands at approximately 17 feet tall.</p>
-            <h3 class="text-2xl font-semibold mb-2">Where is the original sculpture of David located?</h3>
-            <p class="text-gray-600 mb-5">The original David is on display in the Galleria dell’Accademia in Florence, Italy.</p>
-            <h3 class="text-2xl font-semibold mb-2">What was the initial public reception of Michelangelo’s David?</h3>
-            <p class="text-gray-600 mb-5">Upon its unveiling in 1504, David was met with universal praise as a masterpiece of sculptural art and a powerful civic emblem.</p>
-            <h3 class="text-2xl font-semibold mb-2">How did Michelangelo’s David influence Indian sculptors?</h3>
-            <p class="text-gray-600 mb-5">Indian artists such as Ramkinkar Baij drew inspiration from its classical proportions and anatomical accuracy, leading to new hybrid styles in modern Indian sculpture.</p>
-            <h3 class="text-2xl font-semibold mb-5">What challenges did Michelangelo face while creating the sculpture of David?</h3>
-            <p class="text-gray-600 mb-5">He worked with a marble block rejected by others for its flaws, overcoming material imperfections with his expert carving techniques.</p>
-            <h3 class="text-2xl font-semibold mb-2">How has the sculpture of David been conserved over the centuries?</h3>
-            <p class="text-gray-600 mb-5">David has undergone careful conservation, including relocation indoors, controlled cleaning, and environmental monitoring to preserve its surface and structure.</p>
-            <h3 class="text-2xl font-semibold mb-2">Are there replicas of Michelangelo’s David around the world?</h3>
-            <p class="text-gray-600 mb-5">Yes, numerous exact and interpretive replicas exist in museums and public spaces globally, extending David’s influence far beyond Florence.</p>
-          </section>
+  <div class="mb-6">
+    <h3 class="text-2xl font-semibold mb-3">Are there copies of Michelangelo’s David worldwide?</h3>
+    <p class="text-gray-600">Numerous replicas, both faithful and creative, can be found in museums, public squares, and galleries globally, amplifying David’s enduring cultural impact.</p>
+  </div>
+</section>
         </article>
       `,
       "image": "/images/blog/david.jpg",

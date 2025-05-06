@@ -20,6 +20,11 @@ interface Publication {
 
 const publications: Publication[] = [
     {
+        name: " Magazine_Article",
+        logo: "/Magazine_Article.webp",
+        link: "https://reader.magzter.com/preview/jz6s6n7oiu8eaakt3xq3b20693480/2069348",
+    },
+    {
         name: "architectandinteriorsindia",
         logo: "/architect_shalini.webp",
         link: "https://www.architectandinteriorsindia.com/products/curate-your-modern-moment-with-this-opulent-sculptural-art-collection",
