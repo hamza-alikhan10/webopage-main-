@@ -130,7 +130,7 @@ export interface BlogPost {
         </article>
       `,
       "image": "/images/blog/Metal_Sculpture.webp",
-      "date": "2025-05-08",
+      "date": "2025-04-08",
       "schema": {
         "@context": "https://schema.org",
         "@type": "BlogPosting",
@@ -320,7 +320,7 @@ Just as the biblical David defeated the giant Goliath against overwhelming odds,
         </article>
       `,
       "image": "/images/blog/david.jpg",
-      "date": "2025-05-02",
+      "date": "2025-03-28",
       "schema": {
         "@context": "https://schema.org",
         "@type": "BlogPosting",
@@ -803,7 +803,7 @@ Just as the biblical David defeated the giant Goliath against overwhelming odds,
             </article>
         `,
         "image": "/images/blog/Corten_Steel_Raging_Bull.webp",
-        "date": "2025-02-26",
+        "date": "2025-02-12",
     },
     {
         "id": "Corten-steel-Prices",
@@ -1063,7 +1063,7 @@ Just as the biblical David defeated the giant Goliath against overwhelming odds,
     </article>
             `,
         "image": "/images/blog/Corten_Steel_Outdoor.webp",
-        "date": "2025-02-26",
+        "date": "2025-01-20",
     }
       
   ];

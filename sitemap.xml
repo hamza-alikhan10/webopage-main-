@@ -2,74 +2,74 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
     <url>
         <loc>https://formforge.com/</loc>
-        <lastmod>2025-05-06T00:00:00.000Z</lastmod>
+        <lastmod>2025-05-09T00:00:00.000Z</lastmod>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
         <loc>https://formforge.com/about</loc>
         <lastmod>2025-05-06T00:00:00.000Z</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>1.0</priority>
-    </url>
-    <url>
-        <loc>https://formforge.com/gallery</loc>
-        <lastmod>2025-05-06T00:00:00.000Z</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>1.0</priority>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
     </url>
     <url>
         <loc>https://formforge.com/contact</loc>
-        <lastmod>2025-05-06T00:00:00.000Z</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>1.0</priority>
+        <lastmod>2025-05-09T00:00:00.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
     </url>
     <url>
         <loc>https://formforge.com/press</loc>
         <lastmod>2025-05-06T00:00:00.000Z</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>1.0</priority>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://formforge.com/blog</loc>
+        <lastmod>2025-05-06T00:00:00.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
     </url>
     <url>
         <loc>https://formforge.com/gallery/twin-spirits</loc>
         <lastmod>2025-05-06T00:00:00.000Z</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
+        <priority>0.6</priority>
     </url>
     <url>
         <loc>https://formforge.com/gallery/metamorphosis-muse</loc>
         <lastmod>2025-05-06T00:00:00.000Z</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
+        <priority>0.6</priority>
     </url>
     <url>
         <loc>https://formforge.com/gallery/raging-stallions-2021</loc>
         <lastmod>2025-05-06T00:00:00.000Z</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
+        <priority>0.6</priority>
     </url>
     <url>
         <loc>https://formforge.com/gallery/raging-stallions-2023</loc>
         <lastmod>2025-05-06T00:00:00.000Z</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
+        <priority>0.6</priority>
     </url>
     <url>
         <loc>https://formforge.com/gallery/sole-gaze-2023</loc>
         <lastmod>2025-05-06T00:00:00.000Z</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
+        <priority>0.6</priority>
     </url>
     <url>
         <loc>https://formforge.com/gallery/sole-gaze-2021</loc>
         <lastmod>2025-05-06T00:00:00.000Z</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
+        <priority>0.6</priority>
     </url>
     <url>
         <loc>https://formforge.com/gallery/etherea</loc>
         <lastmod>2025-05-06T00:00:00.000Z</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
+        <priority>0.6</priority>
     </url>
 </urlset>
