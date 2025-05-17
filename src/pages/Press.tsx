@@ -22,7 +22,7 @@ const publications: Publication[] = [
     {
         name: " Magazine_Article",
         logo: "/Magazine_Article.webp",
-        link: "https://reader.magzter.com/preview/jz6s6n7oiu8eaakt3xq3b20693480/2069348",
+        link: "https://www.magzter.com/share/mag/573/2069348/1",
     },
     {
         name: "architectandinteriorsindia",

@@ -8,7 +8,7 @@
             <image:title>Twin Spirits</image:title>
         </image:image>
         <image:image>
-            <image:loc>https://formforge.com/Arts/401.webp</image:loc>
+            <image:loc>https://formforge.com/arts/401.webp</image:loc>
             <image:caption>Twin Spirits Sculpture</image:caption>
             <image:title>Twin Spirits</image:title>
         </image:image>
@@ -21,7 +21,7 @@
             <image:title>Metamorphosis Muse</image:title>
         </image:image>
         <image:image>
-            <image:loc>https://formforge.com/Arts/v10.webp</image:loc>
+            <image:loc>https://formforge.com/arts/v10.webp</image:loc>
             <image:caption>Meditating Lady Sculpture in Goa, India, 2018</image:caption>
             <image:title>Metamorphosis Muse</image:title>
         </image:image>
@@ -29,17 +29,17 @@
     <url>
         <loc>https://formforge.com/gallery/raging-stallions-2021</loc>
         <image:image>
-            <image:loc>https://formforge.com/raging-stallions-chennai_2021.webp</image:loc>
+            <image:loc>https://formforge.com/raging-stallions-chennai-2021.webp</image:loc>
             <image:caption>Raging Stallions Sculpture in Chennai, India, 2021</image:caption>
             <image:title>Raging Stallions</image:title>
         </image:image>
         <image:image>
-            <image:loc>https://formforge.com/Arts/Chennai-Raging-Stallions.webp</image:loc>
+            <image:loc>https://formforge.com/arts/chennai-raging-stallions.webp</image:loc>
             <image:caption>Raging Stallions Sculpture in Chennai, India, 2021</image:caption>
             <image:title>Raging Stallions</image:title>
         </image:image>
         <image:image>
-            <image:loc>https://formforge.com/Arts/Raging-Stallions-Chennai.webp</image:loc>
+            <image:loc>https://formforge.com/arts/raging-stallions-chennai.webp</image:loc>
             <image:caption>Raging Stallions Sculpture in Chennai, India, 2021</image:caption>
             <image:title>Raging Stallions</image:title>
         </image:image>
@@ -52,7 +52,7 @@
             <image:title>Raging Stallions</image:title>
         </image:image>
         <image:image>
-            <image:loc>https://formforge.com/Arts/502.webp</image:loc>
+            <image:loc>https://formforge.com/arts/502.webp</image:loc>
             <image:caption>Raging Stallions Sculpture</image:caption>
             <image:title>Raging Stallions</image:title>
         </image:image>
@@ -73,7 +73,7 @@
             <image:title>Sole Gaze</image:title>
         </image:image>
         <image:image>
-            <image:loc>https://formforge.com/Arts/602.webp</image:loc>
+            <image:loc>https://formforge.com/arts/602.webp</image:loc>
             <image:caption>Sole Gaze Sculpture</image:caption>
             <image:title>Sole Gaze</image:title>
         </image:image>
@@ -86,7 +86,7 @@
             <image:title>Etherea</image:title>
         </image:image>
         <image:image>
-            <image:loc>https://formforge.com/Arts/Etherea-Chennai.webp</image:loc>
+            <image:loc>https://formforge.com/arts/etherea-chennai.webp</image:loc>
             <image:caption>Etherea Sculpture</image:caption>
             <image:title>Etherea</image:title>
         </image:image>
@@ -99,12 +99,12 @@
             <image:title>Vighnaharta</image:title>
         </image:image>
         <image:image>
-            <image:loc>https://formforge.com/Arts/Ganesha.webp</image:loc>
+            <image:loc>https://formforge.com/arts/ganesha.webp</image:loc>
             <image:caption>Vighnaharta Sculpture</image:caption>
             <image:title>Vighnaharta</image:title>
         </image:image>
         <image:image>
-            <image:loc>https://formforge.com/Arts/Ganeshji.webp</image:loc>
+            <image:loc>https://formforge.com/arts/ganeshji.webp</image:loc>
             <image:caption>Vighnaharta Sculpture</image:caption>
             <image:title>Vighnaharta</image:title>
         </image:image>
@@ -117,7 +117,7 @@
             <image:title>David</image:title>
         </image:image>
         <image:image>
-            <image:loc>https://formforge.com/Arts/501.webp</image:loc>
+            <image:loc>https://formforge.com/arts/501.webp</image:loc>
             <image:caption>David Sculpture</image:caption>
             <image:title>David</image:title>
         </image:image>
@@ -138,26 +138,27 @@
             <image:title>Mermaid Ohllnam</image:title>
         </image:image>
         <image:image>
-            <image:loc>https://formforge.com/Arts/131.webp</image:loc>
+            <image:loc>https://formforge.com/arts/131.webp</image:loc>
             <image:caption>Mermaid Ohllnam Sculpture</image:caption>
             <image:title>Mermaid Ohllnam</image:title>
         </image:image>
         <image:image>
-            <image:loc>https://formforge.com/Arts/m01.webp</image:loc>
+            <image:loc>https://formforge.com/arts/m01.webp</image:loc>
             <image:caption>Mermaid Ohllnam Sculpture</image:caption>
             <image:title>Mermaid Ohllnam</image:title>
         </image:image>
         <image:image>
-            <image:loc>https://formforge.com/Arts/m00.webp</image:loc  <image:caption>Mermaid Ohllnam Sculpture</image:caption>
-            <image:title>Mermaid Ohllnam</image:title>
-        </image:image>
-        <image:image>
-            <image:loc>https://formforge.com/Arts/o'll.webp</image:loc>
+            <image:loc>https://formforge.com/arts/m00.webp</image:loc>
             <image:caption>Mermaid Ohllnam Sculpture</image:caption>
             <image:title>Mermaid Ohllnam</image:title>
         </image:image>
         <image:image>
-            <image:loc>https://formforge.com/Arts/11.webp</image:loc>
+            <image:loc>https://formforge.com/arts/oll.webp</image:loc>
+            <image:caption>Mermaid Ohllnam Sculpture</image:caption>
+            <image:title>Mermaid Ohllnam</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://formforge.com/arts/11.webp</image:loc>
             <image:caption>Mermaid Ohllnam Sculpture</image:caption>
             <image:title>Mermaid Ohllnam</image:title>
         </image:image>
@@ -170,7 +171,7 @@
             <image:title>Levitating Whale</image:title>
         </image:image>
         <image:image>
-            <image:loc>https://formforge.com/Arts/201.webp</image:loc>
+            <image:loc>https://formforge.com/arts/201.webp</image:loc>
             <image:caption>Levitating Whale Sculpture</image:caption>
             <image:title>Levitating Whale</image:title>
         </image:image>
@@ -191,7 +192,7 @@
             <image:title>Inverted Cactus</image:title>
         </image:image>
         <image:image>
-            <image:loc>https://formforge.com/Arts/012.webp</image:loc>
+            <image:loc>https://formforge.com/arts/012.webp</image:loc>
             <image:caption>Inverted Cactus Sculpture</image:caption>
             <image:title>Inverted Cactus</image:title>
         </image:image>
@@ -204,7 +205,7 @@
             <image:title>Sculptural Totems</image:title>
         </image:image>
         <image:image>
-            <image:loc>https://formforge.com/Arts/t10.webp</image:loc>
+            <image:loc>https://formforge.com/arts/t10.webp</image:loc>
             <image:caption>Sculptural Totems</image:caption>
             <image:title>Sculptural Totems</image:title>
         </image:image>
@@ -217,7 +218,7 @@
             <image:title>Wing Man</image:title>
         </image:image>
         <image:image>
-            <image:loc>https://formforge.com/Arts/Dubai-Wing-Man-Event-2024.webp</image:loc>
+            <image:loc>https://formforge.com/arts/dubai-wing-man-event-2024.webp</image:loc>
             <image:caption>Wing Man Sculpture</image:caption>
             <image:title>Wing Man</image:title>
         </image:image>
@@ -230,7 +231,7 @@
             <image:title>Leaning Man</image:title>
         </image:image>
         <image:image>
-            <image:loc>https://formforge.com/Arts/Hyderabad-Leaning-Man-Event-2023.webp</image:loc>
+            <image:loc>https://formforge.com/arts/hyderabad-leaning-man-event-2023.webp</image:loc>
             <image:caption>Leaning Man Sculpture</image:caption>
             <image:title>Leaning Man</image:title>
         </image:image>
@@ -243,12 +244,12 @@
             <image:title>Meditating Lady</image:title>
         </image:image>
         <image:image>
-            <image:loc>https://formforge.com/Arts/Goa-Meditating-Lady-Sculpture-2018.webp</image:loc>
+            <image:loc>https://formforge.com/arts/goa-meditating-lady-sculpture-2018.webp</image:loc>
             <image:caption>Meditating Lady Sculpture</image:caption>
             <image:title>Meditating Lady</image:title>
         </image:image>
         <image:image>
-            <image:loc>https://formforge.com/Arts/Goa-Meditating-Lady-PV-Sindhu.webp</image:loc>
+            <image:loc>https://formforge.com/arts/goa-meditating-lady-pv-sindhu.webp</image:loc>
             <image:caption>Meditating Lady Sculpture with PV Sindhu</image:caption>
             <image:title>Meditating Lady</image:title>
         </image:image>
@@ -261,7 +262,7 @@
             <image:title>Bonsai</image:title>
         </image:image>
         <image:image>
-            <image:loc>https://formforge.com/Arts/Bonsai-Delhi.webp</image:loc>
+            <image:loc>https://formforge.com/arts/bonsai-delhi.webp</image:loc>
             <image:caption>Bonsai Sculpture</image:caption>
             <image:title>Bonsai</image:title>
         </image:image>
@@ -274,12 +275,12 @@
             <image:title>Nandi</image:title>
         </image:image>
         <image:image>
-            <image:loc>https://formforge.com/Arts/Nandi.webp</image:loc>
+            <image:loc>https://formforge.com/arts/nandi.webp</image:loc>
             <image:caption>Nandi Sculpture</image:caption>
             <image:title>Nandi</image:title>
         </image:image>
         <image:image>
-            <image:loc>https://formforge.com/Arts/Nandi-Pune.webp</image:loc>
+            <image:loc>https://formforge.com/arts/nandi-pune.webp</image:loc>
             <image:caption>Nandi Sculpture</image:caption>
             <image:title>Nandi</image:title>
         </image:image>
@@ -292,12 +293,12 @@
             <image:title>Carefree Seat</image:title>
         </image:image>
         <image:image>
-            <image:loc>https://formforge.com/Arts/carefree-seat.webp</image:loc>
+            <image:loc>https://formforge.com/arts/carefree-seat.webp</image:loc>
             <image:caption>Carefree Seat Sculpture</image:caption>
             <image:title>Carefree Seat</image:title>
         </image:image>
         <image:image>
-            <image:loc>https://formforge.com/Arts/carefree-seat-hyderabad.webp</image:loc>
+            <image:loc>https://formforge.com/arts/carefree-seat-hyderabad.webp</image:loc>
             <image:caption>Carefree Seat Sculpture</image:caption>
             <image:title>Carefree Seat</image:title>
         </image:image>
@@ -310,7 +311,7 @@
             <image:title>Bloom</image:title>
         </image:image>
         <image:image>
-            <image:loc>https://formforge.com/Arts/Bloom-Lotus.webp</image:loc>
+            <image:loc>https://formforge.com/arts/bloom-lotus.webp</image:loc>
             <image:caption>Bloom Sculpture</image:caption>
             <image:title>Bloom</image:title>
         </image:image>
@@ -339,7 +340,7 @@
             <image:title>Buddha</image:title>
         </image:image>
         <image:image>
-            <image:loc>https://formforge.com/Arts/Gautam-Buddha.webp</image:loc>
+            <image:loc>https://formforge.com/arts/gautam-buddha.webp</image:loc>
             <image:caption>Buddha Sculpture</image:caption>
             <image:title>Buddha</image:title>
         </image:image>
@@ -352,12 +353,12 @@
             <image:title>Sleeping Lotus</image:title>
         </image:image>
         <image:image>
-            <image:loc>https://formforge.com/Arts/Corten-Steel-lotus.webp</image:loc>
+            <image:loc>https://formforge.com/arts/corten-steel-lotus.webp</image:loc>
             <image:caption>Sleeping Lotus Sculpture</image:caption>
             <image:title>Sleeping Lotus</image:title>
         </image:image>
         <image:image>
-            <image:loc>https://formforge.com/Arts/Steel-lotus.webp</image:loc>
+            <image:loc>https://formforge.com/arts/steel-lotus.webp</image:loc>
             <image:caption>Sleeping Lotus Sculpture</image:caption>
             <image:title>Sleeping Lotus</image:title>
         </image:image>
@@ -365,12 +366,12 @@
     <url>
         <loc>https://formforge.com/gallery/raging-bull-2024</loc>
         <image:image>
-            <image:loc>https://formforge.com/raging-bull-goa_2024.webp</image:loc>
+            <image:loc>https://formforge.com/raging-bull-goa-2024.webp</image:loc>
             <image:caption>Raging Bull Sculpture in Goa, India, 2024</image:caption>
             <image:title>Raging Bull</image:title>
         </image:image>
         <image:image>
-            <image:loc>https://formforge.com/Arts/Corten-Steel-Bull.webp</image:loc>
+            <image:loc>https://formforge.com/arts/corten-steel-bull.webp</image:loc>
             <image:caption>Raging Bull Sculpture</image:caption>
             <image:title>Raging Bull</image:title>
         </image:image>
@@ -383,7 +384,7 @@
             <image:title>Panthera</image:title>
         </image:image>
         <image:image>
-            <image:loc>https://formforge.com/Arts/00-1.webp</image:loc>
+            <image:loc>https://formforge.com/arts/00-1.webp</image:loc>
             <image:caption>Panthera Sculpture</image:caption>
             <image:title>Panthera</image:title>
         </image:image>
@@ -412,12 +413,12 @@
             <image:title>Ballerina</image:title>
         </image:image>
         <image:image>
-            <image:loc>https://formforge.com/Arts/061.webp</image:loc>
+            <image:loc>https://formforge.com/arts/061.webp</image:loc>
             <image:caption>Ballerina Sculpture</image:caption>
             <image:title>Ballerina</image:title>
         </image:image>
         <image:image>
-            <image:loc>https://formforge.com/Arts/062.webp</image:loc>
+            <image:loc>https://formforge.com/arts/062.webp</image:loc>
             <image:caption>Ballerina Sculpture</image:caption>
             <image:title>Ballerina</image:title>
         </image:image>
@@ -425,7 +426,7 @@
     <url>
         <loc>https://formforge.com/gallery/sole-gaze-2023-bangalore</loc>
         <image:image>
-            <image:loc>https://formforge.com/sole-gaze-bangalore_2023.webp</image:loc>
+            <image:loc>https://formforge.com/sole-gaze-bangalore-2023.webp</image:loc>
             <image:caption>Sole Gaze Sculpture in Bangalore, India, 2023</image:caption>
             <image:title>Sole Gaze</image:title>
         </image:image>
@@ -438,12 +439,12 @@
             <image:title>Solemn</image:title>
         </image:image>
         <image:image>
-            <image:loc>https://formforge.com/Arts/c1.webp</image:loc>
+            <image:loc>https://formforge.com/arts/c1.webp</image:loc>
             <image:caption>Solemn Sculpture</image:caption>
             <image:title>Solemn</image:title>
         </image:image>
         <image:image>
-            <image:loc>https://formforge.com/Arts/c2.webp</image:loc>
+            <image:loc>https://formforge.com/arts/c2.webp</image:loc>
             <image:caption>Solemn Sculpture</image:caption>
             <image:title>Solemn</image:title>
         </image:image>
@@ -464,7 +465,7 @@
             <image:title>Wing Sculpture</image:title>
         </image:image>
         <image:image>
-            <image:loc>https://formforge.com/Arts/301.webp</image:loc>
+            <image:loc>https://formforge.com/arts/301.webp</image:loc>
             <image:caption>Wing Sculpture</image:caption>
             <image:title>Wing Sculpture</image:title>
         </image:image>
@@ -477,12 +478,12 @@
             <image:title>Dreaming Of Dharma</image:title>
         </image:image>
         <image:image>
-            <image:loc>https://formforge.com/Arts/b20.webp</image:loc>
+            <image:loc>https://formforge.com/arts/b20.webp</image:loc>
             <image:caption>Dreaming Of Dharma Sculpture</image:caption>
             <image:title>Dreaming Of Dharma</image:title>
         </image:image>
         <image:image>
-            <image:loc>https://formforge.com/Arts/b08.webp</image:loc>
+            <image:loc>https://formforge.com/arts/b08.webp</image:loc>
             <image:caption>Dreaming Of Dharma Sculpture</image:caption>
             <image:title>Dreaming Of Dharma</image:title>
         </image:image>
@@ -506,7 +507,7 @@
     <url>
         <loc>https://formforge.com/gallery/raging-bull-goa-2024</loc>
         <image:image>
-            <image:loc>https://formforge.com/raging-bull-goa_2024.webp</image:loc>
+            <image:loc>https://formforge.com/raging-bull-goa-2024.webp</image:loc>
             <image:caption>Raging Bull Sculpture in Goa, India, 2024</image:caption>
             <image:title>Raging Bull</image:title>
         </image:image>
@@ -519,7 +520,7 @@
             <image:title>Ganapati</image:title>
         </image:image>
         <image:image>
-            <image:loc>https://formforge.com/Arts/3012.webp</image:loc>
+            <image:loc>https://formforge.com/arts/3012.webp</image:loc>
             <image:caption>Ganapati Sculpture</image:caption>
             <image:title>Ganapati</image:title>
         </image:image>

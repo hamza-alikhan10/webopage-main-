@@ -17,8 +17,14 @@ export const ARTWORK_IMAGES: ImageData[] = [
   {
     slug: "twin-spirits",
     images: [
-      { src: "/twin-spirits-chennai-2023.webp", alt: "Twin Spirits Sculpture in Chennai, India, 2023" },
-      { src: "/Arts/401.webp", alt: "Twin Spirits" },
+      { 
+    "src": "/Arts/twin-spirits-sculpture-chennai-2023.webp", 
+    "alt": "Twin Spirits - Contemporary Outdoor Sculpture by Abhinav Goyal in Chennai, India (2023)" 
+  },
+  { 
+    "src": "/Arts/twin-spirits-stainless-steel-sculpture.webp", 
+    "alt": "Twin Spirits Stainless Steel Sculpture - Outdoor Art Installation by Abhinav Goyal" 
+  }
     ],
     caption: <>Twin Spirits</>,
     details: {
@@ -48,8 +54,14 @@ export const ARTWORK_IMAGES: ImageData[] = [
   {
     slug: "metamorphosis-muse",
     images: [
-      { src: "/metamorphosis-muse-hyderabad-2025.webp", alt: "The Metamorphosis Muse Sculpture in Hyderabad, India, 2025" },
-      { src: "/Arts/v10.webp", alt: "The Meditating Lady Sculpture in Goa, India, 2018" },
+      { 
+    "src": "/Arts/golden-butterfly-sculpture-hyderabad-2025.webp", 
+    "alt": "Contemporary Golden Butterfly Sculpture - Metamorphosis Muse, Hyderabad 2025 by FormForge" 
+  },
+  { 
+    "src": "/Arts/abstract-meditating-lady-sculpture-goa-2018.webp", 
+    "alt": "Modern Abstract Meditating Lady Sculpture in Goa 2018 - Corten Steel Art Installation by FormForge" 
+  }
     ],
     caption: <>The Metamorphosis Muse</>,
     details: {
@@ -94,7 +106,7 @@ export const ARTWORK_IMAGES: ImageData[] = [
     ],
     caption: <>Vighnaharta</>,
     details: {
-      heading: "V I G H N A H A R T A",
+      heading: "Vighnaharta",
       location: "",
       description: (
         <>
@@ -207,11 +219,11 @@ export const ARTWORK_IMAGES: ImageData[] = [
     slug: "mermaid-ohllnam",
     images: [
       { src: "/mermaid-ohl-nam-vadodara-2022.webp", alt: "Mermaid | Oh'll'nam Sculpture in Vadodara, India, 2022" },
-      { src: "/Arts/131.webp", alt: "The Meditating Lady Sculpture in Goa, India, 2018" },
-      { src: "/Arts/m01.webp", alt: "The Meditating Lady Sculpture in Goa, India, 2018" },
-      { src: "/Arts/m00.webp", alt: "The Meditating Lady Sculpture in Goa, India, 2018" },
-      { src: "/Arts/o'll.webp", alt: "The Meditating Lady Sculpture in Goa, India, 2018" },
-      { src: "/Arts/11.webp", alt: "The Meditating Lady Sculpture in Goa, India, 2018" },
+      { src: "/Arts/131.webp", alt: "Oh'll'nam Sculpture Series by Abhinav Goyal - Contemporary Art Installation"  },
+      { src: "/Arts/m01.webp", alt: "Oh'll'nam Sculpture Series by Abhinav Goyal"  },
+      { src: "/Arts/m00.webp", alt: "Oh'll'nam Sculpture Series by Abhinav Goyal - Contemporary Art Installation"  },
+      { src: "/Arts/o'll.webp", alt:"Oh'll'nam Sculpture Series by Abhinav Goyal - Contemporary Art Installation"  },
+      { src: "/Arts/11.webp", alt: "Oh'll'nam Sculpture Series by Abhinav Goyal - Contemporary Art Installation"  },
     ],
     caption: <>Mermaid | Oh'll'nam</>,
     details: {
@@ -247,11 +259,11 @@ export const ARTWORK_IMAGES: ImageData[] = [
     slug: "levitating-whale",
     images: [
       { src: "/levitating-whale-kpmg-gurugram-2022.webp", alt: "Levitating Whale Sculpture at KPMG, Gurugram, India, 2022" },
-      { src: "/Arts/201.webp", alt: "The Meditating Lady Sculpture in Goa, India, 2018" },
+      { src: "/Arts/whale-kpmg-project.webp", alt: "Levitating Whale Sculpture at KPMG, Gurugram" },
     ],
     caption: <>Levitating Whale </>,
     details: {
-      heading: "Levitating W H A L E",
+      heading: "Levitating Whale",
       location: "",
       description: (
         <>
@@ -331,7 +343,7 @@ export const ARTWORK_IMAGES: ImageData[] = [
     slug: "sculptural-totems",
     images: [
       { src: "/sculptural-totems-hyderabad-2025.webp", alt: "Sculptural Totems in Hyderabad, India, 2025" },
-      { src: "/Arts/t10.webp", alt: "The Meditating Lady Sculpture in Goa, India, 2018" },
+      { src: "/Arts/t10.webp", alt: "Sculptural Totems in Hyderabad, India" },
     ],
     caption: <>Sculptural Totems</>,
     details: {
@@ -389,7 +401,7 @@ export const ARTWORK_IMAGES: ImageData[] = [
     slug: "wing-man",
     images: [
       { src: "/wing-man-dubai-2024.webp", alt: "The Wing Man Sculpture in Dubai, UAE, 2024" },
-      { src: "/Arts/Dubai-Wing-Man-Event-2024.webp", alt: "The Raging Stallions Sculpture in Chennai, India, 2021" },
+      { src: "/Arts/Dubai-Wing-Man-Event-2024.webp", alt: "The Wing Man Sculpture in Dubai" },
     ],
     caption: <>The Wing Man</>,
     details: {
@@ -443,7 +455,7 @@ export const ARTWORK_IMAGES: ImageData[] = [
     slug: "leaning-man",
     images: [
       { src: "/leaning-man-hyderabad-2023.webp", alt: "The Leaning Man Sculpture in Hyderabad, India, 2023" },
-      { src: "/Arts/Hyderabad-Leaning-Man-Event-2023.webp", alt: "The Meditating Lady Sculpture in Goa, India, 2018" },
+      { src: "/Arts/Hyderabad-Leaning-Man-Event-2023.webp", alt: "Leaning Man Sculpture" },
     ],
     caption: <>The Leaning Man</>,
     details: {
@@ -500,7 +512,7 @@ export const ARTWORK_IMAGES: ImageData[] = [
     slug: "etherea",
     images: [
       { src: "/etherea-chennai-2019.webp", alt: "Etherea Sculpture in Chennai, India, 2019" },
-      { src: "/Arts/Etherea-Chennai.webp", alt: "The Meditating Lady Sculpture in Goa, India, 2018" },
+      { src: "/Arts/Etherea-Chennai.webp", alt: "Etherea Sculpture" },
     ],
     caption: <>Etherea</>,
     details: {
@@ -559,12 +571,12 @@ export const ARTWORK_IMAGES: ImageData[] = [
     slug: "nandi",
     images: [
       { src: "/nandi-pune-2020.webp", alt: "Nandi Sculpture in Pune, India, 2020" },
-      { src: "/Arts/Nandi.webp", alt: "The Meditating Lady Sculpture in Goa, India, 2018" },
-      { src: "/Arts/Nandi-Pune.webp", alt: "The Meditating Lady Sculpture in Goa, India, 2018" },
+      { src: "/Arts/Nandi.webp", alt: "Nandi Sculpture " },
+      { src: "/Arts/Nandi-Pune.webp", alt: "Nandi Sculpture " },
     ],
     caption: <>Nandi</>,
     details: {
-      heading: "N A N D I",
+      heading: "NANDI",
       location: "",
       description: (
         <>
@@ -622,7 +634,7 @@ export const ARTWORK_IMAGES: ImageData[] = [
     slug: "bloom",
     images: [
       { src: "/bloom-delhi-2021.webp", alt: "Bloom Sculpture in Delhi, India, 2021" },
-      { src: "/Arts/Bloom-Lotus.webp", alt: "Carefree seat corten steel" },
+      { src: "/Arts/Bloom-Lotus.webp", alt: "Bloom Sculpture" },
     ],
     caption: <>Bloom</>,
     details: {
@@ -705,7 +717,7 @@ export const ARTWORK_IMAGES: ImageData[] = [
     slug: "buddha",
     images: [
       { src: "/buddha-bangalore-2023.webp", alt: "Buddha Sculpture in Bangalore, India, 2023" },
-      { src: "/Arts/Gautam-Buddha.webp", alt: "The Meditating Lady Sculpture in Goa, India, 2018" },
+      { src: "/Arts/Gautam-Buddha.webp", alt: "Buddha Sculpture" },
     ],
     caption: <>Buddha</>,
     details: {
@@ -765,9 +777,9 @@ export const ARTWORK_IMAGES: ImageData[] = [
     slug: "raging-bull-2024",
     images: [
       { src: "/raging-bull-goa-2024.webp", alt: "Raging Bull Sculpture in Goa, India, 2024" },
-      { src: "/Arts/Corten-Steel-Bull.webp", alt: "The Sleeping Lotus Sculpture in Delhi, India, 2021" },
+      { src: "/Arts/Corten-Steel-Bull.webp", alt: "Raging Bull Sculpture" },
     ],
-    caption: <>Raging B U L L</>,
+    caption: <>Raging Bull</>,
     details: {
       heading: "Raging Bull",
       location: "",
@@ -884,7 +896,7 @@ export const ARTWORK_IMAGES: ImageData[] = [
   },
   {
     slug: "geomorph",
-    images: [{ src: "/geomorph-hyderabad-2023.webp", alt: "Geomorph Sculpture in Hyderabad, India, 2023" }],
+    images: [{ src: "/Arts/parametric-wall.webp", alt: "Geomorph Sculpture in Hyderabad, India, 2023" }],
     caption: <>Geomorph</>,
     details: {
       heading: "Geomorph",
@@ -942,88 +954,134 @@ export const ARTWORK_IMAGES: ImageData[] = [
       ),
     },
   },
-  {
-    slug: "sole-gaze-2023-bangalore",
-    images: [{ src: "/sole-gaze-bangalore_2023.webp", alt: "The Sole Gaze Sculpture in Bangalore, India, 2023" }],
-    caption: <>The Sole Gaze</>,
-    details: {
-      heading: "The Sole Gaze",
-      location: "",
-      description: (
-        <>
-          An introspective figure gazing upward, this bold, abstract face captures a moment of quiet reflection. <br />{" "}
-          Crafted from corten steel, its simplified geometry and monolithic presence evoke timelessness and depth. <br />{" "}
-          The upward gaze symbolizes contemplation, hope, and the enduring human quest <br /> for meaning amidst the chaos
-          of a fast-paced world.
-        </>
-      ),
-      details: "Material: Corten Steel",
-      credits: (
-        <>
-          Artist: Abhinav Goyal <br /> Commissioned for: Hyderabad Design District
-        </>
-      ),
-    },
-  },
-  {
-    slug: "solemn",
+   {
+    slug: "The deer",
     images: [
-      { src: "/solemn-mumbai-2021.webp", alt: "Solemn contemporary sculpture in Mumbai, India, 2021" },
-      { src: "/Arts/c1.webp", alt: "The Meditating Lady Sculpture in Goa, India, 2018" },
-      { src: "/Arts/c2.webp", alt: "The Meditating Lady Sculpture in Goa, India, 2018" },
+      { src: "/Arts/111111.webp", alt: "Deer Sculpture, 2025" },
     ],
-    caption: <>Solemn</>,
+    caption: <>The deer</>,
     details: {
-      heading: "Solemn",
+      heading: "The deer",
       location: "",
       description: (
         <>
-          Where the unseen becomes art. In the expansive <b>KPMG foyer, Mumbai</b>, <b>Solemn</b> commands attention{" "}
-          <br />bold from one angle, vanishing from another. Layered to play with light and illusion, it’s not just a
-          sculpture, <br /> but an ever-shifting experience of strength and mystery.
-        </>
-      ),
-      details: (
-        <>
-          Vanishing sculpture crafted from Stainless steel with a matte black finish. <br /> Dimensions: 1800mm x 1500mm x
-          675mm
-        </>
-      ),
-      credits: (
-        <>
-          Artist: Abhinav Goyal <br /> Commissioned for: KPMG, Mumbai <br /> Photography: KPMG
-        </>
-      ),
-    },
-  },
-  {
-    slug: "a-quiet-gaze",
-    images: [{ src: "/a-quiet-gaze-oman-2024.webp", alt: "A Quiet Gaze abstract sculpture in Oman, UAE, 2024" }],
-    caption: <>A Quiet Gaze</>,
-    details: {
-      heading: "A Quiet Gaze",
-      location: "",
-      description: (
-        <>
-          An abstract head form with a gentle upward tilt, this mirror-polished sculpture evokes serenity,
-          <br /> introspection, and quiet strength. Set within a tranquil water feature, its faceted surface <br />reflects
-          the surrounding desert light—blurring the boundaries between sculpture, sky, and soul.
-          <br />A contemplative gaze that invites viewers to pause and look within.
+          A sleek, wing-like form soaring upward, this dynamic sculpture symbolizes ambition, <br /> elevation, and the
+          freedom of flight. Its fluid curves reflect light and movement, <br />creating a sense of lift and momentum
+          within the space.
+          <br />An ode to Progress, Aspiration, and Limitless Potential.
         </>
       ),
       details: (
         <>
           Material: Mirror-polished stainless steel
-          <br />Height: 5 ft, Width: 6 ft, Depth: 5 ft
+          <br />Height: 8 ft, Width: 6 ft, Depth: 3.5 ft
         </>
       ),
       credits: (
         <>
-          Artist: Abhinav Goyal <br /> Commissioned for: Oman Art Collective
+          Artist: Abhinav Goyal <br /> Commissioned for: Gurugram Skyline Project
         </>
       ),
     },
   },
+   {
+    slug: "The Rhino",
+    images: [
+      { src: "/Arts/22222.webp", alt: "The Rhino Sculpture,2025 " },
+    ],
+    caption: <>The Rhino</>,
+    details: {
+      heading: "The Rhino",
+      location: "",
+      description: (
+        <>
+          A sleek, wing-like form soaring upward, this dynamic sculpture symbolizes ambition, <br /> elevation, and the
+          freedom of flight. Its fluid curves reflect light and movement, <br />creating a sense of lift and momentum
+          within the space.
+          <br />An ode to Progress, Aspiration, and Limitless Potential.
+        </>
+      ),
+      details: (
+        <>
+          Material: Mirror-polished stainless steel
+          <br />Height: 8 ft, Width: 6 ft, Depth: 3.5 ft
+        </>
+      ),
+      credits: (
+        <>
+          Artist: Abhinav Goyal <br /> Commissioned for: Gurugram Skyline Project
+        </>
+      ),
+    },
+  },
+   {
+    slug: "The whale fin",
+    images: [
+      { src: "/Arts/3333333.webp", alt: "The whale Sculpture , 2025" },
+    ],
+    caption: <>The whale fin</>,
+    details: {
+      heading: "The whale fin",
+      location: "",
+      description: (
+        <>
+          A sleek, wing-like form soaring upward, this dynamic sculpture symbolizes ambition, <br /> elevation, and the
+          freedom of flight. Its fluid curves reflect light and movement, <br />creating a sense of lift and momentum
+          within the space.
+          <br />An ode to Progress, Aspiration, and Limitless Potential.
+        </>
+      ),
+      details: (
+        <>
+          Material: Mirror-polished stainless steel
+          <br />Height: 8 ft, Width: 6 ft, Depth: 3.5 ft
+        </>
+      ),
+      credits: (
+        <>
+          Artist: Abhinav Goyal <br /> Commissioned for: Gurugram Skyline Project
+        </>
+      ),
+    },
+  },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   {
     slug: "wing-sculpture",
     images: [
@@ -1058,9 +1116,9 @@ export const ARTWORK_IMAGES: ImageData[] = [
   {
     slug: "dreaming-of-dharma",
     images: [
-      { src: "/dreaming-of-dharma-noida-2024.webp", alt: "Dreaming Of Dharma spiritual sculpture in Noida, India, 2024" },
-      { src: "/Arts/b20.webp", alt: "The Meditating Lady Sculpture in Goa, India, 2018" },
-      { src: "/Arts/b08.webp", alt: "The Meditating Lady Sculpture in Goa, India, 2018" },
+      { src: "/dreaming-of-dharma-noida-2024.webp", alt: "Dreaming of Dharma spiritual sculpture in Noida, India, 2024" },
+      { src: "/Arts/Gautam-Buddhaa.webp", alt: "Gautam Buddha meditation sculpture artwork, India, 2018" },
+      { src: "/Arts/b08.webp", alt: "Gautam Buddha meditative sculpture, India, 2018" },      
     ],
     caption: <>Dreaming Of Dharma</>,
     details: {
@@ -1088,7 +1146,7 @@ export const ARTWORK_IMAGES: ImageData[] = [
   },
   {
     slug: "skyward-bound",
-    images: [{ src: "/skyward-bound-delhi-2024.webp", alt: "Skyward Bound dynamic steel sculpture in Delhi, India, 2024" }],
+    images: [{ src: "/Arts/1011.webp", alt: "Skyward Bound dynamic steel sculpture in Delhi, India, 2024" }],
     caption: <>Skyward Bound</>,
     details: {
       heading: "Skyward Bound",
@@ -1172,8 +1230,9 @@ export const ARTWORK_IMAGES: ImageData[] = [
   {
     slug: "ganapati",
     images: [
-      { src: "/ganapati-dxb-uae-2024.webp", alt: "Ganapati Hindu deity sculpture in DXB, UAE, 2024" },
-      { src: "/Arts/3012.webp", alt: "The Meditating Lady Sculpture in Goa, India, 2018" },
+      { src: "/ganapati-dxb-uae-2024.webp", alt: "Ganapati Hindu deity sculpture in Dubai UAE, 2024" },
+      { src: "/Arts/Ganeshji-Project.webp", alt: "Ganeshji deity sculpture art project, India, 2018" },
+      { src: "/Arts/Ganeshji.webp", alt: "Ganeshji sculpture artwork, India, 2018" }
     ],
     caption: <>Ganapati</>,
     details: {
@@ -1201,46 +1260,502 @@ export const ARTWORK_IMAGES: ImageData[] = [
     },
   },
 
-    // { 
-    //   images: [
-    //     { src: "/41.webp", alt: "Abstract sculpture in modern art style" }
-    //   ],
-    //   caption: <>Abstract Form</>,
-    //   details: {
-    //     heading: "Abstract Form",
-    //     location: "Mumbai, India, 2023",
-    //     description: "A contemporary abstract sculpture exploring themes of space and form.",
-    //     details: "Material: Mixed media\nHeight: 8 ft, Width: 5 ft, Depth: 4 ft",
-    //     credits: "Artist: FormForge Studios, Commissioned by Mumbai Art Gallery"
-    //   }
-    // },
-    // { 
-    //   images: [
-    //     { src: "/40.webp", alt: "Ganapati Hindu deity sculpture in DXB, UAE, 2024" },
-    //     { src: "Arts/616.webp", alt: "The Meditating Lady Sculpture in Goa, India, 2018" }
 
-    //   ],
-    //   caption: <>Raging Bull</>,
-    //   details: {
-    //     heading: "Raging Bull",
-    //     location: "Dubai, UAE, 2024",
-    //     description: "Raging Bull and success.",
-    //     details: "Material: Bronze, gold plating\nHeight: 10 ft, Width: 6 ft, Depth: 5 ft",
-    //     credits: "Artist: FormForge Studios, Commissioned by Dubai Cultural Forum"
-    //   }
-    // },
-   
-    // { 
-    //     images: [
-    //       { src: "/42.webp", alt: "Abstract sculpture in modern art style" }
-    //     ],
-    //     caption: <>Abstract Form</>,
-    //     details: {
-    //       heading: "Abstract Form",
-    //       location: "Mumbai, India, 2023",
-    //       description: "A contemporary abstract sculpture exploring themes of space and form.",
-    //       details: "Material: Mixed media\nHeight: 8 ft, Width: 5 ft, Depth: 4 ft",
-    //       credits: "Artist: FormForge Studios, Commissioned by Mumbai Art Gallery"
-    //     }
-    //   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  {
+    slug: "Performer",
+    images: [
+      { src: "/Arts/1211.webp", alt: "Ganeshji deity sculpture art project, India, 2018" },
+    ],
+    caption: <>Performer</>,
+    details: {
+      heading: "Performer",
+      location: "",
+      description: (
+        <>
+          A modern rendition of Lord Ganesha, this faceted sculpture reimagines the divine form <br /> with clean geometry
+          and minimalist expression. Blending tradition with innovation,
+          <br /> it honors wisdom, prosperity, and the spirit of new beginnings, <br />making it a powerful presence in any
+          contemporary setting.
+        </>
+      ),
+      details: (
+        <>
+          Material: Corten Steel
+          <br />Height: 4.5 ft, Width: 3 ft, Depth: 2.5 ft
+        </>
+      ),
+      credits: (
+        <>
+          Artist: Abhinav Goyal
+        </>
+      ),
+    },
+  },
+
+  {
+    slug: "ganapati",
+    images: [
+      { src: "/Arts/5012.webp", alt: "Ganeshji deity sculpture art project, India, 2018" },
+    ],
+    caption: <>Table</>,
+    details: {
+      heading: "Performer",
+      location: "",
+      description: (
+        <>
+          A modern rendition of Lord Ganesha, this faceted sculpture reimagines the divine form <br /> with clean geometry
+          and minimalist expression. Blending tradition with innovation,
+          <br /> it honors wisdom, prosperity, and the spirit of new beginnings, <br />making it a powerful presence in any
+          contemporary setting.
+        </>
+      ),
+      details: (
+        <>
+          Material: Corten Steel
+          <br />Height: 4.5 ft, Width: 3 ft, Depth: 2.5 ft
+        </>
+      ),
+      credits: (
+        <>
+          Artist: Abhinav Goyal
+        </>
+      ),
+    },
+  },
+  {
+    slug: "ganapati",
+    images: [
+      { src: "/Arts/Crescent1.png", alt: "Ganeshji deity sculpture art project, India, 2018" },
+    ],
+    caption: <>Crescent</>,
+    details: {
+      heading: "Performer",
+      location: "",
+      description: (
+        <>
+          A modern rendition of Lord Ganesha, this faceted sculpture reimagines the divine form <br /> with clean geometry
+          and minimalist expression. Blending tradition with innovation,
+          <br /> it honors wisdom, prosperity, and the spirit of new beginnings, <br />making it a powerful presence in any
+          contemporary setting.
+        </>
+      ),
+      details: (
+        <>
+          Material: Corten Steel
+          <br />Height: 4.5 ft, Width: 3 ft, Depth: 2.5 ft
+        </>
+      ),
+      credits: (
+        <>
+          Artist: Abhinav Goyal
+        </>
+      ),
+    },
+  },
+
+  {
+    slug: "wall",
+    images: [
+      { src: "/Arts/wall1.png", alt: "Ganeshji deity sculpture art project, India, 2018" },
+    ],
+    caption: <>wall</>,
+    details: {
+      heading: "wall",
+      location: "",
+      description: (
+        <>
+          A modern rendition of Lord Ganesha, this faceted sculpture reimagines the divine form <br /> with clean geometry
+          and minimalist expression. Blending tradition with innovation,
+          <br /> it honors wisdom, prosperity, and the spirit of new beginnings, <br />making it a powerful presence in any
+          contemporary setting.
+        </>
+      ),
+      details: (
+        <>
+          Material: Corten Steel
+          <br />Height: 4.5 ft, Width: 3 ft, Depth: 2.5 ft
+        </>
+      ),
+      credits: (
+        <>
+          Artist: Abhinav Goyal
+        </>
+      ),
+    },
+  },
+
+  {
+    slug: "solemn",
+    images: [
+      { src: "/solemn-mumbai-2021.webp", alt: "Solemn contemporary sculpture in Mumbai, India, 2021" },
+      { src: "/Arts/c1.webp", alt: "The Meditating Lady Sculpture in Goa, India, 2018" },
+      { src: "/Arts/c2.webp", alt: "The Meditating Lady Sculpture in Goa, India, 2018" },
+    ],
+    caption: <>Solemn</>,
+    details: {
+      heading: "Solemn",
+      location: "",
+      description: (
+        <>
+          Where the unseen becomes art. In the expansive <b>KPMG foyer, Mumbai</b>, <b>Solemn</b> commands attention{" "}
+          <br />bold from one angle, vanishing from another. Layered to play with light and illusion, it’s not just a
+          sculpture, <br /> but an ever-shifting experience of strength and mystery.
+        </>
+      ),
+      details: (
+        <>
+          Vanishing sculpture crafted from Stainless steel with a matte black finish. <br /> Dimensions: 1800mm x 1500mm x
+          675mm
+        </>
+      ),
+      credits: (
+        <>
+          Artist: Abhinav Goyal <br /> Commissioned for: KPMG, Mumbai <br /> Photography: KPMG
+        </>
+      ),
+    },
+  },
+
+
+  {
+    slug: "Bull",
+    images: [
+      { src: "/Arts/bulll.png", alt: "Ganeshji deity sculpture art project, India, 2018" },
+    ],
+    caption: <>Bull</>,
+    details: {
+      heading: "Bull",
+      location: "",
+      description: (
+        <>
+          A modern rendition of Lord Ganesha, this faceted sculpture reimagines the divine form <br /> with clean geometry
+          and minimalist expression. Blending tradition with innovation,
+          <br /> it honors wisdom, prosperity, and the spirit of new beginnings, <br />making it a powerful presence in any
+          contemporary setting.
+        </>
+      ),
+      details: (
+        <>
+          Material: Corten Steel
+          <br />Height: 4.5 ft, Width: 3 ft, Depth: 2.5 ft
+        </>
+      ),
+      credits: (
+        <>
+          Artist: Abhinav Goyal
+        </>
+      ),
+    },
+  },
+   {
+    slug: "ganapati",
+    images: [
+      { src: "/Arts/1212.png", alt: "Ganeshji deity sculpture art project, India, 2018" },
+    ],
+    caption: <>Shivji</>,
+    details: {
+      heading: "Performer",
+      location: "",
+      description: (
+        <>
+          A modern rendition of Lord Ganesha, this faceted sculpture reimagines the divine form <br /> with clean geometry
+          and minimalist expression. Blending tradition with innovation,
+          <br /> it honors wisdom, prosperity, and the spirit of new beginnings, <br />making it a powerful presence in any
+          contemporary setting.
+        </>
+      ),
+      details: (
+        <>
+          Material: Corten Steel
+          <br />Height: 4.5 ft, Width: 3 ft, Depth: 2.5 ft
+        </>
+      ),
+      credits: (
+        <>
+          Artist: Abhinav Goyal
+        </>
+      ),
+    },
+  },
+
+ {
+    slug: "ganapati",
+    images: [
+      { src: "/Arts/10999.png", alt: "Ganeshji deity sculpture art project, India, 2018" },
+    ],
+    caption: <>Wall Art</>,
+    details: {
+      heading: "Performer",
+      location: "",
+      description: (
+        <>
+          A modern rendition of Lord Ganesha, this faceted sculpture reimagines the divine form <br /> with clean geometry
+          and minimalist expression. Blending tradition with innovation,
+          <br /> it honors wisdom, prosperity, and the spirit of new beginnings, <br />making it a powerful presence in any
+          contemporary setting.
+        </>
+      ),
+      details: (
+        <>
+          Material: Corten Steel
+          <br />Height: 4.5 ft, Width: 3 ft, Depth: 2.5 ft
+        </>
+      ),
+      credits: (
+        <>
+          Artist: Abhinav Goyal
+        </>
+      ),
+    },
+  },
+
+   {
+    slug: "Butterfly head",
+    images: [
+      { src: "/Arts/304.png", alt: "Ganeshji deity sculpture art project, India, 2018" },
+    ],
+    caption: <>Butterfly head</>,
+    details: {
+      heading: "Butterfly head",
+      location: "",
+      description: (
+        <>
+          A modern rendition of Lord Ganesha, this faceted sculpture reimagines the divine form <br /> with clean geometry
+          and minimalist expression. Blending tradition with innovation,
+          <br /> it honors wisdom, prosperity, and the spirit of new beginnings, <br />making it a powerful presence in any
+          contemporary setting.
+        </>
+      ),
+      details: (
+        <>
+          Material: Corten Steel
+          <br />Height: 4.5 ft, Width: 3 ft, Depth: 2.5 ft
+        </>
+      ),
+      credits: (
+        <>
+          Artist: Abhinav Goyal
+        </>
+      ),
+    },
+  },
+   {
+    slug: "ganapati",
+    images: [
+      { src: "/Arts/891.png", alt: "Ganeshji deity sculpture art project, India, 2018" },
+    ],
+    caption: <>wall</>,
+    details: {
+      heading: "wall",
+      location: "",
+      description: (
+        <>
+          A modern rendition of Lord Ganesha, this faceted sculpture reimagines the divine form <br /> with clean geometry
+          and minimalist expression. Blending tradition with innovation,
+          <br /> it honors wisdom, prosperity, and the spirit of new beginnings, <br />making it a powerful presence in any
+          contemporary setting.
+        </>
+      ),
+      details: (
+        <>
+          Material: Corten Steel
+          <br />Height: 4.5 ft, Width: 3 ft, Depth: 2.5 ft
+        </>
+      ),
+      credits: (
+        <>
+          Artist: Abhinav Goyal
+        </>
+      ),
+    },
+  },
+
+   {
+    slug: "ganapati",
+    images: [
+      { src: "/Arts/000.webp", alt: "Ganeshji deity sculpture art project, India, 2018" },
+    ],
+    caption: <>Performer</>,
+    details: {
+      heading: "Performer",
+      location: "",
+      description: (
+        <>
+          A modern rendition of Lord Ganesha, this faceted sculpture reimagines the divine form <br /> with clean geometry
+          and minimalist expression. Blending tradition with innovation,
+          <br /> it honors wisdom, prosperity, and the spirit of new beginnings, <br />making it a powerful presence in any
+          contemporary setting.
+        </>
+      ),
+      details: (
+        <>
+          Material: Corten Steel
+          <br />Height: 4.5 ft, Width: 3 ft, Depth: 2.5 ft
+        </>
+      ),
+      credits: (
+        <>
+          Artist: Abhinav Goyal
+        </>
+      ),
+    },
+  },
+   {
+    slug: "ganapati",
+    images: [
+      { src: "/Arts/2076.png", alt: "Ganeshji deity sculpture art project, India, 2018" },
+    ],
+    caption: <>Performer</>,
+    details: {
+      heading: "Performer",
+      location: "",
+      description: (
+        <>
+          A modern rendition of Lord Ganesha, this faceted sculpture reimagines the divine form <br /> with clean geometry
+          and minimalist expression. Blending tradition with innovation,
+          <br /> it honors wisdom, prosperity, and the spirit of new beginnings, <br />making it a powerful presence in any
+          contemporary setting.
+        </>
+      ),
+      details: (
+        <>
+          Material: Corten Steel
+          <br />Height: 4.5 ft, Width: 3 ft, Depth: 2.5 ft
+        </>
+      ),
+      credits: (
+        <>
+          Artist: Abhinav Goyal
+        </>
+      ),
+    },
+  },
+   {
+    slug: "Bar Table",
+    images: [
+      { src: "/Arts/444.webp", alt: "Ganeshji deity sculpture art project, India, 2018" },
+    ],
+    caption: <>Bar Table</>,
+    details: {
+      heading: "Bar Table",
+      location: "",
+      description: (
+        <>
+          A modern rendition of Lord Ganesha, this faceted sculpture reimagines the divine form <br /> with clean geometry
+          and minimalist expression. Blending tradition with innovation,
+          <br /> it honors wisdom, prosperity, and the spirit of new beginnings, <br />making it a powerful presence in any
+          contemporary setting.
+        </>
+      ),
+      details: (
+        <>
+          Material: Corten Steel
+          <br />Height: 4.5 ft, Width: 3 ft, Depth: 2.5 ft
+        </>
+      ),
+      credits: (
+        <>
+          Artist: Abhinav Goyal
+        </>
+      ),
+    },
+  },
+   {
+    slug: "Cactus",
+    images: [
+      { src: "/Arts/555.webp", alt: "Ganeshji deity sculpture art project, India, 2018" },
+    ],
+    caption: <>Cactilome</>,
+    details: {
+      heading: "Cactilome",
+      location: "",
+      description: (
+        <>
+          A modern rendition of Lord Ganesha, this faceted sculpture reimagines the divine form <br /> with clean geometry
+          and minimalist expression. Blending tradition with innovation,
+          <br /> it honors wisdom, prosperity, and the spirit of new beginnings, <br />making it a powerful presence in any
+          contemporary setting.
+        </>
+      ),
+      details: (
+        <>
+          Material: Corten Steel
+          <br />Height: 4.5 ft, Width: 3 ft, Depth: 2.5 ft
+        </>
+      ),
+      credits: (
+        <>
+          Artist: Abhinav Goyal
+        </>
+      ),
+    },
+  },
+   {
+    slug: "ganapati",
+    images: [
+      { src: "/Arts/666.webp", alt: "Ganeshji deity sculpture art project, India, 2018" },
+    ],
+    caption: <>Performer</>,
+    details: {
+      heading: "Performer",
+      location: "",
+      description: (
+        <>
+          A modern rendition of Lord Ganesha, this faceted sculpture reimagines the divine form <br /> with clean geometry
+          and minimalist expression. Blending tradition with innovation,
+          <br /> it honors wisdom, prosperity, and the spirit of new beginnings, <br />making it a powerful presence in any
+          contemporary setting.
+        </>
+      ),
+      details: (
+        <>
+          Material: Corten Steel
+          <br />Height: 4.5 ft, Width: 3 ft, Depth: 2.5 ft
+        </>
+      ),
+      credits: (
+        <>
+          Artist: Abhinav Goyal
+        </>
+      ),
+    },
+  },
+  
   ];

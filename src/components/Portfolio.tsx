@@ -77,7 +77,7 @@ const Gallery = () => {
       <div className="max-w-10xl flex flex-col items-center justify-center mx-auto">
         <Navbar />
 
-        <div className="grid grid-cols-2 sm:grid-cols-3 gap-1 w-full">
+        <div className="grid grid-cols-3 sm:grid-cols-3 gap-1 w-full">
           {ARTWORK_IMAGES.map((artwork) => (
             <div
               key={artwork.slug}
