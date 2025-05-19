@@ -10,188 +10,188 @@ export interface BlogPost {
   }
   
   export const blogPosts: BlogPost[] = [
-{
-  "id": "custom-metal-statue-manufacturer-india",
-  "title": "FormForge: Custom Metal Statue Manufacturer in India",
-  "metaDescription": "Discover FormForge, a leading metal statue manufacturer in Noida, Delhi NCR. Explore our custom stainless steel, corten steel, and bronze statues, pricing, and craftsmanship for homes, offices, and public spaces in India.",
-  "content": `
-    <article class="blog-content max-w-4xl mx-auto">
-      <header class="mb-5">
-        <h1 class="text-4xl md:text-5xl font-bold text-center" style="font-family: Montserrat">
-          FormForge: Custom Metal Statue Manufacturer in India
-        </h1>
-      </header>
+// {
+//   "id": "custom-metal-statue-manufacturer-india",
+//   "title": "FormForge: Custom Metal Statue Manufacturer in India",
+//   "metaDescription": "Discover FormForge, a leading metal statue manufacturer in Noida, Delhi NCR. Explore our custom stainless steel, corten steel, and bronze statues, pricing, and craftsmanship for homes, offices, and public spaces in India.",
+//   "content": `
+//     <article class="blog-content max-w-4xl mx-auto">
+//       <header class="mb-5">
+//         <h1 class="text-4xl md:text-5xl font-bold text-center" style="font-family: Montserrat">
+//           FormForge: Custom Metal Statue Manufacturer in India
+//         </h1>
+//       </header>
 
-      <section class="mb-10">
-        <p class="text-gray-600">FormForge, a premier <strong>metal statue manufacturer in Noida, Delhi NCR</strong>, crafts bespoke <strong>customized metal statues</strong> for homes, corporate spaces, luxury residences, and public installations across India. Our 50,000 sq ft studio blends traditional craftsmanship with advanced technologies like CNC laser cutting and 3D modeling, delivering unique artworks that elevate any space. Discover why FormForge is the trusted <strong>metal statue artist in India</strong>.</p>
-      </section>
+//       <section class="mb-10">
+//         <p class="text-gray-600">FormForge, a premier <strong>metal statue manufacturer in Noida, Delhi NCR</strong>, crafts bespoke <strong>customized metal statues</strong> for homes, corporate spaces, luxury residences, and public installations across India. Our 50,000 sq ft studio blends traditional craftsmanship with advanced technologies like CNC laser cutting and 3D modeling, delivering unique artworks that elevate any space. Discover why FormForge is the trusted <strong>metal statue artist in India</strong>.</p>
+//       </section>
 
-      <section class="mb-10">
-        <h2 class="text-3xl font-semibold mb-3">Why Choose Metal Statues?</h2>
-        <img class="mt-7 mb-7" src="/images/blog/stainless-steel-statue.webp" alt="Custom Stainless Steel Statue by FormForge in Delhi NCR" />
-        <p class="text-gray-600">Metal statues by FormForge offer unmatched benefits:
-          <ul class="list-disc pl-6 text-gray-600 mb-3">
-            <li><strong>Longevity</strong>: Weather-resistant, ideal for India’s diverse climates, from gardens to public plazas.</li>
-            <li><strong>Versatility</strong>: Crafted in stainless steel, corten steel, bronze, or brass for diverse styles.</li>
-            <li><strong>Elegance</strong>: Polished or weathered finishes enhance luxury homes, offices, or corporate spaces.</li>
-          </ul>
-          Our 10-ft stainless steel abstract sculpture at a Gurgaon luxury hotel entrance exemplifies modern artistry and durability.</p>
-      </section>
+//       <section class="mb-10">
+//         <h2 class="text-3xl font-semibold mb-3">Why Choose Metal Statues?</h2>
+//         <img class="mt-7 mb-7" src="/images/blog/stainless-steel-statue.webp" alt="Custom Stainless Steel Statue by FormForge in Delhi NCR" />
+//         <p class="text-gray-600">Metal statues by FormForge offer unmatched benefits:
+//           <ul class="list-disc pl-6 text-gray-600 mb-3">
+//             <li><strong>Longevity</strong>: Weather-resistant, ideal for India’s diverse climates, from gardens to public plazas.</li>
+//             <li><strong>Versatility</strong>: Crafted in stainless steel, corten steel, bronze, or brass for diverse styles.</li>
+//             <li><strong>Elegance</strong>: Polished or weathered finishes enhance luxury homes, offices, or corporate spaces.</li>
+//           </ul>
+//           Our 10-ft stainless steel abstract sculpture at a Gurgaon luxury hotel entrance exemplifies modern artistry and durability.</p>
+//       </section>
 
-      <section class="mb-10">
-        <h2 class="text-3xl font-semibold mb-3">FormForge’s Craftsmanship: Art Meets Innovation</h2>
-        <h3 class="text-2xl font-semibold mb-2">Advanced Techniques</h3>
-        <p class="text-gray-600">Our 5,000 kg/day foundry in Noida combines artisanal expertise with cutting-edge technology:
-          <ul class="list-disc pl-6 text-gray-600 mb-3">
-            <li><strong>CNC Laser Cutting</strong>: Ensures precision for intricate <strong>metal statues in India</strong>.</li>
-            <li><strong>Parametric Design</strong>: Creates unique forms using 3D modeling for contemporary designs.</li>
-            <li><strong>Handcrafted Finishing</strong>: Traditional patinas and polishing by artisans with over 10 years of experience.</li>
-          </ul>
-          Our 12-ft stainless steel geometric sculpture for a Connaught Place corporate office showcases this fusion.</p>
+//       <section class="mb-10">
+//         <h2 class="text-3xl font-semibold mb-3">FormForge’s Craftsmanship: Art Meets Innovation</h2>
+//         <h3 class="text-2xl font-semibold mb-2">Advanced Techniques</h3>
+//         <p class="text-gray-600">Our 5,000 kg/day foundry in Noida combines artisanal expertise with cutting-edge technology:
+//           <ul class="list-disc pl-6 text-gray-600 mb-3">
+//             <li><strong>CNC Laser Cutting</strong>: Ensures precision for intricate <strong>metal statues in India</strong>.</li>
+//             <li><strong>Parametric Design</strong>: Creates unique forms using 3D modeling for contemporary designs.</li>
+//             <li><strong>Handcrafted Finishing</strong>: Traditional patinas and polishing by artisans with over 10 years of experience.</li>
+//           </ul>
+//           Our 12-ft stainless steel geometric sculpture for a Connaught Place corporate office showcases this fusion.</p>
         
-        <h3 class="text-2xl font-semibold mb-2">Highlighted Projects</h3>
-        <p class="text-gray-600">FormForge’s portfolio reflects our expertise in <strong>customized metal statues in Delhi NCR</strong>:
-          <ul class="list-disc pl-6 text-gray-600 mb-3">
-            <li><strong>Gurgaon Villa</strong>: 5-ft corten steel abstract deer sculpture for a private garden.</li>
-            <li><strong>Connaught Place Office</strong>: 12-ft stainless steel geometric sculpture, a corporate lobby centerpiece.</li>
-            <li><strong>Noida Luxury Development</strong>: 9-ft faceted corten steel face sculpture for a real estate developer.</li>
-          </ul>
-          <a href="https://formforge.com/portfolio" class="text-blue-600 hover:underline">Explore our portfolio</a> for more projects across India.</p>
-      </section>
+//         <h3 class="text-2xl font-semibold mb-2">Highlighted Projects</h3>
+//         <p class="text-gray-600">FormForge’s portfolio reflects our expertise in <strong>customized metal statues in Delhi NCR</strong>:
+//           <ul class="list-disc pl-6 text-gray-600 mb-3">
+//             <li><strong>Gurgaon Villa</strong>: 5-ft corten steel abstract deer sculpture for a private garden.</li>
+//             <li><strong>Connaught Place Office</strong>: 12-ft stainless steel geometric sculpture, a corporate lobby centerpiece.</li>
+//             <li><strong>Noida Luxury Development</strong>: 9-ft faceted corten steel face sculpture for a real estate developer.</li>
+//           </ul>
+//           <a href="https://formforge.com/portfolio" class="text-blue-600 hover:underline">Explore our portfolio</a> for more projects across India.</p>
+//       </section>
 
-      <section class="mb-10">
-        <h2 class="text-3xl font-semibold mb-3">Types of Metal Statues by FormForge</h2>
-        <img class="mt-7 mb-7" src="/images/blog/corten-steel-sculpture.webp" alt="Corten Steel Sculpture by FormForge in Gurgaon" />
-        <h3 class="text-2xl font-semibold mb-2">Stainless Steel Statues</h3>
-        <p class="text-gray-600">Reflective and modern, stainless steel statues suit corporate spaces or urban plazas. Our 15-ft stainless steel eagle sculpture in Gurgaon’s corporate park, crafted with 316-grade steel, exemplifies precision and elegance.</p>
+//       <section class="mb-10">
+//         <h2 class="text-3xl font-semibold mb-3">Types of Metal Statues by FormForge</h2>
+//         <img class="mt-7 mb-7" src="/images/blog/corten-steel-sculpture.webp" alt="Corten Steel Sculpture by FormForge in Gurgaon" />
+//         <h3 class="text-2xl font-semibold mb-2">Stainless Steel Statues</h3>
+//         <p class="text-gray-600">Reflective and modern, stainless steel statues suit corporate spaces or urban plazas. Our 15-ft stainless steel eagle sculpture in Gurgaon’s corporate park, crafted with 316-grade steel, exemplifies precision and elegance.</p>
         
-        <h3 class="text-2xl font-semibold mb-2">Corten Steel Sculptures</h3>
-        <p class="text-gray-600">Corten steel’s oxidized surface adds warmth and contemporary appeal. Our 7-ft corten steel abstract human-form sculpture for a Delhi garden blends rustic and modern aesthetics.</p>
+//         <h3 class="text-2xl font-semibold mb-2">Corten Steel Sculptures</h3>
+//         <p class="text-gray-600">Corten steel’s oxidized surface adds warmth and contemporary appeal. Our 7-ft corten steel abstract human-form sculpture for a Delhi garden blends rustic and modern aesthetics.</p>
         
-        <h3 class="text-2xl font-semibold mb-2">Bronze Sculptures</h3>
-        <p class="text-gray-600">Timeless and durable, bronze statues add cultural depth. Our 8-ft bronze Buddha for a Delhi luxury farmhouse showcases intricate craftsmanship, positioning FormForge as a leading <strong>bronze statue manufacturer in India</strong>.</p>
+//         <h3 class="text-2xl font-semibold mb-2">Bronze Sculptures</h3>
+//         <p class="text-gray-600">Timeless and durable, bronze statues add cultural depth. Our 8-ft bronze Buddha for a Delhi luxury farmhouse showcases intricate craftsmanship, positioning FormForge as a leading <strong>bronze statue manufacturer in India</strong>.</p>
         
-        <h3 class="text-2xl font-semibold mb-2">Customized Metal Statues</h3>
-        <p class="text-gray-600">FormForge tailors sculptures to your vision:
-          <ul class="list-disc pl-6 text-gray-600 mb-3">
-            <li><strong>Abstract Forms</strong>: For contemporary homes or offices.</li>
-            <li><strong>Animal Sculptures</strong>: Symbolizing strength, like our bronze horse for a Noida client.</li>
-            <li><strong>Nature-Inspired Designs</strong>: Corten steel trees for Gurgaon parks.</li>
-          </ul>
-          Contact us for your <strong>customized metal statue in India</strong>.</p>
-      </section>
+//         <h3 class="text-2xl font-semibold mb-2">Customized Metal Statues</h3>
+//         <p class="text-gray-600">FormForge tailors sculptures to your vision:
+//           <ul class="list-disc pl-6 text-gray-600 mb-3">
+//             <li><strong>Abstract Forms</strong>: For contemporary homes or offices.</li>
+//             <li><strong>Animal Sculptures</strong>: Symbolizing strength, like our bronze horse for a Noida client.</li>
+//             <li><strong>Nature-Inspired Designs</strong>: Corten steel trees for Gurgaon parks.</li>
+//           </ul>
+//           Contact us for your <strong>customized metal statue in India</strong>.</p>
+//       </section>
 
-      <section class="mb-10">
-        <h2 class="text-3xl font-semibold mb-3">Pricing Guide for Custom Metal Statues</h2>
-        <p class="text-gray-600">FormForge offers transparent pricing for <strong>custom metal statues in India</strong>:
-          <table class="table-auto w-full text-left text-gray-600 mb-3">
-            <thead>
-              <tr><th>Statue Type</th><th>Size</th><th>Material</th><th>Price Range (INR)</th></tr>
-            </thead>
-            <tbody>
-              <tr><td>Abstract Sculpture</td><td>5 ft</td><td>Stainless Steel</td><td>200,000–400,000</td></tr>
-              <tr><td>Animal Sculpture</td><td>7 ft</td><td>Corten Steel</td><td>300,000–500,000</td></tr>
-              <tr><td>Monumental Sculpture</td><td>12 ft</td><td>Bronze</td><td>500,000–1,000,000</td></tr>
-            </tbody>
-          </table>
-          <strong>Example</strong>: A 7-ft corten steel abstract sculpture for a Gurgaon villa cost INR 450,000, including design and installation. <a href="https://formforge.com/contact" class="text-blue-600 hover:underline">Request a free quote</a> for your Delhi NCR project!</p>
-      </section>
+//       <section class="mb-10">
+//         <h2 class="text-3xl font-semibold mb-3">Pricing Guide for Custom Metal Statues</h2>
+//         <p class="text-gray-600">FormForge offers transparent pricing for <strong>custom metal statues in India</strong>:
+//           <table class="table-auto w-full text-left text-gray-600 mb-3">
+//             <thead>
+//               <tr><th>Statue Type</th><th>Size</th><th>Material</th><th>Price Range (INR)</th></tr>
+//             </thead>
+//             <tbody>
+//               <tr><td>Abstract Sculpture</td><td>5 ft</td><td>Stainless Steel</td><td>200,000–400,000</td></tr>
+//               <tr><td>Animal Sculpture</td><td>7 ft</td><td>Corten Steel</td><td>300,000–500,000</td></tr>
+//               <tr><td>Monumental Sculpture</td><td>12 ft</td><td>Bronze</td><td>500,000–1,000,000</td></tr>
+//             </tbody>
+//           </table>
+//           <strong>Example</strong>: A 7-ft corten steel abstract sculpture for a Gurgaon villa cost INR 450,000, including design and installation. <a href="https://formforge.com/contact" class="text-blue-600 hover:underline">Request a free quote</a> for your Delhi NCR project!</p>
+//       </section>
 
-      <section class="mb-10">
-        <h2 class="text-3xl font-semibold mb-3">Why Choose FormForge?</h2>
-        <img class="mt-7 mb-7" src="/images/blog/bronze-sculpture.webp" alt="Bronze Sculpture by FormForge in Noida" />
-        <p class="text-gray-600">FormForge is a top <strong>metal statue artist in Delhi NCR</strong> for:
-          <ul class="list-disc pl-6 text-gray-600 mb-3">
-            <li><strong>Customization</strong>: Bespoke designs tailored to your vision.</li>
-            <li><strong>Advanced Fabrication</strong>: CNC laser cutting and 3D modeling for precision.</li>
-            <li><strong>Experienced Artisans</strong>: Over 10 years crafting <strong>metal statues in India</strong>.</li>
-            <li><strong>Eco-Friendly Practices</strong>: Sustainable, recyclable materials.</li>
-          </ul>
-          Our 50,000 sq ft Noida studio, with a 5,000 kg/day foundry, supports projects of any scale. <a href="https://formforge.com/contact" class="text-blue-600 hover:underline">Schedule a consultation</a> at Sector 43, Noida.</p>
-      </section>
+//       <section class="mb-10">
+//         <h2 class="text-3xl font-semibold mb-3">Why Choose FormForge?</h2>
+//         <img class="mt-7 mb-7" src="/images/blog/bronze-sculpture.webp" alt="Bronze Sculpture by FormForge in Noida" />
+//         <p class="text-gray-600">FormForge is a top <strong>metal statue artist in Delhi NCR</strong> for:
+//           <ul class="list-disc pl-6 text-gray-600 mb-3">
+//             <li><strong>Customization</strong>: Bespoke designs tailored to your vision.</li>
+//             <li><strong>Advanced Fabrication</strong>: CNC laser cutting and 3D modeling for precision.</li>
+//             <li><strong>Experienced Artisans</strong>: Over 10 years crafting <strong>metal statues in India</strong>.</li>
+//             <li><strong>Eco-Friendly Practices</strong>: Sustainable, recyclable materials.</li>
+//           </ul>
+//           Our 50,000 sq ft Noida studio, with a 5,000 kg/day foundry, supports projects of any scale. <a href="https://formforge.com/contact" class="text-blue-600 hover:underline">Schedule a consultation</a> at Sector 43, Noida.</p>
+//       </section>
 
-      <section class="mb-10">
-        <h2 class="text-3xl font-semibold mb-3">Visit FormForge’s Noida Gallery</h2>
-        <p class="text-gray-600">Our Sector 43, Noida studio showcases over 50 <strong>customized metal statues</strong>:
-          <ul class="list-disc pl-6 text-gray-600 mb-3">
-            <li>9-ft corten steel face sculpture for a Noida luxury residential project.</li>
-            <li>12-ft stainless steel abstract piece for a corporate lobby near India Gate.</li>
-            <li>7-ft bronze abstract animal form for a Gurgaon villa.</li>
-          </ul>
-          <a href="https://formforge.com/portfolio" class="text-blue-600 hover:underline">View our gallery</a> or visit our studio to explore <strong>metal statues in Delhi NCR</strong>.</p>
-      </section>
+//       <section class="mb-10">
+//         <h2 class="text-3xl font-semibold mb-3">Visit FormForge’s Noida Gallery</h2>
+//         <p class="text-gray-600">Our Sector 43, Noida studio showcases over 50 <strong>customized metal statues</strong>:
+//           <ul class="list-disc pl-6 text-gray-600 mb-3">
+//             <li>9-ft corten steel face sculpture for a Noida luxury residential project.</li>
+//             <li>12-ft stainless steel abstract piece for a corporate lobby near India Gate.</li>
+//             <li>7-ft bronze abstract animal form for a Gurgaon villa.</li>
+//           </ul>
+//           <a href="https://formforge.com/portfolio" class="text-blue-600 hover:underline">View our gallery</a> or visit our studio to explore <strong>metal statues in Delhi NCR</strong>.</p>
+//       </section>
 
-      <section class="mb-10">
-        <h2 class="text-3xl font-semibold mb-3">Transform Your Space with FormForge</h2>
-        <p class="text-gray-600 mb-5">As a leading <strong>metal statue manufacturer in India</strong>, FormForge crafts bespoke sculptures that reflect your style. From Gurgaon luxury homes to Noida public installations, our artworks elevate spaces with artistry and durability.</p>
+//       <section class="mb-10">
+//         <h2 class="text-3xl font-semibold mb-3">Transform Your Space with FormForge</h2>
+//         <p class="text-gray-600 mb-5">As a leading <strong>metal statue manufacturer in India</strong>, FormForge crafts bespoke sculptures that reflect your style. From Gurgaon luxury homes to Noida public installations, our artworks elevate spaces with artistry and durability.</p>
         
-        <h3 class="text-2xl font-semibold mb-3">The Future of Metal Statues in India</h3>
-        <p class="text-gray-600 mb-5">With rising demand for <strong>customized metal statues in Delhi NCR</strong>, FormForge pioneers innovation by blending traditional craftsmanship with modern technology.</p>
+//         <h3 class="text-2xl font-semibold mb-3">The Future of Metal Statues in India</h3>
+//         <p class="text-gray-600 mb-5">With rising demand for <strong>customized metal statues in Delhi NCR</strong>, FormForge pioneers innovation by blending traditional craftsmanship with modern technology.</p>
         
-        <h3 class="text-2xl font-semibold mb-3">Support Indian Artisans</h3>
-        <p class="text-gray-600 mb-5">Choosing FormForge supports Noida’s artisans, enriching India’s cultural landscape. <a href="https://formforge.com/contact" class="text-blue-600 hover:underline">Commission your masterpiece</a>.</p>
+//         <h3 class="text-2xl font-semibold mb-3">Support Indian Artisans</h3>
+//         <p class="text-gray-600 mb-5">Choosing FormForge supports Noida’s artisans, enriching India’s cultural landscape. <a href="https://formforge.com/contact" class="text-blue-600 hover:underline">Commission your masterpiece</a>.</p>
         
-        <h3 class="text-2xl font-semibold mb-2">Connect with FormForge</h3>
-        <p class="text-gray-600">Follow us on <a href="https://instagram.com/formforge" class="text-blue-600 hover:underline">Instagram</a> or join Delhi NCR’s art community at our Noida studio to explore <strong>metal statue artistry</strong>.</p>
-      </section>
+//         <h3 class="text-2xl font-semibold mb-2">Connect with FormForge</h3>
+//         <p class="text-gray-600">Follow us on <a href="https://instagram.com/formforge" class="text-blue-600 hover:underline">Instagram</a> or join Delhi NCR’s art community at our Noida studio to explore <strong>metal statue artistry</strong>.</p>
+//       </section>
 
-      <section>
-        <h2 class="text-3xl font-semibold mb-8">People Also Ask: Your Questions Answered</h2>
-        <div class="mb-6">
-          <h3 class="text-2xl font-semibold mb-2">What is a metal statue?</h3>
-          <p class="text-gray-600">A metal statue is a three-dimensional artwork crafted from materials like stainless steel, corten steel, bronze, or brass, depicting figures, animals, or abstract forms. FormForge creates <strong>customized metal statues in India</strong> for diverse spaces. (<a href="https://www.britannica.com/art/sculpture" class="text-blue-600 hover:underline">Britannica</a>)</p>
-        </div>
-        <div class="mb-6">
-          <h3 class="text-2xl font-semibold mb-2">Who is the best metal statue manufacturer in Delhi NCR?</h3>
-          <p class="text-gray-600">FormForge, based in Noida, is a leading <strong>metal statue manufacturer in Delhi NCR</strong>, known for bespoke stainless steel, corten steel, and bronze sculptures. <a href="https://formforge.com/portfolio" class="text-blue-600 hover:underline">See our projects</a>.</p>
-        </div>
-        <div class="mb-6">
-          <h3 class="text-2xl font-semibold mb-2">How much do customized metal statues cost in India?</h3>
-          <p class="text-gray-600">FormForge’s <strong>custom metal statues</strong> range from INR 200,000 for a 5-ft stainless steel sculpture to INR 1,000,000 for a 12-ft bronze monument, depending on design and material.</p>
-        </div>
-        <div class="mb-6">
-          <h3 class="text-2xl font-semibold mb-2">Where to buy metal statues in Delhi NCR?</h3>
-          <p class="text-gray-600">Visit FormForge’s Noida studio in Sector 43 or <a href="https://formforge.com/contact" class="text-blue-600 hover:underline">contact us</a> for <strong>customized metal statues in Delhi NCR</strong>.</p>
-        </div>
-        <div class="mb-6">
-          <h3 class="text-2xl font-semibold mb-2">What materials are used for metal statues?</h3>
-          <p class="text-gray-600">FormForge uses stainless steel, corten steel, bronze, and brass, sourced sustainably for durability and aesthetic appeal. (<a href="https://www.britannica.com/art/sculpture" class="text-blue-600 hover:underline">Britannica</a>)</p>
-        </div>
-        <div class="mb-6">
-          <h3 class="text-2xl font-semibold mb-2">Are metal statues suitable for outdoor use?</h3>
-          <p class="text-gray-600">Yes, FormForge’s metal statues, like our corten steel sculptures, are weather-resistant with protective coatings, ideal for gardens or public spaces in Delhi NCR.</p>
-        </div>
-      </section>
-  `,
-  "image": "/images/blog/corten-steel-sculpture.webp",
-  "date": "2025-05-14",
-  "schema": {
-    "@context": "https://schema.org",
-    "@type": "BlogPosting",
-    "headline": "FormForge: Custom Metal Statue Manufacturer in India",
-    "image": "/images/blog/corten-steel-sculpture.webp",
-    "datePublished": "2025-05-14",
-    "author": {
-      "@type": "Organization",
-      "name": "FormForge",
-      "url": "https://formforge.com"
-    },
-    "publisher": {
-      "@type": "Organization",
-      "name": "FormForge",
-      "logo": {
-        "@type": "ImageObject",
-        "url": "https://formforge.com/logo.png"
-      }
-    },
-    "mainEntityOfPage": {
-      "@type": "WebPage",
-      "@id": "https://formforge.com/blog/custom-metal-statue-manufacturer-india"
-    },
-    "keywords": "metal statue manufacturer in India, metal statue artist in Delhi NCR, customized metal statues, bronze statue manufacturer in India, corten steel sculpture",
-    "description": "Discover FormForge, a leading metal statue manufacturer in Noida, Delhi NCR. Explore our custom stainless steel, corten steel, and bronze statues, pricing, and craftsmanship for homes, offices, and public spaces in India."
-  }
-},
+//       <section>
+//         <h2 class="text-3xl font-semibold mb-8">People Also Ask: Your Questions Answered</h2>
+//         <div class="mb-6">
+//           <h3 class="text-2xl font-semibold mb-2">What is a metal statue?</h3>
+//           <p class="text-gray-600">A metal statue is a three-dimensional artwork crafted from materials like stainless steel, corten steel, bronze, or brass, depicting figures, animals, or abstract forms. FormForge creates <strong>customized metal statues in India</strong> for diverse spaces. (<a href="https://www.britannica.com/art/sculpture" class="text-blue-600 hover:underline">Britannica</a>)</p>
+//         </div>
+//         <div class="mb-6">
+//           <h3 class="text-2xl font-semibold mb-2">Who is the best metal statue manufacturer in Delhi NCR?</h3>
+//           <p class="text-gray-600">FormForge, based in Noida, is a leading <strong>metal statue manufacturer in Delhi NCR</strong>, known for bespoke stainless steel, corten steel, and bronze sculptures. <a href="https://formforge.com/portfolio" class="text-blue-600 hover:underline">See our projects</a>.</p>
+//         </div>
+//         <div class="mb-6">
+//           <h3 class="text-2xl font-semibold mb-2">How much do customized metal statues cost in India?</h3>
+//           <p class="text-gray-600">FormForge’s <strong>custom metal statues</strong> range from INR 200,000 for a 5-ft stainless steel sculpture to INR 1,000,000 for a 12-ft bronze monument, depending on design and material.</p>
+//         </div>
+//         <div class="mb-6">
+//           <h3 class="text-2xl font-semibold mb-2">Where to buy metal statues in Delhi NCR?</h3>
+//           <p class="text-gray-600">Visit FormForge’s Noida studio in Sector 43 or <a href="https://formforge.com/contact" class="text-blue-600 hover:underline">contact us</a> for <strong>customized metal statues in Delhi NCR</strong>.</p>
+//         </div>
+//         <div class="mb-6">
+//           <h3 class="text-2xl font-semibold mb-2">What materials are used for metal statues?</h3>
+//           <p class="text-gray-600">FormForge uses stainless steel, corten steel, bronze, and brass, sourced sustainably for durability and aesthetic appeal. (<a href="https://www.britannica.com/art/sculpture" class="text-blue-600 hover:underline">Britannica</a>)</p>
+//         </div>
+//         <div class="mb-6">
+//           <h3 class="text-2xl font-semibold mb-2">Are metal statues suitable for outdoor use?</h3>
+//           <p class="text-gray-600">Yes, FormForge’s metal statues, like our corten steel sculptures, are weather-resistant with protective coatings, ideal for gardens or public spaces in Delhi NCR.</p>
+//         </div>
+//       </section>
+//   `,
+//   "image": "/images/blog/corten-steel-sculpture.webp",
+//   "date": "2025-05-14",
+//   "schema": {
+//     "@context": "https://schema.org",
+//     "@type": "BlogPosting",
+//     "headline": "FormForge: Custom Metal Statue Manufacturer in India",
+//     "image": "/images/blog/corten-steel-sculpture.webp",
+//     "datePublished": "2025-05-14",
+//     "author": {
+//       "@type": "Organization",
+//       "name": "FormForge",
+//       "url": "https://formforge.com"
+//     },
+//     "publisher": {
+//       "@type": "Organization",
+//       "name": "FormForge",
+//       "logo": {
+//         "@type": "ImageObject",
+//         "url": "https://formforge.com/logo.png"
+//       }
+//     },
+//     "mainEntityOfPage": {
+//       "@type": "WebPage",
+//       "@id": "https://formforge.com/blog/custom-metal-statue-manufacturer-india"
+//     },
+//     "keywords": "metal statue manufacturer in India, metal statue artist in Delhi NCR, customized metal statues, bronze statue manufacturer in India, corten steel sculpture",
+//     "description": "Discover FormForge, a leading metal statue manufacturer in Noida, Delhi NCR. Explore our custom stainless steel, corten steel, and bronze statues, pricing, and craftsmanship for homes, offices, and public spaces in India."
+//   }
+// },
 
 
     {
@@ -202,7 +202,7 @@ export interface BlogPost {
     <article class="blog-content max-w-4xl mx-auto">
       <header class="mb-5">
         <h1 class="text-4xl md:text-5xl font-bold text-center" style="font-family: Montserrat">
-          Marble Bust Sculpture: Statue Price in India
+          Bust Sculpture: Statue Price in India
         </h1>
       </header>
 
@@ -217,17 +217,17 @@ export interface BlogPost {
         <p class="text-gray-600">A bust sculpture is a three-dimensional artwork that depicts the upper portion of the human form, typically including the head, neck, and a portion of the chest and shoulders. The history of bust statues stretches back to ancient civilizations, with examples found in ancient Greece and Rome. These early busts served as portraits of rulers, gods, and prominent citizens, often crafted from marble or other durable materials. Hellenic sculptors were masters of capturing the essence of their subjects, creating lifelike marble bust sculptures that continue to inspire awe today. Busts remain popular as gallery pieces or elegant decor in modern homes.</p>
         
         <h3 class="text-2xl font-semibold mb-2">Materials Used in Bust Sculpture Creation</h3>
-        <p class="text-gray-600">Various materials can be used to create bust sculptures, each offering unique aesthetics and properties. Marble, particularly high-quality stone marble, is a classic choice, prized for its beauty, durability, and ability to be intricately carved. Bronze offers strength and permanence, while plaster is often used for preliminary models or affordable replicas. Other materials like terracotta and wood are also employed. When considering a marble bust sculpture in India, it’s crucial to inquire about the type of marble and craftsmanship to ensure a high-quality artwork that endures for generations.</p>
+        <p class="text-gray-600">Various materials can be used to create bust sculptures, each offering unique aesthetics and properties. Marble, particularly high-quality stone marble, is a classic choice, prized for its beauty, durability, and ability to be intricately carved. Bronze offers strength and permanence, while plaster is often used for preliminary models or affordable replicas. Other materials like terracotta and wood are also employed. When considering a Bust Sculpture in India, it’s crucial to inquire about the type of marble and craftsmanship to ensure a high-quality artwork that endures for generations.</p>
         
         <h3 class="text-2xl font-semibold mb-2">Types of Bust Statues</h3>
         <p class="text-gray-600">Bust statues come in a wide array of styles and subjects. Some depict historical figures, such as Roman emperors or Greek philosophers, while others portray characters from Greek mythology, like Apollo or Venus. Portrait busts, commissioned to capture an individual’s likeness, are often used as monuments. Busts can also be categorized by artistic style, ranging from classical realism to modern or abstract interpretations. The choice of bust reflects the owner’s tastes, whether they’re collectors, philanthropists, or admirers of the human form’s craftsmanship. Greek busts, in particular, are popular as home decor accessories in their original condition.</p>
       </section>
 
       <section class="mb-10">
-        <h2 class="text-3xl font-semibold mb-3">The Art of Marble Bust Sculpture</h2>
+        <h2 class="text-3xl font-semibold mb-3">The Art of Bust Sculpture</h2>
          <img class="mt-7 mb-7" src="/images/blog/Bust-Sculpture-formforge.webp" alt="Human Face Bust">
         <h3 class="text-2xl font-semibold mb-2">Techniques for Crafting Marble Busts</h3>
-        <p class="text-gray-600">Creating a marble bust sculpture is a demanding and intricate process requiring exceptional skill. Sculptors begin with a preliminary model, often in plaster, to establish the form and proportions. This model guides the marble carving, which involves using tools like chisels and rasps to gradually remove stone and reveal the desired shape. A deep understanding of anatomy is essential to accurately depict the human form. The final stages involve polishing the marble bust to enhance its natural luster and intricate details. The craftsmanship required significantly impacts the final price in India.</p>
+        <p class="text-gray-600">Creating a Bust Sculpture is a demanding and intricate process requiring exceptional skill. Sculptors begin with a preliminary model, often in plaster, to establish the form and proportions. This model guides the marble carving, which involves using tools like chisels and rasps to gradually remove stone and reveal the desired shape. A deep understanding of anatomy is essential to accurately depict the human form. The final stages involve polishing the marble bust to enhance its natural luster and intricate details. The craftsmanship required significantly impacts the final price in India.</p>
         
         <h3 class="text-2xl font-semibold mb-2">Famous Marble Bust Sculptures in History</h3>
         <p class="text-gray-600">Iconic marble bust sculptures have left a lasting mark throughout history. Busts of Roman emperors like Augustus are renowned for their realism and depiction of power. Hellenic sculptors crafted majestic busts of philosophers such as Socrates and Plato, capturing their essence with remarkable detail. During the Renaissance, artists like Donatello revived the classical tradition, creating exquisite portrait busts that reflected their subjects’ unique personalities. These ancient and Renaissance works continue to inspire modern busts and marble statues.</p>
@@ -240,17 +240,17 @@ export interface BlogPost {
         <h2 class="text-3xl font-semibold mb-3">Pricing Factors for Marble Busts in India</h2>
          <img class="mt-7 mb-7" src="/images/blog/marble-bust.webp" alt=" Marble Bust Installed by FormForge">  
         <h3 class="text-2xl font-semibold mb-2">Influences on Bust Sculpture Pricing</h3>
-        <p class="text-gray-600">The price of a marble bust sculpture in India is influenced by several factors. The type and quality of marble, such as high-purity, fine-grained stone marble, significantly affect cost. The size and complexity of the bust also play a role; larger, intricately carved pieces require more time and skill, increasing the price. The artist’s reputation and experience can further elevate costs, with renowned sculptors commanding higher prices. Additionally, the level of detail and realism impacts the price—a highly detailed portrait bust capturing the subject’s essence is more expensive than a simpler piece.</p>
+        <p class="text-gray-600">The price of a Bust Sculpture in India is influenced by several factors. The type and quality of marble, such as high-purity, fine-grained stone marble, significantly affect cost. The size and complexity of the bust also play a role; larger, intricately carved pieces require more time and skill, increasing the price. The artist’s reputation and experience can further elevate costs, with renowned sculptors commanding higher prices. Additionally, the level of detail and realism impacts the price—a highly detailed portrait bust capturing the subject’s essence is more expensive than a simpler piece.</p>
         
         <h3 class="text-2xl font-semibold mb-2">Average Prices for Marble Bust Statues in the Indian Market</h3>
-        <p class="text-gray-600">In the Indian market, marble bust statue prices vary widely. A small, simple marble bust, such as a classical figure replica, might start at INR 15,000 to INR 30,000. A mid-sized, detailed marble bust sculpture, especially a customized portrait, could range from INR 50,000 to INR 150,000. Large, intricately carved busts by well-known artists can exceed INR 200,000 or reach several lakhs. Prices fluctuate based on the bust’s characteristics and the seller. Comparing quotes and assessing craftsmanship ensures a high-quality piece for decor or gallery display.</p>
+        <p class="text-gray-600">In the Indian market, marble bust statue prices vary widely. A small, simple marble bust, such as a classical figure replica, might start at INR 15,000 to INR 30,000. A mid-sized, detailed Bust Sculpture, especially a customized portrait, could range from INR 50,000 to INR 150,000. Large, intricately carved busts by well-known artists can exceed INR 200,000 or reach several lakhs. Prices fluctuate based on the bust’s characteristics and the seller. Comparing quotes and assessing craftsmanship ensures a high-quality piece for decor or gallery display.</p>
         
         <h3 class="text-2xl font-semibold mb-2">Comparing Marble Bust and Plaster Bust Prices</h3>
         <p class="text-gray-600">Choosing between marble and plaster busts often depends on budget and aesthetic preferences. Marble bust sculptures are more expensive due to the material’s cost, labor-intensive carving, and durability. Plaster busts, made from a cheaper, moldable material, are more affordable but less durable. Marble’s natural luster and unique veining offer superior aesthetic appeal, making it a long-term investment that retains beauty and value. While plaster busts may serve as temporary displays, marble busts add sophistication, with authentic Greek busts particularly impressive as decor.</p>
       </section>
 
       <section class="mb-10">
-        <h2 class="text-3xl font-semibold mb-3">Exploring Marble Bust Sculpture Galleries</h2>
+        <h2 class="text-3xl font-semibold mb-3">Exploring Bust Sculpture Galleries</h2>
          <img class="mt-7 mb-7" src="/images/blog/Art-Gallery.webp" alt=" Marble Bust Installed by FormForge">  
         <h3 class="text-2xl font-semibold mb-2">Notable Galleries Featuring Bust Sculptures</h3>
         <p class="text-gray-600">Visiting a gallery specializing in sculptures, including marble busts, is enriching for art enthusiasts and collectors. These galleries showcase diverse bust statues in materials like marble, plaster, and bronze, allowing close examination of craftsmanship. Galleries featuring Greek or Roman portraits offer a chance to appreciate the artistry behind these three-dimensional forms. Exploring a sculpture gallery helps discover new artists and deepens understanding of bust art, whether for seasoned collectors or art admirers.</p>
@@ -311,7 +311,7 @@ export interface BlogPost {
   
   <div class="mb-6">
     <h3 class="text-2xl font-semibold mb-2">How to make a bust sculpture?</h3>
-    <p class="text-gray-600">Creating a marble bust sculpture involves sketching or modeling in clay/plaster to define proportions, then carving marble with chisels and rasps, guided by anatomical knowledge. The surface is polished to enhance details and luster. The process requires skill and specialized tools, often taking months for detailed pieces. Beginners can start with softer materials like clay, as outlined in sculpting guides on <a href="https://www.sculptureatelier.com/techniques" class="text-blue-600 hover:underline">Sculpture Atelier</a>.</p>
+    <p class="text-gray-600">Creating a Bust Sculpture involves sketching or modeling in clay/plaster to define proportions, then carving marble with chisels and rasps, guided by anatomical knowledge. The surface is polished to enhance details and luster. The process requires skill and specialized tools, often taking months for detailed pieces. Beginners can start with softer materials like clay, as outlined in sculpting guides on <a href="https://www.sculptureatelier.com/techniques" class="text-blue-600 hover:underline">Sculpture Atelier</a>.</p>
   </div>
   
   <div class="mb-6">
@@ -336,7 +336,7 @@ export interface BlogPost {
   "schema": {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
-    "headline": "Marble Bust Sculpture: Statue Price in India",
+    "headline": "Bust Sculpture: Statue Price in India",
     "image": "/images/blog/marble-bust.webp",
     "datePublished": "2025-05-13",
     "author": {

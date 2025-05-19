@@ -1298,464 +1298,464 @@ export const ARTWORK_IMAGES: ImageData[] = [
 
 
 
-  {
-    slug: "Performer",
-    images: [
-      { src: "/Arts/1211.webp", alt: "Ganeshji deity sculpture art project, India, 2018" },
-    ],
-    caption: <>Performer</>,
-    details: {
-      heading: "Performer",
-      location: "",
-      description: (
-        <>
-          A modern rendition of Lord Ganesha, this faceted sculpture reimagines the divine form <br /> with clean geometry
-          and minimalist expression. Blending tradition with innovation,
-          <br /> it honors wisdom, prosperity, and the spirit of new beginnings, <br />making it a powerful presence in any
-          contemporary setting.
-        </>
-      ),
-      details: (
-        <>
-          Material: Corten Steel
-          <br />Height: 4.5 ft, Width: 3 ft, Depth: 2.5 ft
-        </>
-      ),
-      credits: (
-        <>
-          Artist: Abhinav Goyal
-        </>
-      ),
-    },
-  },
+//   {
+//     slug: "Performer",
+//     images: [
+//       { src: "/Arts/1211.webp", alt: "Ganeshji deity sculpture art project, India, 2018" },
+//     ],
+//     caption: <>Performer</>,
+//     details: {
+//       heading: "Performer",
+//       location: "",
+//       description: (
+//         <>
+//           A modern rendition of Lord Ganesha, this faceted sculpture reimagines the divine form <br /> with clean geometry
+//           and minimalist expression. Blending tradition with innovation,
+//           <br /> it honors wisdom, prosperity, and the spirit of new beginnings, <br />making it a powerful presence in any
+//           contemporary setting.
+//         </>
+//       ),
+//       details: (
+//         <>
+//           Material: Corten Steel
+//           <br />Height: 4.5 ft, Width: 3 ft, Depth: 2.5 ft
+//         </>
+//       ),
+//       credits: (
+//         <>
+//           Artist: Abhinav Goyal
+//         </>
+//       ),
+//     },
+//   },
 
-  {
-    slug: "ganapati",
-    images: [
-      { src: "/Arts/5012.webp", alt: "Ganeshji deity sculpture art project, India, 2018" },
-    ],
-    caption: <>Table</>,
-    details: {
-      heading: "Performer",
-      location: "",
-      description: (
-        <>
-          A modern rendition of Lord Ganesha, this faceted sculpture reimagines the divine form <br /> with clean geometry
-          and minimalist expression. Blending tradition with innovation,
-          <br /> it honors wisdom, prosperity, and the spirit of new beginnings, <br />making it a powerful presence in any
-          contemporary setting.
-        </>
-      ),
-      details: (
-        <>
-          Material: Corten Steel
-          <br />Height: 4.5 ft, Width: 3 ft, Depth: 2.5 ft
-        </>
-      ),
-      credits: (
-        <>
-          Artist: Abhinav Goyal
-        </>
-      ),
-    },
-  },
-  {
-    slug: "ganapati",
-    images: [
-      { src: "/Arts/Crescent1.png", alt: "Ganeshji deity sculpture art project, India, 2018" },
-    ],
-    caption: <>Crescent</>,
-    details: {
-      heading: "Performer",
-      location: "",
-      description: (
-        <>
-          A modern rendition of Lord Ganesha, this faceted sculpture reimagines the divine form <br /> with clean geometry
-          and minimalist expression. Blending tradition with innovation,
-          <br /> it honors wisdom, prosperity, and the spirit of new beginnings, <br />making it a powerful presence in any
-          contemporary setting.
-        </>
-      ),
-      details: (
-        <>
-          Material: Corten Steel
-          <br />Height: 4.5 ft, Width: 3 ft, Depth: 2.5 ft
-        </>
-      ),
-      credits: (
-        <>
-          Artist: Abhinav Goyal
-        </>
-      ),
-    },
-  },
+//   {
+//     slug: "ganapati",
+//     images: [
+//       { src: "/Arts/5012.webp", alt: "Ganeshji deity sculpture art project, India, 2018" },
+//     ],
+//     caption: <>Table</>,
+//     details: {
+//       heading: "Performer",
+//       location: "",
+//       description: (
+//         <>
+//           A modern rendition of Lord Ganesha, this faceted sculpture reimagines the divine form <br /> with clean geometry
+//           and minimalist expression. Blending tradition with innovation,
+//           <br /> it honors wisdom, prosperity, and the spirit of new beginnings, <br />making it a powerful presence in any
+//           contemporary setting.
+//         </>
+//       ),
+//       details: (
+//         <>
+//           Material: Corten Steel
+//           <br />Height: 4.5 ft, Width: 3 ft, Depth: 2.5 ft
+//         </>
+//       ),
+//       credits: (
+//         <>
+//           Artist: Abhinav Goyal
+//         </>
+//       ),
+//     },
+//   },
+//   {
+//     slug: "ganapati",
+//     images: [
+//       { src: "/Arts/Crescent1.png", alt: "Ganeshji deity sculpture art project, India, 2018" },
+//     ],
+//     caption: <>Crescent</>,
+//     details: {
+//       heading: "Performer",
+//       location: "",
+//       description: (
+//         <>
+//           A modern rendition of Lord Ganesha, this faceted sculpture reimagines the divine form <br /> with clean geometry
+//           and minimalist expression. Blending tradition with innovation,
+//           <br /> it honors wisdom, prosperity, and the spirit of new beginnings, <br />making it a powerful presence in any
+//           contemporary setting.
+//         </>
+//       ),
+//       details: (
+//         <>
+//           Material: Corten Steel
+//           <br />Height: 4.5 ft, Width: 3 ft, Depth: 2.5 ft
+//         </>
+//       ),
+//       credits: (
+//         <>
+//           Artist: Abhinav Goyal
+//         </>
+//       ),
+//     },
+//   },
 
-  {
-    slug: "wall",
-    images: [
-      { src: "/Arts/wall1.png", alt: "Ganeshji deity sculpture art project, India, 2018" },
-    ],
-    caption: <>wall</>,
-    details: {
-      heading: "wall",
-      location: "",
-      description: (
-        <>
-          A modern rendition of Lord Ganesha, this faceted sculpture reimagines the divine form <br /> with clean geometry
-          and minimalist expression. Blending tradition with innovation,
-          <br /> it honors wisdom, prosperity, and the spirit of new beginnings, <br />making it a powerful presence in any
-          contemporary setting.
-        </>
-      ),
-      details: (
-        <>
-          Material: Corten Steel
-          <br />Height: 4.5 ft, Width: 3 ft, Depth: 2.5 ft
-        </>
-      ),
-      credits: (
-        <>
-          Artist: Abhinav Goyal
-        </>
-      ),
-    },
-  },
+//   {
+//     slug: "wall",
+//     images: [
+//       { src: "/Arts/wall1.png", alt: "Ganeshji deity sculpture art project, India, 2018" },
+//     ],
+//     caption: <>wall</>,
+//     details: {
+//       heading: "wall",
+//       location: "",
+//       description: (
+//         <>
+//           A modern rendition of Lord Ganesha, this faceted sculpture reimagines the divine form <br /> with clean geometry
+//           and minimalist expression. Blending tradition with innovation,
+//           <br /> it honors wisdom, prosperity, and the spirit of new beginnings, <br />making it a powerful presence in any
+//           contemporary setting.
+//         </>
+//       ),
+//       details: (
+//         <>
+//           Material: Corten Steel
+//           <br />Height: 4.5 ft, Width: 3 ft, Depth: 2.5 ft
+//         </>
+//       ),
+//       credits: (
+//         <>
+//           Artist: Abhinav Goyal
+//         </>
+//       ),
+//     },
+//   },
 
-  {
-    slug: "solemn",
-    images: [
-      { src: "/solemn-mumbai-2021.webp", alt: "Solemn contemporary sculpture in Mumbai, India, 2021" },
-      { src: "/Arts/c1.webp", alt: "The Meditating Lady Sculpture in Goa, India, 2018" },
-      { src: "/Arts/c2.webp", alt: "The Meditating Lady Sculpture in Goa, India, 2018" },
-    ],
-    caption: <>Solemn</>,
-    details: {
-      heading: "Solemn",
-      location: "",
-      description: (
-        <>
-          Where the unseen becomes art. In the expansive <b>KPMG foyer, Mumbai</b>, <b>Solemn</b> commands attention{" "}
-          <br />bold from one angle, vanishing from another. Layered to play with light and illusion, it’s not just a
-          sculpture, <br /> but an ever-shifting experience of strength and mystery.
-        </>
-      ),
-      details: (
-        <>
-          Vanishing sculpture crafted from Stainless steel with a matte black finish. <br /> Dimensions: 1800mm x 1500mm x
-          675mm
-        </>
-      ),
-      credits: (
-        <>
-          Artist: Abhinav Goyal <br /> Commissioned for: KPMG, Mumbai <br /> Photography: KPMG
-        </>
-      ),
-    },
-  },
+//   {
+//     slug: "solemn",
+//     images: [
+//       { src: "/solemn-mumbai-2021.webp", alt: "Solemn contemporary sculpture in Mumbai, India, 2021" },
+//       { src: "/Arts/c1.webp", alt: "The Meditating Lady Sculpture in Goa, India, 2018" },
+//       { src: "/Arts/c2.webp", alt: "The Meditating Lady Sculpture in Goa, India, 2018" },
+//     ],
+//     caption: <>Solemn</>,
+//     details: {
+//       heading: "Solemn",
+//       location: "",
+//       description: (
+//         <>
+//           Where the unseen becomes art. In the expansive <b>KPMG foyer, Mumbai</b>, <b>Solemn</b> commands attention{" "}
+//           <br />bold from one angle, vanishing from another. Layered to play with light and illusion, it’s not just a
+//           sculpture, <br /> but an ever-shifting experience of strength and mystery.
+//         </>
+//       ),
+//       details: (
+//         <>
+//           Vanishing sculpture crafted from Stainless steel with a matte black finish. <br /> Dimensions: 1800mm x 1500mm x
+//           675mm
+//         </>
+//       ),
+//       credits: (
+//         <>
+//           Artist: Abhinav Goyal <br /> Commissioned for: KPMG, Mumbai <br /> Photography: KPMG
+//         </>
+//       ),
+//     },
+//   },
 
 
-  {
-    slug: "Bull",
-    images: [
-      { src: "/Arts/bulll.png", alt: "Ganeshji deity sculpture art project, India, 2018" },
-    ],
-    caption: <>Bull</>,
-    details: {
-      heading: "Bull",
-      location: "",
-      description: (
-        <>
-          A modern rendition of Lord Ganesha, this faceted sculpture reimagines the divine form <br /> with clean geometry
-          and minimalist expression. Blending tradition with innovation,
-          <br /> it honors wisdom, prosperity, and the spirit of new beginnings, <br />making it a powerful presence in any
-          contemporary setting.
-        </>
-      ),
-      details: (
-        <>
-          Material: Corten Steel
-          <br />Height: 4.5 ft, Width: 3 ft, Depth: 2.5 ft
-        </>
-      ),
-      credits: (
-        <>
-          Artist: Abhinav Goyal
-        </>
-      ),
-    },
-  },
-   {
-    slug: "ganapati",
-    images: [
-      { src: "/Arts/1212.png", alt: "Ganeshji deity sculpture art project, India, 2018" },
-    ],
-    caption: <>Shivji</>,
-    details: {
-      heading: "Performer",
-      location: "",
-      description: (
-        <>
-          A modern rendition of Lord Ganesha, this faceted sculpture reimagines the divine form <br /> with clean geometry
-          and minimalist expression. Blending tradition with innovation,
-          <br /> it honors wisdom, prosperity, and the spirit of new beginnings, <br />making it a powerful presence in any
-          contemporary setting.
-        </>
-      ),
-      details: (
-        <>
-          Material: Corten Steel
-          <br />Height: 4.5 ft, Width: 3 ft, Depth: 2.5 ft
-        </>
-      ),
-      credits: (
-        <>
-          Artist: Abhinav Goyal
-        </>
-      ),
-    },
-  },
+//   {
+//     slug: "Bull",
+//     images: [
+//       { src: "/Arts/bulll.png", alt: "Ganeshji deity sculpture art project, India, 2018" },
+//     ],
+//     caption: <>Bull</>,
+//     details: {
+//       heading: "Bull",
+//       location: "",
+//       description: (
+//         <>
+//           A modern rendition of Lord Ganesha, this faceted sculpture reimagines the divine form <br /> with clean geometry
+//           and minimalist expression. Blending tradition with innovation,
+//           <br /> it honors wisdom, prosperity, and the spirit of new beginnings, <br />making it a powerful presence in any
+//           contemporary setting.
+//         </>
+//       ),
+//       details: (
+//         <>
+//           Material: Corten Steel
+//           <br />Height: 4.5 ft, Width: 3 ft, Depth: 2.5 ft
+//         </>
+//       ),
+//       credits: (
+//         <>
+//           Artist: Abhinav Goyal
+//         </>
+//       ),
+//     },
+//   },
+//    {
+//     slug: "ganapati",
+//     images: [
+//       { src: "/Arts/1212.png", alt: "Ganeshji deity sculpture art project, India, 2018" },
+//     ],
+//     caption: <>Shivji</>,
+//     details: {
+//       heading: "Performer",
+//       location: "",
+//       description: (
+//         <>
+//           A modern rendition of Lord Ganesha, this faceted sculpture reimagines the divine form <br /> with clean geometry
+//           and minimalist expression. Blending tradition with innovation,
+//           <br /> it honors wisdom, prosperity, and the spirit of new beginnings, <br />making it a powerful presence in any
+//           contemporary setting.
+//         </>
+//       ),
+//       details: (
+//         <>
+//           Material: Corten Steel
+//           <br />Height: 4.5 ft, Width: 3 ft, Depth: 2.5 ft
+//         </>
+//       ),
+//       credits: (
+//         <>
+//           Artist: Abhinav Goyal
+//         </>
+//       ),
+//     },
+//   },
 
- {
-    slug: "ganapati",
-    images: [
-      { src: "/Arts/10999.png", alt: "Ganeshji deity sculpture art project, India, 2018" },
-    ],
-    caption: <>Wall Art</>,
-    details: {
-      heading: "Performer",
-      location: "",
-      description: (
-        <>
-          A modern rendition of Lord Ganesha, this faceted sculpture reimagines the divine form <br /> with clean geometry
-          and minimalist expression. Blending tradition with innovation,
-          <br /> it honors wisdom, prosperity, and the spirit of new beginnings, <br />making it a powerful presence in any
-          contemporary setting.
-        </>
-      ),
-      details: (
-        <>
-          Material: Corten Steel
-          <br />Height: 4.5 ft, Width: 3 ft, Depth: 2.5 ft
-        </>
-      ),
-      credits: (
-        <>
-          Artist: Abhinav Goyal
-        </>
-      ),
-    },
-  },
+//  {
+//     slug: "ganapati",
+//     images: [
+//       { src: "/Arts/10999.png", alt: "Ganeshji deity sculpture art project, India, 2018" },
+//     ],
+//     caption: <>Wall Art</>,
+//     details: {
+//       heading: "Performer",
+//       location: "",
+//       description: (
+//         <>
+//           A modern rendition of Lord Ganesha, this faceted sculpture reimagines the divine form <br /> with clean geometry
+//           and minimalist expression. Blending tradition with innovation,
+//           <br /> it honors wisdom, prosperity, and the spirit of new beginnings, <br />making it a powerful presence in any
+//           contemporary setting.
+//         </>
+//       ),
+//       details: (
+//         <>
+//           Material: Corten Steel
+//           <br />Height: 4.5 ft, Width: 3 ft, Depth: 2.5 ft
+//         </>
+//       ),
+//       credits: (
+//         <>
+//           Artist: Abhinav Goyal
+//         </>
+//       ),
+//     },
+//   },
 
-   {
-    slug: "Butterfly head",
-    images: [
-      { src: "/Arts/304.png", alt: "Ganeshji deity sculpture art project, India, 2018" },
-    ],
-    caption: <>Butterfly head</>,
-    details: {
-      heading: "Butterfly head",
-      location: "",
-      description: (
-        <>
-          A modern rendition of Lord Ganesha, this faceted sculpture reimagines the divine form <br /> with clean geometry
-          and minimalist expression. Blending tradition with innovation,
-          <br /> it honors wisdom, prosperity, and the spirit of new beginnings, <br />making it a powerful presence in any
-          contemporary setting.
-        </>
-      ),
-      details: (
-        <>
-          Material: Corten Steel
-          <br />Height: 4.5 ft, Width: 3 ft, Depth: 2.5 ft
-        </>
-      ),
-      credits: (
-        <>
-          Artist: Abhinav Goyal
-        </>
-      ),
-    },
-  },
-   {
-    slug: "ganapati",
-    images: [
-      { src: "/Arts/891.png", alt: "Ganeshji deity sculpture art project, India, 2018" },
-    ],
-    caption: <>wall</>,
-    details: {
-      heading: "wall",
-      location: "",
-      description: (
-        <>
-          A modern rendition of Lord Ganesha, this faceted sculpture reimagines the divine form <br /> with clean geometry
-          and minimalist expression. Blending tradition with innovation,
-          <br /> it honors wisdom, prosperity, and the spirit of new beginnings, <br />making it a powerful presence in any
-          contemporary setting.
-        </>
-      ),
-      details: (
-        <>
-          Material: Corten Steel
-          <br />Height: 4.5 ft, Width: 3 ft, Depth: 2.5 ft
-        </>
-      ),
-      credits: (
-        <>
-          Artist: Abhinav Goyal
-        </>
-      ),
-    },
-  },
+//    {
+//     slug: "Butterfly head",
+//     images: [
+//       { src: "/Arts/304.png", alt: "Ganeshji deity sculpture art project, India, 2018" },
+//     ],
+//     caption: <>Butterfly head</>,
+//     details: {
+//       heading: "Butterfly head",
+//       location: "",
+//       description: (
+//         <>
+//           A modern rendition of Lord Ganesha, this faceted sculpture reimagines the divine form <br /> with clean geometry
+//           and minimalist expression. Blending tradition with innovation,
+//           <br /> it honors wisdom, prosperity, and the spirit of new beginnings, <br />making it a powerful presence in any
+//           contemporary setting.
+//         </>
+//       ),
+//       details: (
+//         <>
+//           Material: Corten Steel
+//           <br />Height: 4.5 ft, Width: 3 ft, Depth: 2.5 ft
+//         </>
+//       ),
+//       credits: (
+//         <>
+//           Artist: Abhinav Goyal
+//         </>
+//       ),
+//     },
+//   },
+//    {
+//     slug: "ganapati",
+//     images: [
+//       { src: "/Arts/891.png", alt: "Ganeshji deity sculpture art project, India, 2018" },
+//     ],
+//     caption: <>wall</>,
+//     details: {
+//       heading: "wall",
+//       location: "",
+//       description: (
+//         <>
+//           A modern rendition of Lord Ganesha, this faceted sculpture reimagines the divine form <br /> with clean geometry
+//           and minimalist expression. Blending tradition with innovation,
+//           <br /> it honors wisdom, prosperity, and the spirit of new beginnings, <br />making it a powerful presence in any
+//           contemporary setting.
+//         </>
+//       ),
+//       details: (
+//         <>
+//           Material: Corten Steel
+//           <br />Height: 4.5 ft, Width: 3 ft, Depth: 2.5 ft
+//         </>
+//       ),
+//       credits: (
+//         <>
+//           Artist: Abhinav Goyal
+//         </>
+//       ),
+//     },
+//   },
 
-   {
-    slug: "ganapati",
-    images: [
-      { src: "/Arts/000.webp", alt: "Ganeshji deity sculpture art project, India, 2018" },
-    ],
-    caption: <>Performer</>,
-    details: {
-      heading: "Performer",
-      location: "",
-      description: (
-        <>
-          A modern rendition of Lord Ganesha, this faceted sculpture reimagines the divine form <br /> with clean geometry
-          and minimalist expression. Blending tradition with innovation,
-          <br /> it honors wisdom, prosperity, and the spirit of new beginnings, <br />making it a powerful presence in any
-          contemporary setting.
-        </>
-      ),
-      details: (
-        <>
-          Material: Corten Steel
-          <br />Height: 4.5 ft, Width: 3 ft, Depth: 2.5 ft
-        </>
-      ),
-      credits: (
-        <>
-          Artist: Abhinav Goyal
-        </>
-      ),
-    },
-  },
-   {
-    slug: "ganapati",
-    images: [
-      { src: "/Arts/2076.png", alt: "Ganeshji deity sculpture art project, India, 2018" },
-    ],
-    caption: <>Performer</>,
-    details: {
-      heading: "Performer",
-      location: "",
-      description: (
-        <>
-          A modern rendition of Lord Ganesha, this faceted sculpture reimagines the divine form <br /> with clean geometry
-          and minimalist expression. Blending tradition with innovation,
-          <br /> it honors wisdom, prosperity, and the spirit of new beginnings, <br />making it a powerful presence in any
-          contemporary setting.
-        </>
-      ),
-      details: (
-        <>
-          Material: Corten Steel
-          <br />Height: 4.5 ft, Width: 3 ft, Depth: 2.5 ft
-        </>
-      ),
-      credits: (
-        <>
-          Artist: Abhinav Goyal
-        </>
-      ),
-    },
-  },
-   {
-    slug: "Bar Table",
-    images: [
-      { src: "/Arts/444.webp", alt: "Ganeshji deity sculpture art project, India, 2018" },
-    ],
-    caption: <>Bar Table</>,
-    details: {
-      heading: "Bar Table",
-      location: "",
-      description: (
-        <>
-          A modern rendition of Lord Ganesha, this faceted sculpture reimagines the divine form <br /> with clean geometry
-          and minimalist expression. Blending tradition with innovation,
-          <br /> it honors wisdom, prosperity, and the spirit of new beginnings, <br />making it a powerful presence in any
-          contemporary setting.
-        </>
-      ),
-      details: (
-        <>
-          Material: Corten Steel
-          <br />Height: 4.5 ft, Width: 3 ft, Depth: 2.5 ft
-        </>
-      ),
-      credits: (
-        <>
-          Artist: Abhinav Goyal
-        </>
-      ),
-    },
-  },
-   {
-    slug: "Cactus",
-    images: [
-      { src: "/Arts/555.webp", alt: "Ganeshji deity sculpture art project, India, 2018" },
-    ],
-    caption: <>Cactilome</>,
-    details: {
-      heading: "Cactilome",
-      location: "",
-      description: (
-        <>
-          A modern rendition of Lord Ganesha, this faceted sculpture reimagines the divine form <br /> with clean geometry
-          and minimalist expression. Blending tradition with innovation,
-          <br /> it honors wisdom, prosperity, and the spirit of new beginnings, <br />making it a powerful presence in any
-          contemporary setting.
-        </>
-      ),
-      details: (
-        <>
-          Material: Corten Steel
-          <br />Height: 4.5 ft, Width: 3 ft, Depth: 2.5 ft
-        </>
-      ),
-      credits: (
-        <>
-          Artist: Abhinav Goyal
-        </>
-      ),
-    },
-  },
-   {
-    slug: "ganapati",
-    images: [
-      { src: "/Arts/666.webp", alt: "Ganeshji deity sculpture art project, India, 2018" },
-    ],
-    caption: <>Performer</>,
-    details: {
-      heading: "Performer",
-      location: "",
-      description: (
-        <>
-          A modern rendition of Lord Ganesha, this faceted sculpture reimagines the divine form <br /> with clean geometry
-          and minimalist expression. Blending tradition with innovation,
-          <br /> it honors wisdom, prosperity, and the spirit of new beginnings, <br />making it a powerful presence in any
-          contemporary setting.
-        </>
-      ),
-      details: (
-        <>
-          Material: Corten Steel
-          <br />Height: 4.5 ft, Width: 3 ft, Depth: 2.5 ft
-        </>
-      ),
-      credits: (
-        <>
-          Artist: Abhinav Goyal
-        </>
-      ),
-    },
-  },
+//    {
+//     slug: "ganapati",
+//     images: [
+//       { src: "/Arts/000.webp", alt: "Ganeshji deity sculpture art project, India, 2018" },
+//     ],
+//     caption: <>Performer</>,
+//     details: {
+//       heading: "Performer",
+//       location: "",
+//       description: (
+//         <>
+//           A modern rendition of Lord Ganesha, this faceted sculpture reimagines the divine form <br /> with clean geometry
+//           and minimalist expression. Blending tradition with innovation,
+//           <br /> it honors wisdom, prosperity, and the spirit of new beginnings, <br />making it a powerful presence in any
+//           contemporary setting.
+//         </>
+//       ),
+//       details: (
+//         <>
+//           Material: Corten Steel
+//           <br />Height: 4.5 ft, Width: 3 ft, Depth: 2.5 ft
+//         </>
+//       ),
+//       credits: (
+//         <>
+//           Artist: Abhinav Goyal
+//         </>
+//       ),
+//     },
+//   },
+//    {
+//     slug: "ganapati",
+//     images: [
+//       { src: "/Arts/2076.png", alt: "Ganeshji deity sculpture art project, India, 2018" },
+//     ],
+//     caption: <>Performer</>,
+//     details: {
+//       heading: "Performer",
+//       location: "",
+//       description: (
+//         <>
+//           A modern rendition of Lord Ganesha, this faceted sculpture reimagines the divine form <br /> with clean geometry
+//           and minimalist expression. Blending tradition with innovation,
+//           <br /> it honors wisdom, prosperity, and the spirit of new beginnings, <br />making it a powerful presence in any
+//           contemporary setting.
+//         </>
+//       ),
+//       details: (
+//         <>
+//           Material: Corten Steel
+//           <br />Height: 4.5 ft, Width: 3 ft, Depth: 2.5 ft
+//         </>
+//       ),
+//       credits: (
+//         <>
+//           Artist: Abhinav Goyal
+//         </>
+//       ),
+//     },
+//   },
+//    {
+//     slug: "Bar Table",
+//     images: [
+//       { src: "/Arts/444.webp", alt: "Ganeshji deity sculpture art project, India, 2018" },
+//     ],
+//     caption: <>Bar Table</>,
+//     details: {
+//       heading: "Bar Table",
+//       location: "",
+//       description: (
+//         <>
+//           A modern rendition of Lord Ganesha, this faceted sculpture reimagines the divine form <br /> with clean geometry
+//           and minimalist expression. Blending tradition with innovation,
+//           <br /> it honors wisdom, prosperity, and the spirit of new beginnings, <br />making it a powerful presence in any
+//           contemporary setting.
+//         </>
+//       ),
+//       details: (
+//         <>
+//           Material: Corten Steel
+//           <br />Height: 4.5 ft, Width: 3 ft, Depth: 2.5 ft
+//         </>
+//       ),
+//       credits: (
+//         <>
+//           Artist: Abhinav Goyal
+//         </>
+//       ),
+//     },
+//   },
+//    {
+//     slug: "Cactus",
+//     images: [
+//       { src: "/Arts/555.webp", alt: "Ganeshji deity sculpture art project, India, 2018" },
+//     ],
+//     caption: <>Cactilome</>,
+//     details: {
+//       heading: "Cactilome",
+//       location: "",
+//       description: (
+//         <>
+//           A modern rendition of Lord Ganesha, this faceted sculpture reimagines the divine form <br /> with clean geometry
+//           and minimalist expression. Blending tradition with innovation,
+//           <br /> it honors wisdom, prosperity, and the spirit of new beginnings, <br />making it a powerful presence in any
+//           contemporary setting.
+//         </>
+//       ),
+//       details: (
+//         <>
+//           Material: Corten Steel
+//           <br />Height: 4.5 ft, Width: 3 ft, Depth: 2.5 ft
+//         </>
+//       ),
+//       credits: (
+//         <>
+//           Artist: Abhinav Goyal
+//         </>
+//       ),
+//     },
+//   },
+//    {
+//     slug: "ganapati",
+//     images: [
+//       { src: "/Arts/666.webp", alt: "Ganeshji deity sculpture art project, India, 2018" },
+//     ],
+//     caption: <>Performer</>,
+//     details: {
+//       heading: "Performer",
+//       location: "",
+//       description: (
+//         <>
+//           A modern rendition of Lord Ganesha, this faceted sculpture reimagines the divine form <br /> with clean geometry
+//           and minimalist expression. Blending tradition with innovation,
+//           <br /> it honors wisdom, prosperity, and the spirit of new beginnings, <br />making it a powerful presence in any
+//           contemporary setting.
+//         </>
+//       ),
+//       details: (
+//         <>
+//           Material: Corten Steel
+//           <br />Height: 4.5 ft, Width: 3 ft, Depth: 2.5 ft
+//         </>
+//       ),
+//       credits: (
+//         <>
+//           Artist: Abhinav Goyal
+//         </>
+//       ),
+//     },
+//   },
   
   ];
