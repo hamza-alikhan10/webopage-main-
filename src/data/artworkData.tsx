@@ -102,7 +102,7 @@ export const ARTWORK_IMAGES: ImageData[] = [
     images: [
       { src: "/vighnaharta-mumbai-2022.webp", alt: "Vighnaharta Sculpture in Mumbai, India, 2022" },
       { src: "/Ganesha.webp", alt: "Vighnaharta Sculpture in Mumbai, India, 2022" },
-      { src: "/Ganeshji.webp", alt: "Vighnaharta Sculpture in Mumbai, India, 2022" },
+      { src: "/Ganeshji.webp", alt: "Vighnaharta Sculpture in Mumbai, India " },
     ],
     caption: <>Vighnaharta</>,
     details: {

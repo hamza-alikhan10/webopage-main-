@@ -39,7 +39,7 @@ const BlogPost: React.FC = () => {
       <Helmet>
         <title>{`${post.title} | Luxury Art Blog`}</title>
         <meta name="description" content={post.metaDescription} />
-        <meta name="keywords" content="luxury art, metal sculptures, Corten steel, sustainable art, public installations" />
+        <meta name="keywords" content="luxury art, metal sculptures, Corten steel Sculptures, Stainless Steel Sculptures, outdoor sculptures, sustainable art, public installations" />
         <meta property="og:title" content={post.title} />
         <meta property="og:description" content={post.metaDescription} />
         <meta property="og:image" content={post.image} />
@@ -66,13 +66,15 @@ const BlogPost: React.FC = () => {
       <div className="max-w-full mx-auto px-0 sm:px-6 lg:px-8 py-12 overflow-hidden">
         <Navbar />
         <div className="responsive-zoom sm:-m-0">
-          <button
-            onClick={() => navigate('/blog')}
-            className="mb-8 text-gray-600 hover:text-gray-900 flex items-center"
-            style={{ fontFamily: "Montserrat" }}
-          >
-            ← Back to Blog
-          </button>
+         <button
+  onClick={() => navigate('/blog')}
+  className="mb-2 flex items-center gap-2 px-4 py-2 text-gray-600 bg-gray-100 rounded-lg hover:bg-gray-200 hover:text-gray-900 transition-all duration-300 ease-in-out transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50"
+  style={{ fontFamily: "Montserrat" }}
+  aria-label="Return to blog list"
+>
+  <ArrowRight className="h-4 w-4 transform rotate-180" />
+  Back to Blog
+</button>
 
           <article>
             <h1

@@ -114,7 +114,7 @@ const Contact = () => {
                     <a href="https://wa.me/919650020485" className="hover:underline">+91 965 002 0485</a>
                   </span>
                 </div>
-                <button onClick={handleMapClick} className="flex space-x-3 items-center bg-gray-100 hover:bg-gray-200 p-3 rounded-lg transition-colors text-left">
+                <button onClick={handleMapClick} className="flex space-x-3 items-center  hover:bg-gray-200 p-3 rounded-lg transition-colors text-left">
                   <MapPin className="w-6 h-6 text-gray-700" />
                   <span className="sm:text-lg text-base">Block A, Sector 43,<br />Noida, Uttar Pradesh 201303</span>
                 </button>
