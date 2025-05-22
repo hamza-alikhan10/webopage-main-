@@ -1,41 +1,48 @@
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>FormForge</title>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FormForge</title>
 
-  <!-- Favicon for browsers and Google search -->
-  <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32" />
-  <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16" />
-  <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" /> <!-- Added for Google -->
-  <link rel="shortcut icon" href="/favicon.ico" />
+    <!-- Favicon for browsers and Google search -->
+    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" /> <!-- Added for Google -->
+    <link rel="shortcut icon" href="/favicon.ico" />
 
-  <!-- Web App Manifest -->
-  <link rel="manifest" href="/manifest.json" />
+    <!-- Web App Manifest -->
+    <link rel="manifest" href="/manifest.json" />
 
-  <!-- Apple Touch Icon for iOS -->
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <!-- Apple Touch Icon for iOS -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
 
-  <!-- Android Chrome and PWAs -->
-  <link rel="icon" type="image/png" sizes="192x192" href="/icon-192x192.png" />
-  <link rel="icon" type="image/png" sizes="512x512" href="/icon-512x512.png" />
+    <!-- Android Chrome and PWAs -->
+    <link rel="icon" type="image/png" sizes="192x192" href="/icon-192x192.png" />
+    <link rel="icon" type="image/png" sizes="512x512" href="/icon-512x512.png" />
 
-  <!-- Optional SVG favicon for modern browsers -->
-  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <!-- Optional SVG favicon for modern browsers -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 
-  <!-- Microsoft Windows Tiles -->
-  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+    <!-- Microsoft Windows Tiles -->
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
 
-  <!-- Google Analytics tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-LRELQEDTEC"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-LRELQEDTEC');
-  </script>
+    <!-- Google Analytics tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LRELQEDTEC"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-LRELQEDTEC');
+    </script>
 
-  <!-- Google Fonts: Poppins, Josefin Sans, and Montserrat -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet" />
-</head>
+    <!-- Google Fonts: Poppins, Josefin Sans, and Montserrat -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
