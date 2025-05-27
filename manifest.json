@@ -1,26 +1,26 @@
 {
-  "name": "MyWebSite",
-  "short_name": "MySite",
+  "name": "FormForge",
+  "short_name": "FormForge",
   "icons": [
     {
-      "src": "/my-favicon/web-app-manifest-192x192.png",
-      "sizes": "192x192",
+      "src": "/assets/icon-192x129-Tz6RYSyF.png",
+      "sizes": "192x129",
       "type": "image/png",
       "purpose": "maskable"
     },
     {
-      "src": "/my-favicon/web-app-manifest-512x512.png",
+      "src": "/assets/icon-512x512-Du0yNOhl.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "maskable"
     },
     {
-      "src": "/favicon-192x192.png",
-      "sizes": "192x192",
+      "src": "/assets/icon-192x129-Tz6RYSyF.png",
+      "sizes": "192x129",
       "type": "image/png"
     },
     {
-      "src": "/favicon-96x96.png",
+      "src": "/assets/favicon-96x96-6UNBEAMf.png",
       "sizes": "96x96",
       "type": "image/png"
     }

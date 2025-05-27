@@ -163,8 +163,8 @@ export interface BlogPost {
   }
 },
 {
-  "id": "stainless-steel-sculpture-artwork",
-  "title": "Stainless Steel Sculpture & Artwork | FormForge",
+  "id": "stainless-steel-sculpture",
+  "title": "Stainless Steel Sculptures | FormForge",
   "metaDescription": "Discover the elegance of stainless steel sculptures — their durability, modern aesthetics, and custom designs by FormForge, perfect for corporate, public, and residential spaces.",
   "content": `
     <article class="blog-content max-w-4xl mx-auto">
@@ -175,7 +175,7 @@ export interface BlogPost {
       </header>
 
       <section class="mb-8">
-        <h2 class="text-3xl font-semibold mb-3">The Art of Stainless Steel: Timeless, Durable, and Striking</h2>
+        <h2 class="text-3xl font-semibold mb-3"> Stainless Steel: Timeless, Durable, and Striking</h2>
         <p class="text-gray-600">Stainless steel isn’t just a material, it’s a statement. At <strong>FormForge</strong>, we transform this resilient metal into breathtaking sculptures and artwork that captivate and endure. Whether you’re looking for a bold centerpiece for a corporate lobby, an elegant garden sculpture, or a custom installation for a public space, our stainless steel creations blend artistry with engineering excellence.</p>
         <p class="text-gray-600 mb-1">Unlike traditional materials like bronze or stone, stainless steel offers:</p>
         <ul class="list-disc list-inside text-gray-600 mb-2">
