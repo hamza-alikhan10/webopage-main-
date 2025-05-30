@@ -1866,7 +1866,7 @@ Just as the biblical David defeated the giant Goliath against overwhelming odds,
         <h2 class="text-3xl font-semibold mb-5">What Makes Corten Steel Unique for Outdoor Sculptures</h2>
         <p class="text-gray-600">Corten steel (also known as weathering steel) has become increasingly popular in contemporary sculpture due to its distinctive appearance and practical benefits. This specialized alloy develops a stable rust-like patina when exposed to weather conditions, creating a natural protective layer with a rich, warm coloration.</p>
         <p class="text-gray-600">Unlike traditional steel that deteriorates with rust, Corten's oxidation process is self-limiting and protective. This unique characteristic allows sculptors to create works that evolve visually over time while maintaining structural integrity for decades.</p>
-        <p class="text-gray-600">According to metallurgical research, Corten steel can maintain its structural properties for 40-120 years in most environments, making it an excellent choice for permanent outdoor installations.</p>
+        <p class="text-gray-600">According to metallurgical research Corten steel can maintain its structural properties for 40-120 years in most environments, making it an excellent choice for permanent outdoor installations.</p>
       </section>
 
       <section class="mb-10">
