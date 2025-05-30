@@ -986,7 +986,7 @@ export const ARTWORK_IMAGES: ImageData[] = [
    {
     slug: "Rhino Sculpture",
     images: [
-      { src: "/Arts/22222.webp", alt: "The Rhino Sculpture,2025 " },
+      { src: "/Arts/Rhino-sculpture.webp", alt: "The Rhino Sculpture,2025 " },
     ],
     caption: <>Bovine</>,
     details: {
@@ -1012,73 +1012,35 @@ export const ARTWORK_IMAGES: ImageData[] = [
     },
   },
    {
-    slug: "The whale fin",
+    slug: "fish sculpture",
     images: [
-      { src: "/Arts/3333333.webp", alt: "The whale Sculpture , 2025" },
+      { src: "/Arts/fish-sculpture.webp", alt: "The whale Sculpture , 2025" },
     ],
-    caption: <>The whale fin</>,
+    caption: <>Ocean Voyager</>,
     details: {
-      heading: "The whale fin",
+      heading: "Ocean Voyager",
       location: "",
       description: (
         <>
-          A sleek, wing-like form soaring upward, this dynamic sculpture symbolizes ambition, <br /> elevation, and the
-          freedom of flight. Its fluid curves reflect light and movement, <br />creating a sense of lift and momentum
-          within the space.
-          <br />An ode to Progress, Aspiration, and Limitless Potential.
+         Sleek and symbolic, this sculpture captures the upward thrust of a whale’s tail, sculpted in weathered Corten steel. Its smooth, organic form contrasts with the raw, rusted finish, evoking both grace and strength.
+          <br />Ideal for modern interiors or outdoor art displays, it highlights the growing appeal of minimalist corten steel sculptures and <b>marine inspired public art </b>in architectural spaces.
+
+
         </>
       ),
       details: (
         <>
-          Material: Mirror-polished stainless steel
-          <br />Height: 8 ft, Width: 6 ft, Depth: 3.5 ft
+          Material: Corten steel
+          <br />Height: 7 ft
         </>
       ),
       credits: (
         <>
-          Artist: Abhinav Goyal <br /> Commissioned for: Gurugram Skyline Project
+          Artist: Abhinav Goyal <br /> Location: Formforge Gallery, Noida
         </>
       ),
     },
   },
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   {
     slug: "wing-sculpture",
     images: [
@@ -1142,28 +1104,27 @@ export const ARTWORK_IMAGES: ImageData[] = [
     },
   },
   {
-    slug: "skyward-bound",
-    images: [{ src: "/Arts/1011.webp", alt: "Skyward Bound dynamic steel sculpture in Delhi, India, 2024" }],
-    caption: <>Skyward Bound</>,
+    slug: "Sitting Sculpture",
+    images: [{ src: "/Arts/Sitting-Sculpture.webp", alt: "Skyward Bound dynamic steel sculpture in Delhi, India, 2024" }],
+    caption: <>Silent Witness</>,
     details: {
-      heading: "Skyward Bound",
+      heading: "The Silent Witness",
       location: "",
       description: (
         <>
-          A dynamic upward spiral embodied in the form of a poised bird, Skyward Bound represents aspiration, clarity{" "}
-          <br /> and the relentless pursuit of progress. Its origami-inspired geometry captures elegance in motion. <br />
-          Standing tall as a symbol of resilience and focused determination. A powerful metaphor for rising above.
+         This immersive installation features a layered stainless steel human figure seated on a faceted gold bench, blending function and form into a single sculptural experience. The 10 foot bench with a 4 foot figure adds a reflective, human element to the space, encouraging pause and introspection.
+          <br /> A unique example of sculptural seating, it brings together public art, contemporary metal sculpture, and custom outdoor furniture design for high end hospitality environments.
         </>
       ),
       details: (
         <>
-          Material: Corten steel with weathered finish
-          <br />Height: 7 ft | Width: 3 ft | Depth: 2.5 ft
+          Material: Stainless steel
+          <br /> Bench: 10ft <br /> Sitting figure : 4ft  
         </>
       ),
       credits: (
         <>
-          Artist: Abhinav Goyal <br /> Commissioned for: Delhi Development Authority
+          Artist: Abhinav Goyal <br /> Commissioned for:  Crowne Plaza Lucknow By Ihg
         </>
       ),
     },
@@ -1256,49 +1217,10 @@ export const ARTWORK_IMAGES: ImageData[] = [
       ),
     },
   },
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   {
-    slug: "Performer",
+    slug: "standing sculpture",
     images: [
-      { src: "/Arts/1211.webp", alt: "Ganeshji deity sculpture art project, India, 2018" },
+      { src: "/Arts/Standing-sculpture.webp", alt: "Ganeshji deity sculpture art project, India, 2018" },
     ],
     caption: <>Performer</>,
     details: {
@@ -1306,34 +1228,32 @@ export const ARTWORK_IMAGES: ImageData[] = [
       location: "",
       description: (
         <>
-          A modern rendition of Lord Ganesha, this faceted sculpture reimagines the divine form <br /> with clean geometry
-          and minimalist expression. Blending tradition with innovation,
-          <br /> it honors wisdom, prosperity, and the spirit of new beginnings, <br />making it a powerful presence in any
-          contemporary setting.
+        This corten steel sculpture captures the essence of human elevation through angular geometry and an open-arm posture. The rusted finish brings natural warmth, creating a striking contrast against the structured modern architecture.
+          <br /> A modern symbol of aspiration, this piece reflects the growing demand for geometric corten steel sculptures,  <br /><b>corporate art installations,</b> and outdoor contemporary public art in commercial environments.
         </>
       ),
       details: (
         <>
           Material: Corten Steel
-          <br />Height: 4.5 ft, Width: 3 ft, Depth: 2.5 ft
+          <br />Height: 7 ft
         </>
       ),
       credits: (
         <>
-          Artist: Abhinav Goyal
+          Artist: Abhinav Goyal <br /> Commissioned for:  Tata Intellion Edge Office, Gurgaon
         </>
       ),
     },
   },
-
+//from Here
   {
-    slug: "ganapati",
+    slug: "table",
     images: [
       { src: "/Arts/5012.webp", alt: "Ganeshji deity sculpture art project, India, 2018" },
     ],
     caption: <>Table</>,
     details: {
-      heading: "Performer",
+      heading: "Table",
       location: "",
       description: (
         <>
@@ -1357,44 +1277,44 @@ export const ARTWORK_IMAGES: ImageData[] = [
     },
   },
   {
-    slug: "ganapati",
+    slug: "Crescent sculpture",
     images: [
       { src: "/Arts/Crescent1.png", alt: "Ganeshji deity sculpture art project, India, 2018" },
     ],
     caption: <>Crescent</>,
     details: {
-      heading: "Performer",
+      heading: "Crescent",
       location: "",
       description: (
         <>
-          A modern rendition of Lord Ganesha, this faceted sculpture reimagines the divine form <br /> with clean geometry
-          and minimalist expression. Blending tradition with innovation,
-          <br /> it honors wisdom, prosperity, and the spirit of new beginnings, <br />making it a powerful presence in any
-          contemporary setting.
+         This monumental crescent form combines the warmth of corten steel with the mirror finish of stainless steel, creating a powerful interplay between solidity and reflection. The intricate perforations on the inner arc allow light to pass through, casting dynamic shadows that evolve throughout the day. <br />
+         Commissioned for a public institution, this work exemplifies the intersection of contemporary public art,<br /><b> symbolic sculpture,</b> and architectural integration using mixed metals.
         </>
       ),
       details: (
         <>
-          Material: Corten Steel
-          <br />Height: 4.5 ft, Width: 3 ft, Depth: 2.5 ft
+          Material: Stainless Steel ,Corten Steel
+          <br />Height: 12 ft
         </>
       ),
       credits: (
         <>
-          Artist: Abhinav Goyal
+          Artist: Abhinav Goyal <br /> Architects:  Delhi Forum International (DFI), Delhi<br />Commissioned for: High Court, Delhi
         </>
       ),
     },
   },
-
+//to here
   {
-    slug: "wall",
+    slug: "Wall Art",
     images: [
-      { src: "/Arts/wall1.png", alt: "Ganeshji deity sculpture art project, India, 2018" },
+      { src: "/Arts/Wall-Art.png", alt: "Wall art project, India, 2018" },
+       { src: "/Arts/Wall_art.webp", alt: "Wall art project, India, 2018" },
+     
     ],
-    caption: <>wall</>,
+    caption: <>Enlightened Wall</>,
     details: {
-      heading: "wall",
+      heading: "The Enlightened Wall",
       location: "",
       description: (
         <>
@@ -1406,8 +1326,8 @@ export const ARTWORK_IMAGES: ImageData[] = [
       ),
       details: (
         <>
-          Material: Corten Steel
-          <br />Height: 4.5 ft, Width: 3 ft, Depth: 2.5 ft
+          Material: Stainless Steel
+          <br />Length: 21 ft, Height: 6 ft 
         </>
       ),
       credits: (
@@ -1452,7 +1372,7 @@ export const ARTWORK_IMAGES: ImageData[] = [
 
 
   {
-    slug: "Bull",
+    slug: "Inverted Bull",
     images: [
       { src: "/Arts/bulll.png", alt: "Ganeshji deity sculpture art project, India, 2018" },
     ],
@@ -1574,9 +1494,10 @@ export const ARTWORK_IMAGES: ImageData[] = [
     },
   },
    {
-    slug: "ganapati",
+    slug: "Wall Artwork",
     images: [
       { src: "/Arts/891.png", alt: "Ganeshji deity sculpture art project, India, 2018" },
+        { src: "/images/blog/wall-art-.webp", alt: "Wall art project by fromforge" },
     ],
     caption: <>wall</>,
     details: {
