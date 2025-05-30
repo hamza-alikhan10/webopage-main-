@@ -871,7 +871,7 @@ export const ARTWORK_IMAGES: ImageData[] = [
   {
     slug: "aphrodia",
     images: [{ src: "/aphrodia-goa-2018.webp", alt: "Aphrodia Sculpture in Goa, India, 2018" }],
-    caption: <>The Meditating Lady</>,
+    caption: <> Meditating Lady</>,
     details: {
       heading: "The Meditating Lady",
       location: "",
@@ -897,35 +897,34 @@ export const ARTWORK_IMAGES: ImageData[] = [
 
   //details to update
   {
-    slug: "geomorph",
+    slug: "Signage",
     images: [{ src: "/Arts/parametric-wall.webp", alt: "Geomorph Sculpture in Hyderabad, India, 2023" }],
-    caption: <>Geomorph</>,
+    caption: <>Signage</>,
     details: {
-      heading: "Geomorph",
+      heading: "Commercial Signage",
       location: "",
       description: (
         <>
-          An abstract representation of geological forms, this sculpture explores the interplay between nature and time.{" "}
-          <br />Its sharp, faceted surfaces evoke the raw energy of tectonic shifts and erosion,
-          <br /> frozen mid-transformation. Both monolithic and dynamic, it stands as a powerful reminder <br />of the
-          Earth’s ever-evolving landscapes.
+         A seamless blend of art, identity, and architecture, this parametric installation transforms a corporate facade into a bold statement of design. The dynamic ripple texture, achieved through precision-cut <b>aluminium composite panels,</b> responds to light and movement, bringing the wall to life throughout the day.{" "}
+          <br />This custom aluminium signage integrates advanced fabrication techniques with sculptural depth, offering both durability and visual impact. The gold crest emerges as a symbolic focal point, while the layered typographic cutouts create a striking 3D signage effect that enhances brand visibility from a distance.
+          <br /> Ideal for commercial spaces seeking architectural branding solutions, this project sets a benchmark in modern facade signage, where aesthetics meet performance.
         </>
       ),
       details: (
         <>
-          Material: Corten steel with weathered patina
-          <br />Height: 7 ft | Width: 6 ft | Depth: 6 ft
+          Material:  Aluminium
+          <br />Height: 4 ft | Length: 22 ft
         </>
       ),
       credits: (
         <>
-          Artist: Abhinav Goyal <br />Commissioned for: Hyderabad Earth Project
+          Artist: Abhinav Goyal <br />Commissioned for: CRC The Flagship , Noida
         </>
       ),
     },
   },
   {
-    slug: "ballerina",
+    slug: "Parametric dancing sculpture",
     images: [
       { src: "/ballerina-gurugram-2023.webp", alt: "Ballerina Sculpture in Gurugram, India, 2023" },
       { src: "/Arts/061.webp", alt: "Ballerina Sculpture in Gurugram, India, 2023" },
@@ -957,61 +956,57 @@ export const ARTWORK_IMAGES: ImageData[] = [
     },
   },
    {
-    slug: "The deer",
+    slug: "Deer Sculpture",
     images: [
       { src: "/Arts/111111.webp", alt: "Deer Sculpture, 2025" },
     ],
-    caption: <>The deer</>,
+    caption: <>Antleris</>,
     details: {
-      heading: "The deer",
+      heading: "Antleris",
       location: "",
       description: (
         <>
-          A sleek, wing-like form soaring upward, this dynamic sculpture symbolizes ambition, <br /> elevation, and the
-          freedom of flight. Its fluid curves reflect light and movement, <br />creating a sense of lift and momentum
-          within the space.
-          <br />An ode to Progress, Aspiration, and Limitless Potential.
+         Its a geometric deer sculpture crafted in mirror-polished stainless steel. Its faceted form and towering antlers create a bold visual landmark, reflecting the landscape and transforming with light and movement.
+          <br />Perfect for luxury hotels, gardens, or public spaces, it captures the growing demand for modern stainless steel animal sculptures and reflective outdoor art in premium environments.
         </>
       ),
       details: (
         <>
           Material: Mirror-polished stainless steel
-          <br />Height: 8 ft, Width: 6 ft, Depth: 3.5 ft
+          <br />Height: 10 ft
         </>
       ),
       credits: (
         <>
-          Artist: Abhinav Goyal <br /> Commissioned for: Gurugram Skyline Project
+          Artist: Abhinav Goyal <br /> Commissioned for: Crown Plaza, Lucknow
         </>
       ),
     },
   },
    {
-    slug: "The Rhino",
+    slug: "Rhino Sculpture",
     images: [
       { src: "/Arts/22222.webp", alt: "The Rhino Sculpture,2025 " },
     ],
-    caption: <>The Rhino</>,
+    caption: <>Bovine</>,
     details: {
-      heading: "The Rhino",
+      heading: "Bovine",
       location: "",
       description: (
         <>
-          A sleek, wing-like form soaring upward, this dynamic sculpture symbolizes ambition, <br /> elevation, and the
-          freedom of flight. Its fluid curves reflect light and movement, <br />creating a sense of lift and momentum
-          within the space.
-          <br />An ode to Progress, Aspiration, and Limitless Potential.
+         This compact yet powerful sculpture reimagines the rhinoceros in sharp, angular geometry, crafted from weathered Corten steel. Its low-poly form and natural rust patina evoke strength, resilience, and raw materiality.
+          <br />Perfect for art collectors and architectural spaces, it reflects the rising demand for modern corten steel sculptures and geometric animal art in contemporary interiors and outdoor settings.
         </>
       ),
       details: (
         <>
-          Material: Mirror-polished stainless steel
-          <br />Height: 8 ft, Width: 6 ft, Depth: 3.5 ft
+          Material: Corten steel
+          <br />Length: 4ft
         </>
       ),
       credits: (
         <>
-          Artist: Abhinav Goyal <br /> Commissioned for: Gurugram Skyline Project
+          Artist: Abhinav Goyal <br /> Location: Formforge Gallery, Noida
         </>
       ),
     },
