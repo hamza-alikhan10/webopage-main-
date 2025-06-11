@@ -68,11 +68,11 @@ const BlogPost: React.FC = () => {
         <div className="responsive-zoom sm:-m-0">
          <button
   onClick={() => navigate('/blog')}
-  className="mb-2 flex items-center gap-2 px-4 py-2 text-gray-600 bg-gray-100 rounded-lg hover:bg-gray-200 hover:text-gray-900 transition-all duration-300 ease-in-out transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50"
+  className="mb-2 flex items-center gap-1.5 px-3 py-1.5 text-sm text-gray-600 bg-gray-100 rounded-lg hover:bg-gray-200 hover:text-gray-900 transition-all duration-300 ease-in-out transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 sm:px-4 sm:py-2 sm:text-base"
   style={{ fontFamily: "Montserrat" }}
   aria-label="Return to blog list"
 >
-  <ArrowRight className="h-4 w-4 transform rotate-180" />
+  <ArrowRight className="h-3.5 w-3.5 transform rotate-180 sm:h-4 sm:w-4" />
   Back to Blog
 </button>
 
