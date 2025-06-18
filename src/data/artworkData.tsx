@@ -486,9 +486,11 @@ export const ARTWORK_IMAGES: ImageData[] = [
       location: "",
       description: (
         <>
-          Suspended in mid-air, Dive is a surreal and whimsical masterpiece, blurring the line between reality and
-          imagination. <br /> It hovers in the vestibule—the heart of this workplace,commanding attention with its raw,
-          weathered beauty. <br /> <i>A chime that takes your breath away!</i>
+         Suspended in midair, this surreal and whimsical masterpiece blurs the line between reality and imagination.
+It floats in the vestibule, the vibrant heart of this workplace, drawing focus with its raw, weathered beauty.
+<br /> <b>A chime that takes your breath away.</b>
+
+<br /> This sculptural installation speaks to the rising demand for suspended art sculptures, modern corten steel installations, and statement pieces for corporate lobbies that spark wonder and conversation.
         </>
       ),
       details: (
@@ -498,7 +500,7 @@ export const ARTWORK_IMAGES: ImageData[] = [
       ),
       credits: (
         <>
-          Artist: Abhinav Goyal <br /> Commissioned for: Private Residence, Hyderabad <br /> Photography: Kiasma Studio
+          Artist: Abhinav Goyal <br /> Commissioned for: KPMG, Bengaluru <br /> Photography: Kiasma Studio
         </>
       ),
     },
@@ -788,7 +790,7 @@ export const ARTWORK_IMAGES: ImageData[] = [
       ),
       credits: (
         <>
-          Artist: Abhinav Goyal
+          Artist: Abhinav Goyal  <br /> Commissioned for: Private Residence, Dubai
         </>
       ),
     },
@@ -1626,7 +1628,7 @@ export const ARTWORK_IMAGES: ImageData[] = [
       ),
       credits: (
         <>
-          Artist: Abhinav Goyal
+          Artist: Abhinav Goyal  <br /> Commissioned for: Private Residence, Hyderabad
         </>
       ),
     },
@@ -3126,6 +3128,7 @@ export const ARTWORK_IMAGES: ImageData[] = [
     slug: "Bar Table",
     images: [
       { src: "/Arts/444.webp", alt: "Bar Table project, India, 2018" },
+       { src: "/Arts/Metal_Bar_table.webp", alt: "Bar Table project, India, 2018" }
     ],
     caption: <>Cantelever Bar Table</>,
     details: {
@@ -3292,5 +3295,64 @@ export const ARTWORK_IMAGES: ImageData[] = [
       locationCreated: "Lucknow, India",
       url: "/artwork/rhythmic"
     }
+  },
+  {
+  slug: "shivaji-bust-birch",
+  images: [
+    { src: "/Arts/Shivaji-Maharaj.webp", alt: "Shivaji bust sculpture made of birch wood by Abhinav Goyal" },
+    { src: "/Arts/Shivaji_Maharaj.webp", alt: "Shivaji bust sculpture made of birch wood by Abhinav Goyal" },
+    { src: "/Arts/Shivaji_Maharaj_sculpture.webp", alt: "Shivaji bust sculpture  by formforge" }
+  ],
+  caption: <>Shivaji Bust</>,
+  details: {
+    heading: "Shivaji Bust",
+    location: "",
+    description: (
+      <>
+        Crafted with flowing contours in birch wood, this contemporary interpretation of <b>Chhatrapati Shivaji Maharaj</b> embodies strength, leadership, and legacy.
+        The rhythmic carving lines bring movement to the form, echoing both regality and resilience in a modern design language.
+        <br />Ideal for <i>luxury interiors</i>, <i>heritage-inspired decor</i>, and <i>custom wood sculptures</i>, this piece bridges tradition with timeless craftsmanship.
+      </>
+    ),
+    details: (
+      <>
+        Material: Birch Wood
+        <br />Height: 4 ft, Width: 2 ft 8 in
+      </>
+    ),
+    credits: (
+      <>
+        Artist: Abhinav Goyal  <br /> Commissioned for: Elixa Park, Kolhapur, Maharashtra
+      </>
+    ),
+  },
+  seo: {
+    title: "Shivaji Bust - Birch Wood Sculpture by Abhinav Goyal | 2025",
+    metaDescription: "Shivaji Bust: Birch wood sculpture by Abhinav Goyal. A contemporary take on Chhatrapati Shivaji Maharaj for luxury interiors and heritage-inspired spaces.",
+    keywords: ["Shivaji bust sculpture", "birch wood sculpture", "Abhinav Goyal", "wooden art", "heritage sculpture", "luxury interior sculpture"],
+    ogTitle: "Shivaji Bust - Contemporary Birch Wood Sculpture",
+    ogDescription: "Explore the Shivaji Bust, a handcrafted birch wood sculpture by Abhinav Goyal, merging regal legacy with modern sculptural language.",
+    ogImage: "/Arts/shivaji-bust.webp",
+    twitterCard: "summary_large_image",
+    canonicalUrl: "/artwork/shivaji-bust-birch"
+  },
+  schema: {
+    "@context": "https://schema.org",
+    "@type": "VisualArtwork",
+    name: "Shivaji Bust",
+    description: "A contemporary bust sculpture of Chhatrapati Shivaji Maharaj, handcrafted in birch wood with flowing, rhythmic contours.",
+    image: ["/Arts/shivaji-bust.webp"],
+    creator: {
+      "@type": "Person",
+      name: "Abhinav Goyal"
+    },
+    dateCreated: "2025",
+    artMedium: "Birch Wood",
+    height: "4 feet",
+    width: "2.8 feet",
+    locationCreated: "India",
+    url: "/artwork/shivaji-bust-birch"
   }
+}
+
 ];

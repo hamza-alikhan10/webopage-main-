@@ -10,6 +10,144 @@ export interface BlogPost {
   }
   
   export const blogPosts: BlogPost[] = [
+//    {
+//     "id": "outdoor-sculpture",
+//     "title": "Are you on the hunt for the perfect garden sculpture or ornament to enhance your outdoor space? ",
+//     "metaDescription": "Discover how to choose the perfect garden sculpture or ornament. Learn about landscape integration, material choices, and creating meaningful outdoor experiences.",
+//     "content": `
+//      <article class="blog-content max-w-4xl mx-auto">
+//     <header class="mb-10">
+//         <h1 class="text-4xl md:text-5xl font-bold text-center" style="font-family: Montserrat">
+//            Are you on the hunt for the perfect garden sculpture? 
+//         </h1>
+//     </header>
+
+//     <section class="mb-5">
+//         <p class="text-gray-600"><b>Sculpture is not just about how something looks.</b> It is about how a space feels when you walk past it, when you stand beside it, or when you pause in its shadow for a moment. A good sculpture can change the way a place is experienced. It invites emotion, movement, and memory, keep reading to discover the secrets to selecting the ideal garden statue, ornament or sculpture. </p>
+//           <p class="text-gray-600">At <b>FormForge </b>, where we mix hands-on experimentation with intentional design, we have come to understand that outdoor sculpture is a living element. It is not simply placed in a space. It becomes part of that space. It grows with it, reacts to weather, light, people, and time. A successful outdoor sculpture does not just sit still. It speaks. It breathes. It ages in harmony with its surroundings.  </p>
+//            <p class="text-gray-600">Whether you are designing for a university courtyard, a public park, a cultural centre, the entrance of a corporate office, or even a quiet personal garden, choosing the right outdoor sculpture is a meaningful decision. It should feel personal. It should make sense both emotionally and practically. This is not about following trends from a design magazine. It is about understanding a place from the ground up.   </p>
+//     </section>
+
+//     <section class="mb-5">
+//         <h2 class="text-2xl md:text-3xl font-bold md:font-semibold mb-3">What Does Outdoor Sculpture Design Really Mean? </h2>
+//          <img class="mt-7 mb-7" src="/images/blog/outdoor-sculpture.webp" alt="Garden sculpture design">
+//         <p class="text-gray-600">Outdoor sculpture is not just about making art that can survive outside. It is about creating an experience that lives in open air. These sculptures go through seasons. They face sunlight, storms, winds, pollution, and people. And still, they stand strong. </p>
+//         <p class="text-gray-600">More than decoration, these pieces carry a presence. They change with the light. They cast moving shadows. They mark time. They might be shaped like abstract forms or they might serve practical purposes like offering a place to sit. Some are quiet and meditative. Others feel bold and loud. But the one thing they all have in common is that they belong to the landscape. </p>
+//         <h3 class="text-2xl font-semibold mb-3">Start With the Landscape, Not the Sculpture </h3>
+//         <p class="text-gray-600">Before you think about what shape the sculpture will take, look around. Spend time in the space. Watch how the sun moves across it. Pay attention to where people walk, where they pause, where they never seem to go. </p>
+//          <p class="text-gray-600">Some places need something bold and dramatic to bring energy. Others do better with something soft and subtle that blends in gently. Instead of forcing your idea into the space, allow the space to guide the idea.  </p>
+//             <p class="text-gray-600">Try building simple mockups with cardboard, fabric, wood, or pipes. You don’t need fancy materials at this stage. Sometimes, even a rough prototype can teach you more than a perfect 3D render.  </p>
+   
+//         </section>
+
+//     <section class="mb-5">
+//         <h3 class="text-2xl font-semibold mb-3">Think About How People Will Interact</h3>
+//         <p class="text-gray-600">Should people touch the sculpture? Can they sit on it or walk through it? Should it be approached or admired from afar? </p>
+//         <p class="text-gray-600">The most memorable sculptures are the ones that people experience with their whole bodies. Children climb on them. Strangers lean against them. People walk circles around them just to see how light changes the form. </p>
+//         <p class="text-gray-600">Think of your sculpture not only as an object but as a scene. Add textures, grips, curves, and moments of pause. Design it for the hands, the feet, the back, and the eyes. </p>
+//     </section>
+
+//     <section class="mb-5">
+//          <img class="mt-7 mb-7" src="/images/blog/sculpture-tools.webp" alt="Outdoor sculpture fabrication">
+//         <h3 class="text-2xl font-semibold mb-3">Material Matters More Than You Think </h3>
+//         <p class="text-gray-600">Outdoor sculptures face a lot. Rain, sun, dust, wind, wildlife, and sometimes curious hands or careless feet. That is why the material you choose is as important as the design itself. </p>
+//         <p class="text-gray-600"><b>Corten Steel</b> is one of our favourite materials. It is not just a surface or a finish. It becomes a character in the sculpture’s story. When left in the open, corten develops a rust-like surface. But this is not damage. It is protection. It locks in a warm, earthy color that gets deeper and richer with time. Corten does not flake or peel. It ages beautifully, especially under India’s strong sun and seasonal rains. It requires almost no maintenance, making it a reliable and expressive choice. </p>
+//         <p class="text-gray-600"><b>Polished Stone,</b> on the other hand, brings a quiet elegance. It feels cool to the touch and offers a sense of permanence. It works beautifully in spaces that need calm and simplicity. </p>
+//          <p class="text-gray-600"><b>Recycled Metal</b> adds a sense of memory. Every mark and dent tells a story of its past. Using such material can connect your sculpture to themes of sustainability and reuse. </p>
+//            <p class="text-gray-600">Whatever material you choose, make sure to test it under real conditions. Something that looks great inside a studio may not hold up in a monsoon. </p>
+//     </section>
+
+//     <section class="mb-5">
+//         <h2 class="text-2xl md:text-3xl font-bold md:font-semibold mb-3">Materials Used in Outdoor Sculptures</h2>
+//          <img class="mt-7 mb-7" src="/images/blog/corten-steel.webp" alt="Corten steel sculpture">
+//         <h3 class="text-2xl font-semibold mb-3">Corten Steel: A Living Material</h3>
+//         <p class="text-gray-600">Corten steel is a favorite for outdoor sculptures due to its evolving rust-like patina, which protects the material while adding a warm, earthy tone. It requires minimal maintenance and thrives under harsh weather, making it ideal for India’s climate. Corten’s aging process integrates it beautifully with the landscape.</p>
+//         <h3 class="text-2xl font-semibold mb-3">Polished Stone for Timeless Elegance</h3>
+//         <p class="text-gray-600">Polished stone, like granite or marble, brings a sense of permanence and calm to outdoor spaces. Its cool, smooth surface is ideal for meditative gardens or minimalist designs, offering durability and a timeless aesthetic that withstands the elements.</p>
+//         <h3 class="text-2xl font-semibold mb-3">Recycled Metal for Sustainability</h3>
+//         <p class="text-gray-600">Using recycled metal adds character and supports sustainability. Each mark or dent tells a story, connecting the sculpture to themes of reuse. Combined with parametric tools and laser cutting, recycled metal creates unique, environmentally conscious designs.</p>
+//     </section>
+
+//     <section class="mb-5">
+//         <h2 class="text-2xl md:text-3xl font-bold md:font-semibold mb-3">Inspiration for Your Outdoor Space</h2>
+//          <img class="mt-7 mb-7" src="/images/blog/garden-statue.webp" alt="Inspirational garden sculpture">
+//         <h3 class="text-2xl font-semibold mb-3">Creating Emotional Connections</h3>
+//         <p class="text-gray-600">Outdoor sculptures can evoke emotions and memories, transforming a garden into a personal or communal experience. Whether bold or subtle, they invite people to pause, reflect, or interact, creating lasting impressions in spaces like parks, courtyards, or private gardens.</p>
+//         <h3 class="text-2xl font-semibold mb-3">Designing for Scale and Interaction</h3>
+//         <p class="text-gray-600">Scale is critical in outdoor sculpture design. A piece that feels grand in a small garden may disappear in a large park. Use mockups or drone shots to test proportions, ensuring the sculpture feels right in its context and encourages interaction, whether through touch, sitting, or visual exploration.</p>
+//         <h3 class="text-2xl font-semibold mb-3">Light and Shadow as Design Elements</h3>
+//         <p class="text-gray-600">Outdoor sculptures come alive with light and shadow. Design with the sun’s movement in mind, allowing sculptures to change appearance throughout the day. Materials like corten steel or polished stone reflect and refract light, creating dynamic, evolving forms that enhance the garden experience.</p>
+//     </section>
+
+//     <section class="mb-10">
+//         <h2 class="text-2xl md:text-3xl font-bold md:font-semibold mb-7">FAQs</h2>
+//         <h3 class="text-2xl font-semibold mb-2">What is Outdoor Sculpture Design?</h3>
+//         <p class="text-gray-600 mb-5">Outdoor sculpture design creates art that thrives in open-air environments, integrating with landscapes and responding to light, weather, and human interaction for emotional and visual impact.</p>
+//         <h3 class="text-2xl font-semibold mb-2">Why is the Landscape Important in Sculpture Design?</h3>
+//         <p class="text-gray-600 mb-5">The landscape guides the sculpture’s design, ensuring it complements the space. Observing sunlight, foot traffic, and ambiance helps create pieces that feel like they belong.</p>
+//         <h3 class="text-2xl font-semibold mb-2">What Materials Are Best for Outdoor Sculptures?</h3>
+//         <p class="text-gray-600 mb-5">Corten steel, polished stone, and recycled metal are popular choices for their durability, aesthetic appeal, and ability to age gracefully in outdoor conditions.</p>
+//         <h3 class="text-2xl font-semibold mb-2">How Do Outdoor Sculptures Enhance Spaces?</h3>
+//         <p class="text-gray-600 mb-5">Sculptures add emotional depth, visual interest, and functionality, inviting interaction or reflection while evolving with the landscape to create memorable experiences.</p>
+//         <h3 class="text-2xl font-semibold mb-2">What Tools Are Used in Outdoor Sculpture Design?</h3>
+//         <p class="text-gray-600 mb-5">Parametric modeling, CNC machining, laser cutting, and 3D printing enable precise, innovative designs that bring complex forms to life in outdoor environments.</p>
+//         <h3 class="text-2xl font-semibold mb-2">How Can I Choose the Right Sculpture for My Garden?</h3>
+//         <p class="text-gray-600 mb-5">Consider the landscape, scale, material, and desired interaction. Engage with the community or test mockups to ensure the sculpture fits the space and resonates emotionally.</p>
+//     </section>
+// </article>
+//     `,
+//     "image": "/images/blog/outdoor-sculpture.webp",
+//     "date": "2025-06-13",
+//     "schema": {
+//         "@context": "https://schema.org",
+//         "@type": "Article",
+//         "mainEntityOfPage": {
+//             "@type": "WebPage",
+//             "@id": "https://formforge.com/outdoor-sculpture"
+//         },
+//         "headline": "Outdoor Sculpture: Enhancing Your Garden with Art",
+//         "description": "Discover how to choose the perfect garden sculpture or ornament. Learn about landscape integration, material choices, and creating meaningful outdoor experiences.",
+//         "image": "https://formforge.com/images/blog/outdoor-sculpture.webp",
+//         "author": {
+//             "@type": "Organization",
+//             "name": "FormForge"
+//         },
+//         "publisher": {
+//             "@type": "Organization",
+//             "name": "FormForge",
+//             "logo": {
+//                 "@type": "ImageObject",
+//                 "url": "https://formforge.com/images/blog/outdoor-sculpture.webp"
+//             }
+//         },
+//         "datePublished": "2025-06-13",
+//         "dateModified": "2025-06-13",
+//         "keywords": [
+//             "Outdoor Sculpture",
+//             "Garden Sculpture",
+//             "Outdoor Ornament",
+//             "Landscape Design",
+//             "Corten Steel",
+//             "Polished Stone",
+//             "Recycled Metal",
+//             "Parametric Modeling",
+//             "CNC Machining",
+//             "3D Printing",
+//             "outdoor sculpture",
+//             "garden art",
+//             "landscape integration",
+//             "material selection",
+//             "interactive design"
+//         ],
+//         "articleSection": [
+//             "Understanding Outdoor Sculpture Design",
+//             "Exploring Modern Outdoor Sculptures",
+//             "Techniques and Tools in Outdoor Sculpture Creation",
+//             "Materials Used in Outdoor Sculptures",
+//             "Inspiration for Your Outdoor Space"
+//         ]
+//     }
+// },
     {
     "id": "parametric-furniture",
     "title": "Parametric Furniture: Inspiring Furniture Design Ideas",
