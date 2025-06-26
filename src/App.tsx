@@ -11,6 +11,7 @@ import Blog from "./components/Blog";
 import BlogPost from "./components/BlogPost";
 import ArtworkDetail from "./ArtworkDetail";
 import AffordableArt from "./pages/AffordableArt";
+import AffordableArtDetail from "./pages/AffordableArtDetail";
 import ReadyArt from "./pages/ReadyArt";
 
 const queryClient = new QueryClient();
@@ -26,6 +27,7 @@ const App = () => {
             <Route path="/" element={<PortfolioPage />} />
             <Route path="/about" element={<About />} />
             <Route path="/affordable-art" element={<AffordableArt />} />
+            <Route path="/affordable-art/:id" element={<AffordableArtDetail />} />
             <Route path="/ready-art" element={<ReadyArt />} />
             <Route path="/gallery/:slug" element={<ArtworkDetail />} />
             <Route path="/contact" element={<Contact />} />
