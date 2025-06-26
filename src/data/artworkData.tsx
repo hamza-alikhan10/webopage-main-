@@ -1188,7 +1188,7 @@ It floats in the vestibule, the vibrant heart of this workplace, drawing focus w
     caption: <>The Carefree Seat</>,
     details: {
       heading: "The Carefree Seat",
-      location: "Hyderabad, India, 2022",
+      location: "",
       description: (
         <>
           A functional sculpture of a relaxed figure seamlessly perched on a bench, this piece invites viewers <br />to

@@ -1,4 +1,4 @@
-import { MessageCircle, MapPin, Phone } from "lucide-react";
+import { MapPin, Phone } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/ui/Footer";
 import { useState } from 'react';
@@ -50,8 +50,7 @@ const Contact = () => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleWhatsAppClick = () => window.open('https://wa.me/919650020485', '_blank');
-  const handlePhoneClick = () => window.location.href = 'tel:+919650006385';
+  const handlePhoneClick = () => window.location.href = 'tel:+919650020485';
   const handleMapClick = () => {
     const address = encodeURIComponent("Block A, Sector 43, Noida, Uttar Pradesh 201303");
     window.open(`https://www.google.com/maps?q=${address}`, '_blank');
@@ -106,12 +105,10 @@ const Contact = () => {
                   <button onClick={handlePhoneClick} className="p-2 rounded-full hover:bg-gray-200 transition-transform hover:scale-110">
                     <Phone className="w-6 h-6 text-gray-700 hover:text-black" />
                   </button>
-                  <button onClick={handleWhatsAppClick} className="p-2 rounded-full hover:bg-gray-200 transition-transform hover:scale-110">
-                    <MessageCircle className="w-6 h-6 text-gray-700 hover:text-black" />
-                  </button>
                   <span className="sm:text-lg text-base">
-                    <a href="tel:+919650020485" className="hover:underline">+91 965 002 0485</a> <br />
-                    <a href="https://wa.me/919650006385" className="hover:underline">+91 965 000 6385</a>
+                    <a href="tel:+919650020485" className="hover:underline">+91 965 002 0485</a>
+                    <br />
+                    <a href="tel:+919650006385" className="hover:underline">+91 965 000 6385</a>
                   </span>
                 </div>
                 <button onClick={handleMapClick} className="flex space-x-3 items-center  hover:bg-gray-200 p-3 rounded-lg transition-colors text-left">
@@ -119,7 +116,6 @@ const Contact = () => {
                   <span className="sm:text-lg text-base">Block A, Sector 43,<br />Noida, Uttar Pradesh 201303</span>
                 </button>
               </div>
-             
             </div>
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14017.273330255157!2d77.3510594!3d28.5603705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce5d77912a873%3A0x661b4fe105c22633!2sFormforge!5e0!3m2!1sen!2sin!4v1695551234567!5m2!1sen!2sin"
