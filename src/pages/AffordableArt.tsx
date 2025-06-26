@@ -216,7 +216,7 @@ const AffordableArt = () => {
                   >
                     {selectedSculpture.description}
                   </p>
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                  <div className="grid grid-cols-3 md:grid-cols-3 gap-8">
                     <div>
                       <h3
                         className="text-xl font-semibold mb-4"
