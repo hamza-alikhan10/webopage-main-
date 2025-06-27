@@ -92,7 +92,7 @@ const Navbar = () => {
         </a>
 
         {/* Navigation */}
-        <div className="flex flex-wrap justify-center space-x-6 sm:space-x-8 md:space-x-10 mt-4 mb-8 sm:mb-11 relative">
+        <div className="flex flex-wrap justify-center space-x-6 sm:space-x-6 md:space-x-10 mt-4 mb-8 sm:mb-11 relative">
           {navLinks.map((link) => (
             <div key={link.name} className="relative">
               {link.hasDropdown ? (
