@@ -84,71 +84,75 @@ const AffordableArt = () => {
 
       <div className="max-w-10xl mx-auto">
         <Navbar />
-        <div className="px-4 py-8">
+        <div className="px-2 sm:px-4 md:px-6 lg:px-8 py-4 sm:py-6 md:py-8">
           <h2
-            className="text-4xl font-playfair text-gray-800 mb-3 text-center tracking-wide"
+            className="text-2xl sm:text-3xl md:text-4xl font-playfair text-gray-800 mb-3 sm:mb-4 md:mb-6 text-center tracking-wide"
             style={{ fontFamily: "Playfair Display, serif" }}
           >
             Bring Sculptural Luxury Into Your Life – <br /> Without the High Price Tag
           </h2>
           <p
-            className="text-lg text-gray-600 mb-12 text-center max-w-4xl mx-auto"
+            className="text-sm sm:text-base md:text-lg text-gray-600 mb-6 sm:mb-8 md:mb-10 text-center max-w-2xl sm:max-w-3xl md:max-w-4xl mx-auto"
             style={{ fontFamily: "Montserrat, Poppins, sans-serif" }}
           >
             Immerse yourself in our meticulously curated selection of ten exquisite sculptures. Each piece, a testament to
             masterful craftsmanship, is designed to bring sophisticated elegance into your world without compromise.
           </p>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {sculptures.map((sculpture) => {
-              const piecesLeft = sculpture.piecesLeft ?? 100;
-              const isSoldOut = sculpture.status === "Sold Out" || (piecesLeft === 0 && !sculpture.status);
+          <div className="overflow-x-auto">
+            <div className="grid grid-cols-3 gap-2 sm:gap-3 md:gap-6 min-w-auto">
+              {sculptures.map((sculpture) => {
+                const piecesLeft = sculpture.piecesLeft ?? 100;
+                const isSoldOut = sculpture.status === "Sold Out" || (piecesLeft === 0 && !sculpture.status);
 
-              return (
-                <Link
-                  key={sculpture.id}
-                  to={`/affordable-art/${sculpture.id}`}
-                  className="card bg-gray-200 overflow-hidden transition-all duration-300 cursor-pointer relative group hover:shadow-xl hover:-translate-y-1 block"
-                >
-                  <img
-                    src={sculpture.images[0]}
-                    alt={sculpture.title}
-                    className="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-105"
-                    loading="lazy"
-                    onError={(e) => {
-                      e.currentTarget.src = "/placeholder-image.png";
-                    }}
-                  />
-                  <div className="p-2">
-                    <h2
-                      className="text-xl text-gray-800 mb-1"
-                      style={{ fontFamily: "Playfair Display, Poppins, sans-serif" }}
-                    >
-                      {sculpture.title}
-                    </h2>
-                    <p
-                      className="text-sm text-gray-600 mb-0"
-                      style={{ fontFamily: "Montserrat, Poppins, sans-serif" }}
-                    >
-                      {sculpture.details.dimensions}
-                    </p>
-                    {isSoldOut ? (
-                      <p className="text-sm text-red-600 mb-0">Sold Out</p>
-                    ) : (
-                      <p className="text-sm mb-0">
-                        <span className={piecesLeft === 100 ? "text-gray-600" : "text-black"}>
-                          {piecesLeft}
-                        </span>{" "}
-                        <span className="text-black">pieces left</span>
+                return (
+                  <Link
+                    key={sculpture.id}
+                    to={`/affordable-art/${sculpture.id}`}
+                    className="card bg-gray-200 overflow-hidden transition-all duration-300 cursor-pointer relative group hover:shadow-lg hover:-translate-y-1 block min-w-[33.33%] sm:min-w-0"
+                  >
+                    <div className="w-full h-48 sm:h-56 md:h-64 lg:h-80 overflow-hidden">
+                      <img
+                        src={sculpture.images[0]}
+                        alt={sculpture.title}
+                        className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                        loading="lazy"
+                        onError={(e) => {
+                          e.currentTarget.src = "/placeholder-image.png";
+                        }}
+                      />
+                    </div>
+                    <div className="p-1 sm:p-2 md:p-3">
+                      <h2
+                        className="text-sm sm:text-lg md:text-xl text-gray-800 mb-1"
+                        style={{ fontFamily: "Playfair Display, Poppins, sans-serif" }}
+                      >
+                        {sculpture.title}
+                      </h2>
+                      <p
+                        className="text-xs sm:text-sm md:text-base text-gray-600 mb-0"
+                        style={{ fontFamily: "Montserrat, Poppins, sans-serif" }}
+                      >
+                        {sculpture.details.dimensions}
                       </p>
-                    )}
-                  </div>
-                </Link>
-              );
-            })}
+                      {isSoldOut ? (
+                        <p className="text-xs sm:text-sm md:text-base text-red-600 mb-0">Sold Out</p>
+                      ) : (
+                        <p className="text-xs sm:text-sm md:text-base mb-0">
+                          <span className={piecesLeft === 100 ? "text-gray-600" : "text-black"}>
+                            {piecesLeft}
+                          </span>{" "}
+                          <span className="text-black">pieces left</span>
+                        </p>
+                      )}
+                    </div>
+                  </Link>
+                );
+              })}
+            </div>
           </div>
         </div>
         <Dialog open={selectedSculpture !== null} onOpenChange={setSelectedSculpture.bind(null, null)}>
-          <DialogContent className="max-w-4xl w-full p-0 rounded-lg">
+          <DialogContent className="max-w-2xl sm:max-w-3xl md:max-w-4xl lg:max-w-5xl w-full p-0 rounded-lg">
             <DialogTitle className="sr-only">
               {selectedSculpture ? `${selectedSculpture.title} Details` : "Artwork Details"}
             </DialogTitle>
@@ -179,7 +183,7 @@ const AffordableArt = () => {
                   <img
                     src={selectedSculpture.images[selectedImageIndex]}
                     alt={selectedSculpture.title}
-                    className="w-full h-[400px] object-cover bg-gray-100"
+                    className="w-full h-[250px] sm:h-[300px] md:h-[350px] lg:h-[400px] object-cover bg-gray-100"
                     loading="lazy"
                   />
                   {selectedSculpture.images.length > 1 && (
@@ -188,60 +192,60 @@ const AffordableArt = () => {
                         variant="outline"
                         size="icon"
                         onClick={handlePreviousImage}
-                        className="absolute left-4 top-1/2 -translate-y-1/2 h-10 w-10 rounded-full bg-white/80 hover:bg-white"
+                        className="absolute left-4 top-1/2 -translate-y-1/2 h-8 sm:h-10 md:h-10 w-8 sm:w-10 md:w-10 rounded-full bg-white/80 hover:bg-white"
                       >
-                        <ArrowLeft className="h-5 w-5" />
+                        <ArrowLeft className="h-4 sm:h-5 md:h-5 w-4 sm:w-5 md:w-5" />
                       </Button>
                       <Button
                         variant="outline"
                         size="icon"
                         onClick={handleNextImage}
-                        className="absolute right-4 top-1/2 -translate-y-1/2 h-10 w-10 rounded-full bg-white/80 hover:bg-white"
+                        className="absolute right-4 top-1/2 -translate-y-1/2 h-8 sm:h-10 md:h-10 w-8 sm:w-10 md:w-10 rounded-full bg-white/80 hover:bg-white"
                       >
-                        <ArrowRight className="h-5 w-5" />
+                        <ArrowRight className="h-4 sm:h-5 md:h-5 w-4 sm:w-5 md:w-5" />
                       </Button>
                     </>
                   )}
                 </div>
-                <div className="p-6">
+                <div className="p-3 sm:p-4 md:p-6">
                   <h2
-                    className="text-3xl font-playfair text-gray-800 mb-4"
+                    className="text-xl sm:text-2xl md:text-3xl font-playfair text-gray-800 mb-2 sm:mb-3 md:mb-4"
                     style={{ fontFamily: "Playfair Display, serif" }}
                   >
                     {selectedSculpture.title}
                   </h2>
                   <p
-                    className="text-gray-600 mb-6"
+                    className="text-sm sm:text-base md:text-lg text-gray-600 mb-3 sm:mb-4 md:mb-6"
                     style={{ fontFamily: "Montserrat, Poppins, sans-serif" }}
                   >
                     {selectedSculpture.description}
                   </p>
-                  <div className="grid grid-cols-3 md:grid-cols-3 gap-8">
+                  <div className="grid grid-cols-2 sm:grid-cols-2 gap-3 sm:gap-4 md:gap-6">
                     <div>
                       <h3
-                        className="text-xl font-semibold mb-4"
+                        className="text-base sm:text-lg md:text-xl font-semibold mb-2 sm:mb-3 md:mb-4"
                         style={{ fontFamily: "Montserrat, Poppins, sans-serif" }}
                       >
                         Details
                       </h3>
-                      <div className="space-y-3 bg-gray-50 rounded-lg p-4">
-                        <div className="flex items-center gap-2 mb-3">
-                          <Diamond className="h-4 w-4 text-gray-600" />
+                      <div className="space-y-2 sm:space-y-3 bg-gray-50 rounded-lg p-2 sm:p-3 md:p-4">
+                        <div className="flex items-center gap-1 sm:gap-2">
+                          <Diamond className="h-3 sm:h-4 md:h-4 w-3 sm:w-4 md:w-4 text-gray-600" />
                           <span className="font-medium">Type:</span>
                           <span className="text-gray-600">{selectedSculpture.details.type}</span>
                         </div>
-                        <div className="flex items-center gap-2 mb-3">
-                          <Fingerprint className="h-4 w-4 text-gray-600" />
+                        <div className="flex items-center gap-1 sm:gap-2">
+                          <Fingerprint className="h-3 sm:h-4 md:h-4 w-3 sm:w-4 md:w-4 text-gray-600" />
                           <span className="font-medium">Signature:</span>
                           <span className="text-gray-600">{selectedSculpture.details.signature}</span>
                         </div>
-                        <div className="flex items-center gap-2 mb-3">
-                          <Award className="h-4 w-4 text-gray-600" />
+                        <div className="flex items-center gap-1 sm:gap-2">
+                          <Award className="h-3 sm:h-4 md:h-4 w-3 sm:w-4 md:w-4 text-gray-600" />
                           <span className="font-medium">Authenticity:</span>
                           <span className="text-gray-600">{selectedSculpture.details.authenticity}</span>
                         </div>
-                        <div className="flex items-center gap-2">
-                          <Paintbrush className="h-4 w-4 text-gray-600" />
+                        <div className="flex items-center gap-1 sm:gap-2">
+                          <Paintbrush className="h-3 sm:h-4 md:h-4 w-3 sm:w-4 md:w-4 text-gray-600" />
                           <span className="font-medium">Medium:</span>
                           <span className="text-gray-600">{selectedSculpture.details.medium}</span>
                         </div>
@@ -249,30 +253,30 @@ const AffordableArt = () => {
                     </div>
                     <div>
                       <h3
-                        className="text-xl font-semibold mb-4"
+                        className="text-base sm:text-lg md:text-xl font-semibold mb-2 sm:mb-3 md:mb-4"
                         style={{ fontFamily: "Montserrat, Poppins, sans-serif" }}
                       >
                         Specifications
                       </h3>
-                      <div className="space-y-3 bg-gray-50 rounded-lg p-4">
-                        <div className="flex items-center gap-2 mb-3">
-                          <Ruler className="h-4 w-4 text-gray-600" />
+                      <div className="space-y-2 sm:space-y-3 bg-gray-50 rounded-lg p-2 sm:p-3 md:p-4">
+                        <div className="flex items-center gap-1 sm:gap-2">
+                          <Ruler className="h-3 sm:h-4 md:h-4 w-3 sm:w-4 md:w-4 text-gray-600" />
                           <span className="font-medium">Dimensions:</span>
                           <span className="text-gray-600">{selectedSculpture.details.dimensions}</span>
                         </div>
-                        <div className="flex items-center gap-2 mb-3">
-                          <Monitor className="h-4 w-4 text-gray-600" />
+                        <div className="flex items-center gap-1 sm:gap-2">
+                          <Monitor className="h-3 sm:h-4 md:h-4 w-3 sm:w-4 md:w-4 text-gray-600" />
                           <span className="font-medium">Display:</span>
                           <span className="text-gray-600">{selectedSculpture.details.display}</span>
                         </div>
-                        <div className="flex items-start gap-2">
-                          <Tags className="h-4 w-4 text-gray-600 mt-1" />
+                        <div className="flex items-start gap-1 sm:gap-2">
+                          <Tags className="h-3 sm:h-4 md:h-4 w-3 sm:w-4 md:w-4 text-gray-600 mt-1" />
                           <span className="font-medium">Tags:</span>
-                          <div className="flex flex-wrap gap-2">
+                          <div className="flex flex-wrap gap-1 sm:gap-2">
                             {selectedSculpture.details.tags.map((tag, index) => (
                               <span
                                 key={index}
-                                className="px-3 py-1 bg-gray-100 text-gray-600 rounded-full text-sm"
+                                className="px-1 sm:px-2 md:px-3 py-1 bg-gray-100 text-gray-600 rounded-full text-xs sm:text-sm"
                               >
                                 {tag}
                               </span>
