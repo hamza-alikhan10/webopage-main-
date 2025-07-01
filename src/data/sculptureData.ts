@@ -14,13 +14,14 @@ export interface Sculpture {
   images: string[];
   description: string;
   details: SculptureDetails;
-  status: "Readily Available" | "Sold Out" | ""; // Updated to include blank status
+  status: "Readily Available" | "Sold Out" | "";
+  price: string; // Added price field
 }
 
 export const sculptures: Sculpture[] = [
-  { 
-    id: 1, 
-    title: "Buddha sculpture", 
+  {
+    id: 1,
+    title: "Buddha sculpture",
     images: ["/buddha-bangalore-2023.webp"],
     description: "An exquisite piece of art crafted with precision.",
     details: {
@@ -30,13 +31,14 @@ export const sculptures: Sculpture[] = [
       medium: "Sculpture: Corten steel",
       dimensions: "45 x 45 x 5 cm",
       display: "Indoor/Outdoor",
-      tags: ["Wall sculpture", "Abstract art", "Grey", "Sky blue"]
+      tags: ["Wall sculpture", "Abstract art", "Grey", "Sky blue"],
     },
-    status: "Readily Available"
+    status: "Readily Available",
+    price: "₹1,50,000",
   },
-  { 
-    id: 2, 
-    title: "Carefree Seat", 
+  {
+    id: 2,
+    title: "Carefree Seat",
     images: ["/Arts/carefree-seat-hyderabad.webp", "/Arts/carefree-seat.webp"],
     description: "A harmonious blend of form and function.",
     details: {
@@ -46,9 +48,10 @@ export const sculptures: Sculpture[] = [
       medium: "Sculpture: Stainless steel",
       dimensions: "120 x 60 x 45 cm",
       display: "Indoor/Outdoor",
-      tags: ["Seating", "Modern art", "Silver"]
+      tags: ["Seating", "Modern art", "Silver"],
     },
-    status: "Sold Out"
+    status: "Sold Out",
+    price: "₹1,75,000",
   },
   {
     id: 3,
@@ -62,9 +65,10 @@ export const sculptures: Sculpture[] = [
       medium: "Sculpture: Stainless steel",
       dimensions: "180 x 120 x 60 cm",
       display: "Outdoor",
-      tags: ["Animal sculpture", "Dynamic art", "Silver"]
+      tags: ["Animal sculpture", "Dynamic art", "Silver"],
     },
-    status: "Readily Available"
+    status: "Readily Available",
+    price: "₹1,90,000",
   },
   {
     id: 4,
@@ -78,9 +82,10 @@ export const sculptures: Sculpture[] = [
       medium: "Sculpture: Corten steel",
       dimensions: "90 x 90 x 45 cm",
       display: "Indoor/Outdoor",
-      tags: ["Floral sculpture", "Contemporary art", "Bronze"]
+      tags: ["Floral sculpture", "Contemporary art", "Bronze"],
     },
-    status: "" // Blank status
+    status: "",
+    price: "₹1,65,000", // Corrected price to be a non-empty string
   },
   {
     id: 5,
@@ -94,9 +99,10 @@ export const sculptures: Sculpture[] = [
       medium: "Sculpture: Bronze",
       dimensions: "150 x 75 x 75 cm",
       display: "Indoor/Outdoor",
-      tags: ["Figurative sculpture", "Spiritual art", "Bronze"]
+      tags: ["Figurative sculpture", "Spiritual art", "Bronze"],
     },
-    status: "Sold Out"
+    status: "Sold Out",
+    price: "₹2,00,000",
   },
   {
     id: 6,
@@ -110,9 +116,10 @@ export const sculptures: Sculpture[] = [
       medium: "Sculpture: Stainless steel",
       dimensions: "200 x 100 x 60 cm",
       display: "Indoor/Outdoor",
-      tags: ["Religious art", "Contemporary sculpture", "Silver"]
+      tags: ["Religious art", "Contemporary sculpture", "Silver"],
     },
-    status: "" // Blank status
+    status: "",
+    price: "₹1,85,000", // Corrected price to be a non-empty string
   },
   {
     id: 7,
@@ -126,9 +133,10 @@ export const sculptures: Sculpture[] = [
       medium: "Sculpture: Stainless steel",
       dimensions: "100 x 100 x 50 cm",
       display: "Indoor/Outdoor",
-      tags: ["Floral art", "Modern sculpture", "Silver"]
+      tags: ["Floral art", "Modern sculpture", "Silver"],
     },
-    status: "Readily Available"
+    status: "Readily Available",
+    price: "₹1,70,000",
   },
   {
     id: 8,
@@ -142,9 +150,10 @@ export const sculptures: Sculpture[] = [
       medium: "Sculpture: Corten steel",
       dimensions: "160 x 80 x 60 cm",
       display: "Outdoor",
-      tags: ["Animal sculpture", "Contemporary art", "Rust"]
+      tags: ["Animal sculpture", "Contemporary art", "Rust"],
     },
-    status: "" // Blank status
+    status: "",
+    price: "₹ 1,80,000", // Corrected price to be a non-empty string
   },
   {
     id: 9,
@@ -158,9 +167,10 @@ export const sculptures: Sculpture[] = [
       medium: "Sculpture: Stainless steel",
       dimensions: "180 x 60 x 40 cm",
       display: "Indoor/Outdoor",
-      tags: ["Figurative art", "Modern sculpture", "Silver"]
+      tags: ["Figurative art", "Modern sculpture", "Silver"],
     },
-    status: "Sold Out"
+    status: "Sold Out",
+    price: "₹1,95,000",
   },
   {
     id: 10,
@@ -174,8 +184,9 @@ export const sculptures: Sculpture[] = [
       medium: "Sculpture: Mixed metals",
       dimensions: "120 x 180 x 10 cm",
       display: "Indoor",
-      tags: ["Wall sculpture", "Abstract art", "Mixed metals"]
+      tags: ["Wall sculpture", "Abstract art", "Mixed metals"],
     },
-    status: "" // Blank status
-  }
-]; 
+    status: "",
+    price: "₹ 1,60,000", // Corrected price to be a non-empty string
+  },
+];

@@ -82,87 +82,118 @@ const AffordableArt = () => {
         <link rel="preload" as="image" href={sculptures[0]?.images[0]} />
       </Helmet>
 
-      <div className="max-w-10xl mx-auto">
+      <div className="max-w-7xl mx-auto">
         <Navbar />
-        <div className="px-2 sm:px-4 md:px-6 lg:px-8 py-4 sm:py-6 md:py-8">
-          <h2
-            className="text-xl sm:text-3xl md:text-4xl font-playfair text-gray-800 mb-3 sm:mb-4 md:mb-6 text-center tracking-wide"
-            style={{ fontFamily: "Playfair Display, serif" }}
-          >
-            Bring Sculptural Luxury Into Your Life – <br /> Without the High Price Tag
-          </h2>
-          <p
-            className="text-sm sm:text-base md:text-lg text-gray-600 mb-6 sm:mb-8 md:mb-10 text-center max-w-2xl sm:max-w-3xl md:max-w-4xl mx-auto"
-            style={{ fontFamily: "Montserrat, Poppins, sans-serif" }}
-          >
-            Immerse yourself in our meticulously curated selection of ten exquisite sculptures. Each piece, a testament to
-            masterful craftsmanship, is designed to bring sophisticated elegance into your world without compromise.
-          </p>
-          <div className="overflow-x-auto">
-            <div className="grid grid-cols-3 gap-2 sm:gap-3 md:gap-6 min-w-auto">
-              {sculptures.map((sculpture) => {
-                const isSoldOut = sculpture.status === "Sold Out";
-                const isAvailable = sculpture.status === "Readily Available";
+       <div className="px-4 sm:px-6 lg:px-8 pb-3 sm:pb-8 lg:pb-5">
+          {/* Header Section */}
+          <div className="text-center mb-8 sm:mb-12 lg:mb-16">
+            <h1
+              className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-playfair text-gray-800 mb-4 sm:mb-6 tracking-wide leading-tight"
+              style={{ fontFamily: "Playfair Display, serif" }}
+            >
+              Bring Sculptural Luxury Into Your Life –{" "}
+              <span className="block sm:inline">Without the High Price Tag</span>
+            </h1>
+            <p
+              className="text-base sm:text-lg lg:text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed"
+              style={{ fontFamily: "Montserrat, Poppins, sans-serif" }}
+            >
+              Immerse yourself in our meticulously curated selection of ten exquisite sculptures. Each piece, a testament to
+              masterful craftsmanship, is designed to bring sophisticated elegance into your world without compromise.
+            </p>
+          </div>
 
-                return (
-                  <Link
-                    key={sculpture.id}
-                    to={`/affordable-art/${sculpture.id}`}
-                    className="card bg-gray-200 overflow-hidden transition-all duration-300 cursor-pointer relative group hover:shadow-lg hover:-translate-y-1 block min-w-[33.33%] sm:min-w-0"
-                  >
-                    <div className="w-full h-48 sm:h-56 md:h-64 lg:h-80 overflow-hidden">
-                      <img
-                        src={sculpture.images[0]}
-                        alt={sculpture.title}
-                        className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
-                        loading="lazy"
-                        onError={(e) => {
-                          e.currentTarget.src = "/placeholder-image.png";
-                        }}
-                      />
-                    </div>
-                    <div className="p-1 sm:p-2 md:p-3">
-                      <h2
-                        className="text-sm sm:text-lg md:text-xl text-gray-800 mb-1"
-                        style={{ fontFamily: "Playfair Display, Poppins, sans-serif" }}
+          {/* Sculptures Grid */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
+            {sculptures.map((sculpture) => {
+              const isSoldOut = sculpture.status === "Sold Out";
+              const isAvailable = sculpture.status === "Readily Available";
+
+              return (
+                <Link
+                  key={sculpture.id}
+                  to={`/affordable-art/${sculpture.id}`}
+                  className="group bg-white rounded-lg shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden hover:-translate-y-2 transform"
+                >
+                  {/* Image Container */}
+                  <div className="relative overflow-hidden aspect-[4/3] bg-gray-100">
+                    <img
+                      src={sculpture.images[0]}
+                      alt={sculpture.title}
+                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                      loading="lazy"
+                      onError={(e) => {
+                        e.currentTarget.src = "/placeholder-image.png";
+                      }}
+                    />
+                    {/* Status Badge */}
+                    {sculpture.status && (
+                      <div className="absolute top-3 right-3">
+                        <span
+                          className={`px-2 py-1 text-xs font-medium rounded-full ${
+                            isSoldOut
+                              ? "bg-red-100 text-red-800"
+                              : isAvailable
+                              ? "bg-green-100 text-green-800"
+                              : "bg-gray-100 text-gray-800"
+                          }`}
+                        >
+                          {sculpture.status}
+                        </span>
+                      </div>
+                    )}
+                  </div>
+
+                  {/* Content */}
+                  <div className="p-4 sm:p-5">
+                    <h2
+                      className="text-lg sm:text-xl font-semibold text-gray-800 mb-2 line-clamp-2"
+                      style={{ fontFamily: "Playfair Display, serif" }}
+                    >
+                      {sculpture.title}
+                    </h2>
+                    <p
+                      className="text-sm sm:text-base text-gray-600 mb-3"
+                      style={{ fontFamily: "Montserrat, sans-serif" }}
+                    >
+                      {sculpture.details.dimensions}
+                    </p>
+                    <div className="flex items-center justify-between">
+                      <span
+                        className="text-xs sm:text-sm text-gray-500"
+                        style={{ fontFamily: "Montserrat, sans-serif" }}
                       >
-                        {sculpture.title}
-                      </h2>
-                      <p
-                        className="text-xs sm:text-sm md:text-base text-gray-600 mb-0"
-                        style={{ fontFamily: "Montserrat, Poppins, sans-serif" }}
-                      >
-                        {sculpture.details.dimensions}
-                      </p>
-                      {sculpture.status && (
-                        <p className="text-xs sm:text-sm md:text-base mb-0">
-                          <span className={isSoldOut ? "text-red-600" : isAvailable ? "text-gray-600" : "text-gray-600"}>
-                            {sculpture.status}
-                          </span>
-                        </p>
-                      )}
+                        {sculpture.details.medium}
+                      </span>
+                      <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <ArrowRight className="h-4 w-4 text-gray-400" />
+                      </div>
                     </div>
-                  </Link>
-                );
-              })}
-            </div>
+                  </div>
+                </Link>
+              );
+            })}
           </div>
         </div>
-        <Dialog open={selectedSculpture !== null} onOpenChange={setSelectedSculpture.bind(null, null)}>
-          <DialogContent className="max-w-2xl sm:max-w-3xl md:max-w-4xl lg:max-w-5xl w-full p-0 rounded-lg">
+
+        {/* Dialog Modal */}
+        <Dialog open={selectedSculpture !== null} onOpenChange={() => setSelectedSculpture(null)}>
+          <DialogContent className="max-w-[95vw] sm:max-w-2xl md:max-w-3xl lg:max-w-4xl xl:max-w-5xl w-full p-0 rounded-lg max-h-[95vh] overflow-y-auto">
             <DialogTitle className="sr-only">
               {selectedSculpture ? `${selectedSculpture.title} Details` : "Artwork Details"}
             </DialogTitle>
             <DialogDescription className="sr-only">
               {selectedSculpture ? selectedSculpture.description : "View detailed information about this artwork"}
             </DialogDescription>
+            
+            {/* Close Button */}
             <button
               onClick={() => setSelectedSculpture(null)}
-              className="absolute right-4 top-4 z-10 p-2 bg-white/80 rounded-full hover:bg-white transition-colors"
+              className="absolute right-4 top-4 z-10 p-2 bg-white/90 backdrop-blur-sm rounded-full hover:bg-white transition-colors shadow-lg"
             >
               <svg
-                width="24"
-                height="24"
+                width="20"
+                height="20"
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
@@ -174,107 +205,126 @@ const AffordableArt = () => {
                 <line x1="6" y1="6" x2="18" y2="18" />
               </svg>
             </button>
+
             {selectedSculpture && (
               <div className="bg-white rounded-lg overflow-hidden">
+                {/* Image Section */}
                 <div className="relative">
                   <img
                     src={selectedSculpture.images[selectedImageIndex]}
                     alt={selectedSculpture.title}
-                    className="w-full h-[250px] sm:h-[300px] md:h-[350px] lg:h-[400px] object-cover bg-gray-100"
+                    className="w-full h-[250px] sm:h-[350px] md:h-[400px] lg:h-[450px] object-cover bg-gray-100"
                     loading="lazy"
                   />
+                  
+                  {/* Navigation Arrows */}
                   {selectedSculpture.images.length > 1 && (
                     <>
                       <Button
                         variant="outline"
                         size="icon"
                         onClick={handlePreviousImage}
-                        className="absolute left-4 top-1/2 -translate-y-1/2 h-8 sm:h-10 md:h-10 w-8 sm:w-10 md:w-10 rounded-full bg-white/80 hover:bg-white"
+                        className="absolute left-2 sm:left-4 top-1/2 -translate-y-1/2 h-8 w-8 sm:h-10 sm:w-10 rounded-full bg-white/90 backdrop-blur-sm hover:bg-white shadow-lg"
                       >
-                        <ArrowLeft className="h-4 sm:h-5 md:h-5 w-4 sm:w-5 md:w-5" />
+                        <ArrowLeft className="h-4 w-4" />
                       </Button>
                       <Button
                         variant="outline"
                         size="icon"
                         onClick={handleNextImage}
-                        className="absolute right-4 top-1/2 -translate-y-1/2 h-8 sm:h-10 md:h-10 w-8 sm:w-10 md:w-10 rounded-full bg-white/80 hover:bg-white"
+                        className="absolute right-2 sm:right-4 top-1/2 -translate-y-1/2 h-8 w-8 sm:h-10 sm:w-10 rounded-full bg-white/90 backdrop-blur-sm hover:bg-white shadow-lg"
                       >
-                        <ArrowRight className="h-4 sm:h-5 md:h-5 w-4 sm:w-5 md:w-5" />
+                        <ArrowRight className="h-4 w-4" />
                       </Button>
                     </>
                   )}
+
+                  {/* Image Counter */}
+                  {selectedSculpture.images.length > 1 && (
+                    <div className="absolute bottom-4 left-1/2 -translate-x-1/2 bg-black/50 text-white px-3 py-1 rounded-full text-sm">
+                      {selectedImageIndex + 1} / {selectedSculpture.images.length}
+                    </div>
+                  )}
                 </div>
-                <div className="p-3 sm:p-4 md:p-6">
+
+                {/* Content Section */}
+                <div className="p-4 sm:p-6 lg:p-8">
                   <h2
-                    className="text-xl sm:text-2xl md:text-3xl font-playfair text-gray-800 mb-2 sm:mb-3 md:mb-4"
+                    className="text-xl sm:text-2xl lg:text-3xl font-playfair text-gray-800 mb-3 sm:mb-4"
                     style={{ fontFamily: "Playfair Display, serif" }}
                   >
                     {selectedSculpture.title}
                   </h2>
                   <p
-                    className="text-sm sm:text-base md:text-lg text-gray-600 mb-3 sm:mb-4 md:mb-6"
-                    style={{ fontFamily: "Montserrat, Poppins, sans-serif" }}
+                    className="text-sm sm:text-base lg:text-lg text-gray-600 mb-6 sm:mb-8 leading-relaxed"
+                    style={{ fontFamily: "Montserrat, sans-serif" }}
                   >
                     {selectedSculpture.description}
                   </p>
-                  <div className="grid grid-cols-2 sm:grid-cols-2 gap-3 sm:gap-4 md:gap-6">
+
+                  {/* Details Grid */}
+                  <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8">
+                    {/* Details Section */}
                     <div>
                       <h3
-                        className="text-base sm:text-lg md:text-xl font-semibold mb-2 sm:mb-3 md:mb-4"
-                        style={{ fontFamily: "Montserrat, Poppins, sans-serif" }}
+                        className="text-lg sm:text-xl font-semibold mb-4 text-gray-800"
+                        style={{ fontFamily: "Montserrat, sans-serif" }}
                       >
                         Details
                       </h3>
-                      <div className="space-y-2 sm:space-y-3 bg-gray-50 rounded-lg p-2 sm:p-3 md:p-4">
-                        <div className="flex items-center gap-1 sm:gap-2">
-                          <Diamond className="h-3 sm:h-4 md:h-4 w-3 sm:w-4 md:w-4 text-gray-600" />
-                          <span className="font-medium">Type:</span>
-                          <span className="text-gray-600">{selectedSculpture.details.type}</span>
+                      <div className="space-y-3 bg-gray-50 rounded-lg p-4">
+                        <div className="flex items-center gap-3">
+                          <Diamond className="h-4 w-4 text-gray-600 flex-shrink-0" />
+                          <span className="font-medium text-sm sm:text-base">Type:</span>
+                          <span className="text-gray-600 text-sm sm:text-base">{selectedSculpture.details.type}</span>
                         </div>
-                        <div className="flex items-center gap-1 sm:gap-2">
-                          <Fingerprint className="h-3 sm:h-4 md:h-4 w-3 sm:w-4 md:w-4 text-gray-600" />
-                          <span className="font-medium">Signature:</span>
-                          <span className="text-gray-600">{selectedSculpture.details.signature}</span>
+                        <div className="flex items-center gap-3">
+                          <Fingerprint className="h-4 w-4 text-gray-600 flex-shrink-0" />
+                          <span className="font-medium text-sm sm:text-base">Signature:</span>
+                          <span className="text-gray-600 text-sm sm:text-base">{selectedSculpture.details.signature}</span>
                         </div>
-                        <div className="flex items-center gap-1 sm:gap-2">
-                          <Award className="h-3 sm:h-4 md:h-4 w-3 sm:w-4 md:w-4 text-gray-600" />
-                          <span className="font-medium">Authenticity:</span>
-                          <span className="text-gray-600">{selectedSculpture.details.authenticity}</span>
+                        <div className="flex items-center gap-3">
+                          <Award className="h-4 w-4 text-gray-600 flex-shrink-0" />
+                          <span className="font-medium text-sm sm:text-base">Authenticity:</span>
+                          <span className="text-gray-600 text-sm sm:text-base">{selectedSculpture.details.authenticity}</span>
                         </div>
-                        <div className="flex items-center gap-1 sm:gap-2">
-                          <Paintbrush className="h-3 sm:h-4 md:h-4 w-3 sm:w-4 md:w-4 text-gray-600" />
-                          <span className="font-medium">Medium:</span>
-                          <span className="text-gray-600">{selectedSculpture.details.medium}</span>
+                        <div className="flex items-center gap-3">
+                          <Paintbrush className="h-4 w-4 text-gray-600 flex-shrink-0" />
+                          <span className="font-medium text-sm sm:text-base">Medium:</span>
+                          <span className="text-gray-600 text-sm sm:text-base">{selectedSculpture.details.medium}</span>
                         </div>
                       </div>
                     </div>
+
+                    {/* Specifications Section */}
                     <div>
                       <h3
-                        className="text-base sm:text-lg md:text-xl font-semibold mb-2 sm:mb-3 md:mb-4"
-                        style={{ fontFamily: "Montserrat, Poppins, sans-serif" }}
+                        className="text-lg sm:text-xl font-semibold mb-4 text-gray-800"
+                        style={{ fontFamily: "Montserrat, sans-serif" }}
                       >
                         Specifications
                       </h3>
-                      <div className="space-y-2 sm:space-y-3 bg-gray-50 rounded-lg p-2 sm:p-3 md:p-4">
-                        <div className="flex items-center gap-1 sm:gap-2">
-                          <Ruler className="h-3 sm:h-4 md:h-4 w-3 sm:w-4 md:w-4 text-gray-600" />
-                          <span className="font-medium">Dimensions:</span>
-                          <span className="text-gray-600">{selectedSculpture.details.dimensions}</span>
+                      <div className="space-y-3 bg-gray-50 rounded-lg p-4">
+                        <div className="flex items-center gap-3">
+                          <Ruler className="h-4 w-4 text-gray-600 flex-shrink-0" />
+                          <span className="font-medium text-sm sm:text-base">Dimensions:</span>
+                          <span className="text-gray-600 text-sm sm:text-base">{selectedSculpture.details.dimensions}</span>
                         </div>
-                        <div className="flex items-center gap-1 sm:gap-2">
-                          <Monitor className="h-3 sm:h-4 md:h-4 w-3 sm:w-4 md:w-4 text-gray-600" />
-                          <span className="font-medium">Display:</span>
-                         ariously
-                          <span className="text-gray-600">{selectedSculpture.details.display}</span>
+                        <div className="flex items-center gap-3">
+                          <Monitor className="h-4 w-4 text-gray-600 flex-shrink-0" />
+                          <span className="font-medium text-sm sm:text-base">Display:</span>
+                          <span className="text-gray-600 text-sm sm:text-base">{selectedSculpture.details.display}</span>
                         </div>
-                        <div className="flex items-start gap-1 sm:gap-2">
-                          <Tags className="h-3 sm:h-4 md:h-4 w-3 sm:w-4 md:w-4 text-gray-600 mt-1" />
-                          <span className="font-medium">Tags:</span>
-                          <div className="flex flex-wrap gap-1 sm:gap-2">
+                        <div className="flex flex-col sm:flex-row sm:items-start gap-2 sm:gap-3">
+                          <div className="flex items-center gap-3">
+                            <Tags className="h-4 w-4 text-gray-600 flex-shrink-0" />
+                            <span className="font-medium text-sm sm:text-base">Tags:</span>
+                          </div>
+                          <div className="flex flex-wrap gap-2">
                             {selectedSculpture.details.tags.map((tag, index) => (
                               <span
                                 key={index}
-                                className="px-1 sm:px-2 md:px-3 py-1 bg-gray-100 text-gray-600 rounded-full text-xs sm:text-sm"
+                                className="px-2 py-1 bg-gray-100 text-gray-600 rounded-full text-xs sm:text-sm whitespace-nowrap"
                               >
                                 {tag}
                               </span>
@@ -291,10 +341,17 @@ const AffordableArt = () => {
         </Dialog>
         <Footer />
       </div>
+
       <style>
         {`
           .font-playfair {
             font-family: "Playfair Display", serif;
+          }
+          .line-clamp-2 {
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
           }
           .animate-fadeIn {
             animation: fadeIn 1.5s ease-in-out;
