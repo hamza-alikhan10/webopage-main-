@@ -86,7 +86,7 @@ const AffordableArt = () => {
         <Navbar />
         <div className="px-2 sm:px-4 md:px-6 lg:px-8 py-4 sm:py-6 md:py-8">
           <h2
-            className="text-2xl sm:text-3xl md:text-4xl font-playfair text-gray-800 mb-3 sm:mb-4 md:mb-6 text-center tracking-wide"
+            className="text-xl sm:text-3xl md:text-4xl font-playfair text-gray-800 mb-3 sm:mb-4 md:mb-6 text-center tracking-wide"
             style={{ fontFamily: "Playfair Display, serif" }}
           >
             Bring Sculptural Luxury Into Your Life – <br /> Without the High Price Tag
@@ -101,8 +101,8 @@ const AffordableArt = () => {
           <div className="overflow-x-auto">
             <div className="grid grid-cols-3 gap-2 sm:gap-3 md:gap-6 min-w-auto">
               {sculptures.map((sculpture) => {
-                const piecesLeft = sculpture.piecesLeft ?? 100;
-                const isSoldOut = sculpture.status === "Sold Out" || (piecesLeft === 0 && !sculpture.status);
+                const isSoldOut = sculpture.status === "Sold Out";
+                const isAvailable = sculpture.status === "Readily Available";
 
                 return (
                   <Link
@@ -134,14 +134,11 @@ const AffordableArt = () => {
                       >
                         {sculpture.details.dimensions}
                       </p>
-                      {isSoldOut ? (
-                        <p className="text-xs sm:text-sm md:text-base text-red-600 mb-0">Sold Out</p>
-                      ) : (
+                      {sculpture.status && (
                         <p className="text-xs sm:text-sm md:text-base mb-0">
-                          <span className={piecesLeft === 100 ? "text-gray-600" : "text-black"}>
-                            {piecesLeft}
-                          </span>{" "}
-                          <span className="text-black">pieces left</span>
+                          <span className={isSoldOut ? "text-red-600" : isAvailable ? "text-gray-600" : "text-gray-600"}>
+                            {sculpture.status}
+                          </span>
                         </p>
                       )}
                     </div>
@@ -267,6 +264,7 @@ const AffordableArt = () => {
                         <div className="flex items-center gap-1 sm:gap-2">
                           <Monitor className="h-3 sm:h-4 md:h-4 w-3 sm:w-4 md:w-4 text-gray-600" />
                           <span className="font-medium">Display:</span>
+                         ariously
                           <span className="text-gray-600">{selectedSculpture.details.display}</span>
                         </div>
                         <div className="flex items-start gap-1 sm:gap-2">

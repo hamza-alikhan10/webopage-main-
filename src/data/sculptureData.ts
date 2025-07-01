@@ -14,9 +14,8 @@ export interface Sculpture {
   images: string[];
   description: string;
   details: SculptureDetails;
-  piecesLeft?: number; // Optional, defaults to 100 if undefined
-  status?: "Available" | "Sold Out"; // Optional, explicit status to override piecesLeft
-};
+  status: "Readily Available" | "Sold Out" | ""; // Updated to include blank status
+}
 
 export const sculptures: Sculpture[] = [
   { 
@@ -33,7 +32,7 @@ export const sculptures: Sculpture[] = [
       display: "Indoor/Outdoor",
       tags: ["Wall sculpture", "Abstract art", "Grey", "Sky blue"]
     },
-    piecesLeft: 75 // Example: 75 pieces available
+    status: "Readily Available"
   },
   { 
     id: 2, 
@@ -49,7 +48,7 @@ export const sculptures: Sculpture[] = [
       display: "Indoor/Outdoor",
       tags: ["Seating", "Modern art", "Silver"]
     },
-    status: "Sold Out" // Explicitly sold out, overrides piecesLeft
+    status: "Sold Out"
   },
   {
     id: 3,
@@ -65,7 +64,7 @@ export const sculptures: Sculpture[] = [
       display: "Outdoor",
       tags: ["Animal sculpture", "Dynamic art", "Silver"]
     },
-    piecesLeft: 50 // Example: 50 pieces available
+    status: "Readily Available"
   },
   {
     id: 4,
@@ -80,8 +79,8 @@ export const sculptures: Sculpture[] = [
       dimensions: "90 x 90 x 45 cm",
       display: "Indoor/Outdoor",
       tags: ["Floral sculpture", "Contemporary art", "Bronze"]
-    }
-    // No piecesLeft or status, defaults to 100 pieces available
+    },
+    status: "" // Blank status
   },
   {
     id: 5,
@@ -97,7 +96,7 @@ export const sculptures: Sculpture[] = [
       display: "Indoor/Outdoor",
       tags: ["Figurative sculpture", "Spiritual art", "Bronze"]
     },
-    piecesLeft: 0 // Explicitly 0 pieces, can be interpreted as sold out
+    status: "Sold Out"
   },
   {
     id: 6,
@@ -112,8 +111,8 @@ export const sculptures: Sculpture[] = [
       dimensions: "200 x 100 x 60 cm",
       display: "Indoor/Outdoor",
       tags: ["Religious art", "Contemporary sculpture", "Silver"]
-    }
-    // No piecesLeft or status, defaults to 100 pieces available
+    },
+    status: "" // Blank status
   },
   {
     id: 7,
@@ -129,7 +128,7 @@ export const sculptures: Sculpture[] = [
       display: "Indoor/Outdoor",
       tags: ["Floral art", "Modern sculpture", "Silver"]
     },
-    piecesLeft: 25 // Example: 25 pieces available
+    status: "Readily Available"
   },
   {
     id: 8,
@@ -144,8 +143,8 @@ export const sculptures: Sculpture[] = [
       dimensions: "160 x 80 x 60 cm",
       display: "Outdoor",
       tags: ["Animal sculpture", "Contemporary art", "Rust"]
-    }
-    // No piecesLeft or status, defaults to 100 pieces available
+    },
+    status: "" // Blank status
   },
   {
     id: 9,
@@ -161,7 +160,7 @@ export const sculptures: Sculpture[] = [
       display: "Indoor/Outdoor",
       tags: ["Figurative art", "Modern sculpture", "Silver"]
     },
-    status: "Sold Out" // Explicitly sold out
+    status: "Sold Out"
   },
   {
     id: 10,
@@ -176,7 +175,7 @@ export const sculptures: Sculpture[] = [
       dimensions: "120 x 180 x 10 cm",
       display: "Indoor",
       tags: ["Wall sculpture", "Abstract art", "Mixed metals"]
-    }
-    // No piecesLeft or status, defaults to 100 pieces available
+    },
+    status: "" // Blank status
   }
-];
+]; 

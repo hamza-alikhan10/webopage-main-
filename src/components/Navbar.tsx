@@ -19,7 +19,6 @@ const Navbar = () => {
 
   const gallerySubLinks = [
     { name: "Affordable Art", href: "/affordable-art" },
-    { name: "Ready Art", href: "/ready-art" },
   ];
 
   const handleNavigation = (path: string, linkName: string) => {
@@ -92,7 +91,7 @@ const Navbar = () => {
         </a>
 
         {/* Navigation */}
-        <div className="flex flex-wrap justify-center space-x-6 sm:space-x-6 md:space-x-10 mt-4 mb-8 sm:mb-11 relative">
+        <div className="flex flex-wrap justify-center space-x-2.5 sm:space-x-6 md:space-x-7 mt-4 mb-8 sm:mb-11 relative">
           {navLinks.map((link) => (
             <div key={link.name} className="relative">
               {link.hasDropdown ? (
