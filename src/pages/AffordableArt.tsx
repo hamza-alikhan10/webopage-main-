@@ -84,7 +84,7 @@ const AffordableArt = () => {
 
       <div className="max-w-7xl mx-auto">
         <Navbar />
-       <div className="px-4 sm:px-6 lg:px-8 pb-3 sm:pb-8 lg:pb-5">
+        <div className="px-4 sm:px-6 lg:px-8 pb-3 sm:pb-8 lg:pb-5">
           {/* Header Section */}
           <div className="text-center mb-8 sm:mb-12 lg:mb-16">
             <h1
@@ -103,39 +103,42 @@ const AffordableArt = () => {
             </p>
           </div>
 
-          {/* Sculptures Grid */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
+          {/* Sculptures Grid - Optimized for different screen sizes */}
+          <div className="grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-3 sm:gap-4 lg:gap-5">
             {sculptures.map((sculpture) => {
               const isSoldOut = sculpture.status === "Sold Out";
               const isAvailable = sculpture.status === "Readily Available";
+              const isMadeToOrder = sculpture.status === "Made to Order"; 
 
               return (
                 <Link
                   key={sculpture.id}
                   to={`/affordable-art/${sculpture.id}`}
-                  className="group bg-white rounded-lg shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden hover:-translate-y-2 transform"
+                  className="group bg-white shadow-sm hover:shadow-lg transition-all duration-300 overflow-hidden hover:-translate-y-1 transform rounded-lg border border-gray-100"
                 >
-                  {/* Image Container */}
-                  <div className="relative overflow-hidden aspect-[4/3] bg-gray-100">
+                  {/* Image Container - Optimized for 800x1067 aspect ratio */}
+                  <div className="relative overflow-hidden bg-gray-50" style={{ aspectRatio: '800/1067' }}>
                     <img
                       src={sculpture.images[0]}
                       alt={sculpture.title}
-                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                      className="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-105"
                       loading="lazy"
                       onError={(e) => {
                         e.currentTarget.src = "/placeholder-image.png";
                       }}
                     />
-                    {/* Status Badge */}
+                    {/* Status Badge - More compact */}
                     {sculpture.status && (
-                      <div className="absolute top-3 right-3">
+                      <div className="absolute top-2 right-2">
                         <span
-                          className={`px-2 py-1 text-xs font-medium rounded-full ${
+                          className={`px-1.5 py-0.5 text-xs font-medium rounded-md ${
                             isSoldOut
-                              ? "bg-red-100 text-red-800"
+                              ? "bg-red-100 text-red-700"
                               : isAvailable
-                              ? "bg-green-100 text-green-800"
-                              : "bg-gray-100 text-gray-800"
+                              ? "bg-green-100 text-green-700"
+                              : isMadeToOrder
+                              ? "bg-blue-100 text-blue-700"
+                              : "bg-gray-100 text-gray-700"
                           }`}
                         >
                           {sculpture.status}
@@ -144,29 +147,34 @@ const AffordableArt = () => {
                     )}
                   </div>
 
-                  {/* Content */}
-                  <div className="p-4 sm:p-5">
+                  {/* Content - Much more compact */}
+                  <div className="p-2.5 sm:p-3">
+                    {/* Title - Reduced spacing */}
                     <h2
-                      className="text-lg sm:text-xl font-semibold text-gray-800 mb-2 line-clamp-2"
+                      className="text-sm sm:text-base lg:text-lg font-semibold text-gray-800 mb-1 line-clamp-2 leading-tight"
                       style={{ fontFamily: "Playfair Display, serif" }}
                     >
                       {sculpture.title}
                     </h2>
+                    
+                    {/* Dimensions - More compact */}
                     <p
-                      className="text-sm sm:text-base text-gray-600 mb-3"
+                      className="text-xs sm:text-sm text-gray-500 mb-1.5 leading-tight"
                       style={{ fontFamily: "Montserrat, sans-serif" }}
                     >
                       {sculpture.details.dimensions}
                     </p>
+                    
+                    {/* Bottom section - Tighter layout */}
                     <div className="flex items-center justify-between">
                       <span
-                        className="text-xs sm:text-sm text-gray-500"
+                        className="text-xs text-gray-400 truncate flex-1 mr-2"
                         style={{ fontFamily: "Montserrat, sans-serif" }}
                       >
                         {sculpture.details.medium}
                       </span>
-                      <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                        <ArrowRight className="h-4 w-4 text-gray-400" />
+                      <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex-shrink-0">
+                        <ArrowRight className="h-3 w-3 sm:h-4 sm:w-4 text-gray-400" />
                       </div>
                     </div>
                   </div>
@@ -185,7 +193,7 @@ const AffordableArt = () => {
             <DialogDescription className="sr-only">
               {selectedSculpture ? selectedSculpture.description : "View detailed information about this artwork"}
             </DialogDescription>
-            
+
             {/* Close Button */}
             <button
               onClick={() => setSelectedSculpture(null)}
@@ -213,10 +221,10 @@ const AffordableArt = () => {
                   <img
                     src={selectedSculpture.images[selectedImageIndex]}
                     alt={selectedSculpture.title}
-                    className="w-full h-[250px] sm:h-[350px] md:h-[400px] lg:h-[450px] object-cover bg-gray-100"
+                    className="w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px] object-cover object-center bg-gray-100"
                     loading="lazy"
                   />
-                  
+
                   {/* Navigation Arrows */}
                   {selectedSculpture.images.length > 1 && (
                     <>
@@ -364,6 +372,28 @@ const AffordableArt = () => {
             to {
               opacity: 1;
               transform: translateY(0);
+            }
+          }
+          
+          /* Extra small screens */
+          @media (min-width: 475px) {
+            .xs\\:grid-cols-2 {
+              grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+          }
+          
+          /* Responsive grid adjustments */
+          @media (max-width: 640px) {
+            .grid {
+              gap: 0.75rem;
+            }
+          }
+          
+          /* Optimize for very small mobile screens */
+          @media (max-width: 375px) {
+            .grid {
+              grid-template-columns: 1fr;
+              gap: 0.5rem;
             }
           }
         `}
