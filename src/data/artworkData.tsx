@@ -704,7 +704,7 @@ It floats in the vestibule, the vibrant heart of this workplace, drawing focus w
     }
   },
   {
-    slug: "raging-stallions-2021",
+    slug: "raging-stallions-2021-a",
     images: [
       { src: "/raging-stallions-chennai-2021.webp", alt: "Horse Sculpture in Chennai" },
       { src: "/Arts/Chennai-Raging-Stallions.webp", alt: "The Raging Stallions Sculpture made of stainless steel" },
@@ -742,7 +742,7 @@ It floats in the vestibule, the vibrant heart of this workplace, drawing focus w
       ogDescription: "Experience the Raging Stallions, a dynamic aluminum sculpture that captures the fluid, fierce essence of horses, igniting a primal connection.",
       ogImage: "/raging-stallions-chennai-2021.webp",
       twitterCard: "summary_large_image",
-      canonicalUrl: "/artwork/raging-stallions-2021"
+      canonicalUrl: "/artwork/raging-stallions-2021-a"
     },
     schema: {
       "@context": "https://schema.org",
@@ -761,7 +761,7 @@ It floats in the vestibule, the vibrant heart of this workplace, drawing focus w
       dateCreated: "2021",
       artMedium: "Aluminum",
       locationCreated: "Chennai, India",
-      url: "/artwork/raging-stallions-2021"
+      url: "/artwork/raging-stallions-2021-a"
     }
   },
   {
@@ -1059,13 +1059,13 @@ It floats in the vestibule, the vibrant heart of this workplace, drawing focus w
     caption: <>Bonsai</>,
     details: {
       heading: "Bonsai",
-      location: "Delhi, India, 2024",
+      location: "",
       description: (
         <>
           A minimalist interpretation of a bonsai tree, this sculptural form blends geometric precision with organic grace.{" "}
           <br />The faceted base, resembling a seed pod or vessel, anchors the upward-reaching black branches <br /> crafted
           from modular steel elements. Celebrating patience, growth, and the art of deliberate cultivation, <br />the piece
-          invites contemplation of nature’s quiet resilience and the elegance of small-scale mastery.
+          invites contemplation of nature's quiet resilience and the elegance of small-scale mastery.
         </>
       ),
       details: (
@@ -1085,7 +1085,7 @@ It floats in the vestibule, the vibrant heart of this workplace, drawing focus w
       metaDescription: "Bonsai: Minimalist steel sculpture blending geometric precision with organic grace, celebrating patience and growth. Delhi 2024 by Abhinav Goyal.",
       keywords: ["bonsai sculpture", "minimalist art", "steel sculpture", "Delhi art", "nature-inspired art", "Abhinav Goyal", "geometric bonsai"],
       ogTitle: "Bonsai - Elegance in Steel",
-      ogDescription: "Explore Bonsai, a minimalist steel sculpture with a faceted base and black branches, celebrating nature’s resilience and deliberate cultivation.",
+      ogDescription: "Explore Bonsai, a minimalist steel sculpture with a faceted base and black branches, celebrating nature's resilience and deliberate cultivation.",
       ogImage: "/bonsai-delhi-2024.webp",
       twitterCard: "summary_large_image",
       canonicalUrl: "/artwork/bonsai"
@@ -1094,7 +1094,7 @@ It floats in the vestibule, the vibrant heart of this workplace, drawing focus w
       "@context": "https://schema.org",
       "@type": "VisualArtwork",
       name: "Bonsai",
-      description: "A minimalist interpretation of a bonsai tree, blending geometric precision with organic grace, celebrating patience and nature’s resilience.",
+      description: "A minimalist interpretation of a bonsai tree, blending geometric precision with organic grace, celebrating patience and nature's resilience.",
       image: [
         "/bonsai-delhi-2024.webp",
         "/Arts/Bonsai-Delhi.webp"
@@ -1333,7 +1333,7 @@ It floats in the vestibule, the vibrant heart of this workplace, drawing focus w
       metaDescription: "Reflective Pause: Mirror-polished stainless steel sculptural bench wrapped around a tree, creating an urban oasis. Bangalore 2025 by Abhinav Goyal.",
       keywords: ["reflective pause sculpture", "stainless steel bench", "Bangalore art", "urban oasis art", "functional sculpture", "Abhinav Goyal", "mirror-polished art"],
       ogTitle: "Reflective Pause - Urban Oasis in Steel",
-      ogDescription: "Explore Reflective Pause, a stainless steel sculptural bench that wraps around a tree, inviting stillness and reflection in Bangalore’s urban heart.",
+      ogDescription: "Explore Reflective Pause, a stainless steel sculptural bench that wraps around a tree, inviting stillness and reflection in Bangalore's urban heart.",
       ogImage: "/reflective-pause-bangalore-2025.webp",
       twitterCard: "summary_large_image",
       canonicalUrl: "/artwork/reflective-pause"
@@ -1446,7 +1446,7 @@ It floats in the vestibule, the vibrant heart of this workplace, drawing focus w
       metaDescription: "Buddha: Faceted corten steel sculpture with internal lighting, symbolizing peace and spiritual awakening. Bangalore 2023 by Abhinav Goyal.",
       keywords: ["buddha sculpture", "corten steel art", "Bangalore sculpture", "spiritual art", "Abhinav Goyal", "meditation sculpture", "illuminated art"],
       ogTitle: "Buddha - Portal to Tranquility",
-      ogDescription: "Discover Buddha, a faceted corten steel sculpture glowing with inner light, offering stillness and spiritual awakening in Bangalore’s urban heart.",
+      ogDescription: "Discover Buddha, a faceted corten steel sculpture glowing with inner light, offering stillness and spiritual awakening in Bangalore's urban heart.",
       ogImage: "/buddha-bangalore-2023.webp",
       twitterCard: "summary_large_image",
       canonicalUrl: "/artwork/buddha"
@@ -1602,11 +1602,11 @@ It floats in the vestibule, the vibrant heart of this workplace, drawing focus w
     }
   },
   {
-    slug: "raging-stallions-2021",
+    slug: "raging-stallions-2021-a",
     images: [
-      { src: "/raging-stallions-chennai_2021.webp", alt: "Raging Stallions Sculpture in Chennai" },
-      { src: "/Arts/Chennai-Raging-Stallions.webp", alt: "stainless steel horse Sculpture by formforge" },
-      { src: "/Arts/Raging-Stallions-Chennai.webp", alt: "horse Sculpture" },
+      { src: "/raging-stallions-chennai-2021.webp", alt: "Horse Sculpture in Chennai" },
+      { src: "/Arts/Chennai-Raging-Stallions.webp", alt: "The Raging Stallions Sculpture made of stainless steel" },
+      { src: "/Arts/Raging-Stallions-Chennai.webp", alt: "Horse Sculpture in Chennai" },
     ],
     caption: <>The Raging Stallions</>,
     details: {
@@ -1628,19 +1628,19 @@ It floats in the vestibule, the vibrant heart of this workplace, drawing focus w
       ),
       credits: (
         <>
-          Artist: Abhinav Goyal  <br /> Commissioned for: Private Residence, Hyderabad
+          Artist: Abhinav Goyal
         </>
       ),
     },
     seo: {
       title: "Raging Stallions - Dynamic Aluminum Sculpture by Abhinav Goyal | Chennai 2021",
-      metaDescription: "Raging Stallions: Dynamic aluminum sculpture capturing the untamed power of horses. Chennai 2021 by Abhinav Goyal.",
+      metaDescription: "Raging Stallions: Dynamic aluminum sculpture capturing the untamed power of horses. Fluid, fierce, and free. Chennai 2021 by Abhinav Goyal.",
       keywords: ["raging stallions", "horse sculpture", "aluminum art", "Chennai sculpture", "dynamic sculpture", "Abhinav Goyal", "contemporary horse art"],
       ogTitle: "Raging Stallions - Untamed Power in Aluminum",
-      ogDescription: "Experience the Raging Stallions, a dynamic aluminum sculpture capturing the fluid, fierce essence of horses, igniting a primal connection.",
-      ogImage: "/raging-stallions-chennai_2021.webp",
+      ogDescription: "Experience the Raging Stallions, a dynamic aluminum sculpture that captures the fluid, fierce essence of horses, igniting a primal connection.",
+      ogImage: "/raging-stallions-chennai-2021.webp",
       twitterCard: "summary_large_image",
-      canonicalUrl: "/artwork/raging-stallions-2021"
+      canonicalUrl: "/artwork/raging-stallions-2021-a"
     },
     schema: {
       "@context": "https://schema.org",
@@ -1648,7 +1648,7 @@ It floats in the vestibule, the vibrant heart of this workplace, drawing focus w
       name: "Raging Stallions",
       description: "A dynamic aluminum sculpture capturing the untamed power of horses, with fluid curves and fierce presence that shifts with light and weather.",
       image: [
-        "/raging-stallions-chennai_2021.webp",
+        "/raging-stallions-chennai-2021.webp",
         "/Arts/Chennai-Raging-Stallions.webp",
         "/Arts/Raging-Stallions-Chennai.webp"
       ],
@@ -1659,7 +1659,7 @@ It floats in the vestibule, the vibrant heart of this workplace, drawing focus w
       dateCreated: "2021",
       artMedium: "Aluminum",
       locationCreated: "Chennai, India",
-      url: "/artwork/raging-stallions-2021"
+      url: "/artwork/raging-stallions-2021-a"
     }
   },
   {
@@ -1810,7 +1810,7 @@ It floats in the vestibule, the vibrant heart of this workplace, drawing focus w
       metaDescription: "Commercial Signage: Parametric aluminium installation with ripple texture and 3D typographic cutouts. Noida 2023 by Abhinav Goyal.",
       keywords: ["commercial signage", "parametric installation", "aluminium art", "Noida art", "architectural branding", "Abhinav Goyal", "modern facade art"],
       ogTitle: "Commercial Signage - Artful Branding in Aluminium",
-      ogDescription: "Explore Commercial Signage, a parametric aluminium installation with dynamic ripple texture, enhancing brand visibility in Noida’s corporate landscape.",
+      ogDescription: "Explore Commercial Signage, a parametric aluminium installation with dynamic ripple texture, enhancing brand visibility in Noida's corporate landscape.",
       ogImage: "/Arts/parametric-wall.webp",
       twitterCard: "summary_large_image",
       canonicalUrl: "/artwork/Signage"
@@ -2023,7 +2023,7 @@ It floats in the vestibule, the vibrant heart of this workplace, drawing focus w
       location: "",
       description: (
         <>
-          Sleek and symbolic, this sculpture captures the upward thrust of a whale’s tail, sculpted in weathered Corten steel. Its smooth, organic form contrasts with the raw, rusted finish, evoking both grace and strength.
+          Sleek and symbolic, this sculpture captures the upward thrust of a whale's tail, sculpted in weathered Corten steel. Its smooth, organic form contrasts with the raw, rusted finish, evoking both grace and strength.
           <br />Ideal for modern interiors or outdoor art displays, it highlights the growing appeal of minimalist corten steel sculptures and <b>marine inspired public art </b>in architectural spaces.
         </>
       ),
@@ -2041,10 +2041,10 @@ It floats in the vestibule, the vibrant heart of this workplace, drawing focus w
     },
     seo: {
       title: "Ocean Voyager - Corten Steel Whale Sculpture by Abhinav Goyal | Noida 2025",
-      metaDescription: "Ocean Voyager: Minimalist corten steel sculpture of a whale’s tail, blending grace and strength. Noida 2025 by Abhinav Goyal.",
+      metaDescription: "Ocean Voyager: Minimalist corten steel sculpture of a whale's tail, blending grace and strength. Noida 2025 by Abhinav Goyal.",
       keywords: ["ocean voyager sculpture", "corten steel whale", "Noida sculpture", "marine inspired art", "Abhinav Goyal", "minimalist sculpture", "public art"],
       ogTitle: "Ocean Voyager - Grace in Corten Steel",
-      ogDescription: "Explore Ocean Voyager, a corten steel sculpture of a whale’s tail, blending minimalist form with raw strength for modern and outdoor spaces.",
+      ogDescription: "Explore Ocean Voyager, a corten steel sculpture of a whale's tail, blending minimalist form with raw strength for modern and outdoor spaces.",
       ogImage: "/Arts/fish-sculpture.webp",
       twitterCard: "summary_large_image",
       canonicalUrl: "/artwork/fish-sculpture"
@@ -2053,7 +2053,7 @@ It floats in the vestibule, the vibrant heart of this workplace, drawing focus w
       "@context": "https://schema.org",
       "@type": "VisualArtwork",
       name: "Ocean Voyager",
-      description: "A minimalist corten steel sculpture of a whale’s tail, blending smooth organic form with a raw, rusted finish to evoke grace and strength.",
+      description: "A minimalist corten steel sculpture of a whale's tail, blending smooth organic form with a raw, rusted finish to evoke grace and strength.",
       image: ["/Arts/fish-sculpture.webp"],
       creator: {
         "@type": "Person",
@@ -2165,7 +2165,7 @@ It floats in the vestibule, the vibrant heart of this workplace, drawing focus w
       metaDescription: "Dreaming of Dharma: Layered stainless steel sculpture inspired by Buddhist principles, evoking calm and mindfulness. Noida 2024 by Abhinav Goyal.",
       keywords: ["dreaming of dharma", "stainless steel sculpture", "Noida sculpture", "Buddhist art", "Abhinav Goyal", "spiritual sculpture", "mindfulness art"],
       ogTitle: "Dreaming of Dharma - Harmony in Steel",
-      ogDescription: "Explore Dreaming of Dharma, a stainless steel sculpture embodying Buddhist principles of calm and mindfulness in Noida’s modern landscape.",
+      ogDescription: "Explore Dreaming of Dharma, a stainless steel sculpture embodying Buddhist principles of calm and mindfulness in Noida's modern landscape.",
       ogImage: "/dreaming-of-dharma-noida-2024.webp",
       twitterCard: "summary_large_image",
       canonicalUrl: "/artwork/dreaming-of-dharma"
@@ -2257,7 +2257,7 @@ It floats in the vestibule, the vibrant heart of this workplace, drawing focus w
       description: (
         <>
           A simple yet profound seed form, this sculpture captures the essence of potential, growth <br /> and the origins
-          of life. Its fluid, organic curves rise gently upward, echoing nature’s quiet strength <br />and the journey from
+          of life. Its fluid, organic curves rise gently upward, echoing nature's quiet strength <br />and the journey from
           stillness to bloom.
           <br />A timeless symbol of new beginnings and rooted resilience.
         </>
@@ -2336,7 +2336,7 @@ It floats in the vestibule, the vibrant heart of this workplace, drawing focus w
       metaDescription: "Raging Bull: Faceted mild steel sculpture capturing raw energy and resilience, featuring PV Sindhu. Goa 2024 by Abhinav Goyal.",
       keywords: ["raging bull sculpture", "mild steel art", "Goa sculpture", "PV Sindhu", "Abhinav Goyal", "animal sculpture", "coastal art"],
       ogTitle: "Raging Bull - Emblem of Resilience",
-      ogDescription: "Discover Raging Bull, a faceted mild steel sculpture embodying raw energy and strength, enhanced by PV Sindhu’s presence in Goa.",
+      ogDescription: "Discover Raging Bull, a faceted mild steel sculpture embodying raw energy and strength, enhanced by PV Sindhu's presence in Goa.",
       ogImage: "/raging-bull-goa_2024.webp",
       twitterCard: "summary_large_image",
       canonicalUrl: "/artwork/raging-bull-goa-2024"
@@ -2458,7 +2458,7 @@ It floats in the vestibule, the vibrant heart of this workplace, drawing focus w
       metaDescription: "Performer: Corten steel sculpture with angular geometry, symbolizing human aspiration. Gurgaon 2025 by Abhinav Goyal.",
       keywords: ["performer sculpture", "corten steel art", "Gurgaon sculpture", "corporate art", "Abhinav Goyal", "geometric sculpture", "public art"],
       ogTitle: "Performer - Symbol of Aspiration",
-      ogDescription: "Discover Performer, a corten steel sculpture with angular geometry and rusted finish, symbolizing human elevation in Gurgaon’s corporate landscape.",
+      ogDescription: "Discover Performer, a corten steel sculpture with angular geometry and rusted finish, symbolizing human elevation in Gurgaon's corporate landscape.",
       ogImage: "/Arts/Standing-sculpture.webp",
       twitterCard: "summary_large_image",
       canonicalUrl: "/artwork/standing-sculpture"
@@ -2573,7 +2573,7 @@ It floats in the vestibule, the vibrant heart of this workplace, drawing focus w
       metaDescription: "Crescent: Monumental corten and stainless steel sculpture with perforated arcs, casting dynamic shadows. Delhi 2025 by Abhinav Goyal.",
       keywords: ["crescent sculpture", "mixed metal art", "Delhi sculpture", "public art", "Abhinav Goyal", "symbolic sculpture", "architectural integration"],
       ogTitle: "Crescent - Dynamic Mixed Metal Art",
-      ogDescription: "Discover Crescent, a monumental corten and stainless steel sculpture with perforated arcs, casting evolving shadows at Delhi’s High Court.",
+      ogDescription: "Discover Crescent, a monumental corten and stainless steel sculpture with perforated arcs, casting evolving shadows at Delhi's High Court.",
       ogImage: "/Arts/Crescent1.webp",
       twitterCard: "summary_large_image",
       canonicalUrl: "/artwork/Crescent-sculpture"
@@ -2673,7 +2673,7 @@ It floats in the vestibule, the vibrant heart of this workplace, drawing focus w
       description: (
         <>
           Where the unseen becomes art. In the expansive <b>KPMG foyer, Mumbai</b>, <b>Solemn</b> commands attention{" "}
-          <br />bold from one angle, vanishing from another. Layered to play with light and illusion, it’s not just a
+          <br />bold from one angle, vanishing from another. Layered to play with light and illusion, it's not just a
           sculpture, <br /> but an ever-shifting experience of strength and mystery.
         </>
       ),
@@ -2691,10 +2691,10 @@ It floats in the vestibule, the vibrant heart of this workplace, drawing focus w
     },
     seo: {
       title: "Solemn - Stainless Steel Sculpture by Abhinav Goyal | Mumbai 2021",
-      metaDescription: "Solemn: Stainless steel sculpture with matte black finish, playing with light and illusion in KPMG’s Mumbai foyer. 2021 by Abhinav Goyal.",
+      metaDescription: "Solemn: Stainless steel sculpture with matte black finish, playing with light and illusion in KPMG's Mumbai foyer. 2021 by Abhinav Goyal.",
       keywords: ["solemn sculpture", "stainless steel art", "Mumbai sculpture", "KPMG art", "Abhinav Goyal", "illusion sculpture", "corporate art"],
       ogTitle: "Solemn - Art of Light and Illusion",
-      ogDescription: "Discover Solemn, a stainless steel sculpture in KPMG’s Mumbai foyer, shifting with light and angles to evoke strength and mystery.",
+      ogDescription: "Discover Solemn, a stainless steel sculpture in KPMG's Mumbai foyer, shifting with light and angles to evoke strength and mystery.",
       ogImage: "/solemn-mumbai-2021.webp",
       twitterCard: "summary_large_image",
       canonicalUrl: "/artwork/solemn"
@@ -2703,7 +2703,7 @@ It floats in the vestibule, the vibrant heart of this workplace, drawing focus w
       "@context": "https://schema.org",
       "@type": "VisualArtwork",
       name: "Solemn",
-      description: "A stainless steel sculpture with a matte black finish, playing with light and illusion to create an ever-shifting experience in KPMG’s Mumbai foyer.",
+      description: "A stainless steel sculpture with a matte black finish, playing with light and illusion to create an ever-shifting experience in KPMG's Mumbai foyer.",
       image: [
         "/solemn-mumbai-2021.webp",
         "/Arts/c1.webp",
