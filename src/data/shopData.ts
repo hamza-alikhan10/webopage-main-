@@ -47,7 +47,7 @@ export const sculptures: Sculpture[] = [
         "signature": "Hand-signed by artist",
         "authenticity": "Sold with certificate of Authenticity",
         "medium": "Corten steel",
-        "dimensions": "H 7ft.5in. | H 5ft",
+        "dimensions": " H 5ft",
         "display": "Outdoor",
         "tags": ["corten steel cactus", "garden sculpture", "desert art", "landscape accent"]
       },
@@ -92,12 +92,12 @@ export const sculptures: Sculpture[] = [
       "id": "metal-Buddha",
       "title": "Dreaming of Dharma",
       "images": ["/dreaming-of-dharma-noida-2024.webp", "/Arts/buddha-close.webp", "/Arts/Gautam-Buddhaa.webp", "/Arts/b08.webp"],
-      "description": "Layered wood-and-brass Buddha radiates tranquil mindfulness for contemporary settings.",
+      "description": "Layered Invisible Buddha radiates tranquil mindfulness for contemporary settings.",
       "details": {
-        "type": "Abstract Art",
+        "type": "Invisible Art",
         "signature": "Hand-signed by artist",
         "authenticity": "Sold with certificate of Authenticity",
-        "medium": "Wood & Brass",
+        "medium": "Stainless Steel",
         "dimensions": "H 6.5ft | W 4ft | D 5ft",
         "display": "Outdoor",
         "tags": ["wood brass Buddha", "layered sculpture", "abstract dharma art", "large Buddha"]
@@ -132,7 +132,7 @@ export const sculptures: Sculpture[] = [
         "signature": "Hand-signed by artist",
         "authenticity": "Sold with certificate of Authenticity",
         "medium": "Corten steel",
-        "dimensions": "H 5ft",
+        "dimensions": "H 6ft",
         "display": "Indoor/Outdoor",
         "tags": ["corten steel figure", "leaning man sculpture", "modern figurative art", "limited edition"]
       },
@@ -174,10 +174,10 @@ export const sculptures: Sculpture[] = [
       "price": "₹5,00,000"
     },
     {
-      "id": "metal-Shivji",
-      "title": "Shivji",
+      "id": "metal-Shivaji",
+      "title": "Shivaji",
       "images": ["/Arts/metal-shivji.webp"],
-      "description": "Stylised corten-steel Shiva idol unites tradition with contemporary aesthetics.",
+      "description": "Contemporary corten-steel Shiva idol unites tradition.",
       "details": {
         "type": "Limited edition",
         "signature": "Hand-signed by artist",
@@ -194,12 +194,12 @@ export const sculptures: Sculpture[] = [
       "id": "metal-garden-sculpture",
       "title": "Bonsai",
       "images": ["/bonsai-delhi-2024.webp", "/Arts/Bonsai-Delhi.webp"],
-      "description": "Corten-steel bonsai tree creates a zen focal point for outdoor spaces.",
+      "description": "Stainless-steel bonsai tree creates a zen focal point for outdoor spaces.",
       "details": {
         "type": "Abstract Art",
         "signature": "Hand-signed by artist",
         "authenticity": "Sold with certificate of Authenticity",
-        "medium": "Corten steel",
+        "medium": "Stainless steel",
         "dimensions": "H 3ft.6in.",
         "display": "Outdoor",
         "tags": ["corten steel bonsai", "garden sculpture", "landscape accent", "zen art"]
@@ -210,14 +210,14 @@ export const sculptures: Sculpture[] = [
     {
       "id": "metal-wing",
       "title": "Winged Form",
-      "images": ["/Arts/000.webp"],
+      "images": ["/Arts/winged-form.webp"],
       "description": "Vertical corten-steel wing evokes ascent and transformative energy.",
       "details": {
         "type": "Abstract Art",
         "signature": "Hand-signed by artist",
         "authenticity": "Sold with certificate of Authenticity",
         "medium": "Corten steel",
-        "dimensions": "H 8ft | W 3ft",
+        "dimensions": "H 8ft2in. | W 6ft6in.",
         "display": "Outdoor",
         "tags": ["corten steel wing", "abstract flight art", "outdoor sculpture", "modern landmark"]
       },
@@ -235,7 +235,7 @@ export const sculptures: Sculpture[] = [
         "authenticity": "Sold with certificate of Authenticity",
         "medium": "Stainless steel",
         "dimensions": "H 35in. | W 54in. | D 14in.",
-        "display": "Outdoor",
+        "display": "Indoor",
         "tags": ["paw console table", "stainless steel furniture", "sculptural table", "designer console"]
       },
       "status": "Readily Available",
@@ -252,7 +252,7 @@ export const sculptures: Sculpture[] = [
         "authenticity": "Sold with certificate of Authenticity",
         "medium": "Stainless steel",
         "dimensions": "H 37in. | D 45in.",
-        "display": "Outdoor",
+        "display": "Indoor",
         "tags": ["stainless steel chair", "sculptural seat", "designer furniture", "modern lap chair"]
       },
       "status": "Readily Available",
@@ -269,7 +269,7 @@ export const sculptures: Sculpture[] = [
         "authenticity": "Sold with certificate of Authenticity",
         "medium": "Wood & Brass",
         "dimensions": "H 74in. | W 39in.",
-        "display": "Outdoor",
+        "display": "Indoor",
         "tags": ["glitch cabinet", "art furniture", "wood brass storage", "contemporary design"]
       },
       "status": "Readily Available",
@@ -284,7 +284,7 @@ export const sculptures: Sculpture[] = [
         "type": "Abstract Art",
         "signature": "Hand-signed by artist",
         "authenticity": "Sold with certificate of Authenticity",
-        "medium": "Corten steel",
+        "medium": "Corten steel & Stainless Steel",
         "dimensions": "H 23.4in | W 34in",
         "display": "Outdoor",
         "tags": ["corten steel tortoise", "animal garden art", "outdoor sculpture", "decorative tortoise"]
@@ -294,15 +294,15 @@ export const sculptures: Sculpture[] = [
     },
     {
       "id": "wood-Tapestry",
-      "title": "Tapestry",
+      "title": "Tapestry of Dreams",
       "images": ["/Arts/tapestry.webp", "/Arts/wood-art.jpeg"],
-      "description": "Mixed-media wall tapestry unites rich wood grain with sculptural depth.",
+      "description": "Wall tapestry unites rich wood grain with sculptural depths.",
       "details": {
         "type": "Abstract Art",
         "signature": "Hand-signed by artist",
         "authenticity": "Sold with certificate of Authenticity",
-        "medium": "Corten steel",
-        "dimensions": "H 8ft | W 3ft",
+        "medium": "Wood",
+        "dimensions": "H 27in. | W 77in.",
         "display": "Indoor",
         "tags": ["wood wall art", "sculptural tapestry", "abstract wall panel", "indoor statement"]
       },
@@ -320,7 +320,7 @@ export const sculptures: Sculpture[] = [
         "authenticity": "Sold with certificate of Authenticity",
         "medium": "Corten steel",
         "dimensions": "H 8ft | W 3ft",
-        "display": "Indoor",
+        "display": "Indoor/Outdoor",
         "tags": ["corten steel figure", "horned sculpture", "large indoor art", "primal energy"]
       },
       "status": "Readily Available",
@@ -330,14 +330,14 @@ export const sculptures: Sculpture[] = [
       "id": "metal-horse",
       "title": "Gilded Stallion",
       "images": ["/Arts/metal-horse.webp", "/Arts/metal_horse.webp"],
-      "description": "Polished stainless-steel stallion sculpture embodies motion and luxury.",
+      "description": "Ultra-marine stainless Steel Stallion sculpture embodies motion and luxury.",
       "details": {
         "type": "Abstract Art",
         "signature": "Hand-signed by artist",
         "authenticity": "Sold with certificate of Authenticity",
         "medium": "Stainless steel",
         "dimensions": "H 7ft",
-        "display": "Indoor",
+        "display": "Indoor/Outdoor",
         "tags": ["stainless steel horse", "stallion sculpture", "luxury art", "equine figure"]
       },
       "status": "Readily Available",
@@ -371,7 +371,7 @@ export const sculptures: Sculpture[] = [
         "authenticity": "Sold with certificate of Authenticity",
         "medium": "Stainless steel with brass finish",
         "dimensions": "H 4ft5in. | W 3ft",
-        "display": "Outdoor",
+        "display": "Indoor",
         "tags": ["brass wall art", "bubble sculpture", "stainless decor", "statement wall"]
       },
       "status": "Readily Available",
@@ -386,12 +386,12 @@ export const sculptures: Sculpture[] = [
         "type": "Landscape Accent",
         "signature": "Hand-signed by artist",
         "authenticity": "Sold with certificate of Authenticity",
-        "medium": "Corten steel",
+        "medium": "Corten/Stainless steel",
         "dimensions": "H 5ft.4in.",
         "display": "Outdoor",
         "tags": ["corten steel flamingos", "bird sculpture", "garden accent", "landscape art"]
       },
-      "status": "Readily Available",
+      "status": "Made to Order",
       "price": "₹3,00,000"
     },
     {
@@ -421,7 +421,7 @@ export const sculptures: Sculpture[] = [
         "signature": "Hand-signed by artist",
         "authenticity": "Sold with certificate of Authenticity",
         "medium": "Corten steel",
-        "dimensions": "H 3ft.6in.",
+        "dimensions": "H 5ft",
         "display": "Outdoor",
         "tags": ["corten steel mermaid", "aquatic art", "outdoor sculpture", "mythical figure"]
       },
