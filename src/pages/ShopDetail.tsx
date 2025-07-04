@@ -4,18 +4,8 @@ import { Helmet } from "react-helmet";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/ui/Footer";
 import { Button } from "@/components/ui/button";
-import { Diamond, Fingerprint, Award, Paintbrush, Ruler, Monitor, Tags, ArrowLeft, ArrowRight, Truck } from "lucide-react";
+import { Diamond, Fingerprint, Award, Paintbrush, Ruler, Monitor, Tags, ArrowLeft, ArrowRight, Clock } from "lucide-react";
 import { sculptures, Sculpture } from "@/data/shopData";
-
-// Utility to calculate discounted price
-const getDiscountedPrice = (price: string) => {
-  // Remove non-numeric characters except dot and comma
-  const numeric = price.replace(/[^\d.,]/g, '').replace(/,/g, '');
-  const value = parseFloat(numeric);
-  if (isNaN(value)) return null;
-  const discounted = Math.round(value * 0.4);
-  return `₹${discounted.toLocaleString('en-IN')}`;
-};
 
 const ShopDetail = () => {
   const { id } = useParams<{ id: string }>();
@@ -58,6 +48,10 @@ const ShopDetail = () => {
       prevIndex < artwork.images.length - 1 ? prevIndex + 1 : 0
     );
   }, [artwork]);
+
+  const handlePriceInquiry = () => {
+    window.open('https://wa.me/919650020485', '_blank');
+  };
 
   if (loading) {
     return (
@@ -216,27 +210,22 @@ const ShopDetail = () => {
             </h1>
           </div>
 
-          {/* Price and Shipping - Mobile */}
-          <div className=" text-center mb-0">
-            <p
-              className="text-lg sm:text-lg font-semibold text-gray-800 "
+          {/* Price Button and Limited Time - Mobile */}
+          <div className="text-center mb-6">
+            <button
+              onClick={handlePriceInquiry}
+              className="w-full bg-gray-100 hover:bg-gray-800 text-black font-bold text-lg px-8 py-2 rounded-lg shadow-md transition-colors mb-3 flex items-center justify-center gap-2"
               style={{ fontFamily: "Montserrat, Poppins, sans-serif" }}
             >
-              {artwork.price === "" ? "Price on Request" : (
-                <>
-                  <span className="line-through text-gray-400 mr-2">{artwork.price}</span>
-                  <span className="text-black-700 font-bold">{getDiscountedPrice(artwork.price)}</span>
-                </>
-              )}
-            </p>
-            {artwork.price !== "" && (
-              <div className="flex items-center justify-center gap-2 text-sm text-gray-600">
-                <Truck className="h-5 w-5" />
-                <span style={{ fontFamily: "Montserrat, Poppins, sans-serif" }}>
-                Shipping as per actual 
-                </span>
-              </div>
-            )}
+              Price on Request
+              <ArrowRight className="h-5 w-5" />
+            </button>
+            <div className="flex items-center justify-center gap-2 text-sm text-gray-600">
+              <Clock className="h-4 w-4" />
+              <span style={{ fontFamily: "Montserrat, Poppins, sans-serif" }}>
+                Limited-time price
+              </span>
+            </div>
           </div>
 
           {/* Description - Mobile */}
@@ -394,34 +383,29 @@ const ShopDetail = () => {
           </div>
 
           {/* Details Section - Desktop */}
-          <div className="lg:col-span-2 space-y-2">
-            {/* Title, Price, and Shipping - Desktop */}
+          <div className="lg:col-span-2 space-y-6">
+            {/* Title and Price Button - Desktop */}
             <div>
               <h1
-                className="text-3xl xl:text-4xl font-bold text-gray-900 "
+                className="text-3xl xl:text-4xl font-bold text-gray-900 mb-4"
                 style={{ fontFamily: "Playfair Display, serif" }}
               >
                 {artwork.title}
               </h1>
-              <p
-                className="text-2xl xl:text-3xl font-semibold text-gray-800 "
+              <button
+                onClick={handlePriceInquiry}
+                className="w-full bg-gray-100 hover:bg-gray-300 text-black font-bold text-xl px-1 py-4 rounded-lg shadow-md transition-colors mb-3 flex items-center justify-center gap-2"
                 style={{ fontFamily: "Montserrat, Poppins, sans-serif" }}
               >
-                {artwork.price === "" ? "Price on Request" : (
-                  <>
-                    <span className="line-through text-gray-400 mr-2">{artwork.price}</span>
-                    <span className="text-black-700 font-bold">{getDiscountedPrice(artwork.price)}</span>
-                  </>
-                )}
-              </p>
-              {artwork.price !== "" && (
-                <div className="flex items-center gap-2 text-sm text-gray-600 mb-3">
-                  <Truck className="h-4 w-4" />
-                  <span style={{ fontFamily: "Montserrat, Poppins, sans-serif" }}>
-                  Shipping as per actual 
-                  </span>
-                </div>
-              )}
+                Price on Request
+                <ArrowRight className="h-5 w-5" />
+              </button>
+              <div className="flex items-center gap-2 text-sm text-gray-600">
+                <Clock className="h-4 w-4" />
+                <span style={{ fontFamily: "Montserrat, Poppins, sans-serif" }}>
+                  Limited-time price
+                </span>
+              </div>
             </div>
 
             {/* Description - Desktop */}
@@ -450,8 +434,6 @@ const ShopDetail = () => {
                     <span className="text-sm text-gray-700">{artwork.details.type}</span>
                   </div>
                 </div>
-                
-               
                 
                 <div className="flex items-start gap-3">
                   <Award className="h-5 w-5 text-gray-600 mt-0.5 flex-shrink-0" />
