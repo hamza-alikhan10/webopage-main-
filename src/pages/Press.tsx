@@ -52,7 +52,7 @@ const publications: Publication[] = [
     {
         name: "Love That Design",
         logo: "/love-that-design-magazine.webp",
-        link: "https://www.artforum.com/article",
+        link: "https://www.lovethatdesign.com/company/formforge/",
     },
     {
         name: "Surfaces Reporter",
@@ -72,7 +72,7 @@ const publications: Publication[] = [
     {
         name: "Rethinking The Future",
         logo: "/rethinking-the-future-magazine.webp",
-        link: "https://www.dezeen.com/article",
+        link: "https://www.re-thinkingthefuture.com/daf2016-product-design-built/wall-installation-formforge/#google_vignette",
     },
     {
         name: "Novatr",

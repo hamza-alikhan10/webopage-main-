@@ -5,6 +5,7 @@ export interface SculptureDetails {
   medium: string;
   dimensions: string;
   display: string;
+  integratedLighting: boolean; // New field for integrated lighting
   tags: string[];
 }
 
@@ -24,7 +25,7 @@ export const sculptures: Sculpture[] = [
       "id": "Buddha-sculpture",
       "title": "Buddha Sculpture",
       "images": ["/buddha-bangalore-2023.webp"],
-      "description": "Hand-signed corten-steel Buddha idol bringing serene elegance to any space.",
+      "description": "Buddha idol radiating serene elegance and mindful presence.",
       "details": {
         "type": "Divine Idol",
         "signature": "Hand-signed by artist",
@@ -32,16 +33,17 @@ export const sculptures: Sculpture[] = [
         "medium": "Corten steel",
         "dimensions": "H 4ft.4in. | W 3ft.4in.",
         "display": "Indoor/Outdoor",
+        "integratedLighting": true,
         "tags": ["corten steel Buddha", "divine idol sculpture", "garden statue", "Buddha artwork"]
       },
-      "status": "Made to Order",
+      "status": "Sold Out",
       "price": "₹4,00,000"
     },
     {
       "id": "metal-cactus",
       "title": "Cactilome",
       "images": ["/Arts/555.webp"],
-      "description": "Bold corten-steel cactus sculpture infuses modern landscapes with desert energy.",
+      "description": "Bold cactus sculpture infuses modern landscapes with desert energy.",
       "details": {
         "type": "Landscape Accent",
         "signature": "Hand-signed by artist",
@@ -49,6 +51,7 @@ export const sculptures: Sculpture[] = [
         "medium": "Corten steel",
         "dimensions": " H 5ft",
         "display": "Outdoor",
+        "integratedLighting": true,
         "tags": ["corten steel cactus", "garden sculpture", "desert art", "landscape accent"]
       },
       "status": "Readily Available",
@@ -58,7 +61,7 @@ export const sculptures: Sculpture[] = [
       "id": "metal-figure",
       "title": "Carefree Seat",
       "images": ["/Arts/carefree-seat-hyderabad.webp", "/Arts/carefree-seat.webp"],
-      "description": "Ergonomic corten-steel seating figure merging sculpture with functional design.",
+      "description": "Ergonomic seating figure merging sculpture with functional design.",
       "details": {
         "type": "Landscape Accent",
         "signature": "Hand-signed by artist",
@@ -66,6 +69,7 @@ export const sculptures: Sculpture[] = [
         "medium": "Corten steel",
         "dimensions": "H 4ft.2in.",
         "display": "Indoor/Outdoor",
+        "integratedLighting": true,
         "tags": ["corten steel seat", "figurative bench", "functional sculpture", "garden art"]
       },
       "status": "Sold Out",
@@ -83,9 +87,10 @@ export const sculptures: Sculpture[] = [
         "medium": "Corten steel",
         "dimensions": "H 3ft",
         "display": "Indoor/Outdoor",
+        "integratedLighting": false,
         "tags": ["corten steel Ganesha", "Ganapati sculpture", "spiritual idol", "divine art"]
       },
-      "status": "Made to Order",
+      "status": "Sold Out",
       "price": "₹3,25,000"
     },
     {
@@ -100,6 +105,7 @@ export const sculptures: Sculpture[] = [
         "medium": "Stainless Steel",
         "dimensions": "H 6.5ft | W 4ft | D 5ft",
         "display": "Outdoor",
+        "integratedLighting": true,
         "tags": ["wood brass Buddha", "layered sculpture", "abstract dharma art", "large Buddha"]
       },
       "status": "Readily Available",
@@ -117,6 +123,7 @@ export const sculptures: Sculpture[] = [
         "medium": "Corten steel",
         "dimensions": "W 3ft.2in.",
         "display": "Indoor/Outdoor",
+        "integratedLighting": false,
         "tags": ["corten steel rhino", "wildlife sculpture", "animal art", "garden centrepiece"]
       },
       "status": "Readily Available",
@@ -134,10 +141,29 @@ export const sculptures: Sculpture[] = [
         "medium": "Corten steel",
         "dimensions": "H 6ft",
         "display": "Indoor/Outdoor",
+        "integratedLighting": true,
         "tags": ["corten steel figure", "leaning man sculpture", "modern figurative art", "limited edition"]
       },
-      "status": "Made to Order",
+      "status": "Sold Out",
       "price": "₹5,00,000"
+    },
+    {
+      "id": "Paw table",
+      "title": "Paw Table",
+      "images": ["/Arts/console-table.webp", "/Arts/console-table-art.webp"],
+      "description": "Blends sculptural flair with everyday function.",
+      "details": {
+        "type": "Abstract Art",
+        "signature": "Hand-signed by artist",
+        "authenticity": "Sold with certificate of Authenticity",
+        "medium": "Stainless steel",
+        "dimensions": "H 35in. | W 54in. | D 14in.",
+        "display": "Indoor",
+        "integratedLighting": false,
+        "tags": ["paw console table", "stainless steel furniture", "sculptural table", "designer console"]
+      },
+      "status": "Readily Available",
+      "price": "₹1,00,000"
     },
     {
       "id": "metal-thinking-figure",
@@ -151,9 +177,10 @@ export const sculptures: Sculpture[] = [
         "medium": "Corten steel",
         "dimensions": "H 6ft.6in.",
         "display": "Indoor/Outdoor",
+        "integratedLighting": true,
         "tags": ["corten steel woman", "thinking sculpture", "abstract figure", "figurative art"]
       },
-      "status": "Made to Order",
+      "status": "Sold Out",
       "price": "₹2,25,000"
     },
     {
@@ -168,6 +195,7 @@ export const sculptures: Sculpture[] = [
         "medium": "Corten steel",
         "dimensions": "H 7ft",
         "display": "Indoor/Outdoor",
+        "integratedLighting": false,
         "tags": ["corten steel fish", "marine sculpture", "outdoor art", "large garden piece"]
       },
       "status": "Readily Available",
@@ -185,9 +213,10 @@ export const sculptures: Sculpture[] = [
         "medium": "Corten steel",
         "dimensions": "H 5ft.6in. | W 3ft",
         "display": "Indoor/Outdoor",
+        "integratedLighting": true,
         "tags": ["corten steel Shiva", "Shivji sculpture", "divine idol", "spiritual art"]
       },
-      "status": "Made to Order",
+      "status": "Sold Out",
       "price": "₹5,00,000"
     },
     {
@@ -202,41 +231,8 @@ export const sculptures: Sculpture[] = [
         "medium": "Stainless steel",
         "dimensions": "H 3ft.6in.",
         "display": "Outdoor",
+        "integratedLighting": true,
         "tags": ["corten steel bonsai", "garden sculpture", "landscape accent", "zen art"]
-      },
-      "status": "Readily Available",
-      "price": "₹1,00,000"
-    },
-    {
-      "id": "metal-wing",
-      "title": "Winged Form",
-      "images": ["/Arts/winged-form.webp"],
-      "description": "Vertical corten-steel wing evokes ascent and transformative energy.",
-      "details": {
-        "type": "Abstract Art",
-        "signature": "Hand-signed by artist",
-        "authenticity": "Sold with certificate of Authenticity",
-        "medium": "Corten steel",
-        "dimensions": "H 8ft2in. | W 6ft6in.",
-        "display": "Outdoor",
-        "tags": ["corten steel wing", "abstract flight art", "outdoor sculpture", "modern landmark"]
-      },
-      "status": "Readily Available",
-      "price": "₹1,00,000"
-    },
-    {
-      "id": "Paw table",
-      "title": "Paw Table",
-      "images": ["/Arts/console-table.webp", "/Arts/console-table-art.webp"],
-      "description": "Stainless-steel paw console table blends sculptural flair with everyday function.",
-      "details": {
-        "type": "Abstract Art",
-        "signature": "Hand-signed by artist",
-        "authenticity": "Sold with certificate of Authenticity",
-        "medium": "Stainless steel",
-        "dimensions": "H 35in. | W 54in. | D 14in.",
-        "display": "Indoor",
-        "tags": ["paw console table", "stainless steel furniture", "sculptural table", "designer console"]
       },
       "status": "Readily Available",
       "price": "₹1,00,000"
@@ -253,11 +249,32 @@ export const sculptures: Sculpture[] = [
         "medium": "Stainless steel",
         "dimensions": "H 37in. | D 45in.",
         "display": "Indoor",
+        "integratedLighting": false,
         "tags": ["stainless steel chair", "sculptural seat", "designer furniture", "modern lap chair"]
       },
       "status": "Readily Available",
       "price": "₹1,00,000"
     },
+    {
+      "id": "metal-wing",
+      "title": "Winged Form",
+      "images": ["/Arts/winged-form.webp"],
+      "description": "Vertical corten-steel wing evokes ascent and transformative energy.",
+      "details": {
+        "type": "Abstract Art",
+        "signature": "Hand-signed by artist",
+        "authenticity": "Sold with certificate of Authenticity",
+        "medium": "Corten steel",
+        "dimensions": "H 8ft2in. | W 6ft6in.",
+        "display": "Outdoor",
+        "integratedLighting": false,
+        "tags": ["corten steel wing", "abstract flight art", "outdoor sculpture", "modern landmark"]
+      },
+      "status": "Readily Available",
+      "price": "₹1,00,000"
+    },
+   
+   
     {
       "id": "Cabinet-art",
       "title": "Glitch Cabinet",
@@ -270,6 +287,7 @@ export const sculptures: Sculpture[] = [
         "medium": "Wood & Brass",
         "dimensions": "H 74in. | W 39in.",
         "display": "Indoor",
+        "integratedLighting": true,
         "tags": ["glitch cabinet", "art furniture", "wood brass storage", "contemporary design"]
       },
       "status": "Readily Available",
@@ -287,6 +305,7 @@ export const sculptures: Sculpture[] = [
         "medium": "Corten steel & Stainless Steel",
         "dimensions": "H 23.4in | W 34in",
         "display": "Outdoor",
+        "integratedLighting": true,
         "tags": ["corten steel tortoise", "animal garden art", "outdoor sculpture", "decorative tortoise"]
       },
       "status": "Readily Available",
@@ -304,6 +323,7 @@ export const sculptures: Sculpture[] = [
         "medium": "Wood",
         "dimensions": "H 27in. | W 77in.",
         "display": "Indoor",
+        "integratedLighting": false,
         "tags": ["wood wall art", "sculptural tapestry", "abstract wall panel", "indoor statement"]
       },
       "status": "Readily Available",
@@ -321,6 +341,7 @@ export const sculptures: Sculpture[] = [
         "medium": "Corten steel",
         "dimensions": "H 8ft | W 3ft",
         "display": "Indoor/Outdoor",
+        "integratedLighting": false,
         "tags": ["corten steel figure", "horned sculpture", "large indoor art", "primal energy"]
       },
       "status": "Readily Available",
@@ -338,6 +359,7 @@ export const sculptures: Sculpture[] = [
         "medium": "Stainless steel",
         "dimensions": "H 7ft",
         "display": "Indoor/Outdoor",
+        "integratedLighting": true,
         "tags": ["stainless steel horse", "stallion sculpture", "luxury art", "equine figure"]
       },
       "status": "Readily Available",
@@ -355,6 +377,7 @@ export const sculptures: Sculpture[] = [
         "medium": "Corten steel",
         "dimensions": "H 5ft | W 2ft",
         "display": "Outdoor",
+        "integratedLighting": true,
         "tags": ["corten steel figure", "sitting sculpture", "outdoor art", "modern minimalism"]
       },
       "status": "Readily Available",
@@ -372,6 +395,7 @@ export const sculptures: Sculpture[] = [
         "medium": "Stainless steel with brass finish",
         "dimensions": "H 4ft5in. | W 3ft",
         "display": "Indoor",
+        "integratedLighting": false,
         "tags": ["brass wall art", "bubble sculpture", "stainless decor", "statement wall"]
       },
       "status": "Readily Available",
@@ -386,12 +410,13 @@ export const sculptures: Sculpture[] = [
         "type": "Landscape Accent",
         "signature": "Hand-signed by artist",
         "authenticity": "Sold with certificate of Authenticity",
-        "medium": "Corten/Stainless steel",
+        "medium": "Corten steel",
         "dimensions": "H 5ft.4in.",
         "display": "Outdoor",
+        "integratedLighting": true,
         "tags": ["corten steel flamingos", "bird sculpture", "garden accent", "landscape art"]
       },
-      "status": "Made to Order",
+      "status": "Sold Out",
       "price": "₹3,00,000"
     },
     {
@@ -406,6 +431,7 @@ export const sculptures: Sculpture[] = [
         "medium": "Stainless steel",
         "dimensions": "H 6ft | W 4ft | D 3ft.8in.",
         "display": "Indoor/Outdoor",
+        "integratedLighting": true,
         "tags": ["stainless steel bull", "animal sculpture", "modern art", "statement piece"]
       },
       "status": "Readily Available",
@@ -423,9 +449,10 @@ export const sculptures: Sculpture[] = [
         "medium": "Corten steel",
         "dimensions": "H 5ft",
         "display": "Outdoor",
+        "integratedLighting": true,
         "tags": ["corten steel mermaid", "aquatic art", "outdoor sculpture", "mythical figure"]
       },
-      "status": "Made to Order",
+      "status": "Sold Out",
       "price": "₹1,00,000"
     },
     {
@@ -440,6 +467,7 @@ export const sculptures: Sculpture[] = [
         "medium": "Stainless steel",
         "dimensions": "H 82in. | W 70in.",
         "display": "Outdoor",
+        "integratedLighting": false,
         "tags": ["stainless steel face", "modern wall sculpture", "abstract portrait", "outdoor statement"]
       },
       "status": "Readily Available",

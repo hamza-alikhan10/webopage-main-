@@ -4,7 +4,7 @@ import { Helmet } from "react-helmet";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/ui/Footer";
 import { Button } from "@/components/ui/button";
-import { Diamond, Fingerprint, Award, Paintbrush, Ruler, Monitor, Tags, ArrowLeft, ArrowRight, Clock } from "lucide-react";
+import { Diamond, Fingerprint, Award, Paintbrush, Ruler, Monitor, Tags, ArrowLeft, ArrowRight, MessageCircle, Lightbulb } from "lucide-react";
 import { sculptures, Sculpture } from "@/data/shopData";
 
 const ShopDetail = () => {
@@ -50,15 +50,18 @@ const ShopDetail = () => {
   }, [artwork]);
 
   const handlePriceInquiry = () => {
-    window.open('https://wa.me/919650020485', '_blank');
+    const message = `Hi, I'm interested in the artwork "${artwork?.title}". Could you please share the pricing details?`;
+    const whatsappUrl = `https://wa.me/919650020485?text=${encodeURIComponent(message)}`;
+    window.open(whatsappUrl, '_blank');
   };
 
   if (loading) {
     return (
       <div className="min-h-screen bg-white" id="Root-padding">
         <Helmet>
-          <title>Loading | Shop - FORMFORGE</title>
-          <meta name="description" content="Loading artwork details..." />
+          <title>Loading Artwork | FORMFORGE Gallery</title>
+          <meta name="description" content="Loading premium artwork details from FORMFORGE contemporary art gallery." />
+          <meta name="robots" content="noindex, nofollow" />
         </Helmet>
         <Navbar />
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-center min-h-[60vh]">
@@ -73,8 +76,9 @@ const ShopDetail = () => {
     return (
       <div className="min-h-screen bg-white" id="Root-padding">
         <Helmet>
-          <title>Artwork Not Found | Shop - FORMFORGE</title>
-          <meta name="description" content="The requested artwork could not be found." />
+          <title>Artwork Not Found | FORMFORGE Gallery</title>
+          <meta name="description" content="The requested artwork could not be found. Browse our contemporary art collection at FORMFORGE." />
+          <meta name="robots" content="noindex, nofollow" />
         </Helmet>
         <Navbar />
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-center min-h-[60vh]">
@@ -87,44 +91,136 @@ const ShopDetail = () => {
     );
   }
 
+  // Generate structured data for better SEO
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "VisualArtwork",
+    name: artwork.title,
+    description: artwork.description,
+    image: artwork.images.map((img) => `https://formforge.com${img}`),
+    creator: {
+      "@type": "Person",
+      name: "Abhinav Goyal",
+      url: "https://formforge.com"
+    },
+    dateCreated: "2023",
+    artMedium: artwork.details.medium,
+    width: {
+      "@type": "QuantitativeValue",
+      value: artwork.details.dimensions.split(" x ")[1]?.replace(/[^\d.]/g, '') || "",
+      unitCode: "CMT"
+    },
+    height: {
+      "@type": "QuantitativeValue", 
+      value: artwork.details.dimensions.split(" x ")[0]?.replace(/[^\d.]/g, '') || "",
+      unitCode: "CMT"
+    },
+    url: `https://formforge.com/shop/${artwork.id}`,
+    mainEntityOfPage: `https://formforge.com/shop/${artwork.id}`,
+    offers: {
+      "@type": "Offer",
+      availability: artwork.status === "Readily Available" ? "https://schema.org/InStock" : "https://schema.org/OutOfStock",
+      priceCurrency: "INR",
+      priceSpecification: {
+        "@type": "PriceSpecification",
+        price: "Contact for pricing"
+      }
+    },
+    keywords: artwork.details.tags.join(", "),
+    artworkSurface: artwork.details.medium,
+    genre: artwork.details.type,
+    isPartOf: {
+      "@type": "Collection",
+      name: "FORMFORGE Contemporary Art Collection"
+    }
+  };
+
+  // Generate meta keywords
+  const metaKeywords = [
+    artwork.title,
+    artwork.details.type,
+    ...artwork.details.tags,
+    "contemporary art",
+    "sculpture",
+    "FORMFORGE",
+    "art gallery",
+    "buy artwork online",
+    "premium art"
+  ].join(", ");
+
   return (
     <div className="min-h-screen bg-white" id="Root-padding">
       <Helmet>
-        <title>{artwork.title} | Shop - FORMFORGE</title>
-        <meta name="description" content={artwork.description} />
-        <meta name="keywords" content={artwork.details.tags.join(", ") + ", Shop, FORMFORGE"} />
-        <meta property="og:title" content={`${artwork.title} | Shop - FORMFORGE`} />
-        <meta property="og:description" content={artwork.description} />
-        <meta property="og:image" content={`https://formforge.com${artwork.images[0]}`} />
-        <meta property="og:url" content={`https://formforge.com/shop/${artwork.id}`} />
+        <title>{artwork.title} - Premium {artwork.details.type} | FORMFORGE Gallery</title>
+        <meta name="description" content={`${artwork.description} Discover this exquisite ${artwork.details.type.toLowerCase()} by Abhinav Goyal at FORMFORGE contemporary art gallery. ${artwork.details.medium}`} />
+        <meta name="keywords" content={metaKeywords} />
+        <meta name="author" content="Abhinav Goyal" />
+        <meta name="robots" content="index, follow, max-image-preview:large" />
+        
+        {/* Open Graph / Facebook */}
         <meta property="og:type" content="website" />
+        <meta property="og:title" content={`${artwork.title} - Premium ${artwork.details.type} | FORMFORGE`} />
+        <meta property="og:description" content={`${artwork.description} Discover this exquisite ${artwork.details.type.toLowerCase()} at FORMFORGE contemporary art gallery.`} />
+        <meta property="og:image" content={`https://formforge.com${artwork.images[0]}`} />
+        <meta property="og:image:alt" content={`${artwork.title} - ${artwork.details.type} artwork by Abhinav Goyal`} />
+        <meta property="og:url" content={`https://formforge.com/shop/${artwork.id}`} />
+        <meta property="og:site_name" content="FORMFORGE Gallery" />
+        <meta property="og:locale" content="en_US" />
+        
+        {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content={`${artwork.title} | Shop - FORMFORGE`} />
-        <meta name="twitter:description" content={artwork.description} />
+        <meta name="twitter:title" content={`${artwork.title} - Premium ${artwork.details.type} | FORMFORGE`} />
+        <meta name="twitter:description" content={`${artwork.description} Discover this exquisite ${artwork.details.type.toLowerCase()} at FORMFORGE contemporary art gallery.`} />
         <meta name="twitter:image" content={`https://formforge.com${artwork.images[0]}`} />
+        <meta name="twitter:image:alt" content={`${artwork.title} - ${artwork.details.type} artwork by Abhinav Goyal`} />
+        
+        {/* Additional SEO Meta Tags */}
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="theme-color" content="#ffffff" />
+        <meta name="application-name" content="FORMFORGE Gallery" />
+        <meta name="apple-mobile-web-app-title" content="FORMFORGE" />
+        <meta name="msapplication-TileColor" content="#ffffff" />
+        
+        {/* Canonical URL */}
         <link rel="canonical" href={`https://formforge.com/shop/${artwork.id}`} />
+        
+        {/* Preload critical resources */}
+        <link rel="preload" as="image" href={artwork.images[0]} />
+        <link rel="preload" as="font" href="/fonts/playfair-display.woff2" type="font/woff2" crossOrigin="anonymous" />
+        <link rel="preload" as="font" href="/fonts/montserrat.woff2" type="font/woff2" crossOrigin="anonymous" />
+        
+        {/* Structured Data */}
+        <script type="application/ld+json">
+          {JSON.stringify(structuredData)}
+        </script>
+        
+        {/* Additional structured data for breadcrumb */}
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
-            "@type": "VisualArtwork",
-            name: artwork.title,
-            description: artwork.description,
-            image: artwork.images.map((img) => `https://formforge.com${img}`),
-            creator: { "@type": "Person", name: "Abhinav Goyal" },
-            dateCreated: "2023",
-            artMedium: artwork.details.medium.split(": ")[1],
-            width: artwork.details.dimensions.split(" x ")[1],
-            height: artwork.details.dimensions.split(" x ")[0],
-            url: `https://formforge.com/shop/${artwork.id}`,
-            offers: {
-              "@type": "Offer",
-              price: artwork.price === "" ? "Price not available" : artwork.price,
-              priceCurrency: "INR",
-              availability: artwork.status === "Readily Available" ? "InStock" : "OutOfStock",
-            },
+            "@type": "BreadcrumbList",
+            itemListElement: [
+              {
+                "@type": "ListItem",
+                position: 1,
+                name: "Home",
+                item: "https://formforge.com"
+              },
+              {
+                "@type": "ListItem",
+                position: 2,
+                name: "Shop",
+                item: "https://formforge.com/shop"
+              },
+              {
+                "@type": "ListItem",
+                position: 3,
+                name: artwork.title,
+                item: `https://formforge.com/shop/${artwork.id}`
+              }
+            ]
           })}
         </script>
-        <link rel="preload" as="image" href={artwork.images[0]} />
       </Helmet>
       <Navbar />
       
@@ -136,7 +232,7 @@ const ShopDetail = () => {
             <div className="relative overflow-hidden bg-gray-50 rounded-lg mb-4 aspect-square">
               <img
                 src={artwork.images[selectedImageIndex]}
-                alt={`${artwork.title} - View ${selectedImageIndex + 1}`}
+                alt={`${artwork.title} - View ${selectedImageIndex + 1} of ${artwork.images.length}`}
                 className="w-full h-full object-contain transition-transform duration-300"
                 loading="lazy"
               />
@@ -201,7 +297,7 @@ const ShopDetail = () => {
           </div>
 
           {/* Title - Mobile */}
-          <div className=" text-center">
+          <div className="text-center ">
             <h1
               className="text-2xl sm:text-3xl font-bold text-gray-900 leading-tight"
               style={{ fontFamily: "Playfair Display, serif" }}
@@ -210,28 +306,23 @@ const ShopDetail = () => {
             </h1>
           </div>
 
-          {/* Price Button and Limited Time - Mobile */}
-          <div className="text-center mb-6">
+          {/* Price Button and Contact Info - Mobile */}
+          <div className="text-center mb-1">
             <button
               onClick={handlePriceInquiry}
-              className="w-full bg-gray-100 hover:bg-gray-800 text-black font-bold text-lg px-8 py-2 rounded-lg shadow-md transition-colors mb-3 flex items-center justify-center gap-2"
+              className="inline-flex items-center gap-2 bg-gray-100 hover:bg-gray-200 text-gray-900 font-medium text-sm px-6 py-2.5 rounded-lg shadow-sm transition-colors"
               style={{ fontFamily: "Montserrat, Poppins, sans-serif" }}
             >
+              <MessageCircle className="h-4 w-4" />
               Price on Request
-              <ArrowRight className="h-5 w-5" />
             </button>
-            <div className="flex items-center justify-center gap-2 text-sm text-gray-600">
-              <Clock className="h-4 w-4" />
-              <span style={{ fontFamily: "Montserrat, Poppins, sans-serif" }}>
-                Limited-time price
-              </span>
-            </div>
+           
           </div>
 
           {/* Description - Mobile */}
-          <div className="mb-6">
+          <div className="mb-1">
             <p
-              className="text-black-900 leading-relaxed text-base text-center px-10"
+              className="text-gray-900 leading-relaxed text-base text-center px-1"
               style={{ fontFamily: "Montserrat, Poppins, sans-serif" }}
             >
               {artwork.description}
@@ -255,7 +346,6 @@ const ShopDetail = () => {
                 </div>
               </div>
         
-              
               <div className="flex items-start gap-3">
                 <Award className="h-5 w-5 text-gray-600 mt-0.5 flex-shrink-0" />
                 <div className="min-w-0">
@@ -279,6 +369,16 @@ const ShopDetail = () => {
                   <span className="text-sm text-gray-700">{artwork.details.dimensions}</span>
                 </div>
               </div>
+              
+              {artwork.details.integratedLighting && (
+  <div className="flex items-start gap-3">
+    <Lightbulb className="h-5 w-5 text-gray-600 mt-0.5 flex-shrink-0" />
+    <div className="min-w-0">
+      <span className="block text-sm font-medium text-gray-900">Integrated Lighting</span>
+      <span className="text-sm text-gray-700">LED illumination system included</span>
+    </div>
+  </div>
+)}
               
               <div className="flex items-start gap-3">
                 <Monitor className="h-5 w-5 text-gray-600 mt-0.5 flex-shrink-0" />
@@ -318,7 +418,7 @@ const ShopDetail = () => {
             <div className="relative overflow-hidden bg-gray-50 rounded-lg mb-4 aspect-square">
               <img
                 src={artwork.images[selectedImageIndex]}
-                alt={`${artwork.title} - View ${selectedImageIndex + 1}`}
+                alt={`${artwork.title} - View ${selectedImageIndex + 1} of ${artwork.images.length}`}
                 className="w-full h-full object-contain transition-transform duration-300 hover:scale-105"
                 loading="lazy"
               />
@@ -387,31 +487,28 @@ const ShopDetail = () => {
             {/* Title and Price Button - Desktop */}
             <div>
               <h1
-                className="text-3xl xl:text-4xl font-bold text-gray-900 mb-4"
+                className="text-3xl xl:text-4xl font-bold text-gray-900 p-1 mb-3"
                 style={{ fontFamily: "Playfair Display, serif" }}
               >
                 {artwork.title}
               </h1>
-              <button
-                onClick={handlePriceInquiry}
-                className="w-full bg-gray-100 hover:bg-gray-300 text-black font-bold text-xl px-1 py-4 rounded-lg shadow-md transition-colors mb-3 flex items-center justify-center gap-2"
-                style={{ fontFamily: "Montserrat, Poppins, sans-serif" }}
-              >
-                Price on Request
-                <ArrowRight className="h-5 w-5" />
-              </button>
-              <div className="flex items-center gap-2 text-sm text-gray-600">
-                <Clock className="h-4 w-4" />
-                <span style={{ fontFamily: "Montserrat, Poppins, sans-serif" }}>
-                  Limited-time price
-                </span>
+              <div className="mb-1 ">
+                <button
+                  onClick={handlePriceInquiry}
+                  className="inline-flex items-center gap-2 bg-gray-100 hover:bg-gray-200 text-gray-900 font-medium text-base px-6 py-3 rounded-lg shadow-sm transition-colors"
+                  style={{ fontFamily: "Montserrat, Poppins, sans-serif" }}
+                >
+                  <MessageCircle className="h-4 w-4" />
+                  Price on Request
+                </button>
               </div>
+              
             </div>
 
             {/* Description - Desktop */}
             <div>
               <p
-                className="text-gray-700 leading-relaxed text-base"
+                className="text-gray-700 leading-relaxed text-left"
                 style={{ fontFamily: "Montserrat, Poppins, sans-serif" }}
               >
                 {artwork.description}
@@ -419,7 +516,7 @@ const ShopDetail = () => {
             </div>
 
             {/* Artwork Details - Desktop */}
-            <div className="bg-gray-50 rounded-lg p-6">
+            <div className="bg-gray-50 rounded-lg p-2">
               <h2
                 className="text-xl font-semibold text-gray-900 mb-4"
                 style={{ fontFamily: "Montserrat, Poppins, sans-serif" }}
@@ -459,6 +556,16 @@ const ShopDetail = () => {
                   </div>
                 </div>
                 
+                {artwork.details.integratedLighting && (
+                  <div className="flex items-start gap-3">
+                    <Lightbulb className="h-5 w-5 text-gray-600 mt-0.5 flex-shrink-0" />
+                    <div className="min-w-0">
+                      <span className="block text-sm font-medium text-gray-900">Integrated Lighting</span>
+                      <span className="text-sm text-gray-700">LED illumination system included</span>
+                    </div>
+                  </div>
+                )}
+                
                 <div className="flex items-start gap-3">
                   <Monitor className="h-5 w-5 text-gray-600 mt-0.5 flex-shrink-0" />
                   <div className="min-w-0">
@@ -493,7 +600,7 @@ const ShopDetail = () => {
 
         {/* Contact/Inquiry Section - Full Width */}
         <div className="mt-6 sm:mt-12">
-          <div className="bg-gray-50 rounded-lg p-1 sm:p-8 text-center">
+          <div className="bg-gray-50 rounded-lg p-6 sm:p-8 text-center">
             <h3 
               className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4"
               style={{ fontFamily: "Montserrat, Poppins, sans-serif" }}
