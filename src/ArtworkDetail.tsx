@@ -1,24 +1,40 @@
 import { useParams } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import { useState, useCallback } from "react";
-import Navbar from "@/components/Navbar"; // Adjust path as needed
-import Footer from "@/components/ui/Footer"; // Use Shadcn/UI path
-import { Button } from "@/components/ui/button"; // Use Shadcn/UI path
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/ui/Footer";
+import { Button } from "@/components/ui/button";
 import { ArrowLeft, ArrowRight } from "lucide-react";
-import { CardContent } from "@/components/ui/card"; // Use Shadcn/UI path
-import { ARTWORK_IMAGES, ImageData } from "./data/artworkData"; // Adjust path as needed
+import { CardContent } from "@/components/ui/card";
+import { ARTWORK_IMAGES, ImageData } from "./data/artworkData";
 
 const ArtworkDetail = () => {
-  const { slug } = useParams<{ slug: string }>();
-  const artwork = ARTWORK_IMAGES.find((item) => item.slug === slug) as ImageData | undefined;
+  const { id } = useParams<{ id: string }>();
+  console.log("Artwork ID from URL:", id);
+  const artwork = ARTWORK_IMAGES.find((item) => item.id === id);
+  console.log("Found artwork:", artwork);
   const [selectedImageIndex, setSelectedImageIndex] = useState<number>(0);
 
-  if (!artwork) {
+  if (!id) {
+    console.error("No ID provided in URL");
     return (
       <div className="min-h-screen bg-white">
         <Navbar />
         <div className="container mx-auto max-w-6xl p-4">
-          <p>Artwork not found</p>
+          <p>Invalid artwork ID</p>
+        </div>
+        <Footer />
+      </div>
+    );
+  }
+
+  if (!artwork) {
+    console.error("No artwork found for ID:", id);
+    return (
+      <div className="min-h-screen bg-white">
+        <Navbar />
+        <div className="container mx-auto max-w-6xl p-4">
+          <p>Artwork not found for ID: {id}</p>
         </div>
         <Footer />
       </div>
@@ -52,7 +68,7 @@ const ArtworkDetail = () => {
           content={
             typeof artwork.details.description === "string"
               ? artwork.details.description
-              : "Luxury Corten steel sculpture by FormForge."
+              : artwork.seo.metaDescription // Use SEO description for better accuracy
           }
         />
         <meta
@@ -65,11 +81,11 @@ const ArtworkDetail = () => {
           content={
             typeof artwork.details.description === "string"
               ? artwork.details.description
-              : "Luxury Corten steel sculpture by FormForge."
+              : artwork.seo.metaDescription
           }
         />
         <meta property="og:image" content={`https://formforge.com${artwork.images[0].src}`} />
-        <meta property="og:url" content={`https://formforge.com/gallery/${artwork.slug}`} />
+        <meta property="og:url" content={`https://formforge.com/gallery/${artwork.id}`} /> {/* Updated to /gallery */}
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={`${artwork.details.heading} | FormForge Gallery`} />
@@ -78,11 +94,11 @@ const ArtworkDetail = () => {
           content={
             typeof artwork.details.description === "string"
               ? artwork.details.description
-              : "Luxury Corten steel sculpture by FormForge."
+              : artwork.seo.metaDescription
           }
         />
         <meta name="twitter:image" content={`https://formforge.com${artwork.images[0].src}`} />
-        <link rel="canonical" href={`https://formforge.com/gallery/${artwork.slug}`} />
+        <link rel="canonical" href={`https://formforge.com/gallery/${artwork.id}`} /> {/* Updated to /gallery */}
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
@@ -92,7 +108,7 @@ const ArtworkDetail = () => {
             "description":
               typeof artwork.details.description === "string"
                 ? artwork.details.description
-                : "Luxury Corten steel sculpture by FormForge.",
+                : artwork.seo.metaDescription,
             "contentLocation": {
               "@type": "Place",
               "name": artwork.details.location || "Worldwide",
@@ -122,27 +138,24 @@ const ArtworkDetail = () => {
 
       <div className="max-w-10xl flex flex-col items-center justify-center mx-auto">
         <Navbar />
-
         <div className="container mx-auto max-w-6xl">
           <div className="landscape-view p-4 md:p-8 bg-gray-50 relative">
             <img
               src={artwork.images[selectedImageIndex].src}
               alt={artwork.images[selectedImageIndex].alt}
               loading="lazy"
-              key={`${artwork.slug}-${selectedImageIndex}`}
+              key={`${artwork.id}-${selectedImageIndex}`}
               className="mx-auto object-contain max-h-[65vh] w-auto"
               onError={(e) => {
                 console.error("Image failed to load:", artwork.images[selectedImageIndex].src);
-                e.currentTarget.src = "/images/placeholder.webp"; // Updated fallback path
+                e.currentTarget.src = "/images/placeholder.png";
               }}
             />
-
             {artwork.images.length > 1 && (
               <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-black bg-opacity-50 text-white px-3 py-1 rounded-full text-sm">
                 {selectedImageIndex + 1} / {artwork.images.length}
               </div>
             )}
-
             {artwork.images.length > 1 && (
               <>
                 <Button
@@ -154,7 +167,6 @@ const ArtworkDetail = () => {
                 >
                   <ArrowLeft className="h-5 w-5" />
                 </Button>
-
                 <Button
                   variant="outline"
                   size="icon"
@@ -167,48 +179,33 @@ const ArtworkDetail = () => {
               </>
             )}
           </div>
-
           <CardContent className="p-6 md:p-8 space-y-6">
             <div className="border-b pb-4 flex justify-center">
               <div className="flex flex-wrap items-baseline gap-2 text-center">
                 <h2
                   className="text-2xl md:text-3xl font-semibold"
-                  style={{
-                    fontFamily: "Montserrat",
-                    letterSpacing: ".06em",
-                  }}
+                  style={{ fontFamily: "Montserrat", letterSpacing: ".06em" }}
                 >
                   {artwork.details.heading}
                 </h2>
                 <p
                   className="text-black-600 md:text-3xl"
-                  style={{
-                    fontFamily: "Montserrat, Poppins, sans-serif",
-                    color: "rgb(8, 7, 7)",
-                  }}
+                  style={{ fontFamily: "Montserrat, Poppins, sans-serif", color: "rgb(8, 7, 7)" }}
                 >
                   {artwork.details.location}
                 </p>
               </div>
             </div>
-
             <div>
               <h3
                 className="text-xl mb-3"
-                style={{
-                  fontFamily: "Montserrat",
-                  letterSpacing: ".06em",
-                }}
+                style={{ fontFamily: "Montserrat", letterSpacing: ".06em" }}
               >
                 Description
               </h3>
               <div
                 className="prose max-w-none"
-                style={{
-                  fontFamily: "Montserrat, Poppins, sans-serif",
-                  lineHeight: "1.6em",
-                  color: "rgb(87, 87, 87)",
-                }}
+                style={{ fontFamily: "Montserrat, Poppins, sans-serif", lineHeight: "1.6em", color: "rgb(87, 87, 87)" }}
               >
                 {typeof artwork.details.description === "string" ? (
                   <p>{artwork.details.description}</p>
@@ -217,47 +214,31 @@ const ArtworkDetail = () => {
                 )}
               </div>
             </div>
-
             <div>
               <h3
                 className="text-xl mb-3"
-                style={{
-                  fontFamily: "Montserrat",
-                  letterSpacing: ".06em",
-                }}
+                style={{ fontFamily: "Montserrat", letterSpacing: ".06em" }}
               >
                 Details
               </h3>
               <div
                 className="text-gray-700"
-                style={{
-                  fontFamily: "Montserrat, Poppins, sans-serif",
-                  lineHeight: "1.6em",
-                  color: "rgb(87, 87, 87)",
-                }}
+                style={{ fontFamily: "Montserrat, Poppins, sans-serif", lineHeight: "1.6em", color: "rgb(87, 87, 87)" }}
               >
                 {typeof artwork.details.details === "string" ? <p>{artwork.details.details}</p> : artwork.details.details}
               </div>
             </div>
-
             {artwork.details.credits && (
               <div>
                 <h3
                   className="text-xl mb-3"
-                  style={{
-                    fontFamily: "Montserrat",
-                    letterSpacing: ".06em",
-                  }}
+                  style={{ fontFamily: "Montserrat", letterSpacing: ".06em" }}
                 >
                   Credits
                 </h3>
                 <div
                   className="text-gray-700"
-                  style={{
-                    fontFamily: "Montserrat, Poppins, sans-serif",
-                    lineHeight: "1.6em",
-                    color: "rgb(87, 87, 87)",
-                  }}
+                  style={{ fontFamily: "Montserrat, Poppins, sans-serif", lineHeight: "1.6em", color: "rgb(87, 87, 87)" }}
                 >
                   {typeof artwork.details.credits === "string" ? (
                     <p>{artwork.details.credits}</p>
@@ -269,7 +250,6 @@ const ArtworkDetail = () => {
             )}
           </CardContent>
         </div>
-
         <Footer />
       </div>
     </div>

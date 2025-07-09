@@ -229,7 +229,7 @@ const ShopDetail = () => {
         <div className="block lg:hidden">
           {/* Image Section - Mobile */}
           <div className="mb-6">
-            <div className="relative overflow-hidden bg-gray-50 rounded-lg mb-4 aspect-square">
+            <div className="relative overflow-hidden bg-gray-50 rounded-lg mb-1 aspect-square">
               <img
                 src={artwork.images[selectedImageIndex]}
                 alt={`${artwork.title} - View ${selectedImageIndex + 1} of ${artwork.images.length}`}

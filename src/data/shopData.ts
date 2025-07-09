@@ -103,7 +103,7 @@ export const sculptures: Sculpture[] = [
         "signature": "Hand-signed by artist",
         "authenticity": "Sold with certificate of Authenticity",
         "medium": "Stainless Steel",
-        "dimensions": "H 6.5ft | W 4ft | D 5ft",
+        "dimensions": "H 6ft5in. | W 4ft | D 5ft",
         "display": "Outdoor",
         "integratedLighting": true,
         "tags": ["wood brass Buddha", "layered sculpture", "abstract dharma art", "large Buddha"]
@@ -153,7 +153,7 @@ export const sculptures: Sculpture[] = [
       "images": ["/Arts/console-table.webp", "/Arts/console-table-art.webp"],
       "description": "Blends sculptural flair with everyday function.",
       "details": {
-        "type": "Abstract Art",
+        "type": "Bespoke Furniture",
         "signature": "Hand-signed by artist",
         "authenticity": "Sold with certificate of Authenticity",
         "medium": "Stainless steel",
@@ -229,7 +229,7 @@ export const sculptures: Sculpture[] = [
         "signature": "Hand-signed by artist",
         "authenticity": "Sold with certificate of Authenticity",
         "medium": "Stainless steel",
-        "dimensions": "H 3ft.6in.",
+        "dimensions": "H 8ft6in. | W 3ft6in.",
         "display": "Outdoor",
         "integratedLighting": true,
         "tags": ["corten steel bonsai", "garden sculpture", "landscape accent", "zen art"]
@@ -243,7 +243,7 @@ export const sculptures: Sculpture[] = [
       "images": ["/Arts/Paw-seat.webp", "/Arts/paw-seat-.webp"],
       "description": "Curved stainless-steel lap chair delivers artful seating and standout style.",
       "details": {
-        "type": "Abstract Art",
+        "type": "Bespoke Furniture",
         "signature": "Hand-signed by artist",
         "authenticity": "Sold with certificate of Authenticity",
         "medium": "Stainless steel",
@@ -281,7 +281,7 @@ export const sculptures: Sculpture[] = [
       "images": ["/Arts/Cabinet-art.webp", "/Arts/Cabinet_Art.webp"],
       "description": "Wood-and-brass glitch cabinet transforms storage into collectible art.",
       "details": {
-        "type": "Abstract Art",
+        "type": "Bespoke Furniture",
         "signature": "Hand-signed by artist",
         "authenticity": "Sold with certificate of Authenticity",
         "medium": "Wood & Brass",
@@ -317,7 +317,7 @@ export const sculptures: Sculpture[] = [
       "images": ["/Arts/tapestry.webp", "/Arts/wood-art.jpeg"],
       "description": "Wall tapestry unites rich wood grain with sculptural depths.",
       "details": {
-        "type": "Abstract Art",
+        "type": "Wall Art",
         "signature": "Hand-signed by artist",
         "authenticity": "Sold with certificate of Authenticity",
         "medium": "Wood",
@@ -385,11 +385,11 @@ export const sculptures: Sculpture[] = [
     },
     {
       "id": "metal-wall-art",
-      "title": "Wall Sculpture",
+      "title": "Floating Bubbles ",
       "images": ["/Arts/10999.png"],
       "description": "Brass-finished stainless bubble cluster glows with fluid modern elegance.",
       "details": {
-        "type": "Abstract Art",
+        "type": "Wall Art",
         "signature": "Hand-signed by artist",
         "authenticity": "Sold with certificate of Authenticity",
         "medium": "Stainless steel with brass finish",
@@ -461,7 +461,7 @@ export const sculptures: Sculpture[] = [
       "images": ["/Arts/metal-face.webp", "/Arts/metal_face.webp"],
       "description": "Oversized stainless-steel face sculpture fuses abstraction with polished reflection.",
       "details": {
-        "type": "Abstract Art",
+        "type": "Wall Sculpture",
         "signature": "Hand-signed by artist",
         "authenticity": "Sold with certificate of Authenticity",
         "medium": "Stainless steel",

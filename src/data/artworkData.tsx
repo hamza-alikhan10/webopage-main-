@@ -1,6 +1,7 @@
 import React from "react";
 
 export interface ImageData {
+  id: string;
   slug: string;
   images: { src: string; alt: string }[];
   caption: string | React.ReactNode;
@@ -45,6 +46,7 @@ export interface ImageData {
 
 export const ARTWORK_IMAGES: ImageData[] = [
   {
+    id: "twin-spirits",
     slug: "twin-spirits",
     images: [
       { 
@@ -88,7 +90,7 @@ export const ARTWORK_IMAGES: ImageData[] = [
       ogDescription: "Discover Twin Spirits, a magnificent 10ft stainless steel sculpture exploring duality and harmony. Created by renowned artist Abhinav Goyal in Chennai, 2023.",
       ogImage: "/Arts/twin-spirits-sculpture-chennai-2023.webp",
       twitterCard: "summary_large_image",
-      canonicalUrl: "/artwork/twin-spirits"
+      canonicalUrl: "/gallery/twin-spirits"
     },
     schema: {
       "@context": "https://schema.org",
@@ -108,10 +110,11 @@ export const ARTWORK_IMAGES: ImageData[] = [
       artworkSurface: "Ultramarine PU Finish",
       height: "10 feet",
       locationCreated: "Chennai, India",
-      url: "/artwork/twin-spirits"
+      url: "/gallery/twin-spirits"
     }
   },
   {
+    id: "metamorphosis-muse",
     slug: "metamorphosis-muse",
     images: [
       { 
@@ -159,7 +162,7 @@ export const ARTWORK_IMAGES: ImageData[] = [
     seo: {
       title: "Metamorphosis Muse - Golden Butterfly Sculpture by Abhinav Goyal | Hyderabad 2025",
       metaDescription: "The Metamorphosis Muse: Divine transformation sculpture with golden butterflies. Stainless steel with satin brass finish by Abhinav Goyal. Hyderabad 2025.",
-      keywords: ["metamorphosis sculpture", "golden butterfly art", "transformation sculpture", "Abhinav Goyal", "Hyderabad art", "indoor sculpture", "goddess sculpture", "sculpture with shalini passi",],
+      keywords: ["metamorphosis sculpture", "golden butterfly art", "transformation sculpture", "Abhinav Goyal", "Hyderabad art", "indoor sculpture", "goddess sculpture", "sculpture with shalini passi"],
       ogTitle: "The Metamorphosis Muse - Divine Transformation Sculpture",
       ogDescription: "Experience the divine embodiment of transformation with golden butterflies symbolizing rebirth and evolution. A masterpiece by Abhinav Goyal.",
       ogImage: "/Arts/golden-butterfly-sculpture-hyderabad-2025.webp",
@@ -189,6 +192,7 @@ export const ARTWORK_IMAGES: ImageData[] = [
     }
   },
   {
+    id: "vighnaharta",
     slug: "vighnaharta",
     images: [
       { src: "/vighnaharta-mumbai-2022.webp", alt: "Vighnaharta Sculpture in Mumbai, India, 2022" },
@@ -224,7 +228,7 @@ export const ARTWORK_IMAGES: ImageData[] = [
     seo: {
       title: "Vighnaharta - Contemporary Ganesha Sculpture by Abhinav Goyal | Mumbai 2022",
       metaDescription: "Vighnaharta: Modern interpretation of Lord Ganesha sculpture. Stainless steel with weatherproof finish. Merges traditional symbolism with contemporary design. Mumbai 2022.",
-      keywords: ["Ganesha sculpture", "Vighnaharta", "contemporary religious art", "Abhinav Goyal", "Mumbai sculpture", "spiritual art", "modern Ganesha", ],
+      keywords: ["Ganesha sculpture", "Vighnaharta", "contemporary religious art", "Abhinav Goyal", "Mumbai sculpture", "spiritual art", "modern Ganesha"],
       ogTitle: "Vighnaharta - Contemporary Lord Ganesha Sculpture",
       ogDescription: "Experience the divine power of Vighnaharta, a modern interpretation of Lord Ganesha that merges traditional symbolism with contemporary artistry.",
       ogImage: "/vighnaharta-mumbai-2022.webp",
@@ -256,6 +260,7 @@ export const ARTWORK_IMAGES: ImageData[] = [
     }
   },
   {
+    id: "david",
     slug: "david",
     images: [
       { src: "/david-casamia-uae-2021.webp", alt: "David Sculpture at Casamia, UAE, 2021" },
@@ -337,6 +342,7 @@ export const ARTWORK_IMAGES: ImageData[] = [
     }
   },
   {
+    id: "lotus-nouvel",
     slug: "lotus-nouvel",
     images: [{ src: "/lotus-nouvel-pune-2020.webp", alt: "Lotus Nouvel Sculpture made of corten steel" }],
     caption: <>The Lotus Nouvel</>,
@@ -401,6 +407,7 @@ export const ARTWORK_IMAGES: ImageData[] = [
     }
   },
   {
+    id: "mermaid-ohllnam",
     slug: "mermaid-ohllnam",
     images: [
       { src: "/mermaid-ohl-nam-vadodara-2022.webp", alt: "Mermaid Sculpture in Vadodara, India, 2022" },
@@ -475,6 +482,7 @@ export const ARTWORK_IMAGES: ImageData[] = [
     }
   },
   {
+    id: "levitating-whale",
     slug: "levitating-whale",
     images: [
       { src: "/levitating-whale-kpmg-gurugram-2022.webp", alt: "Levitating Whale Sculpture at KPMG, Gurugram, India, 2022" },
@@ -536,6 +544,7 @@ It floats in the vestibule, the vibrant heart of this workplace, drawing focus w
     }
   },
   {
+    id: "tree-of-life",
     slug: "tree-of-life",
     images: [{ src: "/tree-of-life-delhi-2025.webp", alt: "Tree Sculpture made of corten steel" }],
     caption: <>The Tree of Life</>,
@@ -584,16 +593,17 @@ It floats in the vestibule, the vibrant heart of this workplace, drawing focus w
     }
   },
   {
-    slug: "inverted-cactus",
-    images: [
-      { src: "/inverted-cactus-hyderabad-2023.webp", alt: "Inverted Cactus Sculpture in Hyderabad" },
-      { src: "/Arts/inverted-cactus-corten-steel.webp", alt: "Inverted Cactus Sculpture made up of corten steel" },
+    "id": "inverted-cactus",
+    "slug": "inverted-cactus",
+    "images": [
+      { "src": "/inverted-cactus-hyderabad-2023.webp", "alt": "Inverted Cactus Sculpture in Hyderabad" },
+      { "src": "/Arts/inverted-cactus-corten-steel.webp", "alt": "Inverted Cactus Sculpture made up of corten steel" }
     ],
-    caption: <>Inverted Cactus</>,
-    details: {
-      heading: "Inverted Cactus",
-      location: "",
-      description: (
+    "caption": <>Inverted Cactus</>,
+    "details": {
+      "heading": "Inverted Cactus",
+      "location": "",
+      "description": (
         <>
           A mesmerizing fusion of nature and design, Inverted Cactus reimagines the iconic desert form <br />as a suspended,
           illuminated sculpture. Crafted in corten steel with a rusted PU finish, its warm <br /> earthy tones complement
@@ -602,943 +612,937 @@ It floats in the vestibule, the vibrant heart of this workplace, drawing focus w
           of the landscape.
         </>
       ),
-      details: (
+      "details": "Material: Corten Steel",
+      "credits": (
         <>
-          Crafted from Corten Steel with a rust finish sealed with Imported PU,
-          <br /> Dimension: 1500mm x 765mm x 200mm.
+          Artist: Abhinav Goyal <br /> Commissioned for: Private Residence, Mumbai
         </>
-      ),
-      credits: (
-        <>
-          Artist: Abhinav Goyal <br /> Commissioned for: Private Residence, Mumbai <br /> Photography: Kiasma Studio
-        </>
-      ),
+      )
     },
-    seo: {
-      title: "Inverted Cactus - Suspended Corten Steel Sculpture by Abhinav Goyal | Hyderabad 2023",
-      metaDescription: "Inverted Cactus: Mesmerizing suspended corten steel sculpture with rusted PU finish and integrated lighting. Hyderabad 2023 by Abhinav Goyal.",
-      keywords: ["inverted cactus sculpture", "suspended art", "corten steel sculpture", "Hyderabad art", "illuminated sculpture", "Abhinav Goyal", "modern desert art"],
-      ogTitle: "Inverted Cactus - Illuminated Desert Oasis Sculpture",
-      ogDescription: "Discover Inverted Cactus, a suspended corten steel sculpture with warm, rusted tones and soft lighting, transforming spaces into enchanting oases.",
-      ogImage: "/inverted-cactus-hyderabad-2023.webp",
-      twitterCard: "summary_large_image",
-      canonicalUrl: "/artwork/inverted-cactus"
+    "seo": {
+      "title": "Inverted Cactus - Suspended Corten Steel Sculpture by Abhinav Goyal | Hyderabad 2023",
+      "metaDescription": "Inverted Cactus: Mesmerizing suspended corten steel sculpture with rusted PU finish and integrated lighting. Hyderabad 2023 by Abhinav Goyal.",
+      "keywords": ["inverted cactus sculpture", "suspended art", "corten steel sculpture", "Hyderabad art", "illuminated sculpture", "Abhinav Goyal", "modern desert art"],
+      "ogTitle": "Inverted Cactus - Illuminated Desert Oasis Sculpture",
+      "ogDescription": "Discover Inverted Cactus, a suspended corten steel sculpture with warm, rusted tones and soft lighting, transforming spaces into enchanting oases.",
+      "ogImage": "/inverted-cactus-hyderabad-2023.webp",
+      "twitterCard": "summary_large_image",
+      "canonicalUrl": "/artwork/inverted-cactus"
     },
-    schema: {
+    "schema": {
       "@context": "https://schema.org",
       "@type": "VisualArtwork",
-      name: "Inverted Cactus",
-      description: "A mesmerizing fusion of nature and design, Inverted Cactus reimagines the iconic desert form as a suspended, illuminated sculpture with warm, earthy tones.",
-      image: [
+      "name": "Inverted Cactus",
+      "description": "A mesmerizing fusion of nature and design, Inverted Cactus reimagines the iconic desert form as a suspended, illuminated sculpture with warm, earthy tones.",
+      "image": [
         "/inverted-cactus-hyderabad-2023.webp",
-        "/Arts/012.webp"
+        "/Arts/inverted-cactus-corten-steel.webp"
       ],
-      creator: {
+      "creator": {
         "@type": "Person",
-        name: "Abhinav Goyal"
+        "name": "Abhinav Goyal"
       },
-      dateCreated: "2023",
-      artMedium: "Corten Steel",
-      artworkSurface: "Rust with Imported PU",
-      height: "1500mm",
-      width: "765mm",
-      depth: "200mm",
-      locationCreated: "Hyderabad, India",
-      url: "/artwork/inverted-cactus"
+      "dateCreated": "2023",
+      "artMedium": "Corten Steel",
+      "locationCreated": "Hyderabad, India",
+      "url": "/artwork/inverted-cactus"
     }
   },
   {
-    slug: "sculptural-totems",
-    images: [
-      { src: "/sculptural-totems-hyderabad-2025.webp", alt: "Sculptural Totems in Hyderabad, India, 2025" },
-      { src: "/Arts/t10.webp", alt: "Sculptural Totems made up of corten steel" },
+    "id": "sculptural-totems",
+    "slug": "sculptural-totems",
+    "images": [
+      { "src": "/sculptural-totems-hyderabad-2025.webp", "alt": "Sculptural Totems in Hyderabad, India, 2025" },
+      { "src": "/Arts/t10.webp", "alt": "Sculptural Totems made up of corten steel" }
     ],
-    caption: <>Sculptural Totems</>,
-    details: {
-      heading: "Sculptural Totems",
-      location: "",
-      description: (
-        <>
-          A series of vertical forms inspired by ancient totems, these sculptures merge cultural heritage <br /> with modern
-          abstraction. Their faceted silhouettes and perforated patterns glow from within <br /> symbolizing inner light and
-          shared human presence. Standing together they evoke unity <br /> ,quiet strength, and timeless storytelling
-          through form and illumination.
-        </>
-      ),
-      details: "Material: Corten Steel",
-      credits: (
-        <>
-          Artist: Abhinav Goyal <br /> Commissioned for: Hyderabad Arts Council
-        </>
-      ),
+    "caption": "Sculptural Totems",
+    "details": {
+      "heading": "Sculptural Totems",
+      "location": "",
+      "description": "A series of vertical forms inspired by ancient totems, these sculptures merge cultural heritage <br /> with modern abstraction. Their faceted silhouettes and perforated patterns glow from within <br /> symbolizing inner light and shared human presence. Standing together they evoke unity <br /> ,quiet strength, and timeless storytelling through form and illumination.",
+      "details": "Material: Corten Steel",
+      "credits": "Artist: Abhinav Goyal <br /> Commissioned for: Hyderabad Arts Council"
     },
-    seo: {
-      title: "Sculptural Totems - Modern Abstract Corten Steel Art by Abhinav Goyal | Hyderabad 2025",
-      metaDescription: "Sculptural Totems: Vertical corten steel sculptures with perforated patterns, symbolizing unity and inner light. Hyderabad 2025 by Abhinav Goyal.",
-      keywords: ["sculptural totems", "corten steel art", "modern abstract sculpture", "Hyderabad art", "cultural heritage art", "Abhinav Goyal", "illuminated totems"],
-      ogTitle: "Sculptural Totems - Unity in Modern Abstraction",
-      ogDescription: "Explore Sculptural Totems, a series of corten steel sculptures that blend cultural heritage with modern abstraction, glowing with inner light and unity.",
-      ogImage: "/sculptural-totems-hyderabad-2025.webp",
-      twitterCard: "summary_large_image",
-      canonicalUrl: "/artwork/sculptural-totems"
+    "seo": {
+      "title": "Sculptural Totems - Modern Abstract Corten Steel Art by Abhinav Goyal | Hyderabad 2025",
+      "metaDescription": "Sculptural Totems: Vertical corten steel sculptures with perforated patterns, symbolizing unity and inner light. Hyderabad 2025 by Abhinav Goyal.",
+      "keywords": ["sculptural totems", "corten steel art", "modern abstract sculpture", "Hyderabad art", "cultural heritage art", "Abhinav Goyal", "illuminated totems"],
+      "ogTitle": "Sculptural Totems - Unity in Modern Abstraction",
+      "ogDescription": "Explore Sculptural Totems, a series of corten steel sculptures that blend cultural heritage with modern abstraction, glowing with inner light and unity.",
+      "ogImage": "/sculptural-totems-hyderabad-2025.webp",
+      "twitterCard": "summary_large_image",
+      "canonicalUrl": "/artwork/sculptural-totems"
     },
-    schema: {
+    "schema": {
       "@context": "https://schema.org",
       "@type": "VisualArtwork",
-      name: "Sculptural Totems",
-      description: "A series of vertical forms inspired by ancient totems, these sculptures merge cultural heritage with modern abstraction, glowing with perforated patterns.",
-      image: [
+      "name": "Sculptural Totems",
+      "description": "A series of vertical forms inspired by ancient totems, these sculptures merge cultural heritage with modern abstraction, glowing with perforated patterns.",
+      "image": [
         "/sculptural-totems-hyderabad-2025.webp",
         "/Arts/t10.webp"
-     
+      ],
+      "creator": {
+        "@type": "Person",
+        "name": "Abhinav Goyal"
+      },
+      "dateCreated": "2025",
+      "artMedium": "Corten Steel",
+      "locationCreated": "Hyderabad, India",
+      "url": "/artwork/sculptural-totems"
+    }
+},
+{
+  id:"raging-stallions-2021",
+  slug: "raging-stallions-2021",
+  images: [
+    { src: "/raging-stallions-chennai-2021.webp", alt: "Horse Sculpture in Chennai" },
+    { src: "/Arts/Chennai-Raging-Stallions.webp", alt: "The Raging Stallions Sculpture made of stainless steel" },
+    { src: "/Arts/Raging-Stallions-Chennai.webp", alt: "Horse Sculpture in Chennai" },
+  ],
+  caption: <>The Raging Stallions</>,
+  details: {
+    heading: "Stallions",
+    location: "",
+    description: (
+      <>
+        Curves hold an untamed power—fluid yet fierce, commanding yet free. To capture their essence is no easy feat.{" "}
+        <br /> It demands more than form; it requires motion, rhythm, and soul. These raging stallions dance with light
+        and weather, <br />their presence shifting with every passing moment. They pull you beyond the ordinary, igniting
+        something primal, something wild. To witness them is to ride upon the wind, <br />to dance upon the brink like a
+        flame— <i>Unbridled, Fearless, and Untamed.</i>
+      </>
+    ),
+    details: (
+      <>
+        Material: Lightweight, Resilient Aluminum. <br />
+      </>
+    ),
+    credits: (
+      <>
+        Artist: Abhinav Goyal
+      </>
+    ),
+  },
+  seo: {
+    title: "Raging Stallions - Dynamic Aluminum Sculpture by Abhinav Goyal | Chennai 2021",
+    metaDescription: "Raging Stallions: Dynamic aluminum sculpture capturing the untamed power of horses. Fluid, fierce, and free. Chennai 2021 by Abhinav Goyal.",
+    keywords: ["raging stallions", "horse sculpture", "aluminum art", "Chennai sculpture", "dynamic sculpture", "Abhinav Goyal", "contemporary horse art"],
+    ogTitle: "Raging Stallions - Untamed Power in Aluminum",
+    ogDescription: "Experience the Raging Stallions, a dynamic aluminum sculpture that captures the fluid, fierce essence of horses, igniting a primal connection.",
+    ogImage: "/raging-stallions-chennai-2021.webp",
+    twitterCard: "summary_large_image",
+    canonicalUrl: "/artwork/raging-stallions-2021-a"
+  },
+  schema: {
+    "@context": "https://schema.org",
+    "@type": "VisualArtwork",
+    name: "Raging Stallions",
+    description: "A dynamic aluminum sculpture capturing the untamed power of horses, with fluid curves and fierce presence that shifts with light and weather.",
+    image: [
+      "/raging-stallions-chennai-2021.webp",
+      "/Arts/Chennai-Raging-Stallions.webp",
+      "/Arts/Raging-Stallions-Chennai.webp"
+    ],
+    creator: {
+      "@type": "Person",
+      name: "Abhinav Goyal"
+    },
+    dateCreated: "2021",
+    artMedium: "Aluminum",
+    locationCreated: "Chennai, India",
+    url: "/artwork/raging-stallions-2021-a"
+  }
+},
+{  id: "wing-man",
+  slug: "wing-man",
+  images: [
+    { src: "/wing-man-dubai-2024.webp", alt: "The Wing Man Sculpture in Dubai, UAE, 2024" },
+    { src: "/Arts/Dubai-Wing-Man-Event-2024.webp", alt: "The Wing Man Sculpture made of corten steel" },
+  ],
+  caption: <>The Wing Man</>,
+  details: {
+    heading: "Wing Man",
+    location: "",
+    description: (
+      <>
+        A futuristic figure with outstretched wings, this sculpture represents ambition <br /> and the pursuit of
+        limitless possibilities. Composed of angular, faceted planes in stainless steel <br /> it stands boldly in
+        water—its reflective surfaces catching light like a beacon of progress. <br />The wing-like form suggests
+        transcendence, freedom, and the relentless drive <br />to rise beyond boundaries. A symbol of visionary spirit
+        and human evolution.
+      </>
+    ),
+    details: (
+      <>
+        Material: Polished aluminum, LED lighting <br /> Height: 6 ft | Width: 2ft | Depth: 1.5 ft
+      </>
+    ),
+    credits: (
+      <>
+        Artist: Abhinav Goyal  <br /> Commissioned for: Private Residence, Dubai
+      </>
+    ),
+  },
+  seo: {
+    title: "Wing Man - Futuristic Aluminum Sculpture by Abhinav Goyal | Dubai 2024",
+    metaDescription: "Wing Man: Futuristic polished aluminum sculpture with LED lighting, symbolizing ambition and transcendence. Dubai 2024 by Abhinav Goyal.",
+    keywords: ["wing man sculpture", "futuristic art", "aluminum sculpture", "Dubai art", "transcendence sculpture", "Abhinav Goyal", "LED art installation"],
+    ogTitle: "Wing Man - Symbol of Visionary Ambition",
+    ogDescription: "Discover Wing Man, a futuristic aluminum sculpture with LED lighting, standing in water as a beacon of progress and limitless possibilities.",
+    ogImage: "/wing-man-dubai-2024.webp",
+    twitterCard: "summary_large_image",
+    canonicalUrl: "/artwork/wing-man"
+  },
+  schema: {
+    "@context": "https://schema.org",
+    "@type": "VisualArtwork",
+    name: "Wing Man",
+    description: "A futuristic figure with outstretched wings, symbolizing ambition and transcendence, crafted in polished aluminum with LED lighting.",
+    image: [
+      "/wing-man-dubai-2024.webp",
+      "/Arts/Dubai-Wing-Man-Event-2024.webp"
+    ],
+    creator: {
+      "@type": "Person",
+      name: "Abhinav Goyal"
+    },
+    dateCreated: "2024",
+    artMedium: "Polished Aluminum",
+    artworkSurface: "LED Lighting",
+    height: "6 feet",
+    width: "2 feet",
+    depth: "1.5 feet",
+    locationCreated: "Dubai, UAE",
+    url: "/artwork/wing-man"
+  }
+},
 
-],
-      creator: {
-        "@type": "Person",
-        name: "Abhinav Goyal"
-      },
-      dateCreated: "2025",
-      artMedium: "Corten Steel",
-      locationCreated: "Hyderabad, India",
-      url: "/artwork/sculptural-totems"
-    }
+{
+  id: "sole-gaze-2023",
+  slug: "sole-gaze-2023",
+  images: [{ src: "/sole-gaze-bangalore-2023.webp", alt: "The Sole Gaze Sculpture made of corten steel" }],
+  caption: <>The Sole Gaze</>,
+  details: {
+    heading: "The Sole Gaze",
+    location: "",
+    description: (
+      <>
+        An introspective figure gazing upward, this bold, abstract face captures a moment of quiet reflection. <br />{" "}
+        Crafted from corten steel, its simplified geometry and monolithic presence evoke timelessness and depth. <br />{" "}
+        The upward gaze symbolizes contemplation, hope, and the enduring human quest <br /> for meaning amidst the chaos
+        of a fast-paced world.
+      </>
+    ),
+    details: "Material: Corten Steel",
+    credits: (
+      <>
+        Artist: Abhinav Goyal <br /> Commissioned for: Hyderabad Design District
+      </>
+    ),
   },
-  {
-    slug: "raging-stallions-2021-a",
-    images: [
-      { src: "/raging-stallions-chennai-2021.webp", alt: "Horse Sculpture in Chennai" },
-      { src: "/Arts/Chennai-Raging-Stallions.webp", alt: "The Raging Stallions Sculpture made of stainless steel" },
-      { src: "/Arts/Raging-Stallions-Chennai.webp", alt: "Horse Sculpture in Chennai" },
+  seo: {
+    title: "Sole Gaze - Abstract Corten Steel Sculpture by Abhinav Goyal | Bangalore 2023",
+    metaDescription: "Sole Gaze: Abstract corten steel sculpture of an introspective figure, symbolizing contemplation and hope. Bangalore 2023 by Abhinav Goyal.",
+    keywords: ["sole gaze sculpture", "abstract face art", "corten steel sculpture", "Bangalore art", "contemplative sculpture", "Abhinav Goyal", "modern reflective art"],
+    ogTitle: "Sole Gaze - Reflection in Corten Steel",
+    ogDescription: "Explore Sole Gaze, an abstract corten steel sculpture capturing quiet reflection and the human quest for meaning with a bold, monolithic presence.",
+    ogImage: "/sole-gaze-bangalore-2023.webp",
+    twitterCard: "summary_large_image",
+    canonicalUrl: "/artwork/sole-gaze-2023"
+  },
+  schema: {
+    "@context": "https://schema.org",
+    "@type": "VisualArtwork",
+    name: "Sole Gaze",
+    description: "An introspective figure gazing upward, this bold, abstract corten steel sculpture captures quiet reflection and the human quest for meaning.",
+    image: ["/sole-gaze-bangalore-2023.webp"],
+    creator: {
+      "@type": "Person",
+      name: "Abhinav Goyal"
+    },
+    dateCreated: "2023",
+    artMedium: "Corten Steel",
+    locationCreated: "Bangalore, India",
+    url: "/artwork/sole-gaze-2023"
+  }
+},
+{
+  id: "leaning-man",
+  slug: "leaning-man",
+  images: [
+    { src: "/leaning-man-hyderabad-2023.webp", alt: "Leaning Man Sculpture in Hyderabad, India, 2023" },
+    { src: "/Arts/Hyderabad-Leaning-Man-Event-2023.webp", alt: "Leaning Man Sculpture made of corten steel" },
+  ],
+  caption: <>The Leaning Man</>,
+  details: {
+    heading: "The Leaning Man",
+    location: "",
+    description: (
+      <>
+        Set within a serene courtyard, this corten steel sculpture of a leaning figure gently emerges from the wall{" "}
+        <br /> embodying curiosity and quiet observation. The adjacent waterbody and lush green backdrop <br /> enhance
+        the meditative ambiance, while the folded, faceted form echoes the art of origami. <br />Together, the sculpture
+        and its surroundings invite a moment of pause <br /> A space to Reflect, Reconnect, and Simply be.
+      </>
+    ),
+    details: "Material: Corten steel",
+    credits: (
+      <>
+        Artist: Abhinav Goyal <br /> Commissioned for: Private Residence, Hyderabad
+      </>
+    ),
+  },
+  seo: {
+    title: "Leaning Man - Corten Steel Sculpture by Abhinav Goyal | Hyderabad 2023",
+    metaDescription: "Leaning Man: Corten steel sculpture emerging from a wall, evoking curiosity and calm. Hyderabad 2023 by Abhinav Goyal.",
+    keywords: ["leaning man sculpture", "corten steel art", "Hyderabad sculpture", "origami-inspired art", "meditative sculpture", "Abhinav Goyal", "courtyard art"],
+    ogTitle: "Leaning Man - Meditative Corten Steel Art",
+    ogDescription: "Discover Leaning Man, a corten steel sculpture that invites pause and reflection, blending origami-inspired form with a serene courtyard setting.",
+    ogImage: "/leaning-man-hyderabad-2023.webp",
+    twitterCard: "summary_large_image",
+    canonicalUrl: "/artwork/leaning-man"
+  },
+  schema: {
+    "@context": "https://schema.org",
+    "@type": "VisualArtwork",
+    name: "Leaning Man",
+    description: "A corten steel sculpture of a leaning figure emerging from a wall, evoking curiosity and calm with an origami-inspired form in a serene courtyard.",
+    image: [
+      "/leaning-man-hyderabad-2023.webp",
+      "/Arts/Hyderabad-Leaning-Man-Event-2023.webp"
     ],
-    caption: <>The Raging Stallions</>,
-    details: {
-      heading: "Stallions",
-      location: "",
-      description: (
-        <>
-          Curves hold an untamed power—fluid yet fierce, commanding yet free. To capture their essence is no easy feat.{" "}
-          <br /> It demands more than form; it requires motion, rhythm, and soul. These raging stallions dance with light
-          and weather, <br />their presence shifting with every passing moment. They pull you beyond the ordinary, igniting
-          something primal, something wild. To witness them is to ride upon the wind, <br />to dance upon the brink like a
-          flame— <i>Unbridled, Fearless, and Untamed.</i>
-        </>
-      ),
-      details: (
-        <>
-          Material: Lightweight, Resilient Aluminum. <br />
-        </>
-      ),
-      credits: (
-        <>
-          Artist: Abhinav Goyal
-        </>
-      ),
+    creator: {
+      "@type": "Person",
+      name: "Abhinav Goyal"
     },
-    seo: {
-      title: "Raging Stallions - Dynamic Aluminum Sculpture by Abhinav Goyal | Chennai 2021",
-      metaDescription: "Raging Stallions: Dynamic aluminum sculpture capturing the untamed power of horses. Fluid, fierce, and free. Chennai 2021 by Abhinav Goyal.",
-      keywords: ["raging stallions", "horse sculpture", "aluminum art", "Chennai sculpture", "dynamic sculpture", "Abhinav Goyal", "contemporary horse art"],
-      ogTitle: "Raging Stallions - Untamed Power in Aluminum",
-      ogDescription: "Experience the Raging Stallions, a dynamic aluminum sculpture that captures the fluid, fierce essence of horses, igniting a primal connection.",
-      ogImage: "/raging-stallions-chennai-2021.webp",
-      twitterCard: "summary_large_image",
-      canonicalUrl: "/artwork/raging-stallions-2021-a"
-    },
-    schema: {
-      "@context": "https://schema.org",
-      "@type": "VisualArtwork",
-      name: "Raging Stallions",
-      description: "A dynamic aluminum sculpture capturing the untamed power of horses, with fluid curves and fierce presence that shifts with light and weather.",
-      image: [
-        "/raging-stallions-chennai-2021.webp",
-        "/Arts/Chennai-Raging-Stallions.webp",
-        "/Arts/Raging-Stallions-Chennai.webp"
-      ],
-      creator: {
-        "@type": "Person",
-        name: "Abhinav Goyal"
-      },
-      dateCreated: "2021",
-      artMedium: "Aluminum",
-      locationCreated: "Chennai, India",
-      url: "/artwork/raging-stallions-2021-a"
-    }
+    dateCreated: "2023",
+    artMedium: "Corten Steel",
+    locationCreated: "Hyderabad, India",
+    url: "/artwork/leaning-man"
+  }
+},
+{
+  id: "meditating-lady",
+  slug: "meditating-lady",
+  images: [
+    { src: "/meditating-lady-goa-2018.webp", alt: "The Meditating Lady Sculpture in Goa, India, 2018" },
+    { src: "/Arts/Goa-Meditating-Lady-Sculpture-2018.webp", alt: "Meditating Lady Sculpture made of stainless steel" },
+    { src: "/Arts/Goa-Meditating-Lady-PV-Sindhu.webp", alt: "Meditating Lady Sculpture in Goa" },
+  ],
+  caption: <>The Meditating Lady</>,
+  details: {
+    heading: "The Meditating Lady",
+    location: "",
+    description: (
+      <>
+        A serene female figure in meditation, this layered steel sculpture embodies peace, balance, and inner strength.{" "}
+        <br />Set against a lush, coastal backdrop, the form captures stillness in motion <br />each contour gently
+        flowing into the next. Beside her stands Olympic champion PV Sindhu <br /> adding a powerful layer of grace and
+        strength to this moment of quiet reflection in nature.
+      </>
+    ),
+    details: (
+      <>
+        Material: Bronze, weathered patina <br />Height: 6 ft, Width: 2.7 ft, Depth: 2 ft
+      </>
+    ),
+    credits: (
+      <>
+        Artist: Abhinav Goyal <br />Commissioned for: Goa Serenity Project
+      </>
+    ),
   },
-  {
-    slug: "wing-man",
-    images: [
-      { src: "/wing-man-dubai-2024.webp", alt: "The Wing Man Sculpture in Dubai, UAE, 2024" },
-      { src: "/Arts/Dubai-Wing-Man-Event-2024.webp", alt: "The Wing Man Sculpture made of corten steel" },
+  seo: {
+    title: "Meditating Lady - Bronze Sculpture by Abhinav Goyal | Goa 2018",
+    metaDescription: "Meditating Lady: Serene bronze sculpture embodying peace and strength, set against Goa's coastal backdrop. 2018 by Abhinav Goyal.",
+    keywords: ["meditating lady sculpture", "bronze art", "Goa sculpture", "serenity art", "PV Sindhu", "Abhinav Goyal", "coastal art installation"],
+    ogTitle: "Meditating Lady - Serenity in Bronze",
+    ogDescription: "Experience Meditating Lady, a bronze sculpture capturing peace and strength, enhanced by the presence of PV Sindhu against Goa's lush backdrop.",
+    ogImage: "/meditating-lady-goa-2018.webp",
+    twitterCard: "summary_large_image",
+    canonicalUrl: "/artwork/meditating-lady"
+  },
+  schema: {
+    "@context": "https://schema.org",
+    "@type": "VisualArtwork",
+    name: "Meditating Lady",
+    description: "A serene female figure in meditation, this layered bronze sculpture embodies peace, balance, and inner strength, set against a lush coastal backdrop.",
+    image: [
+      "/meditating-lady-goa-2018.webp",
+      "/Arts/Goa-Meditating-Lady-Sculpture-2018.webp",
+      "/Arts/Goa-Meditating-Lady-PV-Sindhu.webp"
     ],
-    caption: <>The Wing Man</>,
-    details: {
-      heading: "Wing Man",
-      location: "",
-      description: (
-        <>
-          A futuristic figure with outstretched wings, this sculpture represents ambition <br /> and the pursuit of
-          limitless possibilities. Composed of angular, faceted planes in stainless steel <br /> it stands boldly in
-          water—its reflective surfaces catching light like a beacon of progress. <br />The wing-like form suggests
-          transcendence, freedom, and the relentless drive <br />to rise beyond boundaries. A symbol of visionary spirit
-          and human evolution.
-        </>
-      ),
-      details: (
-        <>
-          Material: Polished aluminum, LED lighting <br /> Height: 6 ft | Width: 2ft | Depth: 1.5 ft
-        </>
-      ),
-      credits: (
-        <>
-          Artist: Abhinav Goyal  <br /> Commissioned for: Private Residence, Dubai
-        </>
-      ),
+    creator: {
+      "@type": "Person",
+      name: "Abhinav Goyal"
     },
-    seo: {
-      title: "Wing Man - Futuristic Aluminum Sculpture by Abhinav Goyal | Dubai 2024",
-      metaDescription: "Wing Man: Futuristic polished aluminum sculpture with LED lighting, symbolizing ambition and transcendence. Dubai 2024 by Abhinav Goyal.",
-      keywords: ["wing man sculpture", "futuristic art", "aluminum sculpture", "Dubai art", "transcendence sculpture", "Abhinav Goyal", "LED art installation"],
-      ogTitle: "Wing Man - Symbol of Visionary Ambition",
-      ogDescription: "Discover Wing Man, a futuristic aluminum sculpture with LED lighting, standing in water as a beacon of progress and limitless possibilities.",
-      ogImage: "/wing-man-dubai-2024.webp",
-      twitterCard: "summary_large_image",
-      canonicalUrl: "/artwork/wing-man"
-    },
-    schema: {
-      "@context": "https://schema.org",
-      "@type": "VisualArtwork",
-      name: "Wing Man",
-      description: "A futuristic figure with outstretched wings, symbolizing ambition and transcendence, crafted in polished aluminum with LED lighting.",
-      image: [
-        "/wing-man-dubai-2024.webp",
-        "/Arts/Dubai-Wing-Man-Event-2024.webp"
-      ],
-      creator: {
-        "@type": "Person",
-        name: "Abhinav Goyal"
-      },
-      dateCreated: "2024",
-      artMedium: "Polished Aluminum",
-      artworkSurface: "LED Lighting",
-      height: "6 feet",
-      width: "2 feet",
-      depth: "1.5 feet",
-      locationCreated: "Dubai, UAE",
-      url: "/artwork/wing-man"
-    }
+    dateCreated: "2018",
+    artMedium: "Bronze",
+    artworkSurface: "Weathered Patina",
+    height: "6 feet",
+    width: "2.7 feet",
+    depth: "2 feet",
+    locationCreated: "Goa, India",
+    url: "/artwork/meditating-lady"
+  }
+},
+{
+  id: "etherea",
+  slug: "etherea",
+  images: [
+    { src: "/etherea-chennai-2019.webp", alt: "Etherea Sculpture in Chennai, India, 2019" },
+    { src: "/Arts/Etherea-Chennai.webp", alt: "Etherea Sculpture made of stainless steel" },
+  ],
+  caption: <>Etherea</>,
+  details: {
+    heading: "Etherea",
+    location: "",
+    description: (
+      <>
+        A delicate balance of light, air, and spirit, Etherea stands in quiet stillness, yet never truly still. Her glow
+        lures nature into a silent dance, evoking an unspoken dialogue between form and perception. More than a fleeting
+        vision,
+        <br /> she resists a mere passing glance <i>Demanding pause, Thought, and Introspection.</i>
+      </>
+    ),
+    details: "Material: Bronze, weathered patina",
+    credits: (
+      <>
+        Artist: Abhinav Goyal <br /> Commissioned for: Private Residence, Uttandi, Chennai <br /> Landscape Design:
+        Kiasma Studio
+        <br />Photography: Ricken Desai
+      </>
+    ),
   },
-  {
-    slug: "sole-gaze-2023",
-    images: [{ src: "/sole-gaze-bangalore-2023.webp", alt: "The Sole Gaze Sculpture made of corten steel" }],
-    caption: <>The Sole Gaze</>,
-    details: {
-      heading: "The Sole Gaze",
-      location: "",
-      description: (
-        <>
-          An introspective figure gazing upward, this bold, abstract face captures a moment of quiet reflection. <br />{" "}
-          Crafted from corten steel, its simplified geometry and monolithic presence evoke timelessness and depth. <br />{" "}
-          The upward gaze symbolizes contemplation, hope, and the enduring human quest <br /> for meaning amidst the chaos
-          of a fast-paced world.
-        </>
-      ),
-      details: "Material: Corten Steel",
-      credits: (
-        <>
-          Artist: Abhinav Goyal <br /> Commissioned for: Hyderabad Design District
-        </>
-      ),
-    },
-    seo: {
-      title: "Sole Gaze - Abstract Corten Steel Sculpture by Abhinav Goyal | Bangalore 2023",
-      metaDescription: "Sole Gaze: Abstract corten steel sculpture of an introspective figure, symbolizing contemplation and hope. Bangalore 2023 by Abhinav Goyal.",
-      keywords: ["sole gaze sculpture", "abstract face art", "corten steel sculpture", "Bangalore art", "contemplative sculpture", "Abhinav Goyal", "modern reflective art"],
-      ogTitle: "Sole Gaze - Reflection in Corten Steel",
-      ogDescription: "Explore Sole Gaze, an abstract corten steel sculpture capturing quiet reflection and the human quest for meaning with a bold, monolithic presence.",
-      ogImage: "/sole-gaze-bangalore-2023.webp",
-      twitterCard: "summary_large_image",
-      canonicalUrl: "/artwork/sole-gaze-2023"
-    },
-    schema: {
-      "@context": "https://schema.org",
-      "@type": "VisualArtwork",
-      name: "Sole Gaze",
-      description: "An introspective figure gazing upward, this bold, abstract corten steel sculpture captures quiet reflection and the human quest for meaning.",
-      image: ["/sole-gaze-bangalore-2023.webp"],
-      creator: {
-        "@type": "Person",
-        name: "Abhinav Goyal"
-      },
-      dateCreated: "2023",
-      artMedium: "Corten Steel",
-      locationCreated: "Bangalore, India",
-      url: "/artwork/sole-gaze-2023"
-    }
+  seo: {
+    title: "Etherea - Bronze Sculpture by Abhinav Goyal | Chennai 2019",
+    metaDescription: "Etherea: Delicate bronze sculpture evoking light, air, and introspection. Chennai 2019 by Abhinav Goyal.",
+    keywords: ["etherea sculpture", "bronze art", "Chennai sculpture", "introspective art", "Abhinav Goyal", "weathered patina", "modern art installation"],
+    ogTitle: "Etherea - A Dance of Light and Spirit",
+    ogDescription: "Discover Etherea, a bronze sculpture that balances light and air, inviting introspection and a silent dialogue with nature in Chennai.",
+    ogImage: "/etherea-chennai-2019.webp",
+    twitterCard: "summary_large_image",
+    canonicalUrl: "/artwork/etherea"
   },
-  {
-    slug: "leaning-man",
-    images: [
-      { src: "/leaning-man-hyderabad-2023.webp", alt: "Leaning Man Sculpture in Hyderabad, India, 2023" },
-      { src: "/Arts/Hyderabad-Leaning-Man-Event-2023.webp", alt: "Leaning Man Sculpture made of corten steel" },
+  schema: {
+    "@context": "https://schema.org",
+    "@type": "VisualArtwork",
+    name: "Etherea",
+    description: "A delicate balance of light, air, and spirit, this bronze sculpture evokes introspection and a silent dialogue with nature.",
+    image: [
+      "/etherea-chennai-2019.webp",
+      "/Arts/Etherea-Chennai.webp"
     ],
-    caption: <>The Leaning Man</>,
-    details: {
-      heading: "The Leaning Man",
-      location: "",
-      description: (
-        <>
-          Set within a serene courtyard, this corten steel sculpture of a leaning figure gently emerges from the wall{" "}
-          <br /> embodying curiosity and quiet observation. The adjacent waterbody and lush green backdrop <br /> enhance
-          the meditative ambiance, while the folded, faceted form echoes the art of origami. <br />Together, the sculpture
-          and its surroundings invite a moment of pause <br /> A space to Reflect, Reconnect, and Simply be.
-        </>
-      ),
-      details: "Material: Corten steel",
-      credits: (
-        <>
-          Artist: Abhinav Goyal <br /> Commissioned for: Private Residence, Hyderabad
-        </>
-      ),
+    creator: {
+      "@type": "Person",
+      name: "Abhinav Goyal"
     },
-    seo: {
-      title: "Leaning Man - Corten Steel Sculpture by Abhinav Goyal | Hyderabad 2023",
-      metaDescription: "Leaning Man: Corten steel sculpture emerging from a wall, evoking curiosity and calm. Hyderabad 2023 by Abhinav Goyal.",
-      keywords: ["leaning man sculpture", "corten steel art", "Hyderabad sculpture", "origami-inspired art", "meditative sculpture", "Abhinav Goyal", "courtyard art"],
-      ogTitle: "Leaning Man - Meditative Corten Steel Art",
-      ogDescription: "Discover Leaning Man, a corten steel sculpture that invites pause and reflection, blending origami-inspired form with a serene courtyard setting.",
-      ogImage: "/leaning-man-hyderabad-2023.webp",
-      twitterCard: "summary_large_image",
-      canonicalUrl: "/artwork/leaning-man"
-    },
-    schema: {
-      "@context": "https://schema.org",
-      "@type": "VisualArtwork",
-      name: "Leaning Man",
-      description: "A corten steel sculpture of a leaning figure emerging from a wall, evoking curiosity and calm with an origami-inspired form in a serene courtyard.",
-      image: [
-        "/leaning-man-hyderabad-2023.webp",
-        "/Arts/Hyderabad-Leaning-Man-Event-2023.webp"
-      ],
-      creator: {
-        "@type": "Person",
-        name: "Abhinav Goyal"
-      },
-      dateCreated: "2023",
-      artMedium: "Corten Steel",
-      locationCreated: "Hyderabad, India",
-      url: "/artwork/leaning-man"
-    }
+    dateCreated: "2019",
+    artMedium: "Bronze",
+    artworkSurface: "Weathered Patina",
+    locationCreated: "Chennai, India",
+    url: "/artwork/etherea"
+  }
+},
+{
+  id: "bonsai",
+  slug: "bonsai",
+  images: [
+    { src: "/bonsai-delhi-2024.webp", alt: "Bonsai Sculpture in Delhi, India, 2024" },
+    { src: "/Arts/Bonsai-Delhi.webp", alt: "Bonsai Sculpture made of corten steel" },
+  ],
+  caption: <>Bonsai</>,
+  details: {
+    heading: "Bonsai",
+    location: "",
+    description: (
+      <>
+        A minimalist interpretation of a bonsai tree, this sculptural form blends geometric precision with organic grace.{" "}
+        <br />The faceted base, resembling a seed pod or vessel, anchors the upward-reaching black branches <br /> crafted
+        from modular steel elements. Celebrating patience, growth, and the art of deliberate cultivation, <br />the piece
+        invites contemplation of nature's quiet resilience and the elegance of small-scale mastery.
+      </>
+    ),
+    details: (
+      <>
+        Material: Stainless steel (branches) and coated mild steel (base), finished in Matte black and Metallic Gold{" "}
+        <br />Height: 7.5 ft, Width: 3.5 ft, Depth: 3 ft
+      </>
+    ),
+    credits: (
+      <>
+        Artist: Abhinav Goyal <br />Commissioned for: Delhi Zen Gardens
+      </>
+    ),
   },
-  {
-    slug: "meditating-lady",
-    images: [
-      { src: "/meditating-lady-goa-2018.webp", alt: "The Meditating Lady Sculpture in Goa, India, 2018" },
-      { src: "/Arts/Goa-Meditating-Lady-Sculpture-2018.webp", alt: "Meditating Lady Sculpture made of stainless steel" },
-      { src: "/Arts/Goa-Meditating-Lady-PV-Sindhu.webp", alt: "Meditating Lady Sculpture in Goa" },
+  seo: {
+    title: "Bonsai - Minimalist Steel Sculpture by Abhinav Goyal | Delhi 2024",
+    metaDescription: "Bonsai: Minimalist steel sculpture blending geometric precision with organic grace, celebrating patience and growth. Delhi 2024 by Abhinav Goyal.",
+    keywords: ["bonsai sculpture", "minimalist art", "steel sculpture", "Delhi art", "nature-inspired art", "Abhinav Goyal", "geometric bonsai"],
+    ogTitle: "Bonsai - Elegance in Steel",
+    ogDescription: "Explore Bonsai, a minimalist steel sculpture with a faceted base and black branches, celebrating nature's resilience and deliberate cultivation.",
+    ogImage: "/bonsai-delhi-2024.webp",
+    twitterCard: "summary_large_image",
+    canonicalUrl: "/artwork/bonsai"
+  },
+  schema: {
+    "@context": "https://schema.org",
+    "@type": "VisualArtwork",
+    name: "Bonsai",
+    description: "A minimalist interpretation of a bonsai tree, blending geometric precision with organic grace, celebrating patience and nature's resilience.",
+    image: [
+      "/bonsai-delhi-2024.webp",
+      "/Arts/Bonsai-Delhi.webp"
     ],
-    caption: <>The Meditating Lady</>,
-    details: {
-      heading: "The Meditating Lady",
-      location: "",
-      description: (
-        <>
-          A serene female figure in meditation, this layered steel sculpture embodies peace, balance, and inner strength.{" "}
-          <br />Set against a lush, coastal backdrop, the form captures stillness in motion <br />each contour gently
-          flowing into the next. Beside her stands Olympic champion PV Sindhu <br /> adding a powerful layer of grace and
-          strength to this moment of quiet reflection in nature.
-        </>
-      ),
-      details: (
-        <>
-          Material: Bronze, weathered patina <br />Height: 6 ft, Width: 2.7 ft, Depth: 2 ft
-        </>
-      ),
-      credits: (
-        <>
-          Artist: Abhinav Goyal <br />Commissioned for: Goa Serenity Project
-        </>
-      ),
+    creator: {
+      "@type": "Person",
+      name: "Abhinav Goyal"
     },
-    seo: {
-      title: "Meditating Lady - Bronze Sculpture by Abhinav Goyal | Goa 2018",
-      metaDescription: "Meditating Lady: Serene bronze sculpture embodying peace and strength, set against Goa's coastal backdrop. 2018 by Abhinav Goyal.",
-      keywords: ["meditating lady sculpture", "bronze art", "Goa sculpture", "serenity art", "PV Sindhu", "Abhinav Goyal", "coastal art installation"],
-      ogTitle: "Meditating Lady - Serenity in Bronze",
-      ogDescription: "Experience Meditating Lady, a bronze sculpture capturing peace and strength, enhanced by the presence of PV Sindhu against Goa's lush backdrop.",
-      ogImage: "/meditating-lady-goa-2018.webp",
-      twitterCard: "summary_large_image",
-      canonicalUrl: "/artwork/meditating-lady"
-    },
-    schema: {
-      "@context": "https://schema.org",
-      "@type": "VisualArtwork",
-      name: "Meditating Lady",
-      description: "A serene female figure in meditation, this layered bronze sculpture embodies peace, balance, and inner strength, set against a lush coastal backdrop.",
-      image: [
-        "/meditating-lady-goa-2018.webp",
-        "/Arts/Goa-Meditating-Lady-Sculpture-2018.webp",
-        "/Arts/Goa-Meditating-Lady-PV-Sindhu.webp"
-      ],
-      creator: {
-        "@type": "Person",
-        name: "Abhinav Goyal"
-      },
-      dateCreated: "2018",
-      artMedium: "Bronze",
-      artworkSurface: "Weathered Patina",
-      height: "6 feet",
-      width: "2.7 feet",
-      depth: "2 feet",
-      locationCreated: "Goa, India",
-      url: "/artwork/meditating-lady"
-    }
+    dateCreated: "2024",
+    artMedium: "Stainless Steel and Coated Mild Steel",
+    artworkSurface: "Matte Black and Metallic Gold",
+    height: "7.5 feet",
+    width: "3.5 feet",
+    depth: "3 feet",
+    locationCreated: "Delhi, India",
+    url: "/artwork/bonsai"
+  }
+},
+{
+  id: "nandi",
+  slug: "nandi",
+  images: [
+    { src: "/nandi-pune-2020.webp", alt: "Nandi Sculpture in Pune, India, 2020" },
+    { src: "/Arts/Nandi.webp", alt: "Nandi Sculpture" },
+    { src: "/Arts/Nandi-Pune.webp", alt: "Nandi Sculpture made up of stainless steel" },
+  ],
+  caption: <>Nandi</>,
+  details: {
+    heading: "NANDI",
+    location: "",
+    description: (
+      <>
+        A symbol of devotion, patience, and strength, this angular Nandi sculpture stands poised in a bustling Pune
+        residence <br /> embodying virtues of welcome and silent resilience deeply rooted in Indian tradition. <br /> It
+        transcends ornamentation, serving as a spiritual anchor and timeless guardian, <br />radiating harmony and sacred
+        presence.
+      </>
+    ),
+    details: (
+      <>
+        Material: Mild steel with Matte black finish and Brass
+        <br />Height: 4.5 ft, Width: 5.5 ft, Depth: 2.5 ft
+      </>
+    ),
+    credits: (
+      <>
+        Artist: Abhinav Goyal <br /> Commissioned for: Shivtirtha House, Pune <br /> Photography: FormForge
+      </>
+    ),
   },
-  {
-    slug: "etherea",
-    images: [
-      { src: "/etherea-chennai-2019.webp", alt: "Etherea Sculpture in Chennai, India, 2019" },
-      { src: "/Arts/Etherea-Chennai.webp", alt: "Etherea Sculpture made of stainless steel" },
+  seo: {
+    title: "Nandi - Spiritual Steel Sculpture by Abhinav Goyal | Pune 2020",
+    metaDescription: "Nandi: Angular mild steel and brass sculpture symbolizing devotion and strength. Pune 2020 by Abhinav Goyal.",
+    keywords: ["nandi sculpture", "spiritual art", "Pune sculpture", "mild steel art", "Indian tradition art", "Abhinav Goyal", "brass sculpture"],
+    ogTitle: "Nandi - Timeless Spiritual Guardian",
+    ogDescription: "Discover Nandi, an angular steel and brass sculpture embodying devotion and resilience, serving as a spiritual anchor in a Pune residence.",
+    ogImage: "/nandi-pune-2020.webp",
+    twitterCard: "summary_large_image",
+    canonicalUrl: "/artwork/nandi"
+  },
+  schema: {
+    "@context": "https://schema.org",
+    "@type": "VisualArtwork",
+    name: "Nandi",
+    description: "An angular Nandi sculpture symbolizing devotion, patience, and strength, serving as a spiritual anchor in a Pune residence.",
+    image: [
+      "/nandi-pune-2020.webp",
+      "/Arts/Nandi.webp",
+      "/Arts/Nandi-Pune.webp"
     ],
-    caption: <>Etherea</>,
-    details: {
-      heading: "E T H E R E A",
-      location: "",
-      description: (
-        <>
-          A delicate balance of light, air, and spirit, Etherea stands in quiet stillness, yet never truly still. Her glow
-          lures nature into a silent dance, evoking an unspoken dialogue between form and perception. More than a fleeting
-          vision,
-          <br /> she resists a mere passing glance <i>Demanding pause, Thought, and Introspection.</i>
-        </>
-      ),
-      details: "Material: Bronze, weathered patina",
-      credits: (
-        <>
-          Artist: Abhinav Goyal <br /> Commissioned for: Private Residence, Uttandi, Chennai <br /> Landscape Design:
-          Kiasma Studio
-          <br />Photography: Ricken Desai
-        </>
-      ),
+    creator: {
+      "@type": "Person",
+      name: "Abhinav Goyal"
     },
-    seo: {
-      title: "Etherea - Bronze Sculpture by Abhinav Goyal | Chennai 2019",
-      metaDescription: "Etherea: Delicate bronze sculpture evoking light, air, and introspection. Chennai 2019 by Abhinav Goyal.",
-      keywords: ["etherea sculpture", "bronze art", "Chennai sculpture", "introspective art", "Abhinav Goyal", "weathered patina", "modern art installation"],
-      ogTitle: "Etherea - A Dance of Light and Spirit",
-      ogDescription: "Discover Etherea, a bronze sculpture that balances light and air, inviting introspection and a silent dialogue with nature in Chennai.",
-      ogImage: "/etherea-chennai-2019.webp",
-      twitterCard: "summary_large_image",
-      canonicalUrl: "/artwork/etherea"
-    },
-    schema: {
-      "@context": "https://schema.org",
-      "@type": "VisualArtwork",
-      name: "Etherea",
-      description: "A delicate balance of light, air, and spirit, this bronze sculpture evokes introspection and a silent dialogue with nature.",
-      image: [
-        "/etherea-chennai-2019.webp",
-        "/Arts/Etherea-Chennai.webp"
-      ],
-      creator: {
-        "@type": "Person",
-        name: "Abhinav Goyal"
-      },
-      dateCreated: "2019",
-      artMedium: "Bronze",
-      artworkSurface: "Weathered Patina",
-      locationCreated: "Chennai, India",
-      url: "/artwork/etherea"
-    }
+    dateCreated: "2020",
+    artMedium: "Mild Steel and Brass",
+    artworkSurface: "Matte Black and Brass",
+    height: "4.5 feet",
+    width: "5.5 feet",
+    depth: "2.5 feet",
+    locationCreated: "Pune, India",
+    url: "/artwork/nandi"
+  }
+},
+{
+  id: "carefree-seat",
+  slug: "carefree-seat",
+  images: [
+    { src: "/carefree-seat-hyderabad-2022.webp", alt: "The Carefree Seat Sculpture in Hyderabad, India, 2022" },
+    { src: "/Arts/carefree-seat.webp", alt: "Carefree seat corten steel" },
+    { src: "/Arts/carefree-seat-hyderabad.webp", alt: "carefree seat corten steel sculpture" },
+  ],
+  caption: <>The Carefree Seat</>,
+  details: {
+    heading: "The Carefree Seat",
+    location: "",
+    description: (
+      <>
+        A functional sculpture of a relaxed figure seamlessly perched on a bench, this piece invites viewers <br />to
+        pause, reflect, and embrace leisure. Its faceted, geometric form adds a modern sensibility <br /> to the serene
+        garden setting, blurring the line between utility and art. A Quiet Companion to moments of rest.
+      </>
+    ),
+    details: (
+      <>
+        Material: Mild steel with outdoor-grade PU coating in Corten finish <br />Height: 5 ft, Width: 2 ft, Depth: 2.5
+        ft
+      </>
+    ),
+    credits: (
+      <>
+        Artist: Abhinav Goyal <br />Commissioned for: Public Space, Hyderabad
+      </>
+    ),
   },
-  {
-    slug: "bonsai",
-    images: [
-      { src: "/bonsai-delhi-2024.webp", alt: "Bonsai Sculpture in Delhi, India, 2024" },
-      { src: "/Arts/Bonsai-Delhi.webp", alt: "Bonsai Sculpture made of corten steel" },
+  seo: {
+    title: "Carefree Seat - Functional Corten Steel Sculpture by Abhinav Goyal | Hyderabad 2022",
+    metaDescription: "Carefree Seat: Functional mild steel sculpture with corten finish, blending art and utility in a serene garden setting. Hyderabad 2022 by Abhinav Goyal.",
+    keywords: ["carefree seat sculpture", "functional art", "corten steel sculpture", "Hyderabad art", "public space art", "Abhinav Goyal", "geometric sculpture"],
+    ogTitle: "Carefree Seat - Art Meets Leisure",
+    ogDescription: "Explore Carefree Seat, a functional corten steel sculpture that invites relaxation and reflection in a serene Hyderabad garden setting.",
+    ogImage: "/carefree-seat-hyderabad-2022.webp",
+    twitterCard: "summary_large_image",
+    canonicalUrl: "/artwork/carefree-seat"
+  },
+  schema: {
+    "@context": "https://schema.org",
+    "@type": "VisualArtwork",
+    name: "Carefree Seat",
+    description: "A functional mild steel sculpture with corten finish, depicting a relaxed figure on a bench, blending art and utility in a serene garden setting.",
+    image: [
+      "/carefree-seat-hyderabad-2022.webp",
+      "/Arts/carefree-seat.webp",
+      "/Arts/carefree-seat-hyderabad.webp"
     ],
-    caption: <>Bonsai</>,
-    details: {
-      heading: "Bonsai",
-      location: "",
-      description: (
-        <>
-          A minimalist interpretation of a bonsai tree, this sculptural form blends geometric precision with organic grace.{" "}
-          <br />The faceted base, resembling a seed pod or vessel, anchors the upward-reaching black branches <br /> crafted
-          from modular steel elements. Celebrating patience, growth, and the art of deliberate cultivation, <br />the piece
-          invites contemplation of nature's quiet resilience and the elegance of small-scale mastery.
-        </>
-      ),
-      details: (
-        <>
-          Material: Stainless steel (branches) and coated mild steel (base), finished in Matte black and Metallic Gold{" "}
-          <br />Height: 7.5 ft, Width: 3.5 ft, Depth: 3 ft
-        </>
-      ),
-      credits: (
-        <>
-          Artist: Abhinav Goyal <br />Commissioned for: Delhi Zen Gardens
-        </>
-      ),
+    creator: {
+      "@type": "Person",
+      name: "Abhinav Goyal"
     },
-    seo: {
-      title: "Bonsai - Minimalist Steel Sculpture by Abhinav Goyal | Delhi 2024",
-      metaDescription: "Bonsai: Minimalist steel sculpture blending geometric precision with organic grace, celebrating patience and growth. Delhi 2024 by Abhinav Goyal.",
-      keywords: ["bonsai sculpture", "minimalist art", "steel sculpture", "Delhi art", "nature-inspired art", "Abhinav Goyal", "geometric bonsai"],
-      ogTitle: "Bonsai - Elegance in Steel",
-      ogDescription: "Explore Bonsai, a minimalist steel sculpture with a faceted base and black branches, celebrating nature's resilience and deliberate cultivation.",
-      ogImage: "/bonsai-delhi-2024.webp",
-      twitterCard: "summary_large_image",
-      canonicalUrl: "/artwork/bonsai"
-    },
-    schema: {
-      "@context": "https://schema.org",
-      "@type": "VisualArtwork",
-      name: "Bonsai",
-      description: "A minimalist interpretation of a bonsai tree, blending geometric precision with organic grace, celebrating patience and nature's resilience.",
-      image: [
-        "/bonsai-delhi-2024.webp",
-        "/Arts/Bonsai-Delhi.webp"
-      ],
-      creator: {
-        "@type": "Person",
-        name: "Abhinav Goyal"
-      },
-      dateCreated: "2024",
-      artMedium: "Stainless Steel and Coated Mild Steel",
-      artworkSurface: "Matte Black and Metallic Gold",
-      height: "7.5 feet",
-      width: "3.5 feet",
-      depth: "3 feet",
-      locationCreated: "Delhi, India",
-      url: "/artwork/bonsai"
-    }
+    dateCreated: "2022",
+    artMedium: "Mild Steel",
+    artworkSurface: "Corten Finish with Outdoor-Grade PU Coating",
+    height: "5 feet",
+    width: "2 feet",
+    depth: "2.5 feet",
+    locationCreated: "Hyderabad, India",
+    url: "/artwork/carefree-seat"
+  }
+},
+{
+  id: "bloom",
+  slug: "bloom",
+  images: [
+    { src: "/bloom-delhi-2021.webp", alt: "Bloom Sculpture in Delhi, India, 2021" },
+    { src: "/Arts/Bloom-Lotus.webp", alt: "Bloom Sculpture of corten steel" },
+  ],
+  caption: <>Bloom</>,
+  details: {
+    heading: "B L O O M",
+    location: "",
+    description: (
+      <>
+        A poetic tribute to nature, Bloom unfolds with resilience and grace, embodying elegance in its purest form. <br />{" "}
+        Rooted in serenity, this sculptural masterpiece flourishes in its refreshing surroundings. <br /> Inspired by our
+        national flower, Bloom was born from a vision sparked at the India Design ID Fair 2020, <br />where the client
+        was instantly drawn to our work. Designed to seamlessly merge with its space, <br /> it stands as an organic
+        extension of nature. <br /> <i>An emblem of renewal, harmony, and timeless beauty.</i>
+      </>
+    ),
+    details: (
+      <>
+        Material: Corten Steel & Brass <br />Height: 7 ft, Width: 5 ft
+      </>
+    ),
+    credits: (
+      <>
+        Artist: Abhinav Goyal <br /> Commissioned for: Private Residence, Delhi
+      </>
+    ),
   },
-  {
-    slug: "nandi",
-    images: [
-      { src: "/nandi-pune-2020.webp", alt: "Nandi Sculpture in Pune, India, 2020" },
-      { src: "/Arts/Nandi.webp", alt: "Nandi Sculpture" },
-      { src: "/Arts/Nandi-Pune.webp", alt: "Nandi Sculpture made up of stainless steel" },
+  seo: {
+    title: "Bloom - Nature-Inspired Corten Steel Sculpture by Abhinav Goyal | Delhi 2021",
+    metaDescription: "Bloom: Corten steel and brass sculpture inspired by India's national flower, embodying renewal and elegance. Delhi 2021 by Abhinav Goyal.",
+    keywords: ["bloom sculpture", "corten steel art", "brass sculpture", "Delhi art", "nature-inspired art", "Abhinav Goyal", "India Design ID Fair"],
+    ogTitle: "Bloom - Emblem of Renewal and Elegance",
+    ogDescription: "Discover Bloom, a corten steel and brass sculpture inspired by the lotus, flourishing as an emblem of renewal and harmony in Delhi.",
+    ogImage: "/bloom-delhi-2021.webp",
+    twitterCard: "summary_large_image",
+    canonicalUrl: "/artwork/bloom"
+  },
+  schema: {
+    "@context": "https://schema.org",
+    "@type": "VisualArtwork",
+    name: "Bloom",
+    description: "A poetic tribute to nature, this corten steel and brass sculpture, inspired by India's national flower, embodies renewal and elegance.",
+    image: [
+      "/bloom-delhi-2021.webp",
+      "/Arts/Bloom-Lotus.webp"
     ],
-    caption: <>Nandi</>,
-    details: {
-      heading: "NANDI",
-      location: "",
-      description: (
-        <>
-          A symbol of devotion, patience, and strength, this angular Nandi sculpture stands poised in a bustling Pune
-          residence <br /> embodying virtues of welcome and silent resilience deeply rooted in Indian tradition. <br /> It
-          transcends ornamentation, serving as a spiritual anchor and timeless guardian, <br />radiating harmony and sacred
-          presence.
-        </>
-      ),
-      details: (
-        <>
-          Material: Mild steel with Matte black finish and Brass
-          <br />Height: 4.5 ft, Width: 5.5 ft, Depth: 2.5 ft
-        </>
-      ),
-      credits: (
-        <>
-          Artist: Abhinav Goyal <br /> Commissioned for: Shivtirtha House, Pune <br /> Photography: FormForge
-        </>
-      ),
+    creator: {
+      "@type": "Person",
+      name: "Abhinav Goyal"
     },
-    seo: {
-      title: "Nandi - Spiritual Steel Sculpture by Abhinav Goyal | Pune 2020",
-      metaDescription: "Nandi: Angular mild steel and brass sculpture symbolizing devotion and strength. Pune 2020 by Abhinav Goyal.",
-      keywords: ["nandi sculpture", "spiritual art", "Pune sculpture", "mild steel art", "Indian tradition art", "Abhinav Goyal", "brass sculpture"],
-      ogTitle: "Nandi - Timeless Spiritual Guardian",
-      ogDescription: "Discover Nandi, an angular steel and brass sculpture embodying devotion and resilience, serving as a spiritual anchor in a Pune residence.",
-      ogImage: "/nandi-pune-2020.webp",
-      twitterCard: "summary_large_image",
-      canonicalUrl: "/artwork/nandi"
-    },
-    schema: {
-      "@context": "https://schema.org",
-      "@type": "VisualArtwork",
-      name: "Nandi",
-      description: "An angular Nandi sculpture symbolizing devotion, patience, and strength, serving as a spiritual anchor in a Pune residence.",
-      image: [
-        "/nandi-pune-2020.webp",
-        "/Arts/Nandi.webp",
-        "/Arts/Nandi-Pune.webp"
-      ],
-      creator: {
-        "@type": "Person",
-        name: "Abhinav Goyal"
-      },
-      dateCreated: "2020",
-      artMedium: "Mild Steel and Brass",
-      artworkSurface: "Matte Black and Brass",
-      height: "4.5 feet",
-      width: "5.5 feet",
-      depth: "2.5 feet",
-      locationCreated: "Pune, India",
-      url: "/artwork/nandi"
-    }
+    dateCreated: "2021",
+    artMedium: "Corten Steel and Brass",
+    height: "7 feet",
+    width: "5 feet",
+    locationCreated: "Delhi, India",
+    url: "/artwork/bloom"
+  }
+},
+{
+  id : "reflective-pause",
+  slug: "reflective-pause",
+  images: [{ src: "/reflective-pause-bangalore-2025.webp", alt: "Reflective Pause Sculpture in Bangalore, India, 2025" }],
+  caption: <>Reflective Pause</>,
+  details: {
+    heading: "Reflective Pause",
+    location: "Bangalore, India, 2025",
+    description: (
+      <>
+        A sculptural bench wrapped around a tree, Reflective Pause invites stillness and connection <br /> with nature in
+        the heart of the city. Crafted from mirror-polished stainless steel, its organic, fluid form <br /> captures
+        surrounding reflections, creating a calming oasis for urban dwellers to Sit, breathe, and Reflect.
+      </>
+    ),
+    details: (
+      <>
+        Material: Mirror-polished Stainless Steel <br />Height: 1.5 ft, Width: 6 ft, Depth: 5 ft
+      </>
+    ),
+    credits: (
+      <>
+        Artist: Abhinav Goyal <br /> Commissioned for: Bangalore Urban Retreat
+      </>
+    ),
   },
-  {
-    slug: "carefree-seat",
-    images: [
-      { src: "/carefree-seat-hyderabad-2022.webp", alt: "The Carefree Seat Sculpture in Hyderabad, India, 2022" },
-      { src: "/Arts/carefree-seat.webp", alt: "Carefree seat corten steel" },
-      { src: "/Arts/carefree-seat-hyderabad.webp", alt: "carefree seat corten steel sculpture" },
+  seo: {
+    title: "Reflective Pause - Stainless Steel Sculptural Bench by Abhinav Goyal | Bangalore 2025",
+    metaDescription: "Reflective Pause: Mirror-polished stainless steel sculptural bench wrapped around a tree, creating an urban oasis. Bangalore 2025 by Abhinav Goyal.",
+    keywords: ["reflective pause sculpture", "stainless steel bench", "Bangalore art", "urban oasis art", "functional sculpture", "Abhinav Goyal", "mirror-polished art"],
+    ogTitle: "Reflective Pause - Urban Oasis in Steel",
+    ogDescription: "Explore Reflective Pause, a stainless steel sculptural bench that wraps around a tree, inviting stillness and reflection in Bangalore's urban heart.",
+    ogImage: "/reflective-pause-bangalore-2025.webp",
+    twitterCard: "summary_large_image",
+    canonicalUrl: "/artwork/reflective-pause"
+  },
+  schema: {
+    "@context": "https://schema.org",
+    "@type": "VisualArtwork",
+    name: "Reflective Pause",
+    description: "A mirror-polished stainless steel sculptural bench wrapped around a tree, inviting stillness and connection with nature in an urban setting.",
+    image: ["/reflective-pause-bangalore-2025.webp"],
+    creator: {
+      "@type": "Person",
+      name: "Abhinav Goyal"
+    },
+    dateCreated: "2025",
+    artMedium: "Stainless Steel",
+    artworkSurface: "Mirror-Polished",
+    height: "1.5 feet",
+    width: "6 feet",
+    depth: "5 feet",
+    locationCreated: "Bangalore, India",
+    url: "/artwork/reflective-pause"
+  }
+},
+{
+  id: "abstracta",
+  slug: "abstracta",
+  images: [{ src: "/abstracta-delhi-2021.webp", alt: "Abstracta Sculpture in Delhi, India, 2021" }],
+  caption: <>Abstracta</>,
+  details: {
+    heading: "Abstracta",
+    location: "",
+    description: (
+      <>
+        A bold, geometric sculpture, Abstracta invites open interpretation through its layered intersecting <br /> frames
+        and dynamic angles. Set against a polished stone backdrop, its golden finish catches the light
+        <br /> amplifying its presence as a celebration of Pure form, Freedom, and Artistic expression.
+      </>
+    ),
+    details: (
+      <>
+        Material: Stainless steel with brushed Gold PVD Coating <br />Height: 4 ft, Width: 5 ft, Depth: 2.5 ft
+      </>
+    ),
+    credits: (
+      <>
+        Artist: Abhinav Goyal <br /> Commissioned for: Delhi Modern Art Gallery
+      </>
+    ),
+  },
+  seo: {
+    title: "Abstracta - Geometric Gold Sculpture by Abhinav Goyal | Delhi 2021",
+    metaDescription: "Abstracta: Bold geometric stainless steel sculpture with brushed gold PVD coating, celebrating artistic freedom. Delhi 2021 by Abhinav Goyal.",
+    keywords: ["abstracta sculpture", "geometric art", "gold PVD sculpture", "Delhi art", "modern art gallery", "Abhinav Goyal", "stainless steel art"],
+    ogTitle: "Abstracta - Celebration of Geometric Freedom",
+    ogDescription: "Discover Abstracta, a bold geometric sculpture in stainless steel with a gold finish, amplifying artistic expression against a polished stone backdrop.",
+    ogImage: "/abstracta-delhi-2021.webp",
+    twitterCard: "summary_large_image",
+    canonicalUrl: "/artwork/abstracta"
+  },
+  schema: {
+    "@context": "https://schema.org",
+    "@type": "VisualArtwork",
+    name: "Abstracta",
+    description: "A bold geometric sculpture with layered intersecting frames and a brushed gold PVD coating, celebrating pure form and artistic expression.",
+    image: ["/abstracta-delhi-2021.webp"],
+    creator: {
+      "@type": "Person",
+      name: "Abhinav Goyal"
+    },
+    dateCreated: "2021",
+    artMedium: "Stainless Steel",
+    artworkSurface: "Brushed Gold PVD Coating",
+    height: "4 feet",
+    width: "5 feet",
+    depth: "2.5 feet",
+    locationCreated: "Delhi, India",
+    url: "/artwork/abstracta"
+  }
+},
+{
+  id: "buddha",
+  slug: "buddha",
+  images: [
+    { src: "/buddha-bangalore-2023.webp", alt: "Buddha Sculpture in Bangalore, India, 2023" },
+    { src: "/Arts/Gautam-Buddha.webp", alt: "Buddha Sculpture of stainless steel" },
+  ],
+  caption: <>Buddha</>,
+  details: {
+    heading: "Buddha",
+    location: "",
+    description: (
+      <>
+        A serene Buddha in meditation, this faceted sculpture offers a moment of stillness amidst the urban rush.
+        <br /> It glows gently from within, symbolizing inner peace, balance, and spiritual awakening. <br /> Set within a
+        moon gate frame, it becomes a portal to tranquility in the heart of the city.
+      </>
+    ),
+    details: (
+      <>
+        Material: Corten steel with internal lighting <br />Height: 5.5 ft, Width: 4 ft, Depth: 2.5 ft
+      </>
+    ),
+    credits: (
+      <>
+        Artist: Abhinav Goyal <br /> Commissioned for: Bangalore Peace Foundation
+      </>
+    ),
+  },
+  seo: {
+    title: "Buddha - Corten Steel Sculpture by Abhinav Goyal | Bangalore 2023",
+    metaDescription: "Buddha: Faceted corten steel sculpture with internal lighting, symbolizing peace and spiritual awakening. Bangalore 2023 by Abhinav Goyal.",
+    keywords: ["buddha sculpture", "corten steel art", "Bangalore sculpture", "spiritual art", "Abhinav Goyal", "meditation sculpture", "illuminated art"],
+    ogTitle: "Buddha - Portal to Tranquility",
+    ogDescription: "Discover Buddha, a faceted corten steel sculpture glowing with inner light, offering stillness and spiritual awakening in Bangalore's urban heart.",
+    ogImage: "/buddha-bangalore-2023.webp",
+    twitterCard: "summary_large_image",
+    canonicalUrl: "/artwork/buddha"
+  },
+  schema: {
+    "@context": "https://schema.org",
+    "@type": "VisualArtwork",
+    name: "Buddha",
+    description: "A serene Buddha in meditation, this faceted corten steel sculpture with internal lighting symbolizes inner peace and spiritual awakening.",
+    image: [
+      "/buddha-bangalore-2023.webp",
+      "/Arts/Gautam-Buddha.webp"
     ],
-    caption: <>The Carefree Seat</>,
-    details: {
-      heading: "The Carefree Seat",
-      location: "",
-      description: (
-        <>
-          A functional sculpture of a relaxed figure seamlessly perched on a bench, this piece invites viewers <br />to
-          pause, reflect, and embrace leisure. Its faceted, geometric form adds a modern sensibility <br /> to the serene
-          garden setting, blurring the line between utility and art. A Quiet Companion to moments of rest.
-        </>
-      ),
-      details: (
-        <>
-          Material: Mild steel with outdoor-grade PU coating in Corten finish <br />Height: 5 ft, Width: 2 ft, Depth: 2.5
-          ft
-        </>
-      ),
-      credits: (
-        <>
-          Artist: Abhinav Goyal <br />Commissioned for: Public Space, Hyderabad
-        </>
-      ),
+    creator: {
+      "@type": "Person",
+      name: "Abhinav Goyal"
     },
-    seo: {
-      title: "Carefree Seat - Functional Corten Steel Sculpture by Abhinav Goyal | Hyderabad 2022",
-      metaDescription: "Carefree Seat: Functional mild steel sculpture with corten finish, blending art and utility in a serene garden setting. Hyderabad 2022 by Abhinav Goyal.",
-      keywords: ["carefree seat sculpture", "functional art", "corten steel sculpture", "Hyderabad art", "public space art", "Abhinav Goyal", "geometric sculpture"],
-      ogTitle: "Carefree Seat - Art Meets Leisure",
-      ogDescription: "Explore Carefree Seat, a functional corten steel sculpture that invites relaxation and reflection in a serene Hyderabad garden setting.",
-      ogImage: "/carefree-seat-hyderabad-2022.webp",
-      twitterCard: "summary_large_image",
-      canonicalUrl: "/artwork/carefree-seat"
-    },
-    schema: {
-      "@context": "https://schema.org",
-      "@type": "VisualArtwork",
-      name: "Carefree Seat",
-      description: "A functional mild steel sculpture with corten finish, depicting a relaxed figure on a bench, blending art and utility in a serene garden setting.",
-      image: [
-        "/carefree-seat-hyderabad-2022.webp",
-        "/Arts/carefree-seat.webp",
-        "/Arts/carefree-seat-hyderabad.webp"
-      ],
-      creator: {
-        "@type": "Person",
-        name: "Abhinav Goyal"
-      },
-      dateCreated: "2022",
-      artMedium: "Mild Steel",
-      artworkSurface: "Corten Finish with Outdoor-Grade PU Coating",
-      height: "5 feet",
-      width: "2 feet",
-      depth: "2.5 feet",
-      locationCreated: "Hyderabad, India",
-      url: "/artwork/carefree-seat"
-    }
+    dateCreated: "2023",
+    artMedium: "Corten Steel",
+    artworkSurface: "Internal Lighting",
+    height: "5.5 feet",
+    width: "4 feet",
+    depth: "2.5 feet",
+    locationCreated: "Bangalore, India",
+    url: "/artwork/buddha"
+  }
+},
+{
+  id: "sleeping-lotus",
+  slug: "sleeping-lotus",
+  images: [
+    { src: "/sleeping-lotus-delhi-2021.webp", alt: "Lotus Sculpture in Delhi" },
+    { src: "/Arts/Corten-Steel-lotus.webp", alt: "Lotus Sculpture of corten steel" },
+    { src: "/Arts/Steel-lotus.webp", alt: "Lotus Sculpture made of corten steel" },
+  ],
+  caption: <>The Sleeping Lotus</>,
+  details: {
+    heading: "The Sleeping Lotus",
+    location: "Delhi, India, 2021",
+    description: (
+      <>
+        A sculptural interpretation of a closed lotus bud, Sleeping Lotus captures the stillness <br />and quiet strength
+        of nature before awakening. Its organic curves and rhythmic layers <br />suggest latent energy and unfolding
+        potential
+        <br /> <i>A Celebration of Pause, Introspection, and the promise of Bloom.</i>
+      </>
+    ),
+    details: (
+      <>
+        Material: Corten steel with natural patina <br />Height: 3.5 ft, Width: 3 ft, Length: 8 ft
+      </>
+    ),
+    credits: (
+      <>
+        Artist: Abhinav Goyal <br /> Commissioned for: Delhi Nature Society
+      </>
+    ),
   },
-  {
-    slug: "bloom",
-    images: [
-      { src: "/bloom-delhi-2021.webp", alt: "Bloom Sculpture in Delhi, India, 2021" },
-      { src: "/Arts/Bloom-Lotus.webp", alt: "Bloom Sculpture of corten steel" },
+  seo: {
+    title: "Sleeping Lotus - Corten Steel Sculpture by Abhinav Goyal | Delhi 2021",
+    metaDescription: "Sleeping Lotus: Corten steel sculpture of a closed lotus bud, symbolizing stillness and potential. Delhi 2021 by Abhinav Goyal.",
+    keywords: ["sleeping lotus sculpture", "corten steel art", "Delhi sculpture", "nature-inspired art", "Abhinav Goyal", "lotus sculpture", "introspective art"],
+    ogTitle: "Sleeping Lotus - Stillness in Bloom",
+    ogDescription: "Explore Sleeping Lotus, a corten steel sculpture capturing the quiet strength and latent potential of a closed lotus bud in Delhi.",
+    ogImage: "/sleeping-lotus-delhi-2021.webp",
+    twitterCard: "summary_large_image",
+    canonicalUrl: "/artwork/sleeping-lotus"
+  },
+  schema: {
+    "@context": "https://schema.org",
+    "@type": "VisualArtwork",
+    name: "The Sleeping Lotus",
+    description: "A sculptural interpretation of a closed lotus bud, capturing the stillness and quiet strength of nature before awakening.",
+    image: [
+      "/sleeping-lotus-delhi-2021.webp",
+      "/Arts/Corten-Steel-lotus.webp",
+      "/Arts/Steel-lotus.webp"
     ],
-    caption: <>Bloom</>,
-    details: {
-      heading: "B L O O M",
-      location: "",
-      description: (
-        <>
-          A poetic tribute to nature, Bloom unfolds with resilience and grace, embodying elegance in its purest form. <br />{" "}
-          Rooted in serenity, this sculptural masterpiece flourishes in its refreshing surroundings. <br /> Inspired by our
-          national flower, Bloom was born from a vision sparked at the India Design ID Fair 2020, <br />where the client
-          was instantly drawn to our work. Designed to seamlessly merge with its space, <br /> it stands as an organic
-          extension of nature. <br /> <i>An emblem of renewal, harmony, and timeless beauty.</i>
-        </>
-      ),
-      details: (
-        <>
-          Material: Corten Steel & Brass <br />Height: 7 ft, Width: 5 ft
-        </>
-      ),
-      credits: (
-        <>
-          Artist: Abhinav Goyal <br /> Commissioned for: Private Residence, Delhi
-        </>
-      ),
+    creator: {
+      "@type": "Person",
+      name: "Abhinav Goyal"
     },
-    seo: {
-      title: "Bloom - Nature-Inspired Corten Steel Sculpture by Abhinav Goyal | Delhi 2021",
-      metaDescription: "Bloom: Corten steel and brass sculpture inspired by India's national flower, embodying renewal and elegance. Delhi 2021 by Abhinav Goyal.",
-      keywords: ["bloom sculpture", "corten steel art", "brass sculpture", "Delhi art", "nature-inspired art", "Abhinav Goyal", "India Design ID Fair"],
-      ogTitle: "Bloom - Emblem of Renewal and Elegance",
-      ogDescription: "Discover Bloom, a corten steel and brass sculpture inspired by the lotus, flourishing as an emblem of renewal and harmony in Delhi.",
-      ogImage: "/bloom-delhi-2021.webp",
-      twitterCard: "summary_large_image",
-      canonicalUrl: "/artwork/bloom"
-    },
-    schema: {
-      "@context": "https://schema.org",
-      "@type": "VisualArtwork",
-      name: "Bloom",
-      description: "A poetic tribute to nature, this corten steel and brass sculpture, inspired by India's national flower, embodies renewal and elegance.",
-      image: [
-        "/bloom-delhi-2021.webp",
-        "/Arts/Bloom-Lotus.webp"
-      ],
-      creator: {
-        "@type": "Person",
-        name: "Abhinav Goyal"
-      },
-      dateCreated: "2021",
-      artMedium: "Corten Steel and Brass",
-      height: "7 feet",
-      width: "5 feet",
-      locationCreated: "Delhi, India",
-      url: "/artwork/bloom"
-    }
-  },
+    dateCreated: "2021",
+    artMedium: "Corten Steel",
+    artworkSurface: "Natural Patina",
+    height: "3.5 feet",
+    width: "3 feet",
+    depth: "8 feet",
+    locationCreated: "Delhi, India",
+    url: "/artwork/sleeping-lotus"
+  }
+},
   {
-    slug: "reflective-pause",
-    images: [{ src: "/reflective-pause-bangalore-2025.webp", alt: "Reflective Pause Sculpture in Bangalore, India, 2025" }],
-    caption: <>Reflective Pause</>,
-    details: {
-      heading: "Reflective Pause",
-      location: "Bangalore, India, 2025",
-      description: (
-        <>
-          A sculptural bench wrapped around a tree, Reflective Pause invites stillness and connection <br /> with nature in
-          the heart of the city. Crafted from mirror-polished stainless steel, its organic, fluid form <br /> captures
-          surrounding reflections, creating a calming oasis for urban dwellers to Sit, breathe, and Reflect.
-        </>
-      ),
-      details: (
-        <>
-          Material: Mirror-polished Stainless Steel <br />Height: 1.5 ft, Width: 6 ft, Depth: 5 ft
-        </>
-      ),
-      credits: (
-        <>
-          Artist: Abhinav Goyal <br /> Commissioned for: Bangalore Urban Retreat
-        </>
-      ),
-    },
-    seo: {
-      title: "Reflective Pause - Stainless Steel Sculptural Bench by Abhinav Goyal | Bangalore 2025",
-      metaDescription: "Reflective Pause: Mirror-polished stainless steel sculptural bench wrapped around a tree, creating an urban oasis. Bangalore 2025 by Abhinav Goyal.",
-      keywords: ["reflective pause sculpture", "stainless steel bench", "Bangalore art", "urban oasis art", "functional sculpture", "Abhinav Goyal", "mirror-polished art"],
-      ogTitle: "Reflective Pause - Urban Oasis in Steel",
-      ogDescription: "Explore Reflective Pause, a stainless steel sculptural bench that wraps around a tree, inviting stillness and reflection in Bangalore's urban heart.",
-      ogImage: "/reflective-pause-bangalore-2025.webp",
-      twitterCard: "summary_large_image",
-      canonicalUrl: "/artwork/reflective-pause"
-    },
-    schema: {
-      "@context": "https://schema.org",
-      "@type": "VisualArtwork",
-      name: "Reflective Pause",
-      description: "A mirror-polished stainless steel sculptural bench wrapped around a tree, inviting stillness and connection with nature in an urban setting.",
-      image: ["/reflective-pause-bangalore-2025.webp"],
-      creator: {
-        "@type": "Person",
-        name: "Abhinav Goyal"
-      },
-      dateCreated: "2025",
-      artMedium: "Stainless Steel",
-      artworkSurface: "Mirror-Polished",
-      height: "1.5 feet",
-      width: "6 feet",
-      depth: "5 feet",
-      locationCreated: "Bangalore, India",
-      url: "/artwork/reflective-pause"
-    }
-  },
-  {
-    slug: "abstracta",
-    images: [{ src: "/abstracta-delhi-2021.webp", alt: "Abstracta Sculpture in Delhi, India, 2021" }],
-    caption: <>Abstracta</>,
-    details: {
-      heading: "Abstracta",
-      location: "",
-      description: (
-        <>
-          A bold, geometric sculpture, Abstracta invites open interpretation through its layered intersecting <br /> frames
-          and dynamic angles. Set against a polished stone backdrop, its golden finish catches the light
-          <br /> amplifying its presence as a celebration of Pure form, Freedom, and Artistic expression.
-        </>
-      ),
-      details: (
-        <>
-          Material: Stainless steel with brushed Gold PVD Coating <br />Height: 4 ft, Width: 5 ft, Depth: 2.5 ft
-        </>
-      ),
-      credits: (
-        <>
-          Artist: Abhinav Goyal <br /> Commissioned for: Delhi Modern Art Gallery
-        </>
-      ),
-    },
-    seo: {
-      title: "Abstracta - Geometric Gold Sculpture by Abhinav Goyal | Delhi 2021",
-      metaDescription: "Abstracta: Bold geometric stainless steel sculpture with brushed gold PVD coating, celebrating artistic freedom. Delhi 2021 by Abhinav Goyal.",
-      keywords: ["abstracta sculpture", "geometric art", "gold PVD sculpture", "Delhi art", "modern art gallery", "Abhinav Goyal", "stainless steel art"],
-      ogTitle: "Abstracta - Celebration of Geometric Freedom",
-      ogDescription: "Discover Abstracta, a bold geometric sculpture in stainless steel with a gold finish, amplifying artistic expression against a polished stone backdrop.",
-      ogImage: "/abstracta-delhi-2021.webp",
-      twitterCard: "summary_large_image",
-      canonicalUrl: "/artwork/abstracta"
-    },
-    schema: {
-      "@context": "https://schema.org",
-      "@type": "VisualArtwork",
-      name: "Abstracta",
-      description: "A bold geometric sculpture with layered intersecting frames and a brushed gold PVD coating, celebrating pure form and artistic expression.",
-      image: ["/abstracta-delhi-2021.webp"],
-      creator: {
-        "@type": "Person",
-        name: "Abhinav Goyal"
-      },
-      dateCreated: "2021",
-      artMedium: "Stainless Steel",
-      artworkSurface: "Brushed Gold PVD Coating",
-      height: "4 feet",
-      width: "5 feet",
-      depth: "2.5 feet",
-      locationCreated: "Delhi, India",
-      url: "/artwork/abstracta"
-    }
-  },
-  {
-    slug: "buddha",
-    images: [
-      { src: "/buddha-bangalore-2023.webp", alt: "Buddha Sculpture in Bangalore, India, 2023" },
-      { src: "/Arts/Gautam-Buddha.webp", alt: "Buddha Sculpture of stainless steel" },
-    ],
-    caption: <>Buddha</>,
-    details: {
-      heading: "Buddha",
-      location: "",
-      description: (
-        <>
-          A serene Buddha in meditation, this faceted sculpture offers a moment of stillness amidst the urban rush.
-          <br /> It glows gently from within, symbolizing inner peace, balance, and spiritual awakening. <br /> Set within a
-          moon gate frame, it becomes a portal to tranquility in the heart of the city.
-        </>
-      ),
-      details: (
-        <>
-          Material: Corten steel with internal lighting <br />Height: 5.5 ft, Width: 4 ft, Depth: 2.5 ft
-        </>
-      ),
-      credits: (
-        <>
-          Artist: Abhinav Goyal <br /> Commissioned for: Bangalore Peace Foundation
-        </>
-      ),
-    },
-    seo: {
-      title: "Buddha - Corten Steel Sculpture by Abhinav Goyal | Bangalore 2023",
-      metaDescription: "Buddha: Faceted corten steel sculpture with internal lighting, symbolizing peace and spiritual awakening. Bangalore 2023 by Abhinav Goyal.",
-      keywords: ["buddha sculpture", "corten steel art", "Bangalore sculpture", "spiritual art", "Abhinav Goyal", "meditation sculpture", "illuminated art"],
-      ogTitle: "Buddha - Portal to Tranquility",
-      ogDescription: "Discover Buddha, a faceted corten steel sculpture glowing with inner light, offering stillness and spiritual awakening in Bangalore's urban heart.",
-      ogImage: "/buddha-bangalore-2023.webp",
-      twitterCard: "summary_large_image",
-      canonicalUrl: "/artwork/buddha"
-    },
-    schema: {
-      "@context": "https://schema.org",
-      "@type": "VisualArtwork",
-      name: "Buddha",
-      description: "A serene Buddha in meditation, this faceted corten steel sculpture with internal lighting symbolizes inner peace and spiritual awakening.",
-      image: [
-        "/buddha-bangalore-2023.webp",
-        "/Arts/Gautam-Buddha.webp"
-      ],
-      creator: {
-        "@type": "Person",
-        name: "Abhinav Goyal"
-      },
-      dateCreated: "2023",
-      artMedium: "Corten Steel",
-      artworkSurface: "Internal Lighting",
-      height: "5.5 feet",
-      width: "4 feet",
-      depth: "2.5 feet",
-      locationCreated: "Bangalore, India",
-      url: "/artwork/buddha"
-    }
-  },
-  {
-    slug: "sleeping-lotus",
-    images: [
-      { src: "/sleeping-lotus-delhi-2021.webp", alt: "Lotus Sculpture in Delhi" },
-      { src: "/Arts/Corten-Steel-lotus.webp", alt: "Lotus Sculpture of corten steel" },
-      { src: "/Arts/Steel-lotus.webp", alt: "Lotus Sculpture made of corten steel" },
-    ],
-    caption: <>The Sleeping Lotus</>,
-    details: {
-      heading: "The Sleeping Lotus",
-      location: "Delhi, India, 2021",
-      description: (
-        <>
-          A sculptural interpretation of a closed lotus bud, Sleeping Lotus captures the stillness <br />and quiet strength
-          of nature before awakening. Its organic curves and rhythmic layers <br />suggest latent energy and unfolding
-          potential
-          <br /> <i>A Celebration of Pause, Introspection, and the promise of Bloom.</i>
-        </>
-      ),
-      details: (
-        <>
-          Material: Corten steel with natural patina <br />Height: 3.5 ft, Width: 3 ft, Length: 8 ft
-        </>
-      ),
-      credits: (
-        <>
-          Artist: Abhinav Goyal <br /> Commissioned for: Delhi Nature Society
-        </>
-      ),
-    },
-    seo: {
-      title: "Sleeping Lotus - Corten Steel Sculpture by Abhinav Goyal | Delhi 2021",
-      metaDescription: "Sleeping Lotus: Corten steel sculpture of a closed lotus bud, symbolizing stillness and potential. Delhi 2021 by Abhinav Goyal.",
-      keywords: ["sleeping lotus sculpture", "corten steel art", "Delhi sculpture", "nature-inspired art", "Abhinav Goyal", "lotus sculpture", "introspective art"],
-      ogTitle: "Sleeping Lotus - Stillness in Bloom",
-      ogDescription: "Explore Sleeping Lotus, a corten steel sculpture capturing the quiet strength and latent potential of a closed lotus bud in Delhi.",
-      ogImage: "/sleeping-lotus-delhi-2021.webp",
-      twitterCard: "summary_large_image",
-      canonicalUrl: "/artwork/sleeping-lotus"
-    },
-    schema: {
-      "@context": "https://schema.org",
-      "@type": "VisualArtwork",
-      name: "The Sleeping Lotus",
-      description: "A sculptural interpretation of a closed lotus bud, capturing the stillness and quiet strength of nature before awakening.",
-      image: [
-        "/sleeping-lotus-delhi-2021.webp",
-        "/Arts/Corten-Steel-lotus.webp",
-        "/Arts/Steel-lotus.webp"
-      ],
-      creator: {
-        "@type": "Person",
-        name: "Abhinav Goyal"
-      },
-      dateCreated: "2021",
-      artMedium: "Corten Steel",
-      artworkSurface: "Natural Patina",
-      height: "3.5 feet",
-      width: "3 feet",
-      depth: "8 feet",
-      locationCreated: "Delhi, India",
-      url: "/artwork/sleeping-lotus"
-    }
-  },
-  {
+    id : "raging-bull-2024",
     slug: "raging-bull-2024",
     images: [
       { src: "/raging-bull-goa-2024.webp", alt: "Raging Bull corten steel Sculpture in Goa, India, 2024" },
@@ -1602,6 +1606,7 @@ It floats in the vestibule, the vibrant heart of this workplace, drawing focus w
     }
   },
   {
+    id: "raging-stallions-2021-a",
     slug: "raging-stallions-2021-a",
     images: [
       { src: "/raging-stallions-chennai-2021.webp", alt: "Horse Sculpture in Chennai" },
@@ -1663,6 +1668,7 @@ It floats in the vestibule, the vibrant heart of this workplace, drawing focus w
     }
   },
   {
+    id: "panthera",
     slug: "panthera",
     images: [
       { src: "/panthera-dubai-2020.webp", alt: "Panthera Sculpture in Dubai, UAE, 2020" },
@@ -1725,6 +1731,7 @@ It floats in the vestibule, the vibrant heart of this workplace, drawing focus w
     }
   },
   {
+    id: "aphrodia",
     slug: "aphrodia",
     images: [{ src: "/aphrodia-goa-2018.webp", alt: "Aphrodia Sculpture in Goa, India, 2018" }],
     caption: <>Meditating Lady</>,
@@ -1780,6 +1787,7 @@ It floats in the vestibule, the vibrant heart of this workplace, drawing focus w
     }
   },
   {
+    id: "Signage",
     slug: "Signage",
     images: [{ src: "/Arts/parametric-wall.webp", alt: "Geomorph Sculpture in Hyderabad, India, 2023" }],
     caption: <>Signage</>,
@@ -1834,6 +1842,7 @@ It floats in the vestibule, the vibrant heart of this workplace, drawing focus w
     }
   },
   {
+    id: "Parametric dancing sculpture",
     slug: "Parametric dancing sculpture",
     images: [
       { src: "/ballerina-gurugram-2023.webp", alt: "Ballerina Sculpture in Gurugram, India, 2023" },
@@ -1899,6 +1908,7 @@ It floats in the vestibule, the vibrant heart of this workplace, drawing focus w
     }
   },
   {
+    id: "Deer Sculpture",
     slug: "Deer Sculpture",
     images: [
       { src: "/Arts/111111.webp", alt: "Deer Sculpture, 2025" },
@@ -1958,6 +1968,7 @@ It floats in the vestibule, the vibrant heart of this workplace, drawing focus w
     }
   },
   {
+    id: "Rhino Sculpture",
     slug: "Rhino Sculpture",
     images: [
       { src: "/Arts/Rhino-sculpture.webp", alt: "Rhino Sculpture made up corten steel" },
@@ -2013,6 +2024,7 @@ It floats in the vestibule, the vibrant heart of this workplace, drawing focus w
     }
   },
   {
+    id: "fish sculpture",
     slug: "fish sculpture",
     images: [
       { src: "/Arts/fish-sculpture.webp", alt: "whale Sculpture, 2025" },
@@ -2068,6 +2080,7 @@ It floats in the vestibule, the vibrant heart of this workplace, drawing focus w
     }
   },
   {
+    id: "wing-sculpture",
     slug: "wing-sculpture",
     images: [
       { src: "/wing-sculpture-gurugram-2022.webp", alt: "The Wing Sculpture modern metal installation in Gurugram, India, 2022" },
@@ -2131,6 +2144,7 @@ It floats in the vestibule, the vibrant heart of this workplace, drawing focus w
     }
   },
   {
+    id: "dreaming-of-dharma",
     slug: "dreaming-of-dharma",
     images: [
       { src: "/dreaming-of-dharma-noida-2024.webp", alt: "Dreaming of Dharma spiritual sculpture in Noida, India, 2024" },
@@ -2195,6 +2209,7 @@ It floats in the vestibule, the vibrant heart of this workplace, drawing focus w
     }
   },
   {
+    id: "Sitting Sculpture",
     slug: "Sitting Sculpture",
     images: [{ src: "/Arts/Sitting-Sculpture.webp", alt: "Skyward Bound dynamic steel sculpture in Delhi, India, 2024" }],
     caption: <>Silent Witness</>,
@@ -2248,6 +2263,7 @@ It floats in the vestibule, the vibrant heart of this workplace, drawing focus w
     }
   },
   {
+    id: "seed",
     slug: "seed",
     images: [{ src: "/seed-mumbai-2024.webp", alt: "Seed nature-inspired art sculpture made of corten steel" }],
     caption: <>Seed</>,
@@ -2305,6 +2321,7 @@ It floats in the vestibule, the vibrant heart of this workplace, drawing focus w
     }
   },
   {
+    id: "raging-bull-goa-2024",
     slug: "raging-bull-goa-2024",
     images: [{ src: "/raging-bull-goa_2024.webp", alt: "Raging Bull powerful metal sculpture in Goa, India, 2024" }],
     caption: <>Raging Bull</>,
@@ -2362,6 +2379,7 @@ It floats in the vestibule, the vibrant heart of this workplace, drawing focus w
     }
   },
   {
+    id : "ganapati",
     slug: "ganapati",
     images: [
       { src: "/ganapati-dxb-uae-2024.webp", alt: "Ganapati Hindu deity sculpture in Dubai UAE, 2024" },
@@ -2426,6 +2444,7 @@ It floats in the vestibule, the vibrant heart of this workplace, drawing focus w
     }
   },
   {
+    id: "standing sculpture",
     slug: "standing sculpture",
     images: [
       { src: "/Arts/Standing-sculpture.webp", alt: "Tata Performer sculpture art project by Formforge" },
@@ -2485,6 +2504,7 @@ It floats in the vestibule, the vibrant heart of this workplace, drawing focus w
     }
   },
   {
+    id: "parametric table",
     slug: "parametric table",
     images: [
       { src: "/Arts/birch-wood-seat.webp", alt: "paarmetric table project, India, 2018" },
@@ -2540,6 +2560,7 @@ It floats in the vestibule, the vibrant heart of this workplace, drawing focus w
     }
   },
   {
+    id: "Crescent sculpture",
     slug: "Crescent sculpture",
     images: [
       { src: "/Arts/Crescent1.webp", alt: "Crescent art project in High Court, Delhi" },
@@ -2600,6 +2621,7 @@ It floats in the vestibule, the vibrant heart of this workplace, drawing focus w
     }
   },
   {
+    id: "Wall Art",
     slug: "Wall Art",
     images: [
       { src: "/Arts/Wall-Art.webp", alt: "Wall art project, India, 2018" },
@@ -2660,6 +2682,7 @@ It floats in the vestibule, the vibrant heart of this workplace, drawing focus w
     }
   },
   {
+    id: "solemn",
     slug: "solemn",
     images: [
       { src: "/solemn-mumbai-2021.webp", alt: "horse contemporary sculpture in Mumbai, India, 2021" },
@@ -2724,6 +2747,7 @@ It floats in the vestibule, the vibrant heart of this workplace, drawing focus w
     }
   },
   {
+    id: "Inverted Bull",
     slug: "Inverted Bull",
     images: [
       { src: "/Arts/bull.webp", alt: "Bull Stainless steel sculpture" },
@@ -2782,6 +2806,7 @@ It floats in the vestibule, the vibrant heart of this workplace, drawing focus w
     }
   },
   {
+    id: "Metal Lord Shivji",
     slug: "Metal Lord Shivji",
     images: [
       { src: "/Arts/metal-shivji.webp", alt: "Metal Shivji sculpture" },
@@ -2836,6 +2861,7 @@ It floats in the vestibule, the vibrant heart of this workplace, drawing focus w
     }
   },
   {
+    id: "Wall Sculpture",
     slug: "Wall Sculpture",
     images: [
       { src: "/Arts/10999.png", alt: "Wall art project, India, 2023" },
@@ -2894,6 +2920,7 @@ It floats in the vestibule, the vibrant heart of this workplace, drawing focus w
   },
 
   {
+    id: "Butterfly head",
     slug: "Butterfly head",
     images: [
       { src: "/Arts/Human-face-corten-steel.webp", alt: "Butterfly human head sculpture art project, India" },
@@ -2956,6 +2983,7 @@ It floats in the vestibule, the vibrant heart of this workplace, drawing focus w
     }
   },
   {
+    id: "Wall Artwork",
     slug: "Wall Artwork",
     images: [
       { src: "/Arts/Light-wall-art.webp", alt: "Wall art project, India, 2018" },
@@ -3016,6 +3044,7 @@ It floats in the vestibule, the vibrant heart of this workplace, drawing focus w
     }
   },
   {
+    id: "Corten steel sculpture",
     slug: "Corten steel sculpture",
     images: [
       { src: "/Arts/000.webp", alt: "Winged sculpture art project, India" },
@@ -3071,6 +3100,7 @@ It floats in the vestibule, the vibrant heart of this workplace, drawing focus w
     }
   },
   {
+    id: "Corten Steel Triform",
     slug: "Corten Steel Triform",
     images: [
       { src: "/Arts/triform-corten-steel.webp", alt: "corten steel art project, India, 2018" },
@@ -3124,7 +3154,7 @@ It floats in the vestibule, the vibrant heart of this workplace, drawing focus w
       url: "/artwork/Corten-Steel-Triform"
     }
   },
-  {
+  { id : "Bar Table",
     slug: "Bar Table",
     images: [
       { src: "/Arts/444.webp", alt: "Bar Table project, India, 2018" },
@@ -3182,6 +3212,7 @@ It floats in the vestibule, the vibrant heart of this workplace, drawing focus w
     }
   },
   {
+    id: "Cactus sculpture",
     slug: "Cactus sculpture",
     images: [
       { src: "/Arts/555.webp", alt: "Cactus sculpture art project, India" },
@@ -3238,6 +3269,7 @@ It floats in the vestibule, the vibrant heart of this workplace, drawing focus w
     }
   },
   {
+    id: "hythmic",
     slug: "hythmic",
     images: [
       { src: "/Arts/666.webp", alt: "art project made of corten steel" },
@@ -3297,6 +3329,7 @@ It floats in the vestibule, the vibrant heart of this workplace, drawing focus w
     }
   },
   {
+    id: "shivaji-bust-birch",
   slug: "shivaji-bust-birch",
   images: [
     { src: "/Arts/Shivaji-Maharaj.webp", alt: "Shivaji bust sculpture made of birch wood by Abhinav Goyal" },

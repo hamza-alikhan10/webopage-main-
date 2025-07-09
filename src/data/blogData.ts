@@ -149,169 +149,371 @@ export interface BlogPost {
 //     }
 // },
 {
-    "id": "metal-sculptures-Art",
-    "title": "Metal Sculptures in Bengaluru & Hyderabad | Custom Stainless Steel, Corten Steel Art for Indoor & Outdoor Spaces",
-    "metaDescription": "Discover bespoke metal sculptures in Bengaluru and Hyderabad, crafted from stainless steel and corten steel. Perfect for indoor and outdoor spaces, FormForge creates custom art installations for architects, collectors, and design-forward clients seeking unique sculptural solutions.",
-    "content": `
-     <article class="blog-content max-w-4xl mx-auto">
-    <header class="mb-10">
-        <h1 class="text-4xl md:text-5xl font-bold text-center" style="font-family: Montserrat">
-           The Living Language of Metal: Sculptural Storytelling for Bengaluru & Hyderabad
-        </h1>
-    </header>
+  "id": "metal-sculptures-Art",
+  "title": "Metal Sculptures in Bengaluru & Hyderabad | Custom Stainless Steel, Corten Steel Art for Indoor & Outdoor Spaces",
+  "metaDescription": "Discover bespoke metal sculptures in Bengaluru and Hyderabad, crafted from stainless steel and corten steel. Perfect for indoor and outdoor spaces, FormForge creates custom art installations for architects, collectors, and design-forward clients seeking unique sculptural solutions.",
+  "content": `
+   <article class="blog-content max-w-4xl mx-auto">
+  <header class="mb-10">
+      <h1 class="text-4xl md:text-5xl font-bold text-center" style="font-family: Montserrat">
+         The Living Language of Metal: Sculptural Storytelling for Bengaluru & Hyderabad
+      </h1>
+      <div class="text-center mt-6 mb-8">
+          <p class="text-lg text-gray-700 italic">Transforming Spaces Through Custom Metal Art | Expert Craftsmanship | Site-Specific Installations</p>
+      </div>
+  </header>
 
-    <section class="mb-5">
-        <p class="text-gray-600">Metal sculptures are not mere objects; they are living conversations, forged at the intersection of material, imagination, and environment. At FormForge, we believe every curve of steel and every welded seam is an invitation to pause and feel. In the fast-evolving urban landscapes of Bengaluru and Hyderabad, metal sculptures offer something enduring: presence. They become anchors of meaning, moments of stillness, and vessels of memory within both contemporary and classical spaces.</p>
-    </section>
+  <section class="mb-5">
+      <p class="text-gray-600">Metal sculptures are not mere objects; they are living conversations, forged at the intersection of material, imagination, and environment. At FormForge, we believe every curve of steel and every welded seam is an invitation to pause and feel. In the fast-evolving urban landscapes of Bengaluru and Hyderabad, metal sculptures offer something enduring: presence. They become anchors of meaning, moments of stillness, and vessels of memory within both contemporary and classical spaces.</p>
+      
+      <p class="text-gray-600 mt-4">Our expertise in creating <strong>custom metal sculptures in Bengaluru and Hyderabad</strong> has established us as leading sculptural artists in South India's contemporary art scene. From <strong>stainless steel installations</strong> in corporate campuses to <strong>corten steel garden sculptures</strong> in private residences, we transform spaces through the power of sculptural storytelling.</p>
+  </section>
 
-    <section class="mb-7">
-        <h2 class="text-2xl md:text-3xl font-bold md:font-semibold mb-3">What Defines a Metal Sculpture?</h2>
-        <p class="text-gray-600">A metal sculpture is more than shaped metal; it is a union of strength and poetry, where raw material is transformed into emotion. At FormForge, we specialize in a range of materials to suit your vision and your space:</p>
-        <p class="text-gray-600"><b>Stainless Steel:</b> Modern, resilient, and luminous, perfect for both bold outdoor installations and refined indoor pieces.</p>
-        <p class="text-gray-600"><b>Corten Steel:</b> With its distinctive weathered patina, corten steel brings warmth and character, especially suited for outdoor sculptures in gardens, courtyards, or public plazas.</p>
-        <p class="text-gray-600"><b>Iron:</b> Classic, robust, and timeless, iron sculptures evoke tradition and strength.</p>
-        <p class="text-gray-600"><b>Glass:</b> When fused with metal, glass introduces light, color, and a sense of delicacy, creating striking contrasts.</p>
-        <p class="text-gray-600">Artists employ techniques such as welding, forging, and casting, balancing technical mastery with the desire to let each material speak in its own voice. The result is forms that are both monumental and intimate, designed to resonate in homes, offices, gardens, and public spaces across Bengaluru and Hyderabad.</p>
-        <p class="text-gray-600">Our custom metal sculptures in Bengaluru and Hyderabad are crafted to evoke emotion while enduring the test of time, making them ideal for both private collectors and public installations.</p>
-    </section>
+  <section class="mb-7">
+      <h2 class="text-2xl md:text-3xl font-bold md:font-semibold mb-3">What Defines a Metal Sculpture? Materials & Techniques</h2>
+      <p class="text-gray-600">A metal sculpture is more than shaped metal; it is a union of strength and poetry, where raw material is transformed into emotion. At FormForge, we specialize in a comprehensive range of materials to suit your vision and your space:</p>
+      
+      <div class="grid md:grid-cols-2 gap-4 mt-6 mb-6">
+          <div class="p-4 bg-gray-50 rounded-lg">
+              <h3 class="font-bold text-lg mb-2">Stainless Steel Sculptures</h3>
+              <p class="text-gray-600">Modern, resilient, and luminous, perfect for both bold outdoor installations and refined indoor pieces. Ideal for Bengaluru's tech parks and contemporary spaces.</p>
+          </div>
+          <div class="p-4 bg-gray-50 rounded-lg">
+              <h3 class="font-bold text-lg mb-2">Corten Steel Art</h3>
+              <p class="text-gray-600">With its distinctive weathered patina, corten steel brings warmth and character, especially suited for outdoor sculptures in gardens, courtyards, or public plazas in Hyderabad.</p>
+          </div>
+      </div>
+      
+      <p class="text-gray-600"><b>Iron Sculptures:</b> Classic, robust, and timeless, iron sculptures evoke tradition and strength, perfect for heritage-inspired projects.</p>
+      <p class="text-gray-600"><b>Glass & Metal Fusion:</b> When fused with metal, glass introduces light, color, and a sense of delicacy, creating striking contrasts that captivate viewers.</p>
+      <p class="text-gray-600">Artists employ advanced techniques such as welding, forging, and casting, balancing technical mastery with the desire to let each material speak in its own voice. The result is forms that are both monumental and intimate, designed to resonate in homes, offices, gardens, and public spaces across Bengaluru and Hyderabad.</p>
+      <p class="text-gray-600">Our custom metal sculptures in Bengaluru and Hyderabad are crafted to evoke emotion while enduring the test of time, making them ideal for both private collectors and public installations seeking lasting impact.</p>
+  </section>
 
-    <section class="mb-7">
-        <h2 class="text-2xl md:text-3xl font-bold md:font-semibold mb-3">A Brief History: From Ancient Craft to Contemporary Art</h2>
-        <p class="text-gray-600">Metalwork has shaped civilizations for millennia. From ancient iron gates in South Indian temples to the sleek stainless steel installations of today’s urban skylines, metal sculpture has always been a medium for storytelling.</p>
-        <p class="text-gray-600">In cities like Bengaluru and Hyderabad, where heritage meets innovation, contemporary metal art finds fertile ground. Today’s artists draw on this rich legacy, fusing traditional techniques with modern vision to create works that spark dialogue and inspire wonder.</p>
-        <p class="text-gray-600">Modern metal art in Bengaluru reflects the city’s tech-driven ethos, with sleek stainless steel sculptures adorning corporate campuses. In Hyderabad, corten steel art installations in heritage gardens blend tradition with contemporary aesthetics, creating timeless appeal.</p>
-    </section>
+  <section class="mb-7">
+      <h2 class="text-2xl md:text-3xl font-bold md:font-semibold mb-3">A Brief History: From Ancient Craft to Contemporary Art</h2>
+      <p class="text-gray-600">Metalwork has shaped civilizations for millennia. From ancient iron gates in South Indian temples to the sleek stainless steel installations of today's urban skylines, metal sculpture has always been a medium for storytelling and cultural expression.</p>
+      <p class="text-gray-600">In cities like Bengaluru and Hyderabad, where heritage meets innovation, contemporary metal art finds fertile ground. Today's artists draw on this rich legacy, fusing traditional techniques with modern vision to create works that spark dialogue and inspire wonder.</p>
+      <p class="text-gray-600">Modern metal art in Bengaluru reflects the city's tech-driven ethos, with sleek <strong>stainless steel sculptures adorning corporate campuses</strong> and innovation hubs. In Hyderabad, <strong>corten steel art installations</strong> in heritage gardens blend tradition with contemporary aesthetics, creating timeless appeal that resonates with both history and future.</p>
+      
+      <div class="bg-blue-50 p-6 rounded-lg mt-6">
+          <h3 class="font-bold text-lg mb-3">Why Metal Sculptures Matter in Modern India</h3>
+          <ul class="list-disc pl-6 text-gray-600 space-y-2">
+              <li>Bridge traditional craftsmanship with contemporary design</li>
+              <li>Create lasting landmarks that define urban identity</li>
+              <li>Provide cultural continuity in rapidly changing cityscapes</li>
+              <li>Offer sustainable art solutions for climate-conscious projects</li>
+          </ul>
+      </div>
+  </section>
 
-    <section class="mb-5">
-        <h2 class="text-2xl md:text-3xl font-bold md:font-semibold mb-3">The FormForge Approach: Sculptural Storytelling in Steel</h2>
-        <p class="text-gray-600">At FormForge, we don’t just build art; we embed memory into metal. Our forms are born from dreams, myths, and nature, not templates. Every commission is a dialogue between place, purpose, and poetry. Whether you are an architect designing a landmark in Bengaluru, a collector in Hyderabad seeking a one-of-a-kind piece, or a curator envisioning an outdoor installation, our process is rooted in:</p>
-        <p class="text-gray-600"><b>Craftsmanship:</b> Every weld, fold, and polish is deliberate and masterful.</p>
-        <p class="text-gray-600"><b>Imagination:</b> Our forms are inspired by the surreal, the elemental, and the silent power of stillness.</p>
-        <p class="text-gray-600"><b>Integrity:</b> We value honesty in process, timelines, and communication.</p>
-        <p class="text-gray-600"><b>Sustainability:</b> We favor durability, local sourcing, and minimal waste, values that resonate in the environmentally conscious communities of Bengaluru and Hyderabad.</p>
-        <p class="text-gray-600">Imagine a brushed stainless steel form, quietly anchoring a sunlit atrium in a Bengaluru tech park. Or a corten steel sculpture weathering gracefully in a Hyderabad garden, its patina deepening with each monsoon. These pieces don’t explain themselves; they invite you to pause, reflect, and feel.</p>
-        <p class="text-gray-600">Our bespoke metal installations are designed to transform spaces, offering a unique blend of artistry and functionality for clients seeking sculptural design in Bengaluru and Hyderabad.</p>
-    </section>
+  <section class="mb-5">
+      <h2 class="text-2xl md:text-3xl font-bold md:font-semibold mb-3">The FormForge Approach: Sculptural Storytelling in Steel</h2>
+      <p class="text-gray-600">At FormForge, we don't just build art; we embed memory into metal. Our forms are born from dreams, myths, and nature, not templates. Every commission is a dialogue between place, purpose, and poetry. Whether you are an architect designing a landmark in Bengaluru, a collector in Hyderabad seeking a one-of-a-kind piece, or a curator envisioning an outdoor installation, our process is rooted in:</p>
+      
+      <div class="grid md:grid-cols-2 gap-6 mt-6 mb-6">
+          <div class="border-l-4 border-red-500 pl-4">
+              <h3 class="font-bold text-lg mb-2">Craftsmanship Excellence</h3>
+              <p class="text-gray-600">Every weld, fold, and polish is deliberate and masterful, ensuring sculptures that stand the test of time.</p>
+          </div>
+          <div class="border-l-4 border-blue-500 pl-4">
+              <h3 class="font-bold text-lg mb-2">Imagination Unleashed</h3>
+              <p class="text-gray-600">Our forms are inspired by the surreal, the elemental, and the silent power of stillness.</p>
+          </div>
+          <div class="border-l-4 border-green-500 pl-4">
+              <h3 class="font-bold text-lg mb-2">Integrity in Process</h3>
+              <p class="text-gray-600">We value honesty in process, timelines, and communication throughout every project.</p>
+          </div>
+          <div class="border-l-4 border-yellow-500 pl-4">
+              <h3 class="font-bold text-lg mb-2">Sustainability Focus</h3>
+              <p class="text-gray-600">We favor durability, local sourcing, and minimal waste, values that resonate in environmentally conscious communities.</p>
+          </div>
+      </div>
+      
+      <p class="text-gray-600">Imagine a brushed stainless steel form, quietly anchoring a sunlit atrium in a Bengaluru tech park. Or a corten steel sculpture weathering gracefully in a Hyderabad garden, its patina deepening with each monsoon. These pieces don't explain themselves; they invite you to pause, reflect, and feel.</p>
+      <p class="text-gray-600">Our bespoke metal installations are designed to transform spaces, offering a unique blend of artistry and functionality for clients seeking sculptural design in Bengaluru and Hyderabad.</p>
+  </section>
 
-    <section class="mb-5">
-    <h2 class="text-2xl md:text-3xl font-bold md:font-semibold mb-3">Types of Metal Sculptures: Indoor & Outdoor Solutions</h2>
-    <p class="text-gray-600">FormForge offers a wide spectrum of possibilities for those seeking metal sculptures in Bengaluru and Hyderabad:</p>
-    <ul class="list-disc pl-5 text-gray-600">
-        <li><b>Abstract vs. Figurative:</b>
-            <ul class="list-disc pl-5">
-                <li>Abstract sculptures channel myth, movement, and dream, perfect for modern interiors or public spaces.</li>
-                <li>Figurative pieces echo human experience or the natural world, resonating in both traditional and contemporary settings.</li>
-            </ul>
-        </li>
-    </ul>
-    <img class="mt-7 mb-7 w-full max-w-l   mx-auto" src="/Arts/Hyderabad-Leaning-Man-Event-2023.webp" alt="Abstract metal sculptures in Bengaluru">
-    <ul class="list-disc pl-5 text-gray-600">
-        <li><b>Indoor Sculptures:</b>
-            <ul class="list-disc pl-5">
-                <li>Stainless steel and glass works bring light and movement into living rooms, lobbies, galleries, and atriums.</li>
-                <li>Iron and mixed-media pieces add warmth and character to private offices or residences.</li>
-            </ul>
-        </li>
-    </ul>
-    <img class="mt-7 mb-7 w-full max-w-sm mx-auto" src="/Arts/301.webp" alt="Indoor stainless steel and glass art for Hyderabad offices">
-    <ul class="list-disc pl-5 text-gray-600">
-        <li><b>Outdoor Sculptures:</b>
-            <ul class="list-disc pl-5">
-                <li>Corten steel installations weather beautifully in gardens, courtyards, and public plazas.</li>
-                <li>Monumental stainless steel pieces serve as focal points for campuses, commercial complexes, and urban parks.</li>
-            </ul>
-        </li>
-    </ul>
-    <img class="mt-7 mb-7 w-full max-w-l mx-auto" src="/Arts/Corten-Steel-lotus.webp" alt="Corten steel outdoor sculptures in Hyderabad gardens">
-    <ul class="list-disc pl-5 text-gray-600">
-        <li><b>Site-Specific & Custom Creations:</b>
-            <ul class="list-disc pl-5">
-                <li>We collaborate with architects, landscape designers, and curators to create sculptures that are perfectly integrated with their environment, whether it’s a rooftop terrace in Bengaluru or a heritage courtyard in Hyderabad.</li>
-            </ul>
-        </li>
-    </ul>
-    <p class="text-gray-600">From abstract metal sculptures that evoke emotion to figurative designs that tell stories, our portfolio caters to diverse tastes. Indoor metal art for offices in Bengaluru’s tech hubs or outdoor metal sculptures for Hyderabad’s public spaces, FormForge delivers tailored solutions.</p>
+  <section class="mb-5">
+  <h2 class="text-2xl md:text-3xl font-bold md:font-semibold mb-3">Types of Metal Sculptures: Indoor & Outdoor Solutions</h2>
+  <p class="text-gray-600">FormForge offers a comprehensive spectrum of possibilities for those seeking metal sculptures in Bengaluru and Hyderabad:</p>
+  
+  <div class="mb-8">
+      <h3 class="text-xl font-bold mb-4">Abstract vs. Figurative Metal Sculptures</h3>
+      <div class="grid md:grid-cols-2 gap-6">
+          <div class="bg-gray-50 p-6 rounded-lg">
+              <h4 class="font-bold text-lg mb-3">Abstract Metal Sculptures</h4>
+              <p class="text-gray-600 mb-4">Channel myth, movement, and dream, perfect for modern interiors or public spaces. These pieces invite personal interpretation and emotional connection.</p>
+              <p class="text-gray-600">Explore our <a href="https://formforge.com/gallery/Butterfly%20head" class="text-blue-600 hover:underline font-semibold">Butterfly Head sculpture</a> - a stunning example of abstract metal art that captures movement and transformation.</p>
+          </div>
+          <div class="bg-gray-50 p-6 rounded-lg">
+              <h4 class="font-bold text-lg mb-3">Figurative Metal Sculptures</h4>
+              <p class="text-gray-600 mb-4">Echo human experience and the natural world, resonating in both traditional and contemporary settings with immediate emotional impact.</p>
+              <p class="text-gray-600">Discover our <a href="https://formforge.com/gallery/Sitting%20Sculpture" class="text-blue-600 hover:underline font-semibold">Sitting Sculpture</a> - a powerful figurative piece that embodies contemplation and human presence.</p>
+          </div>
+      </div>
+  </div>
+  
+  <img class="mt-7 mb-7 w-full max-w-l mx-auto rounded-lg shadow-lg" src="/Arts/Hyderabad-Leaning-Man-Event-2023.webp" alt="Abstract metal sculptures in Bengaluru - FormForge contemporary art installation">
+  
+  <div class="mb-8">
+      <h3 class="text-xl font-bold mb-4">Indoor Metal Sculptures</h3>
+      <ul class="list-disc pl-5 text-gray-600 space-y-3">
+          <li><strong>Stainless Steel & Glass Artworks:</strong> Bring light and movement into living rooms, lobbies, galleries, and atriums with sophisticated contemporary appeal.</li>
+          <li><strong>Iron & Mixed-Media Pieces:</strong> Add warmth and character to private offices or residences with timeless elegance.</li>
+          <li><strong>Corporate Art Installations:</strong> Transform workplace environments with inspiring sculptural elements that enhance productivity and creativity.</li>
+          <li><strong>Residential Centerpieces:</strong> Create focal points that reflect personal style and artistic sensibility.</li>
+      </ul>
+  </div>
+  
+  <img class="mt-7 mb-7 w-full max-w-sm mx-auto rounded-lg shadow-lg" src="/Arts/301.webp" alt="Indoor stainless steel and glass art for Hyderabad offices - FormForge custom installations">
+  
+  <div class="mb-8">
+      <h3 class="text-xl font-bold mb-4">Outdoor Metal Sculptures</h3>
+      <ul class="list-disc pl-5 text-gray-600 space-y-3">
+          <li><strong>Corten Steel Garden Installations:</strong> Weather beautifully in gardens, courtyards, and public plazas, developing rich patinas over time.</li>
+          <li><strong>Monumental Stainless Steel Pieces:</strong> Serve as striking focal points for campuses, commercial complexes, and urban parks.</li>
+          <li><strong>Landscape Integration:</strong> Sculptures designed to complement natural settings and architectural environments.</li>
+          <li><strong>Public Art Commissions:</strong> Large-scale installations that become community landmarks and gathering spaces.</li>
+      </ul>
+  </div>
+  
+  <img class="mt-7 mb-7 w-full max-w-l mx-auto rounded-lg shadow-lg" src="/Arts/Corten-Steel-lotus.webp" alt="Corten steel outdoor sculptures in Hyderabad gardens - FormForge landscape art">
+  
+  <div class="mb-8">
+      <h3 class="text-xl font-bold mb-4">Site-Specific & Custom Creations</h3>
+      <div class="bg-gradient-to-r from-blue-50 to-purple-50 p-6 rounded-lg">
+          <p class="text-gray-600 mb-4">We collaborate with architects, landscape designers, and curators to create sculptures that are perfectly integrated with their environment. Each piece is thoughtfully designed to enhance rather than compete with its surroundings.</p>
+          <ul class="list-disc pl-5 text-gray-600 space-y-2">
+              <li>Rooftop terrace installations in Bengaluru's urban landscape</li>
+              <li>Heritage courtyard sculptures in Hyderabad's historic districts</li>
+              <li>Corporate campus landmarks that reflect company values</li>
+              <li>Residential garden features that create year-round interest</li>
+          </ul>
+      </div>
+  </div>
+  
+  <p class="text-gray-600">From abstract metal sculptures that evoke emotion to figurative designs that tell stories, our portfolio caters to diverse tastes and architectural styles. Whether you need indoor metal art for offices in Bengaluru's tech hubs or outdoor metal sculptures for Hyderabad's public spaces, FormForge delivers tailored solutions that exceed expectations.</p>
 </section>
 
-    <section class="mb-5">
-        <h2 class="text-2xl md:text-3xl font-bold md:font-semibold mb-3">The Making: From Vision to Installation</h2>
-        <p class="text-gray-600">Every FormForge sculpture is a journey:</p>
-        <ol class="list-decimal pl-5 text-gray-600">
-            <li><b>Concept:</b>
-                <p class="text-gray-600">Every project begins with a story, an emotion, a myth, or a moment. We listen deeply to your needs and the spirit of your space.</p>
-            </li>
-            <li><b>Design:</b>
-                <p class="text-gray-600">Sketches, models, and digital renderings translate vision into form. We balance imagination with the realities of your site, be it a bustling Bengaluru office or a tranquil Hyderabad garden.</p>
-            </li>
-            <li><b>Fabrication:</b>
-                <p class="text-gray-600">Skilled hands shape, weld, and finish the metal. Each step is a blend of precision and artistry. Our team is experienced in working with stainless steel, corten steel, iron, and glass, ensuring the right material for every environment.</p>
-            </li>
-            <li><b>Finishing:</b>
-                <p class="text-gray-600">Surfaces are brushed, patinated, or polished to reveal depth and subtle texture, tailored for indoor elegance or outdoor endurance.</p>
-            </li>
-            <li><b>Installation:</b>
-                <p class="text-gray-600">We handle every detail, from logistics in Bengaluru’s busy streets to the final placement in a Hyderabad villa, ensuring seamless integration and lasting impact.</p>
-            </li>
-        </ol>
-        <p class="text-gray-600">Sustainability is considered at every step, using locally sourced materials and building for generations.</p>
-        <p class="text-gray-600">Our process ensures that each custom metal sculpture, whether for a Bengaluru corporate campus or a Hyderabad private garden, is a masterpiece of sculptural design.</p>
-    </section>
+  <section class="mb-5">
+      <h2 class="text-2xl md:text-3xl font-bold md:font-semibold mb-3">The Making: From Vision to Installation</h2>
+      <p class="text-gray-600">Every FormForge sculpture is a carefully orchestrated journey from concept to completion:</p>
+      
+      <div class="space-y-6 mt-6">
+          <div class="flex items-start space-x-4">
+              <div class="bg-red-500 text-white rounded-full w-8 h-8 flex items-center justify-center font-bold">1</div>
+              <div>
+                  <h3 class="font-bold text-lg mb-2">Concept & Consultation</h3>
+                  <p class="text-gray-600">Every project begins with a story, an emotion, a myth, or a moment. We listen deeply to your needs and the spirit of your space, understanding the cultural context and architectural environment.</p>
+              </div>
+          </div>
+          
+          <div class="flex items-start space-x-4">
+              <div class="bg-blue-500 text-white rounded-full w-8 h-8 flex items-center justify-center font-bold">2</div>
+              <div>
+                  <h3 class="font-bold text-lg mb-2">Design & Development</h3>
+                  <p class="text-gray-600">Sketches, 3D models, and digital renderings translate vision into tangible form. We balance imagination with the practical realities of your site, whether it's a bustling Bengaluru office or a tranquil Hyderabad garden.</p>
+              </div>
+          </div>
+          
+          <div class="flex items-start space-x-4">
+              <div class="bg-green-500 text-white rounded-full w-8 h-8 flex items-center justify-center font-bold">3</div>
+              <div>
+                  <h3 class="font-bold text-lg mb-2">Expert Fabrication</h3>
+                  <p class="text-gray-600">Skilled artisans shape, weld, and finish the metal using state-of-the-art equipment and time-honored techniques. Each step is a blend of precision engineering and artistic vision.</p>
+              </div>
+          </div>
+          
+          <div class="flex items-start space-x-4">
+              <div class="bg-yellow-500 text-white rounded-full w-8 h-8 flex items-center justify-center font-bold">4</div>
+              <div>
+                  <h3 class="font-bold text-lg mb-2">Finishing & Detailing</h3>
+                  <p class="text-gray-600">Surfaces are brushed, patinated, or polished to reveal depth and subtle texture, tailored for indoor elegance or outdoor endurance in India's diverse climate conditions.</p>
+              </div>
+          </div>
+          
+          <div class="flex items-start space-x-4">
+              <div class="bg-purple-500 text-white rounded-full w-8 h-8 flex items-center justify-center font-bold">5</div>
+              <div>
+                  <h3 class="font-bold text-lg mb-2">Professional Installation</h3>
+                  <p class="text-gray-600">We handle every logistical detail, from navigating Bengaluru's busy streets to the final placement in a Hyderabad villa, ensuring seamless integration and lasting impact.</p>
+              </div>
+          </div>
+      </div>
+      
+      <div class="bg-green-50 p-6 rounded-lg mt-6">
+          <h3 class="font-bold text-lg mb-3">Sustainability in Every Step</h3>
+          <p class="text-gray-600">Environmental responsibility is woven throughout our process. We prioritize locally sourced materials, energy-efficient production methods, and designs built to last generations, reducing environmental impact while maximizing artistic value.</p>
+      </div>
+      
+      <p class="text-gray-600 mt-6">Our comprehensive process ensures that each custom metal sculpture, whether for a Bengaluru corporate campus or a Hyderabad private garden, becomes a masterpiece of sculptural design that tells your unique story.</p>
+  </section>
 
-    <section class="mb-5">
-        <h2 class="text-2xl md:text-3xl font-bold md:font-semibold mb-3">The Role of Metal Sculptures in Modern Architecture</h2>
-        <p class="text-gray-600">In the architectural landscapes of Bengaluru and Hyderabad, metal sculptures serve as more than decorative elements; they are integral to a building’s identity. Architects collaborate with FormForge to create site-specific sculptures that enhance spatial dynamics and evoke emotion.</p>
-        <p class="text-gray-600">Stainless steel sculptures in Bengaluru’s tech parks reflect modernity and innovation, while corten steel installations in Hyderabad’s heritage sites bridge past and present. These architectural metal art pieces act as focal points, guiding movement and creating memorable experiences.</p>
-        <p class="text-gray-600">Whether integrated into a facade, atrium, or courtyard, our bespoke metal installations elevate architectural projects, making them ideal for design-forward clients seeking unique solutions.</p>
-    </section>
+  <section class="mb-5">
+      <h2 class="text-2xl md:text-3xl font-bold md:font-semibold mb-3">The Role of Metal Sculptures in Modern Architecture</h2>
+      <p class="text-gray-600">In the architectural landscapes of Bengaluru and Hyderabad, metal sculptures serve as more than decorative elements; they are integral to a building's identity and user experience. Progressive architects collaborate with FormForge to create site-specific sculptures that enhance spatial dynamics and evoke powerful emotional responses.</p>
+      
+      <div class="grid md:grid-cols-2 gap-6 mt-6 mb-6">
+          <div class="bg-gray-50 p-6 rounded-lg">
+              <h3 class="font-bold text-lg mb-3">Bengaluru's Tech Landscape</h3>
+              <p class="text-gray-600">Stainless steel sculptures in tech parks and corporate campuses reflect the city's innovative spirit, creating environments that inspire creativity and forward-thinking.</p>
+          </div>
+          <div class="bg-gray-50 p-6 rounded-lg">
+              <h3 class="font-bold text-lg mb-3">Hyderabad's Heritage Integration</h3>
+              <p class="text-gray-600">Corten steel installations in heritage sites and cultural districts bridge past and present, honoring tradition while embracing contemporary expression.</p>
+          </div>
+      </div>
+      
+      <p class="text-gray-600">These architectural metal art pieces function as:</p>
+      <ul class="list-disc pl-5 text-gray-600 mt-4 space-y-2">
+          <li><strong>Wayfinding Elements:</strong> Guiding movement through complex spaces</li>
+          <li><strong>Focal Points:</strong> Creating memorable landmarks within buildings</li>
+          <li><strong>Identity Markers:</strong> Reflecting organizational values and culture</li>
+          <li><strong>Experiential Catalysts:</strong> Enhancing user interaction with built environments</li>
+      </ul>
+      
+      <p class="text-gray-600 mt-4">Whether integrated into a facade, atrium, or courtyard, our bespoke metal installations elevate architectural projects, making them ideal for design-forward clients seeking unique solutions that stand out in competitive markets.</p>
+  </section>
 
-    <section class="mb-5">
-        <h2 class="text-2xl md:text-3xl font-bold md:font-semibold mb-3">Designing for Bengaluru and Hyderabad’s Climate</h2>
-        <p class="text-gray-600">The tropical climates of Bengaluru and Hyderabad demand materials that withstand humidity, monsoon rains, and intense sunlight. FormForge’s outdoor metal sculptures are engineered for durability, ensuring they thrive in these conditions.</p>
-        <p class="text-gray-600"><b>Stainless Steel:</b> Resistant to corrosion, it maintains its luster in Bengaluru’s humid climate, ideal for both indoor and outdoor settings.</p>
-        <p class="text-gray-600"><b>Corten Steel:</b> Its protective patina makes it perfect for Hyderabad’s monsoons, aging gracefully without maintenance.</p>
-        <p class="text-gray-600"><b>Iron:</b> Treated for weather resistance, iron sculptures add timeless strength to gardens and plazas.</p>
-        <p class="text-gray-600"><b>Glass:</b> UV-resistant glass elements enhance outdoor sculptures, capturing light without fading.</p>
-        <p class="text-gray-600">Our expertise in material selection ensures that outdoor metal sculptures in Bengaluru and Hyderabad remain vibrant and enduring, enhancing gardens, courtyards, and public spaces.</p>
-    </section>
+  <section class="mb-5">
+      <h2 class="text-2xl md:text-3xl font-bold md:font-semibold mb-3">Designing for Bengaluru and Hyderabad's Climate</h2>
+      <p class="text-gray-600">The tropical and semi-arid climates of Bengaluru and Hyderabad present unique challenges and opportunities for outdoor metal sculptures. Our expertise in material science and local weather patterns ensures sculptures that not only survive but thrive in these environments.</p>
+      
+      <div class="grid md:grid-cols-2 gap-6 mt-6 mb-6">
+          <div class="border border-gray-200 p-6 rounded-lg">
+              <h3 class="font-bold text-lg mb-3 text-blue-600">Bengaluru Climate Considerations</h3>
+              <ul class="text-gray-600 space-y-2">
+                  <li>• Moderate temperatures year-round</li>
+                  <li>• High humidity during monsoons</li>
+                  <li>• Occasional heavy rainfall</li>
+                  <li>• Urban pollution factors</li>
+              </ul>
+          </div>
+          <div class="border border-gray-200 p-6 rounded-lg">
+              <h3 class="font-bold text-lg mb-3 text-orange-600">Hyderabad Climate Factors</h3>
+              <ul class="text-gray-600 space-y-2">
+                  <li>• Hot summers with intense sunlight</li>
+                  <li>• Distinct wet and dry seasons</li>
+                  <li>• Dust and wind exposure</li>
+                  <li>• Temperature fluctuations</li>
+              </ul>
+          </div>
+      </div>
+      
+      <h3 class="text-xl font-bold mb-4">Material Performance in Local Conditions</h3>
+      <div class="space-y-4">
+          <div class="bg-blue-50 p-4 rounded-lg">
+              <h4 class="font-bold mb-2">Stainless Steel (Grade 316L)</h4>
+              <p class="text-gray-600">Exceptional corrosion resistance maintains lustrous appearance in Bengaluru's humid climate. Perfect for both indoor and outdoor applications, requiring minimal maintenance.</p>
+          </div>
+          
+          <div class="bg-orange-50 p-4 rounded-lg">
+              <h4 class="font-bold mb-2">Corten Steel (Weathering Steel)</h4>
+              <p class="text-gray-600">Develops protective patina naturally in Hyderabad's dry climate, creating beautiful rust-colored surfaces that actually protect the underlying metal. Ideal for low-maintenance outdoor installations.</p>
+          </div>
+          
+          <div class="bg-gray-50 p-4 rounded-lg">
+              <h4 class="font-bold mb-2">Treated Iron & Steel</h4>
+              <p class="text-gray-600">Advanced coating technologies provide weather resistance while maintaining authentic material character. Suitable for heritage-style projects requiring traditional aesthetics.</p>
+          </div>
+          
+          <div class="bg-green-50 p-4 rounded-lg">
+              <h4 class="font-bold mb-2">Architectural Glass</h4>
+              <p class="text-gray-600">UV-resistant and thermally treated glass elements enhance sculptures without compromising durability. Specially selected for tropical light conditions.</p>
+          </div>
+      </div>
+      
+      <p class="text-gray-600 mt-6">Our material expertise ensures that outdoor metal sculptures in Bengaluru and Hyderabad remain vibrant and structurally sound for decades, enhancing gardens, courtyards, and public spaces while requiring minimal upkeep.</p>
+  </section>
 
-    <section class="mb-5">
-        <h2 class="text-2xl md:text-3xl font-bold md:font-semibold mb-3">The Emotional Impact of Sculptural Art</h2>
-        <p class="text-gray-600">A metal sculpture transcends aesthetics, creating emotional connections with its environment and viewers. In Bengaluru’s bustling tech hubs, abstract metal sculptures offer moments of calm, while figurative pieces in Hyderabad’s gardens evoke nostalgia and heritage.</p>
-        <p class="text-gray-600">FormForge’s modern metal art is designed to resonate with diverse audiences, from corporate employees to private collectors. Our sculptures invite interaction, whether through touch, reflection, or contemplation, transforming spaces into soulful experiences.</p>
-        <p class="text-gray-600">By blending materials like glass and metal, we create dynamic pieces that capture light and shadow, enhancing the emotional impact of bespoke metal installations in Bengaluru and Hyderabad.</p>
-    </section>
+  <section class="mb-5">
+      <h2 class="text-2xl md:text-3xl font-bold md:font-semibold mb-3">The Emotional Impact of Sculptural Art</h2>
+      <p class="text-gray-600">A metal sculpture transcends mere aesthetics, creating profound emotional connections between viewers and their environment. In Bengaluru's bustling tech ecosystem, abstract metal sculptures offer essential moments of calm and reflection, while figurative pieces in Hyderabad's cultural districts evoke deep connections to heritage and identity.</p>
+      
+      <div class="bg-gradient-to-r from-purple-50 to-pink-50 p-6 rounded-lg mt-6 mb-6">
+          <h3 class="font-bold text-lg mb-3">Psychological Benefits of Sculptural Art</h3>
+          <ul class="text-gray-600 space-y-2">
+              <li>• <strong>Stress Reduction:</strong> Contemplative forms provide mental respite in busy urban environments</li>
+              <li>• <strong>Inspiration:</strong> Dynamic compositions stimulate creativity and innovative thinking</li>
+              <li>• <strong>Identity Connection:</strong> Cultural motifs strengthen community bonds and personal belonging</li>
+              <li>• <strong>Spatial Orientation:</strong> Landmark sculptures help people navigate and remember spaces</li>
+          </ul>
+      </div>
+      
+      <p class="text-gray-600">FormForge's modern metal art is specifically designed to resonate with diverse audiences, from corporate employees seeking workplace inspiration to private collectors pursuing personal expression. Our sculptures invite multiple forms of interaction:</p>
+      
+      <div class="grid md:grid-cols-3 gap-4 mt-6">
+          <div class="text-center p-4 bg-gray-50 rounded-lg">
+              <h4 class="font-bold mb-2">Visual Impact</h4>
+              <p class="text-gray-600 text-sm">Compositions that command attention and create memorable impressions</p>
+          </div>
+          <div class="text-center p-4 bg-gray-50 rounded-lg">
+              <h4 class="font-bold mb-2">Tactile Experience</h4>
+              <p class="text-gray-600 text-sm">Surface textures that invite touch and physical connection</p>
+          </div>
+          <div class="text-center p-4 bg-gray-50 rounded-lg">
+              <h4 class="font-bold mb-2">Contemplative Presence</h4>
+              <p class="text-gray-600 text-sm">Forms that encourage pause, reflection, and mindful observation</p>
+          </div>
+      </div>
+      
+      <p class="text-gray-600 mt-6">By thoughtfully blending materials like glass and metal, we create dynamic pieces that capture light and shadow throughout the day, enhancing the emotional impact of bespoke metal installations in Bengaluru and Hyderabad's evolving urban landscapes.</p>
+  </section>
 
-    <section class="mb-5">
-        <h2 class="text-2xl md:text-3xl font-bold md:font-semibold mb-3">Why Commission a Metal Sculpture?</h2>
-        <p class="text-gray-600">A bespoke metal sculpture is more than an art piece; it’s a catalyst for transformation.</p>
-        <p class="text-gray-600"><b>For architects:</b> Anchor a building’s identity, create a focal point, or introduce contrast and flow.</p>
-        <p class="text-gray-600"><b>For homeowners and collectors:</b> Invite presence, memory, and meaning into your space, creating a legacy for generations.</p>
-        <p class="text-gray-600"><b>For businesses and public spaces:</b> Make a statement, spark dialogue, and create landmarks that define your environment.</p>
-        <p class="text-gray-600">Metal sculptures solve real design challenges, softening hard lines, introducing organic movement, or bridging the gap between function and feeling. Whether you seek an indoor centerpiece or an outdoor landmark, FormForge brings your vision to life in stainless steel and copper.</p>
-        <p class="text-gray-600">Our custom metal art commissions in India are crafted to meet the needs, ensuring each piece is a unique expression of creativity and purpose.</p>
-    </section>
-
-    <section class="mb-5">
-        <h2 class="text-2xl md:text-3xl font-bold md:font-semibold mb-3">Collaborating with FormForge: The Client Experience</h2>
-        <p class="text-gray-600">Commissioning a metal sculpture with FormForge is a collaborative journey. We prioritize clear communication, transparency, and creativity to deliver art that exceeds expectations.</p>
-        <p class="text-gray-600"><b>Consultation:</b> We begin by understanding your vision, space, and project goals, whether for a Bengaluru office or a Hyderabad residence.</p>
-        <p class="text-gray-600"><b>Proposal:</b> We present detailed plans, including sketches and material options, tailored to your needs.</p>
-        <p class="text-gray-600"><b>Execution:</b> Regular updates keep you informed as we fabricate and finish your sculpture, ensuring alignment with your vision.</p>
-        <p class="text-gray-600"><b>Support:</b> Post-installation, we provide care guidance to maintain your sculpture’s beauty.</p>
-        <p class="text-gray-600"> Our metal art commissions in Bengaluru and Hyderabad offer a seamless experience, delivering site-specific sculptures that resonate with clients’ visions.</p>
-    </section>
-
-    <section class="mb-5">
-        <h2 class="text-2xl md:text-3xl font-bold md:font-semibold mb-3"> Collecting & Caring for Metal Art</h2>
-    <p class="text-gray-600">The class sculptures are built to last and designed for those climate and conditions of Bengaluru and Hyderabad.</p>
-    <p class="text-gray-600"><b>Placement:</b> We advise on optimal conditions, considering sunlight, humidity, and local weather conditions.</p>
-    <p class="text-gray-600"><b>Maintenance:</b> maintenance: Most works require only occasional cleaning. Stainless steel and copper are especially resilient outdoors.</p>
-    <p class="text-gray-600"><b>Conservation:</b> Over time, natural patinas may develop, adding character. We provide guidance on preserving or restoring finishes as desired.</p>
-    <p class="text-gray-600">Our team offers comprehensive care advice for indoor and outdoor sculptures, ensuring they remain stunning for generations. Learn how to maintain metal art in Bengaluru and Hyderabad with our detailed maintenance guides, tailored for each material.</p>
-</section>
+  <section class="mb-5">
+      <h2 class="text-2xl md:text-3xl font-bold md:font-semibold mb-3">Why Commission a Metal Sculpture?</h2>
+      <p class="text-gray-600">A bespoke metal sculpture represents more than an art purchase; it's an investment in transformation, legacy, and meaningful expression. In today's rapidly changing world, permanent artworks provide stability and enduring value.</p>
+      
+      <div class="grid md:grid-cols-3 gap-6 mt-6 mb-6">
+          <div class="bg-blue-50 p-6 rounded-lg">
+              <h3 class="font-bold text-lg mb-3 text-blue-700">For Architects & Designers</h3>
+              <ul class="text-gray-600 space-y-2">
+                  <li>• Anchor building identity with signature pieces</li>
+                  <li>• Create compelling focal points that define spaces</li>
+                  <li>• Introduce organic contrast to geometric architecture</li>
+                  <li>• Solve complex spatial flow challenges</li>
+                  <li>• Enhance project differentiation in competitive markets</li>
+              </ul>
+          </div>
+          
+          <div class="bg-green-50 p-6 rounded-lg">
+              <h3 class="font-bold text-lg mb-3 text-green-700">For Homeowners & Collectors</h3>
+              <ul class="text-gray-600 space-y-2">
+                  <li>• Express personal values and aesthetic vision</li>
+                  <li>• Create conversation pieces that spark dialogue</li>
+                  <li>• Establish family legacy through lasting art</li>
+                  <li>• Enhance property value with unique installations</li>
+                  <li>• Connect with contemporary art movements</li>
+              </ul>
+          </div>
+          
+          <div class="bg-purple-50 p-6 rounded-lg">
+              <h3 class="font-bold text-lg mb-3 text-purple-700">For Businesses & Public Spaces</h3>
+              <ul class="text-gray-600 space-y-2">
+                  <li>• Communicate brand values through visual metaphors</li>
+                  <li>• Create Instagram-worthy landmark destinations</li>
+                  <li>• Demonstrate commitment to arts and culture</li>
+                  <li>• Improve employee satisfaction and retention</li>
+                  <li>• Establish memorable meeting places</li>
+              </ul>
+          </div>
+      </div>
+      
+      <div class="bg-yellow-50 p-6 rounded-lg mt-6">
+          <h3 class="font-bold text-lg mb-3">Practical Benefits of Metal Sculptures</h3>
+          <p class="text-gray-600 mb-4">Beyond aesthetic appeal, metal sculptures address real design challenges:</p>
+          <ul class="text-gray-600 space-y-2">
+              <li>• <strong>Space Definition:</strong> Delineate areas without physical barriers</li>
+              <li>• <strong>Acoustic Enhancement:</strong> Reduce noise pollution in open spaces</li>
+              <li>• <strong>Microclimate Creation:</strong> Provide shade and wind protection</li>
+              <li>• <strong>Security Integration:</strong> Combine art with practical safety features</li>
+              <li>• <strong>Maintenance Efficiency:</strong> Durable materials reduce long-term costs</li>
+          </ul>
+      </div>
 
 <section class="mb-5">
-    <h2 class="text-2xl md:text-3xl font-bold md:font-semibold mb-3">Inviting Presence Into Your Space</h2>
+    <h2 class="text-2xl md:text-3xl font-bold md:font-semibold mb-3 mt-6">Inviting Presence Into Your Space</h2>
     <p class="text-gray-600">A metal sculpture is not just seen; it is felt. It anchors, transforms, spaces, and invites you to linger. At FormForge, we shape metal into soulful experiences, crafting art that lives quietly but powerfully within its surroundings.</p>
     <p class="text-gray-600">If you are in Bengaluru or Hyderabad and seek art that is alive, not merely decorative, we invite you to begin a conversation with us. Whether you envision you envision stainless steel gleaming or glass catching, FormForge is your partner in sculptural storytelling.</p>
     <p class="text-gray-600">Start your journey with FormForge to create a custom piece of metal sculpture that transforms your space, whether a private home, corporate office, or public plaza in Bengaluru or Hyderabad.</p>
