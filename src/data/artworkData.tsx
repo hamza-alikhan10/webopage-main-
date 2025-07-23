@@ -652,16 +652,16 @@ It floats in the vestibule, the vibrant heart of this workplace, drawing focus w
     "id": "sculptural-totems",
     "slug": "sculptural-totems",
     "images": [
-      { "src": "/sculptural-totems-hyderabad-2025.webp", "alt": "Sculptural Totems in Hyderabad, India, 2025" },
-      { "src": "/Arts/t10.webp", "alt": "Sculptural Totems made up of corten steel" }
+      { "src": "/Arts/METAL-TOTEMS.webp", "alt": "Sculptural Totems made up of corten steel" }
     ],
     "caption": "Sculptural Totems",
     "details": {
       "heading": "Sculptural Totems",
       "location": "",
-      "description": "A series of vertical forms inspired by ancient totems, these sculptures merge cultural heritage <br /> with modern abstraction. Their faceted silhouettes and perforated patterns glow from within <br /> symbolizing inner light and shared human presence. Standing together they evoke unity <br /> ,quiet strength, and timeless storytelling through form and illumination.",
+      "description": (<>A series of vertical forms inspired by ancient totems, these sculptures merge cultural heritage <br /> with modern abstraction. Their faceted silhouettes and perforated patterns glow from within <br /> symbolizing inner light and shared human presence. Standing together they evoke unity <br /> quiet strength, and timeless storytelling through form and illumination.</>),
       "details": "Material: Corten Steel",
-      "credits": "Artist: Abhinav Goyal <br /> Commissioned for: Hyderabad Arts Council"
+      "credits": (<>Artist: Abhinav Goyal  <br /> Commissioned for: Hyderabad Arts Council</>)
+      
     },
     "seo": {
       "title": "Sculptural Totems - Modern Abstract Corten Steel Art by Abhinav Goyal | Hyderabad 2025",
@@ -1972,6 +1972,7 @@ It floats in the vestibule, the vibrant heart of this workplace, drawing focus w
     slug: "Rhino Sculpture",
     images: [
       { src: "/Arts/Rhino-sculpture.webp", alt: "Rhino Sculpture made up corten steel" },
+      { src: "/Arts/Metal-rhino-1.webp", alt: "Rhino Sculpture made of corten steel" }
     ],
     caption: <>Bovine</>,
     details: {

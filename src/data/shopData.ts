@@ -114,7 +114,7 @@ export const sculptures: Sculpture[] = [
     {
       "id": "metal-rhino",
       "title": "Rhino",
-      "images": ["/Arts/Rhino-sculpture.webp"],
+      "images": ["/Arts/Rhino-sculpture.webp", "/Arts/Metal-rhino-1.webp" ],
       "description": "Corten-steel rhino captures raw strength in peaceful repose.",
       "details": {
         "type": "Unique work",

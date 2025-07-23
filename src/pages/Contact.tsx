@@ -12,7 +12,7 @@ const Contact = () => {
   const { toast } = useToast();
   const [formData, setFormData] = useState({
     firstName: '',
-    email: '',
+    phone: '',
     message: '',
   });
 
@@ -23,7 +23,7 @@ const Contact = () => {
     const formDataObject = new FormData();
     formDataObject.append("access_key", "d10e42be-f2df-4127-a6f7-cec9b26fded9");
     formDataObject.append("name", formData.firstName);
-    formDataObject.append("email", formData.email);
+    formDataObject.append("phone", formData.phone);
     formDataObject.append("message", formData.message);
 
     try {
@@ -37,7 +37,7 @@ const Contact = () => {
           title: "Success!",
           description: "Thank you for reaching out to us. Your response has been recorded, Our team shall get back to you shortly.",
         });
-        setFormData({ firstName: "", email: "", message: "" });
+        setFormData({ firstName: "", phone: "", message: "" });
       } else {
         toast({ title: "Error", description: "Something went wrong. Please Try again!" });
       }
@@ -50,7 +50,7 @@ const Contact = () => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handlePhoneClick = () => window.location.href = 'tel:+919650020485';
+  const handlePhoneClick = () => window.location.href = 'tel:+919650006385';
   const handleMapClick = () => {
     const address = encodeURIComponent("Block A, Sector 43, Noida, Uttar Pradesh 201303");
     window.open(`https://www.google.com/maps?q=${address}`, '_blank');
@@ -74,11 +74,11 @@ const Contact = () => {
               required
             />
             <Input
-              type="email"
-              name="email"
-              placeholder="Email Address"
+              type="tel"
+              name="phone"
+              placeholder="Phone Number"
               className="placeholder:text-sm sm:placeholder:text-[15px]"
-              value={formData.email}
+              value={formData.phone}
               onChange={handleChange}
               required
             />
@@ -106,9 +106,9 @@ const Contact = () => {
                     <Phone className="w-6 h-6 text-gray-700 hover:text-black" />
                   </button>
                   <span className="sm:text-lg text-base">
-                    <a href="tel:+919650020485" className="hover:underline">+91 965 002 0485</a>
+                    <a href="tel:+919650020485" className="hover:underline">+91 965 000 6385 </a>
                     <br />
-                    <a href="tel:+919650006385" className="hover:underline">+91 965 000 6385</a>
+                    <a href="tel:+919650006385" className="hover:underline">+91 965 002 0485</a>
                   </span>
                 </div>
                 <button onClick={handleMapClick} className="flex space-x-3 items-center  hover:bg-gray-200 p-3 rounded-lg transition-colors text-left">

@@ -4,6 +4,7 @@ import Footer from "@/components/ui/Footer"; // Use Shadcn/UI path
 import "../App.css";
 import { Helmet } from "react-helmet";
 import { ARTWORK_IMAGES, ImageData } from "../data/artworkData"; // Adjust path as needed
+import WhatsAppFloat from "@/components/WhatsAppFloat"; 
 
 const Gallery = () => {
   return (
@@ -115,7 +116,7 @@ const Gallery = () => {
             </div>
           ))}
         </div>
-
+        <WhatsAppFloat phoneNumber="+919650020485" />
         <Footer />
       </div>
     </div>
