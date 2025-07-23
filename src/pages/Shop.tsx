@@ -5,6 +5,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/ui/Footer";
 import { Link } from "react-router-dom";
 import { sculptures, Sculpture } from "../data/shopData";
+import WhatsAppFloat from "@/components/WhatsAppFloat"; 
 import {
   Dialog,
   DialogContent,
@@ -210,11 +211,11 @@ const Shop = () => {
         {/* Header with SEO-optimized content */}
         <div className="px-4 sm:px-6 lg:px-8 pb-3 sm:pb-8 lg:pb-5">
           <div className="text-center mb-5 sm:mb-12 lg:mb-12">
-            <h1 className="text-xl sm:text-3xl md:text-4xl lg:text-5xl font-playfair text-gray-800 mb-2 tracking-wide leading-tight">
-              Shop Luxury Sculptures 
+            <h1 className="text-xl sm:text-3xl md:text-4xl lg:text-5xl font-playfair text-gray-800  tracking-wide leading-tight">
+            Signature Sculptural Icons
             </h1>
             <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            Explore our signature Sculptures of modern luxury, engineered with narrative detail. Select from ready-to-ship icons, <br/> all expertly packed for worldwide delivery.
+            Explore modern forms crafted with narrative detail. Select from ready‑to‑ship icons, expertly packed for worldwide delivery.
             </p>
           </div>
 

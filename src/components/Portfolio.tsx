@@ -116,7 +116,7 @@ const Gallery = () => {
             </div>
           ))}
         </div>
-        <WhatsAppFloat phoneNumber="+919650020485" />
+        <WhatsAppFloat phoneNumber="+919650006385" />
         <Footer />
       </div>
     </div>

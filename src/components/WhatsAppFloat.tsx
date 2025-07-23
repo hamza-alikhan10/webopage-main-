@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import { X, Phone, MessageSquare, ArrowRight } from 'lucide-react';
-import { Input } from "@/components/ui/input"; // Added import
-import { Textarea } from "@/components/ui/textarea"; // Added import
-import { Button } from "@/components/ui/button"; // Added import
+import { X, MessageSquare, ArrowRight } from 'lucide-react';
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
+import { Button } from "@/components/ui/button";
 
 interface WhatsAppFloatProps {
   phoneNumber: string;
@@ -97,11 +97,11 @@ const WhatsAppFloat = ({
   return (
     <>
       {/* Main WhatsApp Float Button */}
-      <div className="fixed bottom-6 right-6 z-50 flex flex-col items-end space-y-3">
+      <div className="fixed bottom-6 right-6 z-50 flex flex-col items-end space-y-2">
         {/* Contact Form Trigger - Shows after scrolling */}
         {scrolled && (
           <div 
-            className="bg-[#F5F5F5] border border-gray-200 rounded-lg shadow-sm p-4 max-w-xs cursor-pointer hover:shadow-md transition-all duration-300 transform hover:scale-105 animate-slideInRight"
+            className="bg-[#F5F5F5] border border-[#FDE1D3] rounded-lg shadow-sm p-4 max-w-xs cursor-pointer hover:shadow-md transition-all duration-300 transform hover:scale-105 animate-slideInRight"
             onClick={() => setShowContactForm(true)}
           >
             <div className="flex items-center space-x-3">
@@ -110,7 +110,7 @@ const WhatsAppFloat = ({
               </div>
               <div className="flex-1">
                 <p className="text-sm font-medium text-gray-800 font-montserrat">Connect with Us</p>
-                <p className="text-xs text-gray-600 font-montserrat">Start your art journey</p>
+                <p className="text-xs text-gray-600 font-montserrat">Sculptural Solutions for Every Venue</p>
               </div>
               <ArrowRight className="w-4 h-4 text-gray-400" />
             </div>
@@ -121,52 +121,41 @@ const WhatsAppFloat = ({
         <div className="relative">
           <button
             onClick={handleWhatsAppClick}
-            className="group relative bg-gray-800 hover:bg-gray-900 text-white rounded-full p-4 shadow-md hover:shadow-lg transition-all duration-300 transform hover:scale-110"
+            className="group relative bg-black hover:bg-gray-800 text-white rounded-full p-4 shadow-md hover:shadow-lg transition-all duration-300 transform hover:scale-110"
             aria-label="Contact us on WhatsApp"
           >
             {/* Pulse animation ring */}
-            <div className="absolute -inset-1 bg-gray-800 rounded-full animate-ping opacity-30"></div>
+            <div className="absolute -inset-1 bg-black rounded-full animate-ping opacity-30"></div>
             
             {/* WhatsApp Icon */}
             <WhatsAppIcon />
             
             {/* Tooltip */}
-            <div className="absolute bottom-full right-0 mb-3 px-4 py-2 bg-gray-800 text-white text-sm rounded-lg opacity-0 group-hover:opacity-100 transition-all duration-200 whitespace-nowrap shadow-md font-montserrat">
-              Reach Out via WhatsApp
-              <div className="absolute top-full right-4 w-0 h-0 border-l-4 border-r-4 border-t-4 border-transparent border-t-gray-800"></div>
+            <div className="absolute bottom-full right-0 mb-3 px-4 py-2 bg-black text-white text-sm rounded-lg opacity-0 group-hover:opacity-100 transition-all duration-200 whitespace-nowrap shadow-md font-montserrat">
+            Expert Art Advice Now
+              <div className="absolute top-full right-4 w-0 h-0 border-l-4 border-r-4 border-t-4 border-transparent border-t-black"></div>
             </div>
           </button>
 
           {/* Online indicator */}
           <div className="absolute -top-1 -right-1 w-4 h-4 bg-gray-400 border-2 border-white rounded-full animate-pulse"></div>
         </div>
-
-        {/* Quick Actions - Phone Call Button */}
-        <div className="flex flex-col space-y-2">
-          <button
-            onClick={() => window.location.href = 'tel:+919650020485'}
-            className="p-3 rounded-full hover:bg-gray-200 transition-transform hover:scale-110 shadow-md"
-            aria-label="Call us"
-          >
-            <Phone className="w-5 h-5 text-gray-700 hover:text-black" />
-          </button>
-        </div>
       </div>
 
       {/* Contact Form Modal */}
       {showContactForm && (
         <div className="fixed inset-0 bg-black bg-opacity-50 z-[100] flex items-center justify-center p-4">
-          <div className="bg-[#F5F5F5] border border-gray-200 rounded-lg shadow-md max-w-md w-full max-h-[90vh] overflow-y-auto">
+          <div className="bg-[#F5F5F5] border border-[#FDE1D3] rounded-lg shadow-md max-w-md w-full max-h-[90vh] overflow-y-auto">
             {/* Header */}
-            <div className="bg-gray-800 text-white p-6 rounded-t-lg relative">
+            <div className="bg-[#EDEDED] text-white p-6 rounded-t-lg relative">
               <button
                 onClick={() => setShowContactForm(false)}
                 className="absolute top-4 right-4 text-white hover:text-gray-200 transition-colors"
               >
                 <X className="w-6 h-6" />
               </button>
-              <h3 className="sm:text-xl sm:font-semibold text-lg mb-2 font-montserrat text-center">Connect with us to get started!</h3>
-              <p className="text-gray-300 text-sm font-montserrat text-center">Reach out for personalized art consultation</p>
+              <h3 className="sm:text-xl sm:font-semibold text-gray-800 text-lg mb-2 font-montserrat text-center">Complimentary Art Guidance!</h3>
+            
             </div>
 
             {/* Form */}
@@ -179,7 +168,7 @@ const WhatsAppFloat = ({
                   value={formData.firstName}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gray-500 focus:border-transparent transition-all font-montserrat placeholder:text-sm"
+                  className="w-full px-4 py-3 border border-[#FDE1D3] rounded-lg focus:ring-2 focus:ring-gray-500 focus:border-transparent transition-all font-montserrat placeholder:text-sm"
                 />
               </div>
 
@@ -191,23 +180,14 @@ const WhatsAppFloat = ({
                   value={formData.phone}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gray-500 focus:border-transparent transition-all font-montserrat placeholder:text-sm"
+                  className="w-full px-4 py-3 border border-[#FDE1D3] rounded-lg focus:ring-2 focus:ring-gray-500 focus:border-transparent transition-all font-montserrat placeholder:text-sm"
                 />
               </div>
 
-              <div>
-                <Textarea
-                  name="message"
-                  placeholder="Message"
-                  value={formData.message}
-                  onChange={handleChange}
-                  required
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gray-500 focus:border-transparent transition-all resize-none font-montserrat placeholder:text-sm pb-10"
-                />
-              </div>
+              
 
               {/* Benefits */}
-              <div className="bg-gray-100 p-4 rounded-lg">
+              <div className="bg-[#EDEDED] p-4 rounded-lg border border-[#FDE1D3]">
                 <h4 className="font-semibold text-gray-800 mb-2 font-montserrat">What you'll receive:</h4>
                 <ul className="text-sm text-gray-600 space-y-1 font-montserrat">
                   <li>✅ Personalized art consultation</li>
@@ -221,14 +201,12 @@ const WhatsAppFloat = ({
                 type="button"
                 onClick={handleFormSubmit}
                 disabled={isSubmitting}
-                className="w-full bg-gray-800 text-white py-3 px-6 rounded-lg font-semibold hover:bg-gray-900 transition-all duration-300 font-montserrat mx-auto"
+                className="w-full bg-black text-white py-3 px-6 rounded-lg font-semibold hover:bg-gray-800 transition-all duration-300 font-montserrat mx-auto"
               >
                 {isSubmitting ? "Submitting..." : "SUBMIT"}
               </Button>
 
-              <p className="text-xs text-gray-600 text-center font-montserrat">
-                Our team will reach out within 24 hours to discuss your art needs
-              </p>
+              
             </div>
           </div>
         </div>
@@ -263,7 +241,7 @@ const WhatsAppFloat = ({
         
         @media (max-width: 480px) {
           .max-w-xs {
-            max-width: 250px;
+            max-w-250px;
           }
         }
       `}</style>

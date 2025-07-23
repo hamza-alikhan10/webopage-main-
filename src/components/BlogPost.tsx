@@ -5,7 +5,7 @@ import Footer from './ui/Footer';
 import { Helmet } from "react-helmet";
 import { blogPosts, type BlogPost } from '../data/blogData';
 import { Instagram, Linkedin, Globe, Album, ArrowRight, MessageSquare, Camera, Landmark } from "lucide-react";
-
+import WhatsAppFloat from "@/components/WhatsAppFloat"; 
 const BlogPost: React.FC = () => {
   const { id } = useParams<{ id: string }>();
   const navigate = useNavigate();
@@ -213,7 +213,7 @@ const BlogPost: React.FC = () => {
               ))}
             </div>
           </section> */}
-
+<WhatsAppFloat phoneNumber="+919650006385" />
           <Footer />
         </div>
       </div>
