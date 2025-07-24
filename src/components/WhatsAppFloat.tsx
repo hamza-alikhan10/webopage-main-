@@ -47,10 +47,10 @@ const WhatsAppFloat = ({
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
-
+  
   const handleWhatsAppClick = () => {
     const encodedMessage = encodeURIComponent(message);
-    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+    const whatsappUrl = `https://wa.me/${919650006385}?text=${encodedMessage}`;
     window.open(whatsappUrl, '_blank');
   };
 
@@ -150,7 +150,7 @@ const WhatsAppFloat = ({
             <div className="bg-[#EDEDED] text-white p-6 rounded-t-lg relative">
               <button
                 onClick={() => setShowContactForm(false)}
-                className="absolute top-4 right-4 text-white hover:text-gray-200 transition-colors"
+                className="absolute top-4 right-4 text-gray-600 hover:text-black transition-colors"
               >
                 <X className="w-6 h-6" />
               </button>
@@ -201,7 +201,7 @@ const WhatsAppFloat = ({
                 type="button"
                 onClick={handleFormSubmit}
                 disabled={isSubmitting}
-                className="w-full bg-black text-white py-3 px-6 rounded-lg font-semibold hover:bg-gray-800 transition-all duration-300 font-montserrat mx-auto"
+                className="w-full bg-gray-300 text-black py-3 px-2 rounded-lg font-semibold hover:bg-gray-400 transition-all duration-300 font-montserrat mx-auto"
               >
                 {isSubmitting ? "Submitting..." : "SUBMIT"}
               </Button>

@@ -97,7 +97,7 @@ const Contact = () => {
         </div>
         
         <div className="bg-gradient-to-b from-[#F5F5F5] to-[#EDEDED] border border-[#FDE1D3] px-[9%] py-[9%] mt-5 rounded-lg shadow-sm">
-          <h3 className="sm:text-2xl sm:font-semibold text-xl mb-12 text-center text-gray-800">Luxury is just a call away!</h3>
+          {/* <h3 className="sm:text-2xl sm:font-semibold text-xl mb-12 text-center text-gray-800">Luxury is just a call away!</h3> */}
           <div className="grid gap-8 md:grid-cols-2">
             <div className="space-y-8">
               <div className="flex flex-col space-y-4">
