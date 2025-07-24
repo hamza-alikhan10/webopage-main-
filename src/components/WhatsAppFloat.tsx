@@ -11,7 +11,7 @@ interface WhatsAppFloatProps {
 
 const WhatsAppFloat = ({ 
   phoneNumber, 
-  message = "Hello! I'm interested in your art consultation services." 
+  message = "Hello! I’m interested in your art advisory." 
 }: WhatsAppFloatProps) => {
   const [showContactForm, setShowContactForm] = useState(false);
   const [scrolled, setScrolled] = useState(false);
