@@ -18,7 +18,7 @@ const Navbar = () => {
   ];
 
   const gallerySubLinks = [
-    { name: "Shop", href: "/shop" },
+    { name: "Available Art", href: "/shop" },
   ];
 
   const handleNavigation = (path: string, linkName: string) => {

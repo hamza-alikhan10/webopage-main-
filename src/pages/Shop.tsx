@@ -49,9 +49,9 @@ const Shop = () => {
   const productSchema = {
     "@context": "https://schema.org",
     "@type": "CollectionPage",
-    "name": "FORMFORGE Luxury Sculptures Shop",
+    "name": "Available Art Sculptures ",
     "url": "https://formforge.com/shop",
-    "description": "Shop luxury Corten steel sculptures and bespoke metal art. Handcrafted masterpieces available ready-to-ship or made-to-order.",
+    "description": "Explore FormForge’s corten‑steel sculptures and bespoke metal art, precision‑engineered masterpieces, ready to ship.",
     "publisher": {
       "@type": "Organization",
       "name": "FORMFORGE",
@@ -125,22 +125,22 @@ const Shop = () => {
         {/* Open Graph / Facebook */}
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://formforge.com/shop" />
-        <meta property="og:title" content="Shop Luxury Sculptures | FORMFORGE - Handcrafted Metal Art" />
+        <meta property="og:title" content="Available Art Sculptures | FORMFORGE - Engineered masterpieces" />
         <meta
           property="og:description"
-          content="Shop luxury Corten steel sculptures and bespoke metal art at FORMFORGE. Handcrafted masterpieces available ready-to-ship or made-to-order."
+          content="Discover corten‑steel sculptures and custom metal artworks by FormForge, meticulously engineered pieces, available ready to ship or made to order."
         />
         <meta property="og:image" content="https://formforge.com/shop-hero-image.webp" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
-        <meta property="og:image:alt" content="FORMFORGE luxury sculpture collection" />
+        <meta property="og:image:alt" content="FORMFORGE Available Art collection" />
         <meta property="og:site_name" content="FORMFORGE" />
         <meta property="og:locale" content="en_US" />
 
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:url" content="https://formforge.com/shop" />
-        <meta name="twitter:title" content="Shop Luxury Sculptures | FORMFORGE - Handcrafted Metal Art" />
+        <meta name="twitter:title" content="FORMFORGE Available Art collection" />
         <meta
           name="twitter:description"
           content="Shop luxury Corten steel sculptures and bespoke metal art at FORMFORGE. Handcrafted masterpieces available ready-to-ship or made-to-order."
@@ -180,7 +180,7 @@ const Shop = () => {
             "name": "FORMFORGE",
             "url": "https://formforge.com",
             "logo": "https://formforge.com/logo.webp",
-            "description": "Luxury Corten steel sculptures and bespoke metal art crafted by master artisans.",
+            "description": "Available Art sculptures and bespoke metal art crafted by master artisans.",
             "founder": {
               "@type": "Person",
               "name": "FORMFORGE Founder"
@@ -215,7 +215,7 @@ const Shop = () => {
             Signature Sculptural Icons
             </h1>
             <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            Explore modern forms crafted with narrative detail. Select from ready‑to‑ship icons, expertly packed for worldwide delivery.
+            Discover contemporary forms shaped by story and precision. Choose from ready-to-ship icons, securely packed for delivery across the globe.
             </p>
           </div>
 

@@ -344,7 +344,7 @@ export const ARTWORK_IMAGES: ImageData[] = [
   {
     id: "lotus-nouvel",
     slug: "lotus-nouvel",
-    images: [{ src: "/lotus-nouvel-pune-2020.webp", alt: "Lotus Nouvel Sculpture made of corten steel" }],
+    images: [{ src: "/Arts/table02.webp", alt: "Lotus Nouvel Sculpture made of corten steel" },{ src: "/Arts/table01.webp", alt: "Lotus Nouvel Sculpture made of corten steel" }],
     caption: <>The Lotus Nouvel</>,
     details: {
       heading: "Lotus Nouvel",
@@ -2621,6 +2621,74 @@ It floats in the vestibule, the vibrant heart of this workplace, drawing focus w
       url: "/artwork/Crescent-sculpture"
     }
   },
+
+  {
+    "id": "Horn-man",
+    "slug": "Horn-Man",
+    "images": [
+      { "src": "/Arts/metal-horn-man.webp", "alt": "Wall art project, Meerut, 2018" },
+      { "src": "/Arts/horn-man.webp", "alt": "Wall art project, Meerut, 2018" }
+    ],
+    "caption": <>Horn-man</>,
+    "details": {
+      "heading": "Horn-man",
+      "location": "Meerut, India",
+      "description": (
+        <>
+          This geometric sculpture channels primal energy through sharp planes and sweeping horns. Crafted in corten steel, its evolving patina speaks of time and endurance. Bridging animal instinct with mythic presence, it creates a striking focal point in any outdoor or architectural setting.
+        </>
+      ),
+      "details": (
+        <>
+          Material: Corten Steel
+          <br />Length: 21 ft, Height: 6 ft
+        </>
+      ),
+      "credits": (
+        <>
+          Artist: Abhinav Goyal <br />Commissioned for: Private residence, Meerut
+        </>
+      )
+    },
+    "seo": {
+      "title": "Horn-man - Corten Steel Wall Art by Abhinav Goyal | Meerut 2018",
+      "metaDescription": "Horn-man: Corten steel wall sculpture with geometric design, channeling primal energy for a private residence in Meerut. Created by Abhinav Goyal, 2018.",
+      "keywords": ["horn-man", "corten steel sculpture", "Meerut wall art", "geometric sculpture", "Abhinav Goyal", "primal art", "luxury architecture"],
+      "ogTitle": "Horn-man - Geometric Corten Steel Art",
+      "ogDescription": "Explore Horn-man, a corten steel wall sculpture with sharp planes and mythic horns, enhancing luxury facades in Meerut.",
+      "ogImage": "/Arts/Horn-Man.webp",
+      "twitterCard": "summary_large_image",
+      "canonicalUrl": "/artwork/Horn-Man"
+    },
+    "schema": {
+      "@context": "https://schema.org",
+      "@type": "VisualArtwork",
+      "name": "Horn-man",
+      "description": "A corten steel wall sculpture with geometric planes and sweeping horns, embodying primal energy and mythic presence.",
+      "image": [
+        "/Arts/Horn-Man.webp",
+        "/Arts/Horn_man.webp"
+      ],
+      "creator": {
+        "@type": "Person",
+        "name": "Abhinav Goyal"
+      },
+      "dateCreated": "2018",
+      "artMedium": "Corten Steel",
+      "artworkSurface": "Corten Steel Patina",
+      "height": "6 feet",
+      "width": "21 feet",
+      "locationCreated": "Meerut, India",
+      "url": "/artwork/Horn-Man"
+    }
+  },
+
+
+
+
+
+
+
   {
     id: "Wall Art",
     slug: "Wall Art",
@@ -3048,7 +3116,7 @@ It floats in the vestibule, the vibrant heart of this workplace, drawing focus w
     id: "Corten steel sculpture",
     slug: "Corten steel sculpture",
     images: [
-      { src: "/Arts/000.webp", alt: "Winged sculpture art project, India" },
+      { src: "/Arts/winged-form.webp", alt: "Winged sculpture art project, India" },
     ],
     caption: <>Winged Form</>,
     details: {
@@ -3056,7 +3124,7 @@ It floats in the vestibule, the vibrant heart of this workplace, drawing focus w
       location: "",
       description: (
         <>
-          This soaring sculpture evokes the elegance of flight and the energy of uplift. With its sweeping curves and radiant blades, the piece reflects its surroundings while creating an iconic silhouette against the sky. <i>Note: Description mentions stainless steel with mirror finish, but material is listed as Corten Steel.</i>
+          This soaring sculpture evokes the elegance of flight and the energy of uplift. With its sweeping curves and radiant blades, the piece reflects its surroundings while creating an iconic silhouette against the sky. 
           <br />A powerful symbol of movement and transformation, it exemplifies the demand for large-scale sculptures, reflective outdoor art, and landmark installations in luxury landscapes and civic spaces.
         </>
       ),
@@ -3078,7 +3146,7 @@ It floats in the vestibule, the vibrant heart of this workplace, drawing focus w
       keywords: ["winged form sculpture", "corten steel art", "India sculpture", "outdoor art", "Abhinav Goyal", "large-scale sculpture", "transformation art"],
       ogTitle: "Winged Form - Elegance in Flight",
       ogDescription: "Discover Winged Form, a corten steel sculpture with sweeping curves, symbolizing movement and transformation in luxury landscapes.",
-      ogImage: "/Arts/000.webp",
+      ogImage: "/Arts/winged-form.webp",
       twitterCard: "summary_large_image",
       canonicalUrl: "/artwork/Corten-steel-sculpture"
     },
@@ -3387,6 +3455,65 @@ It floats in the vestibule, the vibrant heart of this workplace, drawing focus w
     locationCreated: "India",
     url: "/artwork/shivaji-bust-birch"
   }
+},
+{
+  id: "vishnuji",
+slug: "vishnuji",
+images: [
+  { src: "/Arts/vishnu-ji1.webp", alt: "Shivaji bust sculpture made of birch wood by Abhinav Goyal" },
+  { src: "/Arts/vishnu-ji2.webp", alt: "Shivaji bust sculpture made of birch wood by Abhinav Goyal" },
+  { src: "/Arts/vishnu-ji.webp", alt: "Shivaji bust sculpture  by formforge" }
+],
+caption: <>Shivaji Bust</>,
+details: {
+  heading: "Shivaji Bust",
+  location: "",
+  description: (
+    <>
+      Crafted with flowing contours in birch wood, this contemporary interpretation of <b>Chhatrapati Shivaji Maharaj</b> embodies strength, leadership, and legacy.
+      The rhythmic carving lines bring movement to the form, echoing both regality and resilience in a modern design language.
+      <br />Ideal for <i>luxury interiors</i>, <i>heritage-inspired decor</i>, and <i>custom wood sculptures</i>, this piece bridges tradition with timeless craftsmanship.
+    </>
+  ),
+  details: (
+    <>
+      Material: Birch Wood
+      <br />Height: 4 ft, Width: 2 ft 8 in
+    </>
+  ),
+  credits: (
+    <>
+      Artist: Abhinav Goyal  <br /> Commissioned for: Elixa Park, Kolhapur, Maharashtra
+    </>
+  ),
+},
+seo: {
+  title: "Shivaji Bust - Birch Wood Sculpture by Abhinav Goyal | 2025",
+  metaDescription: "Shivaji Bust: Birch wood sculpture by Abhinav Goyal. A contemporary take on Chhatrapati Shivaji Maharaj for luxury interiors and heritage-inspired spaces.",
+  keywords: ["Shivaji bust sculpture", "birch wood sculpture", "Abhinav Goyal", "wooden art", "heritage sculpture", "luxury interior sculpture"],
+  ogTitle: "Shivaji Bust - Contemporary Birch Wood Sculpture",
+  ogDescription: "Explore the Shivaji Bust, a handcrafted birch wood sculpture by Abhinav Goyal, merging regal legacy with modern sculptural language.",
+  ogImage: "/Arts/shivaji-bust.webp",
+  twitterCard: "summary_large_image",
+  canonicalUrl: "/artwork/shivaji-bust-birch"
+},
+schema: {
+  "@context": "https://schema.org",
+  "@type": "VisualArtwork",
+  name: "Shivaji Bust",
+  description: "A contemporary bust sculpture of Chhatrapati Shivaji Maharaj, handcrafted in birch wood with flowing, rhythmic contours.",
+  image: ["/Arts/shivaji-bust.webp"],
+  creator: {
+    "@type": "Person",
+    name: "Abhinav Goyal"
+  },
+  dateCreated: "2025",
+  artMedium: "Birch Wood",
+  height: "4 feet",
+  width: "2.8 feet",
+  locationCreated: "India",
+  url: "/artwork/shivaji-bust-birch"
+}
 }
 
 ];
