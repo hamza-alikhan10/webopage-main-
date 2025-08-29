@@ -98,21 +98,21 @@ const WhatsAppFloat = ({
   return (
     <>
       {/* Main WhatsApp Float Button */}
-      <div className="fixed bottom-6 right-6 z-50 flex flex-col items-end space-y-2">
+      <div className="fixed bottom-4 right-4 z-50 flex flex-col items-end space-y-2 sm:bottom-6 sm:right-6">
         <div className="relative">
           <button
             onClick={handleWhatsAppClick}
-            className="group relative bg-black hover:bg-gray-800 text-white rounded-full p-4 shadow-md hover:shadow-lg transition-all duration-300 transform hover:scale-110"
+            className="group relative bg-black hover:bg-gray-800 text-white rounded-full p-3 sm:p-4 shadow-md hover:shadow-lg transition-all duration-300 transform hover:scale-110"
             aria-label="Contact us on WhatsApp"
           >
             <div className="absolute -inset-1 bg-black rounded-full animate-ping opacity-30"></div>
             <WhatsAppIcon />
-            <div className="absolute bottom-full right-0 mb-3 px-4 py-2 bg-black text-white text-sm rounded-lg opacity-0 group-hover:opacity-100 transition-all duration-200 whitespace-nowrap shadow-md font-montserrat">
+            <div className="absolute bottom-full right-0 mb-2 px-3 py-2 bg-black text-white text-xs sm:text-sm rounded-lg opacity-0 group-hover:opacity-100 transition-all duration-200 whitespace-nowrap shadow-md font-montserrat">
               Expert Art Advice Now
               <div className="absolute top-full right-4 w-0 h-0 border-l-4 border-r-4 border-t-4 border-transparent border-t-black"></div>
             </div>
           </button>
-          <div className="absolute -top-1 -right-1 w-4 h-4 bg-gray-400 border-2 border-white rounded-full animate-pulse"></div>
+          <div className="absolute -top-1 -right-1 w-3 h-3 sm:w-4 sm:h-4 bg-gray-400 border-2 border-white rounded-full animate-pulse"></div>
         </div>
       </div>
 
@@ -123,9 +123,9 @@ const WhatsAppFloat = ({
             <div className="form-container">
               <button
                 onClick={handleClose}
-                className="absolute top-4 right-4 text-gray-600 hover:text-black transition-colors"
+                className="absolute top-3 right-3 sm:top-4 sm:right-4 text-gray-600 hover:text-black transition-colors"
               >
-                <X className="w-6 h-6" />
+                <X className="w-5 h-5 sm:w-6 sm:h-6" />
               </button>
               <div className="title-container">
                 <span className="btn-shine">Complimentary Art Guidance!</span>
@@ -153,7 +153,7 @@ const WhatsAppFloat = ({
                     required
                   />
                 </div>
-                <button className="form-submit-btn" type="submit" disabled={isSubmitting}>
+                <button className={`form-submit-btn ${isSubmitting ? 'submitted' : ''}`} type="submit" disabled={isSubmitting}>
                   <span className="txt">submit</span>
                   <span className="txt2">sent!</span>
                   <span className="loader-container">
@@ -181,13 +181,6 @@ const WhatsAppFloat = ({
         .font-montserrat {
           font-family: 'Montserrat', sans-serif;
         }
-        
-        @media (max-width: 640px) {
-          .fixed.bottom-6.right-6 {
-            bottom: 1rem;
-            right: 1rem;
-          }
-        }
       `}</style>
     </>
   );
@@ -207,19 +200,20 @@ const StyledModal = styled.div`
 
 const StyledWrapper = styled.div`
   .form-container {
-    width: 400px;
+    width: 90vw;
+    max-width: 400px;
     background: linear-gradient(#212121, #212121) padding-box,
                 linear-gradient(145deg, transparent 35%,#e81cff, #40c9ff) border-box;
     border: 2px solid transparent;
-    padding: 32px 24px;
-    font-size: 14px;
+    padding: 1.5rem 1rem;
+    font-size: 0.875rem;
     font-family: inherit;
     color: white;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 1.25rem;
     box-sizing: border-box;
-    border-radius: 16px;
+    border-radius: 1rem;
     position: relative;
     max-height: 90vh;
     overflow-y: auto;
@@ -228,11 +222,11 @@ const StyledWrapper = styled.div`
   .title-container {
     display: flex;
     justify-content: center;
-    margin-bottom: 20px;
+    margin-bottom: 1rem;
   }
 
   .btn-shine {
-    padding: 12px 48px;
+    padding: 0.5rem 1.5rem;
     color: #fff;
     background: linear-gradient(to right, #9f9f9f 0, #fff 10%, #868686 20%);
     background-position: 0;
@@ -242,10 +236,11 @@ const StyledWrapper = styled.div`
     animation-fill-mode: forwards;
     -webkit-text-size-adjust: none;
     font-weight: 600;
-    font-size: 16px;
+    font-size: 0.875rem;
     text-decoration: none;
     white-space: nowrap;
     font-family: "Poppins", sans-serif;
+    text-align: center;
   }
 
   @keyframes shine {
@@ -267,34 +262,35 @@ const StyledWrapper = styled.div`
   .form-container .form {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 1rem;
   }
 
   .form-container .form-group {
     display: flex;
     flex-direction: column;
-    gap: 2px;
+    gap: 0.125rem;
   }
 
   .form-container .form-group label {
     display: block;
-    margin-bottom: 5px;
+    margin-bottom: 0.25rem;
     color: #717171;
     font-weight: 600;
-    font-size: 12px;
+    font-size: 0.75rem;
   }
 
   .form-container .form-group input {
     width: 100%;
-    padding: 12px 16px;
-    border-radius: 8px;
+    padding: 0.75rem 1rem;
+    border-radius: 0.5rem;
     color: #fff;
     font-family: inherit;
     background-color: transparent;
     border: 1px solid #414141;
+    font-size: 0.875rem;
   }
 
-  .form-container .form-group input::placeholder {
+  .form-container Quinta .form-group input::placeholder {
     opacity: 0.5;
   }
 
@@ -305,10 +301,10 @@ const StyledWrapper = styled.div`
 
   .form-container .form-submit-btn {
     background-color: transparent;
-    width: 13em;
-    height: 3.3em;
+    width: 10rem;
+    height: 2.5rem;
     border: 2px solid #1abc9c;
-    border-radius: 25px;
+    border-radius: 1.5rem;
     font-weight: bold;
     text-transform: uppercase;
     color: #1abc9c;
@@ -320,6 +316,7 @@ const StyledWrapper = styled.div`
     overflow: hidden;
     cursor: pointer;
     align-self: center;
+    font-size: 0.75rem;
   }
 
   .form-container .form-submit-btn .txt {
@@ -350,7 +347,7 @@ const StyledWrapper = styled.div`
     width: 100%;
     background-color: #1abc9c;
     border-radius: inherit;
-    transform: translateX(-13em);
+    transform: translateX(-10rem);
   }
 
   .form-container .form-submit-btn:focus,
@@ -381,20 +378,101 @@ const StyledWrapper = styled.div`
 
   @keyframes scaling {
     20% {
-      height: 1.5em;
+      height: 1.2rem;
     }
     80% {
-      height: 1.5em;
+      height: 1.2rem;
     }
     100% {
-      height: 3.3em;
+      height: 2.5rem;
+    }
+  }
+
+  @media (max-width: 640px) {
+    .form-container {
+      width: 85vw;
+      max-width: 320px;
+      padding: 1rem 0.75rem;
+    }
+
+    .btn-shine {
+      padding: 0.5rem 1rem;
+      font-size: 0.75rem;
+    }
+
+    .form-container .form-group input {
+      padding: 0.5rem 0.75rem;
+      font-size: 0.75rem;
+    }
+
+    .form-container .form-group label {
+      font-size: 0.625rem;
+    }
+
+    .form-container .form-submit-btn {
+      width: 8rem;
+      height: 2rem;
+      font-size: 0.625rem;
+    }
+
+    .form-container .form-submit-btn .loader-container .loader {
+      transform: translateX(-8rem);
+    }
+
+    @keyframes scaling {
+      20% {
+        height: 1rem;
+      }
+      80% {
+        height: 1rem;
+      }
+      100% {
+        height: 2rem;
+      }
     }
   }
 
   @media (max-width: 480px) {
     .form-container {
-      width: 100%;
-      max-width: 300px;
+      width: 80vw;
+      max-width: 280px;
+      padding: 0.75rem 0.5rem;
+    }
+
+    .btn-shine {
+      padding: 0.4rem 0.8rem;
+      font-size: 0.625rem;
+    }
+
+    .form-container .form-group input {
+      padding: 0.4rem 0.5rem;
+      font-size: 0.625rem;
+    }
+
+    .form-container .form-group label {
+      font-size: 0.5rem;
+    }
+
+    .form-container .form-submit-btn {
+      width: 7rem;
+      height: 1.8rem;
+      font-size: 0.5rem;
+    }
+
+    .form-container .form-submit-btn .loader-container .loader {
+      transform: translateX(-7rem);
+    }
+
+    @keyframes scaling {
+      20% {
+        height: 0.9rem;
+      }
+      80% {
+        height: 0.9rem;
+      }
+      100% {
+        height: 1.8rem;
+      }
     }
   }
 `;
