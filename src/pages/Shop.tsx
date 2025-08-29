@@ -1,10 +1,10 @@
-// src/components/Shop.tsx
+
 import { useEffect, useState } from "react";
 import "../App.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/ui/Footer";
 import { Link } from "react-router-dom";
-import { sculptures, Sculpture } from "../data/shopData";
+import { sculptures, Sculpture } from "@/data/shopData";
 import WhatsAppFloat from "@/components/WhatsAppFloat"; 
 import {
   Dialog,

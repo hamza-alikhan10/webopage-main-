@@ -1,26 +1,21 @@
 import React, { useState, useEffect } from 'react';
-import { X, MessageSquare, ArrowRight } from 'lucide-react';
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
-import { Button } from "@/components/ui/button";
-
-interface WhatsAppFloatProps {
-  phoneNumber: string;
-  message?: string;
-}
+import { X } from 'lucide-react';
+import styled from 'styled-components';
 
 const WhatsAppFloat = ({ 
   phoneNumber, 
   message = "Hello! I’m interested in your art advisory." 
-}: WhatsAppFloatProps) => {
+}) => {
   const [showContactForm, setShowContactForm] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [formData, setFormData] = useState({
-    firstName: '',
+    name: '',
     phone: '',
-    message: '',
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [formSubmitted, setFormSubmitted] = useState(() => {
+    return localStorage.getItem('formSubmitted') === 'true';
+  });
 
   // WhatsApp SVG Icon
   const WhatsAppIcon = () => (
@@ -41,22 +36,26 @@ const WhatsAppFloat = ({
 
   useEffect(() => {
     const handleScroll = () => {
-      setScrolled(window.scrollY > 300);
+      const scrollPosition = window.scrollY + window.innerHeight / 2;
+      const pageHeight = document.documentElement.scrollHeight;
+      const halfwayPoint = pageHeight / 2;
+      setScrolled(scrollPosition > halfwayPoint && !formSubmitted);
+      setShowContactForm(scrollPosition > halfwayPoint && !formSubmitted);
     };
 
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-  
+  }, [formSubmitted]);
+
   const handleWhatsAppClick = () => {
     const encodedMessage = encodeURIComponent(message);
-    const whatsappUrl = `https://wa.me/${919650006385}?text=${encodedMessage}`;
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
     window.open(whatsappUrl, '_blank');
   };
 
-  const handleFormSubmit = async () => {
-    if (!formData.firstName || !formData.phone) {
-      alert("Please fill in your name and phone number");
+  const handleFormSubmit = async (e) => {
+    e.preventDefault();
+    if (!formData.name || !formData.phone) {
       return;
     }
     
@@ -66,9 +65,8 @@ const WhatsAppFloat = ({
       const formEndpoint = "https://api.web3forms.com/submit";
       const formDataObject = new FormData();
       formDataObject.append("access_key", "d10e42be-f2df-4127-a6f7-cec9b26fded9");
-      formDataObject.append("name", formData.firstName);
+      formDataObject.append("name", formData.name);
       formDataObject.append("phone", formData.phone);
-      formDataObject.append("message", formData.message || "Request for complimentary art advisory");
       formDataObject.append("subject", "Art Advisory Contact Request - Gallery");
 
       const response = await fetch(formEndpoint, {
@@ -77,139 +75,95 @@ const WhatsAppFloat = ({
       });
 
       if (response.ok) {
-        alert("Thank you! We'll contact you shortly for your complimentary art advisory.");
-        setFormData({ firstName: "", phone: "", message: "" });
+        setFormData({ name: "", phone: "" });
         setShowContactForm(false);
-      } else {
-        alert("Something went wrong. Please try again!");
+        setFormSubmitted(true);
+        localStorage.setItem('formSubmitted', 'true');
       }
     } catch (error) {
-      alert("Network issue. Please try again.");
+      console.error("Submission failed:", error);
     } finally {
       setIsSubmitting(false);
     }
   };
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleClose = () => {
+    setShowContactForm(false);
   };
 
   return (
     <>
       {/* Main WhatsApp Float Button */}
       <div className="fixed bottom-6 right-6 z-50 flex flex-col items-end space-y-2">
-        {/* Contact Form Trigger - Shows after scrolling */}
-        {scrolled && (
-          <div 
-            className="bg-[#F5F5F5] border border-[#FDE1D3] rounded-lg shadow-sm p-4 max-w-xs cursor-pointer hover:shadow-md transition-all duration-300 transform hover:scale-105 animate-slideInRight"
-            onClick={() => setShowContactForm(true)}
-          >
-            <div className="flex items-center space-x-3">
-              <div className="p-2 rounded-full hover:bg-gray-200 transition-transform hover:scale-110">
-                <MessageSquare className="w-5 h-5 text-gray-700 hover:text-black" />
-              </div>
-              <div className="flex-1">
-                <p className="text-sm font-medium text-gray-800 font-montserrat">Connect with Us</p>
-                <p className="text-xs text-gray-600 font-montserrat">Sculptural Solutions for Every Venue</p>
-              </div>
-              <ArrowRight className="w-4 h-4 text-gray-400" />
-            </div>
-          </div>
-        )}
-
-        {/* WhatsApp Button */}
         <div className="relative">
           <button
             onClick={handleWhatsAppClick}
             className="group relative bg-black hover:bg-gray-800 text-white rounded-full p-4 shadow-md hover:shadow-lg transition-all duration-300 transform hover:scale-110"
             aria-label="Contact us on WhatsApp"
           >
-            {/* Pulse animation ring */}
             <div className="absolute -inset-1 bg-black rounded-full animate-ping opacity-30"></div>
-            
-            {/* WhatsApp Icon */}
             <WhatsAppIcon />
-            
-            {/* Tooltip */}
             <div className="absolute bottom-full right-0 mb-3 px-4 py-2 bg-black text-white text-sm rounded-lg opacity-0 group-hover:opacity-100 transition-all duration-200 whitespace-nowrap shadow-md font-montserrat">
-            Expert Art Advice Now
+              Expert Art Advice Now
               <div className="absolute top-full right-4 w-0 h-0 border-l-4 border-r-4 border-t-4 border-transparent border-t-black"></div>
             </div>
           </button>
-
-          {/* Online indicator */}
           <div className="absolute -top-1 -right-1 w-4 h-4 bg-gray-400 border-2 border-white rounded-full animate-pulse"></div>
         </div>
       </div>
 
       {/* Contact Form Modal */}
-      {showContactForm && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 z-[100] flex items-center justify-center p-4">
-          <div className="bg-[#F5F5F5] border border-[#FDE1D3] rounded-lg shadow-md max-w-md w-full max-h-[90vh] overflow-y-auto">
-            {/* Header */}
-            <div className="bg-[#EDEDED] text-white p-6 rounded-t-lg relative">
+      {showContactForm && !formSubmitted && (
+        <StyledModal onClick={handleClose}>
+          <StyledWrapper onClick={(e) => e.stopPropagation()}>
+            <div className="form-container">
               <button
-                onClick={() => setShowContactForm(false)}
+                onClick={handleClose}
                 className="absolute top-4 right-4 text-gray-600 hover:text-black transition-colors"
               >
                 <X className="w-6 h-6" />
               </button>
-              <h3 className="sm:text-xl sm:font-semibold text-gray-800 text-lg mb-2 font-montserrat text-center">Complimentary Art Guidance!</h3>
-            
+              <div className="title-container">
+                <span className="btn-shine">Complimentary Art Guidance!</span>
+              </div>
+              <form className="form" onSubmit={handleFormSubmit}>
+                <div className="form-group">
+                  <label htmlFor="name">Name</label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    value={formData.name}
+                    onChange={handleChange}
+                    required
+                  />
+                </div>
+                <div className="form-group">
+                  <label htmlFor="phone">Phone Number</label>
+                  <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    value={formData.phone}
+                    onChange={handleChange}
+                    required
+                  />
+                </div>
+                <button className="form-submit-btn" type="submit" disabled={isSubmitting}>
+                  <span className="txt">submit</span>
+                  <span className="txt2">sent!</span>
+                  <span className="loader-container">
+                    <span className="loader" />
+                  </span>
+                </button>
+              </form>
             </div>
-
-            {/* Form */}
-            <div className="p-6 space-y-6">
-              <div>
-                <Input
-                  type="text"
-                  name="firstName"
-                  placeholder="Name"
-                  value={formData.firstName}
-                  onChange={handleChange}
-                  required
-                  className="w-full px-4 py-3 border border-[#FDE1D3] rounded-lg focus:ring-2 focus:ring-gray-500 focus:border-transparent transition-all font-montserrat placeholder:text-sm"
-                />
-              </div>
-
-              <div>
-                <Input
-                  type="tel"
-                  name="phone"
-                  placeholder="Phone Number"
-                  value={formData.phone}
-                  onChange={handleChange}
-                  required
-                  className="w-full px-4 py-3 border border-[#FDE1D3] rounded-lg focus:ring-2 focus:ring-gray-500 focus:border-transparent transition-all font-montserrat placeholder:text-sm"
-                />
-              </div>
-
-              
-
-              {/* Benefits */}
-              <div className="bg-[#EDEDED] p-4 rounded-lg border border-[#FDE1D3]">
-                <h4 className="font-semibold text-gray-800 mb-2 font-montserrat">What you'll receive:</h4>
-                <ul className="text-sm text-gray-600 space-y-1 font-montserrat">
-                  <li>✅ Personalized art consultation</li>
-                  <li>✅ Curated artwork recommendations</li>
-                  <li>✅ Budget-friendly solutions</li>
-                  <li>✅ Expert advice on art selection</li>
-                </ul>
-              </div>
-
-              <Button
-                type="button"
-                onClick={handleFormSubmit}
-                disabled={isSubmitting}
-                className="w-full bg-gray-300 text-black py-3 px-2 rounded-lg font-semibold hover:bg-gray-400 transition-all duration-300 font-montserrat mx-auto"
-              >
-                {isSubmitting ? "Submitting..." : "SUBMIT"}
-              </Button>
-
-              
-            </div>
-          </div>
-        </div>
+          </StyledWrapper>
+        </StyledModal>
       )}
 
       <style>{`
@@ -224,10 +178,6 @@ const WhatsAppFloat = ({
           }
         }
         
-        .animate-slideInRight {
-          animation: slideInRight 0.5s ease-out;
-        }
-        
         .font-montserrat {
           font-family: 'Montserrat', sans-serif;
         }
@@ -238,15 +188,215 @@ const WhatsAppFloat = ({
             right: 1rem;
           }
         }
-        
-        @media (max-width: 480px) {
-          .max-w-xs {
-            max-w-250px;
-          }
-        }
       `}</style>
     </>
   );
 };
+
+const StyledModal = styled.div`
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+`;
+
+const StyledWrapper = styled.div`
+  .form-container {
+    width: 400px;
+    background: linear-gradient(#212121, #212121) padding-box,
+                linear-gradient(145deg, transparent 35%,#e81cff, #40c9ff) border-box;
+    border: 2px solid transparent;
+    padding: 32px 24px;
+    font-size: 14px;
+    font-family: inherit;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    box-sizing: border-box;
+    border-radius: 16px;
+    position: relative;
+    max-height: 90vh;
+    overflow-y: auto;
+  }
+
+  .title-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  .btn-shine {
+    padding: 12px 48px;
+    color: #fff;
+    background: linear-gradient(to right, #9f9f9f 0, #fff 10%, #868686 20%);
+    background-position: 0;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 3s infinite linear;
+    animation-fill-mode: forwards;
+    -webkit-text-size-adjust: none;
+    font-weight: 600;
+    font-size: 16px;
+    text-decoration: none;
+    white-space: nowrap;
+    font-family: "Poppins", sans-serif;
+  }
+
+  @keyframes shine {
+    0% {
+      background-position: 0;
+    }
+    60% {
+      background-position: 180px;
+    }
+    100% {
+      background-position: 180px;
+    }
+  }
+
+  .form-container button:active {
+    scale: 0.95;
+  }
+
+  .form-container .form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .form-container .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  .form-container .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #717171;
+    font-weight: 600;
+    font-size: 12px;
+  }
+
+  .form-container .form-group input {
+    width: 100%;
+    padding: 12px 16px;
+    border-radius: 8px;
+    color: #fff;
+    font-family: inherit;
+    background-color: transparent;
+    border: 1px solid #414141;
+  }
+
+  .form-container .form-group input::placeholder {
+    opacity: 0.5;
+  }
+
+  .form-container .form-group input:focus {
+    outline: none;
+    border-color: #e81cff;
+  }
+
+  .form-container .form-submit-btn {
+    background-color: transparent;
+    width: 13em;
+    height: 3.3em;
+    border: 2px solid #1abc9c;
+    border-radius: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #1abc9c;
+    padding: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    align-self: center;
+  }
+
+  .form-container .form-submit-btn .txt {
+    transition: .4s ease-in-out;
+    position: absolute;
+  }
+
+  .form-container .form-submit-btn .txt2 {
+    transform: translateY(1em) scale(0);
+    color: #212121;
+    position: absolute;
+  }
+
+  .form-container .form-submit-btn .loader-container {
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    border-radius: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+    overflow: hidden;
+  }
+
+  .form-container .form-submit-btn .loader-container .loader {
+    height: 100%;
+    width: 100%;
+    background-color: #1abc9c;
+    border-radius: inherit;
+    transform: translateX(-13em);
+  }
+
+  .form-container .form-submit-btn:focus,
+  .form-container .form-submit-btn.submitted {
+    transition: .4s ease-in-out .4s;
+    animation: scaling 1.5s ease-in-out 0s 1 both;
+  }
+
+  .form-container .form-submit-btn:focus .txt,
+  .form-container .form-submit-btn.submitted .txt {
+    position: absolute;
+    transform: translateY(-5em);
+    transition: .4s ease-in-out;
+  }
+
+  .form-container .form-submit-btn:focus .txt2,
+  .form-container .form-submit-btn.submitted .txt2 {
+    transform: translateY(0) scale(1);
+    transition: .3s ease-in-out 1.7s;
+  }
+
+  .form-container .form-submit-btn:focus .loader,
+  .form-container .form-submit-btn.submitted .loader {
+    display: block;
+    transform: translate(0);
+    transition: .8s cubic-bezier(0,.4,1,.28) .4s;
+  }
+
+  @keyframes scaling {
+    20% {
+      height: 1.5em;
+    }
+    80% {
+      height: 1.5em;
+    }
+    100% {
+      height: 3.3em;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .form-container {
+      width: 100%;
+      max-width: 300px;
+    }
+  }
+`;
 
 export default WhatsAppFloat;

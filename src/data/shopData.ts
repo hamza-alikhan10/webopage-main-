@@ -234,7 +234,7 @@ export const sculptures: Sculpture[] = [
         "integratedLighting": true,
         "tags": ["corten steel bonsai", "garden sculpture", "landscape accent", "zen art"]
       },
-      "status": "Readily Available",
+      "status": "Sold Out",
       "price": "₹1,00,000"
     },
     {

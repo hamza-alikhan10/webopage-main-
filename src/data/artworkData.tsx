@@ -342,30 +342,28 @@ export const ARTWORK_IMAGES: ImageData[] = [
     }
   },
   {
-    id: "lotus-nouvel",
-    slug: "lotus-nouvel",
-    images: [{ src: "/Arts/table02.webp", alt: "Lotus Nouvel Sculpture made of corten steel" },{ src: "/Arts/table01.webp", alt: "Lotus Nouvel Sculpture made of corten steel" }],
-    caption: <>The Lotus Nouvel</>,
+    id: "Continuum",
+    slug: "Continuum",
+    images: [
+      { src: "/Arts/table02.webp", alt: "Continuum bronze sculpture by Abhinav Goyal for Shivtirtha House Pune" },
+      { src: "/Arts/table01.webp", alt: "Abstract bronze sculpture Continuum by Abhinav Goyal" }
+    ],
+    caption: <>Continuum</>,
     details: {
-      heading: "Lotus Nouvel",
+      heading: "Continuum",
       location: "",
       description: (
         <>
-          Where Nature's rhythm takes form. Forged in Corten Steel, material that evolves with time, just as nature does.
-          Its weathered rust finish, sealed with imported PU, enhances its raw, organic allure. Inspired by the seamless
-          processes of replication and locomotion, this sculpture blurs the boundaries between reality and fantasy. <br />
-          Elements drawn from diverse plant forms merge into a hybrid design, reflecting the ingenuity of the natural
-          world. <br /> Resting in serene spaces, The Lotus Nouvel stands as a tribute to nature's endless cycles of growth
-          and transformation. <br /> An artistic embodiment of strength, elegance, and timeless beauty.
+          An abstract flow of form cast in bronze, capturing the endless movement of thought, 
+          time, and inner rhythm within stillness.
         </>
       ),
       details: (
         <>
-          Type: Indoor/Outdoor Sculpture
+          Type: Indoor Sculpture
           <br />
-          Material: Corten Steel <br />
-          Finish: Rust with imported PU <br />
-          Dimensions: L: 1850 mm | H: 1635 mm | W:1180mm
+          Material: Bronze <br />
+          Dimensions: L 4250 mm | H 1220 mm
         </>
       ),
       credits: (
@@ -377,35 +375,41 @@ export const ARTWORK_IMAGES: ImageData[] = [
       ),
     },
     seo: {
-      title: "Lotus Nouvel - Organic Corten Steel Sculpture by Abhinav Goyal | Pune 2020",
-      metaDescription: "Lotus Nouvel: Nature-inspired corten steel sculpture with weathered rust finish. Embodies growth and transformation cycles. Pune 2020 by Abhinav Goyal.",
-      keywords: ["lotus sculpture", "corten steel art", "nature inspired sculpture", "Pune art", "organic sculpture", "Abhinav Goyal", "weathered steel art"],
-      ogTitle: "The Lotus Nouvel - Nature's Rhythm in Steel",
-      ogDescription: "Experience nature's rhythm in sculptural form. The Lotus Nouvel celebrates the endless cycles of growth and transformation in weathered corten steel.",
-      ogImage: "/lotus-nouvel-pune-2020.webp",
+      title: "Continuum - Abstract Bronze Sculpture by Abhinav Goyal | Pune 2020",
+      metaDescription: "Continuum by Abhinav Goyal: An abstract bronze sculpture symbolizing endless movement and stillness. Commissioned for Shivtirtha House, Pune. Perfect for luxury interiors and outdoor spaces.",
+      keywords: [
+        "Continuum bronze sculpture",
+        "abstract bronze art India",
+        "Abhinav Goyal sculpture",
+        "luxury indoor outdoor sculpture",
+        "Pune bronze sculpture",
+        "modern abstract sculpture India",
+        "architectural bronze artwork"
+      ],
+      ogTitle: "Continuum - Abstract Bronze Sculpture by Abhinav Goyal",
+      ogDescription: "Discover Continuum, a monumental bronze sculpture by Abhinav Goyal. A flowing abstract form capturing timeless rhythm and meditative stillness.",
+      ogImage: "/Arts/table02.webp",
       twitterCard: "summary_large_image",
-      canonicalUrl: "/artwork/lotus-nouvel"
+      canonicalUrl: "/artwork/continuum-bronze"
     },
     schema: {
       "@context": "https://schema.org",
       "@type": "VisualArtwork",
-      name: "The Lotus Nouvel",
-      description: "Where Nature's rhythm takes form. Inspired by the seamless processes of replication and locomotion, this sculpture blurs the boundaries between reality and fantasy.",
-      image: ["/lotus-nouvel-pune-2020.webp"],
+      name: "Continuum",
+      description: "Continuum is an abstract bronze sculpture by Abhinav Goyal, capturing the infinite rhythm of thought and time. Commissioned for Shivtirtha House, Pune.",
+      image: ["/Arts/table02.webp"],
       creator: {
         "@type": "Person",
         name: "Abhinav Goyal"
       },
       dateCreated: "2020",
-      artMedium: "Corten Steel",
-      artworkSurface: "Rust with imported PU",
-      height: "1635mm",
-      width: "1180mm",
-      depth: "1850mm",
+      artMedium: "Bronze",
+      height: "1220mm",
+      width: "4250mm",
       locationCreated: "Pune, India",
-      url: "/artwork/lotus-nouvel"
+      url: "/artwork/continuum-bronze"
     }
-  },
+  },  
   {
     id: "mermaid-ohllnam",
     slug: "mermaid-ohllnam",
@@ -3457,63 +3461,69 @@ It floats in the vestibule, the vibrant heart of this workplace, drawing focus w
   }
 },
 {
-  id: "vishnuji",
-slug: "vishnuji",
-images: [
-  { src: "/Arts/vishnu-ji1.webp", alt: "Shivaji bust sculpture made of birch wood by Abhinav Goyal" },
-  { src: "/Arts/vishnu-ji2.webp", alt: "Shivaji bust sculpture made of birch wood by Abhinav Goyal" },
-  { src: "/Arts/vishnu-ji.webp", alt: "Shivaji bust sculpture  by formforge" }
-],
-caption: <>Shivaji Bust</>,
-details: {
-  heading: "Shivaji Bust",
-  location: "",
-  description: (
-    <>
-      Crafted with flowing contours in birch wood, this contemporary interpretation of <b>Chhatrapati Shivaji Maharaj</b> embodies strength, leadership, and legacy.
-      The rhythmic carving lines bring movement to the form, echoing both regality and resilience in a modern design language.
-      <br />Ideal for <i>luxury interiors</i>, <i>heritage-inspired decor</i>, and <i>custom wood sculptures</i>, this piece bridges tradition with timeless craftsmanship.
-    </>
-  ),
-  details: (
-    <>
-      Material: Birch Wood
-      <br />Height: 4 ft, Width: 2 ft 8 in
-    </>
-  ),
-  credits: (
-    <>
-      Artist: Abhinav Goyal  <br /> Commissioned for: Elixa Park, Kolhapur, Maharashtra
-    </>
-  ),
-},
-seo: {
-  title: "Shivaji Bust - Birch Wood Sculpture by Abhinav Goyal | 2025",
-  metaDescription: "Shivaji Bust: Birch wood sculpture by Abhinav Goyal. A contemporary take on Chhatrapati Shivaji Maharaj for luxury interiors and heritage-inspired spaces.",
-  keywords: ["Shivaji bust sculpture", "birch wood sculpture", "Abhinav Goyal", "wooden art", "heritage sculpture", "luxury interior sculpture"],
-  ogTitle: "Shivaji Bust - Contemporary Birch Wood Sculpture",
-  ogDescription: "Explore the Shivaji Bust, a handcrafted birch wood sculpture by Abhinav Goyal, merging regal legacy with modern sculptural language.",
-  ogImage: "/Arts/shivaji-bust.webp",
-  twitterCard: "summary_large_image",
-  canonicalUrl: "/artwork/shivaji-bust-birch"
-},
-schema: {
-  "@context": "https://schema.org",
-  "@type": "VisualArtwork",
-  name: "Shivaji Bust",
-  description: "A contemporary bust sculpture of Chhatrapati Shivaji Maharaj, handcrafted in birch wood with flowing, rhythmic contours.",
-  image: ["/Arts/shivaji-bust.webp"],
-  creator: {
-    "@type": "Person",
-    name: "Abhinav Goyal"
+  id: "Lord-Mahavir",
+  slug: "Lord-Mahavir",
+  images: [
+    { src: "/Arts/vishnu-ji1.webp", alt: "Lord Mahavir sculpture in stainless steel by Abhinav Goyal" },
+    { src: "/Arts/vishnu-ji2.webp", alt: "Lord Mahavir sculpture handcrafted in stainless steel by Abhinav Goyal" },
+    { src: "/Arts/vishnu-ji.webp", alt: "Contemporary Lord Mahavir sculpture by Formforge" }
+  ],
+  caption: <>Lord Mahavir</>,
+  details: {
+    heading: "Lord Mahavir",
+    location: "",
+    description: (
+      <>
+        A meditative form emerges from architectural striations, evoking layered silence, timeless presence, 
+        and the quiet depth of reflection.
+      </>
+    ),
+    details: (
+      <>
+        Material: Stainless Steel
+        <br />Height: 5.5 ft
+      </>
+    ),
+    credits: (
+      <>
+        Artist: Abhinav Goyal <br /> Commissioned for: Private Residence, New Delhi
+      </>
+    ),
   },
-  dateCreated: "2025",
-  artMedium: "Birch Wood",
-  height: "4 feet",
-  width: "2.8 feet",
-  locationCreated: "India",
-  url: "/artwork/shivaji-bust-birch"
+  seo: {
+    title: "Lord Mahavir Sculpture in Stainless Steel by Abhinav Goyal | 2025",
+    metaDescription: "Discover the Lord Mahavir sculpture by Abhinav Goyal, crafted in stainless steel. A serene and timeless artwork designed for luxury interiors and spiritual spaces.",
+    keywords: [
+      "Lord Mahavir sculpture",
+      "stainless steel sculpture",
+      "Abhinav Goyal art",
+      "Formforge sculpture",
+      "luxury spiritual art",
+      "contemporary Indian sculpture"
+    ],
+    ogTitle: "Lord Mahavir - Stainless Steel Sculpture by Abhinav Goyal",
+    ogDescription: "Explore the Lord Mahavir sculpture by Abhinav Goyal, a meditative stainless steel artwork blending modern aesthetics with spiritual essence.",
+    ogImage: "/Arts/vishnu-ji1.webp",
+    twitterCard: "summary_large_image",
+    canonicalUrl: "/artwork/lord-mahavir-stainless-steel"
+  },
+  schema: {
+    "@context": "https://schema.org",
+    "@type": "VisualArtwork",
+    name: "Lord Mahavir Sculpture",
+    description: "A contemporary stainless steel sculpture of Lord Mahavir by Abhinav Goyal, symbolizing layered silence and spiritual reflection.",
+    image: ["/Arts/vishnu-ji1.webp"],
+    creator: {
+      "@type": "Person",
+      name: "Abhinav Goyal"
+    },
+    dateCreated: "2025",
+    artMedium: "Stainless Steel",
+    height: "5.5 feet",
+    locationCreated: "India",
+    url: "/artwork/lord-mahavir-stainless-steel"
+  }
 }
-}
+
 
 ];
