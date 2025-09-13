@@ -4,10 +4,12 @@ import styled from 'styled-components';
 
 const WhatsAppFloat = ({ 
   phoneNumber, 
-  message = "Hello! I’m interested in your art advisory." 
+  message = "Hello! I'm interested in your art advisory." 
 }) => {
   const [showContactForm, setShowContactForm] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [canShowForm, setCanShowForm] = useState(true);
+  const [lastCloseTime, setLastCloseTime] = useState(null);
   const [formData, setFormData] = useState({
     name: '',
     phone: '',
@@ -34,18 +36,31 @@ const WhatsAppFloat = ({
     </svg>
   );
 
+  // Handle 25-second delay after form is closed
+  useEffect(() => {
+    let timer;
+    if (lastCloseTime) {
+      setCanShowForm(false);
+      timer = setTimeout(() => {
+        setCanShowForm(true);
+      }, 20000); // 20 seconds
+    }
+    return () => clearTimeout(timer);
+  }, [lastCloseTime]);
+
   useEffect(() => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY + window.innerHeight / 2;
       const pageHeight = document.documentElement.scrollHeight;
       const halfwayPoint = pageHeight / 2;
-      setScrolled(scrollPosition > halfwayPoint && !formSubmitted);
-      setShowContactForm(scrollPosition > halfwayPoint && !formSubmitted);
+      const shouldShow = scrollPosition > halfwayPoint && !formSubmitted && canShowForm;
+      setScrolled(scrollPosition > halfwayPoint);
+      setShowContactForm(shouldShow);
     };
 
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
-  }, [formSubmitted]);
+  }, [formSubmitted, canShowForm]);
 
   const handleWhatsAppClick = () => {
     const encodedMessage = encodeURIComponent(message);
@@ -93,6 +108,7 @@ const WhatsAppFloat = ({
 
   const handleClose = () => {
     setShowContactForm(false);
+    setLastCloseTime(Date.now());
   };
 
   return (
@@ -123,9 +139,9 @@ const WhatsAppFloat = ({
             <div className="form-container">
               <button
                 onClick={handleClose}
-                className="absolute top-3 right-3 sm:top-4 sm:right-4 text-gray-600 hover:text-black transition-colors"
+                className="absolute top-4 right-4 text-gray-400 hover:text-white transition-colors z-10"
               >
-                <X className="w-5 h-5 sm:w-6 sm:h-6" />
+                <X className="w-6 h-6" />
               </button>
               <div className="title-container">
                 <span className="btn-shine">Complimentary Art Guidance!</span>
@@ -140,6 +156,7 @@ const WhatsAppFloat = ({
                     value={formData.name}
                     onChange={handleChange}
                     required
+                    placeholder="Enter your full name"
                   />
                 </div>
                 <div className="form-group">
@@ -151,6 +168,7 @@ const WhatsAppFloat = ({
                     value={formData.phone}
                     onChange={handleChange}
                     required
+                    placeholder="Enter your phone number"
                   />
                 </div>
                 <button className={`form-submit-btn ${isSubmitting ? 'submitted' : ''}`} type="submit" disabled={isSubmitting}>
@@ -189,44 +207,67 @@ const WhatsAppFloat = ({
 const StyledModal = styled.div`
   position: fixed;
   inset: 0;
-  background: rgba(0, 0, 0, 0.5);
-  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(8px);
   z-index: 100;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 1rem;
+  animation: fadeIn 0.3s ease-out;
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
 `;
 
 const StyledWrapper = styled.div`
+  animation: slideUp 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+
+  @keyframes slideUp {
+    from {
+      opacity: 0;
+      transform: translateY(60px) scale(0.9);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+  }
+
   .form-container {
-    width: 90vw;
-    max-width: 400px;
+    width: 100%;
+    max-width: 420px;
+    min-width: 320px;
     background: linear-gradient(#212121, #212121) padding-box,
                 linear-gradient(145deg, transparent 35%,#e81cff, #40c9ff) border-box;
     border: 2px solid transparent;
-    padding: 1.5rem 1rem;
-    font-size: 0.875rem;
-    font-family: inherit;
+    padding: 2rem;
+    font-size: 1rem;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     color: white;
     display: flex;
     flex-direction: column;
-    gap: 1.25rem;
+    gap: 1.5rem;
     box-sizing: border-box;
-    border-radius: 1rem;
+    border-radius: 1.25rem;
     position: relative;
-    max-height: 90vh;
-    overflow-y: auto;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
   }
 
   .title-container {
     display: flex;
     justify-content: center;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
   }
 
   .btn-shine {
-    padding: 0.5rem 1.5rem;
+    padding: 0.75rem 2rem;
     color: #fff;
     background: linear-gradient(to right, #9f9f9f 0, #fff 10%, #868686 20%);
     background-position: 0;
@@ -235,12 +276,13 @@ const StyledWrapper = styled.div`
     animation: shine 3s infinite linear;
     animation-fill-mode: forwards;
     -webkit-text-size-adjust: none;
-    font-weight: 600;
-    font-size: 0.875rem;
+    font-weight: 700;
+    font-size: 1.125rem;
     text-decoration: none;
     white-space: nowrap;
     font-family: "Poppins", sans-serif;
     text-align: center;
+    letter-spacing: 0.5px;
   }
 
   @keyframes shine {
@@ -255,60 +297,60 @@ const StyledWrapper = styled.div`
     }
   }
 
-  .form-container button:active {
-    scale: 0.95;
-  }
-
-  .form-container .form {
+  .form {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 1.25rem;
   }
 
-  .form-container .form-group {
+  .form-group {
     display: flex;
     flex-direction: column;
-    gap: 0.125rem;
+    gap: 0.5rem;
   }
 
-  .form-container .form-group label {
+  .form-group label {
     display: block;
-    margin-bottom: 0.25rem;
-    color: #717171;
+    color: #b0b0b0;
     font-weight: 600;
-    font-size: 0.75rem;
+    font-size: 0.875rem;
+    letter-spacing: 0.3px;
   }
 
-  .form-container .form-group input {
+  .form-group input {
     width: 100%;
-    padding: 0.75rem 1rem;
-    border-radius: 0.5rem;
+    padding: 1rem 1.25rem;
+    border-radius: 0.75rem;
     color: #fff;
     font-family: inherit;
-    background-color: transparent;
-    border: 1px solid #414141;
-    font-size: 0.875rem;
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1.5px solid #414141;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
   }
 
-  .form-container Quinta .form-group input::placeholder {
-    opacity: 0.5;
+  .form-group input::placeholder {
+    color: rgba(255, 255, 255, 0.4);
   }
 
-  .form-container .form-group input:focus {
+  .form-group input:focus {
     outline: none;
     border-color: #e81cff;
+    background-color: rgba(255, 255, 255, 0.08);
+    box-shadow: 0 0 0 3px rgba(232, 28, 255, 0.1);
   }
 
-  .form-container .form-submit-btn {
+  .form-submit-btn {
     background-color: transparent;
-    width: 10rem;
-    height: 2.5rem;
-    border: 2px solid #1abc9c;
-    border-radius: 1.5rem;
+    width: 12rem;
+    height: 3rem;
+    border: 2.5px solid #1abc9c;
+    border-radius: 2rem;
     font-weight: bold;
     text-transform: uppercase;
     color: #1abc9c;
-    padding: 2px;
+    padding: 3px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -316,21 +358,29 @@ const StyledWrapper = styled.div`
     overflow: hidden;
     cursor: pointer;
     align-self: center;
-    font-size: 0.75rem;
+    font-size: 0.875rem;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    margin-top: 0.5rem;
   }
 
-  .form-container .form-submit-btn .txt {
+  .form-submit-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(26, 188, 156, 0.3);
+  }
+
+  .form-submit-btn .txt {
     transition: .4s ease-in-out;
     position: absolute;
   }
 
-  .form-container .form-submit-btn .txt2 {
+  .form-submit-btn .txt2 {
     transform: translateY(1em) scale(0);
     color: #212121;
     position: absolute;
   }
 
-  .form-container .form-submit-btn .loader-container {
+  .form-submit-btn .loader-container {
     height: 100%;
     width: 100%;
     background-color: transparent;
@@ -342,35 +392,35 @@ const StyledWrapper = styled.div`
     overflow: hidden;
   }
 
-  .form-container .form-submit-btn .loader-container .loader {
+  .form-submit-btn .loader-container .loader {
     height: 100%;
     width: 100%;
     background-color: #1abc9c;
     border-radius: inherit;
-    transform: translateX(-10rem);
+    transform: translateX(-12rem);
   }
 
-  .form-container .form-submit-btn:focus,
-  .form-container .form-submit-btn.submitted {
+  .form-submit-btn:focus,
+  .form-submit-btn.submitted {
     transition: .4s ease-in-out .4s;
     animation: scaling 1.5s ease-in-out 0s 1 both;
   }
 
-  .form-container .form-submit-btn:focus .txt,
-  .form-container .form-submit-btn.submitted .txt {
+  .form-submit-btn:focus .txt,
+  .form-submit-btn.submitted .txt {
     position: absolute;
     transform: translateY(-5em);
     transition: .4s ease-in-out;
   }
 
-  .form-container .form-submit-btn:focus .txt2,
-  .form-container .form-submit-btn.submitted .txt2 {
+  .form-submit-btn:focus .txt2,
+  .form-submit-btn.submitted .txt2 {
     transform: translateY(0) scale(1);
     transition: .3s ease-in-out 1.7s;
   }
 
-  .form-container .form-submit-btn:focus .loader,
-  .form-container .form-submit-btn.submitted .loader {
+  .form-submit-btn:focus .loader,
+  .form-submit-btn.submitted .loader {
     display: block;
     transform: translate(0);
     transition: .8s cubic-bezier(0,.4,1,.28) .4s;
@@ -378,44 +428,174 @@ const StyledWrapper = styled.div`
 
   @keyframes scaling {
     20% {
-      height: 1.2rem;
+      height: 1.5rem;
     }
     80% {
-      height: 1.2rem;
+      height: 1.5rem;
     }
     100% {
-      height: 2.5rem;
+      height: 3rem;
     }
   }
 
+  /* Tablet Styles */
+  @media (max-width: 768px) and (min-width: 641px) {
+    .form-container {
+      max-width: 380px;
+      padding: 1.75rem;
+    }
+
+    .btn-shine {
+      font-size: 1rem;
+      padding: 0.625rem 1.5rem;
+    }
+
+    .form-group input {
+      padding: 0.875rem 1rem;
+      font-size: 0.9rem;
+    }
+
+    .form-submit-btn {
+      width: 11rem;
+      height: 2.75rem;
+    }
+
+    .form-submit-btn .loader-container .loader {
+      transform: translateX(-11rem);
+    }
+
+    @keyframes scaling {
+      20% {
+        height: 1.375rem;
+      }
+      80% {
+        height: 1.375rem;
+      }
+      100% {
+        height: 2.75rem;
+      }
+    }
+  }
+
+  /* Mobile Styles */
   @media (max-width: 640px) {
     .form-container {
-      width: 85vw;
-      max-width: 320px;
-      padding: 1rem 0.75rem;
+      max-width: 340px;
+      min-width: 280px;
+      padding: 1.5rem 1.25rem;
+    }
+
+    .btn-shine {
+      padding: 0.5rem 1.25rem;
+      font-size: 0.9rem;
+    }
+
+    .form-group input {
+      padding: 0.75rem 1rem;
+      font-size: 0.875rem;
+    }
+
+    .form-group label {
+      font-size: 0.8rem;
+    }
+
+    .form-submit-btn {
+      width: 10rem;
+      height: 2.5rem;
+      font-size: 0.8rem;
+    }
+
+    .form-submit-btn .loader-container .loader {
+      transform: translateX(-10rem);
+    }
+
+    @keyframes scaling {
+      20% {
+        height: 1.25rem;
+      }
+      80% {
+        height: 1.25rem;
+      }
+      100% {
+        height: 2.5rem;
+      }
+    }
+  }
+
+  /* Small Mobile Styles */
+  @media (max-width: 480px) {
+    .form-container {
+      max-width: 300px;
+      min-width: 260px;
+      padding: 1.25rem 1rem;
     }
 
     .btn-shine {
       padding: 0.5rem 1rem;
+      font-size: 0.8rem;
+    }
+
+    .form-group input {
+      padding: 0.625rem 0.875rem;
+      font-size: 0.8rem;
+    }
+
+    .form-group label {
       font-size: 0.75rem;
     }
 
-    .form-container .form-group input {
+    .form-submit-btn {
+      width: 9rem;
+      height: 2.25rem;
+      font-size: 0.75rem;
+    }
+
+    .form-submit-btn .loader-container .loader {
+      transform: translateX(-9rem);
+    }
+
+    @keyframes scaling {
+      20% {
+        height: 1.125rem;
+      }
+      80% {
+        height: 1.125rem;
+      }
+      100% {
+        height: 2.25rem;
+      }
+    }
+  }
+
+  /* Extra Small Mobile */
+  @media (max-width: 360px) {
+    .form-container {
+      max-width: 280px;
+      min-width: 240px;
+      padding: 1rem 0.875rem;
+    }
+
+    .btn-shine {
+      padding: 0.4rem 0.875rem;
+      font-size: 0.75rem;
+    }
+
+    .form-group input {
       padding: 0.5rem 0.75rem;
       font-size: 0.75rem;
     }
 
-    .form-container .form-group label {
-      font-size: 0.625rem;
+    .form-group label {
+      font-size: 0.7rem;
     }
 
-    .form-container .form-submit-btn {
+    .form-submit-btn {
       width: 8rem;
       height: 2rem;
-      font-size: 0.625rem;
+      font-size: 0.7rem;
     }
 
-    .form-container .form-submit-btn .loader-container .loader {
+    .form-submit-btn .loader-container .loader {
       transform: translateX(-8rem);
     }
 
@@ -428,50 +608,6 @@ const StyledWrapper = styled.div`
       }
       100% {
         height: 2rem;
-      }
-    }
-  }
-
-  @media (max-width: 480px) {
-    .form-container {
-      width: 80vw;
-      max-width: 280px;
-      padding: 0.75rem 0.5rem;
-    }
-
-    .btn-shine {
-      padding: 0.4rem 0.8rem;
-      font-size: 0.625rem;
-    }
-
-    .form-container .form-group input {
-      padding: 0.4rem 0.5rem;
-      font-size: 0.625rem;
-    }
-
-    .form-container .form-group label {
-      font-size: 0.5rem;
-    }
-
-    .form-container .form-submit-btn {
-      width: 7rem;
-      height: 1.8rem;
-      font-size: 0.5rem;
-    }
-
-    .form-container .form-submit-btn .loader-container .loader {
-      transform: translateX(-7rem);
-    }
-
-    @keyframes scaling {
-      20% {
-        height: 0.9rem;
-      }
-      80% {
-        height: 0.9rem;
-      }
-      100% {
-        height: 1.8rem;
       }
     }
   }

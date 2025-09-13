@@ -1,11 +1,231 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState, useCallback } from "react";
 import { useParams, useNavigate, Link } from "react-router-dom";
 import Navbar from "./Navbar";
 import Footer from './ui/Footer';
 import { Helmet } from "react-helmet";
 import { blogPosts, type BlogPost } from '../data/blogData';
-import { Instagram, Linkedin, Globe, Album, ArrowRight, MessageSquare, Camera, Landmark } from "lucide-react";
-import WhatsAppFloat from "@/components/WhatsAppFloat"; 
+import { Instagram, Linkedin, Globe, Album, ArrowRight, MessageSquare, Camera, Landmark, ArrowLeft } from "lucide-react";
+import WhatsAppFloat from "@/components/WhatsAppFloat";
+
+// Interactive Layout Component
+interface Gallery {
+  heading: string;
+  description: string;
+  images: string[];
+  details?: {
+    material?: string;
+    dimensions?: string;
+    price?: string;
+  };
+}
+
+interface InteractiveBlogLayoutProps {
+  galleries: Gallery[];
+  title: string;
+}
+
+const InteractiveBlogLayout: React.FC<InteractiveBlogLayoutProps> = ({ galleries, title }) => {
+  const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
+  const [selectedImageIndexes, setSelectedImageIndexes] = useState<{ [key: number]: number }>({});
+
+  const handleInquiry = (galleryName: string) => {
+    const message = `Hi, I'm interested in the ${galleryName} from your ${title} blog post. Could you please provide more details?`;
+    const whatsappUrl = `https://wa.me/919650006385?text=${encodeURIComponent(message)}`;
+    window.open(whatsappUrl, '_blank');
+  };
+
+  const handlePreviousImage = useCallback((galleryIndex: number) => {
+    const gallery = galleries[galleryIndex];
+    if (!gallery) return;
+    
+    setSelectedImageIndexes(prev => {
+      const currentIndex = prev[galleryIndex] || 0;
+      return {
+        ...prev,
+        [galleryIndex]: currentIndex > 0 ? currentIndex - 1 : gallery.images.length - 1
+      };
+    });
+  }, [galleries]);
+
+  const handleNextImage = useCallback((galleryIndex: number) => {
+    const gallery = galleries[galleryIndex];
+    if (!gallery) return;
+    
+    setSelectedImageIndexes(prev => {
+      const currentIndex = prev[galleryIndex] || 0;
+      return {
+        ...prev,
+        [galleryIndex]: currentIndex < gallery.images.length - 1 ? currentIndex + 1 : 0
+      };
+    });
+  }, [galleries]);
+
+  const getCurrentImageIndex = (galleryIndex: number) => {
+    return selectedImageIndexes[galleryIndex] || 0;
+  };
+
+  return (
+    <div className="bg-gradient-to-b from-slate-50 to-white mt-8">
+      <div className="space-y-12 sm:space-y-16 lg:space-y-20">
+        {galleries.map((gallery, index) => {
+          const currentImageIndex = getCurrentImageIndex(index);
+          const currentImage = gallery.images[currentImageIndex];
+          const position = index % 2 === 0 ? "right" : "left";
+          
+          return (
+            <div
+              key={index}
+              className={`flex flex-col lg:flex-row items-center gap-6 sm:gap-8 lg:gap-12 
+                         ${position === "left" ? "lg:flex-row" : "lg:flex-row-reverse"}
+                         group transition-all duration-700 hover:scale-[1.01] sm:hover:scale-[1.02]`}
+              onMouseEnter={() => setHoveredIndex(index)}
+              onMouseLeave={() => setHoveredIndex(null)}
+            >
+              {/* Image Section with Navigation */}
+              <div className="w-full lg:w-1/2 relative overflow-hidden">
+                <div className="relative group cursor-pointer">
+                  <img
+                    src={currentImage}
+                    alt={`${gallery.heading} - View ${currentImageIndex + 1} of ${gallery.images.length}`}
+                    className="w-full h-[280px] xs:h-[320px] sm:h-[400px] md:h-[500px] lg:h-[600px] object-cover 
+                             transition-all duration-500 group-hover:scale-105
+                             shadow-xl sm:shadow-2xl hover:shadow-3xl rounded-lg"
+                    style={{ 
+                      filter: hoveredIndex === index ? 'brightness(1.1) contrast(1.1)' : 'brightness(1)',
+                    }}
+                  />
+                  
+                  {/* Navigation Arrows */}
+                  {gallery.images.length > 1 && (
+                    <>
+                      <button
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          handlePreviousImage(index);
+                        }}
+                        className="absolute left-2 xs:left-3 sm:left-4 top-1/2 -translate-y-1/2 
+                                 h-8 w-8 xs:h-9 xs:w-9 sm:h-10 sm:w-10 
+                                 rounded-full bg-white/90 hover:bg-white shadow-lg 
+                                 border border-gray-200 flex items-center justify-center
+                                 transition-all duration-300 hover:scale-105 z-10"
+                        aria-label="Previous image"
+                      >
+                        <ArrowLeft className="h-4 w-4 xs:h-4 xs:w-4 sm:h-5 sm:w-5 text-gray-700" />
+                      </button>
+                      
+                      <button
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          handleNextImage(index);
+                        }}
+                        className="absolute right-2 xs:right-3 sm:right-4 top-1/2 -translate-y-1/2 
+                                 h-8 w-8 xs:h-9 xs:w-9 sm:h-10 sm:w-10 
+                                 rounded-full bg-white/90 hover:bg-white shadow-lg 
+                                 border border-gray-200 flex items-center justify-center
+                                 transition-all duration-300 hover:scale-105 z-10"
+                        aria-label="Next image"
+                      >
+                        <ArrowRight className="h-4 w-4 xs:h-4 xs:w-4 sm:h-5 sm:w-5 text-gray-700" />
+                      </button>
+                    </>
+                  )}
+
+                  {/* Image Indicators */}
+                  {gallery.images.length > 1 && (
+                    <div className="absolute bottom-3 sm:bottom-4 left-1/2 -translate-x-1/2 flex gap-1.5 sm:gap-2 
+                                  bg-black/20 rounded-full px-2 xs:px-2.5 sm:px-3 py-1.5 sm:py-2">
+                      {gallery.images.map((_, imageIndex) => (
+                        <button
+                          key={imageIndex}
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            setSelectedImageIndexes(prev => ({
+                              ...prev,
+                              [index]: imageIndex
+                            }));
+                          }}
+                          className={`w-1.5 h-1.5 xs:w-2 xs:h-2 sm:w-2 sm:h-2 rounded-full transition-all ${
+                            currentImageIndex === imageIndex ? "bg-white" : "bg-white/50"
+                          }`}
+                          aria-label={`View image ${imageIndex + 1}`}
+                        />
+                      ))}
+                    </div>
+                  )}
+                </div>
+              </div>
+
+              {/* Content Section */}
+              <div className="w-full lg:w-1/2 space-y-4 sm:space-y-6 text-center lg:text-left px-2 sm:px-0">
+                <div className="space-y-2">
+                  <h2 className="text-2xl xs:text-2xl sm:text-3xl md:text-4xl font-light text-gray-800 leading-tight"
+                      style={{ fontFamily: "Montserrat", letterSpacing: "0.02em" }}>
+                    {gallery.heading}
+                  </h2>
+                </div>
+
+                <div className="space-y-3 sm:space-y-4">
+                  <p className="text-gray-600 leading-relaxed text-xs xs:text-sm sm:text-base"
+                     style={{ fontFamily: "Poppins", lineHeight: "1.7" }}>
+                    {gallery.description}
+                  </p>
+
+                  {/* Specifications */}
+                  {gallery.details && (
+                    <div className="space-y-1.5 sm:space-y-2 text-xs sm:text-sm text-gray-500">
+                      {gallery.details.material && (
+                        <div className="flex flex-col xs:flex-row justify-center lg:justify-start xs:items-center gap-1 xs:gap-2">
+                          <span className="font-medium">Material:</span>
+                          <span>{gallery.details.material}</span>
+                        </div>
+                      )}
+                      {gallery.details.dimensions && (
+                        <div className="flex flex-col xs:flex-row justify-center lg:justify-start xs:items-center gap-1 xs:gap-2">
+                          <span className="font-medium">Dimensions:</span>
+                          <span>{gallery.details.dimensions}</span>
+                        </div>
+                      )}
+                      {gallery.details.price && (
+                        <div className="flex flex-col xs:flex-row justify-center lg:justify-start xs:items-center gap-1 xs:gap-2">
+                          <span className="font-medium text-gray-700 text-sm sm:text-base">Price:</span>
+                          <span className="text-gray-800 font-medium text-sm sm:text-base">{gallery.details.price}</span>
+                        </div>
+                      )}
+                      {gallery.images.length > 1 && (
+                        <div className="flex flex-col xs:flex-row justify-center lg:justify-start xs:items-center gap-1 xs:gap-2">
+                          <span className="font-medium">Images:</span>
+                          <span>{gallery.images.length} views available</span>
+                        </div>
+                      )}
+                    </div>
+                  )}
+
+                  {/* CTA Button */}
+                  <div className="flex justify-center lg:justify-start pt-2 sm:pt-4">
+                    <button
+                      onClick={() => handleInquiry(gallery.heading)}
+                      className="bg-gray-800 text-white px-6 xs:px-7 sm:px-8 py-3 rounded-full 
+                               hover:bg-gray-900 transition-all duration-300 
+                               transform hover:scale-105 shadow-lg hover:shadow-xl
+                               font-medium flex items-center justify-center gap-2 
+                               text-sm xs:text-sm sm:text-base
+                               w-full xs:w-auto max-w-xs xs:max-w-none"
+                      style={{ fontFamily: "Montserrat" }}
+                    >
+                      <MessageSquare className="h-4 w-4" />
+                      Learn More
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          );
+        })}
+      </div>
+    </div>
+  );
+};
+
 const BlogPost: React.FC = () => {
   const { id } = useParams<{ id: string }>();
   const navigate = useNavigate();
@@ -107,15 +327,17 @@ const BlogPost: React.FC = () => {
            
             </div>
 
-            {/* Blog Post Image */}
-            <div className="flex justify-center mb-8">
-              <img
-                src={post.image}
-                alt={post.title}
-                className="w-full h-auto max-h-[600px] object-cover rounded-lg shadow-lg px-4 sm:px-0"
-                loading="lazy"
-              />
-            </div>
+            {/* Blog Post Image - Only show for default layout */}
+            {post.layout !== 'interactive' && (
+              <div className="flex justify-center mb-8">
+                <img
+                  src={post.image}
+                  alt={post.title}
+                  className="w-full h-auto max-h-[600px] object-cover rounded-lg shadow-lg px-4 sm:px-0"
+                  loading="lazy"
+                />
+              </div>
+            )}
 
             {/* Blog Content */}
             <div
@@ -126,6 +348,11 @@ const BlogPost: React.FC = () => {
                   .replace(/<header[\s\S]*?<\/header>/, '')
               }}
             />
+
+            {/* Interactive Layout for specific posts */}
+            {post.layout === 'interactive' && post.galleries && (
+              <InteractiveBlogLayout galleries={post.galleries} title={post.title} />
+            )}
           </article>
 
            {/* Enhanced Internal Links Section */}
@@ -173,46 +400,6 @@ const BlogPost: React.FC = () => {
               </div>
             </div>
 
-
-          {/* Related Articles Section */}
-          {/* <section className="mt-10">
-            <h2
-              className="text-3xl font-semibold mb-8"
-              style={{ fontFamily: "Montserrat" }}
-            >
-              Related Articles
-            </h2>
-            <div className="grid gap-6 grid-cols-2 sm:grid-cols-2">
-              {relatedPosts.map((relatedPost) => (
-                <article key={relatedPost.id} className="bg-white rounded-lg shadow-lg overflow-hidden">
-                  <img
-                    src={relatedPost.image}
-                    alt={relatedPost.title}
-                    className="w-full h-32 object-cover"
-                    loading="lazy"
-                  />
-                  <div className="p-4">
-                    <h3
-                      className="text-lg font-semibold mb-2"
-                      style={{ fontFamily: "Montserrat" }}
-                    >
-                      <Link
-                        to={`/blog/${relatedPost.id}`}
-                        className="text-black-600 hover:text-blue-800"
-                      >
-                        {relatedPost.title}
-                      </Link>
-                    </h3>
-                    <div className="flex items-center text-gray-500 text-sm">
-                      <span>{relatedPost.date}</span>
-                      <span className="mx-2">•</span>
-                      <span>{relatedPost.readTime}</span>
-                    </div>
-                  </div>
-                </article>
-              ))}
-            </div>
-          </section> */}
 <WhatsAppFloat phoneNumber="+919650006385" />
           <Footer />
         </div>
