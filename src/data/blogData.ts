@@ -6,7 +6,7 @@ export interface BlogPost {
   image: string;
   date: string;
   schema?: object;
-  layout?: 'default' | 'interactive'; // ADD THIS LINE
+  layout?: 'default' | 'interactive'; 
   galleries?: Array<{                  // ADD THIS BLOCK
     heading: string;
     description: string;
@@ -67,7 +67,49 @@ export interface BlogPost {
         "dimensions": "3.0m x 2.0m x 1.5m",
         "price": "Starting from ₹65,000"
       }
-    }
+    },
+     {
+      "heading": "Modern Abstract Form",
+      "description": "A contemporary sculpture that plays with light and shadow, creating different experiences throughout the day. This piece represents the intersection of traditional craftsmanship and modern design philosophy.",
+      "images": [
+        "/vighnaharta-mumbai-2022.webp",
+        "/VIGHNAHARTA.webp",
+        "/raging-stallions-chennai-2021.webp"
+      ],
+      "details": {
+        "material": "Corten Steel",
+        "dimensions": "2.5m x 1.8m x 1.2m",
+        "price": "Starting from ₹45,000"
+      }
+    },
+     {
+      "heading": "Modern Abstract Form",
+      "description": "A contemporary sculpture that plays with light and shadow, creating different experiences throughout the day. This piece represents the intersection of traditional craftsmanship and modern design philosophy.",
+      "images": [
+        "/vighnaharta-mumbai-2022.webp",
+        "/VIGHNAHARTA.webp",
+        "/raging-stallions-chennai-2021.webp"
+      ],
+      "details": {
+        "material": "Corten Steel",
+        "dimensions": "2.5m x 1.8m x 1.2m",
+        "price": "Starting from ₹45,000"
+      }
+    },
+     {
+      "heading": "Modern Abstract Form",
+      "description": "A contemporary sculpture that plays with light and shadow, creating different experiences throughout the day. This piece represents the intersection of traditional craftsmanship and modern design philosophy.",
+      "images": [
+        "/vighnaharta-mumbai-2022.webp",
+        "/VIGHNAHARTA.webp",
+        "/raging-stallions-chennai-2021.webp"
+      ],
+      "details": {
+        "material": "Corten Steel",
+        "dimensions": "2.5m x 1.8m x 1.2m",
+        "price": "Starting from ₹45,000"
+      }
+    },
   ]
 },
    {

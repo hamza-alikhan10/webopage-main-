@@ -13,7 +13,7 @@ import Shop from "@/pages/Shop";
 import ShopDetail from "@/pages/ShopDetail";
 import ArtworkDetail from "./ArtworkDetail"; // Ensure this path is correct
 import { Helmet } from "react-helmet";
-import GodIdols from "@/pages/GodIdols";
+
 
 const queryClient = new QueryClient();
 
@@ -33,7 +33,7 @@ const App = () => {
             <Route path="/shop/:id" element={<ShopDetail />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/press" element={<Press />} />
-               <Route path="/god-idols" element={<GodIdols />} />
+               
             <Route path="/blog" element={<Blog />} />
             <Route path="/blog/:id" element={<BlogPost />} />
             <Route path="*" element={<div>404 Page Not Found</div>} /> {/* Added catch-all for unmatched routes */}

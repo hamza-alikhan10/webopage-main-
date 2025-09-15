@@ -5,7 +5,8 @@ import { Helmet } from "react-helmet";
 import { Link } from 'react-router-dom';
 import { blogPosts } from '../data/blogData';
 import { ArrowRight } from "lucide-react";
-import WhatsAppFloat from "@/components/WhatsAppFloat"; 
+import WhatsAppFloat from "@/components/WhatsAppFloat";
+
 const Blog: React.FC = () => {
   return (
     <div className="origin-top">
@@ -78,7 +79,8 @@ const Blog: React.FC = () => {
               </article>
             ))}
           </div>
-           <WhatsAppFloat phoneNumber="+919650006385" />
+          
+          <WhatsAppFloat phoneNumber="+919650006385" />
           <Footer />
         </div>
       </div>
