@@ -21,12 +21,13 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
-    "id": "premium-god-idols-metal-sculptures",
+    "id": "luxury-god-idols-metal-sculptures",
     "title": "Premium God Idols & Deity Statues | Stainless Steel, Brass & Corten Steel Collection",
     "metaDescription": "Buy premium god idols & Hindu deity statues in stainless steel, brass & corten steel. Custom Ganesh, Krishna, Buddha sculptures with antique, mirror & rust finishes. Weather resistant religious idols for home temples & gardens. Free shipping India.",
     "content": `
       <article class="blog-content max-w-4xl mx-auto px-4 sm:px-6">
         <section class="mb-8">
+          <img class=" mb-7" src="/Arts/Ganeshji.jpeg" alt="Garden sculpture design">
           <h2 class="text-xl sm:text-2xl font-semibold mb-4 text-gray-900">Discover Divine Artistry in Metal</h2>
           <p class="text-sm sm:text-base text-gray-700 leading-relaxed mb-4">
             Welcome to FormForge's exclusive collection of premium god idols and Hindu deity statues, where traditional spirituality meets contemporary metal craftsmanship. Our meticulously crafted religious sculptures in stainless steel, brass, and corten steel transform spaces into sanctuaries of devotion and artistic excellence.
@@ -81,7 +82,7 @@ export const blogPosts: BlogPost[] = [
           
           <div class="mt-6 p-4 bg-orange-50 rounded-lg border border-orange-200">
             <p class="text-sm text-gray-800">
-              <strong>Note:</strong> Each sculpture is handcrafted by skilled artisans. Minor variations in finish and detailing make every piece unique. We ship across India with secure packaging and provide installation guidance for larger pieces.
+              <strong>Note:</strong> Each FormForge sculpture is precision-crafted with advanced fabrication, making every piece unique. We ship securely across India and provide installation support for larger works.
             </p>
           </div>
         </section>
@@ -102,7 +103,7 @@ export const blogPosts: BlogPost[] = [
         "details": {
           "material": "Corten Steel with Natural Rust Finish",
           "dimensions": "H: 4.5ft | W: 3ft | D: 2.5ft (Custom sizes available)",
-          "price": "₹45,000 onwards"
+          "price": "(Price varies based on the level of customisation)"
         }
       },
       {
@@ -116,7 +117,7 @@ export const blogPosts: BlogPost[] = [
         "details": {
           "material": "316 Grade Stainless Steel - Mirror Finish",
           "dimensions": "H: 3.0m | W: 2.0m | D: 1.5m",
-          "price": "₹65,000 onwards"
+          "price": "(Price varies based on the level of customisation)"
         }
       },
       {
@@ -129,7 +130,7 @@ export const blogPosts: BlogPost[] = [
         "details": {
           "material": "Metal with Antique Brass PU Coating (Weatherproof)",
           "dimensions": "L: 1545mm | W: 985mm | H: 1800mm",
-          "price": "₹45,000 onwards"
+          "price": "(Price varies based on the level of customisation)"
         }
       },
       {
@@ -142,7 +143,7 @@ export const blogPosts: BlogPost[] = [
         "details": {
           "material": "Stainless Steel with Satin/Brushed Finish",
           "dimensions": "H: 6.5ft | W: 4ft | D: 5ft",
-          "price": "₹45,000 onwards"
+          "price": "(Price varies based on the level of customisation)"
         }
       },
       {
@@ -155,7 +156,7 @@ export const blogPosts: BlogPost[] = [
         "details": {
           "material": "Corten Steel with Sealed Finish",
           "dimensions": "H: 2.5m | W: 1.8m | D: 1.2m",
-          "price": "₹45,000 onwards"
+          "price": "(Price varies based on the level of customisation)"
         }
       }
     ]

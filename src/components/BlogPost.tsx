@@ -182,12 +182,10 @@ const InteractiveBlogLayout: React.FC<InteractiveBlogLayoutProps> = ({ galleries
                   </h2>
                   
                   {/* Price Display */}
-                  {gallery.details?.price && (
-                    <div className="text-xl sm:text-2xl font-semibold text-gray-800 mb-4"
-                         style={{ fontFamily: "Montserrat, sans-serif" }}>
-                      {gallery.details.price}
-                    </div>
-                  )}
+                  <div className="text-sm sm:text-base text-gray-700 leading-relaxed font-semibold"
+     style={{ fontFamily: "Montserrat, sans-serif", lineHeight: "1.7" }}>
+  {gallery.details?.price}
+</div>
                 </div>
 
                 <p className="text-sm sm:text-base text-gray-700 leading-relaxed"
