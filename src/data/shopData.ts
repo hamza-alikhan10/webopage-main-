@@ -57,6 +57,7 @@ export const sculptures: Sculpture[] = [
       "status": "Readily Available",
       "price": "₹2,00,000"
     },
+   
     {
       "id": "metal-figure",
       "title": "Carefree Seat",
@@ -455,6 +456,24 @@ export const sculptures: Sculpture[] = [
       "status": "Sold Out",
       "price": "₹1,00,000"
     },
+      {
+      "id": "Nandi",
+      "title": "Nandi",
+      "images": ["/Arts/Nandi..png", "/Arts/Nandi.png"],
+      "description": "An emblem of devotion, patience, and strength, this angular Nandi transforms into an ergonomic seating figure,where sculpture and function converge.",
+      "details": {
+        "type": "Landscape Accent",
+        "signature": "Hand-signed by artist",
+        "authenticity": "Sold with certificate of Authenticity",
+        "medium": "Corten steel",
+        "dimensions": "H 4ft.2in.",
+        "display": "Indoor/Outdoor",
+        "integratedLighting": false,
+        "tags": ["Nandi", "figurative bench", "functional sculpture", "garden art"]
+      },
+      "status": "Sold Out",
+      "price": "₹1,50,000"
+    },
     {
       "id": "metal-face",
       "title": "Oronoir",
@@ -472,5 +491,6 @@ export const sculptures: Sculpture[] = [
       },
       "status": "Readily Available",
       "price": "₹1,00,000"
-    }
+    },
+    
 ];

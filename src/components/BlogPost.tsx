@@ -4,7 +4,7 @@ import Navbar from "./Navbar";
 import Footer from './ui/Footer';
 import { Helmet } from "react-helmet";
 import { blogPosts, type BlogPost } from '../data/blogData';
-import { Instagram, Linkedin, Globe, Album, ArrowRight, MessageSquare, Camera, Landmark, ArrowLeft } from "lucide-react";
+import { ArrowRight, MessageSquare, ArrowLeft, Album, Phone } from "lucide-react";
 import WhatsAppFloat from "@/components/WhatsAppFloat";
 
 // Interactive Layout Component
@@ -25,11 +25,10 @@ interface InteractiveBlogLayoutProps {
 }
 
 const InteractiveBlogLayout: React.FC<InteractiveBlogLayoutProps> = ({ galleries, title }) => {
-  const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
   const [selectedImageIndexes, setSelectedImageIndexes] = useState<{ [key: number]: number }>({});
 
   const handleInquiry = (galleryName: string) => {
-    const message = `Hi, I'm interested in the ${galleryName} from your ${title} blog post. Could you please provide more details?`;
+    const message = `Hi, I'm interested in the ${galleryName} from your premium god idols collection. Could you please provide more details about pricing and customization options?`;
     const whatsappUrl = `https://wa.me/919650006385?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
   };
@@ -65,8 +64,8 @@ const InteractiveBlogLayout: React.FC<InteractiveBlogLayoutProps> = ({ galleries
   };
 
   return (
-    <div className="bg-gradient-to-b from-slate-50 to-white mt-8">
-      <div className="space-y-12 sm:space-y-16 lg:space-y-20">
+    <div className="bg-gradient-to-b from-white to-gray-50 mt-2">
+      <div className="space-y-8 sm:space-y-12 lg:space-y-16">
         {galleries.map((gallery, index) => {
           const currentImageIndex = getCurrentImageIndex(index);
           const currentImage = gallery.images[currentImageIndex];
@@ -75,24 +74,18 @@ const InteractiveBlogLayout: React.FC<InteractiveBlogLayoutProps> = ({ galleries
           return (
             <div
               key={index}
-              className={`flex flex-col lg:flex-row items-center gap-6 sm:gap-8 lg:gap-12 
-                         ${position === "left" ? "lg:flex-row" : "lg:flex-row-reverse"}
-                         group transition-all duration-700 hover:scale-[1.01] sm:hover:scale-[1.02]`}
-              onMouseEnter={() => setHoveredIndex(index)}
-              onMouseLeave={() => setHoveredIndex(null)}
+              className={`flex flex-col lg:flex-row items-center gap-4 sm:gap-6 lg:gap-10
+                         ${position === "left" ? "lg:flex-row" : "lg:flex-row-reverse"}`}
             >
-              {/* Image Section with Navigation */}
-              <div className="w-full lg:w-1/2 relative overflow-hidden">
-                <div className="relative group cursor-pointer">
+              {/* Image Section */}
+              <div className="w-full lg:w-1/2">
+                <div className="relative overflow-hidden bg-gray-100 rounded-lg aspect-square">
                   <img
                     src={currentImage}
-                    alt={`${gallery.heading} - View ${currentImageIndex + 1} of ${gallery.images.length}`}
-                    className="w-full h-[280px] xs:h-[320px] sm:h-[400px] md:h-[500px] lg:h-[600px] object-cover 
-                             transition-all duration-500 group-hover:scale-105
-                             shadow-xl sm:shadow-2xl hover:shadow-3xl rounded-lg"
-                    style={{ 
-                      filter: hoveredIndex === index ? 'brightness(1.1) contrast(1.1)' : 'brightness(1)',
-                    }}
+                    alt={`${gallery.heading} - Premium Metal God Idol by FormForge`}
+                    title={`${gallery.heading} - ${gallery.details?.material || 'Metal'} Deity Statue`}
+                    className="w-full h-full object-contain transition-transform duration-300"
+                    loading="lazy"
                   />
                   
                   {/* Navigation Arrows */}
@@ -103,14 +96,13 @@ const InteractiveBlogLayout: React.FC<InteractiveBlogLayoutProps> = ({ galleries
                           e.stopPropagation();
                           handlePreviousImage(index);
                         }}
-                        className="absolute left-2 xs:left-3 sm:left-4 top-1/2 -translate-y-1/2 
-                                 h-8 w-8 xs:h-9 xs:w-9 sm:h-10 sm:w-10 
-                                 rounded-full bg-white/90 hover:bg-white shadow-lg 
+                        className="absolute left-3 top-1/2 -translate-y-1/2 
+                                 h-9 w-9 rounded-full bg-white/90 hover:bg-white shadow-lg 
                                  border border-gray-200 flex items-center justify-center
                                  transition-all duration-300 hover:scale-105 z-10"
                         aria-label="Previous image"
                       >
-                        <ArrowLeft className="h-4 w-4 xs:h-4 xs:w-4 sm:h-5 sm:w-5 text-gray-700" />
+                        <ArrowLeft className="h-4 w-4 text-gray-700" />
                       </button>
                       
                       <button
@@ -118,22 +110,21 @@ const InteractiveBlogLayout: React.FC<InteractiveBlogLayoutProps> = ({ galleries
                           e.stopPropagation();
                           handleNextImage(index);
                         }}
-                        className="absolute right-2 xs:right-3 sm:right-4 top-1/2 -translate-y-1/2 
-                                 h-8 w-8 xs:h-9 xs:w-9 sm:h-10 sm:w-10 
-                                 rounded-full bg-white/90 hover:bg-white shadow-lg 
+                        className="absolute right-3 top-1/2 -translate-y-1/2 
+                                 h-9 w-9 rounded-full bg-white/90 hover:bg-white shadow-lg 
                                  border border-gray-200 flex items-center justify-center
                                  transition-all duration-300 hover:scale-105 z-10"
                         aria-label="Next image"
                       >
-                        <ArrowRight className="h-4 w-4 xs:h-4 xs:w-4 sm:h-5 sm:w-5 text-gray-700" />
+                        <ArrowRight className="h-4 w-4 text-gray-700" />
                       </button>
                     </>
                   )}
 
                   {/* Image Indicators */}
                   {gallery.images.length > 1 && (
-                    <div className="absolute bottom-3 sm:bottom-4 left-1/2 -translate-x-1/2 flex gap-1.5 sm:gap-2 
-                                  bg-black/20 rounded-full px-2 xs:px-2.5 sm:px-3 py-1.5 sm:py-2">
+                    <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2 
+                                  bg-black/20 rounded-full px-3 py-1.5">
                       {gallery.images.map((_, imageIndex) => (
                         <button
                           key={imageIndex}
@@ -144,7 +135,7 @@ const InteractiveBlogLayout: React.FC<InteractiveBlogLayoutProps> = ({ galleries
                               [index]: imageIndex
                             }));
                           }}
-                          className={`w-1.5 h-1.5 xs:w-2 xs:h-2 sm:w-2 sm:h-2 rounded-full transition-all ${
+                          className={`w-2 h-2 rounded-full transition-all ${
                             currentImageIndex === imageIndex ? "bg-white" : "bg-white/50"
                           }`}
                           aria-label={`View image ${imageIndex + 1}`}
@@ -153,69 +144,102 @@ const InteractiveBlogLayout: React.FC<InteractiveBlogLayoutProps> = ({ galleries
                     </div>
                   )}
                 </div>
+                
+                {/* Thumbnail Navigation */}
+                {gallery.images.length > 1 && (
+                  <div className="flex gap-2 mt-2 overflow-x-auto pb-2 scrollbar-hide">
+                    {gallery.images.map((image, imageIndex) => (
+                      <button
+                        key={imageIndex}
+                        onClick={() => setSelectedImageIndexes(prev => ({
+                          ...prev,
+                          [index]: imageIndex
+                        }))}
+                        className={`flex-shrink-0 w-14 h-14 sm:w-16 sm:h-16 rounded-lg border-2 overflow-hidden transition-all ${
+                          currentImageIndex === imageIndex 
+                            ? "border-gray-800 shadow-lg" 
+                            : "border-gray-200 hover:border-gray-400"
+                        }`}
+                      >
+                        <img 
+                          src={image} 
+                          alt={`${gallery.heading} thumbnail ${imageIndex + 1}`} 
+                          className="w-full h-full object-cover" 
+                          loading="lazy"
+                        />
+                      </button>
+                    ))}
+                  </div>
+                )}
               </div>
 
               {/* Content Section */}
-              <div className="w-full lg:w-1/2 space-y-4 sm:space-y-6 text-center lg:text-left px-2 sm:px-0">
-                <div className="space-y-2">
-                  <h2 className="text-2xl xs:text-2xl sm:text-3xl md:text-4xl font-light text-gray-800 leading-tight"
-                      style={{ fontFamily: "Montserrat", letterSpacing: "0.02em" }}>
+              <div className="w-full lg:w-1/2 space-y-4 px-4 sm:px-6 lg:px-0">
+                <div>
+                  <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-2"
+                      style={{ fontFamily: "Playfair Display, serif" }}>
                     {gallery.heading}
                   </h2>
-                </div>
-
-                <div className="space-y-3 sm:space-y-4">
-                  <p className="text-gray-600 leading-relaxed text-xs xs:text-sm sm:text-base"
-                     style={{ fontFamily: "Poppins", lineHeight: "1.7" }}>
-                    {gallery.description}
-                  </p>
-
-                  {/* Specifications */}
-                  {gallery.details && (
-                    <div className="space-y-1.5 sm:space-y-2 text-xs sm:text-sm text-gray-500">
-                      {gallery.details.material && (
-                        <div className="flex flex-col xs:flex-row justify-center lg:justify-start xs:items-center gap-1 xs:gap-2">
-                          <span className="font-medium">Material:</span>
-                          <span>{gallery.details.material}</span>
-                        </div>
-                      )}
-                      {gallery.details.dimensions && (
-                        <div className="flex flex-col xs:flex-row justify-center lg:justify-start xs:items-center gap-1 xs:gap-2">
-                          <span className="font-medium">Dimensions:</span>
-                          <span>{gallery.details.dimensions}</span>
-                        </div>
-                      )}
-                      {gallery.details.price && (
-                        <div className="flex flex-col xs:flex-row justify-center lg:justify-start xs:items-center gap-1 xs:gap-2">
-                          <span className="font-medium text-gray-700 text-sm sm:text-base">Price:</span>
-                          <span className="text-gray-800 font-medium text-sm sm:text-base">{gallery.details.price}</span>
-                        </div>
-                      )}
-                      {gallery.images.length > 1 && (
-                        <div className="flex flex-col xs:flex-row justify-center lg:justify-start xs:items-center gap-1 xs:gap-2">
-                          <span className="font-medium">Images:</span>
-                          <span>{gallery.images.length} views available</span>
-                        </div>
-                      )}
+                  
+                  {/* Price Display */}
+                  {gallery.details?.price && (
+                    <div className="text-xl sm:text-2xl font-semibold text-gray-800 mb-4"
+                         style={{ fontFamily: "Montserrat, sans-serif" }}>
+                      {gallery.details.price}
                     </div>
                   )}
+                </div>
 
-                  {/* CTA Button */}
-                  <div className="flex justify-center lg:justify-start pt-2 sm:pt-4">
-                    <button
-                      onClick={() => handleInquiry(gallery.heading)}
-                      className="bg-gray-800 text-white px-6 xs:px-7 sm:px-8 py-3 rounded-full 
-                               hover:bg-gray-900 transition-all duration-300 
-                               transform hover:scale-105 shadow-lg hover:shadow-xl
-                               font-medium flex items-center justify-center gap-2 
-                               text-sm xs:text-sm sm:text-base
-                               w-full xs:w-auto max-w-xs xs:max-w-none"
-                      style={{ fontFamily: "Montserrat" }}
-                    >
-                      <MessageSquare className="h-4 w-4" />
-                      Learn More
-                    </button>
+                <p className="text-sm sm:text-base text-gray-700 leading-relaxed"
+                   style={{ fontFamily: "Montserrat, sans-serif", lineHeight: "1.7" }}>
+                  {gallery.description}
+                </p>
+
+                {/* Specifications */}
+                {gallery.details && (
+                  <div className="space-y-3 pt-2">
+                    {gallery.details.material && (
+                      <div className="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-2">
+                        <span className="text-sm font-semibold text-gray-900">Material:</span>
+                        <span className="text-sm text-gray-700">{gallery.details.material}</span>
+                      </div>
+                    )}
+                    {gallery.details.dimensions && (
+                      <div className="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-2">
+                        <span className="text-sm font-semibold text-gray-900">Dimensions:</span>
+                        <span className="text-sm text-gray-700">{gallery.details.dimensions}</span>
+                      </div>
+                    )}
                   </div>
+                )}
+
+                {/* CTA Buttons */}
+                <div className="flex flex-col sm:flex-row gap-3 pt-4">
+                  <button
+                    onClick={() => handleInquiry(gallery.heading)}
+                    className="bg-gray-900 text-white px-6 py-3 rounded-lg 
+                             hover:bg-gray-800 transition-all duration-300 
+                             shadow-lg hover:shadow-xl font-medium 
+                             flex items-center justify-center gap-2 
+                             text-sm sm:text-base"
+                    style={{ fontFamily: "Montserrat, sans-serif" }}
+                  >
+                    <MessageSquare className="h-4 w-4" />
+                    Get Price & Details
+                  </button>
+                  
+                  <a
+                    href="tel:+919650006385"
+                    className="bg-white text-gray-900 px-6 py-3 rounded-lg 
+                             border border-gray-300 hover:bg-gray-50
+                             transition-all duration-300 font-medium 
+                             flex items-center justify-center gap-2 
+                             text-sm sm:text-base"
+                    style={{ fontFamily: "Montserrat, sans-serif" }}
+                  >
+                    <Phone className="h-4 w-4" />
+                    Call Now
+                  </a>
                 </div>
               </div>
             </div>
@@ -241,169 +265,336 @@ const BlogPost: React.FC = () => {
     return null;
   }
 
-  // Logic for related articles (excluding current post, take 2 others)
+  // Related posts
   const relatedPosts = blogPosts
     .filter(p => p.id !== post.id)
     .slice(0, 2);
 
-  // Author data (move this to blogData.ts if dynamic per post)
+  // Author data
   const author = {
     name: "Abhinav Goyal",
-    bio: "Art enthusiast and expert in luxury metal sculptures.",
+    bio: "Founder of FormForge, specializing in luxury metal sculptures and religious art.",
     profileLink: "/about",
-    profileImage: "/screen2.png", // Replace with actual image URL
+    profileImage: "/screen2.png",
+  };
+
+  // Structured data for SEO
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "headline": post.title,
+    "description": post.metaDescription,
+    "datePublished": post.date,
+    "dateModified": post.date,
+    "image": post.galleries?.[0]?.images || post.image,
+    "author": { 
+      "@type": "Person", 
+      "name": author.name,
+      "url": "https://formforge.com/about",
+    },
+    "publisher": { 
+      "@type": "Organization", 
+      "name": "FormForge",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://formforge.com/logo.png"
+      }
+    },
+    "mainEntity": {
+      "@type": "ItemList",
+      "itemListElement": post.galleries?.map((gallery, index) => ({
+        "@type": "Product",
+        "position": index + 1,
+        "name": gallery.heading,
+        "description": gallery.description,
+        "image": gallery.images[0],
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "INR",
+          "price": gallery.details?.price?.replace(/[^\d]/g, '') || "45000",
+          "availability": "https://schema.org/InStock"
+        },
+        "material": gallery.details?.material,
+        "category": "Religious Sculptures"
+      }))
+    }
+  };
+
+  // FAQ Schema
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Which metal is best for outdoor god idols?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Stainless steel and corten steel are best for outdoor god idols as they are completely weatherproof, rust-resistant, and require zero maintenance even in harsh weather conditions."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can you customize god idol sizes?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, we create custom-sized deity statues ranging from 6 inches for car dashboards to 20 feet for temple installations. Contact us with your specific requirements."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you ship god idols across India?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, we provide secure nationwide shipping with proper packaging. We also offer installation guidance for larger sculptures."
+        }
+      }
+    ]
   };
 
   return (
-    <div className="origin-top">
+    <div className="min-h-screen bg-white">
       <Helmet>
-        <title>{`${post.title} | Luxury Art Blog`}</title>
+        <title>{`${post.title} | FormForge India`}</title>
         <meta name="description" content={post.metaDescription} />
-        <meta name="keywords" content="luxury art, metal sculptures, Corten steel Sculptures, Stainless Steel Sculptures, outdoor sculptures, sustainable art, public installations" />
+        <meta name="keywords" content="god idols, hindu deity statues, metal god idols, stainless steel idols, brass idols, corten steel sculptures, ganesh idol, buddha statue, krishna idol, religious statues india, weather resistant god idols, outdoor deity statues, home temple idols, pooja room statues, custom god idols, designer deity sculptures, modern religious art, vastu compliant idols, diwali god idols, temple installations" />
+        
+        {/* Open Graph tags */}
         <meta property="og:title" content={post.title} />
         <meta property="og:description" content={post.metaDescription} />
-        <meta property="og:image" content={post.image} />
-        <meta property="og:type" content="article" />
+        <meta property="og:image" content={`https://formforge.com${post.image}`} />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content={`https://formforge.com/blog/${post.id}`} />
+        <meta property="og:site_name" content="FormForge" />
+        <meta property="og:locale" content="en_IN" />
+        
+        {/* Twitter Card tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={post.title} />
+        <meta name="twitter:description" content={post.metaDescription} />
+        <meta name="twitter:image" content={`https://formforge.com${post.image}`} />
+        <meta name="twitter:site" content="@formforge" />
+        
+        {/* Additional SEO tags */}
+        <link rel="canonical" href={`https://formforge.com/blog/${post.id}`} />
+        <meta name="robots" content="index, follow, max-image-preview:large" />
+        <meta name="author" content="FormForge" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="theme-color" content="#ffffff" />
+        
+        {/* Structured Data */}
+        <script type="application/ld+json">
+          {JSON.stringify(structuredData)}
+        </script>
+        <script type="application/ld+json">
+          {JSON.stringify(faqSchema)}
+        </script>
+        
+        {/* Breadcrumb Schema */}
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
-            "@type": "BlogPosting",
-            "headline": post.title,
-            "description": post.metaDescription,
-            "datePublished": post.date,
-            "image": post.image,
-            "author": { 
-              "@type": "Person", 
-              "name": author.name,
-              "url": "https://formforge.com/about",
-              "image": author.profileImage
-            },
-            "publisher": { "@type": "Organization", "name": "formforge" }
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://formforge.com"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Blog",
+                "item": "https://formforge.com/blog"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "God Idols Collection",
+                "item": `https://formforge.com/blog/${post.id}`
+              }
+            ]
           })}
         </script>
       </Helmet>
 
-      <div className="max-w-full mx-auto px-0 sm:px-6 lg:px-8 py-12 overflow-hidden">
-        <Navbar />
-        <div className="responsive-zoom sm:-m-0">
-         <button
-  onClick={() => navigate('/blog')}
-  className="mb-2 flex items-center gap-1.5 px-3 py-1.5 text-sm text-gray-600 bg-gray-100 rounded-lg hover:bg-gray-200 hover:text-gray-900 transition-all duration-300 ease-in-out transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 sm:px-4 sm:py-2 sm:text-base"
-  style={{ fontFamily: "Montserrat" }}
-  aria-label="Return to blog list"
->
-  <ArrowRight className="h-3.5 w-3.5 transform rotate-180 sm:h-4 sm:w-4" />
-  Back to Blog
-</button>
+      <Navbar />
+      
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8 lg:py-12">
+        {/* Back Button */}
+        <button
+          onClick={() => navigate('/blog')}
+          className="mb-4 sm:mb-6 flex items-center gap-2 px-3 py-2 text-sm text-gray-600 
+                   bg-gray-100 rounded-lg hover:bg-gray-200 hover:text-gray-900 
+                   transition-all duration-300 transform hover:scale-105"
+          style={{ fontFamily: "Montserrat, sans-serif" }}
+          aria-label="Return to blog list"
+        >
+          <ArrowRight className="h-4 w-4 transform rotate-180" />
+          Back to Blog
+        </button>
 
-          <article>
-            <h1
-              className="text-xl sm:text-3xl md:text-4xl font-extrabold mb-5 text-center"
-              style={{ fontFamily: "Montserrat" }}
-            >
-              {post.title}
-            </h1>
+        <article>
+          {/* Title */}
+          <h1
+            className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 text-center text-gray-900"
+            style={{ fontFamily: "Playfair Display, serif" }}
+          >
+            {post.title}
+          </h1>
 
-            {/* Author, Date, and Read Time Section with Profile Pic */}
-            <div className="flex items-center justify-center text-gray-500 text-sm mb-8 flex-wrap gap-2">
-              <div className="flex items-center">
-                <img
-                  src={author.profileImage}
-                  alt={`${author.name} profile`}
-                  className="w-8 h-8 rounded-full mr-2 object-cover"
-                  loading="lazy"
-                />
-                <span>By </span>
-                <Link 
-                  to={author.profileLink} 
-                  className="text-gray-700 hover:text-blue-600 mx-1 font-medium"
-                  style={{ fontFamily: "Montserrat" }}
-                >
-                  {author.name}
-                </Link>
-              </div>
-              <span className="mx-2">•</span>
-              <span>{post.date}</span>
-           
+          {/* Author and Date */}
+          <div className="flex items-center justify-center text-gray-600 text-sm sm:text-base mb-6 sm:mb-8">
+            <div className="flex items-center">
+              <img
+                src={author.profileImage}
+                alt={`${author.name} profile`}
+                className="w-8 h-8 sm:w-10 sm:h-10 rounded-full mr-2 sm:mr-3 object-cover"
+                loading="lazy"
+              />
+              <span>By </span>
+              <Link 
+                to={author.profileLink} 
+                className="text-gray-900 hover:text-blue-600 mx-1 font-medium"
+                style={{ fontFamily: "Montserrat, sans-serif" }}
+              >
+                {author.name}
+              </Link>
             </div>
+            <span className="mx-2">•</span>
+            <span>{new Date(post.date).toLocaleDateString('en-IN', { 
+              year: 'numeric', 
+              month: 'long', 
+              day: 'numeric' 
+            })}</span>
+          </div>
 
-            {/* Blog Post Image - Only show for default layout */}
-            {post.layout !== 'interactive' && (
-              <div className="flex justify-center mb-8">
-                <img
-                  src={post.image}
-                  alt={post.title}
-                  className="w-full h-auto max-h-[600px] object-cover rounded-lg shadow-lg px-4 sm:px-0"
-                  loading="lazy"
-                />
-              </div>
-            )}
+          {/* Blog Content */}
+          <div
+            className="prose prose-sm sm:prose-base lg:prose-lg max-w-none"
+            style={{ fontFamily: "Montserrat, sans-serif" }}
+            dangerouslySetInnerHTML={{ __html: post.content }}
+          />
 
-            {/* Blog Content */}
-            <div
-              className="prose prose-lg max-w-none text-left"
-              style={{ fontFamily: "Montserrat" }}
-              dangerouslySetInnerHTML={{
-                __html: post.content
-                  .replace(/<header[\s\S]*?<\/header>/, '')
-              }}
-            />
+          {/* Interactive Gallery */}
+          {post.layout === 'interactive' && post.galleries && (
+            <InteractiveBlogLayout galleries={post.galleries} title={post.title} />
+          )}
 
-            {/* Interactive Layout for specific posts */}
-            {post.layout === 'interactive' && post.galleries && (
-              <InteractiveBlogLayout galleries={post.galleries} title={post.title} />
-            )}
-          </article>
+         
+          {/* Location-Based Content for SEO */}
+          <div className="mt-8 p-4 text-center">
+            <p className="text-sm text-gray-600">
+              <strong>Serving Premium God Idols Across India:</strong> Delhi NCR, Mumbai, Bangalore, Chennai, Kolkata, Hyderabad, Pune, Ahmedabad, Jaipur, Lucknow, and all major cities. International shipping available to USA, UK, Canada, UAE, Australia, and worldwide.
+            </p>
+          </div>
 
-           {/* Enhanced Internal Links Section */}
-           <div className="my-5 p-8 bg-gradient-to-br from-slate-50 to-gray-100 rounded-xl border border-gray-200 shadow-sm">
-              <h3 className="text-xl font-semibold mb-6 flex items-center gap-2" style={{ fontFamily: "Montserrat" }}>
-                <Landmark className="h-5 w-5 text-gray-500" /> 
-                Explore More From FormForge
+          {/* Call to Action Section */}
+         
+
+          {/* Internal Links Section */}
+          <div className="mt-12 p-6 sm:p-8 bg-gradient-to-br from-gray-50 to-white rounded-xl border border-gray-200">
+            <h3 className="text-xl sm:text-2xl font-bold mb-6 text-gray-900 text-center"
+                style={{ fontFamily: "Playfair Display, serif" }}>
+              Explore More From FormForge
+            </h3>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
+              <Link
+                to="/gallery"
+                className="group"
+              >
+                <div className="bg-white p-5 sm:p-6 rounded-lg border border-gray-200 h-full 
+                              transition-all duration-300 hover:border-gray-400 hover:shadow-lg 
+                              hover:translate-y-[-2px]">
+                  <div className="flex items-center mb-3">
+                    <div className="bg-gradient-to-br from-orange-100 to-orange-50 p-3 rounded-full mr-4">
+                      <Album className="h-5 w-5 sm:h-6 sm:w-6 text-orange-600" />
+                    </div>
+                    <h4 className="font-semibold text-base sm:text-lg text-gray-900" 
+                        style={{ fontFamily: "Montserrat, sans-serif" }}>
+                      View Our Portfolio
+                    </h4>
+                  </div>
+                  <p className="text-sm text-gray-600 mb-3">
+                    Explore our complete collection of metal sculptures and installations created for temples, homes, and commercial spaces worldwide.
+                  </p>
+                  <div className="flex items-center text-orange-600 font-medium text-sm group-hover:text-orange-700">
+                    Discover Our Work 
+                    <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                  </div>
+                </div>
+              </Link>
+
+              <Link
+                to="/contact"
+                className="group"
+              >
+                <div className="bg-white p-5 sm:p-6 rounded-lg border border-gray-200 h-full 
+                              transition-all duration-300 hover:border-gray-400 hover:shadow-lg 
+                              hover:translate-y-[-2px]">
+                  <div className="flex items-center mb-3">
+                    <div className="bg-gradient-to-br from-blue-100 to-blue-50 p-3 rounded-full mr-4">
+                      <MessageSquare className="h-5 w-5 sm:h-6 sm:w-6 text-blue-600" />
+                    </div>
+                    <h4 className="font-semibold text-base sm:text-lg text-gray-900" 
+                        style={{ fontFamily: "Montserrat, sans-serif" }}>
+                      Custom Sculptures
+                    </h4>
+                  </div>
+                  <p className="text-sm text-gray-600 mb-3">
+                    Get a custom god idol designed specifically for your space. Our team will help bring your vision to life with premium materials.
+                  </p>
+                  <div className="flex items-center text-blue-600 font-medium text-sm group-hover:text-blue-700">
+                    Start Your Project 
+                    <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                  </div>
+                </div>
+              </Link>
+            </div>
+          </div>
+
+          {/* Related Posts */}
+          {relatedPosts.length > 0 && (
+            <div className="mt-12">
+              <h3 className="text-xl sm:text-2xl font-bold mb-6 text-gray-900"
+                  style={{ fontFamily: "Playfair Display, serif" }}>
+                Related Articles
               </h3>
-              <div className="flex flex-col sm:flex-row gap-6">
-                <Link
-                  to="/gallery"
-                  className="flex-1 group"
-                >
-                  <div className="bg-white p-6 rounded-lg border border-gray-200 h-full transition-all duration-300 hover:border-blue-300 hover:shadow-md hover:translate-y-[-4px]">
-                    <div className="flex items-center mb-4">
-                      <div className="bg-blue-100 p-3 rounded-full mr-4">
-                        <Album className="h-6 w-6 text-gray-500" />
-                      </div>
-                      <h4 className="font-semibold text-lg" style={{ fontFamily: "Montserrat" }}>View Our Portfolio</h4>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
+                {relatedPosts.map((relatedPost) => (
+                  <Link
+                    key={relatedPost.id}
+                    to={`/blog/${relatedPost.id}`}
+                    className="group border border-gray-200 rounded-lg overflow-hidden hover:shadow-lg transition-all duration-300"
+                  >
+                    <div className="aspect-video bg-gray-100">
+                      <img
+                        src={relatedPost.image}
+                        alt={relatedPost.title}
+                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                        loading="lazy"
+                      />
                     </div>
-                    <p className="text-gray-600 mb-4">Explore our collection of custom metal sculptures and installations created for clients worldwide.</p>
-                    <div className="flex items-center text-blue-600 font-medium group-hover:text-blue-800">
-                      Discover Our Work <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                    <div className="p-4">
+                      <h4 className="font-semibold text-gray-900 group-hover:text-blue-600 transition-colors"
+                          style={{ fontFamily: "Montserrat, sans-serif" }}>
+                        {relatedPost.title}
+                      </h4>
+                      <p className="text-sm text-gray-600 mt-2 line-clamp-2">
+                        {relatedPost.metaDescription}
+                      </p>
                     </div>
-                  </div>
-                </Link>
-
-                <Link
-                  to="/contact"
-                  className="flex-1 group"
-                >
-                  <div className="bg-white p-6 rounded-lg border border-gray-200 h-full transition-all duration-300 hover:border-blue-300 hover:shadow-md hover:translate-y-[-4px]">
-                    <div className="flex items-center mb-4">
-                      <div className="bg-blue-100 p-3 rounded-full mr-4">
-                        <MessageSquare className="h-6 w-6 text-gray-500" />
-                      </div>
-                      <h4 className="font-semibold text-lg" style={{ fontFamily: "Montserrat" }}>Contact Us</h4>
-                    </div>
-                    <p className="text-gray-600 mb-4">Interested in a custom piece? Get in touch with our team to discuss your vision and requirements.</p>
-                    <div className="flex items-center text-blue-600 font-medium group-hover:text-blue-800">
-                      Start a Conversation <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
-                    </div>
-                  </div>
-                </Link>
+                  </Link>
+                ))}
               </div>
             </div>
-
-<WhatsAppFloat phoneNumber="+919650006385" />
-          <Footer />
-        </div>
+          )}
+        </article>
       </div>
+
+      <WhatsAppFloat phoneNumber="+919650006385" />
+      <Footer />
     </div>
   );
 };

@@ -7,7 +7,7 @@ export interface BlogPost {
   date: string;
   schema?: object;
   layout?: 'default' | 'interactive'; 
-  galleries?: Array<{                  // ADD THIS BLOCK
+  galleries?: Array<{
     heading: string;
     description: string;
     images: string[];
@@ -18,100 +18,149 @@ export interface BlogPost {
     };
   }>;
 }
-  export const blogPosts: BlogPost[] = [
-    {
-  "id": "interactive-sculptures",
-  "title": "Interactive Sculpture Gallery - Explore Our Latest Collection",
-  "metaDescription": "Explore our interactive sculpture gallery with multiple views and detailed information about our latest metal art pieces.",
-  "content": `
-    <article class="blog-content max-w-4xl mx-auto">
-      <header class="mb-10">
-        <h1 class="text-4xl md:text-5xl font-bold text-center" style="font-family: Montserrat">
-          Interactive Sculpture Gallery
-        </h1>
-      </header>
-      <section class="mb-8">
-        <p class="text-gray-600">Welcome to our interactive sculpture gallery. Browse through our featured pieces with multiple views and detailed information. Each sculpture tells a unique story through its form, material, and craftsmanship.</p>
-        <p class="text-gray-600">Our collection showcases the versatility of modern metal sculpture, from abstract forms to functional art pieces. Navigate through multiple angles and discover the intricate details that make each piece special.</p>
-      </section>
-    </article>
-  `,
-  "image": "/vighnaharta-mumbai-2022.webp",
-  "date": "2025-01-15",
-  "layout": "interactive",
-  "galleries": [
-    {
-      "heading": "Modern Abstract Form",
-      "description": "A contemporary sculpture that plays with light and shadow, creating different experiences throughout the day. This piece represents the intersection of traditional craftsmanship and modern design philosophy.",
-      "images": [
-        "/vighnaharta-mumbai-2022.webp",
-        "/VIGHNAHARTA.webp",
-        "/raging-stallions-chennai-2021.webp"
-      ],
-      "details": {
-        "material": "Corten Steel",
-        "dimensions": "2.5m x 1.8m x 1.2m",
-        "price": "Starting from ₹45,000"
+
+export const blogPosts: BlogPost[] = [
+  {
+    "id": "premium-god-idols-metal-sculptures",
+    "title": "Premium God Idols & Deity Statues | Stainless Steel, Brass & Corten Steel Collection",
+    "metaDescription": "Buy premium god idols & Hindu deity statues in stainless steel, brass & corten steel. Custom Ganesh, Krishna, Buddha sculptures with antique, mirror & rust finishes. Weather resistant religious idols for home temples & gardens. Free shipping India.",
+    "content": `
+      <article class="blog-content max-w-4xl mx-auto px-4 sm:px-6">
+        <section class="mb-8">
+          <h2 class="text-xl sm:text-2xl font-semibold mb-4 text-gray-900">Discover Divine Artistry in Metal</h2>
+          <p class="text-sm sm:text-base text-gray-700 leading-relaxed mb-4">
+            Welcome to FormForge's exclusive collection of premium god idols and Hindu deity statues, where traditional spirituality meets contemporary metal craftsmanship. Our meticulously crafted religious sculptures in stainless steel, brass, and corten steel transform spaces into sanctuaries of devotion and artistic excellence.
+          </p>
+          
+          <h3 class="text-lg sm:text-xl font-semibold mt-6 mb-3 text-gray-900">Why Choose FormForge Metal God Idols?</h3>
+          <div class="space-y-3 text-sm sm:text-base text-gray-700">
+            <div class="flex items-start gap-3">
+              <span class="text-orange-600 mt-1">•</span>
+              <div>
+                <strong>Weather Resistant & Durable:</strong> Created in stainless steel, corten steel, and brass, our deity idols are built to last generations. They withstand harsh weather without rusting or decaying, making them ideal for outdoor temples, gardens, balconies, or large-scale installations.
+              </div>
+            </div>
+            <div class="flex items-start gap-3">
+              <span class="text-orange-600 mt-1">•</span>
+              <div>
+                <strong>Curated Finishes:</strong> Each idol is finished like a work of art. Options include mirror-polished stainless steel, satin-brushed textures, antique brass coatings, natural rust patina, dual-tone combinations, and contemporary matte effects—crafted to suit both traditional and modern settings.
+              </div>
+            </div>
+            <div class="flex items-start gap-3">
+              <span class="text-orange-600 mt-1">•</span>
+              <div>
+                <strong>Customization Available:</strong> From 6-inch dashboard idols to monumental 20-foot temple sculptures, we specialize in creating site-specific works that reflect your vision. Every piece is digitally designed, precisely fabricated, and hand-finished by our team of artisans.
+              </div>
+            </div>
+            <div class="flex items-start gap-3">
+              <span class="text-orange-600 mt-1">•</span>
+              <div>
+                <strong>Vastu Compliant:</strong> All idols follow traditional iconography and vastu principles while carrying the timeless elegance of contemporary FormForge design. This balance ensures spiritual authenticity with an artistic edge.
+              </div>
+            </div>
+            <div class="flex items-start gap-3">
+              <span class="text-orange-600 mt-1">•</span>
+              <div>
+                <strong>Global Presence:</strong> Our metal god idols are cherished not only across India but also in international homes, temples, and private collections. We have crafted and exported customized deity sculptures to the US, UK, Dubai, and Singapore, where they continue to be celebrated as both spiritual icons and collectible art pieces.
+              </div>
+            </div>
+          </div>
+          
+          <h3 class="text-lg sm:text-xl font-semibold mt-6 mb-3 text-gray-900">Perfect For Every Space</h3>
+          <p class="text-sm sm:text-base text-gray-700 leading-relaxed mb-3">
+            Our designer metal deity sculptures enhance various settings:
+          </p>
+          <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 text-sm text-gray-700">
+            <div>• Home Temples & Pooja Rooms</div>
+            <div>• Garden & Outdoor Spaces</div>
+            <div>• Office & Reception Areas</div>
+            <div>• Temple Installations</div>
+            <div>• Gift for Housewarmings</div>
+            <div>• Festival Decorations</div>
+          </div>
+          
+          <div class="mt-6 p-4 bg-orange-50 rounded-lg border border-orange-200">
+            <p class="text-sm text-gray-800">
+              <strong>Note:</strong> Each sculpture is handcrafted by skilled artisans. Minor variations in finish and detailing make every piece unique. We ship across India with secure packaging and provide installation guidance for larger pieces.
+            </p>
+          </div>
+        </section>
+      </article>
+    `,
+    "image": "/ganapati-dxb-uae-2024.webp",
+    "date": "2025-01-20",
+    "layout": "interactive",
+    "galleries": [
+      {
+        "heading": "Lord Ganesha - Corten Steel Sculpture",
+        "description": "This majestic Ganesh idol in corten steel embodies the remover of obstacles with contemporary elegance. The natural rust patina develops uniquely over time, creating a living artwork that evolves with your space. Ideal for gardens, entrances, and outdoor temples where the weathering adds character.",
+        "images": [
+          "/ganapati-dxb-uae-2024.webp",
+          "/Arts/Ganeshji-Project.webp",
+          "/Arts/Ganeshji.webp"
+        ],
+        "details": {
+          "material": "Corten Steel with Natural Rust Finish",
+          "dimensions": "H: 4.5ft | W: 3ft | D: 2.5ft (Custom sizes available)",
+          "price": "₹45,000 onwards"
+        }
+      },
+      {
+        "heading": "Lord Mahavir - Stainless Steel Divine Form",
+        "description": "Experience divine radiance with this Lord Mahavir statue in premium stainless steel. The mirror-polished surface creates mesmerizing reflections, symbolizing the soul's journey to enlightenment. Perfect for meditation spaces and modern temples seeking contemporary spiritual art.",
+        "images": [
+          "/Arts/vishnu-ji1.webp",
+          "/Arts/vishnu-ji2.webp",
+          "/Arts/vishnu-ji.webp"
+        ],
+        "details": {
+          "material": "316 Grade Stainless Steel - Mirror Finish",
+          "dimensions": "H: 3.0m | W: 2.0m | D: 1.5m",
+          "price": "₹65,000 onwards"
+        }
+      },
+      {
+        "heading": "Vighnaharta Ganesha - Antique Collection",
+        "description": "Lord Ganesha as Vighnaharta, the supreme remover of obstacles, rendered in weatherproof metal with antique brass coating. This piece combines traditional temple art aesthetics with modern durability, creating a timeless deity statue for your sacred space.",
+        "images": [
+          "/vighnaharta-mumbai-2022.webp",
+          "/Ganeshji.webp"
+        ],
+        "details": {
+          "material": "Metal with Antique Brass PU Coating (Weatherproof)",
+          "dimensions": "L: 1545mm | W: 985mm | H: 1800mm",
+          "price": "₹45,000 onwards"
+        }
+      },
+      {
+        "heading": "Buddha - Dreaming of Dharma",
+        "description": "Find inner peace with this meditative Buddha statue in satin-finished stainless steel. The soft, brushed texture creates a calming presence, perfect for yoga studios, meditation rooms, and zen gardens. Each curve is designed to inspire tranquility and mindfulness.",
+        "images": [
+          "/Arts/Gautam-Buddhaa.webp",
+          "/Arts/b08.webp"
+        ],
+        "details": {
+          "material": "Stainless Steel with Satin/Brushed Finish",
+          "dimensions": "H: 6.5ft | W: 4ft | D: 5ft",
+          "price": "₹45,000 onwards"
+        }
+      },
+      {
+        "heading": "Designer Ganesha - Contemporary Art",
+        "description": "A modern artistic interpretation of Lord Ganesha that bridges tradition and innovation. This designer piece in corten steel makes a bold statement while maintaining spiritual significance. Ideal for art collectors and contemporary spaces seeking unique religious sculptures.",
+        "images": [
+          "/Arts/Ganesha00.jpeg",
+          "/Arts/Ganesha002.jpeg"
+        ],
+        "details": {
+          "material": "Corten Steel with Sealed Finish",
+          "dimensions": "H: 2.5m | W: 1.8m | D: 1.2m",
+          "price": "₹45,000 onwards"
+        }
       }
-    },
-    {
-      "heading": "Organic Flow Series",
-      "description": "Inspired by natural water formations, this sculpture captures movement in static form. The smooth curves and polished surface create a sense of continuous motion.",
-      "images": [
-        "/inverted-cactus-hyderabad-2023.webp",
-        "/wing-man-dubai-2024.webp",
-        "/Arts/METAL-TOTEMS.webp"
-      ],
-      "details": {
-        "material": "Polished Stainless Steel",
-        "dimensions": "3.0m x 2.0m x 1.5m",
-        "price": "Starting from ₹65,000"
-      }
-    },
-     {
-      "heading": "Modern Abstract Form",
-      "description": "A contemporary sculpture that plays with light and shadow, creating different experiences throughout the day. This piece represents the intersection of traditional craftsmanship and modern design philosophy.",
-      "images": [
-        "/vighnaharta-mumbai-2022.webp",
-        "/VIGHNAHARTA.webp",
-        "/raging-stallions-chennai-2021.webp"
-      ],
-      "details": {
-        "material": "Corten Steel",
-        "dimensions": "2.5m x 1.8m x 1.2m",
-        "price": "Starting from ₹45,000"
-      }
-    },
-     {
-      "heading": "Modern Abstract Form",
-      "description": "A contemporary sculpture that plays with light and shadow, creating different experiences throughout the day. This piece represents the intersection of traditional craftsmanship and modern design philosophy.",
-      "images": [
-        "/vighnaharta-mumbai-2022.webp",
-        "/VIGHNAHARTA.webp",
-        "/raging-stallions-chennai-2021.webp"
-      ],
-      "details": {
-        "material": "Corten Steel",
-        "dimensions": "2.5m x 1.8m x 1.2m",
-        "price": "Starting from ₹45,000"
-      }
-    },
-     {
-      "heading": "Modern Abstract Form",
-      "description": "A contemporary sculpture that plays with light and shadow, creating different experiences throughout the day. This piece represents the intersection of traditional craftsmanship and modern design philosophy.",
-      "images": [
-        "/vighnaharta-mumbai-2022.webp",
-        "/VIGHNAHARTA.webp",
-        "/raging-stallions-chennai-2021.webp"
-      ],
-      "details": {
-        "material": "Corten Steel",
-        "dimensions": "2.5m x 1.8m x 1.2m",
-        "price": "Starting from ₹45,000"
-      }
-    },
-  ]
-},
+    ]
+  },
+
    {
     "id": "outdoor-sculpture",
     "title": "Are you on the hunt for the perfect garden sculpture or ornament to enhance your outdoor space? ",
