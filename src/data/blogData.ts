@@ -14,7 +14,6 @@ export interface BlogPost {
     details?: {
       material?: string;
       dimensions?: string;
-      price?: string;
     };
   }>;
 }
@@ -22,7 +21,7 @@ export interface BlogPost {
 export const blogPosts: BlogPost[] = [
   {
     "id": "luxury-god-idols-metal-sculptures",
-    "title": "Premium God Idols & Deity Statues | Stainless Steel, Brass & Corten Steel Collection",
+    "title": "Luxury God Idols & Deity Statues | Stainless Steel, Brass & Corten Steel Collection",
     "metaDescription": "Buy premium god idols & Hindu deity statues in stainless steel, brass & corten steel. Custom Ganesh, Krishna, Buddha sculptures with antique, mirror & rust finishes. Weather resistant religious idols for home temples & gardens. Free shipping India.",
     "content": `
       <article class="blog-content max-w-4xl mx-auto px-4 sm:px-6">
@@ -102,8 +101,7 @@ export const blogPosts: BlogPost[] = [
         ],
         "details": {
           "material": "Corten Steel with Natural Rust Finish",
-          "dimensions": "H: 4.5ft | W: 3ft | D: 2.5ft (Custom sizes available)",
-          "price": "(Price varies based on the level of customisation)"
+          "dimensions": "1375mm(H)x1050mm(W) x725mm(D) \n(Price varies based on the level of customisation)"
         }
       },
       {
@@ -116,8 +114,7 @@ export const blogPosts: BlogPost[] = [
         ],
         "details": {
           "material": "316 Grade Stainless Steel - Mirror Finish",
-          "dimensions": "H: 3.0m | W: 2.0m | D: 1.5m",
-          "price": "(Price varies based on the level of customisation)"
+          "dimensions": "Height of statue: 5ft. | Height of Lotus base: 1ft.  \n(Price varies based on the level of customisation)"
         }
       },
       {
@@ -129,8 +126,7 @@ export const blogPosts: BlogPost[] = [
         ],
         "details": {
           "material": "Metal with Antique Brass PU Coating (Weatherproof)",
-          "dimensions": "L: 1545mm | W: 985mm | H: 1800mm",
-          "price": "(Price varies based on the level of customisation)"
+          "dimensions": "L: 1545mm | W: 985mm | H: 1800mm\n(Price varies based on the level of customisation)"
         }
       },
       {
@@ -142,8 +138,7 @@ export const blogPosts: BlogPost[] = [
         ],
         "details": {
           "material": "Stainless Steel with Satin/Brushed Finish",
-          "dimensions": "H: 6.5ft | W: 4ft | D: 5ft",
-          "price": "(Price varies based on the level of customisation)"
+          "dimensions": " 7 ft 4 in (H) x 5 ft 3 in (W) x 4 ft 4 in (D)\n(Price varies based on the level of customisation)"
         }
       },
       {
@@ -155,8 +150,7 @@ export const blogPosts: BlogPost[] = [
         ],
         "details": {
           "material": "Corten Steel with Sealed Finish",
-          "dimensions": "H: 2.5m | W: 1.8m | D: 1.2m",
-          "price": "(Price varies based on the level of customisation)"
+          "dimensions": "H: 2.5m | W: 1.8m | D: 1.2m\n(Price varies based on the level of customisation)"
         }
       }
     ]

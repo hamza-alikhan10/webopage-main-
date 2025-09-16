@@ -15,7 +15,6 @@ interface Gallery {
   details?: {
     material?: string;
     dimensions?: string;
-    price?: string;
   };
 }
 
@@ -63,6 +62,17 @@ const InteractiveBlogLayout: React.FC<InteractiveBlogLayoutProps> = ({ galleries
     return selectedImageIndexes[galleryIndex] || 0;
   };
 
+  // Helper function to parse dimensions and extract price info
+  const parseDimensionsAndPrice = (dimensionsString?: string) => {
+    if (!dimensionsString) return { dimensions: '', priceInfo: '' };
+    
+    const parts = dimensionsString.split('\n');
+    const dimensions = parts[0] || '';
+    const priceInfo = parts.find(part => part.startsWith('(')) || '';
+    
+    return { dimensions, priceInfo };
+  };
+
   return (
     <div className="bg-gradient-to-b from-white to-gray-50 mt-2">
       <div className="space-y-8 sm:space-y-12 lg:space-y-16">
@@ -70,6 +80,7 @@ const InteractiveBlogLayout: React.FC<InteractiveBlogLayoutProps> = ({ galleries
           const currentImageIndex = getCurrentImageIndex(index);
           const currentImage = gallery.images[currentImageIndex];
           const position = index % 2 === 0 ? "right" : "left";
+          const { dimensions, priceInfo } = parseDimensionsAndPrice(gallery.details?.dimensions);
           
           return (
             <div
@@ -180,12 +191,6 @@ const InteractiveBlogLayout: React.FC<InteractiveBlogLayoutProps> = ({ galleries
                       style={{ fontFamily: "Playfair Display, serif" }}>
                     {gallery.heading}
                   </h2>
-                  
-                  {/* Price Display */}
-                  <div className="text-sm sm:text-base text-gray-700 leading-relaxed font-semibold"
-     style={{ fontFamily: "Montserrat, sans-serif", lineHeight: "1.7" }}>
-  {gallery.details?.price}
-</div>
                 </div>
 
                 <p className="text-sm sm:text-base text-gray-700 leading-relaxed"
@@ -202,10 +207,17 @@ const InteractiveBlogLayout: React.FC<InteractiveBlogLayoutProps> = ({ galleries
                         <span className="text-sm text-gray-700">{gallery.details.material}</span>
                       </div>
                     )}
-                    {gallery.details.dimensions && (
+                    {dimensions && (
                       <div className="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-2">
                         <span className="text-sm font-semibold text-gray-900">Dimensions:</span>
-                        <span className="text-sm text-gray-700">{gallery.details.dimensions}</span>
+                        <span className="text-sm text-gray-700">{dimensions}</span>
+                      </div>
+                    )}
+                    {/* Price information below dimensions */}
+                    {priceInfo && (
+                      <div className="text-sm text-gray-600 italic  font-medium"
+                           style={{ fontFamily: "Montserrat, sans-serif" }}>
+                        {priceInfo}
                       </div>
                     )}
                   </div>
@@ -309,7 +321,7 @@ const BlogPost: React.FC = () => {
         "offers": {
           "@type": "Offer",
           "priceCurrency": "INR",
-          "price": gallery.details?.price?.replace(/[^\d]/g, '') || "45000",
+        
           "availability": "https://schema.org/InStock"
         },
         "material": gallery.details?.material,
