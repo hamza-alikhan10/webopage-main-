@@ -466,7 +466,7 @@ export const sculptures: Sculpture[] = [
         "signature": "Hand-signed by artist",
         "authenticity": "Sold with certificate of Authenticity",
         "medium": "Corten steel",
-        "dimensions": "H 4ft.2in.",
+        "dimensions":  "H 5.7 ft | W 3.1 ft",
         "display": "Indoor/Outdoor",
         "integratedLighting": false,
         "tags": ["Nandi", "figurative bench", "functional sculpture", "garden art"]

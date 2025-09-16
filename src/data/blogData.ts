@@ -88,72 +88,72 @@ export const blogPosts: BlogPost[] = [
       </article>
     `,
     "image": "/ganapati-dxb-uae-2024.webp",
-    "date": "2025-01-20",
+    "date": "2025-05-20",
     "layout": "interactive",
-    "galleries": [
-      {
-        "heading": "Lord Ganesha - Corten Steel Sculpture",
-        "description": "This majestic Ganesh idol in corten steel embodies the remover of obstacles with contemporary elegance. The natural rust patina develops uniquely over time, creating a living artwork that evolves with your space. Ideal for gardens, entrances, and outdoor temples where the weathering adds character.",
-        "images": [
-          "/ganapati-dxb-uae-2024.webp",
-          "/Arts/Ganeshji-Project.webp",
-          "/Arts/Ganeshji.webp"
-        ],
-        "details": {
-          "material": "Corten Steel with Natural Rust Finish",
-          "dimensions": "1375mm(H)x1050mm(W) x725mm(D) \n(Price varies based on the level of customisation)"
-        }
-      },
-      {
-        "heading": "Lord Mahavir - Stainless Steel Divine Form",
-        "description": "Experience divine radiance with this Lord Mahavir statue in premium stainless steel. The mirror-polished surface creates mesmerizing reflections, symbolizing the soul's journey to enlightenment. Perfect for meditation spaces and modern temples seeking contemporary spiritual art.",
-        "images": [
-          "/Arts/vishnu-ji1.webp",
-          "/Arts/vishnu-ji2.webp",
-          "/Arts/vishnu-ji.webp"
-        ],
-        "details": {
-          "material": "316 Grade Stainless Steel - Mirror Finish",
-          "dimensions": "Height of statue: 5ft. | Height of Lotus base: 1ft.  \n(Price varies based on the level of customisation)"
-        }
-      },
-      {
-        "heading": "Vighnaharta Ganesha - Antique Collection",
-        "description": "Lord Ganesha as Vighnaharta, the supreme remover of obstacles, rendered in weatherproof metal with antique brass coating. This piece combines traditional temple art aesthetics with modern durability, creating a timeless deity statue for your sacred space.",
-        "images": [
-          "/vighnaharta-mumbai-2022.webp",
-          "/Ganeshji.webp"
-        ],
-        "details": {
-          "material": "Metal with Antique Brass PU Coating (Weatherproof)",
-          "dimensions": "L: 1545mm | W: 985mm | H: 1800mm\n(Price varies based on the level of customisation)"
-        }
-      },
-      {
-        "heading": "Buddha - Dreaming of Dharma",
-        "description": "Find inner peace with this meditative Buddha statue in satin-finished stainless steel. The soft, brushed texture creates a calming presence, perfect for yoga studios, meditation rooms, and zen gardens. Each curve is designed to inspire tranquility and mindfulness.",
-        "images": [
-          "/Arts/Gautam-Buddhaa.webp",
-          "/Arts/b08.webp"
-        ],
-        "details": {
-          "material": "Stainless Steel with Satin/Brushed Finish",
-          "dimensions": " 7 ft 4 in (H) x 5 ft 3 in (W) x 4 ft 4 in (D)\n(Price varies based on the level of customisation)"
-        }
-      },
-      {
-        "heading": "Designer Ganesha - Contemporary Art",
-        "description": "A modern artistic interpretation of Lord Ganesha that bridges tradition and innovation. This designer piece in corten steel makes a bold statement while maintaining spiritual significance. Ideal for art collectors and contemporary spaces seeking unique religious sculptures.",
-        "images": [
-          "/Arts/Ganesha00.jpeg",
-          "/Arts/Ganesha002.jpeg"
-        ],
-        "details": {
-          "material": "Corten Steel with Sealed Finish",
-          "dimensions": "H: 2.5m | W: 1.8m | D: 1.2m\n(Price varies based on the level of customisation)"
-        }
-      }
-    ]
+    "galleries":[
+  {
+    "heading": "Lord Ganesha - Corten Steel Sculpture",
+    "description": "This majestic Ganesh idol in corten steel embodies the remover of obstacles with contemporary elegance. The natural rust patina develops uniquely over time, creating a living artwork that evolves with your space. Ideal for gardens, entrances, and outdoor temples where the weathering adds character.",
+    "images": [
+      "/ganapati-dxb-uae-2024.webp",
+      "/Arts/Ganeshji-Project.webp",
+      "/Arts/Ganeshji.webp"
+    ],
+    "details": {
+      "material": "Corten Steel with Natural Rust Finish",
+      "dimensions": "4.5ft (H) x 3.4ft (W) x 2.4ft (D)\n(Price varies based on the level of customisation)"
+    }
+  },
+  {
+    "heading": "Lord Mahavir - Stainless Steel Divine Form",
+    "description": "Experience divine radiance with this Lord Mahavir statue in premium stainless steel. The mirror-polished surface creates mesmerizing reflections, symbolizing the soul's journey to enlightenment. Perfect for meditation spaces and modern temples seeking contemporary spiritual art.",
+    "images": [
+      "/Arts/vishnu-ji1.webp",
+      "/Arts/vishnu-ji2.webp",
+      "/Arts/vishnu-ji.webp"
+    ],
+    "details": {
+      "material": "316 Grade Stainless Steel - Mirror Finish",
+      "dimensions": "Height of statue: 5ft | Height of Lotus base: 1ft\n(Price varies based on the level of customisation)"
+    }
+  },
+  {
+    "heading": "Vighnaharta Ganesha - Antique Collection",
+    "description": "Lord Ganesha as Vighnaharta, the supreme remover of obstacles, rendered in weatherproof metal with antique brass coating. This piece combines traditional temple art aesthetics with modern durability, creating a timeless deity statue for your sacred space.",
+    "images": [
+      "/vighnaharta-mumbai-2022.webp",
+      "/Ganeshji.webp"
+    ],
+    "details": {
+      "material": "Metal with Antique Brass PU Coating (Weatherproof)",
+      "dimensions": "L: 5.1ft | W: 3.2ft | H: 5.9ft\n(Price varies based on the level of customisation)"
+    }
+  },
+  {
+    "heading": "Buddha - Dreaming of Dharma",
+    "description": "Find inner peace with this meditative Buddha statue in satin-finished stainless steel. The soft, brushed texture creates a calming presence, perfect for yoga studios, meditation rooms, and zen gardens. Each curve is designed to inspire tranquility and mindfulness.",
+    "images": [
+      "/Arts/Gautam-Buddhaa.webp",
+      "/Arts/b08.webp"
+    ],
+    "details": {
+      "material": "Stainless Steel with Satin/Brushed Finish",
+      "dimensions": "7.3ft (H) x 5.3ft (W) x 4.3ft (D)\n(Price varies based on the level of customisation)"
+    }
+  },
+  {
+    "heading": "Designer Ganesha - Contemporary Art",
+    "description": "A modern artistic interpretation of Lord Ganesha that bridges tradition and innovation. This designer piece in corten steel makes a bold statement while maintaining spiritual significance. Ideal for art collectors and contemporary spaces seeking unique religious sculptures.",
+    "images": [
+      "/Arts/Ganesha00.jpeg",
+      "/Arts/Ganesha002.jpeg"
+    ],
+    "details": {
+      "material": "Corten Steel with Sealed Finish",
+      "dimensions": "H: 8.2ft | W: 5.9ft | D: 3.9ft\n(Price varies based on the level of customisation)"
+    }
+  }
+]
   },
 
    {
