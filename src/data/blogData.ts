@@ -22,61 +22,60 @@ export const blogPosts: BlogPost[] = [
   {
     "id": "luxury-god-idols-metal-sculptures",
     "title": "Luxury God Idols & Deity Statues | Stainless Steel, Brass & Corten Steel Collection",
-    "metaDescription": "Buy premium god idols & Hindu deity statues in stainless steel, brass & corten steel. Custom Ganesh, Krishna, Buddha sculptures with antique, mirror & rust finishes. Weather resistant religious idols for home temples & gardens. Free shipping India.",
+    "metaDescription": "Explore Luxury God Idols & Hindu Deity Statues in Stainless Steel, Brass & Corten Steel. Discover custom-crafted Ganesha, Krishna, and Buddha sculptures available in antique, mirror-polished, and natural rust finishes. Designed to be weather-resistant and enduring, our religious idols are ideal for home temples, gardens, and monumental installations.",
     "content": `
-      <article class="blog-content max-w-4xl mx-auto px-4 sm:px-6">
+    <article class="blog-content max-w-4xl mx-auto px-4 sm:px-6">
         <section class="mb-8">
           <img class=" mb-7" src="/Arts/Ganeshji.jpeg" alt="Garden sculpture design">
           <h2 class="text-xl sm:text-2xl font-semibold mb-4 text-gray-900">Discover Divine Artistry in Metal</h2>
           <p class="text-sm sm:text-base text-gray-700 leading-relaxed mb-4">
-            Welcome to FormForge's exclusive collection of premium god idols and Hindu deity statues, where traditional spirituality meets contemporary metal craftsmanship. Our meticulously crafted religious sculptures in stainless steel, brass, and corten steel transform spaces into sanctuaries of devotion and artistic excellence.
+            Welcome to FormForge’s exclusive collection of premium god idols and Hindu deity statues, where spirituality is reimagined through the timeless language of metal. Each sculpture—crafted in stainless steel, brass, or corten steel—embodies a union of devotion and contemporary artistry, designed to transform spaces into sanctuaries of reflection and beauty.
           </p>
           
-          <h3 class="text-lg sm:text-xl font-semibold mt-6 mb-3 text-gray-900">Why Choose FormForge Metal God Idols?</h3>
+          <h3 class="text-lg sm:text-xl font-semibold mt-6 mb-3 text-gray-900">Why FormForge Metal God Idols</h3>
           <div class="space-y-3 text-sm sm:text-base text-gray-700">
             <div class="flex items-start gap-3">
               <span class="text-orange-600 mt-1">•</span>
               <div>
-                <strong>Weather Resistant & Durable:</strong> Created in stainless steel, corten steel, and brass, our deity idols are built to last generations. They withstand harsh weather without rusting or decaying, making them ideal for outdoor temples, gardens, balconies, or large-scale installations.
+                <strong>Weather-Resistant & Enduring:</strong> Forged in stainless steel, corten steel, and brass, these idols are designed for permanence. Resistant to rust and decay, they remain steadfast in gardens, balconies, outdoor temples, and monumental installations alike.
               </div>
             </div>
             <div class="flex items-start gap-3">
               <span class="text-orange-600 mt-1">•</span>
               <div>
-                <strong>Curated Finishes:</strong> Each idol is finished like a work of art. Options include mirror-polished stainless steel, satin-brushed textures, antique brass coatings, natural rust patina, dual-tone combinations, and contemporary matte effects—crafted to suit both traditional and modern settings.
+                <strong>Curated Finishes:</strong> Every surface is treated with the precision of fine art. Mirror-polished steel, satin textures, antique brass, natural rust patina, dual-tone contrasts, or subtle matte effects—each finish is chosen to complement both traditional and modern contexts.
               </div>
             </div>
             <div class="flex items-start gap-3">
               <span class="text-orange-600 mt-1">•</span>
               <div>
-                <strong>Customization Available:</strong> From 6-inch dashboard idols to monumental 20-foot temple sculptures, we specialize in creating site-specific works that reflect your vision. Every piece is digitally designed, precisely fabricated, and hand-finished by our team of artisans.
+                <strong>Bespoke Creations:</strong> From intimate 6-inch pieces for home temples to 20-foot architectural statements, FormForge specializes in site-specific, customized deity sculptures. Each is digitally conceived, precisely fabricated, and refined by hand to honor both vision and craft.
               </div>
             </div>
             <div class="flex items-start gap-3">
               <span class="text-orange-600 mt-1">•</span>
               <div>
-                <strong>Vastu Compliant:</strong> All idols follow traditional iconography and vastu principles while carrying the timeless elegance of contemporary FormForge design. This balance ensures spiritual authenticity with an artistic edge.
+                <strong>Vastu-Aligned:</strong> Adhering to traditional iconography and vastu principles, these idols embody spiritual integrity while carrying the understated elegance of contemporary FormForge design.
               </div>
             </div>
             <div class="flex items-start gap-3">
               <span class="text-orange-600 mt-1">•</span>
               <div>
-                <strong>Global Presence:</strong> Our metal god idols are cherished not only across India but also in international homes, temples, and private collections. We have crafted and exported customized deity sculptures to the US, UK, Dubai, and Singapore, where they continue to be celebrated as both spiritual icons and collectible art pieces.
+                <strong>Global Footprint:</strong> FormForge deity sculptures are celebrated across India and internationally. Custom creations have found homes and temples in the US, UK, Dubai, and Singapore, valued equally as sacred icons and collectible artworks.
               </div>
             </div>
           </div>
           
-          <h3 class="text-lg sm:text-xl font-semibold mt-6 mb-3 text-gray-900">Perfect For Every Space</h3>
+          <h3 class="text-lg sm:text-xl font-semibold mt-6 mb-3 text-gray-900">Sculptures that Belong Everywhere</h3>
           <p class="text-sm sm:text-base text-gray-700 leading-relaxed mb-3">
             Our designer metal deity sculptures enhance various settings:
           </p>
           <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 text-sm text-gray-700">
             <div>• Home Temples & Pooja Rooms</div>
-            <div>• Garden & Outdoor Spaces</div>
-            <div>• Office & Reception Areas</div>
+            <div>• Garden & Outdoor Landscapes</div>
+            <div>• Reception & Office Spaces</div>
             <div>• Temple Installations</div>
-            <div>• Gift for Housewarmings</div>
-            <div>• Festival Decorations</div>
+            <div>• Housewarming & Festive Gifts</div>
           </div>
           
           <div class="mt-6 p-4 bg-orange-50 rounded-lg border border-orange-200">
