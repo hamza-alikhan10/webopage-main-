@@ -140,18 +140,29 @@ export const blogPosts: BlogPost[] = [
       "dimensions": "W: 5.3ft | H: 7.3ft | D: 4.3ft\n(Price varies based on the level of customisation)"
     }
   },
-  {
-    "heading": "Ganesha - Contemporary Art",
-    "description": "A modern artistic interpretation of Lord Ganesha that bridges tradition and innovation. This designer piece in corten steel makes a bold statement while maintaining spiritual significance. Ideal for art collectors and contemporary spaces seeking unique religious sculptures.",
+    {
+    "heading": "Ekam - Lord Shivji ",
+    "description": "A contemporary corten steel sculpture of Lord Shivji, blending sacred symbolism and bold geometric planes to evoke strength, stillness, transcendence, presence, and peace.",
     "images": [
-      "/Arts/Ganesha00.jpeg",
-      "/Arts/Ganesha002.jpeg"
+      "/Arts/metal-shivji.webp",
     ],
     "details": {
-      "material": "Corten Steel with Sealed Finish",
-      "dimensions": "W: 5.9ft | H: 8.2ft | D: 3.9ft\n(Price varies based on the level of customisation)"
+      "material": "Corten Steel",
+      "dimensions": "H: 5.9ft \n(Price varies based on the level of customisation)"
     }
-  }
+  },
+  // {
+  //   "heading": "Ganesha - Contemporary Art",
+  //   "description": "A modern artistic interpretation of Lord Ganesha that bridges tradition and innovation. This designer piece in corten steel makes a bold statement while maintaining spiritual significance. Ideal for art collectors and contemporary spaces seeking unique religious sculptures.",
+  //   "images": [
+  //     "/Arts/Ganesha00.jpeg",
+  //     "/Arts/Ganesha002.jpeg"
+  //   ],
+  //   "details": {
+  //     "material": "Corten Steel with Sealed Finish",
+  //     "dimensions": "W: 5.9ft | H: 8.2ft | D: 3.9ft\n(Price varies based on the level of customisation)"
+  //   }
+  // }
 ]
   },
 

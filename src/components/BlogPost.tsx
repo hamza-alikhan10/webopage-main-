@@ -74,7 +74,7 @@ const InteractiveBlogLayout: React.FC<InteractiveBlogLayoutProps> = ({ galleries
   };
 
   return (
-    <div className="bg-gradient-to-b from-white to-gray-50 mt-2">
+    <div className="bg-gradient-to-b from-white to-gray-50 ">
       <div className="space-y-8 sm:space-y-12 lg:space-y-16">
         {galleries.map((gallery, index) => {
           const currentImageIndex = getCurrentImageIndex(index);
