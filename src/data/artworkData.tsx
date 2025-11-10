@@ -1873,7 +1873,13 @@ It floats in the vestibule, the vibrant heart of this workplace, drawing focus w
       ),
       credits: (
         <>
-          Artist: Abhinav Goyal <br />Commissioned for: T.M.U University, Moradabad
+          Artist: Abhinav Goyal <br />In collaboration with  <a
+            href="https://www.blueskydesign.in/"
+            target="_blank"
+            style={{ marginRight: "4px", marginLeft: "4px", fontWeight: "bold" }}
+          >
+            Blue Sky Design
+          </a> 
         </>
       ),
     },

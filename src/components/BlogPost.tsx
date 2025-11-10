@@ -493,12 +493,7 @@ const BlogPost: React.FC = () => {
           )}
 
          
-          {/* Location-Based Content for SEO */}
-          <div className="mt-8 p-4 text-center">
-            <p className="text-sm text-gray-600">
-              <strong>Serving God Idols Across India:</strong> Delhi NCR, Mumbai, Bangalore, Chennai, Kolkata, Hyderabad, Pune, Ahmedabad, Jaipur, Lucknow, and all major cities. International shipping available to USA, UK, Canada, UAE, Australia, and worldwide.
-            </p>
-          </div>
+         
 
           {/* Call to Action Section */}
          
