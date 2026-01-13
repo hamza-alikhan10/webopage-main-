@@ -3,7 +3,7 @@ import Biography, { BiographySection } from "@/components/Biography";
 
 const biographyData: BiographySection[] = [
   {
-    heading: "OUR STORY",
+    heading: "OUR PRACTICE",
     information: `Our practice focuses on permanent sculpture and spatial art commissions developed in close dialogue with architecture and place. The work is site-specific, long-term in intent, and shaped by material, scale, and context rather than surface expression or trends.
 
 Each project begins with understanding the spatial conditions, architectural framework, and intent behind the commission. Decisions around form, material, and construction emerge from this process, allowing the work to respond meaningfully to its setting rather than being imposed upon it.
