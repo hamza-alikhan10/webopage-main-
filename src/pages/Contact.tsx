@@ -131,7 +131,7 @@ const Contact = () => {
               <Input
                 type="email"
                 name="email"
-                placeholder="Email"
+                placeholder="Email (optional)"
                 className="placeholder:text-sm sm:placeholder:text-[15px]"
                 value={formData.email}
                 onChange={handleChange}
