@@ -76,6 +76,7 @@ export const sculptures: Sculpture[] = [
       "status": "Sold Out",
       "price": "₹1,50,000"
     },
+    
     {
       "id": "metal-ganapati",
       "title": "Ganapati",
@@ -112,6 +113,7 @@ export const sculptures: Sculpture[] = [
       "status": "Readily Available",
       "price": "₹28,00,000"
     },
+    
     {
       "id": "metal-rhino",
       "title": "Rhino",
@@ -148,6 +150,7 @@ export const sculptures: Sculpture[] = [
       "status": "Sold Out",
       "price": "₹5,00,000"
     },
+    
     {
       "id": "Paw table",
       "title": "Paw Table",
@@ -202,6 +205,30 @@ export const sculptures: Sculpture[] = [
       "status": "Readily Available",
       "price": "₹5,00,000"
     },
+     {
+  "id": "ganeshji-sculpture",
+  "title": "Ganapati ",
+  "images": ["/Arts/Ganeshji.png", "/Arts/Ganeshji-sidepose.png"],
+  "description": "A serene sculptural depiction of Lord Ganesh crafted to embody wisdom, prosperity, and auspicious beginnings.",
+  "details": {
+    "type": "Spiritual Landscape Accent",
+    "signature": "Hand-signed by artist",
+    "authenticity": "Sold with certificate of Authenticity",
+    "medium": "Corten steel",
+    "dimensions": "H 6ft.25in.",
+    "display": "Indoor/Outdoor",
+    "integratedLighting": true,
+    "tags": [
+      "ganesh sculpture",
+      "corten steel ganesh",
+      "modern spiritual art",
+      "outdoor ganapati statue",
+      "landscape religious sculpture"
+    ]
+  },
+  "status": "Readily Available",
+  "price": "₹1,50,000"
+},
     {
       "id": "metal-Shivaji",
       "title": "Shivaji",
@@ -256,24 +283,24 @@ export const sculptures: Sculpture[] = [
       "status": "Readily Available",
       "price": "₹1,00,000"
     },
-    {
-      "id": "metal-wing",
-      "title": "Winged Form",
-      "images": ["/Arts/winged-form.webp"],
-      "description": "Vertical corten-steel wing evokes ascent and transformative energy.",
-      "details": {
-        "type": "Abstract Art",
-        "signature": "Hand-signed by artist",
-        "authenticity": "Sold with certificate of Authenticity",
-        "medium": "Corten steel",
-        "dimensions": "H 8ft2in. | W 6ft6in.",
-        "display": "Outdoor",
-        "integratedLighting": false,
-        "tags": ["corten steel wing", "abstract flight art", "outdoor sculpture", "modern landmark"]
-      },
-      "status": "Readily Available",
-      "price": "₹1,00,000"
-    },
+    // {
+    //   "id": "metal-wing",
+    //   "title": "Winged Form",
+    //   "images": ["/Arts/winged-form.webp"],
+    //   "description": "Vertical corten-steel wing evokes ascent and transformative energy.",
+    //   "details": {
+    //     "type": "Abstract Art",
+    //     "signature": "Hand-signed by artist",
+    //     "authenticity": "Sold with certificate of Authenticity",
+    //     "medium": "Corten steel",
+    //     "dimensions": "H 8ft2in. | W 6ft6in.",
+    //     "display": "Outdoor",
+    //     "integratedLighting": false,
+    //     "tags": ["corten steel wing", "abstract flight art", "outdoor sculpture", "modern landmark"]
+    //   },
+    //   "status": "Readily Available",
+    //   "price": "₹1,00,000"
+    // },
    
    
     {
@@ -340,7 +367,7 @@ export const sculptures: Sculpture[] = [
         "signature": "Hand-signed by artist",
         "authenticity": "Sold with certificate of Authenticity",
         "medium": "Corten steel",
-        "dimensions": "H 8ft | W 3ft",
+        "dimensions": "H 5.7ft | W 3ft",
         "display": "Indoor/Outdoor",
         "integratedLighting": false,
         "tags": ["corten steel figure", "horned sculpture", "large indoor art", "primal energy"]
@@ -366,6 +393,31 @@ export const sculptures: Sculpture[] = [
       "status": "Readily Available",
       "price": "₹6,00,000"
     },
+    {
+  "id": "corten-face-totem",
+  "title": "Facetta",
+  "images": ["/Arts/facetta22.png", "/Arts/facetta.png"],
+  "description": "A monumental corten-steel face totem where sharp planes and shadowed recesses create an introspective, architectural presence.",
+  "details": {
+    "type": "Abstract Art",
+    "signature": "Hand-signed by artist",
+    "authenticity": "Sold with certificate of Authenticity",
+    "medium": "Corten steel",
+    "dimensions": "H 7.2 ft | W 3 ft | D 1.5 ft",
+    "display": "Indoor / Outdoor",
+    "integratedLighting": false,
+    "tags": [
+      "corten steel sculpture",
+      "faceted face",
+      "modern totem",
+      "architectural minimalism",
+      "collectible art piece"
+    ]
+  },
+  "status": "Readily Available",
+  "price": "₹1,50,000"
+},
+
     {
       "id": "metal-sitting-fig",
       "title": "Sitting Figure",
@@ -471,7 +523,7 @@ export const sculptures: Sculpture[] = [
         "integratedLighting": false,
         "tags": ["Nandi", "figurative bench", "functional sculpture", "garden art"]
       },
-      "status": "Sold Out",
+      "status": "Readily Available",
       "price": "₹1,50,000"
     },
     {

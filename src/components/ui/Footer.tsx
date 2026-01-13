@@ -1,43 +1,48 @@
-import { FaWhatsapp, FaInstagram, FaFacebook, FaLinkedin } from "react-icons/fa";
+import { FaWhatsapp, FaInstagram } from "react-icons/fa";
+import { HiNewspaper } from "react-icons/hi";
+import { BiNews } from "react-icons/bi";
 
 const Footer = () => {
   const socialLinks = [
-    {
-      icon: FaWhatsapp,
-      href: "https://wa.me/919650006385",
-      label: "WhatsApp",
-    },
+
     {
       icon: FaInstagram,
       href: "https://www.instagram.com/formforge/",
-      label: "Instagram",
+      label: "Insta",
+      external: true,
     },
     {
-      icon: FaFacebook,
-      href: "https://www.facebook.com/Formforge",
-      label: "Facebook",
+      icon: HiNewspaper,
+      href: "/blog",
+      label: "Blog",
+      external: false,
     },
     {
-      icon: FaLinkedin,
-      href: "https://www.linkedin.com/company/formforge/",
-      label: "LinkedIn",
+      icon: BiNews,
+      href: "/press",
+      label: "Press",
+      external: false,
     },
   ];
 
   return (
     <footer className="bg-transparent py-8">
       <div className="flex justify-center items-center flex-wrap md:space-x-4 space-x-2 px-4">
-        {socialLinks.map(({ icon: Icon, href, label }) => (
-          <a
-            key={label}
-            href={href}
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label={label}
-            className="flex justify-center items-center w-10 h-10 bg-black rounded-[20%] text-white text-base transition ease-in-out duration-300 cursor-pointer hover:scale-110 hover:bg-[rgb(86,84,81)]"
-          >
-            <Icon />
-          </a>
+        {socialLinks.map(({ icon: Icon, href, label, external }) => (
+          <div key={label} className="group relative">
+            <a
+              href={href}
+              target={external ? "_blank" : undefined}
+              rel={external ? "noopener noreferrer" : undefined}
+              aria-label={label}
+              className="flex justify-center items-center w-10 h-10 bg-black rounded-[20%] text-white text-base transition ease-in-out duration-300 cursor-pointer hover:scale-110 hover:bg-[rgb(86,84,81)]"
+            >
+              <Icon />
+            </a>
+            <span className="absolute -top-14 left-[50%] -translate-x-[50%] z-20 origin-left scale-0 px-3 rounded-lg border border-gray-300 bg-white py-2 text-sm font-bold shadow-md transition-all duration-300 ease-in-out group-hover:scale-100">
+              {label}
+            </span>
+          </div>
         ))}
       </div>
     </footer>

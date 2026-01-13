@@ -10,11 +10,10 @@ const Navbar = () => {
   const timeoutRef = useRef<NodeJS.Timeout | null>(null);
 
   const navLinks = [
-    { name: "GALLERY", href: "/", hasDropdown: true },
-    { name: "ABOUT", href: "/about" },
-    { name: "PRESS", href: "/press" },
-    { name: "BLOG", href: "/blog" },
-    { name: "CONTACT", href: "/contact" },
+    { name: "WORK", href: "/", hasDropdown: true },
+    { name: "PRACTICE", href: "/about" },
+    { name: "FOR-ARCHITECTS", href: "/blog" },
+    { name: "ENQUIRE", href: "/contact" },
   ];
 
   const gallerySubLinks = [

@@ -4,28 +4,27 @@ import Biography, { BiographySection } from "@/components/Biography";
 const biographyData: BiographySection[] = [
   {
     heading: "OUR STORY",
-    information: `FormForge is about exploring how design, technology, and craftsmanship come together in unexpected ways. It started as a pursuit of pushing material boundaries, experimenting with metal, understanding its possibilities, and finding innovative ways to shape it into functional and artistic forms.
-    
-    Over time, the journey has been about problem solving, refining digital fabrication techniques, and constantly challenging conventional approaches to design.
+    information: `Our practice focuses on permanent sculpture and spatial art commissions developed in close dialogue with architecture and place. The work is site-specific, long-term in intent, and shaped by material, scale, and context rather than surface expression or trends.
 
-Every piece is an exploration of structure, balance, and expression, where technology isn’t just a tool but an enabler of creativity. The process is always evolving, driven by curiosity and the desire to create work that feels both timeless and forward thinking.
+Each project begins with understanding the spatial conditions, architectural framework, and intent behind the commission. Decisions around form, material, and construction emerge from this process, allowing the work to respond meaningfully to its setting rather than being imposed upon it.
 
-We operate at the intersection of art, architecture, and engineering, where sculptural intent meets digital precision. Rooted in material truth, our work moves fluidly across disciplines. Whether for interiors or public spaces, every piece becomes a dialogue between surface and void, weight and lightness, control and chance.
+Projects typically unfold through a structured yet open process. Early conversations are used to establish orientation and clarify intent before any formal direction is defined. Once alignment is established, form, material, and scale are developed in response to architectural and spatial constraints. Detailed development follows through fabrication logic, material testing, and coordination, leading to execution and installation with long-term presence and durability in mind.
 
-Using tools that range from CNC routers to sketchbooks, and materials that span corten steel, stainless, and wood, our practice merges old-world craft with algorithmic thinking. What emerges are works that are not just seen, but felt, where form invites interaction, and design becomes experience.
+The studio works closely with architects, landscape designers, and consultants, valuing clear roles, early alignment, and shared responsibility. Collaboration is approached as a means of strengthening the work rather than diluting authorship.
 
-Inspired by nature, architecture, and the urban condition, FormForge aims to shape environments, not just objects. We’re not bound by categories. We’re driven by the potential of the unexpected.
+This practice is not oriented toward short-term installations, rapid turnarounds, or catalogue-based selections. Each commission requires time, dialogue, and commitment from all parties involved.
 `,
     image: "/sir.webp",
     position: "right",
   },
   {
     heading: "ARTIST'S STORY",
-    information: `Abhinav Goyal, Founder and Creative Director of FormForge, is a visionary designer and contemporary artist whose creations seamlessly blend art, technology, and craftsmanship. With a foundation in architecture and interior design, he specializes in bespoke sculptures and artistic furniture that balance functionality with a profound sense of storytelling.
+    information: `Abhinav Goyal is the founder and creative lead of the practice. With a background in architecture and spatial design, his work operates at the intersection of art, structure, and material intelligence.
 
-Based in Delhi, Abhinav’s work resonates with a global audience, characterized by its modern minimalism and innovative use of materials like steel and wood. His creations, ranging from site-specific sculptures to intricate design pieces, are celebrated for their precision, originality, and bold narratives that evoke emotional connections.
+His approach is informed by an understanding of scale, fabrication logic, and architectural context, allowing sculptural intent to emerge through process rather than preconceived form. The work reflects an ongoing engagement with material behaviour, digital tools, and the relationship between object, space, and viewer.
 
-Under Abhinav’s leadership, FormForge has become synonymous with pioneering luxury design. Beyond his creative practice, he actively mentors aspiring designers, sharing his insights on the evolving intersection of digital technology and traditional craftsmanship. Through his artistry and dedication to pushing boundaries, Abhinav Goyal is making a lasting impact on the contemporary art and design landscape, inspiring audiences worldwide.`,
+The practice has evolved through long-term collaborations with architects, institutions, and private clients, focusing on projects where clarity of intent and permanence of outcome are central. Alongside commissioned work, the studio continues to develop research-driven explorations that inform its broader artistic direction.
+`,
     image: "/don3.webp",
     position: "left",
   },

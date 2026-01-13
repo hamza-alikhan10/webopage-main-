@@ -1878,8 +1878,9 @@ It floats in the vestibule, the vibrant heart of this workplace, drawing focus w
             target="_blank"
             style={{ marginRight: "4px", marginLeft: "4px", fontWeight: "bold" }}
           >
-            Blue Sky Design
+            Blue Sky Design 
           </a> 
+          , Nimesh Pilla & Gagan Gargi
         </>
       ),
     },
@@ -2633,16 +2634,16 @@ It floats in the vestibule, the vibrant heart of this workplace, drawing focus w
   },
 
   {
-    "id": "Horn-man",
-    "slug": "Horn-Man",
+    "id": "horn-man",
+    "slug": "horn-man",
     "images": [
       { "src": "/Arts/metal-horn-man.webp", "alt": "Wall art project, Meerut, 2018" },
       { "src": "/Arts/horn-man.webp", "alt": "Wall art project, Meerut, 2018" }
     ],
-    "caption": <>Horn-man</>,
+    "caption": <>Horn man</>,
     "details": {
-      "heading": "Horn-man",
-      "location": "Meerut, India",
+      "heading": "Horn man",
+      "location": "",
       "description": (
         <>
           This geometric sculpture channels primal energy through sharp planes and sweeping horns. Crafted in corten steel, its evolving patina speaks of time and endurance. Bridging animal instinct with mythic presence, it creates a striking focal point in any outdoor or architectural setting.
@@ -2651,7 +2652,7 @@ It floats in the vestibule, the vibrant heart of this workplace, drawing focus w
       "details": (
         <>
           Material: Corten Steel
-          <br />Length: 21 ft, Height: 6 ft
+          <br />Width: 3 ft, Height: 5.7 ft
         </>
       ),
       "credits": (
@@ -2692,13 +2693,6 @@ It floats in the vestibule, the vibrant heart of this workplace, drawing focus w
       "url": "/artwork/Horn-Man"
     }
   },
-
-
-
-
-
-
-
   {
     id: "Wall Art",
     slug: "Wall Art",

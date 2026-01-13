@@ -6,6 +6,8 @@ import { useToast } from "@/hooks/use-toast";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
+import { Checkbox } from "@/components/ui/checkbox";
 import '../App.css';
 
 const Contact = () => {
@@ -13,17 +15,51 @@ const Contact = () => {
   const [formData, setFormData] = useState({
     firstName: '',
     phone: '',
+    email: '',
+    city: '',
+    indoor: false,
+    outdoor: false,
+    timeline: '',
+    sculptureType: '',
     message: '',
   });
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
+    // Validate that at least phone or email is provided
+    if (!formData.phone && !formData.email) {
+      toast({ 
+        title: "Error", 
+        description: "Please provide at least a phone number or email address." 
+      });
+      return;
+    }
+
+    // Validate that at least one location type is selected
+    if (!formData.indoor && !formData.outdoor) {
+      toast({ 
+        title: "Error", 
+        description: "Please select Indoor or Outdoor (or both)." 
+      });
+      return;
+    }
+
     const formEndpoint = "https://api.web3forms.com/submit";
     const formDataObject = new FormData();
     formDataObject.append("access_key", "d10e42be-f2df-4127-a6f7-cec9b26fded9");
     formDataObject.append("name", formData.firstName);
-    formDataObject.append("phone", formData.phone);
+    formDataObject.append("phone", formData.phone || "Not provided");
+    formDataObject.append("email", formData.email || "Not provided");
+    formDataObject.append("city", formData.city);
+    
+    const locationType = [];
+    if (formData.indoor) locationType.push("Indoor");
+    if (formData.outdoor) locationType.push("Outdoor");
+    formDataObject.append("locationType", locationType.join(", "));
+    
+    formDataObject.append("timeline", formData.timeline);
+    formDataObject.append("sculptureType", formData.sculptureType);
     formDataObject.append("message", formData.message);
 
     try {
@@ -37,7 +73,17 @@ const Contact = () => {
           title: "Success!",
           description: "Thank you for reaching out to us. Your response has been recorded, Our team shall get back to you shortly.",
         });
-        setFormData({ firstName: "", phone: "", message: "" });
+        setFormData({ 
+          firstName: "", 
+          phone: "", 
+          email: "", 
+          city: "",
+          indoor: false,
+          outdoor: false,
+          timeline: "", 
+          sculptureType: "", 
+          message: "" 
+        });
       } else {
         toast({ title: "Error", description: "Something went wrong. Please Try again!" });
       }
@@ -62,8 +108,8 @@ const Contact = () => {
       
       <div className=" mx-auto px-[7%]" >
         <div className="bg-[#F5F5F5] border border-[#FDE1D3] md:p-16 sm:p-10 py-8 px-5">
-          <h3 className="sm:text-xl sm:font-semibold text-lg mb-10 text-center">Connect with us to get started!</h3>
-          <form onSubmit={handleSubmit} className="flex flex-col space-y-2 md:space-y-6 max-w-3xl mx-auto">
+          <h3 className="sm:text-xl sm:font-semibold text-lg mb-10 text-center">Begin a conversation</h3>
+          <div className="flex flex-col space-y-2 md:space-y-6 max-w-3xl mx-auto">
             <Input
               type="text"
               name="firstName"
@@ -73,31 +119,113 @@ const Contact = () => {
               onChange={handleChange}
               required
             />
+            <div className="grid md:grid-cols-2 gap-2 md:gap-6">
+              <Input
+                type="tel"
+                name="phone"
+                placeholder="Phone "
+                className="placeholder:text-sm sm:placeholder:text-[15px]"
+                value={formData.phone}
+                onChange={handleChange}
+              />
+              <Input
+                type="email"
+                name="email"
+                placeholder="Email"
+                className="placeholder:text-sm sm:placeholder:text-[15px]"
+                value={formData.email}
+                onChange={handleChange}
+              />
+            </div>
+            
             <Input
-              type="tel"
-              name="phone"
-              placeholder="Phone Number"
+              type="text"
+              name="city"
+              placeholder="City"
               className="placeholder:text-sm sm:placeholder:text-[15px]"
-              value={formData.phone}
+              value={formData.city}
               onChange={handleChange}
               required
             />
+
+            <div className="space-y-2">
+              <label className="text-sm sm:text-[15px] text-gray-700">Location Type</label>
+              <div className="flex gap-6">
+                <div className="flex items-center space-x-2">
+                  <Checkbox 
+                    id="indoor" 
+                    checked={formData.indoor}
+                    onCheckedChange={(checked) => setFormData({...formData, indoor: checked as boolean})}
+                  />
+                  <label
+                    htmlFor="indoor"
+                    className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+                  >
+                    Indoor
+                  </label>
+                </div>
+                <div className="flex items-center space-x-2">
+                  <Checkbox 
+                    id="outdoor" 
+                    checked={formData.outdoor}
+                    onCheckedChange={(checked) => setFormData({...formData, outdoor: checked as boolean})}
+                  />
+                  <label
+                    htmlFor="outdoor"
+                    className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+                  >
+                    Outdoor
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-2 md:gap-6">
+              <Select value={formData.timeline} onValueChange={(value) => setFormData({...formData, timeline: value})}>
+                <SelectTrigger className="placeholder:text-sm sm:placeholder:text-[15px]">
+                  <SelectValue placeholder="Timeline" />
+                </SelectTrigger>
+                <SelectContent>
+                  <SelectItem value="1 month">1 Month</SelectItem>
+                  <SelectItem value="2 months">2 Months</SelectItem>
+                  <SelectItem value="3 months">3 Months</SelectItem>
+                  <SelectItem value="4 months">4 Months</SelectItem>
+                  <SelectItem value="5 months">5 Months</SelectItem>
+                  <SelectItem value="6 months">6 Months</SelectItem>
+                  <SelectItem value="7+ months">7+ Months</SelectItem>
+                </SelectContent>
+              </Select>
+
+              <Input
+                type="text"
+                name="sculptureType"
+                placeholder="Type of sculpture (wall/floor standing/other)"
+                className="placeholder:text-sm sm:placeholder:text-[15px]"
+                value={formData.sculptureType}
+                onChange={handleChange}
+                required
+              />
+            </div>
+
             <Textarea
               name="message"
-              placeholder="Message"
+              placeholder="Brief site description"
               value={formData.message}
               onChange={handleChange}
               required
               className="resize-none pb-10"
             />
-            <Button type="submit" className="bg-black text-white hover:bg-gray-800 px-8 mx-auto">
-              SUBMIT
+            <Button 
+              type="button" 
+              onClick={handleSubmit}
+              className="bg-black text-white hover:bg-gray-800 px-8 mx-auto"
+            >
+              Send enquiry
             </Button>
-          </form>
+          </div>
         </div>
         
-        <div className="bg-gradient-to-b from-[#F5F5F5] to-[#EDEDED] border border-[#FDE1D3] px-[9%] py-[9%] mt-5 rounded-lg shadow-sm">
-          {/* <h3 className="sm:text-2xl sm:font-semibold text-xl mb-12 text-center text-gray-800">Luxury is just a call away!</h3> */}
+        {/* <div className="bg-gradient-to-b from-[#F5F5F5] to-[#EDEDED] border border-[#FDE1D3] px-[9%] py-[9%] mt-5 rounded-lg shadow-sm">
           <div className="grid gap-8 md:grid-cols-2">
             <div className="space-y-8">
               <div className="flex flex-col space-y-4">
@@ -123,7 +251,7 @@ const Contact = () => {
               loading="lazy"
             />
           </div>
-        </div>
+        </div> */}
       </div>
 
       <div className="w-full px-[7%]">
