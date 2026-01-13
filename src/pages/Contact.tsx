@@ -141,7 +141,7 @@ const Contact = () => {
             <Input
               type="text"
               name="city"
-              placeholder="City"
+              placeholder="Country/City"
               className="placeholder:text-sm sm:placeholder:text-[15px]"
               value={formData.city}
               onChange={handleChange}
