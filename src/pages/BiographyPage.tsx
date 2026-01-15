@@ -3,7 +3,7 @@ import Biography, { BiographySection } from "@/components/Biography";
 
 const biographyData: BiographySection[] = [
   {
-    heading: "PRACTICE",
+    heading: "OUR PRACTICE",
     information: `FormForge is the spatial design practice of Abhinav Goyal.
 Working at the intersection of art, architecture, and permanent construction, the practice develops site-specific spatial interventions that operate as part of the built environment rather than as discrete objects.
 The work is not concerned with producing sculptures to occupy space, but with re-authoring spatial conditions, thresholds, and ground relationships through constructed form.
