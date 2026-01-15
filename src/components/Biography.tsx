@@ -31,21 +31,26 @@ const Biography: React.FC<BiographyProps> = ({ sections }) => {
                 key={index}
                 className="sm:mb-4 md:mb-6 after:clear-both after:block after:content-['']"
               >
-               <img
-  src={section.image}
-  alt={section.heading}
-  className={`${imageFloatClass} block object-fill ${
-    section.position === "left" 
-      ? "w-[55%] h-[170px] sm:w-[50%] sm:h-[250px] md:h-[300px] lg:h-[260px]" 
-      : "w-[47%] h-[310px] sm:w-[40%] sm:h-[220px] md:h-[250px] lg:h-[500px]"
-  }  mr-2 mt-5 mb-1`}
-/>
+            {section.position === "right" && section.image && (
+  <img
+    src={section.image}
+    alt={section.heading}
+    className="float-right ml-3 sm:ml-4 md:ml-5 
+      w-[47%] h-[310px] sm:w-[40%] sm:h-[220px] 
+      md:h-[250px] lg:h-[500px] 
+      object-fill mt-5 mb-2"
+  />
+)}
+
+
 
 
 <h1
-  className={`text-left ${
-    section.position === "left" ? "text-right" : "text-left"
-  } -ml-4 md:text-4xl sm:text-xl text-lg whitespace-nowrap`}
+  className={`
+    ${section.position === "right" ? "mt-0 mb-0" : "mt-4 mb-4"}
+    ${section.position === "left" ? "text-right" : "text-left"}
+    -ml-4 md:text-4xl sm:text-xl text-lg whitespace-nowrap
+  `}
   style={{
     fontFamily: "Montserrat",
     letterSpacing: ".06em",
@@ -54,20 +59,30 @@ const Biography: React.FC<BiographyProps> = ({ sections }) => {
   {section.heading}
 </h1>
 
-                {/* Ensure line breaks are respected */}
-                {section.information.split('\n').map((line, i) => (
-                  <p
-                    key={i}
-                    className="text-left sm: text-xs sm:text-sm md:text-base"
-                    style={{
-                      fontFamily: "Montserrat, Poppins, sans-serif",
-                      lineHeight: "1.6em",
-                      color: "rgb(87, 87, 87)",
-                    }}
-                  >
-                    {line.trim()}
-                  </p>
-                ))}
+
+                {/* Ensure line breaks are respected + allow selective bold */}
+{section.information.split("\n").map((line, i) => {
+  const trimmed = line.trim();
+  const isBoldLine =
+    trimmed.startsWith("**") && trimmed.endsWith("**");
+
+  return (
+    <p
+      key={i}
+      className={`text-left text-xs sm:text-sm md:text-base ${
+        isBoldLine ? "font-semibold " : ""
+      }`}
+      style={{
+        fontFamily: "Montserrat, Poppins, sans-serif",
+        lineHeight: "1.5em",
+        color: "rgb(87, 87, 87)",
+      }}
+    >
+      {isBoldLine ? trimmed.replace(/\*\*/g, "") : trimmed}
+    </p>
+  );
+})}
+
               </div>
             );
           })}
@@ -76,6 +91,7 @@ const Biography: React.FC<BiographyProps> = ({ sections }) => {
       </div>
     </div>
   );
+  
 };
 
 export default Biography;
