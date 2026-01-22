@@ -110,7 +110,7 @@ const Shop = () => {
   };
 
   return (
-    <div className="min-h-screen bg-white" id="Root-padding">
+    <div className="min-h-screen bg-white page-shell">
       <Helmet>
         <title>Shop Luxury Sculptures | FORMFORGE - Handcrafted Metal Art</title>
         <meta
@@ -209,7 +209,7 @@ const Shop = () => {
         <Navbar />
         
         {/* Header with SEO-optimized content */}
-        <div className="px-4 sm:px-6 lg:px-8 pb-3 sm:pb-8 lg:pb-5">
+        <div className="pb-3 sm:pb-8 lg:pb-5">
           <div className="text-center mb-5 sm:mb-12 lg:mb-12">
             <h1 className="text-xl sm:text-3xl md:text-4xl lg:text-5xl font-playfair text-gray-800  tracking-wide leading-tight">
             Signature Sculptural Icons

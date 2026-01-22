@@ -75,12 +75,7 @@ Spatial interventions authored in dialogue with architecture, landscape, and mat
 ];
 
 const BiographyPage: React.FC = () => {
-  return (
-    <div className="sm:p-4">
-      <Biography sections={biographyData} />
-    </div>
-    
-  );
+  return <Biography sections={biographyData} />;
 };
 
 export default BiographyPage;

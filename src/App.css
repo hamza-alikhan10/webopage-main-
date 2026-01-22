@@ -13,8 +13,8 @@ body {
   text-transform: none;
   unicode-bidi: isolate;
 }
-#Root-padding{
-padding:7%;
+.page-shell{
+  padding: 7%;
 }
 
 #root {
@@ -54,8 +54,8 @@ h1 {
   font-weight: 400; /* Normal weight */
   line-height: 1.8em; /* Line height for spacing */
   color: rgb(34, 34, 34); /* Dark color for h1 */
-  margin: 20px 0; /* Top and bottom margin */
-  padding: 20px; /* Padding around the heading */
+  margin: 15px 0; /* Top and bottom margin */
+  padding: 15px; /* Padding around the heading */
   border-radius: 0.5rem; /* Border radius */
 }
 

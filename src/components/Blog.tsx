@@ -9,7 +9,7 @@ import WhatsAppFloat from "@/components/WhatsAppFloat";
 
 const Blog: React.FC = () => {
   return (
-    <div className="origin-top">
+    <div className="min-h-screen bg-white page-shell origin-top">
       <Helmet>
         <title>Luxury Art Blog | Modern Sculptures & Installations</title>
         <meta name="description" content="Explore insights into luxury 3D sculptures, stainless steel art, and modern installations. Discover trends and techniques in contemporary art." />
@@ -32,7 +32,7 @@ const Blog: React.FC = () => {
         </script>
       </Helmet>
 
-      <div className="max-w-[95%] mx-auto px-4 sm:px-6 lg:px-8 pt-12 pb-8">
+      <div className="max-w-7xl mx-auto">
         <Navbar />
         <div className="responsive-zoom">
           <div className="grid gap-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-3">

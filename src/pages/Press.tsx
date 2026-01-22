@@ -83,7 +83,7 @@ const publications: Publication[] = [
 
 const Press = () => {
     return (
-        <section className="pt-[48px] pb-12 sm:pt-16 px-4 md:px-8" >
+        <section className="min-h-screen bg-white page-shell">
             {/* SEO Metadata with react-helmet */}
             <Helmet>
                 <title>FormForge | Press </title>
@@ -134,7 +134,7 @@ const Press = () => {
             </Helmet>
 
             <Navbar />
-            <div className="max-w-7xl px-[7%] mx-auto">
+            <div className="max-w-7xl mx-auto">
                 <div className="grid grid-cols-3 md:grid-cols-3 lg:grid-cols-3 gap-5">
                     {publications.slice(0, 10).map((pub, index) => (
                         <a

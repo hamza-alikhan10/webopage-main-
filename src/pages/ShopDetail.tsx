@@ -57,14 +57,14 @@ const ShopDetail = () => {
 
   if (loading) {
     return (
-      <div className="min-h-screen bg-white" id="Root-padding">
+      <div className="min-h-screen bg-white page-shell">
         <Helmet>
           <title>Loading Artwork | FORMFORGE Gallery</title>
           <meta name="description" content="Loading premium artwork details from FORMFORGE contemporary art gallery." />
           <meta name="robots" content="noindex, nofollow" />
         </Helmet>
         <Navbar />
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-center min-h-[60vh]">
+        <div className="max-w-7xl mx-auto flex items-center justify-center min-h-[60vh]">
           <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-gray-900"></div>
         </div>
         <Footer />
@@ -74,14 +74,14 @@ const ShopDetail = () => {
 
   if (error || !artwork) {
     return (
-      <div className="min-h-screen bg-white" id="Root-padding">
+      <div className="min-h-screen bg-white page-shell">
         <Helmet>
           <title>Artwork Not Found | FORMFORGE Gallery</title>
           <meta name="description" content="The requested artwork could not be found. Browse our contemporary art collection at FORMFORGE." />
           <meta name="robots" content="noindex, nofollow" />
         </Helmet>
         <Navbar />
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-center min-h-[60vh]">
+        <div className="max-w-7xl mx-auto flex items-center justify-center min-h-[60vh]">
           <p className="text-xl text-gray-600" style={{ fontFamily: "Montserrat, Poppins, sans-serif" }}>
             {error || "Artwork not found"}
           </p>
@@ -149,7 +149,7 @@ const ShopDetail = () => {
   ].join(", ");
 
   return (
-    <div className="min-h-screen bg-white" id="Root-padding">
+    <div className="min-h-screen bg-white page-shell">
       <Helmet>
         <title>{artwork.title} - Premium {artwork.details.type} | FORMFORGE Gallery</title>
         <meta name="description" content={`${artwork.description} Discover this exquisite ${artwork.details.type.toLowerCase()} by Abhinav Goyal at FORMFORGE contemporary art gallery. ${artwork.details.medium}`} />
@@ -224,7 +224,7 @@ const ShopDetail = () => {
       </Helmet>
       <Navbar />
       
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 sm:py-6 lg:py-8">
+      <div className="max-w-7xl mx-auto py-4 sm:py-6 lg:py-8">
         {/* Mobile Layout */}
         <div className="block lg:hidden">
           {/* Image Section - Mobile */}

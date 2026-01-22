@@ -103,10 +103,10 @@ const Contact = () => {
   };
 
   return (
-    <div className="w-full min-h-screen bg-beige pt-[48px] pb-12 sm:pt-16" >
+    <div className="w-full min-h-screen bg-beige page-shell">
       <Navbar />
       
-      <div className=" mx-auto px-[7%]" >
+      <div className="mx-auto max-w-7xl">
         <div className="bg-[#F5F5F5] border border-[#FDE1D3] md:p-16 sm:p-10 py-8 px-5">
           <h3 className="sm:text-xl sm:font-semibold text-lg mb-10 text-center">Begin a conversation</h3>
           <div className="flex flex-col space-y-2 md:space-y-6 max-w-3xl mx-auto">
@@ -254,7 +254,7 @@ const Contact = () => {
         </div> */}
       </div>
 
-      <div className="w-full px-[7%]">
+      <div className="w-full">
         <div className="mt-5">
           <img src="./DON5.jpg" alt="Studio" className="w-full object-cover rounded-lg" />
         </div>

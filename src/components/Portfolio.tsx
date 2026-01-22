@@ -8,7 +8,7 @@ import WhatsAppFloat from "@/components/WhatsAppFloat";
 
 const Gallery = () => {
   return (
-    <div className="min-h-screen bg-white" id="Root-padding">
+    <div className="min-h-screen bg-white page-shell">
       <Helmet>
         <title>FormForge | Precision‑Engineered Metal Sculptures & Bespoke Metal Artworks</title>
         <meta
@@ -90,7 +90,7 @@ const Gallery = () => {
       {/* Hidden H1 for SEO - not visible to users */}
       <h1 className="sr-only">Luxury, Narrative‑Driven Metal Sculptures by FormForge</h1>
 
-      <div className="max-w-10xl flex flex-col items-center justify-center mx-auto">
+      <div className="max-w-7xl flex flex-col items-center justify-center mx-auto">
         <Navbar />
 
         {/* Hidden navigation for internal linking - not visible to users */}

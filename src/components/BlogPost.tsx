@@ -363,7 +363,7 @@ const BlogPost: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white page-shell">
       <Helmet>
         <title>{`${post.title} | FormForge India`}</title>
         <meta name="description" content={post.metaDescription} />
@@ -431,7 +431,7 @@ const BlogPost: React.FC = () => {
 
       <Navbar />
       
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8 lg:py-12">
+      <div className="max-w-7xl mx-auto py-6 sm:py-8 lg:py-12">
         {/* Back Button */}
         <button
           onClick={() => navigate('/blog')}

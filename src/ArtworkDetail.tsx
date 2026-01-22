@@ -18,26 +18,26 @@ const ArtworkDetail = () => {
   if (!id) {
     console.error("No ID provided in URL");
     return (
-      <div className="min-h-screen bg-white">
-        <Navbar />
-        <div className="container mx-auto max-w-6xl p-4">
-          <p>Invalid artwork ID</p>
-        </div>
-        <Footer />
+    <div className="min-h-screen bg-white page-shell">
+      <Navbar />
+      <div className="max-w-7xl mx-auto p-4">
+        <p>Invalid artwork ID</p>
       </div>
+      <Footer />
+    </div>
     );
   }
 
   if (!artwork) {
     console.error("No artwork found for ID:", id);
     return (
-      <div className="min-h-screen bg-white">
-        <Navbar />
-        <div className="container mx-auto max-w-6xl p-4">
-          <p>Artwork not found for ID: {id}</p>
-        </div>
-        <Footer />
+    <div className="min-h-screen bg-white page-shell">
+      <Navbar />
+      <div className="max-w-7xl mx-auto p-4">
+        <p>Artwork not found for ID: {id}</p>
       </div>
+      <Footer />
+    </div>
     );
   }
 
@@ -60,7 +60,7 @@ const ArtworkDetail = () => {
   }, [artwork.images.length, selectedImageIndex]);
 
   return (
-    <div className="min-h-screen bg-white" id="Root-padding">
+    <div className="min-h-screen bg-white page-shell">
       <Helmet>
         <title>{artwork.details.heading} | FormForge Gallery</title>
         <meta
@@ -136,9 +136,9 @@ const ArtworkDetail = () => {
         <link rel="preload" as="image" href={artwork.images[0].src} />
       </Helmet>
 
-      <div className="max-w-10xl flex flex-col items-center justify-center mx-auto">
+      <div className="max-w-7xl flex flex-col items-center justify-center mx-auto">
         <Navbar />
-        <div className="container mx-auto max-w-6xl">
+        <div className="max-w-7xl mx-auto w-full">
           <div className="landscape-view p-4 md:p-8 bg-gray-50 relative">
             <img
               src={artwork.images[selectedImageIndex].src}
