@@ -1,11 +1,10 @@
+import React from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/ui/Footer";
-import "../App.css";
-import { Helmet } from "react-helmet";
 
 const sections = [
   {
-    heading: "FOR ARCHITECTS",
+    heading: "",
     lines: [
       "A reliable art + fabrication partner who won't make your project harder. We collaborate with architects who need strong, site-specific work—with clean scope control, predictable execution, and minimal coordination load.",
       "The objective is simple: the work should sit inside the architecture naturally, get approved without friction, and get installed without surprises.",
@@ -13,7 +12,6 @@ const sections = [
   },
   {
     heading: "Why Architects Choose This Collaboration",
-    subheading: true,
     lines: [],
   },
   {
@@ -48,7 +46,6 @@ const sections = [
   },
   {
     heading: "What We Deliver",
-    subheading: true,
     lines: [
       "• Outdoor landmark works for plazas, entries, and courtyards",
       "• Lobby and atrium statement pieces",
@@ -59,7 +56,6 @@ const sections = [
   },
   {
     heading: "Deliverables Architects Actually Need",
-    subheading: true,
     lines: [
       "• Resolved concept direction + form language",
       "• Material + finish intent (buildable, realistic)",
@@ -72,7 +68,6 @@ const sections = [
   },
   {
     heading: "How The Collaboration Runs",
-    subheading: true,
     lines: [
       "Lean communication — Single point of contact, clear decision checkpoints, fast turnaround on required inputs, predictable updates without follow-ups.",
       "Scope clarity — We protect you from \"silent scope creep\"—where the client keeps changing the outcome while expecting the same timeline and budget.",
@@ -81,7 +76,6 @@ const sections = [
   },
   {
     heading: "Who This Works Best For",
-    subheading: true,
     lines: [
       "This collaboration is a strong fit if you want:",
       "• A dependable partner who understands design discipline",
@@ -99,60 +93,54 @@ const sections = [
 
 const ForArchitects = () => {
   return (
-    <section className="min-h-screen bg-white page-shell origin-top">
-      <Helmet>
-        <title>FormForge | For Architects</title>
-        <meta
-          name="description"
-          content="A reliable art + fabrication partner supporting architects with clarity, scope control, and predictable timelines."
-        />
-      </Helmet>
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen bg-white page-shell origin-top">
+      <div className="max-w-7xl mx-auto">
         <Navbar />
-        <div className="responsive-zoom py-8">
-          {sections.map((section, sectionIndex) => (
-            <div key={section.heading} className="mb-10">
+        
+        <div className="responsive-zoom sm:-m-0">
+          {sections.map((section, index) => (
+            <div
+              key={index}
+              className="sm:mb-4 md:mb-6 after:clear-both after:block after:content-['']"
+            >
               <h1
-                className={`${
-                  sectionIndex === 0 
-                    ? "text-2xl sm:text-3xl md:text-5xl mb-6" 
-                    : section.subheading
-                    ? "text-xl sm:text-2xl md:text-3xl mb-4 mt-12"
-                    : "text-lg sm:text-xl md:text-2xl mb-3 mt-8"
-                } text-left font-semibold`}
+                className={`
+                  ${index === 0 ? "mt-0 mb-0" : "mt-4 mb-4"}
+                  text-left -ml-4 md:text-4xl sm:text-xl text-lg
+                `}
                 style={{
                   fontFamily: "Montserrat",
-                  letterSpacing: ".04em",
-                  color: "#1a1a1a",
+                  letterSpacing: ".06em",
                 }}
               >
                 {section.heading}
               </h1>
-              <div className="space-y-4">
-                {section.lines.map((line, index) => (
-                  line === "" ? (
-                    <div key={`${section.heading}-${index}`} className="h-2" />
-                  ) : (
-                    <p
-                      key={`${section.heading}-${index}`}
-                      className="text-left text-sm sm:text-base md:text-lg"
-                      style={{
-                        fontFamily: "Montserrat, Poppins, sans-serif",
-                        lineHeight: "1.7em",
-                        color: "rgb(60, 60, 60)",
-                      }}
-                    >
-                      {line}
-                    </p>
-                  )
-                ))}
-              </div>
+
+              {section.lines.map((line, i) => {
+                if (line === "") {
+                  return <div key={i} className="h-2" />;
+                }
+
+                return (
+                  <p
+                    key={i}
+                    className="text-left text-xs sm:text-sm md:text-base"
+                    style={{
+                      fontFamily: "Montserrat, Poppins, sans-serif",
+                      lineHeight: "1.5em",
+                      color: "rgb(87, 87, 87)",
+                    }}
+                  >
+                    {line}
+                  </p>
+                );
+              })}
             </div>
           ))}
           <Footer />
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 

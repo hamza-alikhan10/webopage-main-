@@ -42,9 +42,6 @@ const Biography: React.FC<BiographyProps> = ({ sections }) => {
   />
 )}
 
-
-
-
 <h1
   className={`
     ${section.position === "right" ? "mt-0 mb-0" : "mt-4 mb-4"}
