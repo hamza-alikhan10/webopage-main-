@@ -367,7 +367,7 @@ export const sculptures: Sculpture[] = [
         "signature": "Hand-signed by artist",
         "authenticity": "Sold with certificate of Authenticity",
         "medium": "Corten steel",
-        "dimensions": "H 5.7ft | W 3ft",
+        "dimensions": "H 5.7ft | W 3ft", 
         "display": "Indoor/Outdoor",
         "integratedLighting": false,
         "tags": ["corten steel figure", "horned sculpture", "large indoor art", "primal energy"]

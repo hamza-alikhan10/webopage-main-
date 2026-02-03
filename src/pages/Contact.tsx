@@ -236,7 +236,7 @@ const Contact = () => {
                   <span className="sm:text-lg text-base">
                     <a href="tel:+919650020485" className="hover:underline">+91 965 000 6385 </a>
                     <br />
-                    <a href="tel:+919650006385" className="hover:underline">+91 965 002 0485</a>
+                    <a href="tel:+919650006385" className="hover:underline">+91 921 770 9575</a>
                   </span>
                 </div>
                 <button onClick={handleMapClick} className="flex space-x-3 items-center  hover:bg-gray-200 p-3 rounded-lg transition-colors text-left">
