@@ -5,17 +5,14 @@ import { useState, useEffect, useRef } from "react";
 const Navbar = () => {
   const navigate = useNavigate();
   const [isGalleryOpen, setIsGalleryOpen] = useState(false);
-  const [isProcessOpen, setIsProcessOpen] = useState(false);
   const [activeLink, setActiveLink] = useState("");
   const dropdownRef = useRef<HTMLDivElement>(null);
-  const processDropdownRef = useRef<HTMLDivElement>(null);
   const timeoutRef = useRef<NodeJS.Timeout | null>(null);
-  const processTimeoutRef = useRef<NodeJS.Timeout | null>(null);
 
   const navLinks = [
-    { name: "WORK", href: "/", hasDropdown: true },
-    { name: "PROCESS", href: "/process", hasDropdown: true },
+    { name: "WORK", href: "/gallery", hasDropdown: true },
     { name: "PRACTICE", href: "/about" },
+    { name: "PROCESS", href: "/process" },
     { name: "ENQUIRE", href: "/contact" },
   ];
 
@@ -24,16 +21,13 @@ const Navbar = () => {
   
   ];
 
-  const processSubLinks = [
-    { name: "FOR-ARCHITECTS", href: "/for-architects" },
-  ];
-
   const handleNavigation = (path: string, linkName: string) => {
     console.log(`Navigating to: ${path}`); // Debug log
     navigate(path, { replace: true });
     setActiveLink(linkName);
-    setIsGalleryOpen(false);
-    setIsProcessOpen(false);
+    if (linkName !== "GALLERY") {
+      setIsGalleryOpen(false);
+    }
     // Fallback: Force reload if navigate fails (remove in production)
     setTimeout(() => {
       if (window.location.pathname !== path) {
@@ -46,35 +40,17 @@ const Navbar = () => {
     console.log("Navigating to: /"); // Debug log
     navigate("/", { replace: true });
     setIsGalleryOpen(true);
-    setIsProcessOpen(false);
-    setActiveLink("WORK");
-  };
-
-  const handleProcessClick = () => {
-    console.log("Navigating to: /process"); // Debug log
-    navigate("/process", { replace: true });
-    setIsProcessOpen(true);
-    setIsGalleryOpen(false);
-    setActiveLink("PROCESS");
+    setActiveLink("GALLERY");
   };
 
   const handleClickOutside = (event: MouseEvent) => {
-    const target = event.target as Node;
-    const isOutsideWork = dropdownRef.current
-      ? !dropdownRef.current.contains(target)
-      : true;
-    const isOutsideProcess = processDropdownRef.current
-      ? !processDropdownRef.current.contains(target)
-      : true;
-
-    if (isOutsideWork && isOutsideProcess) {
+    if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
       setIsGalleryOpen(false);
-      setIsProcessOpen(false);
     }
   };
 
   useEffect(() => {
-    if (isGalleryOpen || isProcessOpen) {
+    if (isGalleryOpen) {
       document.addEventListener("mousedown", handleClickOutside);
     } else {
       document.removeEventListener("mousedown", handleClickOutside);
@@ -82,10 +58,10 @@ const Navbar = () => {
     return () => {
       document.removeEventListener("mousedown", handleClickOutside);
     };
-  }, [isGalleryOpen, isProcessOpen]);
+  }, [isGalleryOpen]);
 
   useEffect(() => {
-    if (isGalleryOpen && activeLink !== "WORK") {
+    if (isGalleryOpen && activeLink !== "GALLERY") {
       timeoutRef.current = setTimeout(() => {
         setIsGalleryOpen(false);
       }, 2000); // 2 seconds timeout on hover
@@ -96,19 +72,6 @@ const Navbar = () => {
       }
     };
   }, [isGalleryOpen, activeLink]);
-
-  useEffect(() => {
-    if (isProcessOpen && activeLink !== "PROCESS") {
-      processTimeoutRef.current = setTimeout(() => {
-        setIsProcessOpen(false);
-      }, 2000);
-    }
-    return () => {
-      if (processTimeoutRef.current) {
-        clearTimeout(processTimeoutRef.current);
-      }
-    };
-  }, [isProcessOpen, activeLink]);
 
   return (
     <nav className="bg-transparent">
@@ -131,17 +94,16 @@ const Navbar = () => {
         <div className="flex flex-wrap justify-center space-x-2.5 sm:space-x-6 md:space-x-7 mt-4 mb-8 sm:mb-11 relative">
           {navLinks.map((link) => (
             <div key={link.name} className="relative">
-              {link.hasDropdown && link.name === "WORK" ? (
+              {link.hasDropdown ? (
                 <div
                   onMouseEnter={() => {
                     setIsGalleryOpen(true);
-                    setIsProcessOpen(false);
                     if (timeoutRef.current) {
                       clearTimeout(timeoutRef.current);
                     }
                   }}
                   onMouseLeave={() => {
-                    if (activeLink !== "WORK") {
+                    if (activeLink !== "GALLERY") {
                       timeoutRef.current = setTimeout(() => {
                         setIsGalleryOpen(false);
                       }, 2000);
@@ -166,58 +128,9 @@ const Navbar = () => {
                             }
                           }}
                           onMouseLeave={() => {
-                            if (activeLink !== "WORK") {
+                            if (activeLink !== "GALLERY") {
                               timeoutRef.current = setTimeout(() => {
                                 setIsGalleryOpen(false);
-                              }, 2000);
-                            }
-                          }}
-                          className={`block w-full text-left px-4 py-2 text-gray-500 hover:text-black hover:bg-gray-100 text-base sm:text-lg md:text-xl transition-colors duration-300 relative`}
-                        >
-                          {subLink.name}
-                        </button>
-                      ))}
-                    </div>
-                  )}
-                </div>
-              ) : link.hasDropdown && link.name === "PROCESS" ? (
-                <div
-                  onMouseEnter={() => {
-                    setIsProcessOpen(true);
-                    setIsGalleryOpen(false);
-                    if (processTimeoutRef.current) {
-                      clearTimeout(processTimeoutRef.current);
-                    }
-                  }}
-                  onMouseLeave={() => {
-                    if (activeLink !== "PROCESS") {
-                      processTimeoutRef.current = setTimeout(() => {
-                        setIsProcessOpen(false);
-                      }, 2000);
-                    }
-                  }}
-                  onClick={handleProcessClick}
-                >
-                  <button
-                    className={`nav-link text-gray-500 hover:text-black text-base sm:text-lg md:text-xl lg:text-2xl tracking-wide transition-colors duration-300 relative`}
-                  >
-                    {link.name}
-                  </button>
-                  {isProcessOpen && (
-                    <div ref={processDropdownRef} className="absolute top-full left-0 mt-2 bg-white shadow-lg rounded-md py-2 z-50 w-48">
-                      {processSubLinks.map((subLink) => (
-                        <button
-                          key={subLink.name}
-                          onClick={() => handleNavigation(subLink.href, subLink.name)}
-                          onMouseEnter={() => {
-                            if (processTimeoutRef.current) {
-                              clearTimeout(processTimeoutRef.current);
-                            }
-                          }}
-                          onMouseLeave={() => {
-                            if (activeLink !== "PROCESS") {
-                              processTimeoutRef.current = setTimeout(() => {
-                                setIsProcessOpen(false);
                               }, 2000);
                             }
                           }}

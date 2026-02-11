@@ -3,35 +3,35 @@ import Navbar from "@/components/Navbar"; // Adjust path as needed
 import Footer from "@/components/ui/Footer"; // Use Shadcn/UI path
 import "../App.css";
 import { Helmet } from "react-helmet";
-import { ARTWORK_IMAGES, ImageData } from "../data/artworkData"; // Adjust path as needed
-import WhatsAppFloat from "@/components/WhatsAppFloat"; 
+import { ARTWORK_IMAGES } from "../data/artworkData"; // Adjust path as needed
+import WhatsAppFloat from "@/components/WhatsAppFloat";
 
 const Gallery = () => {
   return (
     <div className="min-h-screen bg-white page-shell">
       <Helmet>
-        <title>FormForge | Precision‑Engineered Metal Sculptures & Bespoke Metal Artworks</title>
+        <title>FormForge | Precisionâ€‘Engineered Metal Sculptures & Bespoke Metal Artworks</title>
         <meta
           name="description"
-          content="Discover FormForge, Delhi's premier studio crafting precision‑engineered corten and stainless steel sculptures. Explore luxury, narrative‑driven metal art pieces—ready to ship worldwide or custom‑made to order."
+          content="Discover FormForge, Delhi's premier studio crafting precisionâ€‘engineered corten and stainless steel sculptures. Explore luxury, narrativeâ€‘driven metal art piecesâ€”ready to ship worldwide or customâ€‘made to order."
         />
         <meta
           name="keywords"
           content="Corten Steel Sculptures, Luxury Metal Art, Public Art Installations, FormForge Gallery, Custom Sculptures, India, UAE, precision-engineered, bespoke metal artworks"
         />
-        <meta property="og:title" content="FormForge | Precision‑Engineered Metal Sculptures" />
+        <meta property="og:title" content="FormForge | Precisionâ€‘Engineered Metal Sculptures" />
         <meta property="og:type" content="website" />
         <meta property="og:image" content="https://formforge.com/assets/og-image.jpg" />
         <meta property="og:url" content="https://formforge.com/gallery" />
         <meta
           property="og:description"
-          content="Explore luxury corten and stainless steel sculptures by FormForge—custom, precision‑engineered artworks that tell a story."
+          content="Explore luxury corten and stainless steel sculptures by FormForgeâ€”custom, precisionâ€‘engineered artworks that tell a story."
         />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="FormForge | Precision‑Engineered Metal Sculptures" />
+        <meta name="twitter:title" content="FormForge | Precisionâ€‘Engineered Metal Sculptures" />
         <meta
           name="twitter:description"
-          content="Explore luxury corten and stainless steel sculptures by FormForge—custom, precision‑engineered artworks that tell a story."
+          content="Explore luxury corten and stainless steel sculptures by FormForgeâ€”custom, precisionâ€‘engineered artworks that tell a story."
         />
         <meta name="twitter:image" content="https://formforge.com/assets/og-image.jpg" />
         <link rel="canonical" href="https://formforge.com/gallery" />
@@ -58,9 +58,9 @@ const Gallery = () => {
               },
               {
                 "@type": "CollectionPage",
-                "name": "FormForge Gallery - Precision‑Engineered Metal Sculptures",
+                "name": "FormForge Gallery - Precisionâ€‘Engineered Metal Sculptures",
                 "url": "https://formforge.com/gallery",
-                "description": "Discover luxury corten and stainless steel sculptures—ready to ship worldwide or custom‑made to order.",
+                "description": "Discover luxury corten and stainless steel sculpturesâ€”ready to ship worldwide or customâ€‘made to order.",
                 "publisher": {
                   "@type": "Organization",
                   "name": "FormForge Design Private Limited"
@@ -87,13 +87,11 @@ const Gallery = () => {
         />
       </Helmet>
 
-      {/* Hidden H1 for SEO - not visible to users */}
-      <h1 className="sr-only">Luxury, Narrative‑Driven Metal Sculptures by FormForge</h1>
+      <h1 className="sr-only">Luxury, Narrativeâ€‘Driven Metal Sculptures by FormForge</h1>
 
       <div className="max-w-7xl flex flex-col items-center justify-center mx-auto">
         <Navbar />
 
-        {/* Hidden navigation for internal linking - not visible to users */}
         <nav className="sr-only" aria-label="Gallery Navigation">
           <ul>
             <li><Link to="/">Home - FormForge Metal Sculptures</Link></li>

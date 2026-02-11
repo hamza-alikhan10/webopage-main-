@@ -4,6 +4,7 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import PortfolioPage from "@/pages/PortfolioPage";
+import HomePage from "@/pages/HomePage";
 import Contact from "@/pages/Contact";
 import Press from "@/pages/Press";
 import About from "@/pages/BiographyPage";
@@ -27,8 +28,8 @@ const App = () => {
         <Sonner />
         <BrowserRouter>
           <Routes>
-            <Route path="/" element={<PortfolioPage />} />
-            <Route path="/gallery" element={<PortfolioPage />} /> {/* Added for explicit /gallery route */}
+            <Route path="/" element={<HomePage />} />
+            <Route path="/gallery" element={<PortfolioPage />} />
             <Route path="/gallery/:id" element={<ArtworkDetail />} /> {/* Updated to match /gallery/:id */}
             <Route path="/about" element={<About />} />
             <Route path="/shop" element={<Shop />} />
