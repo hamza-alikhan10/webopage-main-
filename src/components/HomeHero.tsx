@@ -17,7 +17,7 @@ const featuredWorks = [
     id: 1,
     title: "Urban Metamorphosis",
     description: "A stunning 15-foot sculpture that transforms city squares into interactive art experiences. Crafted from mirror-polished stainless steel, this piece reflects both the environment and the viewer's perception.",
-    image: "/images/blog/H-L-1.webp",
+    image: "/images/blog/Corten_Steel_Face.jpg",
     year: "2025",
     location: "New Delhi"
   },
@@ -25,7 +25,7 @@ const featuredWorks = [
     id: 2,
     title: "Waves of Infinity",
     description: "An organic form that captures the eternal motion of water. This installation creates a mesmerizing interplay of light and shadow, inviting contemplation and wonder.",
-    image: "/images/blog/H-L-2.webp",
+    image: "/images/blog/AD_Elephant.jpg",
     year: "2024",
     location: "Mumbai"
   },
@@ -33,7 +33,7 @@ const featuredWorks = [
     id: 3,
     title: "Geometric Dreams",
     description: "A bold exploration of architectural forms and mathematical precision. This piece challenges traditional perceptions of space and dimension through its intricate geometric patterns.",
-    image: "/images/blog/H-L-3.webp",
+    image: "/images/blog/Stainless_Steel_dolphin.jpg",
     year: "2024",
     location: "Bangalore"
   }
