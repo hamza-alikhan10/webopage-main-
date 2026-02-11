@@ -105,7 +105,7 @@ const AboutSection = () => {
           <div className="order-2 md:order-1">
             <div className="relative overflow-hidden group">
               <img
-                src="/images/blog/H-L-4.webp"
+                src="/images/blog/Stainless_Steel_Flower.jpg"
                 alt="Artist at work"
                 className="w-full h-[400px] md:h-[600px] object-cover transition-transform duration-700 group-hover:scale-110"
               />
