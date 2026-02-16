@@ -37,11 +37,11 @@ const Navbar = () => {
   };
 
   const handleGalleryClick = () => {
-    console.log("Navigating to: /"); // Debug log
-    navigate("/", { replace: true });
-    setIsGalleryOpen(true);
-    setActiveLink("GALLERY");
-  };
+  console.log("Navigating to: /gallery"); // Debug log
+  navigate("/gallery", { replace: true });
+  setIsGalleryOpen(true);
+  setActiveLink("WORK");
+};
 
   const handleClickOutside = (event: MouseEvent) => {
     if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {

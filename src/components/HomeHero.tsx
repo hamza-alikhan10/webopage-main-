@@ -16,7 +16,6 @@ const featuredWorks = [
   {
     id: 1,
     title: "Urban Metamorphosis",
-    description: "A stunning 15-foot sculpture that transforms city squares into interactive art experiences. Crafted from mirror-polished stainless steel, this piece reflects both the environment and the viewer's perception.",
     image: "/images/blog/Corten_Steel_Face.jpg",
     year: "2025",
     location: "New Delhi"
@@ -24,7 +23,6 @@ const featuredWorks = [
   {
     id: 2,
     title: "Waves of Infinity",
-    description: "An organic form that captures the eternal motion of water. This installation creates a mesmerizing interplay of light and shadow, inviting contemplation and wonder.",
     image: "/images/blog/AD_Elephant.jpg",
     year: "2024",
     location: "Mumbai"
@@ -32,10 +30,16 @@ const featuredWorks = [
   {
     id: 3,
     title: "Geometric Dreams",
-    description: "A bold exploration of architectural forms and mathematical precision. This piece challenges traditional perceptions of space and dimension through its intricate geometric patterns.",
     image: "/images/blog/Stainless_Steel_dolphin.jpg",
     year: "2024",
     location: "Bangalore"
+  },
+  {
+    id: 4,
+    title: "Eternal Forms",
+    image: "/images/blog/Stainless_Steel_Flower.jpg",
+    year: "2024",
+    location: "Chennai"
   }
 ];
 
@@ -80,14 +84,14 @@ const HeroSection = ({ currentImage, onEnterClick }) => {
               style={{ fontFamily: 'Montserrat, Poppins, sans-serif', fontWeight: 300 }}>
             FORMFORGE
           </h1>
-          <p className="absolute -bottom-2 right-0 text-white/70 text-[15px] sm:text-xs md:text-sm tracking-wider"
+          <p className="absolute bottom-1 right-10 text-white/70 text-[15px] sm:text-xs md:text-sm tracking-wider"
              style={{ fontFamily: 'Montserrat, Poppins, sans-serif' }}>
             By Abhinav Goyal
           </p>
         </div>
-        <p className="text-white/80 text-sm sm:text-base md:text-lg max-w-2xl text-center px-4 tracking-wide"
+        <p className="text-white/80 text-sm sm:text-base md:text-lg max-w-2xl text-center px-4 tracking-wide mt-6"
            style={{ fontFamily: 'Montserrat, Poppins, sans-serif', lineHeight: '1.8em' }}>
-          Blending tradition with innovation, Nitush & Aroosh craft extraordinary stainless steel sculptures that redefine spaces.
+          Blending material discipline with contemporary exploration, Abhinav Goyal creates sculptural works that challenge balance, presence, and permanence.
         </p>
       </div>
 
@@ -121,15 +125,11 @@ const AboutSection = () => {
             <div className="w-20 h-0.5 bg-gray-300" />
             <p className="text-sm md:text-base pt-2"
                style={{ fontFamily: 'Montserrat, Poppins, sans-serif', lineHeight: '1.8em', color: 'rgb(87, 87, 87)' }}>
-              For over a decade, Nitush and Aroosh have been pioneering the art of stainless steel sculpture. 
-              Their work seamlessly blends traditional craftsmanship with contemporary design, creating pieces 
-              that are both timeless and innovative.
+             For over a decade, Abhinav Goyal worked with stainless steel as a primary sculptural medium—bridging traditional metal craftsmanship with contemporary form-making. My practice focuses on precision, material honesty, and structural clarity, producing works that are grounded in time yet responsive to the present.
             </p>
             <p className="text-sm md:text-base"
                style={{ fontFamily: 'Montserrat, Poppins, sans-serif', lineHeight: '1.8em', color: 'rgb(87, 87, 87)' }}>
-              Each sculpture is meticulously hand-crafted, combining precision engineering with artistic vision. 
-              From intimate indoor pieces to monumental public installations, their work transforms spaces and 
-              inspires wonder.
+           Each sculpture is developed through a rigorous making process that combines engineering precision with artistic intent. The work spans intimate indoor pieces to large-scale public installations, engaging directly with space, scale, and context rather than serving as surface decoration.
             </p>
             <button 
               onClick={() => window.location.href = '/gallery'}
@@ -147,11 +147,15 @@ const AboutSection = () => {
 };
 
 const FeaturedWorks = () => {
+  const handleWorkClick = () => {
+    window.location.href = '/gallery';
+  };
+
   return (
-    <section className="min-h-screen bg-white py-12 md:py-16">
+    <section className="bg-white py-8 md:py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
-        <div className="text-center mb-12 md:mb-16">
+        <div className="text-center mb-8 md:mb-12">
           <h1 className="text-3xl md:text-4xl lg:text-5xl tracking-wider mb-3"
               style={{ fontFamily: 'Montserrat', letterSpacing: '.06em', color: 'rgb(34, 34, 34)', fontWeight: 400 }}>
             FEATURED WORKS
@@ -159,52 +163,27 @@ const FeaturedWorks = () => {
           <div className="w-20 h-0.5 bg-gray-300 mx-auto" />
         </div>
 
-        {/* Works Grid */}
-        <div className="space-y-16 md:space-y-20">
-          {featuredWorks.map((work, index) => (
+        {/* Works Grid - 2 columns */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
+          {featuredWorks.map((work) => (
             <div 
               key={work.id}
-              className={`grid md:grid-cols-2 gap-8 md:gap-16 items-center ${
-                index % 2 === 1 ? 'md:flex-row-reverse' : ''
-              }`}
+              onClick={handleWorkClick}
+              className="cursor-pointer group"
             >
               {/* Image */}
-              <div className={`${index % 2 === 1 ? 'md:order-2' : ''}`}>
-                <div className="relative overflow-hidden group">
-                  <img
-                    src={work.image}
-                    alt={work.title}
-                    className="w-full h-[350px] md:h-[500px] object-cover transition-transform duration-700 group-hover:scale-110"
-                  />
-                  <div className="absolute bottom-6 left-6 right-6">
-                    <span className="text-white/90 text-sm tracking-widest bg-black/50 px-3 py-1 rounded"
-                          style={{ fontFamily: 'Montserrat, sans-serif' }}>
-                      {work.year} • {work.location}
-                    </span>
-                  </div>
+              <div className="relative overflow-hidden">
+                <img
+                  src={work.image}
+                  alt={work.title}
+                  className="w-full h-[400px] md:h-[550px] lg:h-[650px] object-cover transition-transform duration-700 group-hover:scale-110"
+                />
+                <div className="absolute bottom-6 left-6 right-6">
+                  <span className="text-white/90 text-sm tracking-widest bg-black/50 px-3 py-1 rounded"
+                        style={{ fontFamily: 'Montserrat, sans-serif' }}>
+                    {work.year} • {work.location}
+                  </span>
                 </div>
-              </div>
-
-              {/* Text */}
-              <div className={`space-y-4 ${index % 2 === 1 ? 'md:order-1' : ''}`}>
-                <h2 className="text-2xl md:text-3xl lg:text-4xl tracking-wide mb-2"
-                    style={{ fontFamily: 'Montserrat', letterSpacing: '.06em', color: 'rgb(34, 34, 34)', fontWeight: 400 }}>
-                  {work.title}
-                </h2>
-                <div className="w-16 h-0.5 bg-gray-300" />
-                <p className="text-sm md:text-base pt-2"
-                   style={{ fontFamily: 'Montserrat, Poppins, sans-serif', lineHeight: '1.8em', color: 'rgb(87, 87, 87)' }}>
-                  {work.description}
-                </p>
-                <button className="border border-gray-400 px-8 py-3 rounded-full 
-                                 hover:bg-black hover:text-white hover:border-black transition-all duration-300 
-                                 tracking-wider text-sm inline-flex items-center gap-2 mt-4"
-                        style={{ fontFamily: 'Montserrat, sans-serif', color: 'rgb(87, 87, 87)' }}>
-                  VIEW PROJECT
-                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                  </svg>
-                </button>
               </div>
             </div>
           ))}
