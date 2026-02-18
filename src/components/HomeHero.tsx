@@ -40,7 +40,22 @@ const featuredWorks = [
     image: "/images/blog/Stainless_Steel_Flower.jpg",
     year: "2024",
     location: "Chennai"
-  }
+  },
+   {
+    id: 4,
+    title: "Bonsai",
+    image: "/images/blog/bonsai_metal.jpg",
+    year: "2024",
+    location: "Pune"
+  },
+   {
+    id: 4,
+    title: "Stainless Steel",
+    image: "/images/blog/Stainless_Steel_Lotus.jpg",
+    year: "2024",
+    location: "Hyderabad"
+  },
+  
 ];
 
 const ScrollIndicator = ({ isVisible }) => {
