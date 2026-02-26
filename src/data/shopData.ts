@@ -226,7 +226,7 @@ export const sculptures: Sculpture[] = [
       "landscape religious sculpture"
     ]
   },
-  "status": "Readily Available",
+  "status": "Sold Out",
   "price": "₹1,50,000"
 },
     {
@@ -336,7 +336,7 @@ export const sculptures: Sculpture[] = [
         "integratedLighting": true,
         "tags": ["corten steel tortoise", "animal garden art", "outdoor sculpture", "decorative tortoise"]
       },
-      "status": "Readily Available",
+      "status": "Sold Out",
       "price": "₹1,00,000"
     },
     {
