@@ -3,13 +3,19 @@ import { FaChevronDown } from "react-icons/fa";
 import Footer from './ui/Footer';
 
 const images = [
-  "/images/blog/H-L-1.webp",
-  "/images/blog/H-L-2.webp",
-  "/images/blog/H-L-3.webp",
-  "/images/blog/H-L-4.webp",
-  "/images/blog/H-L-5.webp",
-  "/images/blog/H-L-7.webp",
-  "/images/blog/H-L-8.webp",
+  "/Arts/Running_horses_Stainless_Steel.webp",
+  "/Arts/Ganesh_ji.webp",
+  "/Arts/metal_Bull.webp",
+  "/Arts/Metal_cactus.webp",
+  "/Arts/Metal_Totems.webp",
+];
+
+const captions = [
+  "Forms shaped by tension, memory, and material",
+  "A studio practice between structure and emotion",
+  "Sculptural works that feel resolved yet unsettled",
+  "Material as surface, structure, and expression",
+  "Objects that remain open in meaning",
 ];
 
 const featuredWorks = [
@@ -119,77 +125,93 @@ const ScrollIndicator = ({ isVisible }) => (
   </div>
 );
 
-const HeroSection = ({ currentImage, onEnterClick }) => (
-  <div
-    className=" relative h-screen overflow-hidden flex items-center justify-center bg-black"
-    style={{
-  width: '100vw',
-  marginLeft: `calc(-1 * (100vw - 100%) / 2)`,
-  marginRight: `calc(-1 * (100vw - 100%) / 2)`,
-}}
-  >
-    {/* Background Images */}
-    {images.map((src, index) => (
-      <div
-        key={index}
-        className={`absolute inset-0 transition-opacity duration-1000 ease-in-out
-                    ${currentImage === index ? 'opacity-100' : 'opacity-0'}`}
-        style={{ backgroundImage: `url(${src})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
-      >
-        <div className="absolute inset-0 bg-black/45" />
-      </div>
-    ))}
+const HeroSection = ({ currentImage, onEnterClick }) => {
+  const [displayedIndex, setDisplayedIndex] = useState(currentImage);
+  const [captionVisible, setCaptionVisible] = useState(true);
 
-    {/* Content */}
-    <div className="relative z-10 flex flex-col items-center justify-center px-6 text-center w-full max-w-4xl mx-auto">
+  useEffect(() => {
+    setCaptionVisible(false);
+    const timer = setTimeout(() => {
+      setDisplayedIndex(currentImage);
+      setCaptionVisible(true);
+    }, 500);
+    return () => clearTimeout(timer);
+  }, [currentImage]);
 
-      {/* Title block */}
-      <div className="mb-2">
-        <h1
-          className="font-light text-white tracking-[0.25em] leading-none"
-          style={{
-            fontFamily: 'Montserrat, sans-serif',
-            fontWeight: 200,
-            fontSize: 'clamp(2.6rem, 8vw, 6.5rem)',
-          }}
+  return (
+    <div
+      className="relative h-screen overflow-hidden flex items-center justify-center bg-black"
+      style={{
+        width: '100vw',
+        marginLeft: `calc(-1 * (100vw - 100%) / 2)`,
+        marginRight: `calc(-1 * (100vw - 100%) / 2)`,
+      }}
+    >
+      {/* Background Images */}
+      {images.map((src, index) => (
+        <div
+          key={index}
+          className={`absolute inset-0 transition-opacity duration-1000 ease-in-out
+                      ${currentImage === index ? 'opacity-100' : 'opacity-0'}`}
+          style={{ backgroundImage: `url(${src})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
         >
-          FORMFORGE
-        </h1>
+          <div className="absolute inset-0 bg-black/45" />
+        </div>
+      ))}
 
+      {/* Content */}
+      <div className="relative z-10 flex flex-col items-center justify-center px-6 text-center w-full max-w-4xl mx-auto">
+
+        {/* Title block */}
+        <div className="mb-2">
+          <h1
+            className="font-light text-white tracking-[0.25em] leading-none"
+            style={{
+              fontFamily: 'Montserrat, sans-serif',
+              fontWeight: 200,
+              fontSize: 'clamp(2.6rem, 8vw, 6.5rem)',
+            }}
+          >
+            FORMFORGE
+          </h1>
+
+          <p
+            className="text-white/65 text-right pr-10"
+            style={{
+              fontFamily: 'Montserrat, sans-serif',
+              fontWeight: 600,
+              fontSize: 'clamp(0.9rem, 2vw, 1.2rem)',
+              letterSpacing: '0.18em',
+            }}
+          >
+            By Abhinav Goyal
+          </p>
+        </div>
+
+        {/* Cycling Caption */}
         <p
-          className="text-white/65 text-right  pr-10"
+          className="text-white/75 max-w-xl mt-5 mb-10"
           style={{
             fontFamily: 'Montserrat, sans-serif',
-            fontWeight: 600,
-            fontSize: 'clamp(0.9rem, 2vw, 1.2rem)',
-            letterSpacing: '0.18em',
+            fontWeight: 300,
+            fontSize: 'clamp(0.78rem, 1.8vw, 1rem)',
+            lineHeight: '1.9',
+            letterSpacing: '0.04em',
+            opacity: captionVisible ? 1 : 0,
+            transition: captionVisible ? 'opacity 0.5s ease-in' : 'opacity 0.3s ease-out',
+            minHeight: '2em',
           }}
         >
-          By Abhinav Goyal
+          {captions[displayedIndex]}
         </p>
+
+        <EnterButton onClick={onEnterClick} />
       </div>
 
-      {/* Tagline */}
-      <p
-        className="text-white/75 max-w-xl mt-5 mb-10"
-        style={{
-          fontFamily: 'Montserrat, sans-serif',
-          fontWeight: 300,
-          fontSize: 'clamp(0.78rem, 1.8vw, 1rem)',
-          lineHeight: '1.9',
-          letterSpacing: '0.04em',
-        }}
-      >
-        Blending material discipline with contemporary exploration, Abhinav Goyal creates sculptural
-        works that challenge balance, presence, and permanence.
-      </p>
-
-      <EnterButton onClick={onEnterClick} />
+      <ScrollIndicator isVisible={true} />
     </div>
-
-    <ScrollIndicator isVisible={true} />
-  </div>
-);
+  );
+};
 
 const AboutSection = () => (
   <section className="min-h-screen bg-white py-12 md:py-16">
@@ -233,13 +255,13 @@ const AboutSection = () => (
             public installations, engaging directly with space, scale, and context rather than
             serving as surface decoration.
           </p>
-        <div className="mt-8">
-  <EnterButton
-    label="Learn More"
-    variant="light"
-    onClick={() => window.location.href = "/gallery"}
-  />
-</div>
+          <div className="mt-8">
+            <EnterButton
+              label="Learn More"
+              variant="light"
+              onClick={() => window.location.href = "/gallery"}
+            />
+          </div>
         </div>
       </div>
     </div>
@@ -312,12 +334,7 @@ const HomeHero = () => {
   };
 
   return (
-    /*
-      Root has NO padding, NO max-width — hero sits flush edge-to-edge.
-      overflow-x-hidden prevents any horizontal bleed from child elements.
-    */
     <div className="w-full p-0 m-0" style={{ padding: 0, margin: 0 }}>
-      {/* Hero is the FIRST child with no wrapping container — pure full-bleed */}
       <HeroSection currentImage={currentImage} onEnterClick={handleEnterClick} />
 
       <div className="max-w-7xl mx-auto">
